@@ -26,11 +26,6 @@ export const navigationItems: NavigationItem[] = [
         icon: Book,
     },
     {
-        title: "Quiz",
-        href: "/quiz",
-        icon: BrainCircuit,
-    },
-    {
         title: "Grammar",
         href: "/grammar",
         icon: Library,

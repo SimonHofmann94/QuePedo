@@ -1,0 +1,245 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.comicCard {
+    --paper-white: #fefae8;
+    --primary-yellow: #ffd900;
+    --accent-red: #d92b2b;
+    --accent-blue: #2b80d9;
+    --ink-black: #212121;
+    --border-stroke: 0.15em;
+    --dot-color: rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 24em;
+    /* Increased width */
+    max-width: 500px;
+    /* Increased max-width */
+    min-height: 600px;
+    /* Increased height */
+    background-color: var(--paper-white);
+    border: var(--border-stroke) solid var(--ink-black);
+    border-radius: 0.5em;
+    padding: 1.5em;
+    box-shadow: 0.5em 0.5em 0 var(--ink-black);
+    transition:
+        transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.2s ease;
+    transform-origin: bottom left;
+}
+
+.comicCard:hover {
+    transform: translateY(-0.6em) rotate(-1deg);
+    box-shadow: 0.8em 0.8em 0 0.1em var(--accent-red);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2em;
+}
+
+.cardAvatar {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--accent-blue), #6ba9e4);
+    border: var(--border-stroke) solid var(--ink-black);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+}
+
+.comicCard:hover .cardAvatar {
+    transform: scale(1.1);
+}
+
+.cardUserInfo {
+    margin-left: 1em;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.cardUsername {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--ink-black);
+    background-color: var(--primary-yellow);
+    padding: 0.1em 0.5em;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.cardHandle {
+    margin: 0.2em 0 0 0;
+    font-size: 1em;
+    color: var(--ink-black);
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.cardContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.infoItem {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: 1px solid var(--ink-black);
+}
+
+.infoLabel {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.infoValue {
+    font-size: 1.1em;
+    color: var(--ink-black);
+    font-weight: bold;
+}
+
+.cardImageContainer {
+    width: 100%;
+    height: 10em;
+    border-radius: 0.2em;
+    border: var(--border-stroke) solid var(--ink-black);
+    overflow: hidden;
+    background-color: var(--accent-blue);
+    background-image: radial-gradient(circle,
+            var(--dot-color) 0.05em,
+            transparent 0.05em);
+    background-size: 0.5em 0.5em;
+    background-position:
+        0 0,
+        0.25em 0.25em;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em;
+}
+
+.comicCard:hover .cardImageContainer {
+    transform: skewX(-2deg) scale(1.01);
+}
+
+.cardCaption {
+    position: relative;
+    margin: 0.8em 0;
+    padding: 0.8em 1em;
+    background-color: var(--paper-white);
+    border: var(--border-stroke) solid var(--ink-black);
+    border-radius: 0.5em;
+    font-size: 1em;
+    line-height: 1.4;
+    color: var(--ink-black);
+}
+
+.cardCaption::after {
+    content: "";
+    position: absolute;
+    bottom: -0.6em;
+    left: 1.5em;
+    width: 0;
+    height: 0;
+    border: 0.5em solid var(--ink-black);
+    border-color: var(--ink-black) transparent transparent transparent;
+}
+
+.cardCaption::before {
+    content: "";
+    position: absolute;
+    bottom: -0.4em;
+    left: 1.6em;
+    width: 0;
+    height: 0;
+    border: 0.4em solid var(--paper-white);
+    border-color: var(--paper-white) transparent transparent transparent;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-top: 1em;
+    border-top: 2px dashed var(--ink-black);
+}
+
+.actionButton {
+    background-color: var(--primary-yellow);
+    border: var(--border-stroke) solid var(--ink-black);
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0 var(--ink-black);
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease,
+        background-color 0.2s ease;
+}
+
+.actionButton:hover {
+    background-color: var(--accent-red);
+}
+
+.actionButton:active {
+    transform: translate(0.2em, 0.2em);
+    box-shadow: none;
+}
+
+.actionButtonIcon {
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 3;
+    stroke: var(--ink-black);
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block;
+}
+
+.actionButton:hover .actionButtonIcon {
+    stroke: var(--paper-white);
+}
+
+.editInput {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--ink-black);
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+}

@@ -78,9 +78,19 @@ export async function signInWithEmail(email: string, password: string) {
         return { error: error.message }
     }
 
-    // Record activity on login
+    // Check onboarding status
     if (data.user) {
         await supabase.rpc('record_user_activity', { p_user_id: data.user.id })
+
+        const { data: profile } = await supabase
+            .from('user_profiles')
+            .select('onboarding_completed')
+            .eq('id', data.user.id)
+            .single()
+
+        if (!profile || !profile.onboarding_completed) {
+            redirect("/onboarding")
+        }
     }
 
     redirect("/dashboard")

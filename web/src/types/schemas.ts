@@ -7,6 +7,7 @@ export const vocabularySchema = z.object({
     context_sentence: z.string().optional(),
     difficulty_rating: z.number().min(1).max(5).default(1),
     tags: z.array(z.string()).default([]),
+    synonyms: z.array(z.string()).default([]),
 })
 
 export type Vocabulary = z.infer<typeof vocabularySchema> & {

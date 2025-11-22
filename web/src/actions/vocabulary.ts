@@ -27,9 +27,31 @@ export async function addVocabulary(formData: unknown) {
     }
 
     const supabase = await createClient()
+
+    // Get current user
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) {
+        return { error: "Unauthorized" }
+    }
+
+    // Check for duplicates
+    const { data: existing } = await supabase
+        .from('vocabulary')
+        .select('id')
+        .eq('user_id', user.id)
+        .ilike('term', result.data.term)
+        .single()
+
+    if (existing) {
+        return { error: `The word "${result.data.term}" already exists in your vocabulary.` }
+    }
+
     const { error } = await supabase
         .from('vocabulary')
-        .insert(result.data)
+        .insert({
+            ...result.data,
+            user_id: user.id
+        })
 
     if (error) {
         console.error('Error adding vocabulary:', error)

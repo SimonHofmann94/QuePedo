@@ -18,7 +18,7 @@ export async function GET(request: Request) {
                 .eq("id", data.user.id)
                 .single()
 
-            if (profile && !profile.onboarding_completed) {
+            if (!profile || !profile.onboarding_completed) {
                 return NextResponse.redirect(new URL("/onboarding", request.url))
             }
 
