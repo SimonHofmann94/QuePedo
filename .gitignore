@@ -42,6 +42,7 @@ Thumbs.db
 # API Keys (sicherheitshalber)
 *.env
 .env
+.mcp.json
 
 # Logs
 *.log
