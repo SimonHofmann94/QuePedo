@@ -129,3 +129,31 @@ export async function deleteVocabulary(id: string) {
     revalidatePath('/vocabulary')
     return { success: true }
 }
+
+export async function deleteMultipleVocabulary(ids: string[]) {
+    if (!ids || ids.length === 0) {
+        return { error: "No items to delete" }
+    }
+
+    const supabase = await createClient()
+
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) {
+        return { error: "Unauthorized" }
+    }
+
+    const { error } = await supabase
+        .from('user_vocabulary')
+        .delete()
+        .in('id', ids)
+        .eq('user_id', user.id)
+
+    if (error) {
+        console.error('Error deleting vocabulary:', error)
+        return { error: "Failed to delete vocabulary" }
+    }
+
+    revalidatePath('/vocabulary')
+    revalidatePath('/vocabulary/browser')
+    return { success: true, deleted: ids.length }
+}

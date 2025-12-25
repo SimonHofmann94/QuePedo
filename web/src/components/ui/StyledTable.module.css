@@ -74,3 +74,19 @@
     background-color: #ff9966;
     box-shadow: 0 0 5px #ff9966;
 }
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #ff9966;
+    cursor: pointer;
+}
+
+.checkboxCell {
+    width: 50px;
+    text-align: center;
+}
+
+.selectedRow {
+    background-color: rgba(255, 153, 102, 0.1);
+}
