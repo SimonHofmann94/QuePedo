@@ -1,14 +1,21 @@
 'use server'
 
 import { createClient } from "@/utils/supabase/server"
-import { vocabularySchema } from "@/types/schemas"
+import { userVocabularySchema } from "@/types/schemas"
 import { revalidatePath } from "next/cache"
 
-export async function getVocabulary() {
+export async function getUserVocabulary() {
     const supabase = await createClient()
+
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) {
+        return []
+    }
+
     const { data, error } = await supabase
-        .from('vocabulary')
+        .from('user_vocabulary')
         .select('*')
+        .eq('user_id', user.id)
         .order('created_at', { ascending: false })
 
     if (error) {
@@ -19,10 +26,14 @@ export async function getVocabulary() {
     return data
 }
 
-export async function addVocabulary(formData: unknown) {
-    const result = vocabularySchema.safeParse(formData)
+// Backwards compatibility
+export const getVocabulary = getUserVocabulary
+
+export async function addVocabulary(formData: unknown, source: 'manual' | 'ai_generated' = 'manual', aiPrompt?: string) {
+    const result = userVocabularySchema.safeParse(formData)
 
     if (!result.success) {
+        console.error('Validation error:', result.error)
         return { error: "Invalid data" }
     }
 
@@ -36,7 +47,7 @@ export async function addVocabulary(formData: unknown) {
 
     // Check for duplicates
     const { data: existing } = await supabase
-        .from('vocabulary')
+        .from('user_vocabulary')
         .select('id')
         .eq('user_id', user.id)
         .ilike('term', result.data.term)
@@ -47,10 +58,12 @@ export async function addVocabulary(formData: unknown) {
     }
 
     const { error } = await supabase
-        .from('vocabulary')
+        .from('user_vocabulary')
         .insert({
             ...result.data,
-            user_id: user.id
+            user_id: user.id,
+            source,
+            ai_prompt: aiPrompt,
         })
 
     if (error) {
@@ -62,12 +75,51 @@ export async function addVocabulary(formData: unknown) {
     return { success: true }
 }
 
+export async function updateVocabulary(id: string, formData: unknown) {
+    const result = userVocabularySchema.partial().safeParse(formData)
+
+    if (!result.success) {
+        return { error: "Invalid data" }
+    }
+
+    const supabase = await createClient()
+
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) {
+        return { error: "Unauthorized" }
+    }
+
+    const { error } = await supabase
+        .from('user_vocabulary')
+        .update({
+            ...result.data,
+            updated_at: new Date().toISOString(),
+        })
+        .eq('id', id)
+        .eq('user_id', user.id)
+
+    if (error) {
+        console.error('Error updating vocabulary:', error)
+        return { error: "Failed to update vocabulary" }
+    }
+
+    revalidatePath('/vocabulary')
+    return { success: true }
+}
+
 export async function deleteVocabulary(id: string) {
     const supabase = await createClient()
+
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) {
+        return { error: "Unauthorized" }
+    }
+
     const { error } = await supabase
-        .from('vocabulary')
+        .from('user_vocabulary')
         .delete()
         .eq('id', id)
+        .eq('user_id', user.id)
 
     if (error) {
         console.error('Error deleting vocabulary:', error)

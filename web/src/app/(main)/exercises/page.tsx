@@ -1,5 +1,6 @@
 "use client"
 
+import { useRouter } from "next/navigation"
 import { ActionCard } from "@/components/features/vocabulary/ActionCard"
 import {
     BrainCircuit,
@@ -11,13 +12,15 @@ import {
 } from "lucide-react"
 
 export default function ExercisesPage() {
+    const router = useRouter()
+
     const exercises = [
         {
             title: "Vocabulary Quiz",
-            description: "Test your knowledge with flashcards and multiple choice questions.",
+            description: "Test your knowledge with flashcards and swipe through cards.",
             icon: <BrainCircuit className="h-8 w-8 text-white" />,
             badge: "Practice",
-            onClick: () => console.log("Vocabulary Quiz clicked")
+            onClick: () => router.push('/exercises/quiz')
         },
         {
             title: "Writing Exercise",

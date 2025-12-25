@@ -1,20 +1,53 @@
 import { z } from "zod"
 
-export const vocabularySchema = z.object({
+// User vocabulary schema (personal words)
+export const userVocabularySchema = z.object({
     id: z.string().uuid().optional(),
     term: z.string().min(1, "Term is required"),
-    translation: z.string().min(1, "Translation is required"),
+    translations: z.record(z.string()).default({}), // { "de": "...", "en": "..." }
     context_sentence: z.string().optional(),
     difficulty_rating: z.number().min(1).max(5).default(1),
     tags: z.array(z.string()).default([]),
     synonyms: z.array(z.string()).default([]),
+    source: z.enum(["manual", "ai_generated"]).default("manual"),
+    ai_prompt: z.string().optional(),
+    notes: z.string().optional(),
 })
 
-export type Vocabulary = z.infer<typeof vocabularySchema> & {
+export type UserVocabulary = z.infer<typeof userVocabularySchema> & {
     id: string
     user_id: string
     created_at: string
+    updated_at: string
 }
+
+// Master vocabulary schema (curated content)
+export const masterVocabularySchema = z.object({
+    id: z.string().uuid().optional(),
+    term: z.string().min(1, "Term is required"),
+    translations: z.record(z.string()).default({}),
+    context_sentence: z.string().optional(),
+    context_translations: z.record(z.string()).optional(),
+    part_of_speech: z.enum(["noun", "verb", "adjective", "adverb", "phrase", "preposition", "conjunction", "pronoun", "interjection"]).optional(),
+    level: z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]),
+    category: z.string().optional(),
+    difficulty_rating: z.number().min(1).max(5).default(1),
+    synonyms: z.array(z.string()).default([]),
+    gender: z.enum(["m", "f"]).optional(),
+    conjugation_group: z.enum(["-ar", "-er", "-ir", "irregular"]).optional(),
+    audio_url: z.string().optional(),
+    image_url: z.string().optional(),
+})
+
+export type MasterVocabulary = z.infer<typeof masterVocabularySchema> & {
+    id: string
+    created_at: string
+    updated_at: string
+}
+
+// Backwards compatibility alias
+export const vocabularySchema = userVocabularySchema
+export type Vocabulary = UserVocabulary
 
 export const aiGeneratorSchema = z.object({
     topic: z.string().min(1, "Topic is required"),

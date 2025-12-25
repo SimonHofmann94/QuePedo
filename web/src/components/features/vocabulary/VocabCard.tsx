@@ -1,6 +1,6 @@
 'use client'
 
-import { Vocabulary } from "@/types/schemas"
+import { UserVocabulary } from "@/types/schemas"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -9,7 +9,16 @@ import { deleteVocabulary } from "@/actions/vocabulary"
 import { useState } from "react"
 
 interface VocabCardProps {
-    item: Vocabulary
+    item: UserVocabulary
+}
+
+// Helper to get the first available translation
+function getDisplayTranslation(translations: Record<string, string>): string {
+    if (!translations || typeof translations !== 'object') return '';
+    if (translations.de) return translations.de;
+    if (translations.en) return translations.en;
+    const keys = Object.keys(translations);
+    return keys.length > 0 ? translations[keys[0]] : '';
 }
 
 export function VocabCard({ item }: VocabCardProps) {
@@ -30,7 +39,7 @@ export function VocabCard({ item }: VocabCardProps) {
                 </Badge>
             </CardHeader>
             <CardContent>
-                <p className="text-sm text-muted-foreground">{item.translation}</p>
+                <p className="text-sm text-muted-foreground">{getDisplayTranslation(item.translations)}</p>
                 {item.context_sentence && (
                     <p className="mt-2 text-xs italic">"{item.context_sentence}"</p>
                 )}

@@ -8,23 +8,31 @@ import { Plus, Sparkles, Coins } from "lucide-react"
 import { ActionCard } from "@/components/features/vocabulary/ActionCard"
 import { StyledSearch } from "@/components/ui/StyledSearch"
 import { StyledTable } from "@/components/ui/StyledTable"
-import { getVocabulary } from "@/actions/vocabulary"
-import { Vocabulary } from "@/types/schemas"
+import { getUserVocabulary } from "@/actions/vocabulary"
+import { UserVocabulary } from "@/types/schemas"
+
+// Helper to search within translations object
+function translationsMatch(translations: Record<string, string>, search: string): boolean {
+    if (!translations || typeof translations !== 'object') return false
+    return Object.values(translations).some(t =>
+        t.toLowerCase().includes(search.toLowerCase())
+    )
+}
 
 export default function VocabularyPage() {
     const [isAddOpen, setIsAddOpen] = useState(false)
     const [isAiOpen, setIsAiOpen] = useState(false)
     const [coins, setCoins] = useState(100) // Mock coins
-    const [vocab, setVocab] = useState<Vocabulary[]>([])
+    const [vocab, setVocab] = useState<UserVocabulary[]>([])
     const [search, setSearch] = useState("")
 
     useEffect(() => {
-        getVocabulary().then(setVocab)
+        getUserVocabulary().then(setVocab)
     }, [])
 
     const filteredVocab = vocab.filter(item =>
         item.term.toLowerCase().includes(search.toLowerCase()) ||
-        item.translation.toLowerCase().includes(search.toLowerCase()) ||
+        translationsMatch(item.translations, search) ||
         item.synonyms?.some(s => s.toLowerCase().includes(search.toLowerCase()))
     )
 
@@ -71,7 +79,7 @@ export default function VocabularyPage() {
                         </DialogHeader>
                         <AddVocabForm onSuccess={() => {
                             setIsAddOpen(false)
-                            getVocabulary().then(setVocab)
+                            getUserVocabulary().then(setVocab)
                         }} />
                     </DialogContent>
                 </Dialog>
@@ -93,7 +101,7 @@ export default function VocabularyPage() {
                         </DialogHeader>
                         <AIGenerator onSuccess={() => {
                             setIsAiOpen(false)
-                            getVocabulary().then(setVocab)
+                            getUserVocabulary().then(setVocab)
                         }} />
                     </DialogContent>
                 </Dialog>

@@ -6,6 +6,16 @@ interface StyledTableProps {
     data: Vocabulary[];
 }
 
+// Helper to get the first available translation
+function getDisplayTranslation(translations: Record<string, string>): string {
+    if (!translations || typeof translations !== 'object') return '';
+    // Prefer German, then English, then first available
+    if (translations.de) return translations.de;
+    if (translations.en) return translations.en;
+    const keys = Object.keys(translations);
+    return keys.length > 0 ? translations[keys[0]] : '';
+}
+
 export function StyledTable({ data }: StyledTableProps) {
     if (data.length === 0) {
         return (
@@ -33,7 +43,7 @@ export function StyledTable({ data }: StyledTableProps) {
                             <td className={styles.td}>
                                 <span className="font-bold text-white">{item.term}</span>
                             </td>
-                            <td className={styles.td}>{item.translation}</td>
+                            <td className={styles.td}>{getDisplayTranslation(item.translations)}</td>
                             <td className={styles.td}>
                                 {item.synonyms?.map((syn, i) => (
                                     <span key={i} className={styles.tag}>

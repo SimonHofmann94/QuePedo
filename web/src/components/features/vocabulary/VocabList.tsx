@@ -1,22 +1,30 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import { getVocabulary } from "@/actions/vocabulary"
+import { getUserVocabulary } from "@/actions/vocabulary"
 import { VocabCard } from "./VocabCard"
 import { Input } from "@/components/ui/input"
-import { Vocabulary } from "@/types/schemas"
+import { UserVocabulary } from "@/types/schemas"
+
+// Helper to search within translations object
+function translationsMatch(translations: Record<string, string>, search: string): boolean {
+    if (!translations || typeof translations !== 'object') return false
+    return Object.values(translations).some(t =>
+        t.toLowerCase().includes(search.toLowerCase())
+    )
+}
 
 export function VocabList() {
-    const [vocab, setVocab] = useState<Vocabulary[]>([])
+    const [vocab, setVocab] = useState<UserVocabulary[]>([])
     const [search, setSearch] = useState("")
 
     useEffect(() => {
-        getVocabulary().then(setVocab)
+        getUserVocabulary().then(setVocab)
     }, [])
 
     const filteredVocab = vocab.filter(item =>
         item.term.toLowerCase().includes(search.toLowerCase()) ||
-        item.translation.toLowerCase().includes(search.toLowerCase())
+        translationsMatch(item.translations, search)
     )
 
     return (

@@ -2,37 +2,57 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai"
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "")
-
 export async function generateVocabulary(userPrompt: string, count: number = 5) {
-    if (!process.env.GEMINI_API_KEY) {
-        console.error("GEMINI_API_KEY is not set")
+    const apiKey = process.env.GEMINI_API_KEY
+
+    if (!apiKey) {
+        console.error("GEMINI_API_KEY is not set in environment")
         throw new Error("API key not configured")
     }
 
+    console.log("API Key present:", apiKey.substring(0, 8) + "..." + apiKey.substring(apiKey.length - 4))
+
     try {
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+        // Initialize client inside function to ensure env is loaded
+        const genAI = new GoogleGenerativeAI(apiKey)
+        const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" })
 
         const prompt = `
         Analyze the language of the user request: "${userPrompt}".
         Generate ${count} Spanish vocabulary words based on the request.
-        
+
+        IMPORTANT: Detect the language of the user's request (e.g., German, English, French).
+        Use the ISO 639-1 language code (de, en, fr, etc.) for the translations object.
+
         Return ONLY a JSON array with objects containing:
-        - term (Spanish word)
-        - translation (Translation of the term into the language of the user request. If the request is in German, translate to German. If English, to English, etc.)
+        - term (Spanish word/phrase)
+        - translations (Object with language codes as keys, e.g., {"de": "Die Katze", "en": "The cat"})
+          Always include the detected language. Include English too if the request wasn't in English.
         - context_sentence (A simple Spanish sentence using the word)
         - difficulty_rating (1-5 integer based on complexity)
-        - tags (Array of strings relevant to the word)
-        - synonyms (Array of Spanish synonyms, empty if none)
-        
-        Example format:
+        - tags (Array of strings relevant to the word, in English)
+        - synonyms (Array of Spanish synonyms, empty array if none)
+
+        Example format for a German request:
         [
           {
-            "term": "El gato",
-            "translation": "The cat", // or "Die Katze" if request was German
-            "context_sentence": "El gato duerme.",
+            "term": "el gato",
+            "translations": {"de": "die Katze", "en": "the cat"},
+            "context_sentence": "El gato duerme en el sofá.",
             "difficulty_rating": 1,
-            "tags": ["animals", "pets"],
+            "tags": ["animals", "pets", "nouns"],
+            "synonyms": ["minino"]
+          }
+        ]
+
+        Example format for an English request:
+        [
+          {
+            "term": "el gato",
+            "translations": {"en": "the cat"},
+            "context_sentence": "El gato duerme en el sofá.",
+            "difficulty_rating": 1,
+            "tags": ["animals", "pets", "nouns"],
             "synonyms": ["minino"]
           }
         ]
@@ -48,6 +68,10 @@ export async function generateVocabulary(userPrompt: string, count: number = 5) 
         return JSON.parse(jsonStr)
     } catch (error) {
         console.error("Error generating vocabulary:", error)
-        throw new Error("Failed to generate vocabulary")
+        // Provide more detailed error info
+        if (error instanceof Error) {
+            throw new Error(`Failed to generate vocabulary: ${error.message}`)
+        }
+        throw new Error("Failed to generate vocabulary: Unknown error")
     }
 }
