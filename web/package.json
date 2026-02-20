@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@chingon/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@chingon/shared": "*",
     "@amcharts/amcharts5": "^5.14.4",
     "@amcharts/amcharts5-geodata": "^5.1.5",
     "@google/generative-ai": "^0.24.1",

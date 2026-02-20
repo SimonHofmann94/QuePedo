@@ -12,6 +12,7 @@ eggs/
 .eggs/
 lib/
 !web/src/lib/
+!mobile/lib/
 lib64/
 parts/
 sdist/
@@ -50,3 +51,4 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+.agent/
