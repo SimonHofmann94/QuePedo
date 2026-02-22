@@ -1,6 +1,6 @@
 import { View, StyleSheet } from 'react-native'
 import { Tabs } from 'expo-router'
-import { LayoutDashboard, Book, Dumbbell, Globe, User } from 'lucide-react-native'
+import { LayoutDashboard, Book, Dumbbell, BookOpenText, Globe, User } from 'lucide-react-native'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 
 export default function TabLayout() {
@@ -44,6 +44,18 @@ export default function TabLayout() {
         options={{
           title: 'Exercises',
           tabBarIcon: ({ color, size }) => <Dumbbell size={size} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="grammar"
+        options={{
+          title: 'Grammar',
+          tabBarIcon: ({ color, size }) => (
+            <View>
+              <BookOpenText size={size} color={color} />
+              {!isPremium && <View style={tabStyles.lockDot} />}
+            </View>
+          ),
         }}
       />
       <Tabs.Screen
