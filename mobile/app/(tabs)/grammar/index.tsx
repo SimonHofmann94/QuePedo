@@ -8,11 +8,11 @@ import { useSubscription } from '@/contexts/SubscriptionContext'
 
 const GRAMMAR_LEVELS = [
   { level: 'A1', title: 'Beginner', chapters: 10, unlocked: true },
-  { level: 'A2', title: 'Elementary', chapters: 0, unlocked: false },
-  { level: 'B1', title: 'Intermediate', chapters: 0, unlocked: false },
-  { level: 'B2', title: 'Upper Intermediate', chapters: 0, unlocked: false },
-  { level: 'C1', title: 'Advanced', chapters: 0, unlocked: false },
-  { level: 'C2', title: 'Mastery', chapters: 0, unlocked: false },
+  { level: 'A2', title: 'Elementary', chapters: 14, unlocked: true },
+  { level: 'B1', title: 'Intermediate', chapters: 20, unlocked: true },
+  { level: 'B2', title: 'Upper Intermediate', chapters: 10, unlocked: true },
+  { level: 'C1', title: 'Advanced', chapters: 12, unlocked: true },
+  { level: 'C2', title: 'Mastery', chapters: 12, unlocked: true },
 ]
 
 export default function GrammarScreen() {
@@ -58,11 +58,7 @@ export default function GrammarScreen() {
               <Text style={[styles.levelTitle, !level.unlocked && styles.lockedText]}>
                 {level.title}
               </Text>
-              {level.unlocked ? (
-                <Text style={styles.chapterCount}>{level.chapters} chapters</Text>
-              ) : (
-                <Text style={styles.lockedLabel}>Coming soon</Text>
-              )}
+              <Text style={styles.chapterCount}>{level.chapters} chapters</Text>
             </Card>
           </TouchableOpacity>
         ))}
@@ -133,9 +129,5 @@ const styles = StyleSheet.create({
   chapterCount: {
     fontSize: 13,
     color: '#78716C',
-  },
-  lockedLabel: {
-    fontSize: 13,
-    color: '#A8A29E',
   },
 })

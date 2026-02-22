@@ -7,13 +7,28 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { grammarA1 } from '@/data/grammar/a1'
+import { grammarA2 } from '@/data/grammar/a2'
+import { grammarB1 } from '@/data/grammar/b1'
+import { grammarB2 } from '@/data/grammar/b2'
+import { grammarC1 } from '@/data/grammar/c1'
+import { grammarC2 } from '@/data/grammar/c2'
 
 const LEVEL_DATA: Record<string, typeof grammarA1> = {
   a1: grammarA1,
+  a2: grammarA2,
+  b1: grammarB1,
+  b2: grammarB2,
+  c1: grammarC1,
+  c2: grammarC2,
 }
 
 const LEVEL_TITLES: Record<string, string> = {
   a1: 'A1 — Beginner',
+  a2: 'A2 — Elementary',
+  b1: 'B1 — Intermediate',
+  b2: 'B2 — Upper Intermediate',
+  c1: 'C1 — Advanced',
+  c2: 'C2 — Mastery',
 }
 
 export default function GrammarChaptersScreen() {

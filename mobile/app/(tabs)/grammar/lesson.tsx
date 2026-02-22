@@ -8,10 +8,20 @@ import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { grammarA1 } from '@/data/grammar/a1'
+import { grammarA2 } from '@/data/grammar/a2'
+import { grammarB1 } from '@/data/grammar/b1'
+import { grammarB2 } from '@/data/grammar/b2'
+import { grammarC1 } from '@/data/grammar/c1'
+import { grammarC2 } from '@/data/grammar/c2'
 import type { GrammarContentBlock, GrammarChapter } from '@/data/grammar/types'
 
 const LEVEL_DATA: Record<string, typeof grammarA1> = {
   a1: grammarA1,
+  a2: grammarA2,
+  b1: grammarB1,
+  b2: grammarB2,
+  c1: grammarC1,
+  c2: grammarC2,
 }
 
 function TextBlock({ content }: { content: string }) {
