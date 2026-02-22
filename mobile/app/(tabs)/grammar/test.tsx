@@ -73,11 +73,11 @@ export default function GrammarTestScreen() {
     if (question.type === 'multiple_choice') {
       answer = selectedOption || ''
       correct = answer === question.correctAnswer
-    } else {
+    } else if (question.type === 'fill_in_blank') {
       answer = userAnswer.trim()
       correct = checkAnswer(answer, question.correctAnswer)
       if (!correct && question.acceptableAnswers) {
-        correct = question.acceptableAnswers.some((a) => checkAnswer(answer, a))
+        correct = question.acceptableAnswers.some((a: string) => checkAnswer(answer, a))
       }
     }
 
@@ -191,14 +191,14 @@ export default function GrammarTestScreen() {
             <Card key={i} style={{ ...styles.resultItem, ...(r.correct ? styles.resultItemCorrect : styles.resultItemWrong) }}>
               <Text style={styles.resultItemLabel}>Question {i + 1}</Text>
               <Text style={styles.resultItemPrompt}>
-                {r.question.type === 'multiple_choice' ? r.question.prompt : r.question.sentenceWithBlank}
+                {r.question.type === 'multiple_choice' ? r.question.prompt : r.question.type === 'fill_in_blank' ? r.question.sentenceWithBlank : ''}
               </Text>
               <Text style={[styles.resultItemAnswer, { color: r.correct ? '#22C55E' : '#EF4444' }]}>
                 Your answer: {r.userAnswer || '(empty)'}
               </Text>
               {!r.correct && (
                 <Text style={styles.resultItemCorrectAnswer}>
-                  Correct: {r.question.correctAnswer}
+                  Correct: {'correctAnswer' in r.question ? r.question.correctAnswer : ''}
                 </Text>
               )}
             </Card>
@@ -299,7 +299,7 @@ export default function GrammarTestScreen() {
               </Text>
               {!isCorrect && (
                 <Text style={styles.feedbackDetail}>
-                  Correct answer: <Text style={{ color: '#22C55E', fontWeight: '600' }}>{question.correctAnswer}</Text>
+                  Correct answer: <Text style={{ color: '#22C55E', fontWeight: '600' }}>{'correctAnswer' in question ? question.correctAnswer : ''}</Text>
                 </Text>
               )}
               {question.explanation && (

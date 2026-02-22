@@ -15,7 +15,7 @@ export default function ExercisesScreen() {
     { title: 'Writing Exercise', desc: 'Practice writing with AI feedback.', icon: PenTool, badge: 'AI Feedback', locked: !isPremium, onPress: () => {} },
     { title: 'Speaking Exercise', desc: 'Improve pronunciation.', icon: Mic, badge: 'Interactive', locked: !isPremium, onPress: () => {} },
     { title: 'Listening Exercise', desc: 'Train your ear with audio.', icon: Headphones, badge: 'Audio', locked: !isPremium, onPress: () => {} },
-    { title: 'Grammar Exercise', desc: 'Master grammar rules.', icon: BookOpen, badge: 'Core', locked: !isPremium, onPress: () => {} },
+    { title: 'Grammar Exercise', desc: 'Master grammar rules.', icon: BookOpen, badge: 'Core', locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/grammar') },
     { title: 'Games', desc: 'Learn while having fun.', icon: Gamepad2, badge: 'Fun', locked: !isPremium, onPress: () => {} },
   ]
 

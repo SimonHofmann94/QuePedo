@@ -15,7 +15,28 @@ export interface FillInBlankQuestion {
   explanation?: string
 }
 
-export type GrammarQuestion = MultipleChoiceQuestion | FillInBlankQuestion
+export interface SentenceReorderQuestion {
+  type: 'sentence_reorder'
+  correctSentence: string
+  shuffledWords: string[]
+  hint?: string
+  explanation?: string
+}
+
+export interface ErrorCorrectionQuestion {
+  type: 'error_correction'
+  sentenceWithError: string
+  errorWord: string
+  correctedWord: string
+  acceptableCorrections?: string[]
+  explanation?: string
+}
+
+export type GrammarQuestion =
+  | MultipleChoiceQuestion
+  | FillInBlankQuestion
+  | SentenceReorderQuestion
+  | ErrorCorrectionQuestion
 
 export interface GrammarTestResult {
   question: GrammarQuestion
