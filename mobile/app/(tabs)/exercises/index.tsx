@@ -13,7 +13,7 @@ export default function ExercisesScreen() {
   const exercises = [
     { title: 'Vocabulary Quiz', desc: 'Test your knowledge with flashcards.', icon: BrainCircuit, badge: 'Practice', locked: false, onPress: () => router.push('/(tabs)/exercises/quiz') },
     { title: 'Writing Exercise', desc: 'Practice writing with AI feedback.', icon: PenTool, badge: 'AI Feedback', locked: !isPremium, onPress: () => {} },
-    { title: 'Speaking Exercise', desc: 'Improve pronunciation.', icon: Mic, badge: 'Interactive', locked: !isPremium, onPress: () => {} },
+    { title: 'Speaking Exercise', desc: 'Improve pronunciation.', icon: Mic, badge: 'Interactive', locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/speaking') },
     { title: 'Listening Exercise', desc: 'Train your ear with audio.', icon: Headphones, badge: 'Audio', locked: !isPremium, onPress: () => {} },
     { title: 'Grammar Exercise', desc: 'Master grammar rules.', icon: BookOpen, badge: 'Core', locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/grammar') },
     { title: 'Games', desc: 'Learn while having fun.', icon: Gamepad2, badge: 'Fun', locked: !isPremium, onPress: () => {} },

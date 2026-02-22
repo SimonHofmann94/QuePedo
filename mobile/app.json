@@ -34,7 +34,13 @@
     "plugins": [
       "expo-router",
       "expo-secure-store",
-      "react-native-purchases"
+      [
+        "@jamsch/expo-speech-recognition",
+        {
+          "microphonePermission": "QuePedo needs access to your microphone for speaking exercises.",
+          "speechRecognitionPermission": "QuePedo needs access to speech recognition for speaking exercises."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
