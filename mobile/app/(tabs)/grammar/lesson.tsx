@@ -13,6 +13,7 @@ import { grammarB1 } from '@/data/grammar/b1'
 import { grammarB2 } from '@/data/grammar/b2'
 import { grammarC1 } from '@/data/grammar/c1'
 import { grammarC2 } from '@/data/grammar/c2'
+import { getChapterExercises } from '@/data/grammar/exercises'
 import type { GrammarContentBlock, GrammarChapter } from '@/data/grammar/types'
 
 const LEVEL_DATA: Record<string, typeof grammarA1> = {
@@ -178,8 +179,9 @@ export default function GrammarLessonScreen() {
 
         <View style={styles.bottomActions}>
           <Button
-            onPress={() => Alert.alert('Coming Soon', 'Tests will be available in a future update.')}
+            onPress={() => router.push({ pathname: '/(tabs)/grammar/test', params: { level, chapter: String(chapterId) } })}
             variant="outline"
+            disabled={!getChapterExercises(level || '', chapterId)}
           >
             Start Test
           </Button>
