@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { View, Text, Modal, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native'
+import { View, Text, Modal, StyleSheet, ScrollView, TouchableOpacity, ActivityIndicator, Alert } from 'react-native'
 import { X, Check, AlertCircle } from 'lucide-react-native'
 import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
 import { TacoBalance } from '@/components/ui/TacoBalance'
-import { generateVocabulary } from '@/services/ai'
+import { generateVocabulary, AIGenerationError } from '@/services/ai'
 import { addVocabulary } from '@/services/vocabulary'
 import { getDisplayTranslation } from '@chingon/shared'
 import { useSubscription } from '@/contexts/SubscriptionContext'
@@ -50,10 +50,17 @@ export function AIGeneratorModal({ visible, onClose, onSuccess }: Props) {
       setGeneratedWords(words)
       await refreshTacoBalance()
     } catch (error: any) {
-      if (error?.message === 'NO_TACOS') {
-        presentPaywall()
+      if (error instanceof AIGenerationError) {
+        if (error.code === 'NO_TACOS') {
+          presentPaywall()
+        } else {
+          Alert.alert(
+            'Generation Failed',
+            `${error.message}${error.details ? `\n\nDetails: ${error.details}` : ''}\n\nError code: ${error.code}`
+          )
+        }
       } else {
-        alert('Failed to generate vocabulary')
+        Alert.alert('Generation Failed', 'An unexpected error occurred. Please try again.')
       }
     } finally {
       setIsLoading(false)
