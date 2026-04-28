@@ -74,6 +74,39 @@ function bucketize(words) {
   return buckets
 }
 
+// Models to try in order — fall back if one is overloaded.
+// flash-lite first: simple translation needs no reasoning, it's cheaper,
+// and typically far less rate-limited than the flagship 2.5-flash.
+// Verified Apr 2026: 2.0-flash and 1.5-flash are deprecated → removed.
+const MODELS = [
+  'gemini-2.5-flash-lite',
+  'gemini-2.5-flash',
+  'gemini-3-flash-preview',
+]
+
+async function callGemini(prompt, apiKey, model) {
+  const r = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { temperature: 0.1, responseMimeType: 'application/json' },
+      }),
+    },
+  )
+  if (!r.ok) {
+    const errText = await r.text()
+    const err = new Error(`Gemini ${r.status}: ${errText.slice(0, 200)}`)
+    err.status = r.status
+    throw err
+  }
+  return r.json()
+}
+
+const RETRYABLE = new Set([429, 500, 502, 503, 504])
+
 async function translateBatch(batch, apiKey) {
   const items = batch.map((w) => `${w.es} (${w.pos})`).join('\n')
   const prompt = `You are a Spanish-to-German translation assistant. Translate each lemma to German.
@@ -86,34 +119,41 @@ ${items}
 
 Return ONLY the JSON array, no markdown, no explanation.`
 
-  const r = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { temperature: 0.1, responseMimeType: 'application/json' },
-      }),
-    },
-  )
-  if (!r.ok) {
-    const errText = await r.text()
-    throw new Error(`Gemini ${r.status}: ${errText.slice(0, 200)}`)
+  let lastErr
+  for (const model of MODELS) {
+    // Try each model with up to 4 retries (exp. backoff: 2s, 5s, 12s, 30s)
+    const delays = [2000, 5000, 12000, 30000]
+    for (let attempt = 0; attempt <= delays.length; attempt++) {
+      try {
+        const data = await callGemini(prompt, apiKey, model)
+        const raw = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '[]'
+        const parsed = JSON.parse(raw)
+        if (!Array.isArray(parsed) || parsed.length !== batch.length) {
+          throw new Error(`Bad shape: expected ${batch.length}, got ${parsed?.length}`)
+        }
+        return batch.map((w, i) => ({
+          es: w.es,
+          de: parsed[i].de,
+          en: parsed[i].en,
+          pos: w.pos,
+          rank: w.rank,
+        }))
+      } catch (e) {
+        lastErr = e
+        // Only retry on transient errors
+        if (!e.status || !RETRYABLE.has(e.status)) {
+          // Fatal for this model (4xx other than 429), try next model
+          break
+        }
+        if (attempt === delays.length) break
+        const wait = delays[attempt]
+        process.stdout.write(` [${model} ${e.status} retry in ${wait / 1000}s]`)
+        await new Promise((r) => setTimeout(r, wait))
+      }
+    }
+    process.stdout.write(` [${model} failed → next]`)
   }
-  const data = await r.json()
-  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '[]'
-  const parsed = JSON.parse(raw)
-  if (!Array.isArray(parsed) || parsed.length !== batch.length) {
-    throw new Error(`Bad response shape: expected ${batch.length}, got ${parsed?.length}`)
-  }
-  return batch.map((w, i) => ({
-    es: w.es,
-    de: parsed[i].de,
-    en: parsed[i].en,
-    pos: w.pos,
-    rank: w.rank,
-  }))
+  throw lastErr ?? new Error('All models exhausted')
 }
 
 async function buildLevel(level, words, apiKey, dryRun) {
@@ -127,31 +167,52 @@ async function buildLevel(level, words, apiKey, dryRun) {
     return
   }
   const BATCH = 50
-  const out = []
-  for (let i = 0; i < words.length; i += BATCH) {
-    const batch = words.slice(i, i + BATCH)
-    process.stdout.write(`  Batch ${i / BATCH + 1}/${Math.ceil(words.length / BATCH)} (${batch.length} words)…`)
+  const file = path.join(VOCAB_DIR, `${level}.json`)
+
+  // Resume: load existing translations, skip words already done
+  let existing = []
+  try {
+    const prev = JSON.parse(await fs.readFile(file, 'utf8'))
+    existing = Array.isArray(prev?.words) ? prev.words : []
+  } catch {}
+  const doneRanks = new Set(existing.map((w) => w.rank))
+  const remaining = words.filter((w) => !doneRanks.has(w.rank))
+  if (existing.length > 0) {
+    console.log(`  Resuming: ${existing.length} already translated, ${remaining.length} remaining`)
+  }
+
+  const flush = async () => {
+    const all = [...existing].sort((a, b) => a.rank - b.rank)
+    const list = {
+      level: level.toUpperCase(),
+      title: BUCKETS[level].title,
+      source: 'doozan/spanish_data (CC-BY-4.0) + Gemini-translated',
+      generatedAt: new Date().toISOString().split('T')[0],
+      wordCount: all.length,
+      words: all,
+    }
+    await fs.writeFile(file, JSON.stringify(list, null, 2))
+  }
+
+  const totalBatches = Math.ceil(remaining.length / BATCH)
+  for (let i = 0; i < remaining.length; i += BATCH) {
+    const batch = remaining.slice(i, i + BATCH)
+    process.stdout.write(`  Batch ${i / BATCH + 1}/${totalBatches} (${batch.length} words)…`)
     try {
       const translated = await translateBatch(batch, apiKey)
-      out.push(...translated)
+      existing.push(...translated)
       process.stdout.write(' ✓\n')
+      // Save after every batch so we can resume cleanly
+      await flush()
     } catch (e) {
-      process.stdout.write(` ✗ ${e.message}\n`)
+      process.stdout.write(` ✗ ${e.message}\n  (Skipping this batch — re-run the script to retry.)\n`)
     }
     // Small delay to be nice to the API
     await new Promise((r) => setTimeout(r, 500))
   }
-  const list = {
-    level: level.toUpperCase(),
-    title: BUCKETS[level].title,
-    source: 'doozan/spanish_data (CC-BY-4.0) + Gemini-translated',
-    generatedAt: new Date().toISOString().split('T')[0],
-    wordCount: out.length,
-    words: out,
-  }
-  const file = path.join(VOCAB_DIR, `${level}.json`)
-  await fs.writeFile(file, JSON.stringify(list, null, 2))
-  console.log(`✓ Wrote ${file} (${out.length} words)`)
+
+  await flush()
+  console.log(`✓ Wrote ${file} (${existing.length} words total)`)
 }
 
 async function main() {
