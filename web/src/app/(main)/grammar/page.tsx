@@ -1,10 +1,9 @@
-"use client"
-
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { ProgressBar } from "@/components/ui/progress"
 import { LockIcon } from "@/components/ui/icons"
 import { TalaveraTile } from "@/components/ui/motifs"
+import { isFreeGrammarLevel, isUserPremium } from "@/lib/premium"
 
 const LEVELS = [
   { code: "A1", label: "Principiante", desc: "Saludos, verbos regulares, pronombres", progress: 100, state: "done",      color: "var(--chili-500)" },
@@ -19,8 +18,9 @@ const LEVEL_BADGE = {
   A1: "chili", A2: "jade", B1: "cielo", B2: "maiz", C1: "jacaranda", C2: "rosa",
 } as const
 
-export default function GrammarPage() {
+export default async function GrammarPage() {
   const userLevel = "A2"
+  const premium = await isUserPremium()
 
   return (
     <div className="p-6 md:p-10">
@@ -50,6 +50,7 @@ export default function GrammarPage() {
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {LEVELS.map((l) => {
+            const isPremiumOnly = !isFreeGrammarLevel(l.code) && !premium
             const locked = false
             const current = l.state === "current"
             const done = l.state === "done"
@@ -85,6 +86,11 @@ export default function GrammarPage() {
                   {current && (
                     <Badge color="maiz" variant="solid" size="sm">
                       ⚡ Ahora
+                    </Badge>
+                  )}
+                  {isPremiumOnly && (
+                    <Badge color="maiz" variant="solid" size="sm">
+                      <LockIcon size={11} /> Premium
                     </Badge>
                   )}
                 </div>

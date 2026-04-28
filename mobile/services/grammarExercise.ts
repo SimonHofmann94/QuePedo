@@ -5,8 +5,9 @@ import { grammarB1 } from '@chingon/shared'
 import { grammarB2 } from '@chingon/shared'
 import { grammarC1 } from '@chingon/shared'
 import { grammarC2 } from '@chingon/shared'
-import type { GrammarLevel, GrammarChapter } from '@chingon/shared'
+import type { GrammarLevel } from '@chingon/shared'
 import type { GrammarQuestion } from '@chingon/shared'
+import { serializeChapterContent } from '@chingon/shared'
 
 const LEVEL_DATA: Record<string, GrammarLevel> = {
   a1: grammarA1,
@@ -38,37 +39,7 @@ export class GrammarExerciseError extends Error {
   }
 }
 
-function serializeChapterContent(chapter: GrammarChapter): string {
-  const parts: string[] = [`Chapter: ${chapter.title}`]
-
-  for (const section of chapter.sections) {
-    parts.push(`\n## ${section.title}`)
-    for (const block of section.blocks) {
-      switch (block.type) {
-        case 'text':
-          if (block.content) parts.push(block.content)
-          break
-        case 'rules':
-          if (block.items) parts.push(block.items.map((r) => `- ${r}`).join('\n'))
-          break
-        case 'examples':
-          if (block.examples) {
-            parts.push(block.examples.map((e) => `${e.es} — ${e.en}`).join('\n'))
-          }
-          break
-        case 'table':
-          if (block.headers && block.rows) {
-            parts.push(block.headers.join(' | '))
-            parts.push(block.rows.map((r) => r.join(' | ')).join('\n'))
-          }
-          break
-      }
-    }
-  }
-
-  const full = parts.join('\n')
-  return full.length > 2000 ? full.slice(0, 2000) + '...' : full
-}
+// serializeChapterContent now lives in @chingon/shared/grammar/serialize.
 
 /**
  * Select a diverse mix of exercises from a pool.

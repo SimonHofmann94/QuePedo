@@ -1,11 +1,12 @@
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { notFound, redirect } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { getChapter, getChapterExercises } from "@chingon/shared"
 import type { GrammarContentBlock } from "@chingon/shared"
 import { ChapterExercises } from "./ChapterExercises"
+import { isFreeGrammarLevel, isUserPremium } from "@/lib/premium"
 
 const LEVEL_COLOR: Record<string, "chili" | "rosa" | "jade" | "cielo" | "maiz" | "jacaranda"> = {
   a1: "chili", a2: "jade", b1: "cielo", b2: "maiz", c1: "jacaranda", c2: "rosa",
@@ -22,6 +23,12 @@ export default async function GrammarChapterPage({
 
   const data = getChapter(level, chapterId)
   if (!data) notFound()
+
+  // Premium gate — redirect to level page (which renders the lock card)
+  if (!isFreeGrammarLevel(level)) {
+    const premium = await isUserPremium()
+    if (!premium) redirect(`/grammar/${level.toLowerCase()}`)
+  }
 
   const exercises = getChapterExercises(level, chapterId) ?? []
   const family = LEVEL_COLOR[level.toLowerCase()] ?? "chili"
@@ -79,10 +86,14 @@ export default async function GrammarChapterPage({
           <div className="mt-12 rounded-[20px] border-2 border-dashed border-ink-200 bg-card p-8 text-center">
             <div className="text-3xl">🌶</div>
             <div className="mt-3 font-display text-lg font-bold text-ink-800">
-              Ejercicios próximamente
+              Cocinando los ejercicios…
             </div>
             <div className="mt-1 text-sm text-ink-500">
-              Para este capítulo todavía no hay ejercicios offline. Vuelve pronto.
+              Este capítulo aún no se ha generado. Corre{" "}
+              <code className="rounded bg-ink-100 px-1 font-mono text-[12px]">
+                npm run build:grammar-exercises
+              </code>{" "}
+              y vuelve.
             </div>
           </div>
         )}

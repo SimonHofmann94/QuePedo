@@ -14,7 +14,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter, useLocalSearchParams } from 'expo-router'
 import { ArrowLeft } from 'lucide-react-native'
 import { Button } from '@/components/ui/Button'
-import { checkAnswer, normalizeAnswer } from '@chingon/shared'
+import { checkAnswer, normalizeAnswer, getChapterExercises } from '@chingon/shared'
 import type {
   GrammarQuestion,
   MultipleChoiceQuestion,
@@ -22,7 +22,6 @@ import type {
   SentenceReorderQuestion,
   ErrorCorrectionQuestion,
 } from '@chingon/shared'
-import { getGrammarExercises, GrammarExerciseError } from '@/services/grammarExercise'
 
 interface ExerciseResult {
   question: GrammarQuestion
@@ -54,33 +53,23 @@ export default function GrammarExercisePlayScreen() {
   const [selectedErrorWord, setSelectedErrorWord] = useState<string | null>(null)
   const [correctionInput, setCorrectionInput] = useState('')
 
-  // Load exercises on mount
-  const [loaded, setLoaded] = useState(false)
-  if (!loaded) {
-    setLoaded(true)
-    loadExercises()
-  }
-
-  async function loadExercises() {
-    setLoading(true)
-    setError(null)
-    try {
-      const exercises = await getGrammarExercises(level || 'a1', chapterId, 8)
-      setQuestions(exercises)
-      // Initialize reorder state if first question is a reorder
-      if (exercises.length > 0 && exercises[0].type === 'sentence_reorder') {
+  // Load exercises synchronously from baked JSON in @chingon/shared.
+  // No async / no edge function on first open — that path now lives in
+  // a future "Generar nuevos" button (Phase 2).
+  const [initialized, setInitialized] = useState(false)
+  if (!initialized) {
+    setInitialized(true)
+    const exercises = getChapterExercises(level || 'a1', chapterId) ?? []
+    if (exercises.length === 0) {
+      setError('No exercises available for this chapter yet.')
+    } else {
+      setQuestions(exercises.slice(0, 8))
+      if (exercises[0].type === 'sentence_reorder') {
         setAvailableWords([...exercises[0].shuffledWords])
         setPlacedWords([])
       }
-    } catch (e) {
-      if (e instanceof GrammarExerciseError) {
-        setError(e.message)
-      } else {
-        setError('Something went wrong. Please try again.')
-      }
-    } finally {
-      setLoading(false)
     }
+    setLoading(false)
   }
 
   const question = questions[currentIndex]
@@ -215,7 +204,7 @@ export default function GrammarExercisePlayScreen() {
           <Text style={styles.errorTitle}>
             {error || 'No exercises available for this chapter.'}
           </Text>
-          <Button onPress={loadExercises}>Try Again</Button>
+          <Button onPress={() => router.back()}>Volver</Button>
         </View>
       </SafeAreaView>
     )

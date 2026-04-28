@@ -1,4 +1,5 @@
 import type { GrammarQuestion, MultipleChoiceQuestion, FillInBlankQuestion } from './exerciseTypes'
+import { getBakedExercises } from '../content/grammar-exercises'
 
 type ExercisePair = [MultipleChoiceQuestion, FillInBlankQuestion]
 
@@ -204,9 +205,42 @@ const exerciseMap: Record<string, ExercisePair> = {
   ],
 }
 
+/**
+ * Stable hash for deduping exercises across hand-curated + baked sources.
+ * Uses prompt/sentence + correct answer as identity.
+ */
+function exerciseKey(ex: GrammarQuestion): string {
+  switch (ex.type) {
+    case 'multiple_choice':
+      return `mc:${ex.prompt}::${ex.correctAnswer}`
+    case 'fill_in_blank':
+      return `fib:${ex.sentenceWithBlank}::${ex.correctAnswer}`
+    case 'sentence_reorder':
+      return `sr:${ex.correctSentence}`
+    case 'error_correction':
+      return `ec:${ex.sentenceWithError}::${ex.correctedWord}`
+  }
+}
+
+/**
+ * Returns the merged set of exercises for a chapter:
+ *   hand-curated pairs (quality floor for A1) ∪ Gemini-baked exercises.
+ * Returns null only when neither source has anything (truly missing chapter).
+ */
 export function getChapterExercises(level: string, chapterId: number): GrammarQuestion[] | null {
-  const key = `${level.toLowerCase()}_${chapterId}`
-  const pair = exerciseMap[key]
-  if (!pair) return null
-  return pair
+  const handCuratedKey = `${level.toLowerCase()}_${chapterId}`
+  const handCurated: GrammarQuestion[] = exerciseMap[handCuratedKey] ?? []
+  const baked: GrammarQuestion[] = getBakedExercises(level, chapterId) ?? []
+
+  if (handCurated.length === 0 && baked.length === 0) return null
+
+  const seen = new Set<string>()
+  const merged: GrammarQuestion[] = []
+  for (const ex of [...handCurated, ...baked]) {
+    const k = exerciseKey(ex)
+    if (seen.has(k)) continue
+    seen.add(k)
+    merged.push(ex)
+  }
+  return merged
 }

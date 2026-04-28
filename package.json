@@ -4,5 +4,12 @@
     "shared",
     "web",
     "mobile"
-  ]
+  ],
+  "scripts": {
+    "build:vocab": "node scripts/build-vocab.mjs",
+    "build:grammar-exercises": "tsx scripts/build-grammar-exercises.mjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0"
+  }
 }

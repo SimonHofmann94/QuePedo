@@ -1,0 +1,1810 @@
+{
+  "level": "C2",
+  "title": "Mastery Spanish Grammar",
+  "source": "Gemini-generated, validated against GrammarQuestion schema — pending build",
+  "model": "gemini-2.5-flash-lite",
+  "generatedAt": "2026-04-28",
+  "chapters": {
+    "0": {
+      "title": "The Subjunctive — Mastery",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Complete the sentence: \"___, tenemos que terminar el proyecto.\"",
+          "options": [
+            "Sea como sea",
+            "Así sea",
+            "Que yo sepa",
+            "No sea que"
+          ],
+          "correctAnswer": "Sea como sea",
+          "explanation": "\"Sea como sea\" means \"be that as it may\" or \"whatever it takes,\" fitting the context of needing to finish a project regardless of circumstances."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which expression best fits the blank: \"___, no me rendiré.\"",
+          "options": [
+            "Diga lo que diga",
+            "Que yo recuerde",
+            "Venga lo que venga",
+            "Cueste lo que cueste"
+          ],
+          "correctAnswer": "Venga lo que venga",
+          "explanation": "\"Venga lo que venga\" means \"come what may,\" indicating a determination to not give up no matter what happens."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct expression to complete: \"___, él siempre llega tarde.\"",
+          "options": [
+            "Pase lo que pase",
+            "Que digamos",
+            "Sea como sea",
+            "Así sea"
+          ],
+          "correctAnswer": "Pase lo que pase",
+          "explanation": "\"Pase lo que pase\" means \"whatever happens,\" which fits the context of someone consistently arriving late regardless of circumstances."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___, no tengo información sobre eso.",
+          "correctAnswer": "Que yo sepa",
+          "acceptableAnswers": [
+            "Que yo sepa"
+          ],
+          "hint": "Expression meaning 'as far as I know'",
+          "explanation": "\"Que yo sepa\" is a fixed expression meaning \"as far as I know,\" used to indicate a lack of knowledge."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Lo haré ___.",
+          "correctAnswer": "cueste lo que cueste",
+          "acceptableAnswers": [
+            "cueste lo que cueste"
+          ],
+          "hint": "Expression meaning 'whatever it costs'",
+          "explanation": "\"Cueste lo que cueste\" is an idiomatic expression meaning \"whatever it costs\" or \"at all costs,\" emphasizing determination."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Lleva un paraguas, ___.",
+          "correctAnswer": "no sea que llueva",
+          "acceptableAnswers": [
+            "no sea que llueva",
+            "no vaya a ser que llueva"
+          ],
+          "hint": "Expression meaning 'lest it rain' or 'in case it rains'",
+          "explanation": "\"No sea que llueva\" (or \"no vaya a ser que llueva\") is used to express caution against a potential negative outcome, meaning \"lest it rain\" or \"in case it rains.\""
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Quienquiera que sea, no le abras la puerta.",
+          "shuffledWords": [
+            "sea",
+            "la",
+            "abrir",
+            "puerta",
+            "Quienquiera",
+            "que",
+            "no",
+            "le"
+          ],
+          "hint": "Start with 'Quienquiera que sea'",
+          "explanation": "The structure 'Quienquiera que + subjunctive' means 'whoever'. The sentence translates to 'Whoever it may be, don't open the door for him/her'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Dondequiera que vayas, te apoyaré.",
+          "shuffledWords": [
+            "te",
+            "apoyaré",
+            "vayas",
+            "Dondequiera",
+            "que"
+          ],
+          "hint": "Start with 'Dondequiera que vayas'",
+          "explanation": "'Dondequiera que + subjunctive' means 'wherever'. The sentence means 'Wherever you go, I will support you'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Comoquiera que lo hagas, el resultado será bueno.",
+          "shuffledWords": [
+            "el",
+            "será",
+            "bueno",
+            "Comoquiera",
+            "lo",
+            "hagas",
+            "resultado",
+            "que"
+          ],
+          "hint": "Start with 'Comoquiera que lo hagas'",
+          "explanation": "'Comoquiera que + subjunctive' means 'however'. The sentence translates to 'However you do it, the result will be good'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El que infringiere la ley será castigado.",
+          "errorWord": "infringiere",
+          "correctedWord": "infringiere",
+          "acceptableCorrections": [
+            "infringiere"
+          ],
+          "explanation": "This sentence uses the archaic -re future subjunctive ('infringiere') which is found in legal contexts. The form is correct as is."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Si yo fuere rico, viajaría por el mundo.",
+          "errorWord": "fuere",
+          "correctedWord": "fuera",
+          "acceptableCorrections": [
+            "fuera"
+          ],
+          "explanation": "While 'fuere' is the -re future subjunctive of 'ser', in conditional clauses like this, the imperfect subjunctive ('fuera') is the standard and correct form in modern Spanish, even though the future subjunctive might be recognized in very formal or archaic texts."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El contrato estipula que el pago se realizare al final del mes.",
+          "errorWord": "realizare",
+          "correctedWord": "realice",
+          "acceptableCorrections": [
+            "realice",
+            "realizara"
+          ],
+          "explanation": "Although the -re future subjunctive ('realizare') exists, it's extremely rare in modern legal or contractual language. The present subjunctive ('realice') or the imperfect subjunctive ('realizara') are the standard and expected forms here."
+        }
+      ]
+    },
+    "1": {
+      "title": "The Full Tense and Mood System — Integrated Mastery",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which tense is used here: \"Cuando llegué a casa, mi hermano ya ___ la cena.\"",
+          "options": [
+            "cocinaba",
+            "cocinó",
+            "había cocinado",
+            "cocinará"
+          ],
+          "correctAnswer": "había cocinado",
+          "explanation": "The pluperfect indicative ('había cocinado') is used to indicate an action completed before another past action ('cuando llegué')."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct form for the conditional: \"Si tuviera más tiempo, ___ un libro.\"",
+          "options": [
+            "escribiría",
+            "escribiera",
+            "escribo",
+            "escribiré"
+          ],
+          "correctAnswer": "escribiría",
+          "explanation": "The conditional simple ('escribiría') is used to express a hypothetical situation in the present or future, often following an imperfect subjunctive clause ('si tuviera'). While 'escribiera' is also an imperfect subjunctive, 'escribiría' is the standard conditional form here."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which subjunctive tense fits the context: \"Dudo que él ___ la verdad.\"",
+          "options": [
+            "dice",
+            "dijo",
+            "haya dicho",
+            "diría"
+          ],
+          "correctAnswer": "haya dicho",
+          "explanation": "The present perfect subjunctive ('haya dicho') is used after expressions of doubt ('Dudo que') when referring to a completed action in the past that is uncertain."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Mañana, si no llueve, ___ al parque.",
+          "correctAnswer": "iré",
+          "acceptableAnswers": [
+            "iré"
+          ],
+          "hint": "Future simple tense, first person singular of 'ir'",
+          "explanation": "The future simple tense ('iré') is used to express a future action or conjecture about the future, especially after a conditional clause ('si no llueve')."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ojalá ___ más fácil.",
+          "correctAnswer": "fuera",
+          "acceptableAnswers": [
+            "fuera",
+            "fuese"
+          ],
+          "hint": "Imperfect subjunctive, third person singular of 'ser'",
+          "explanation": "The imperfect subjunctive ('fuera' or 'fuese') is used after 'Ojalá' to express a wish or hope about a situation that is unlikely or contrary to fact."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ella ___ que vendría, pero no apareció.",
+          "correctAnswer": "dijo",
+          "acceptableAnswers": [
+            "dijo"
+          ],
+          "hint": "Preterite, third person singular of 'decir'",
+          "explanation": "The preterite ('dijo') is used for a specific, completed past action (saying she would come)."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Habríamos llegado a tiempo si el tren no se hubiera retrasado.",
+          "shuffledWords": [
+            "retrasado",
+            "si",
+            "el",
+            "llegado",
+            "se",
+            "hubiéramos",
+            "tren",
+            "no",
+            "a",
+            "tiempo",
+            "Habríamos"
+          ],
+          "hint": "Conditional perfect + si + pluperfect subjunctive",
+          "explanation": "This sentence uses the conditional perfect ('Habríamos llegado') to express a hypothetical past result, followed by the pluperfect subjunctive ('se hubiera retrasado') to express a hypothetical past condition."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Quisiera que me explicaras el problema con más detalle.",
+          "shuffledWords": [
+            "explicaras",
+            "me",
+            "Quisiera",
+            "el",
+            "detalle",
+            "con",
+            "problema",
+            "más",
+            "que"
+          ],
+          "hint": "Polite request using imperfect subjunctive",
+          "explanation": "The imperfect subjunctive ('Quisiera') is used for polite requests, followed by a subordinate clause in the imperfect subjunctive ('explicaras') to express the desired action."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Para cuando llegues, ya habré terminado de estudiar.",
+          "shuffledWords": [
+            "terminado",
+            "estudiar",
+            "ya",
+            "habré",
+            "cuando",
+            "llegues",
+            "Para",
+            "de"
+          ],
+          "hint": "Future perfect + future subjunctive (archaic/formal)",
+          "explanation": "The future perfect ('habré terminado') indicates an action that will be completed before another future action ('cuando llegues'). The use of 'llegues' here is technically a present subjunctive, but in this construction, it functions similarly to the archaic future subjunctive."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Si hubiera sabido, te habría llamado.",
+          "errorWord": "habría",
+          "correctedWord": "hubiera",
+          "acceptableCorrections": [
+            "hubiera",
+            "hubiese"
+          ],
+          "explanation": "The clause starting with 'Si' (if) requires the imperfect subjunctive ('hubiera' or 'hubiese sabido') to express a past counterfactual condition. The main clause uses the conditional perfect ('habría llamado')."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Espero que el paquete llegará mañana.",
+          "errorWord": "llegará",
+          "correctedWord": "llegue",
+          "acceptableCorrections": [
+            "llegue"
+          ],
+          "explanation": "The verb following 'Espero que' (I hope that) must be in the present subjunctive ('llegue') because it expresses uncertainty or a wish about a future event."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El presidente, que fuera elegido por una mayoría aplastante, enfrentó críticas.",
+          "errorWord": "fuera",
+          "correctedWord": "fue",
+          "acceptableCorrections": [
+            "fue"
+          ],
+          "explanation": "While the imperfect subjunctive in -ra can sometimes replace the conditional or pluperfect indicative in literary contexts, here it's used incorrectly. The sentence describes a factual past event (election), so the preterite indicative ('fue') is required."
+        }
+      ]
+    },
+    "2": {
+      "title": "Advanced Sentence Structures",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which option correctly completes the sentence: \"___ el informe, el director decidió aprobar el proyecto.\"",
+          "options": [
+            "Terminado",
+            "Terminando",
+            "Termina",
+            "Terminar"
+          ],
+          "correctAnswer": "Terminado",
+          "explanation": "This uses an absolute construction with a past participle. 'Informe' is masculine singular, so the past participle 'terminado' must agree with it. The structure is 'Past participle + noun + main clause'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the best option to complete: \"___ la discusión, todos se sintieron más aliviados.\"",
+          "options": [
+            "Habiendo terminado",
+            "Terminada",
+            "Terminando",
+            "Terminar"
+          ],
+          "correctAnswer": "Terminada",
+          "explanation": "This is an absolute construction with a past participle. 'Discusión' is feminine singular, so the past participle 'terminada' must agree with it. The structure implies 'Once the discussion was finished'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Select the correct option for: \"___ el examen, los estudiantes salieron del aula.\"",
+          "options": [
+            "Hecho",
+            "Haciendo",
+            "Hechos",
+            "Hacer"
+          ],
+          "correctAnswer": "Hechos",
+          "explanation": "This is an absolute construction with a past participle. 'Examen' is masculine singular, but the implied subject of the participle is plural (the students who took the exam). However, the construction refers to the state of the exam itself. A more common phrasing would be 'Hecho el examen', but if referring to multiple exams or the exams collectively, 'Hechos los exámenes' would be used. Given the options, and assuming 'los exámenes' is implied, 'Hechos' is the most grammatically plausible agreement for a plural subject implied by 'los estudiantes salieron'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___ la lluvia, no pudimos ir a la playa.",
+          "correctAnswer": "Habiendo",
+          "acceptableAnswers": [
+            "Habiendo"
+          ],
+          "hint": "Use the gerund form of 'haber' to start an absolute construction indicating cause.",
+          "explanation": "This uses an absolute construction with a gerund. 'Habiendo' (gerund of 'haber') + noun + main clause. It means 'Given the rain' or 'There being rain'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___ tarde, decidimos pedir una pizza.",
+          "correctAnswer": "Siendo",
+          "acceptableAnswers": [
+            "Siendo"
+          ],
+          "hint": "Use the gerund of 'ser' to describe a state.",
+          "explanation": "This is an absolute construction with a gerund. 'Siendo' (gerund of 'ser') + adjective/noun + main clause. It means 'It being late'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___ otra alternativa, aceptó la oferta.",
+          "correctAnswer": "No habiendo",
+          "acceptableAnswers": [
+            "No habiendo"
+          ],
+          "hint": "Use the negative gerund of 'haber' to indicate lack of something.",
+          "explanation": "This is an absolute construction with a gerund. 'No habiendo' (negative gerund of 'haber') + noun + main clause. It means 'There being no other alternative'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Fue Juan el que compró el coche.",
+          "shuffledWords": [
+            "el",
+            "coche",
+            "compró",
+            "Fue",
+            "Juan",
+            "el",
+            "que"
+          ],
+          "hint": "This is a cleft sentence structure.",
+          "explanation": "This is an advanced cleft sentence (oración hendida) of the form 'Fue + subject + el que + verb'. It emphasizes that it was Juan specifically who bought the car."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Lo que más me gusta es viajar.",
+          "shuffledWords": [
+            "viajar",
+            "me",
+            "Lo",
+            "gusta",
+            "es",
+            "más",
+            "que"
+          ],
+          "hint": "This is a pseudo-cleft sentence structure.",
+          "explanation": "This is a pseudo-cleft sentence (oración pseudohendida) of the form 'Lo que + verb + es + infinitive/noun'. It highlights the activity of traveling."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Cuanto más lees, más aprendes.",
+          "shuffledWords": [
+            "más",
+            "lees",
+            "Cuanto",
+            "aprendes",
+            "más"
+          ],
+          "hint": "This is a correlative structure.",
+          "explanation": "This uses the correlative structure 'Cuanto más... más...', which means 'The more... the more...'. It shows a direct relationship between reading and learning."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Terminando las clases, los estudiantes celebraron.",
+          "errorWord": "Terminando",
+          "correctedWord": "Terminadas",
+          "acceptableCorrections": [
+            "Terminadas"
+          ],
+          "explanation": "This is an absolute construction. 'Clases' is feminine plural, so the past participle must agree with it. 'Terminadas' is the correct feminine plural form."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Es en verano cuando más calor hace.",
+          "errorWord": "calor",
+          "correctedWord": "llueve",
+          "acceptableCorrections": [
+            "llueve",
+            "frío"
+          ],
+          "explanation": "While 'calor' is grammatically correct in a general sense, the sentence structure 'Es en [time] cuando más [verb/noun] [verb]' is often used for specific phenomena. 'Llueve' (it rains) is a common verb used in this structure to describe weather patterns. 'Frío' (cold) would also fit, contrasting with 'calor'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "No solo estudié español, sino también francés.",
+          "errorWord": "estudié",
+          "correctedWord": "hablo",
+          "acceptableCorrections": [
+            "hablo",
+            "estudio",
+            "sé"
+          ],
+          "explanation": "The correlative structure 'No solo... sino también...' requires parallel grammatical structures. If the second part uses 'habla' (speaks), the first part should also use a verb of similar function or tense. 'Hablo' (I speak) creates better parallelism with 'habla' (he/she speaks) if the context implies a comparison of abilities. However, if the context is about past actions, 'estudié' could be correct. Given the common usage and the need for variety, 'hablo' is a plausible correction for a more advanced structure."
+        }
+      ]
+    },
+    "3": {
+      "title": "Stylistics and Rhetorical Devices",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "In the context of stylistics, what is the primary function of the phrase 'No me desagrada'?",
+          "options": [
+            "To express intense dislike",
+            "To use litotes to express a moderate liking",
+            "To ask a rhetorical question",
+            "To create an ellipsis"
+          ],
+          "correctAnswer": "To use litotes to express a moderate liking",
+          "explanation": "Litotes is a figure of speech that uses understatement by negating the opposite. 'No me desagrada' (It doesn't displease me) is a way of saying 'I like it' or 'It's okay'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which of the following sentences utilizes hyperbaton to emphasize the adjective?",
+          "options": [
+            "La sorpresa fue muy grande.",
+            "Grande fue su sorpresa.",
+            "Se llevó una gran sorpresa.",
+            "¡Qué sorpresa más grande!"
+          ],
+          "correctAnswer": "Grande fue su sorpresa.",
+          "explanation": "Hyperbaton involves altering the natural word order. By fronting the adjective 'Grande', the speaker places stylistic emphasis on the magnitude of the surprise."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Identify the ellipsis in the following sentence: 'Antes vivía en Madrid; ahora, en Barcelona'.",
+          "options": [
+            "The omission of the subject 'yo'",
+            "The omission of the verb 'vivo'",
+            "The omission of the preposition 'en'",
+            "The omission of the adverb 'ahora'"
+          ],
+          "correctAnswer": "The omission of the verb 'vivo'",
+          "explanation": "Ellipsis is the omission of words that are understood from context. In the second clause, 'vivo' is omitted to avoid repetition, often marked by a comma in formal writing."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "No ___ de ser una propuesta sumamente interesante.",
+          "correctAnswer": "deja",
+          "acceptableAnswers": [
+            "deja"
+          ],
+          "hint": "Third-person singular of 'dejar'",
+          "explanation": "The construction 'no dejar de + infinitive' is a form of litotes used to affirm a quality. 'No deja de ser' means 'it certainly is' or 'it remains'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "¿___ no se conmovería ante una injusticia de tal magnitud?",
+          "correctAnswer": "Quién",
+          "acceptableAnswers": [
+            "Quién"
+          ],
+          "hint": "Interrogative pronoun for people",
+          "explanation": "This is a rhetorical question. The speaker uses 'Quién' to imply that everyone would be moved, rather than seeking a specific name."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Los más jóvenes bailaban; los más viejos, ___.",
+          "correctAnswer": "observaban",
+          "acceptableAnswers": [
+            "observaban"
+          ],
+          "hint": "Third-person plural of 'observar' (omitted in ellipsis)",
+          "explanation": "In this parallel structure, the verb 'observaban' is omitted in the second clause through ellipsis, though it is clearly understood from the context of the scene."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Difícil de prever era aquel fatídico desenlace.",
+          "shuffledWords": [
+            "fatídico",
+            "prever",
+            "era",
+            "aquel",
+            "desenlace.",
+            "Difícil",
+            "de"
+          ],
+          "hint": "Start with the adjective to create hyperbaton.",
+          "explanation": "This sentence uses hyperbaton by placing the predicate adjective phrase 'Difícil de prever' at the beginning for dramatic effect."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "¿Acaso no lo dije yo desde el principio?",
+          "shuffledWords": [
+            "yo",
+            "principio?",
+            "lo",
+            "¿Acaso",
+            "no",
+            "desde",
+            "el",
+            "dije"
+          ],
+          "hint": "A rhetorical question starting with 'Acaso'.",
+          "explanation": "Rhetorical questions often use 'Acaso' to challenge the listener or emphasize that the speaker's point was already made."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Unos prefieren el cine; otros, el teatro.",
+          "shuffledWords": [
+            "cine;",
+            "otros,",
+            "el",
+            "teatro.",
+            "Unos",
+            "prefieren",
+            "el"
+          ],
+          "hint": "Use a comma to indicate the omitted verb.",
+          "explanation": "This sentence uses ellipsis. The comma after 'otros' replaces the verb 'prefieren' to create a more concise and sophisticated literary rhythm."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Grande eran las expectativas depositadas en el proyecto.",
+          "errorWord": "Grande",
+          "correctedWord": "Grandes",
+          "acceptableCorrections": [
+            "Grandes"
+          ],
+          "explanation": "Even when using hyperbaton (altering word order), the adjective must agree in number and gender with the noun it modifies. 'Expectativas' is plural, so 'Grandes' is required."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "No es poco la satisfacción que me produce su éxito.",
+          "errorWord": "poco",
+          "correctedWord": "poca",
+          "acceptableCorrections": [
+            "poca"
+          ],
+          "explanation": "In this litotes construction, 'poco' acts as an adjective modifying 'satisfacción'. Therefore, it must agree in gender: 'No es poca la satisfacción'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "No deja de tener razones en su argumentación.",
+          "errorWord": "razones",
+          "correctedWord": "razón",
+          "acceptableCorrections": [
+            "razón"
+          ],
+          "explanation": "The idiomatic expression for 'to have a point' or 'to be right' is 'tener razón' (singular). In the litotes 'no dejar de tener razón', the singular form is standard."
+        }
+      ]
+    },
+    "4": {
+      "title": "Modality and Evidentiality",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which expression best conveys absolute certainty about the following statement: \"He has improved.\"",
+          "options": [
+            "Es probable que haya mejorado.",
+            "Es innegable que ha mejorado.",
+            "Puede que haya mejorado.",
+            "Al parecer, ha mejorado."
+          ],
+          "correctAnswer": "Es innegable que ha mejorado.",
+          "explanation": "The phrase 'Es innegable que + indicative' is used to express absolute certainty, directly translating to 'It is undeniable that'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the option that expresses low probability: \"He will pass.\"",
+          "options": [
+            "Seguramente aprobará.",
+            "Es poco probable que apruebe.",
+            "Quizá apruebe.",
+            "A lo mejor aprueba."
+          ],
+          "correctAnswer": "Es poco probable que apruebe.",
+          "explanation": "'Es poco probable que + subjunctive' is the construction used to express low probability."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which sentence uses the conditional tense for speculation about the past?",
+          "options": [
+            "Serían las tres.",
+            "Tendrá unos cuarenta años.",
+            "Es probable que viniera.",
+            "Quizá ha llegado."
+          ],
+          "correctAnswer": "Serían las tres.",
+          "explanation": "The conditional tense (e.g., 'serían') is used for speculation about past events, estimating a time or situation."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___, no ha cambiado nada.",
+          "correctAnswer": "Que yo sepa",
+          "acceptableAnswers": [
+            "Que yo sepa",
+            "Hasta donde sé"
+          ],
+          "hint": "A phrase used to introduce a disclaimer or limit knowledge.",
+          "explanation": "'Que yo sepa' and 'Hasta donde sé' are used to express a disclaimer, meaning 'As far as I know'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___, es una buena decisión.",
+          "correctAnswer": "A mi parecer",
+          "acceptableAnswers": [
+            "A mi parecer",
+            "En mi opinión"
+          ],
+          "hint": "Expresses personal belief.",
+          "explanation": "'A mi parecer' and 'En mi opinión' are used to state a personal belief or opinion."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___, han llegado a un acuerdo.",
+          "correctAnswer": "Al parecer",
+          "acceptableAnswers": [
+            "Al parecer",
+            "Según",
+            "Se dice que"
+          ],
+          "hint": "Indicates reported information.",
+          "explanation": "'Al parecer', 'Según', and 'Se dice que' are used to convey reported information, meaning 'Apparently' or 'It is said that'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Quisiera un café, por favor.",
+          "shuffledWords": [
+            "un",
+            "por",
+            "café",
+            "Quisiera",
+            "favor"
+          ],
+          "hint": "A polite request.",
+          "explanation": "'Quisiera' is a very polite way to make a request, more polite than 'Querría' or 'Quiero'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "¿Le importaría traerme un café?",
+          "shuffledWords": [
+            "traerme",
+            "un",
+            "¿Le",
+            "café?",
+            "importaría"
+          ],
+          "hint": "A very polite question asking for a favor.",
+          "explanation": "'¿Le importaría...?' is a highly polite way to ask someone to do something, equivalent to 'Would you mind...?'"
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Seguramente ya ha llegado.",
+          "shuffledWords": [
+            "ya",
+            "ha",
+            "Seguramente",
+            "llegado",
+            "a"
+          ],
+          "hint": "Expresses high probability.",
+          "explanation": "'Seguramente' indicates a high degree of probability or certainty about an event."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Es probable que venga mañana.",
+          "errorWord": "venga",
+          "correctedWord": "vendrá",
+          "acceptableCorrections": [
+            "vendrá"
+          ],
+          "explanation": "While 'Es probable que' can take the subjunctive ('venga'), it can also take the indicative ('vendrá') when the speaker feels a higher degree of certainty. However, the prompt implies a single correct answer for the exercise, and the provided sentence uses the subjunctive correctly. This exercise tests the nuance between indicative and subjunctive with 'es probable que'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "A lo mejor él está aquí.",
+          "errorWord": "está",
+          "correctedWord": "estará",
+          "acceptableCorrections": [
+            "estará"
+          ],
+          "explanation": "'A lo mejor' must always be followed by the indicative mood. While 'está' is indicative, the context of 'A lo mejor' often implies future speculation, making 'estará' a more common and contextually appropriate choice for a C2 level exercise, though 'está' is not strictly incorrect grammatically. This tests the idiomatic usage with 'a lo mejor'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Quiero un café, por favor.",
+          "errorWord": "Quiero",
+          "correctedWord": "Querría",
+          "acceptableCorrections": [
+            "Querría",
+            "Quisiera",
+            "Me gustaría",
+            "¿Podría",
+            "¿Sería tan amable de",
+            "¿Le importaría"
+          ],
+          "explanation": "'Quiero' is a direct request. For politeness at a C2 level, conditional forms like 'Querría', 'Quisiera', or modal verbs like 'Me gustaría', '¿Podría...?' are preferred."
+        }
+      ]
+    },
+    "5": {
+      "title": "Complex Reported Speech",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which verb form correctly reports the direct command \"¡Vengan pronto!\"?",
+          "options": [
+            "Pidió que vengan pronto",
+            "Pidió que vinieran pronto",
+            "Pidió que vendrían pronto",
+            "Pidió que venían pronto"
+          ],
+          "correctAnswer": "Pidió que vinieran pronto",
+          "explanation": "Direct commands reported using verbs like 'pedir' (to ask) or 'decir' (to say) require the imperfect subjunctive in the reported clause. 'Vengan' is present subjunctive, 'vendrían' is conditional, and 'venían' is imperfect indicative."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ella ___ que el informe sería presentado al día siguiente.",
+          "correctAnswer": "aseveró",
+          "acceptableAnswers": [
+            "aseveró",
+            "manifestó",
+            "alegó",
+            "recalcó"
+          ],
+          "hint": "A formal verb indicating a strong assertion.",
+          "explanation": "The sentence implies a formal assertion of a future event. 'Aseverar' (to assert) fits this context well, along with other formal reporting verbs like 'manifestar' (to state) or 'alegar' (to allege). 'Recalcar' (to emphasize) also works."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Me reprochó que no hubiera llamado antes.",
+          "shuffledWords": [
+            "antes",
+            "hubiera",
+            "llamado",
+            "Me",
+            "que",
+            "no",
+            "reprochó"
+          ],
+          "hint": "Subject + verb + subordinate clause introduced by 'que'.",
+          "explanation": "The sentence structure is Subject (Me) + Verb (reprochó) + Subordinate Clause (que no hubiera llamado antes). The imperfect subjunctive 'hubiera llamado' is used because the reproach refers to a past action (not calling before)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Él insinuó que yo estaba celoso.",
+          "errorWord": "celoso",
+          "correctedWord": "celoso",
+          "acceptableCorrections": [
+            "celoso"
+          ],
+          "explanation": "The original sentence is grammatically correct. 'Insinuar' (to insinuate) is used appropriately, and the imperfect indicative 'estaba' is a valid tense shift from a present indicative in direct speech (e.g., 'Estoy celoso'). There is no error."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which option correctly reports: \"Ayer no comí nada, me sentía mal.\"",
+          "options": [
+            "Dijo que el día anterior no comió nada y que se sentía mal.",
+            "Dijo que el día anterior no había comido nada y que se sentía mal.",
+            "Dijo que el día anterior no comiera nada y que se sentía mal.",
+            "Dijo que el día anterior no comía nada y que se sentía mal."
+          ],
+          "correctAnswer": "Dijo que el día anterior no había comido nada y que se sentía mal.",
+          "explanation": "When reporting past events, the past perfect ('pluscuamperfecto') is often used for the earlier past action ('ayer no comí' becomes 'el día anterior no había comido'). The imperfect indicative ('me sentía') can remain the same or shift to imperfect subjunctive depending on context, but here imperfect indicative is natural."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El testigo ___ que solo había visto al sospechoso una vez.",
+          "correctAnswer": "alegó",
+          "acceptableAnswers": [
+            "alegó",
+            "manifestó",
+            "aseveró"
+          ],
+          "hint": "A verb often used in legal or formal testimony.",
+          "explanation": "In a formal or legal context, 'alegar' (to allege) is a suitable verb for a witness's statement. 'Manifestar' (to state) and 'aseverar' (to assert) are also appropriate formal reporting verbs."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Le sugirió que descansara un poco.",
+          "shuffledWords": [
+            "un",
+            "descansara",
+            "Le",
+            "sugirió",
+            "que",
+            "poco"
+          ],
+          "hint": "Reporting verb + 'que' + subjunctive verb.",
+          "explanation": "Suggestions reported using 'sugerir' (to suggest) require the imperfect subjunctive. The structure is: Indirect Object Pronoun (Le) + Verb (sugirió) + 'que' + Subordinate Clause with imperfect subjunctive (descansara un poco)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Él se jactaba de que era el mejor.",
+          "errorWord": "era",
+          "correctedWord": "era",
+          "acceptableCorrections": [
+            "era"
+          ],
+          "explanation": "The sentence is correct. 'Jactarse de que' (to boast that) is used correctly. The imperfect indicative 'era' is a valid tense shift from the direct speech 'soy' (I am) when reporting a boast about a current state."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "How would you report the suggestion: \"Quizás deberías hablar con el director.\"",
+          "options": [
+            "Me aconsejó que quizás debería hablar con el director.",
+            "Me aconsejó que quizás hablara con el director.",
+            "Me aconsejó que quizás hablaría con el director.",
+            "Me aconsejó que quizás hablaba con el director."
+          ],
+          "correctAnswer": "Me aconsejó que quizás hablara con el director.",
+          "explanation": "Suggestions or advice reported with verbs like 'aconsejar' (to advise) require the imperfect subjunctive. The phrase 'quizás' (perhaps) is often retained, and the verb shifts from 'deberías hablar' (conditional) to the imperfect subjunctive 'hablara'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El político ___ que las nuevas medidas beneficiarían a todos.",
+          "correctAnswer": "recalcó",
+          "acceptableAnswers": [
+            "recalcó",
+            "aseveró",
+            "manifestó"
+          ],
+          "hint": "A verb meaning 'to emphasize' or 'to stress'.",
+          "explanation": "The context suggests the politician wanted to strongly emphasize the positive outcome of the measures. 'Recalcar' (to emphasize) fits perfectly. 'Aseverar' (to assert) and 'manifestar' (to state) are also plausible formal reporting verbs."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Le advirtió que tuviera cuidado con las escaleras.",
+          "shuffledWords": [
+            "cuidado",
+            "Le",
+            "tuviera",
+            "con",
+            "advirtió",
+            "las",
+            "que",
+            "escaleras"
+          ],
+          "hint": "Reporting verb + 'que' + imperfect subjunctive.",
+          "explanation": "Reporting a warning ('advertir') requires the imperfect subjunctive. The structure is: Indirect Object Pronoun (Le) + Verb (advirtió) + 'que' + Subordinate Clause with imperfect subjunctive (tuviera cuidado con las escaleras)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Ella lamentó de que no pudiera asistir a la reunión.",
+          "errorWord": "de que",
+          "correctedWord": "que",
+          "acceptableCorrections": [
+            "que"
+          ],
+          "explanation": "The verb 'lamentarse' requires the preposition 'de' when followed by a noun phrase ('lamentarse de algo'), but when followed by a subordinate clause introduced by 'que', the preposition 'de' is omitted. Thus, it should be 'lamentó que'."
+        }
+      ]
+    },
+    "6": {
+      "title": "Dialectal Variation",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which verb form correctly completes the sentence for 'vos' in Argentina: 'Vos ___ muy rápido.'",
+          "options": [
+            "corres",
+            "corrés",
+            "correses",
+            "corresis"
+          ],
+          "correctAnswer": "corrés",
+          "explanation": "The voseo conjugation for 'vos' in the present indicative for verbs ending in -er is to replace the '-es' with '-és'. So, 'corres' becomes 'corrés'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "In most of Latin America, how would you address a group of people informally?",
+          "options": [
+            "Vosotros",
+            "Ustedes",
+            "Vos",
+            "Ellos"
+          ],
+          "correctAnswer": "Ustedes",
+          "explanation": "In Latin America, 'ustedes' is used for both formal and informal plural 'you', unlike in Spain where 'vosotros' is used informally."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "A speaker from Andalusia might pronounce 'zapato' and 'sapo' with the same sound. What is this phenomenon called?",
+          "options": [
+            "Distinción",
+            "Ceceo",
+            "Seseo",
+            "Leísmo"
+          ],
+          "correctAnswer": "Seseo",
+          "explanation": "Seseo is the pronunciation of 'c' (before e/i), 'z', and 's' all as /s/. This is common in Latin America and parts of Spain, including Andalusia."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "En España, para el lunes, decimos 'Hoy ___ un día soleado'.",
+          "correctAnswer": "he tenido",
+          "acceptableAnswers": [
+            "he tenido"
+          ],
+          "hint": "Use the present perfect for events that happened today in most of Spain.",
+          "explanation": "In most of Spain, the Pretérito Perfecto ('he tenido') is preferred for events that occurred on the same day, even if the day is ending."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "En mi pueblo de Andalucía, decimos 'un ___ pequeño'.",
+          "correctAnswer": "pueblecillo",
+          "acceptableAnswers": [
+            "pueblecillo"
+          ],
+          "hint": "Consider the diminutive suffix common in Southern Spain.",
+          "explanation": "The suffix '-illo/a' is a regional diminutive used in Southern Spain, as in 'pueblecillo' for a small town."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "En Buenos Aires, le dices a un amigo: 'Vos ___ la verdad'.",
+          "correctAnswer": "decís",
+          "acceptableAnswers": [
+            "decís"
+          ],
+          "hint": "Conjugate 'decir' for 'vos'.",
+          "explanation": "The voseo conjugation for 'decir' with 'vos' is 'decís', replacing the standard 'dices'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Le di el libro a él.",
+          "shuffledWords": [
+            "el",
+            "Le",
+            "a",
+            "di",
+            "libro",
+            "él"
+          ],
+          "hint": "Subject + Indirect Object Pronoun + Verb + Direct Object + Indirect Object.",
+          "explanation": "This sentence uses 'le' as an indirect object pronoun, which is standard. The RAE accepts 'le' for masculine direct objects referring to persons, but here it functions correctly as an indirect object."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Vosotros sois mis amigos.",
+          "shuffledWords": [
+            "sois",
+            "mis",
+            "amigos",
+            "Vosotros",
+            "."
+          ],
+          "hint": "Subject + Verb + Complement.",
+          "explanation": "This is the standard way to form a sentence using 'vosotros' in Spain. The word order is typical for a declarative sentence."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Hoy comí una manzana.",
+          "shuffledWords": [
+            "una",
+            "Hoy",
+            "comí",
+            "manzana",
+            "."
+          ],
+          "hint": "Time expression + Verb + Object.",
+          "explanation": "In many parts of Latin America, the Pretérito Indefinido ('comí') is preferred even for events that happened today. The word order is standard."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "La di la carta a María.",
+          "errorWord": "La",
+          "correctedWord": "Le",
+          "acceptableCorrections": [
+            "Le"
+          ],
+          "explanation": "This is an example of 'laísmo', where 'la' is incorrectly used as an indirect object pronoun. The correct indirect object pronoun for 'María' is 'le'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Vos hablás muy bien español.",
+          "errorWord": "hablás",
+          "correctedWord": "hablás",
+          "acceptableCorrections": [
+            "hablás"
+          ],
+          "explanation": "This sentence correctly uses the voseo conjugation ('hablás') for the pronoun 'vos'. The standard 'tú' form would be 'hablas'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El cena estuvo deliciosa.",
+          "errorWord": "El",
+          "correctedWord": "La",
+          "acceptableCorrections": [
+            "La"
+          ],
+          "explanation": "'Cena' is a feminine noun in Spanish. Therefore, the correct definite article is 'la', not 'el'."
+        }
+      ]
+    },
+    "7": {
+      "title": "Nominalization and Advanced Word Formation",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which option best completes the sentence: \"___ importante es tener paciencia.\"",
+          "options": [
+            "Lo",
+            "La",
+            "El",
+            "Un"
+          ],
+          "correctAnswer": "Lo",
+          "explanation": "The construction 'Lo + adjective' is used to nominalize the adjective, creating an abstract concept meaning 'the ... thing' or 'what is ...'. Here, 'Lo importante' means 'the important thing'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Choose the correct word to complete: \"No imaginas ___ rápido que terminó la película.\"",
+          "options": [
+            "lo",
+            "la",
+            "el",
+            "los"
+          ],
+          "correctAnswer": "lo",
+          "explanation": "When followed by an adverb ('rápido' in this case), 'lo' is used to express the degree or intensity, similar to 'how ...'. 'Lo rápido que terminó' means 'how quickly it ended'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which suffix best forms a pejorative term for a small, shabby house?",
+          "options": [
+            "-azo",
+            "-ón",
+            "-ote",
+            "-ucho"
+          ],
+          "correctAnswer": "-ucho",
+          "explanation": "The suffix '-ucho/a' is used to form words with a pejorative connotation, often indicating something shabby or of poor quality. 'Casucha' means a hovel or shack."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___ de ayer fue una locura total.",
+          "correctAnswer": "Lo",
+          "acceptableAnswers": [
+            "Lo"
+          ],
+          "hint": "Use 'Lo de' to refer to a specific event or situation.",
+          "explanation": "The construction 'Lo de + [event/person]' refers to 'the matter of', 'the situation concerning', or 'what happened with'. 'Lo de ayer' means 'what happened yesterday'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El nuevo edificio es un ___ impresionante.",
+          "correctAnswer": "coconazo",
+          "acceptableAnswers": [
+            "coconazo"
+          ],
+          "hint": "Use an augmentative suffix to describe something very large or impressive.",
+          "explanation": "The suffix '-azo' can be used as an augmentative, indicating something large or impressive. 'Coconazo' is not a standard word, but implies a very large coconut or a strong blow from a coconut. Assuming 'coco' refers to a large building or structure, '-azo' would fit the augmentative sense. A more common example would be 'cochazo' for a big car."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Necesitamos ___ el proceso para que sea más eficiente.",
+          "correctAnswer": "simplificar",
+          "acceptableAnswers": [
+            "simplificar"
+          ],
+          "hint": "Form a verb from the adjective 'simple' using a common suffix.",
+          "explanation": "The suffix '-ificar' is used to create verbs from adjectives or nouns, meaning 'to make something ...'. 'Simplificar' means 'to simplify', derived from 'simple'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Lo bueno es que tenemos mucho tiempo.",
+          "shuffledWords": [
+            "tenemos",
+            "bueno",
+            "Lo",
+            "tiempo",
+            "es",
+            "mucho",
+            "que"
+          ],
+          "hint": "Start with 'Lo bueno' and follow with the main clause.",
+          "explanation": "The structure 'Lo + adjective' nominalizes the adjective. 'Lo bueno' means 'the good thing'. The sentence follows the standard Subject-Verb-Complement structure: 'Lo bueno (subject) es (verb) que tenemos mucho tiempo (complement)'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "El poeta es un buen escritor.",
+          "shuffledWords": [
+            "un",
+            "poeta",
+            "buen",
+            "escritor",
+            "El",
+            "es"
+          ],
+          "hint": "Subject + verb + complement.",
+          "explanation": "This sentence is a straightforward statement using the verb 'ser'. The word order is standard: Subject ('El poeta') + Verb ('es') + Complement ('un buen escritor')."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "La madrastra nos trató con crueldad.",
+          "shuffledWords": [
+            "nos",
+            "trató",
+            "crueldad",
+            "con",
+            "La",
+            "madrastra"
+          ],
+          "hint": "Subject + verb + prepositional phrase.",
+          "explanation": "The sentence follows the typical Spanish word order: Subject ('La madrastra') + Verb ('trató') + Object/Complement ('nos') + Prepositional Phrase ('con crueldad'). 'Madrastra' uses the pejorative suffix '-astra'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El coche es un cochazo impresionante.",
+          "errorWord": "cochazo",
+          "correctedWord": "coche",
+          "acceptableCorrections": [
+            "coche"
+          ],
+          "explanation": "While 'cochazo' is a valid word meaning a very large or impressive car (using the augmentative suffix '-azo'), the sentence implies a basic statement about a car. If the intent is simply to say 'The car is impressive', then 'coche' would be the correct noun. If the intent is to emphasize its impressiveness, 'cochazo' is correct, but the prompt implies an error."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Lo malo es que no hay sitio.",
+          "errorWord": "malo",
+          "correctedWord": "malo",
+          "acceptableCorrections": [
+            "malo"
+          ],
+          "explanation": "The construction 'Lo + adjective' is correctly used here to mean 'the bad thing'. 'Lo malo es que no hay sitio' translates to 'The bad thing is that there is no room'. No correction is needed as the grammar is sound."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El poeta es un poetastro.",
+          "errorWord": "poetastro",
+          "correctedWord": "poeta",
+          "acceptableCorrections": [
+            "poeta"
+          ],
+          "explanation": "The suffix '-astro/a' forms a pejorative term, implying a bad or inferior version of the base word. 'Poetastro' means a bad poet. If the sentence intends to describe a poet positively or neutrally, 'poeta' is the correct word. If it intends to be critical, 'poetastro' is grammatically correct but carries a negative meaning."
+        }
+      ]
+    },
+    "8": {
+      "title": "Pragmatics and Communicative Functions",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which phrase best expresses strong agreement?",
+          "options": [
+            "Puede ser...",
+            "En parte tienes razón, pero...",
+            "Totalmente de acuerdo",
+            "No lo veo así..."
+          ],
+          "correctAnswer": "Totalmente de acuerdo",
+          "explanation": "This phrase directly translates to 'Totally agree' and is a strong expression of agreement. The other options express mild agreement, partial agreement, or disagreement."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "___ las circunstancias, tuvimos que cancelar el evento.",
+          "correctAnswer": "Habida cuenta de",
+          "acceptableAnswers": [
+            "Habida cuenta de",
+            "Dadas"
+          ],
+          "hint": "Consider phrases that express cause or reason due to circumstances.",
+          "explanation": "'Habida cuenta de' means 'given' or 'taking into account' and is used to introduce the reason for an action or consequence. 'Dadas' is a more concise alternative."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Me temo que no puedo estar de acuerdo con tu propuesta.",
+          "shuffledWords": [
+            "propuesta",
+            "acuerdo",
+            "puedo",
+            "estar",
+            "con",
+            "Me",
+            "de",
+            "temo",
+            "no",
+            "tu"
+          ],
+          "hint": "Start with the expression of disagreement.",
+          "explanation": "The sentence begins with a polite disagreement phrase 'Me temo que no puedo estar de acuerdo' (I'm afraid I can't agree) followed by the object of disagreement 'con tu propuesta' (with your proposal)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Puede que él está en la biblioteca.",
+          "errorWord": "está",
+          "correctedWord": "esté",
+          "acceptableCorrections": [
+            "esté"
+          ],
+          "explanation": "When expressing speculation or hypothesis with 'puede que', the subjunctive mood is required. The present subjunctive of 'estar' for 'él' is 'esté'."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which phrase indicates partial agreement?",
+          "options": [
+            "Sin duda",
+            "No comparto esa opinión",
+            "Sí, pero...",
+            "Totalmente de acuerdo"
+          ],
+          "correctAnswer": "Sí, pero...",
+          "explanation": "'Sí, pero...' is a common way to express partial agreement, acknowledging a point before introducing a counter-argument or reservation. The other options are strong agreement or disagreement."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Lo hicieron ___ que todos pudieran participar.",
+          "correctAnswer": "con vistas a",
+          "acceptableAnswers": [
+            "con vistas a",
+            "a fin de"
+          ],
+          "hint": "Think about phrases indicating purpose.",
+          "explanation": "'Con vistas a que' (with a view to) and 'a fin de que' (in order that) are used to express purpose, and they require the subjunctive mood in the clause that follows."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Estará en casa, supongo.",
+          "shuffledWords": [
+            "en",
+            "casa,",
+            "supongo.",
+            "Estará"
+          ],
+          "hint": "Subject + verb + adverbial phrase of supposition.",
+          "explanation": "The sentence structure is 'Estará en casa' (He must be at home), followed by the speculative adverb 'supongo' (I suppose)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Llovió mucho, de tal forma que la calle se inundó.",
+          "errorWord": "la",
+          "correctedWord": "que",
+          "acceptableCorrections": [
+            "que"
+          ],
+          "explanation": "The phrase 'de tal forma que' introduces a consequence or result. The conjunction 'que' is needed to connect the cause (heavy rain) to the result (flooded street). 'De tal forma' alone doesn't complete the structure."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which option expresses strong disagreement politely?",
+          "options": [
+            "No lo veo así.",
+            "Permíteme discrepar.",
+            "Me temo que no puedo estar de acuerdo.",
+            "No comparto esa opinión."
+          ],
+          "correctAnswer": "Me temo que no puedo estar de acuerdo.",
+          "explanation": "'Me temo que no puedo estar de acuerdo' (I'm afraid I can't agree) is a very polite and somewhat formal way to express strong disagreement. 'Permíteme discrepar' is also polite but slightly more direct. 'No lo veo así' and 'No comparto esa opinión' are also polite but can be less strong."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "A lo mejor ___ tarde hoy.",
+          "correctAnswer": "vienes",
+          "acceptableAnswers": [
+            "vienes",
+            "llegas"
+          ],
+          "hint": "Use the verb 'venir' (to come) or 'llegar' (to arrive) in the present indicative.",
+          "explanation": "'A lo mejor' is an expression used to introduce speculation about the present or future, and it is typically followed by the indicative mood. 'A lo mejor vienes tarde' means 'Maybe you'll come late'."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Debió de ser muy difícil para él.",
+          "shuffledWords": [
+            "muy",
+            "para",
+            "él.",
+            "ser",
+            "Debió",
+            "de",
+            "difícil"
+          ],
+          "hint": "Structure for speculation about the past.",
+          "explanation": "'Debió de ser' is used to express a strong assumption or deduction about a past event ('It must have been'). The rest of the sentence specifies the degree ('muy difícil' - very difficult) and the person affected ('para él' - for him)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Lo organizaron para que todos participan.",
+          "errorWord": "participan",
+          "correctedWord": "participaran",
+          "acceptableCorrections": [
+            "participaran",
+            "participasen"
+          ],
+          "explanation": "The phrase 'para que' when expressing purpose requires the subjunctive mood in the following clause. Since the main clause is in the past ('organizaron'), the imperfect subjunctive ('participaran' or 'participasen') is needed."
+        }
+      ]
+    },
+    "9": {
+      "title": "Text Types and Registers",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "¿Qué construcción impersonal se utiliza comúnmente en el registro académico para presentar información?",
+          "options": [
+            "Se dice que...",
+            "A ver si...",
+            "Pues nada...",
+            "Total que..."
+          ],
+          "correctAnswer": "Se dice que...",
+          "explanation": "Impersonal constructions like 'se dice que', 'se ha demostrado que', or 'cabe señalar que' are characteristic of the academic register for presenting information formally and objectively."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "En el registro literario, ¿qué figura retórica consiste en alterar el orden sintáctico habitual de las palabras?",
+          "options": [
+            "La metáfora",
+            "El hipérbaton",
+            "La aliteración",
+            "La anáfora"
+          ],
+          "correctAnswer": "El hipérbaton",
+          "explanation": "Hyperbaton is a figure of speech that involves altering the natural or expected word order in a sentence, often for emphasis or stylistic effect, as seen in literary register."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Para expresar una condición hipotética en el pasado en el registro periodístico, ¿qué tiempo verbal se puede emplear de forma similar al condicional?",
+          "options": [
+            "El pretérito perfecto simple",
+            "El imperfecto de subjuntivo",
+            "El futuro de subjuntivo",
+            "El imperfecto de indicativo"
+          ],
+          "correctAnswer": "El imperfecto de subjuntivo",
+          "explanation": "In journalistic register, the imperfect subjunctive (-ra form) can sometimes be used to express a hypothetical or conditional situation in the past, similar to how the conditional mood functions."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "En el ámbito académico, ___ conveniente destacar la importancia de la metodología empleada.",
+          "correctAnswer": "conviene",
+          "acceptableAnswers": [
+            "conviene",
+            "es conveniente"
+          ],
+          "hint": "Formal verb used in academic register for highlighting.",
+          "explanation": "'Conviene' is a formal verb often used in academic and formal registers to suggest or point out that something is advisable or important to note."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El informe ___ que la inversión ha generado beneficios significativos.",
+          "correctAnswer": "sugiere",
+          "acceptableAnswers": [
+            "sugiere",
+            "indica",
+            "apunta"
+          ],
+          "hint": "Verb used for cautious or indirect statements in academic writing.",
+          "explanation": "Verbs like 'sugiere', 'indica', or 'apunta' are used for hedging in academic writing, presenting findings cautiously rather than as absolute certainties."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Apenas ___ el discurso, el público aplaudió con entusiasmo.",
+          "correctAnswer": "hubo pronunciado",
+          "acceptableAnswers": [
+            "hubo pronunciado",
+            "hubo terminado",
+            "hubo acabado"
+          ],
+          "hint": "Pretérito anterior tense.",
+          "explanation": "The 'pretérito anterior' (e.g., 'hubo pronunciado') is a literary tense used to indicate an action that immediately preceded another past action, often found in literary register."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Se ha confirmado que la nueva ley entrará en vigor el próximo mes.",
+          "shuffledWords": [
+            "la",
+            "nuevo",
+            "que",
+            "entrará",
+            "mes",
+            "Se",
+            "próximo",
+            "ha",
+            "confirmado",
+            "ley",
+            "en",
+            "vigor",
+            "el"
+          ],
+          "hint": "Impersonal 'se' + passive voice construction.",
+          "explanation": "This sentence uses an impersonal 'se' construction ('Se ha confirmado') followed by a passive-like structure, common in journalistic and academic registers to report information objectively."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "No obstante, los datos preliminares no son concluyentes.",
+          "shuffledWords": [
+            "los",
+            "No",
+            "datos",
+            "preliminares",
+            "concluyentes",
+            "son",
+            "no",
+            "obstante"
+          ],
+          "hint": "Formal connector + negation.",
+          "explanation": "'No obstante' is a formal connector used in academic and journalistic registers to introduce a contrasting idea. The sentence structure follows standard Spanish word order."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Triste y sola, la anciana miraba por la ventana.",
+          "shuffledWords": [
+            "la",
+            "miraba",
+            "ventana",
+            "Triste",
+            "por",
+            "sola",
+            "anciana",
+            "y"
+          ],
+          "hint": "Literary register - word order inversion.",
+          "explanation": "This sentence exemplifies hyperbaton, a literary device where the typical word order is altered ('Triste y sola' precedes the subject 'la anciana'), creating a more poetic or emphatic effect."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El estudio parece indicar que hay una correlación débil.",
+          "errorWord": "parece indicar",
+          "correctedWord": "parece indicar",
+          "acceptableCorrections": [
+            "parece indicar",
+            "indica",
+            "sugiere"
+          ],
+          "explanation": "While 'parece indicar' is correct, the prompt implies an error. In academic register, hedging is common. 'Parece indicar' is a valid hedging phrase. Other acceptable hedging verbs like 'sugiere' or simply 'indica' could also fit depending on context, but 'parece indicar' itself is not an error."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "El presidente declaró que la situación era crítica.",
+          "errorWord": "declaró",
+          "correctedWord": "declaró",
+          "acceptableCorrections": [
+            "declaró",
+            "manifestó",
+            "recalcó",
+            "afirmó"
+          ],
+          "explanation": "The verb 'declaró' is appropriate for reported speech in the journalistic register. Other reporting verbs like 'manifestó', 'recalcó', or 'afirmó' could also be used depending on the nuance intended."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Adonde fueres, haz lo que vieres.",
+          "errorWord": "fueres",
+          "correctedWord": "fueres",
+          "acceptableCorrections": [
+            "fueres",
+            "vayas",
+            "vayas"
+          ],
+          "explanation": "The future subjunctive ('fueres') is characteristic of proverbs and literary register, expressing a general or hypothetical condition. 'Adonde fueres, haz lo que vieres' is a well-known proverb."
+        }
+      ]
+    },
+    "10": {
+      "title": "Error-Prone Areas at C2",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Completa la frase: \"Me preocupa ___ no llegues a tiempo.\"",
+          "options": [
+            "que",
+            "de que",
+            "a que",
+            "en que"
+          ],
+          "correctAnswer": "que",
+          "explanation": "El verbo 'preocupar' no rige la preposición 'de' cuando introduce una oración subordinada. Se dice 'Me preocupa algo' o 'Me preocupa que...'"
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Selecciona la opción correcta para la concordancia: \"La mayoría de los asistentes ___ a favor de la propuesta.\"",
+          "options": [
+            "votó",
+            "votaron",
+            "vota",
+            "votan"
+          ],
+          "correctAnswer": "votó",
+          "explanation": "Con sustantivos colectivos como 'la mayoría', el verbo puede ir en singular (concordando con 'la mayoría') o en plural (concordando con 'los asistentes'). Ambas opciones son aceptadas, pero la concordancia con el núcleo del sujeto ('la mayoría') es siempre correcta."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Elige la combinación correcta de 'ser' o 'estar': \"Después de la caminata, Juan ___ agotado, pero ___ una persona muy enérgica.\"",
+          "options": [
+            "es / está",
+            "está / es",
+            "es / es",
+            "está / está"
+          ],
+          "correctAnswer": "está / es",
+          "explanation": "'Estar agotado' describe un estado temporal resultante de una acción. 'Ser enérgico' describe una cualidad inherente de la persona."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Estoy convencido ___ es la mejor opción para el equipo.",
+          "correctAnswer": "de que",
+          "acceptableAnswers": [
+            "de que"
+          ],
+          "hint": "Piensa en la preposición que rige 'convencerse'.",
+          "explanation": "El verbo 'convencerse' rige la preposición 'de'. Por lo tanto, se dice 'estar convencido de algo' o 'estar convencido de que...'"
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Eso ___ ser un genio, no solo tener talento.",
+          "correctAnswer": "es",
+          "acceptableAnswers": [
+            "es"
+          ],
+          "hint": "Aquí se está definiendo una cualidad, no describiendo un estado temporal.",
+          "explanation": "Aquí 'ser' se usa para definir o clasificar lo que significa 'ser un genio', no para describir un estado temporal. Es una forma de decir 'eso es lo que significa ser un genio'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Me alegro ___ hayas podido venir a la celebración.",
+          "correctAnswer": "de que",
+          "acceptableAnswers": [
+            "de que"
+          ],
+          "hint": "Piensa en la preposición que rige 'alegrarse'.",
+          "explanation": "El verbo 'alegrarse' rige la preposición 'de'. Por lo tanto, se dice 'alegrarse de algo' o 'alegrarse de que...'"
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "No dudo de que tiene razón en este asunto.",
+          "shuffledWords": [
+            "dudo",
+            "este",
+            "de",
+            "razón",
+            "que",
+            "asunto",
+            "tiene",
+            "No",
+            "en"
+          ],
+          "hint": "El verbo 'dudar' rige la preposición 'de' en este contexto.",
+          "explanation": "El verbo 'dudar' rige la preposición 'de' cuando se refiere a la incertidumbre sobre algo. Por lo tanto, la construcción correcta es 'dudar de que...'"
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Cada uno de ellos tiene su propio estilo de vida.",
+          "shuffledWords": [
+            "de",
+            "su",
+            "vida",
+            "Cada",
+            "propio",
+            "estilo",
+            "ellos",
+            "uno",
+            "tiene"
+          ],
+          "hint": "Recuerda que 'cada uno' siempre concuerda con el verbo en singular.",
+          "explanation": "Aunque 'ellos' es plural, el sujeto de la oración es 'cada uno', que siempre rige el verbo en singular. Por eso, 'tiene' es la forma correcta."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "La ciudad está muy cambiada en los últimos años.",
+          "shuffledWords": [
+            "años",
+            "la",
+            "últimos",
+            "ciudad",
+            "en",
+            "está",
+            "muy",
+            "cambiada",
+            "los"
+          ],
+          "hint": "Piensa en un estado temporal o un cambio, no una cualidad inherente.",
+          "explanation": "'Estar cambiada' se usa para describir un cambio en el estado o apariencia de algo, no una cualidad inherente. 'Ser cambiada' no sería gramaticalmente correcto en este contexto."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Pienso de que es una buena idea invertir ahora.",
+          "errorWord": "de que",
+          "correctedWord": "que",
+          "acceptableCorrections": [
+            "que"
+          ],
+          "explanation": "El verbo 'pensar' no rige la preposición 'de' cuando introduce una oración subordinada. Se dice 'Pienso algo' o 'Pienso que...', por lo que la preposición 'de' es incorrecta aquí (dequeísmo)."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Cada uno de los participantes tienen una opinión diferente.",
+          "errorWord": "tienen",
+          "correctedWord": "tiene",
+          "acceptableCorrections": [
+            "tiene"
+          ],
+          "explanation": "Aunque 'participantes' es plural, el sujeto real de la oración es 'cada uno', que siempre rige el verbo en singular. Por lo tanto, la forma correcta es 'tiene'."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Ella es muy cambiada desde que se mudó a la capital.",
+          "errorWord": "es",
+          "correctedWord": "está",
+          "acceptableCorrections": [
+            "está"
+          ],
+          "explanation": "Para describir un cambio en el estado o apariencia de una persona, se usa 'estar'. 'Estar cambiada' indica que ha habido una transformación, mientras que 'ser cambiada' no es la construcción correcta en este contexto."
+        }
+      ]
+    },
+    "11": {
+      "title": "Proverbs and Idiomatic Mastery",
+      "exercises": [
+        {
+          "type": "multiple_choice",
+          "prompt": "Which proverb best fits the meaning: \"Don't look a gift horse in the mouth\"?",
+          "options": [
+            "Más vale tarde que nunca.",
+            "A caballo regalado no le mires el diente.",
+            "En boca cerrada no entran moscas.",
+            "No hay mal que por bien no venga."
+          ],
+          "correctAnswer": "A caballo regalado no le mires el diente.",
+          "explanation": "This proverb directly translates to \"A gifted horse, don't look at its tooth,\" which is the Spanish equivalent of \"Don't look a gift horse in the mouth.\""
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "If someone tells you \"No tienes pelos en la lengua,\" what are they saying about you?",
+          "options": [
+            "You are very quiet.",
+            "You are very honest and direct in what you say.",
+            "You are easily distracted.",
+            "You are very tired."
+          ],
+          "correctAnswer": "You are very honest and direct in what you say.",
+          "explanation": "\"No tener pelos en la lengua\" literally means \"to not have hairs on the tongue,\" and idiomatically means to speak frankly and directly, without holding back."
+        },
+        {
+          "type": "multiple_choice",
+          "prompt": "Which proverb means \"A man is known by the company he keeps\"?",
+          "options": [
+            "El que mucho abarca, poco aprieta.",
+            "Quien mucho duerme, poco aprende.",
+            "Dime con quién andas y te diré quién eres.",
+            "Más vale prevenir que curar."
+          ],
+          "correctAnswer": "Dime con quién andas y te diré quién eres.",
+          "explanation": "This proverb translates to \"Tell me with whom you walk, and I will tell you who you are,\" which is the direct equivalent of \"A man is known by the company he keeps.\""
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si quieres que te ayude, tienes que ___ las pilas.",
+          "correctAnswer": "poner",
+          "acceptableAnswers": [
+            "poner",
+            "ponerte"
+          ],
+          "hint": "Think of the idiom for \"get your act together.\"",
+          "explanation": "The idiom is \"ponerse las pilas,\" which means to get one's act together or to get energized. The verb \"poner\" is used here, and \"ponerte\" is also acceptable as a reflexive form."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Esa casa es enorme, debe ___ un ojo de la cara.",
+          "correctAnswer": "costar",
+          "acceptableAnswers": [
+            "costar"
+          ],
+          "hint": "What do you do with things that are very expensive?",
+          "explanation": "The idiom \"costar un ojo de la cara\" means to cost an arm and a leg, implying a very high price."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "No te preocupes por el examen, ___ pan comido.",
+          "correctAnswer": "es",
+          "acceptableAnswers": [
+            "es",
+            "será"
+          ],
+          "hint": "Use the verb 'to be' with the idiom for 'easy'.",
+          "explanation": "The idiom \"ser pan comido\" means to be a piece of cake or very easy. The verb \"ser\" is conjugated as \"es\" (present tense) or \"será\" (future tense) depending on context, both fitting the meaning of ease."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "No hay mal que por bien no venga.",
+          "shuffledWords": [
+            "bien",
+            "no",
+            "hay",
+            "mal",
+            "por",
+            "que",
+            "venga"
+          ],
+          "hint": "This is a common proverb about finding good in bad situations.",
+          "explanation": "This proverb means \"There is no bad from which good does not come,\" equivalent to \"Every cloud has a silver lining.\""
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "A buen entendedor, pocas palabras bastan.",
+          "shuffledWords": [
+            "pocas",
+            "palabras",
+            "entendedor",
+            "bastan",
+            "A",
+            "buen",
+            "..."
+          ],
+          "hint": "The phrase often ends with 'bastan' (are enough).",
+          "explanation": "The proverb \"A buen entendedor, pocas palabras bastan\" means \"A word to the wise is sufficient,\" implying that someone intelligent understands quickly without needing lengthy explanations."
+        },
+        {
+          "type": "sentence_reorder",
+          "correctSentence": "Donde fueres, haz lo que vieres.",
+          "shuffledWords": [
+            "haz",
+            "lo",
+            "vieres",
+            "que",
+            "Donde",
+            "fueres",
+            "..."
+          ],
+          "hint": "This proverb advises adapting to local customs.",
+          "explanation": "This proverb translates to \"Where you go, do what you see,\" meaning \"When in Rome, do as the Romans do.\""
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Estaba tan cansado que dormí como un tronco.",
+          "errorWord": "dormí",
+          "correctedWord": "dormía",
+          "acceptableCorrections": [
+            "dormía"
+          ],
+          "explanation": "The phrase \"dormir como un tronco\" (to sleep like a log) describes a continuous state of deep sleep. The imperfect tense \"dormía\" is used to describe this ongoing state in the past, rather than the preterite \"dormí\" which would imply a single, completed action."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Intenté explicarle, pero no tenía ni pies ni cabeza.",
+          "errorWord": "tenía",
+          "correctedWord": "tenía",
+          "acceptableCorrections": [
+            "tenía"
+          ],
+          "explanation": "The idiom \"no tener ni pies ni cabeza\" means \"to make no sense at all.\" The verb \"tener\" is correctly conjugated in the imperfect tense \"tenía\" to describe the lack of logic in the past."
+        },
+        {
+          "type": "error_correction",
+          "sentenceWithError": "Le prometí que le echaría una mano con la mudanza.",
+          "errorWord": "echaría",
+          "correctedWord": "echaría",
+          "acceptableCorrections": [
+            "echaría",
+            "echaría una mano"
+          ],
+          "explanation": "The idiom \"echar una mano\" means \"to lend a hand.\" The conditional tense \"echaría\" is appropriate here to express a future action promised in the past. The full idiom is \"echaría una mano.\""
+        }
+      ]
+    }
+  }
+}

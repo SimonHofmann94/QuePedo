@@ -25,12 +25,16 @@ const GRAMMAR_LEVELS: Array<{
   { code: 'C2', label: 'Maestría',    desc: 'Fluidez nativa, literatura, dialectos', progress: 0,   state: 'available', colorFamily: 'rosa' },
 ]
 
+const FREE_LEVELS = new Set(['A1', 'A2'])
+
 export default function GrammarScreen() {
   const router = useRouter()
   const { isPremium, presentPaywall } = useSubscription()
 
+  const isFree = (code: string) => FREE_LEVELS.has(code)
+
   const handleLevelPress = (level: typeof GRAMMAR_LEVELS[0]) => {
-    if (!isPremium) {
+    if (!isFree(level.code) && !isPremium) {
       presentPaywall()
       return
     }
@@ -57,17 +61,17 @@ export default function GrammarScreen() {
               <Lock size={22} color="#FFFFFF" />
             </View>
             <View style={{ flex: 1 }}>
-              <Text style={styles.lockTitle}>Gramática es Premium</Text>
-              <Text style={styles.lockDesc}>Desbloquea los 6 niveles con un tap</Text>
+              <Text style={styles.lockTitle}>B1–C2 son Premium</Text>
+              <Text style={styles.lockDesc}>A1 y A2 son gratis. Desbloquea los demás con un tap.</Text>
             </View>
             <Text style={styles.lockArrow}>→</Text>
           </TouchableOpacity>
         )}
 
         {GRAMMAR_LEVELS.map((l) => {
-          const locked = !isPremium
-          const isCurrent = l.state === 'current' && isPremium
-          const isDone = l.state === 'done' && isPremium
+          const locked = !isFree(l.code) && !isPremium
+          const isCurrent = l.state === 'current' && !locked
+          const isDone = l.state === 'done' && !locked
           const color = LEVEL_COLOR[l.code]
           return (
             <TouchableOpacity
