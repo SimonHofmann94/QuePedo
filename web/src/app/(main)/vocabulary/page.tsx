@@ -319,12 +319,18 @@ export default function VocabularyPage() {
           </div>
         )}
 
-        <div className="mt-8">
+        <div className="mt-8 flex flex-wrap gap-6">
           <Link
-            href="/vocabulary/browser"
+            href="/vocabulary/lists"
             className="font-mono text-xs uppercase tracking-wider text-chili-600 hover:underline"
           >
-            Ver todas →
+            Listas CEFR (A1–C2) →
+          </Link>
+          <Link
+            href="/vocabulary/browser"
+            className="font-mono text-xs uppercase tracking-wider text-ink-500 hover:underline"
+          >
+            Ver mi cuaderno completo →
           </Link>
         </div>
       </div>
