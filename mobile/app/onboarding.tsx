@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity, ActivityIndicator, TextInput } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, ActivityIndicator, TextInput, Alert } from 'react-native'
 import { useRouter } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Plane, Wine, Briefcase, Home, GraduationCap, Gamepad2, Headphones, Eye, Mic } from 'lucide-react-native'
 import { Button } from '@/components/ui/Button'
-import { Card } from '@/components/ui/Card'
+import { Logo } from '@/components/ui/Logo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/contexts/AuthContext'
+import { colors, fontFamily, surface } from '@/constants/theme'
 
 export default function OnboardingScreen() {
   const router = useRouter()
@@ -24,7 +25,7 @@ export default function OnboardingScreen() {
     dailyStudyMinutes: 15,
   })
 
-  const updateData = (key: string, value: any) => {
+  const updateData = (key: string, value: unknown) => {
     setFormData(prev => ({ ...prev, [key]: value }))
   }
 
@@ -40,206 +41,229 @@ export default function OnboardingScreen() {
   const finishOnboarding = async () => {
     if (!user) return
     setIsLoading(true)
-
     await new Promise(resolve => setTimeout(resolve, 2000))
-
-    const { error } = await supabase
-      .from('user_profiles')
-      .upsert({
-        id: user.id,
-        first_name: formData.firstName,
-        native_language: formData.nativeLanguage,
-        location: formData.location,
-        proficiency_level: formData.proficiencyLevel,
-        learning_goals: formData.learningGoals,
-        learning_style: formData.learningStyle,
-        daily_study_minutes: formData.dailyStudyMinutes,
-        onboarding_completed: true,
-        onboarding_completed_at: new Date().toISOString(),
-      })
-
+    const { error } = await supabase.from('user_profiles').upsert({
+      id: user.id,
+      first_name: formData.firstName,
+      native_language: formData.nativeLanguage,
+      location: formData.location,
+      proficiency_level: formData.proficiencyLevel,
+      learning_goals: formData.learningGoals,
+      learning_style: formData.learningStyle,
+      daily_study_minutes: formData.dailyStudyMinutes,
+      onboarding_completed: true,
+      onboarding_completed_at: new Date().toISOString(),
+    })
     if (error) {
-      alert('Failed to save profile. Please try again.')
+      Alert.alert('¡Ay, no!', 'No se pudo guardar el perfil. Inténtalo de nuevo.')
       setIsLoading(false)
     } else {
       router.replace('/(tabs)/dashboard')
     }
   }
 
-  const languages = ['English', 'German', 'French', 'Italian', 'Portuguese']
-  const locations = ['I am already in Spain', 'I am planning to go', 'Just learning for fun']
+  const languages = ['English', 'Deutsch', 'Français', 'Italiano', 'Português']
+  const locations = [
+    'Ya estoy en España / LatAm',
+    'Estoy planeando ir',
+    'Solo aprendiendo por gusto',
+  ]
   const proficiencyLevels = [
-    { id: 'newbie', label: 'Newbie', desc: 'Hola is the only word I know.' },
-    { id: 'dabbler', label: 'Dabbler', desc: 'I can order a beer and say thanks.' },
-    { id: 'conversational', label: 'Conversational', desc: 'I can have basic chats about my day.' },
-    { id: 'pro', label: 'Pro', desc: 'I can watch La Casa de Papel without subtitles.' },
+    { id: 'newbie',         label: 'Novato',       desc: '«Hola» es lo único que sé.' },
+    { id: 'dabbler',        label: 'Curioso',      desc: 'Pido una chela y digo gracias.' },
+    { id: 'conversational', label: 'Conversador',  desc: 'Charlas básicas sobre mi día.' },
+    { id: 'pro',            label: 'Pro',          desc: 'Veo La Casa de Papel sin subtítulos.' },
   ]
   const goals = [
-    { id: 'tourism', label: 'Tourism', Icon: Plane },
-    { id: 'social', label: 'Social & Dating', Icon: Wine },
-    { id: 'business', label: 'Business', Icon: Briefcase },
-    { id: 'living', label: 'Living in Spain', Icon: Home },
-    { id: 'culture', label: 'Culture', Icon: GraduationCap },
+    { id: 'tourism',  label: 'Viajes',        Icon: Plane },
+    { id: 'social',   label: 'Social & citas', Icon: Wine },
+    { id: 'business', label: 'Trabajo',       Icon: Briefcase },
+    { id: 'living',   label: 'Vivir allá',    Icon: Home },
+    { id: 'culture',  label: 'Cultura',       Icon: GraduationCap },
   ]
   const learningStyles = [
-    { id: 'gamer', label: 'The Gamer', desc: 'Quizzes, streaks, competitions.', Icon: Gamepad2 },
-    { id: 'listener', label: 'The Listener', desc: 'Podcasts and audio.', Icon: Headphones },
-    { id: 'visualizer', label: 'The Visualizer', desc: 'Flashcards and reading.', Icon: Eye },
-    { id: 'speaker', label: 'The Speaker', desc: 'Pronunciation and speaking.', Icon: Mic },
+    { id: 'gamer',      label: 'El gamer',   desc: 'Quizzes, rachas, retos.',      Icon: Gamepad2 },
+    { id: 'listener',   label: 'El oyente',  desc: 'Podcasts y audio.',             Icon: Headphones },
+    { id: 'visualizer', label: 'El visual',  desc: 'Tarjetas y lectura.',           Icon: Eye },
+    { id: 'speaker',    label: 'El hablador', desc: 'Habla y pronunciación.',        Icon: Mic },
   ]
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scroll} keyboardShouldPersistTaps="handled">
-        {step === 1 && (
-          <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>Let's get to know you.</Text>
-            <Text style={styles.stepSubtitle}>We need a few details to personalize your experience.</Text>
+        <View style={{ alignItems: 'center', marginBottom: 20 }}>
+          <Logo size={40} />
+        </View>
 
-            <Text style={styles.fieldLabel}>What should we call you?</Text>
-            <TextInput
-              style={styles.input}
-              value={formData.firstName}
-              onChangeText={(v) => updateData('firstName', v)}
-              placeholder="First Name"
-              placeholderTextColor="#78716C"
-            />
+        <View style={styles.card}>
+          {step === 1 && (
+            <View style={styles.stepContent}>
+              <Text style={styles.stepTitle}>¡Hola! Cuéntanos quién eres</Text>
+              <Text style={styles.stepSubtitle}>Lo necesitamos para personalizar tu camino.</Text>
 
-            <Text style={styles.fieldLabel}>Native language</Text>
-            <View style={styles.optionList}>
-              {languages.map(lang => (
+              <Text style={styles.fieldLabel}>¿Cómo te llamamos?</Text>
+              <TextInput
+                style={styles.input}
+                value={formData.firstName}
+                onChangeText={(v) => updateData('firstName', v)}
+                placeholder="Tu nombre"
+                placeholderTextColor={colors.ink[400]}
+              />
+
+              <Text style={styles.fieldLabel}>Idioma nativo</Text>
+              <View style={styles.optionList}>
+                {languages.map(lang => (
+                  <TouchableOpacity
+                    key={lang}
+                    style={[styles.option, formData.nativeLanguage === lang && styles.optionActive]}
+                    onPress={() => updateData('nativeLanguage', lang)}
+                  >
+                    <Text style={[styles.optionText, formData.nativeLanguage === lang && styles.optionTextActive]}>
+                      {lang}
+                    </Text>
+                  </TouchableOpacity>
+                ))}
+              </View>
+
+              <Text style={styles.fieldLabel}>¿Dónde estás?</Text>
+              {locations.map(loc => (
                 <TouchableOpacity
-                  key={lang}
-                  style={[styles.option, formData.nativeLanguage === lang && styles.optionActive]}
-                  onPress={() => updateData('nativeLanguage', lang)}
+                  key={loc}
+                  style={[styles.optionFull, formData.location === loc && styles.optionActive]}
+                  onPress={() => updateData('location', loc)}
                 >
-                  <Text style={[styles.optionText, formData.nativeLanguage === lang && styles.optionTextActive]}>{lang}</Text>
+                  <Text style={[styles.optionText, formData.location === loc && styles.optionTextActive]}>
+                    {loc}
+                  </Text>
                 </TouchableOpacity>
               ))}
-            </View>
 
-            <Text style={styles.fieldLabel}>Where are you located?</Text>
-            {locations.map(loc => (
-              <TouchableOpacity
-                key={loc}
-                style={[styles.optionFull, formData.location === loc && styles.optionActive]}
-                onPress={() => updateData('location', loc)}
+              <Button
+                onPress={() => setStep(2)}
+                disabled={!formData.firstName || !formData.location}
+                variant="primary"
+                size="lg"
               >
-                <Text style={[styles.optionText, formData.location === loc && styles.optionTextActive]}>{loc}</Text>
-              </TouchableOpacity>
-            ))}
-
-            <Button onPress={() => setStep(2)} disabled={!formData.firstName || !formData.location}>
-              Next
-            </Button>
-          </View>
-        )}
-
-        {step === 2 && (
-          <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>How much Spanish do you know?</Text>
-            <Text style={styles.stepSubtitle}>Don't worry, we won't judge!</Text>
-
-            {proficiencyLevels.map(level => (
-              <TouchableOpacity
-                key={level.id}
-                style={[styles.optionFull, formData.proficiencyLevel === level.id && styles.optionActive]}
-                onPress={() => updateData('proficiencyLevel', level.id)}
-              >
-                <Text style={[styles.optionTitle, formData.proficiencyLevel === level.id && styles.optionTextActive]}>{level.label}</Text>
-                <Text style={styles.optionDesc}>{level.desc}</Text>
-              </TouchableOpacity>
-            ))}
-
-            <View style={styles.btnRow}>
-              <Button variant="outline" onPress={() => setStep(1)} style={{ flex: 1 }}>Back</Button>
-              <Button onPress={() => setStep(3)} disabled={!formData.proficiencyLevel} style={{ flex: 1 }}>Next</Button>
+                Siguiente
+              </Button>
             </View>
-          </View>
-        )}
+          )}
 
-        {step === 3 && (
-          <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>Why are you learning Spanish?</Text>
-            <Text style={styles.stepSubtitle}>Select up to 3.</Text>
-
-            <View style={styles.goalsGrid}>
-              {goals.map(goal => (
+          {step === 2 && (
+            <View style={styles.stepContent}>
+              <Text style={styles.stepTitle}>¿Cuánto español sabes?</Text>
+              <Text style={styles.stepSubtitle}>No juzgamos, prometido.</Text>
+              {proficiencyLevels.map(level => (
                 <TouchableOpacity
-                  key={goal.id}
-                  style={[styles.goalCard, formData.learningGoals.includes(goal.id) && styles.optionActive]}
-                  onPress={() => toggleGoal(goal.id)}
+                  key={level.id}
+                  style={[styles.optionFull, formData.proficiencyLevel === level.id && styles.optionActive]}
+                  onPress={() => updateData('proficiencyLevel', level.id)}
                 >
-                  <goal.Icon size={22} color={formData.learningGoals.includes(goal.id) ? '#F97316' : '#78716C'} />
-                  <Text style={[styles.goalText, formData.learningGoals.includes(goal.id) && styles.optionTextActive]}>{goal.label}</Text>
+                  <Text style={[styles.optionTitle, formData.proficiencyLevel === level.id && styles.optionTextActive]}>
+                    {level.label}
+                  </Text>
+                  <Text style={styles.optionDesc}>{level.desc}</Text>
                 </TouchableOpacity>
               ))}
+              <View style={styles.btnRow}>
+                <Button variant="ghost" onPress={() => setStep(1)} style={{ flex: 1 }}>Atrás</Button>
+                <Button onPress={() => setStep(3)} disabled={!formData.proficiencyLevel} style={{ flex: 1 }}>
+                  Siguiente
+                </Button>
+              </View>
             </View>
+          )}
 
-            <View style={styles.btnRow}>
-              <Button variant="outline" onPress={() => setStep(2)} style={{ flex: 1 }}>Back</Button>
-              <Button onPress={() => setStep(4)} disabled={formData.learningGoals.length === 0} style={{ flex: 1 }}>Next</Button>
+          {step === 3 && (
+            <View style={styles.stepContent}>
+              <Text style={styles.stepTitle}>¿Por qué aprendes español?</Text>
+              <Text style={styles.stepSubtitle}>Elige hasta 3.</Text>
+              <View style={styles.goalsGrid}>
+                {goals.map(goal => {
+                  const active = formData.learningGoals.includes(goal.id)
+                  return (
+                    <TouchableOpacity
+                      key={goal.id}
+                      style={[styles.goalCard, active && styles.optionActive]}
+                      onPress={() => toggleGoal(goal.id)}
+                    >
+                      <goal.Icon size={22} color={active ? colors.chili[600] : colors.ink[500]} />
+                      <Text style={[styles.goalText, active && styles.optionTextActive]}>
+                        {goal.label}
+                      </Text>
+                    </TouchableOpacity>
+                  )
+                })}
+              </View>
+              <View style={styles.btnRow}>
+                <Button variant="ghost" onPress={() => setStep(2)} style={{ flex: 1 }}>Atrás</Button>
+                <Button onPress={() => setStep(4)} disabled={formData.learningGoals.length === 0} style={{ flex: 1 }}>
+                  Siguiente
+                </Button>
+              </View>
             </View>
-          </View>
-        )}
+          )}
 
-        {step === 4 && (
-          <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>How do you learn best?</Text>
-            <Text style={styles.stepSubtitle}>We'll adapt the content for you.</Text>
+          {step === 4 && (
+            <View style={styles.stepContent}>
+              <Text style={styles.stepTitle}>¿Cómo aprendes mejor?</Text>
+              <Text style={styles.stepSubtitle}>Adaptamos el contenido a ti.</Text>
+              {learningStyles.map(s => {
+                const active = formData.learningStyle === s.id
+                return (
+                  <TouchableOpacity
+                    key={s.id}
+                    style={[styles.styleOption, active && styles.optionActive]}
+                    onPress={() => updateData('learningStyle', s.id)}
+                  >
+                    <View style={styles.styleIconBox}>
+                      <s.Icon size={20} color={active ? colors.chili[600] : colors.ink[500]} />
+                    </View>
+                    <View style={{ flex: 1 }}>
+                      <Text style={[styles.optionTitle, active && styles.optionTextActive]}>{s.label}</Text>
+                      <Text style={styles.optionDesc}>{s.desc}</Text>
+                    </View>
+                  </TouchableOpacity>
+                )
+              })}
 
-            {learningStyles.map(style => (
-              <TouchableOpacity
-                key={style.id}
-                style={[styles.styleOption, formData.learningStyle === style.id && styles.optionActive]}
-                onPress={() => updateData('learningStyle', style.id)}
-              >
-                <View style={styles.styleIconBox}>
-                  <style.Icon size={20} color={formData.learningStyle === style.id ? '#F97316' : '#78716C'} />
-                </View>
-                <View style={{ flex: 1 }}>
-                  <Text style={[styles.optionTitle, formData.learningStyle === style.id && styles.optionTextActive]}>{style.label}</Text>
-                  <Text style={styles.optionDesc}>{style.desc}</Text>
-                </View>
-              </TouchableOpacity>
-            ))}
+              <Text style={styles.fieldLabel}>¿Cuánto tiempo al día?</Text>
+              <View style={styles.timeRow}>
+                {[5, 15, 30].map(min => {
+                  const active = formData.dailyStudyMinutes === min
+                  return (
+                    <TouchableOpacity
+                      key={min}
+                      style={[styles.timeChip, active && styles.timeChipActive]}
+                      onPress={() => updateData('dailyStudyMinutes', min)}
+                    >
+                      <Text style={[styles.timeText, active && styles.timeTextActive]}>{min} min</Text>
+                    </TouchableOpacity>
+                  )
+                })}
+              </View>
 
-            <Text style={styles.fieldLabel}>Daily study time</Text>
-            <View style={styles.timeRow}>
-              {[5, 15, 30].map(min => (
-                <TouchableOpacity
-                  key={min}
-                  style={[styles.timeChip, formData.dailyStudyMinutes === min && styles.optionActive]}
-                  onPress={() => updateData('dailyStudyMinutes', min)}
-                >
-                  <Text style={[styles.timeText, formData.dailyStudyMinutes === min && styles.optionTextActive]}>{min} min</Text>
-                </TouchableOpacity>
-              ))}
+              <View style={styles.btnRow}>
+                <Button variant="ghost" onPress={() => setStep(3)} style={{ flex: 1 }}>Atrás</Button>
+                <Button onPress={() => setStep(5)} disabled={!formData.learningStyle} style={{ flex: 1 }}>
+                  Siguiente
+                </Button>
+              </View>
             </View>
+          )}
 
-            <View style={styles.btnRow}>
-              <Button variant="outline" onPress={() => setStep(3)} style={{ flex: 1 }}>Back</Button>
-              <Button onPress={() => setStep(5)} disabled={!formData.learningStyle} style={{ flex: 1 }}>Next</Button>
+          {step === 5 && (
+            <View style={styles.magicStep}>
+              <ActivityIndicator size="large" color={colors.chili[500]} />
+              <Text style={styles.magicTitle}>Cocinando tu plan…</Text>
+              <Text style={styles.magicLine}>Analizando tu nivel…</Text>
+              <Text style={styles.magicLine}>Eligiendo vocabulario chingón…</Text>
+              <Text style={styles.magicLine}>{isLoading ? 'Guardando…' : 'Casi listo…'}</Text>
+              <OnboardingTrigger onComplete={finishOnboarding} />
             </View>
-          </View>
-        )}
+          )}
+        </View>
 
-        {step === 5 && (
-          <View style={styles.magicStep}>
-            {isLoading || !isLoading ? (
-              <>
-                <ActivityIndicator size="large" color="#F97316" />
-                <Text style={styles.magicTitle}>Analyzing your level...</Text>
-                <Text style={styles.magicSubtitle}>Curating Castilian vocabulary...</Text>
-                <Text style={styles.magicSubtitle}>Building your custom path...</Text>
-              </>
-            ) : null}
-            {/* Auto-trigger onboarding completion */}
-            <OnboardingTrigger onComplete={finishOnboarding} />
-          </View>
-        )}
-
-        {/* Progress dots */}
         {step < 5 && (
           <View style={styles.dots}>
             {[1, 2, 3, 4].map(i => (
@@ -247,8 +271,9 @@ export default function OnboardingScreen() {
                 key={i}
                 style={[
                   styles.dot,
-                  step >= i ? styles.dotActive : styles.dotInactive,
-                  step >= i && { width: 16 },
+                  step >= i
+                    ? { width: 24, backgroundColor: colors.chili[500] }
+                    : { width: 8, backgroundColor: colors.ink[200] },
                 ]}
               />
             ))}
@@ -259,184 +284,80 @@ export default function OnboardingScreen() {
   )
 }
 
-// Small component to trigger finishOnboarding on mount
 function OnboardingTrigger({ onComplete }: { onComplete: () => void }) {
   useEffect(() => {
     onComplete()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return null
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF7ED',
+  container: { flex: 1, backgroundColor: surface.bg },
+  scroll: { flexGrow: 1, justifyContent: 'center', padding: 20 },
+  card: {
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 24, padding: 24,
   },
-  scroll: {
-    flexGrow: 1,
-    justifyContent: 'center',
-    padding: 24,
-  },
-  stepContent: {
-    gap: 14,
-  },
+  stepContent: { gap: 12 },
   stepTitle: {
-    fontSize: 26,
-    fontWeight: '700',
-    color: '#292524',
-    textAlign: 'center',
+    fontFamily: fontFamily.displayExtraBold, fontSize: 24, color: colors.ink[800],
+    textAlign: 'center', letterSpacing: -0.3,
   },
   stepSubtitle: {
-    fontSize: 15,
-    color: '#78716C',
-    textAlign: 'center',
-    marginBottom: 8,
+    fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500],
+    textAlign: 'center', marginBottom: 6,
   },
   fieldLabel: {
-    fontSize: 14,
-    fontWeight: '500',
-    color: '#78716C',
-    marginTop: 8,
+    fontFamily: fontFamily.bodyBold, fontSize: 13, color: colors.ink[700], marginTop: 4,
   },
   input: {
-    backgroundColor: '#FFFFFF',
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    fontSize: 16,
-    color: '#292524',
+    fontFamily: fontFamily.body, backgroundColor: '#FFFFFF',
+    borderWidth: 2, borderColor: colors.ink[200],
+    borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12,
+    fontSize: 15, color: colors.ink[800],
   },
-  optionList: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 8,
-  },
+  optionList: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   option: {
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
+    paddingHorizontal: 14, paddingVertical: 10,
+    borderWidth: 2, borderColor: colors.ink[200], borderRadius: 12, backgroundColor: '#FFFFFF',
   },
   optionFull: {
-    padding: 14,
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
+    padding: 14, borderWidth: 2, borderColor: colors.ink[200], borderRadius: 14, backgroundColor: '#FFFFFF',
   },
-  optionActive: {
-    borderColor: '#F97316',
-    backgroundColor: '#FFF7ED',
-  },
-  optionText: {
-    fontSize: 14,
-    color: '#292524',
-  },
-  optionTextActive: {
-    color: '#F97316',
-    fontWeight: '600',
-  },
-  optionTitle: {
-    fontSize: 15,
-    fontWeight: '600',
-    color: '#292524',
-  },
-  optionDesc: {
-    fontSize: 12,
-    color: '#78716C',
-    marginTop: 2,
-  },
-  goalsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 10,
-  },
+  optionActive: { borderColor: colors.chili[500], backgroundColor: colors.chili[50] },
+  optionText: { fontFamily: fontFamily.body, fontSize: 14, color: colors.ink[700] },
+  optionTextActive: { fontFamily: fontFamily.bodyBold, color: colors.chili[700] },
+  optionTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 16, color: colors.ink[800] },
+  optionDesc: { fontFamily: fontFamily.body, fontSize: 12, color: colors.ink[500], marginTop: 2 },
+  goalsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   goalCard: {
-    width: '47%',
-    flexGrow: 1,
-    padding: 14,
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
-    alignItems: 'center',
-    gap: 8,
+    width: '47%', flexGrow: 1, alignItems: 'center', gap: 8, padding: 14,
+    borderWidth: 2, borderColor: colors.ink[200], borderRadius: 14, backgroundColor: '#FFFFFF',
   },
-  goalText: {
-    fontSize: 13,
-    fontWeight: '500',
-    color: '#292524',
-    textAlign: 'center',
-  },
+  goalText: { fontFamily: fontFamily.bodyBold, fontSize: 13, color: colors.ink[700], textAlign: 'center' },
   styleOption: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    padding: 14,
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
+    flexDirection: 'row', alignItems: 'center', gap: 12, padding: 12,
+    borderWidth: 2, borderColor: colors.ink[200], borderRadius: 14, backgroundColor: '#FFFFFF',
   },
   styleIconBox: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: '#F5F5F4',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: 40, height: 40, borderRadius: 20, backgroundColor: colors.masa[100],
+    alignItems: 'center', justifyContent: 'center',
   },
-  timeRow: {
-    flexDirection: 'row',
-    gap: 10,
-  },
+  timeRow: { flexDirection: 'row', gap: 8 },
   timeChip: {
-    flex: 1,
-    paddingVertical: 12,
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
-    alignItems: 'center',
+    flex: 1, paddingVertical: 12, borderWidth: 2, borderColor: colors.ink[200],
+    borderRadius: 12, backgroundColor: '#FFFFFF', alignItems: 'center',
   },
-  timeText: {
-    fontSize: 14,
-    fontWeight: '500',
-    color: '#292524',
-  },
-  btnRow: {
-    flexDirection: 'row',
-    gap: 12,
-    marginTop: 8,
-  },
-  magicStep: {
-    alignItems: 'center',
-    gap: 16,
-    paddingVertical: 40,
-  },
+  timeChipActive: { borderColor: colors.chili[500], backgroundColor: colors.chili[500] },
+  timeText: { fontFamily: fontFamily.displayExtraBold, fontSize: 15, color: colors.ink[600] },
+  timeTextActive: { color: '#FFFFFF' },
+  btnRow: { flexDirection: 'row', gap: 8, marginTop: 4 },
+  magicStep: { alignItems: 'center', gap: 10, paddingVertical: 20 },
   magicTitle: {
-    fontSize: 22,
-    fontWeight: '700',
-    color: '#292524',
+    fontFamily: fontFamily.marker, fontSize: 24, color: colors.chili[500], marginTop: 12,
   },
-  magicSubtitle: {
-    fontSize: 14,
-    color: '#78716C',
-  },
-  dots: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 8,
-    marginTop: 32,
-  },
-  dot: {
-    height: 8,
-    width: 8,
-    borderRadius: 4,
-  },
-  dotActive: {
-    backgroundColor: '#F97316',
-  },
-  dotInactive: {
-    backgroundColor: '#E7E5E4',
-  },
+  magicLine: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500] },
+  dots: { flexDirection: 'row', justifyContent: 'center', gap: 6, marginTop: 20 },
+  dot: { height: 8, borderRadius: 4 },
 })

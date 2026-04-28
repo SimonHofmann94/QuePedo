@@ -4,34 +4,54 @@ import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
+// ¡Qué Pedo! chunky button — signature press-down feel.
+// Active: translate-y-1 + shadow-none → physical "click".
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  cn(
+    "inline-flex items-center justify-center gap-2 whitespace-nowrap font-body font-bold tracking-wide",
+    "rounded-[14px] transition-[transform,box-shadow,background-color] duration-100",
+    "active:translate-y-1 active:shadow-none",
+    "disabled:pointer-events-none disabled:bg-ink-200 disabled:text-ink-400 disabled:shadow-none",
+    "[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+    "outline-none focus-visible:ring-4 focus-visible:ring-chili-200/60",
+  ),
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive:
-          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
-        outline:
-          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        primary:
+          "bg-chili-500 text-white hover:bg-chili-600 shadow-[0_4px_0_0_var(--chili-700)]",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "bg-ink-700 text-white hover:bg-ink-600 shadow-[0_4px_0_0_var(--ink-900)]",
+        success:
+          "bg-jade-500 text-white hover:bg-jade-600 shadow-[0_4px_0_0_var(--jade-700)]",
+        danger:
+          "bg-rosa-500 text-white hover:bg-rosa-600 shadow-[0_4px_0_0_var(--rosa-700)]",
+        outline:
+          "bg-white text-chili-600 border-2 border-chili-300 hover:bg-chili-50 shadow-[0_4px_0_0_var(--chili-200)]",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-transparent text-ink-700 border-2 border-ink-200 hover:bg-ink-100 shadow-none active:translate-y-0",
+        link:
+          "bg-transparent text-chili-600 underline-offset-4 hover:underline shadow-none active:translate-y-0 px-0",
+        // Aliases for shadcn migration
+        default:
+          "bg-chili-500 text-white hover:bg-chili-600 shadow-[0_4px_0_0_var(--chili-700)]",
+        destructive:
+          "bg-rosa-500 text-white hover:bg-rosa-600 shadow-[0_4px_0_0_var(--rosa-700)]",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
-        sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
-        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
-        icon: "size-9",
-        "icon-sm": "size-8",
-        "icon-lg": "size-10",
+        sm: "h-9 px-3.5 text-[13px] gap-1.5",
+        md: "h-[46px] px-5 text-[15px] gap-2",
+        lg: "h-14 px-7 text-[17px] gap-2.5",
+        icon: "h-[46px] w-[46px] p-0",
+        "icon-sm": "h-9 w-9 p-0",
+        "icon-lg": "h-14 w-14 p-0",
+        // Alias for shadcn migration
+        default: "h-[46px] px-5 text-[15px] gap-2",
       },
     },
     defaultVariants: {
-      variant: "default",
-      size: "default",
+      variant: "primary",
+      size: "md",
     },
   }
 )

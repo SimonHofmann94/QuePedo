@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, ViewStyle } from 'react-native'
+import { colors, fontFamily } from '@/constants/theme'
 
 interface TacoBalanceProps {
   balance: number
@@ -10,7 +11,7 @@ export function TacoBalance({ balance, isPremium, style }: TacoBalanceProps) {
   return (
     <View style={[styles.pill, style]}>
       <Text style={styles.text}>
-        {isPremium ? '\u{1F32E} \u221E' : `\u{1F32E} ${balance}`}
+        {isPremium ? '🌮 ∞' : `🌮 ${balance}`}
       </Text>
     </View>
   )
@@ -18,15 +19,17 @@ export function TacoBalance({ balance, isPremium, style }: TacoBalanceProps) {
 
 const styles = StyleSheet.create({
   pill: {
-    backgroundColor: '#FFF7ED',
+    backgroundColor: colors.maiz[100],
+    borderWidth: 2,
+    borderColor: colors.maiz[300],
     paddingHorizontal: 12,
     paddingVertical: 4,
     borderRadius: 999,
     alignSelf: 'flex-start',
   },
   text: {
+    fontFamily: fontFamily.bodyBold,
     fontSize: 13,
-    fontWeight: '600',
-    color: '#EA580C',
+    color: colors.ink[800],
   },
 })

@@ -2,132 +2,158 @@ import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter } from 'expo-router'
 import { BrainCircuit, PenTool, Mic, Headphones, BookOpen, Gamepad2, Lock } from 'lucide-react-native'
-import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { useSubscription } from '@/contexts/SubscriptionContext'
+import { colors, fontFamily, surface } from '@/constants/theme'
+
+type Tile = {
+  title: string
+  desc: string
+  icon: typeof BrainCircuit
+  badge: string
+  badgeColor: 'chili' | 'rosa' | 'jade' | 'cielo' | 'maiz' | 'jacaranda'
+  color: string
+  emoji: string
+  locked: boolean
+  onPress: () => void
+}
 
 export default function ExercisesScreen() {
   const router = useRouter()
   const { isPremium, presentPaywall } = useSubscription()
 
-  const exercises = [
-    { title: 'Vocabulary Quiz', desc: 'Test your knowledge with flashcards.', icon: BrainCircuit, badge: 'Practice', locked: false, onPress: () => router.push('/(tabs)/exercises/quiz') },
-    { title: 'Writing Exercise', desc: 'Practice writing with AI feedback.', icon: PenTool, badge: 'AI Feedback', locked: !isPremium, onPress: () => {} },
-    { title: 'Speaking Exercise', desc: 'Improve pronunciation.', icon: Mic, badge: 'Interactive', locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/speaking') },
-    { title: 'Listening Exercise', desc: 'Train your ear with audio.', icon: Headphones, badge: 'Audio', locked: !isPremium, onPress: () => {} },
-    { title: 'Grammar Exercise', desc: 'Master grammar rules.', icon: BookOpen, badge: 'Core', locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/grammar') },
-    { title: 'Games', desc: 'Learn while having fun.', icon: Gamepad2, badge: 'Fun', locked: !isPremium, onPress: () => {} },
+  const exercises: Tile[] = [
+    {
+      title: 'Quiz de vocabulario', desc: 'Tarjetas y swipe · 2 min',
+      icon: BrainCircuit, badge: 'Práctica', badgeColor: 'chili',
+      color: colors.chili[500], emoji: '🎯',
+      locked: false, onPress: () => router.push('/(tabs)/exercises/quiz'),
+    },
+    {
+      title: 'Habla con AI', desc: 'Pronunciación · STT',
+      icon: Mic, badge: 'AI', badgeColor: 'rosa',
+      color: colors.rosa[500], emoji: '🎤',
+      locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/speaking'),
+    },
+    {
+      title: 'Gramática', desc: 'Reglas + ejercicios',
+      icon: BookOpen, badge: 'Core', badgeColor: 'jade',
+      color: colors.jade[500], emoji: '📚',
+      locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/grammar'),
+    },
+    {
+      title: 'Escucha', desc: 'Audio nativo · comprensión',
+      icon: Headphones, badge: 'Audio', badgeColor: 'cielo',
+      color: colors.cielo[500], emoji: '🎧',
+      locked: !isPremium, onPress: () => {},
+    },
+    {
+      title: 'Escritura', desc: 'Prompts con AI',
+      icon: PenTool, badge: 'AI', badgeColor: 'jacaranda',
+      color: colors.jacaranda[500], emoji: '✍️',
+      locked: !isPremium, onPress: () => {},
+    },
+    {
+      title: 'Juegos', desc: 'Aprende jugando',
+      icon: Gamepad2, badge: 'Fun', badgeColor: 'maiz',
+      color: colors.maiz[400], emoji: '🎮',
+      locked: !isPremium, onPress: () => {},
+    },
   ]
 
-  const handlePress = (exercise: typeof exercises[number]) => {
-    if (exercise.locked) {
-      presentPaywall()
-    } else {
-      exercise.onPress()
-    }
+  const handlePress = (ex: Tile) => {
+    if (ex.locked) presentPaywall()
+    else ex.onPress()
   }
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
-      <Text style={styles.title}>Exercises</Text>
-      <ScrollView contentContainerStyle={styles.grid}>
-        {exercises.map((ex, i) => (
-          <TouchableOpacity key={i} onPress={() => handlePress(ex)} activeOpacity={0.7}>
-            <Card style={styles.card}>
-              {ex.locked && (
-                <View style={styles.lockOverlay}>
-                  <Lock size={24} color="#D97706" />
-                  <Text style={styles.lockText}>Premium</Text>
+      <ScrollView contentContainerStyle={styles.scroll}>
+        <View style={styles.header}>
+          <Text style={styles.eyebrow}>PRACTICA · DOMINA</Text>
+          <Text style={styles.title}>Ejercicios</Text>
+          <Text style={styles.subtitle}>Seis modos — escoge el que te llame hoy.</Text>
+        </View>
+
+        {/* Daily challenge feature */}
+        <TouchableOpacity
+          activeOpacity={0.85}
+          onPress={() => router.push('/(tabs)/exercises/quiz')}
+          style={styles.challengeCard}
+        >
+          <Badge color="maiz" variant="solid" size="sm">⚡ Reto del día</Badge>
+          <Text style={styles.challengeTitle}>Quiz diario · 10 palabras</Text>
+          <Text style={styles.challengeDesc}>A2 · 2 min · +50 XP · +1 🔥</Text>
+          <Text style={styles.challengeCta}>¡Dale! →</Text>
+        </TouchableOpacity>
+
+        {/* Grid */}
+        <View style={styles.grid}>
+          {exercises.map((ex, i) => (
+            <TouchableOpacity key={i} onPress={() => handlePress(ex)} activeOpacity={0.8} style={styles.cardWrap}>
+              <View style={[styles.card, ex.locked && { opacity: 0.5 }]}>
+                <View style={[styles.iconBox, { backgroundColor: ex.color }]}>
+                  <Text style={{ fontSize: 26 }}>{ex.emoji}</Text>
                 </View>
-              )}
-              <View style={[ex.locked && styles.lockedContent]}>
                 <View style={styles.cardHeader}>
-                  <View style={[styles.iconBox, ex.locked && styles.iconBoxLocked]}>
-                    <ex.icon size={26} color="#FFFFFF" />
-                  </View>
-                  {ex.locked ? (
-                    <Badge variant="premium">Premium</Badge>
-                  ) : (
-                    <Badge>{ex.badge}</Badge>
-                  )}
+                  <Text style={styles.cardTitle}>{ex.title}</Text>
+                  <Badge color={ex.locked ? 'maiz' : ex.badgeColor} variant="soft" size="sm">
+                    {ex.locked ? 'Premium' : ex.badge}
+                  </Badge>
                 </View>
-                <Text style={styles.cardTitle}>{ex.title}</Text>
                 <Text style={styles.cardDesc}>{ex.desc}</Text>
               </View>
-            </Card>
-          </TouchableOpacity>
-        ))}
+              {ex.locked && (
+                <View style={styles.lockBadge}>
+                  <Lock size={12} color="#FFFFFF" />
+                </View>
+              )}
+            </TouchableOpacity>
+          ))}
+        </View>
       </ScrollView>
     </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF7ED',
+  container: { flex: 1, backgroundColor: surface.bg },
+  scroll: { padding: 20, gap: 20, paddingBottom: 40 },
+  header: { gap: 2 },
+  eyebrow: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, letterSpacing: 2,
+    color: colors.chili[500], textTransform: 'uppercase',
   },
-  title: {
-    fontSize: 28,
-    fontWeight: '700',
-    color: '#292524',
-    paddingHorizontal: 20,
-    paddingTop: 16,
-    paddingBottom: 12,
+  title: { fontFamily: fontFamily.displayExtraBold, fontSize: 32, color: colors.ink[800], lineHeight: 34 },
+  subtitle: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500], marginTop: 6 },
+  challengeCard: {
+    backgroundColor: colors.chili[500], padding: 20, borderRadius: 20, gap: 8,
   },
-  grid: {
-    paddingHorizontal: 20,
-    gap: 12,
-    paddingBottom: 40,
+  challengeTitle: {
+    fontFamily: fontFamily.displayExtraBold, fontSize: 22, color: '#FFFFFF', lineHeight: 26,
   },
+  challengeDesc: { fontFamily: fontFamily.body, fontSize: 13, color: 'rgba(255,255,255,0.9)' },
+  challengeCta: {
+    fontFamily: fontFamily.bodyBold, fontSize: 14, color: '#FFFFFF',
+    backgroundColor: 'rgba(255,255,255,0.2)', alignSelf: 'flex-start',
+    paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10, marginTop: 4,
+  },
+  grid: { gap: 12 },
+  cardWrap: { position: 'relative' },
   card: {
-    gap: 10,
-    overflow: 'hidden',
-  },
-  lockOverlay: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
-    backgroundColor: 'rgba(255, 255, 255, 0.6)',
-    zIndex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 16,
-    gap: 4,
-  },
-  lockText: {
-    fontSize: 12,
-    fontWeight: '600',
-    color: '#D97706',
-  },
-  lockedContent: {
-    opacity: 0.4,
-  },
-  cardHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 20, padding: 18, gap: 10,
   },
   iconBox: {
-    width: 44,
-    height: 44,
-    borderRadius: 12,
-    backgroundColor: '#F97316',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: 52, height: 52, borderRadius: 14,
+    alignItems: 'center', justifyContent: 'center',
   },
-  iconBoxLocked: {
-    backgroundColor: '#A8A29E',
-  },
-  cardTitle: {
-    fontSize: 17,
-    fontWeight: '600',
-    color: '#292524',
-  },
-  cardDesc: {
-    fontSize: 13,
-    color: '#78716C',
+  cardHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  cardTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 18, color: colors.ink[800], flex: 1 },
+  cardDesc: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500] },
+  lockBadge: {
+    position: 'absolute', top: 12, right: 12,
+    width: 24, height: 24, borderRadius: 12, backgroundColor: colors.ink[600],
+    alignItems: 'center', justifyContent: 'center',
   },
 })

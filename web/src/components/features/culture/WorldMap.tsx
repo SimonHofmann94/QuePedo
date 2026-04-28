@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
 import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow";
@@ -12,13 +12,13 @@ export function WorldMap() {
     const router = useRouter();
 
     useLayoutEffect(() => {
-        let root = am5.Root.new("chartdiv");
+        const root = am5.Root.new("chartdiv");
 
         root.setThemes([
             am5themes_Animated.new(root)
         ]);
 
-        let chart = root.container.children.push(am5map.MapChart.new(root, {
+        const chart = root.container.children.push(am5map.MapChart.new(root, {
             panX: "rotateX",
             projection: am5map.geoMercator(),
             minZoomLevel: 0.8,
@@ -28,7 +28,7 @@ export function WorldMap() {
         }));
 
         // Background
-        let backgroundSeries = chart.series.push(
+        const backgroundSeries = chart.series.push(
             am5map.MapPolygonSeries.new(root, {})
         );
 
@@ -43,7 +43,7 @@ export function WorldMap() {
         });
 
         // Polygon Series
-        let polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+        const polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
             geoJSON: am5geodata_worldLow,
             exclude: ["AQ"]
         }));
@@ -71,8 +71,8 @@ export function WorldMap() {
         polygonSeries.mapPolygons.template.events.on("click", function (ev) {
             const dataItem = ev.target.dataItem;
             if (dataItem) {
-                const dataContext = dataItem.dataContext as any;
-                if (dataContext && dataContext.id) {
+                const dataContext = dataItem.dataContext as { id?: string } | undefined;
+                if (dataContext?.id) {
                     router.push(`/culture/${dataContext.id}`);
                 }
             }
@@ -104,7 +104,7 @@ export function WorldMap() {
         ]);
 
         // Zoom Control
-        let zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+        const zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
         zoomControl.homeButton.set("visible", true);
 
         chartRef.current = chart;

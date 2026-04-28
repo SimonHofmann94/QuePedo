@@ -1,7 +1,6 @@
 import {
     LayoutDashboard,
     Book,
-    BrainCircuit,
     Library,
     Globe,
     User,
@@ -14,34 +13,35 @@ export type NavigationItem = {
     icon: React.ComponentType<{ className?: string }>
 }
 
+// Spanish UI strings
 export const navigationItems: NavigationItem[] = [
     {
-        title: "Dashboard",
+        title: "Inicio",
         href: "/dashboard",
         icon: LayoutDashboard,
     },
     {
-        title: "Vocabulary",
+        title: "Vocabulario",
         href: "/vocabulary",
         icon: Book,
     },
     {
-        title: "Grammar",
+        title: "Gramática",
         href: "/grammar",
         icon: Library,
     },
     {
-        title: "Exercises",
+        title: "Ejercicios",
         href: "/exercises",
         icon: Dumbbell,
     },
     {
-        title: "Culture",
+        title: "Cultura",
         href: "/culture",
         icon: Globe,
     },
     {
-        title: "Profile",
+        title: "Perfil",
         href: "/profile",
         icon: User,
     },

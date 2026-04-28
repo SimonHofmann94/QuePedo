@@ -2,6 +2,7 @@ import { View, StyleSheet } from 'react-native'
 import { Tabs } from 'expo-router'
 import { LayoutDashboard, Book, Dumbbell, BookOpenText, Globe, User } from 'lucide-react-native'
 import { useSubscription } from '@/contexts/SubscriptionContext'
+import { colors, fontFamily, surface } from '@/constants/theme'
 
 export default function TabLayout() {
   const { isPremium } = useSubscription()
@@ -10,46 +11,48 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: '#F97316',
-        tabBarInactiveTintColor: '#78716C',
+        tabBarActiveTintColor: colors.chili[600],
+        tabBarInactiveTintColor: colors.ink[400],
         tabBarStyle: {
-          backgroundColor: '#FFFFFF',
-          borderTopColor: '#E7E5E4',
+          backgroundColor: surface.card,
+          borderTopColor: colors.ink[100],
           borderTopWidth: 1,
           paddingTop: 8,
           height: 88,
         },
         tabBarLabelStyle: {
-          fontSize: 11,
-          fontWeight: '500',
+          fontFamily: fontFamily.monoBold,
+          fontSize: 10,
+          letterSpacing: 0.8,
+          textTransform: 'uppercase',
         },
       }}
     >
       <Tabs.Screen
         name="dashboard"
         options={{
-          title: 'Dashboard',
+          title: 'Inicio',
           tabBarIcon: ({ color, size }) => <LayoutDashboard size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="vocabulary"
         options={{
-          title: 'Vocabulary',
+          title: 'Vocab',
           tabBarIcon: ({ color, size }) => <Book size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="exercises"
         options={{
-          title: 'Exercises',
+          title: 'Ejercicios',
           tabBarIcon: ({ color, size }) => <Dumbbell size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="grammar"
         options={{
-          title: 'Grammar',
+          title: 'Gramática',
           tabBarIcon: ({ color, size }) => (
             <View>
               <BookOpenText size={size} color={color} />
@@ -61,7 +64,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="culture"
         options={{
-          title: 'Culture',
+          title: 'Cultura',
           tabBarIcon: ({ color, size }) => (
             <View>
               <Globe size={size} color={color} />
@@ -73,7 +76,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Profile',
+          title: 'Perfil',
           tabBarIcon: ({ color, size }) => <User size={size} color={color} />,
         }}
       />
@@ -89,6 +92,6 @@ const tabStyles = StyleSheet.create({
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: '#D97706',
+    backgroundColor: colors.maiz[500],
   },
 })

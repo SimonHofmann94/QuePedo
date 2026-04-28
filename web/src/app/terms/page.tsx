@@ -2,34 +2,34 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Chingón",
-  description: "Terms of Service for the Chingón Spanish learning app.",
+  title: "Terms of Service — ¡Qué Pedo!",
+  description: "Terms of Service for the ¡Qué Pedo! Spanish learning app.",
 }
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-[var(--surface-bg)]">
       <div className="max-w-3xl mx-auto px-6 py-16">
         <Link
           href="/"
-          className="text-sm text-stone-500 hover:text-orange-500 transition-colors"
+          className="text-sm text-ink-500 hover:text-chili-500 transition-colors"
         >
-          &larr; Back to home
+          &larr; Volver al inicio
         </Link>
 
-        <h1 className="text-3xl font-bold text-stone-800 mt-8 mb-2">
+        <h1 className="text-3xl font-bold text-ink-800 mt-8 mb-2">
           Terms of Service
         </h1>
-        <p className="text-sm text-stone-500 mb-10">
+        <p className="text-sm text-ink-500 mb-10">
           Last updated: February 21, 2026
         </p>
 
-        <div className="prose prose-stone max-w-none space-y-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-stone-800 [&_h2]:mt-0 [&_p]:text-stone-600 [&_p]:leading-relaxed [&_li]:text-stone-600">
+        <div className="prose prose-stone max-w-none space-y-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-ink-800 [&_h2]:mt-0 [&_p]:text-ink-600 [&_p]:leading-relaxed [&_li]:text-ink-600">
           <section>
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing or using the Chingón application (&quot;App&quot;), operated by
-              Chingón (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), you agree to be bound by these Terms
+              By accessing or using the ¡Qué Pedo! application (&quot;App&quot;), operated by
+              ¡Qué Pedo! (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;), you agree to be bound by these Terms
               of Service. If you do not agree, please do not use the App.
             </p>
           </section>
@@ -37,7 +37,7 @@ export default function TermsPage() {
           <section>
             <h2>2. Description of Service</h2>
             <p>
-              Chingón is a Spanish language learning application that provides
+              ¡Qué Pedo! is a Spanish language learning application that provides
               vocabulary management, AI-powered word generation, quizzes, grammar
               exercises, and cultural content. The App is available as a web
               application and mobile application for iOS and Android.
@@ -57,7 +57,7 @@ export default function TermsPage() {
           <section>
             <h2>4. Subscriptions and Payments</h2>
             <p>
-              Chingón offers both free and premium subscription tiers. Premium
+              ¡Qué Pedo! offers both free and premium subscription tiers. Premium
               subscriptions are available as monthly, yearly, or lifetime plans.
             </p>
             <ul className="list-disc pl-6 space-y-2">
@@ -125,7 +125,7 @@ export default function TermsPage() {
             <h2>8. Intellectual Property</h2>
             <p>
               All content, features, and functionality of the App are owned by
-              Chingón and are protected by copyright, trademark, and other
+              ¡Qué Pedo! and are protected by copyright, trademark, and other
               intellectual property laws. Your user-generated content (such as
               vocabulary entries) remains yours.
             </p>
@@ -143,7 +143,7 @@ export default function TermsPage() {
           <section>
             <h2>10. Limitation of Liability</h2>
             <p>
-              To the fullest extent permitted by law, Chingón shall not be
+              To the fullest extent permitted by law, ¡Qué Pedo! shall not be
               liable for any indirect, incidental, special, consequential, or
               punitive damages arising from your use of the App.
             </p>
@@ -165,7 +165,7 @@ export default function TermsPage() {
               If you have questions about these Terms, please contact us at{" "}
               <a
                 href="mailto:support@chingon.app"
-                className="text-orange-500 hover:text-orange-600 transition-colors"
+                className="text-chili-500 hover:text-orange-600 transition-colors"
               >
                 support@chingon.app
               </a>

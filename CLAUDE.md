@@ -35,47 +35,71 @@ A full-stack Spanish language learning application with vocabulary management, A
 | Shared backend | Supabase (same project — shared DB, Auth, RLS)     |
 | AI             | Google Gemini API (via shared server actions or API)|
 
-## Design System — Sunny Minimal
+## Design System — ¡Qué Pedo!
 
-The app follows a **sunny, minimal** design language. Prioritize simplicity, whitespace, and warmth over flashy UI effects. Replace complex/decorative components with clean, straightforward ones.
+Mexican-inspired, gamified Spanish learning. Mercado-bright colors, papel picado motifs, chunky tactile buttons. Built to feel like a physical game, not a sterile form.
 
-### Color Palette
+**Single source of truth**: `shared/design/tokens.ts` — imported by both web and mobile. Never hardcode colors, fonts, radii, or shadows; always pull from tokens.
 
-| Role       | Color     | Hex       | Tailwind          |
-| ---------- | --------- | --------- | ----------------- |
-| Primary    | Orange    | `#F97316` | `orange-500`      |
-| Accent     | Peach     | `#FB923C` | `orange-400`      |
-| Background | Warm white| `#FFF7ED` | `orange-50`       |
-| Surface    | White     | `#FFFFFF` | `white`           |
-| Text       | Dark stone| `#292524` | `stone-800`       |
-| Muted text | Mid stone | `#78716C` | `stone-500`       |
-| Border     | Light stone| `#E7E5E4`| `stone-200`       |
-| Success    | Green     | `#22C55E` | `green-500`       |
-| Error      | Red       | `#EF4444` | `red-500`         |
+### Color Families
 
-### Design Principles
+7 color families, each named after something unmistakably Mexican. Every ramp has 50–700/900 stops tuned for legible text and confident UI.
 
-- **Minimal**: No gradients, shadows, or decorative animations unless essential for UX feedback.
-- **Flat**: Use borders and subtle background fills instead of elevation/shadows.
-- **Warm**: Lean on the orange/peach palette — backgrounds should feel warm, not clinical.
-- **Spacious**: Generous padding and margins. Let content breathe.
-- **Consistent**: Use the same component patterns everywhere. One button style, one card style, one input style.
-- **Simple components**: Replace complex/flashy UI widgets with plain, functional equivalents. Prefer native elements when possible.
+| Family       | Stop 500  | Role                               |
+| ------------ | --------- | ---------------------------------- |
+| Chili 🌶     | `#ef5a1c` | Primary action, brand, CTAs        |
+| Rosa 🌺      | `#e91e7a` | Danger, destructive, celebrations  |
+| Jade 🌵      | `#089a4f` | Success, verbs, nature             |
+| Cielo ☀      | `#2563eb` | Info, culture, water               |
+| Maíz 🌽      | `#f5b81f` (400) | Warning, streaks fire        |
+| Jacaranda 💜 | `#6f3ff0` | Achievements, accents              |
+| Masa         | `#a48d66` | Warm beige neutrals (corn dough)   |
+| Ink 🖤       | `#1a1915` (700) | Text & dark surfaces         |
+
+**Surface**: `bg = #fcf9f3` (Masa-50), `card = #ffffff`, `dark = #1a1915`.
 
 ### Typography
 
-- Use system font stack (no custom fonts needed).
-- Headings: `font-semibold`, `stone-800`.
-- Body: `font-normal`, `stone-800`.
-- Captions/labels: `font-medium`, `stone-500`.
+Four typefaces, each with a job:
 
-### Component Style Rules
+| Family               | Role                | Use for                                       |
+| -------------------- | ------------------- | --------------------------------------------- |
+| **Fraunces**         | Display / Headings  | Hero titles, screen headers, big numbers      |
+| **Plus Jakarta Sans**| Body / UI           | Body copy, buttons, inputs, labels            |
+| **Caprasimo**        | Marker / Accent     | Rewards, streak milestones, branded headlines |
+| **JetBrains Mono**   | Mono / Details      | Tags, meta info, CEFR levels, counters        |
 
-- **Buttons**: Solid `orange-500` background, white text, rounded-lg, no shadows. Hover: `orange-600`.
-- **Cards**: White background, `stone-200` border, rounded-xl, no shadow.
-- **Inputs**: White background, `stone-200` border, rounded-lg. Focus ring: `orange-400`.
-- **Navigation**: Clean and flat. Active state uses `orange-500` for text/icon color.
-- **Badges/Tags**: `orange-50` background, `orange-600` text, rounded-full.
+### Design Principles
+
+- **Chunky & tactile**: Buttons use a signature "press me" shadow (`0 4px 0` color match). Pressing translates the button down 4px and removes the shadow — feels physical.
+- **Bright & confident**: Saturated mercado colors over muted pastels. Lean into the palette, don't tone it down.
+- **Spanish first**: UI strings use Mexican Spanish — `¡Dale!` instead of "Submit", `Cocinando…` instead of "Loading", `¡Ay, no!` instead of "Error". See `voice` export in tokens.
+- **Cultural motifs**: PapelPicado banners, Talavera tile watermarks, Sunbursts, ChiliMascot. Use sparingly as backgrounds, dividers, celebratory moments.
+- **Generous radii**: `xs=6, sm=10, md=14, lg=20, xl=28, full=999`. Cards default `lg`, buttons `md`, badges `full`.
+- **Border + chunky shadow** instead of soft elevation. Cards have a 1px ink-100 border and a subtle `shadow.sm`. Active/featured cards get the chunky shadow in their accent color.
+
+### Component Rules
+
+- **Button**: 6 variants — `primary` (chili), `secondary` (ink), `success` (jade), `outline` (chili stroke), `ghost`, `danger` (rosa). All use chunky shadow + press-translate.
+- **Card**: White, `radius lg`, 1px `ink-100` border, `shadow.sm`. Featured cards: 3px solid color border + matching chunky shadow.
+- **Input**: White, 2px `ink-200` border, `radius md`. Focus: 2px chili-400 border + `0 0 0 4px chili-100` ring.
+- **Badge**: `radius full`, mono font uppercase, 3 variants — `solid` (color-500 / white), `soft` (color-100 / color-700), `outline` (color-300 stroke / color-600 text).
+- **CEFR levels**: A1=chili, A2=jade, B1=cielo, B2=maíz, C1=jacaranda, C2=rosa.
+- **Word categories**: noun=chili, verb=jade, adj=cielo, slang=jacaranda, idiom=rosa.
+
+### Voice & Copy
+
+Use Mexican Spanish for all UI strings. Key phrases (also exported as `voice` from tokens):
+
+| Concept    | Use this        | Not this        |
+| ---------- | --------------- | --------------- |
+| Submit/CTA | `¡Dale!`        | Submit / Confirm |
+| Loading    | `Cocinando…`    | Loading…        |
+| Error      | `¡Ay, no!`      | Error           |
+| Success    | `¡Órale!`       | Great job!      |
+| Continue   | `Ándale`        | Continue / Next |
+| Greeting   | `¿Qué pedo?`    | Hello           |
+| Streak/win | `¡chingón!`     | Awesome         |
 
 ## Project Structure
 

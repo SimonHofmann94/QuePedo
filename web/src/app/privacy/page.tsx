@@ -2,33 +2,33 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Chingón",
-  description: "Privacy Policy for the Chingón Spanish learning app.",
+  title: "Privacy Policy — ¡Qué Pedo!",
+  description: "Privacy Policy for the ¡Qué Pedo! Spanish learning app.",
 }
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-orange-50">
+    <main className="min-h-screen bg-[var(--surface-bg)]">
       <div className="max-w-3xl mx-auto px-6 py-16">
         <Link
           href="/"
-          className="text-sm text-stone-500 hover:text-orange-500 transition-colors"
+          className="text-sm text-ink-500 hover:text-chili-500 transition-colors"
         >
-          &larr; Back to home
+          &larr; Volver al inicio
         </Link>
 
-        <h1 className="text-3xl font-bold text-stone-800 mt-8 mb-2">
+        <h1 className="text-3xl font-bold text-ink-800 mt-8 mb-2">
           Privacy Policy
         </h1>
-        <p className="text-sm text-stone-500 mb-10">
+        <p className="text-sm text-ink-500 mb-10">
           Last updated: February 21, 2026
         </p>
 
-        <div className="prose prose-stone max-w-none space-y-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-stone-800 [&_h2]:mt-0 [&_p]:text-stone-600 [&_p]:leading-relaxed [&_li]:text-stone-600">
+        <div className="prose prose-stone max-w-none space-y-8 [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-ink-800 [&_h2]:mt-0 [&_p]:text-ink-600 [&_p]:leading-relaxed [&_li]:text-ink-600">
           <section>
             <h2>1. Introduction</h2>
             <p>
-              Chingón (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the Chingón application
+              ¡Qué Pedo! (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the ¡Qué Pedo! application
               (&quot;App&quot;). This Privacy Policy explains how we collect, use, and
               protect your personal information when you use our App.
             </p>
@@ -169,7 +169,7 @@ export default function PrivacyPage() {
               at{" "}
               <a
                 href="mailto:support@chingon.app"
-                className="text-orange-500 hover:text-orange-600 transition-colors"
+                className="text-chili-500 hover:text-orange-600 transition-colors"
               >
                 support@chingon.app
               </a>

@@ -164,7 +164,7 @@ export default function GrammarLessonScreen() {
         </TouchableOpacity>
 
         <View style={styles.header}>
-          <Badge>{`Chapter ${chapterId + 1}`}</Badge>
+          <Badge color="chili" variant="soft">{`Capítulo ${chapterId + 1}`}</Badge>
           <Text style={styles.title}>{chapter.title}</Text>
         </View>
 

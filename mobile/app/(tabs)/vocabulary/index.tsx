@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert, RefreshControl } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useRouter } from 'expo-router'
 import { Plus, Sparkles, Trash2, BookOpen } from 'lucide-react-native'
 import { SearchInput } from '@/components/ui/SearchInput'
 import { Button } from '@/components/ui/Button'
@@ -12,9 +11,18 @@ import { translationsMatch, getDisplayTranslation, FREE_TIER_LIMITS, type UserVo
 import { AddVocabModal } from '@/components/vocabulary/AddVocabModal'
 import { AIGeneratorModal } from '@/components/vocabulary/AIGeneratorModal'
 import { useSubscription } from '@/contexts/SubscriptionContext'
+import { colors, fontFamily, surface, LEVEL_COLOR } from '@/constants/theme'
+
+type Level = keyof typeof LEVEL_COLOR
+function levelFromDifficulty(d: number): Level {
+  return (['A1', 'A2', 'B1', 'B2', 'C1'][Math.max(0, Math.min(4, d - 1))] as Level)
+}
+
+const LEVEL_FAMILY = {
+  A1: 'chili', A2: 'jade', B1: 'cielo', B2: 'maiz', C1: 'jacaranda', C2: 'rosa',
+} as const
 
 export default function VocabularyScreen() {
-  const router = useRouter()
   const { isPremium, tacoBalance, canAddVocabulary, presentPaywall, refreshSubscription } = useSubscription()
   const [vocab, setVocab] = useState<UserVocabulary[]>([])
   const [search, setSearch] = useState('')
@@ -42,7 +50,7 @@ export default function VocabularyScreen() {
   const filteredVocab = vocab.filter(item =>
     item.term.toLowerCase().includes(search.toLowerCase()) ||
     translationsMatch(item.translations, search) ||
-    item.synonyms?.some(s => s.toLowerCase().includes(search.toLowerCase()))
+    item.synonyms?.some(s => s.toLowerCase().includes(search.toLowerCase())),
   )
 
   const toggleSelect = (id: string) => {
@@ -56,12 +64,12 @@ export default function VocabularyScreen() {
 
   const handleDeleteSelected = async () => {
     Alert.alert(
-      'Delete Words',
-      `Delete ${selectedIds.size} selected word(s)?`,
+      'Borrar palabras',
+      `¿Borrar ${selectedIds.size} palabra(s) seleccionada(s)?`,
       [
-        { text: 'Cancel', style: 'cancel' },
+        { text: 'Cancelar', style: 'cancel' },
         {
-          text: 'Delete',
+          text: 'Borrar',
           style: 'destructive',
           onPress: async () => {
             setIsDeleting(true)
@@ -74,7 +82,7 @@ export default function VocabularyScreen() {
             setIsDeleting(false)
           },
         },
-      ]
+      ],
     )
   }
 
@@ -96,72 +104,75 @@ export default function VocabularyScreen() {
 
   const renderItem = ({ item }: { item: UserVocabulary }) => {
     const isSelected = selectedIds.has(item.id)
+    const level = levelFromDifficulty(item.difficulty_rating)
+    const colorFamily = LEVEL_FAMILY[level]
     return (
       <TouchableOpacity
         style={[styles.vocabItem, isSelected && styles.vocabItemSelected]}
         onPress={() => toggleSelect(item.id)}
-        activeOpacity={0.7}
+        activeOpacity={0.8}
       >
+        <View style={[styles.levelStripe, { backgroundColor: LEVEL_COLOR[level] }]} />
         <View style={styles.vocabMain}>
+          <View style={styles.vocabHeader}>
+            {item.tags && item.tags[0] && (
+              <Badge color="jacaranda" variant="soft" size="sm">{item.tags[0]}</Badge>
+            )}
+            <Text style={styles.levelTag}>{level}</Text>
+          </View>
           <Text style={styles.vocabTerm}>{item.term}</Text>
           <Text style={styles.vocabTranslation}>{getDisplayTranslation(item.translations)}</Text>
-          {item.tags && item.tags.length > 0 && (
-            <View style={styles.tagsRow}>
-              {item.tags.slice(0, 3).map((tag, i) => (
-                <Badge key={i}>{tag}</Badge>
-              ))}
-            </View>
-          )}
         </View>
-        <View style={styles.vocabRight}>
-          <View style={styles.difficultyRow}>
-            {[1, 2, 3, 4, 5].map(d => (
-              <View
-                key={d}
-                style={[
-                  styles.diffDot,
-                  d <= (item.difficulty_rating || 1) && styles.diffDotActive,
-                ]}
-              />
-            ))}
-          </View>
+        <View style={styles.difficultyRow}>
+          {[1, 2, 3, 4, 5].map(d => (
+            <View
+              key={d}
+              style={[
+                styles.diffDot,
+                d <= (item.difficulty_rating || 1) && { backgroundColor: colors.chili[500] },
+              ]}
+            />
+          ))}
         </View>
       </TouchableOpacity>
     )
   }
 
-  const wordCountDisplay = isPremium
-    ? `${vocab.length} words`
-    : `${vocab.length} / ${FREE_TIER_LIMITS.maxVocabulary} words`
+  const countDisplay = isPremium
+    ? `${vocab.length} palabras`
+    : `${vocab.length} / ${FREE_TIER_LIMITS.maxVocabulary} palabras`
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
       <View style={styles.header}>
-        <Text style={styles.title}>Vocabulary</Text>
-        <Text style={styles.count}>{wordCountDisplay}</Text>
+        <View>
+          <Text style={styles.eyebrow}>TU CUADERNO</Text>
+          <Text style={styles.title}>Vocabulario</Text>
+        </View>
+        <Text style={styles.count}>{countDisplay}</Text>
       </View>
 
       <View style={styles.searchRow}>
         <SearchInput
           value={search}
           onChangeText={setSearch}
-          placeholder="Search vocabulary..."
+          placeholder="Buscar palabra…"
           style={{ flex: 1 }}
         />
       </View>
 
       {selectedIds.size > 0 && (
         <View style={styles.selectionBar}>
-          <Button variant="destructive" onPress={handleDeleteSelected} loading={isDeleting}>
+          <Button variant="danger" onPress={handleDeleteSelected} loading={isDeleting} size="sm">
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-              <Trash2 size={16} color="#FFFFFF" />
-              <Text style={{ color: '#FFFFFF', fontWeight: '600' }}>
-                Delete ({selectedIds.size})
+              <Trash2 size={14} color="#FFFFFF" />
+              <Text style={{ color: '#FFFFFF', fontFamily: fontFamily.bodyBold, fontSize: 13 }}>
+                Borrar ({selectedIds.size})
               </Text>
             </View>
           </Button>
           <TouchableOpacity onPress={() => setSelectedIds(new Set())}>
-            <Text style={styles.clearText}>Clear</Text>
+            <Text style={styles.clearText}>Limpiar</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -171,28 +182,32 @@ export default function VocabularyScreen() {
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
         contentContainerStyle={styles.list}
-        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#F97316" />}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.chili[500]} />
+        }
         ListEmptyComponent={
           <View style={styles.empty}>
-            <BookOpen size={40} color="#D6D3D1" />
-            <Text style={styles.emptyText}>No vocabulary yet. Add some words to get started!</Text>
+            <Text style={styles.emptyEmoji}>🌶</Text>
+            <Text style={styles.emptyTitle}>Tu cuaderno está vacío</Text>
+            <Text style={styles.emptyText}>Añade tu primera palabra o pídele a la IA que te genere unas.</Text>
           </View>
         }
       />
 
-      {/* Action Buttons */}
       <View style={styles.actionRow}>
-        <TouchableOpacity style={styles.actionBtn} onPress={handleAddWord}>
-          <Plus size={22} color="#FFFFFF" />
-          <Text style={styles.actionBtnText}>Add Word</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.actionBtn, styles.actionBtnAi]} onPress={handleAiGenerate}>
-          <Sparkles size={22} color="#FFFFFF" />
-          <Text style={styles.actionBtnText}>AI Generate</Text>
-          {!isPremium && (
-            <TacoBalance balance={tacoBalance} style={styles.tacoPill} />
-          )}
-        </TouchableOpacity>
+        <Button onPress={handleAddWord} variant="primary" size="md" style={{ flex: 1 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+            <Plus size={18} color="#FFFFFF" />
+            <Text style={{ color: '#FFFFFF', fontFamily: fontFamily.bodyBold, fontSize: 14 }}>Añadir</Text>
+          </View>
+        </Button>
+        <Button onPress={handleAiGenerate} variant="secondary" size="md" style={{ flex: 1, backgroundColor: colors.jacaranda[500] }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+            <Sparkles size={18} color="#FFFFFF" />
+            <Text style={{ color: '#FFFFFF', fontFamily: fontFamily.bodyBold, fontSize: 14 }}>IA generar</Text>
+            {!isPremium && <TacoBalance balance={tacoBalance} style={styles.tacoPill} />}
+          </View>
+        </Button>
       </View>
 
       <AddVocabModal
@@ -219,133 +234,50 @@ export default function VocabularyScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF7ED',
-  },
+  container: { flex: 1, backgroundColor: surface.bg },
   header: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'baseline',
-    paddingHorizontal: 20,
-    paddingTop: 16,
-    paddingBottom: 8,
+    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end',
+    paddingHorizontal: 20, paddingTop: 16, paddingBottom: 12,
   },
-  title: {
-    fontSize: 28,
-    fontWeight: '700',
-    color: '#292524',
+  eyebrow: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, letterSpacing: 2,
+    color: colors.chili[500], textTransform: 'uppercase', marginBottom: 2,
   },
-  count: {
-    fontSize: 13,
-    color: '#78716C',
-  },
-  searchRow: {
-    paddingHorizontal: 20,
-    paddingBottom: 12,
-  },
+  title: { fontFamily: fontFamily.displayExtraBold, fontSize: 32, color: colors.ink[800], lineHeight: 34 },
+  count: { fontFamily: fontFamily.monoBold, fontSize: 11, color: colors.ink[500] },
+  searchRow: { paddingHorizontal: 20, paddingBottom: 12 },
   selectionBar: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 16,
-    paddingHorizontal: 20,
-    paddingBottom: 12,
+    flexDirection: 'row', alignItems: 'center', gap: 16,
+    paddingHorizontal: 20, paddingBottom: 12,
   },
-  clearText: {
-    fontSize: 14,
-    color: '#78716C',
-  },
-  list: {
-    paddingHorizontal: 20,
-    gap: 8,
-    paddingBottom: 20,
-  },
+  clearText: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500] },
+  list: { paddingHorizontal: 20, gap: 10, paddingBottom: 100 },
   vocabItem: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    backgroundColor: '#FFFFFF',
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 14,
-    padding: 14,
+    flexDirection: 'row', alignItems: 'center', gap: 10,
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 16, padding: 14, overflow: 'hidden',
   },
-  vocabItemSelected: {
-    borderColor: '#F97316',
-    backgroundColor: '#FFF7ED',
-  },
-  vocabMain: {
-    flex: 1,
-    gap: 4,
-  },
+  vocabItemSelected: { borderColor: colors.chili[400], backgroundColor: colors.chili[50] },
+  levelStripe: { position: 'absolute', left: 0, top: 0, bottom: 0, width: 4 },
+  vocabMain: { flex: 1, marginLeft: 6 },
+  vocabHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 },
+  levelTag: { fontFamily: fontFamily.monoBold, fontSize: 9, color: colors.ink[400] },
   vocabTerm: {
-    fontSize: 17,
-    fontWeight: '600',
-    color: '#292524',
+    fontFamily: fontFamily.displayExtraBold, fontSize: 20, color: colors.ink[800], letterSpacing: -0.3,
   },
-  vocabTranslation: {
-    fontSize: 14,
-    color: '#78716C',
-  },
-  tagsRow: {
-    flexDirection: 'row',
-    gap: 6,
-    marginTop: 6,
-    flexWrap: 'wrap',
-  },
-  vocabRight: {
-    alignItems: 'flex-end',
-  },
-  difficultyRow: {
-    flexDirection: 'row',
-    gap: 3,
-  },
-  diffDot: {
-    width: 7,
-    height: 7,
-    borderRadius: 4,
-    backgroundColor: '#E7E5E4',
-  },
-  diffDotActive: {
-    backgroundColor: '#F97316',
-  },
+  vocabTranslation: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500], marginTop: 2 },
+  difficultyRow: { flexDirection: 'row', gap: 3, paddingHorizontal: 6 },
+  diffDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: colors.ink[200] },
   actionRow: {
-    flexDirection: 'row',
-    gap: 12,
-    padding: 20,
-    paddingBottom: 8,
+    flexDirection: 'row', gap: 10, paddingHorizontal: 20, paddingBottom: 12, paddingTop: 8,
+    borderTopWidth: 1, borderTopColor: colors.ink[100], backgroundColor: surface.bg,
   },
-  actionBtn: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    backgroundColor: '#F97316',
-    borderRadius: 14,
-    paddingVertical: 14,
-  },
-  actionBtnAi: {
-    backgroundColor: '#FB923C',
-  },
-  actionBtnText: {
-    color: '#FFFFFF',
-    fontSize: 15,
-    fontWeight: '600',
-  },
-  tacoPill: {
-    backgroundColor: 'rgba(255,255,255,0.25)',
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-  },
-  empty: {
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 40,
-  },
+  tacoPill: { backgroundColor: 'rgba(255,255,255,0.25)', borderWidth: 0, paddingHorizontal: 6, paddingVertical: 2 },
+  empty: { alignItems: 'center', gap: 10, paddingVertical: 60 },
+  emptyEmoji: { fontSize: 40 },
+  emptyTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 18, color: colors.ink[800] },
   emptyText: {
-    fontSize: 14,
-    color: '#78716C',
-    textAlign: 'center',
+    fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500],
+    textAlign: 'center', maxWidth: 280,
   },
 })

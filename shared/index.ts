@@ -1,6 +1,9 @@
 // Types & schemas
 export * from './types/schemas'
 
+// Design system
+export * from './design/tokens'
+
 // Constants
 export * from './constants/colors'
 export * from './constants/navigation'

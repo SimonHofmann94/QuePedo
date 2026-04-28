@@ -1,20 +1,38 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Plus_Jakarta_Sans, Caprasimo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fraunces = Fraunces({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+});
+
+const caprasimo = Caprasimo({
+  variable: "--font-marker",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Chingón - Master Spanish",
-  description: "The ultimate Spanish learning app.",
+  title: "¡Qué Pedo! — Habla español como chingón",
+  description: "Real slang, real culture, real conversations. Learn the Spanish people actually speak.",
 };
 
 export default function RootLayout({
@@ -23,9 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${fraunces.variable} ${jakarta.variable} ${caprasimo.variable} ${jetbrains.variable} antialiased`}
       >
         {children}
       </body>

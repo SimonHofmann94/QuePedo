@@ -52,3 +52,6 @@ Thumbs.db
 *.tmp
 *.temp
 .agent/
+
+# Node
+node_modules/

@@ -2,24 +2,22 @@ import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-nati
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter } from 'expo-router'
 import { Globe, Lock } from 'lucide-react-native'
-import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { useSubscription } from '@/contexts/SubscriptionContext'
+import { colors, fontFamily, surface } from '@/constants/theme'
 
-const SPANISH_COUNTRIES = [
-  { id: 'spain', name: 'Spain', flag: '\u{1F1EA}\u{1F1F8}', region: 'Europe' },
-  { id: 'mexico', name: 'Mexico', flag: '\u{1F1F2}\u{1F1FD}', region: 'North America' },
-  { id: 'colombia', name: 'Colombia', flag: '\u{1F1E8}\u{1F1F4}', region: 'South America' },
-  { id: 'argentina', name: 'Argentina', flag: '\u{1F1E6}\u{1F1F7}', region: 'South America' },
-  { id: 'peru', name: 'Peru', flag: '\u{1F1F5}\u{1F1EA}', region: 'South America' },
-  { id: 'chile', name: 'Chile', flag: '\u{1F1E8}\u{1F1F1}', region: 'South America' },
-  { id: 'venezuela', name: 'Venezuela', flag: '\u{1F1FB}\u{1F1EA}', region: 'South America' },
-  { id: 'ecuador', name: 'Ecuador', flag: '\u{1F1EA}\u{1F1E8}', region: 'South America' },
-  { id: 'guatemala', name: 'Guatemala', flag: '\u{1F1EC}\u{1F1F9}', region: 'Central America' },
-  { id: 'cuba', name: 'Cuba', flag: '\u{1F1E8}\u{1F1FA}', region: 'Caribbean' },
-  { id: 'dominican-republic', name: 'Dominican Republic', flag: '\u{1F1E9}\u{1F1F4}', region: 'Caribbean' },
-  { id: 'costa-rica', name: 'Costa Rica', flag: '\u{1F1E8}\u{1F1F7}', region: 'Central America' },
+type ColorFam = 'chili' | 'rosa' | 'jade' | 'cielo' | 'maiz' | 'jacaranda'
+
+const COUNTRIES: Array<{ id: string; name: string; flag: string; phrase: string; mean: string; color: ColorFam }> = [
+  { id: 'mexico',    name: 'México',    flag: '🇲🇽', phrase: '¡No manches!',  mean: '¡No way!',  color: 'chili' },
+  { id: 'argentina', name: 'Argentina', flag: '🇦🇷', phrase: 'Che, boludo',   mean: 'Hey güey',  color: 'cielo' },
+  { id: 'spain',     name: 'España',    flag: '🇪🇸', phrase: 'Vale, tío',     mean: 'OK, tío',   color: 'maiz' },
+  { id: 'colombia',  name: 'Colombia',  flag: '🇨🇴', phrase: '¡Qué chimba!',  mean: '¡Qué bien!',color: 'jade' },
+  { id: 'chile',     name: 'Chile',     flag: '🇨🇱', phrase: '¡Bacán!',       mean: 'Genial',    color: 'rosa' },
+  { id: 'peru',      name: 'Perú',      flag: '🇵🇪', phrase: '¡Qué chévere!', mean: 'Qué bien',  color: 'jacaranda' },
+  { id: 'cuba',      name: 'Cuba',      flag: '🇨🇺', phrase: '¡Asere!',        mean: '¡Compa!',   color: 'chili' },
+  { id: 'venezuela', name: 'Venezuela', flag: '🇻🇪', phrase: '¡Qué pana!',     mean: 'Qué amigo', color: 'jade' },
 ]
 
 export default function CultureScreen() {
@@ -30,51 +28,52 @@ export default function CultureScreen() {
     <SafeAreaView style={styles.container} edges={['top']}>
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.header}>
-          <Text style={styles.title}>Culture</Text>
-          <Text style={styles.subtitle}>Explore the Spanish-speaking world</Text>
+          <Text style={styles.eyebrow}>21 PAÍSES · 500M HABLANTES</Text>
+          <Text style={styles.title}>Cultura</Text>
+          <Text style={styles.subtitle}>Un idioma, mil formas de decirlo.</Text>
         </View>
 
-        {/* Lock overlay for free users */}
         {!isPremium && (
-          <Card style={styles.lockBanner}>
-            <Lock size={28} color="#D97706" />
-            <Text style={styles.lockTitle}>Premium Feature</Text>
-            <Text style={styles.lockDesc}>Unlock cultural content with Premium</Text>
-            <Button onPress={presentPaywall} style={{ marginTop: 8 }}>
-              Unlock Culture
+          <TouchableOpacity onPress={presentPaywall} activeOpacity={0.85} style={styles.lockBanner}>
+            <View style={styles.lockIcon}>
+              <Lock size={22} color="#FFFFFF" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.lockTitle}>Cultura es Premium</Text>
+              <Text style={styles.lockDesc}>Slang, comida y costumbres por región</Text>
+            </View>
+            <Button onPress={presentPaywall} variant="secondary" size="sm">
+              Unlock
             </Button>
-          </Card>
+          </TouchableOpacity>
         )}
 
-        <Card style={styles.mapPlaceholder}>
-          <Globe size={48} color="#F97316" />
-          <Text style={styles.mapText}>Interactive Map</Text>
-          <Text style={styles.mapSubtext}>Select a country below to explore</Text>
-        </Card>
+        {/* Featured hero */}
+        <View style={styles.featureCard}>
+          <View style={styles.featureIcon}>
+            <Globe size={32} color="#FFFFFF" />
+          </View>
+          <Badge color="chili" variant="solid" size="sm">🇲🇽 MÉXICO · ESTA SEMANA</Badge>
+          <Text style={styles.featureTitle}>Slang de CDMX</Text>
+          <Text style={styles.featureDesc}>«No manches», «qué padre», «va que va»</Text>
+        </View>
 
-        <Text style={styles.sectionTitle}>Spanish-Speaking Countries</Text>
-
-        <View style={!isPremium ? styles.teaserContent : undefined}>
-          {SPANISH_COUNTRIES.map((country) => (
+        <Text style={styles.sectionTitle}>Países</Text>
+        <View style={[styles.grid, !isPremium && { opacity: 0.5 }]}>
+          {COUNTRIES.map((c) => (
             <TouchableOpacity
-              key={country.id}
+              key={c.id}
               onPress={() => {
-                if (isPremium) {
-                  router.push(`/(tabs)/culture/${country.id}`)
-                } else {
-                  presentPaywall()
-                }
+                if (isPremium) router.push(`/(tabs)/culture/${c.id}`)
+                else presentPaywall()
               }}
-              activeOpacity={0.7}
-              style={{ marginBottom: 12 }}
+              activeOpacity={0.85}
+              style={styles.countryCard}
             >
-              <Card style={styles.countryCard}>
-                <Text style={styles.countryFlag}>{country.flag}</Text>
-                <View style={styles.countryInfo}>
-                  <Text style={styles.countryName}>{country.name}</Text>
-                  <Badge>{country.region}</Badge>
-                </View>
-              </Card>
+              <Text style={styles.countryFlag}>{c.flag}</Text>
+              <Text style={styles.countryName}>{c.name}</Text>
+              <Text style={styles.countryPhrase}>«{c.phrase}»</Text>
+              <Text style={styles.countryMean}>{c.mean}</Text>
             </TouchableOpacity>
           ))}
         </View>
@@ -84,84 +83,52 @@ export default function CultureScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF7ED',
+  container: { flex: 1, backgroundColor: surface.bg },
+  scroll: { padding: 20, gap: 16, paddingBottom: 40 },
+  header: { gap: 4 },
+  eyebrow: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, letterSpacing: 2,
+    color: colors.chili[500], textTransform: 'uppercase',
   },
-  scroll: {
-    padding: 20,
-    gap: 12,
-    paddingBottom: 40,
+  title: { fontFamily: fontFamily.displayExtraBold, fontSize: 32, color: colors.ink[800], lineHeight: 34 },
+  subtitle: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500] },
+  lockBanner: {
+    flexDirection: 'row', alignItems: 'center', gap: 12,
+    backgroundColor: colors.cielo[500], borderRadius: 18, padding: 14,
   },
-  header: {
-    gap: 4,
+  lockIcon: {
+    width: 40, height: 40, borderRadius: 12, backgroundColor: 'rgba(255,255,255,0.25)',
+    alignItems: 'center', justifyContent: 'center',
+  },
+  lockTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 16, color: '#FFFFFF' },
+  lockDesc: { fontFamily: fontFamily.body, fontSize: 12, color: 'rgba(255,255,255,0.9)', marginTop: 2 },
+  featureCard: {
+    backgroundColor: colors.maiz[100], borderWidth: 2, borderColor: colors.maiz[300],
+    borderRadius: 20, padding: 20, gap: 8, alignItems: 'flex-start',
+  },
+  featureIcon: {
+    width: 56, height: 56, borderRadius: 16,
+    backgroundColor: colors.chili[500],
+    alignItems: 'center', justifyContent: 'center',
     marginBottom: 4,
   },
-  title: {
-    fontSize: 28,
-    fontWeight: '700',
-    color: '#292524',
-  },
-  subtitle: {
-    fontSize: 15,
-    color: '#78716C',
-  },
-  lockBanner: {
-    alignItems: 'center',
-    gap: 8,
-    paddingVertical: 24,
-    borderColor: '#FDE68A',
-    backgroundColor: '#FFFBEB',
-  },
-  lockTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#292524',
-  },
-  lockDesc: {
-    fontSize: 13,
-    color: '#78716C',
-    textAlign: 'center',
-  },
-  teaserContent: {
-    opacity: 0.5,
-  },
-  mapPlaceholder: {
-    alignItems: 'center',
-    gap: 10,
-    paddingVertical: 32,
-  },
-  mapText: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#292524',
-  },
-  mapSubtext: {
-    fontSize: 13,
-    color: '#78716C',
-  },
+  featureTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 22, color: colors.ink[800] },
+  featureDesc: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[600] },
   sectionTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#292524',
-    marginTop: 8,
+    fontFamily: fontFamily.displayExtraBold, fontSize: 20, color: colors.ink[800], marginTop: 4,
   },
+  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   countryCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 14,
-    paddingVertical: 14,
+    width: '48%', flexGrow: 1,
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 16, padding: 14, gap: 2,
   },
-  countryFlag: {
-    fontSize: 32,
-  },
-  countryInfo: {
-    flex: 1,
-    gap: 4,
-  },
+  countryFlag: { fontSize: 32 },
   countryName: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: '#292524',
+    fontFamily: fontFamily.bodyBold, fontSize: 13, color: colors.ink[700], marginTop: 4,
   },
+  countryPhrase: {
+    fontFamily: fontFamily.displayExtraBold, fontSize: 16, color: colors.ink[800], marginTop: 4,
+  },
+  countryMean: { fontFamily: fontFamily.body, fontSize: 11, color: colors.ink[500] },
 })

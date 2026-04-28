@@ -2,15 +2,29 @@ import { useState, useEffect, useCallback } from 'react'
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, RefreshControl } from 'react-native'
 import { useRouter } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { BookOpen, Trophy, Flame, Clock, MessageSquare, TrendingUp, PlusCircle, Crown } from 'lucide-react-native'
-import { Card } from '@/components/ui/Card'
-import { TacoBalance } from '@/components/ui/TacoBalance'
+import { BookOpen, Trophy, Flame, Clock, Crown } from 'lucide-react-native'
+import { Badge } from '@/components/ui/Badge'
+import { Button } from '@/components/ui/Button'
 import { useAuth } from '@/contexts/AuthContext'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { getUserProfile } from '@/services/profile'
 import { getUserActivityDates, getUserStreak } from '@/services/activity'
 import { getUserVocabulary } from '@/services/vocabulary'
-import { getRandomGreeting } from '@chingon/shared'
+import { colors, fontFamily, surface } from '@/constants/theme'
+
+const GREETINGS_ES = [
+  '¡Qué pedo, {name}!',
+  '¡Qué onda, {name}!',
+  '¡Hola, {name}!',
+  '¡Epa, {name}!',
+]
+
+const DAY_LABELS_ES = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb']
+
+function pickGreeting(name: string) {
+  const t = GREETINGS_ES[Math.floor(Math.random() * GREETINGS_ES.length)]
+  return t.replace('{name}', name)
+}
 
 export default function DashboardScreen() {
   const router = useRouter()
@@ -20,9 +34,9 @@ export default function DashboardScreen() {
   const [vocabCount, setVocabCount] = useState(0)
   const [streak, setStreak] = useState(0)
   const [activityDates, setActivityDates] = useState<string[]>([])
-  const [greeting] = useState(getRandomGreeting())
 
   const displayName = user?.user_metadata?.name || user?.email?.split('@')[0] || 'amigo'
+  const [greeting] = useState(() => pickGreeting(displayName))
 
   const loadData = useCallback(async () => {
     const [vocab, streakResult, activityResult] = await Promise.all([
@@ -45,7 +59,6 @@ export default function DashboardScreen() {
     setRefreshing(false)
   }, [loadData, refreshSubscription])
 
-  // 7-day streak calendar
   const today = new Date()
   const days: Date[] = []
   for (let i = 6; i >= 0; i--) {
@@ -54,319 +67,219 @@ export default function DashboardScreen() {
     days.push(d)
   }
 
-  const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-  const isActiveDay = (date: Date) => {
-    const dateStr = date.toISOString().split('T')[0]
-    return activityDates.includes(dateStr)
-  }
+  const isActiveDay = (d: Date) => activityDates.includes(d.toISOString().split('T')[0])
 
-  const quickActions = [
-    { title: 'Start Learning', desc: 'Continue where you left off', icon: BookOpen, color: '#F97316', href: '/(tabs)/vocabulary' as const },
-    { title: 'Take Quiz', desc: 'Test your knowledge', icon: MessageSquare, color: '#3B82F6', href: '/(tabs)/exercises/quiz' as const },
-    { title: 'Add Vocabulary', desc: 'Expand your wordbank', icon: PlusCircle, color: '#22C55E', href: '/(tabs)/vocabulary' as const },
-    { title: 'View Progress', desc: 'See your improvement', icon: TrendingUp, color: '#8B5CF6', href: '/(tabs)/profile' as const },
-  ]
+  const todayEs = today.toLocaleDateString('es-MX', { weekday: 'long', day: 'numeric', month: 'long' })
 
   return (
-    <SafeAreaView style={styles.container} edges={['top']}>
+    <SafeAreaView style={styles.safeArea} edges={['top']}>
       <ScrollView
         contentContainerStyle={styles.scroll}
-        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor="#F97316" />}
+        refreshControl={
+          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.chili[500]} />
+        }
       >
-        {/* Welcome */}
-        <View style={styles.welcomeSection}>
-          <Text style={styles.greeting}>{greeting}</Text>
-          <Text style={styles.welcomeBack}>Welcome back, {displayName}!</Text>
+        {/* Greeting */}
+        <View style={styles.greetingRow}>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.greeting}>{greeting}</Text>
+            <Text style={styles.subGreeting}>{todayEs}</Text>
+          </View>
+          <Badge color="maiz" variant="solid">🌮 {isPremium ? '∞' : tacoBalance}</Badge>
         </View>
 
-        {/* Stats Grid */}
+        {/* Stats */}
         <View style={styles.statsGrid}>
-          <Card style={styles.statCard}>
-            <View style={styles.statRow}>
-              <View>
-                <Text style={styles.statLabel}>Vocabulary</Text>
-                <Text style={styles.statValue}>{vocabCount}</Text>
-              </View>
-              <View style={styles.statIcon}>
-                <BookOpen size={22} color="#EA580C" />
-              </View>
-            </View>
-          </Card>
-          <Card style={styles.statCard}>
-            <View style={styles.statRow}>
-              <View>
-                <Text style={styles.statLabel}>Streak</Text>
-                <Text style={styles.statValue}>{streak} days</Text>
-              </View>
-              <View style={styles.statIcon}>
-                <Flame size={22} color="#EA580C" />
-              </View>
-            </View>
-          </Card>
-          <Card style={styles.statCard}>
-            <View style={styles.statRow}>
-              <View>
-                <Text style={styles.statLabel}>Tacos</Text>
-                <TacoBalance balance={tacoBalance} isPremium={isPremium} />
-              </View>
-              <View style={styles.statIcon}>
-                <Text style={{ fontSize: 22 }}>{'\u{1F32E}'}</Text>
-              </View>
-            </View>
-          </Card>
-          <Card style={styles.statCard}>
-            <View style={styles.statRow}>
-              <View>
-                <Text style={styles.statLabel}>This Week</Text>
-                <Text style={styles.statValue}>120 min</Text>
-              </View>
-              <View style={styles.statIcon}>
-                <Clock size={22} color="#EA580C" />
-              </View>
-            </View>
-          </Card>
+          <StatCard label="Vocab" value={vocabCount} sub="+12 esta sem." color={colors.chili[500]} icon={<BookOpen size={20} color="#FFFFFF" />} />
+          <StatCard label="Racha" value={streak} sub="¡no la rompas!" color={colors.maiz[400]} icon={<Flame size={20} color="#FFFFFF" />} />
+          <StatCard label="Promedio" value="85%" sub="últimos 30" color={colors.jade[500]} icon={<Trophy size={20} color="#FFFFFF" />} />
+          <StatCard label="Tiempo" value="120m" sub="esta sem." color={colors.cielo[500]} icon={<Clock size={20} color="#FFFFFF" />} />
         </View>
 
-        {/* Upgrade Banner (free users only) */}
+        {/* Upgrade banner */}
         {!isPremium && (
-          <TouchableOpacity onPress={presentPaywall} activeOpacity={0.7}>
-            <Card style={styles.upgradeBanner}>
-              <View style={styles.upgradeIconBox}>
-                <Crown size={22} color="#D97706" />
-              </View>
-              <View style={styles.upgradeContent}>
-                <Text style={styles.upgradeTitle}>Upgrade to Premium</Text>
-                <Text style={styles.upgradeDesc}>Unlimited vocabulary, quizzes, AI generation & more</Text>
-              </View>
-            </Card>
+          <TouchableOpacity onPress={presentPaywall} activeOpacity={0.8} style={styles.upgradeCard}>
+            <View style={styles.upgradeIcon}>
+              <Crown size={22} color="#FFFFFF" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.upgradeTitle}>Vuélvete chingón Premium</Text>
+              <Text style={styles.upgradeDesc}>Vocab ilimitado · quizzes · AI generación</Text>
+            </View>
+            <Text style={styles.upgradeArrow}>→</Text>
           </TouchableOpacity>
         )}
 
-        {/* Quick Actions */}
-        <Card>
-          <Text style={styles.sectionTitle}>Quick Actions</Text>
-          <View style={styles.actionsGrid}>
-            {quickActions.map((action) => (
-              <TouchableOpacity
-                key={action.title}
-                style={styles.actionItem}
-                onPress={() => router.push(action.href)}
-              >
-                <View style={[styles.actionIcon, { backgroundColor: action.color + '15' }]}>
-                  <action.icon size={20} color={action.color} />
-                </View>
-                <Text style={styles.actionTitle}>{action.title}</Text>
-                <Text style={styles.actionDesc}>{action.desc}</Text>
-              </TouchableOpacity>
-            ))}
+        {/* Daily challenge */}
+        <View style={styles.challengeCard}>
+          <Badge color="maiz" variant="solid" size="sm">⚡ Reto del día</Badge>
+          <Text style={styles.challengeTitle}>Ordena una torta en la esquina</Text>
+          <Text style={styles.challengeDesc}>5 min · B1 · práctica de habla</Text>
+          <View style={styles.challengeFooter}>
+            <Text style={styles.challengeMeta}>+50 XP · +1 🔥</Text>
+            <Button
+              onPress={() => router.push('/(tabs)/exercises')}
+              variant="secondary"
+              size="sm"
+              style={{ backgroundColor: '#FFFFFF' }}
+            >
+              <Text style={{ color: colors.chili[600], fontFamily: fontFamily.bodyBold, fontSize: 13 }}>
+                ¡Dale! →
+              </Text>
+            </Button>
           </View>
-        </Card>
+        </View>
 
-        {/* Weekly Streak */}
-        <Card>
-          <Text style={styles.sectionTitle}>Weekly Streak</Text>
+        {/* Quick actions */}
+        <View>
+          <Text style={styles.sectionTitle}>Acciones rápidas</Text>
+          <View style={styles.actionsGrid}>
+            <QuickAction onPress={() => router.push('/(tabs)/exercises')} emoji="📚" color={colors.chili[500]} title="Continuar" sub="Subjuntivo" />
+            <QuickAction onPress={() => router.push('/(tabs)/exercises/quiz')} emoji="🎯" color={colors.jade[500]} title="Quiz" sub="10 palabras" />
+            <QuickAction onPress={() => router.push('/(tabs)/vocabulary')} emoji="➕" color={colors.cielo[500]} title="Añadir" sub="Nueva palabra" />
+            <QuickAction onPress={() => router.push('/(tabs)/profile')} emoji="📊" color={colors.jacaranda[500]} title="Progreso" sub="Ruta a C2" />
+          </View>
+        </View>
+
+        {/* Weekly streak */}
+        <View style={styles.streakCard}>
+          <View style={styles.streakHeader}>
+            <View>
+              <Text style={styles.streakTitle}>Tu semana</Text>
+              <Text style={styles.streakSub}>¡mantén la racha!</Text>
+            </View>
+            <Badge color="maiz" variant="solid">🔥 {streak}</Badge>
+          </View>
           <View style={styles.streakRow}>
             {days.map((date, i) => {
               const active = isActiveDay(date)
-              const isToday = date.toDateString() === today.toDateString()
               return (
                 <View key={i} style={styles.streakDay}>
-                  <Text style={styles.streakDayLabel}>{dayNames[date.getDay()]}</Text>
-                  <View style={[
-                    styles.streakDot,
-                    active && styles.streakDotActive,
-                    isToday && styles.streakDotToday,
-                  ]}>
-                    {active ? (
-                      <Flame size={18} color="#FFFFFF" />
-                    ) : (
-                      <View style={styles.streakDotInner} />
-                    )}
+                  <Text style={styles.streakDayLabel}>{DAY_LABELS_ES[date.getDay()]}</Text>
+                  <View
+                    style={[
+                      styles.streakDot,
+                      { backgroundColor: active ? colors.chili[500] : colors.ink[100] },
+                    ]}
+                  >
+                    <Text style={{ fontSize: active ? 18 : 12, color: active ? '#FFF' : colors.ink[400] }}>
+                      {active ? '🔥' : '·'}
+                    </Text>
                   </View>
                   <Text style={styles.streakDayNum}>{date.getDate()}</Text>
                 </View>
               )
             })}
           </View>
-        </Card>
-
-        {/* Recent Activity */}
-        <Card>
-          <Text style={styles.sectionTitle}>Recent Activity</Text>
-          <View style={styles.emptyState}>
-            <MessageSquare size={40} color="#D6D3D1" />
-            <Text style={styles.emptyText}>No activity yet. Start learning to see your progress!</Text>
-          </View>
-        </Card>
+        </View>
       </ScrollView>
     </SafeAreaView>
   )
 }
 
+function StatCard({
+  label, value, sub, color, icon,
+}: { label: string; value: number | string; sub: string; color: string; icon: React.ReactNode }) {
+  return (
+    <View style={styles.statCard}>
+      <View style={[styles.statIcon, { backgroundColor: color }]}>{icon}</View>
+      <Text style={styles.statLabel}>{label}</Text>
+      <Text style={styles.statValue}>{value}</Text>
+      <Text style={styles.statSub}>{sub}</Text>
+    </View>
+  )
+}
+
+function QuickAction({
+  onPress, emoji, color, title, sub,
+}: { onPress: () => void; emoji: string; color: string; title: string; sub: string }) {
+  return (
+    <TouchableOpacity onPress={onPress} style={styles.action} activeOpacity={0.8}>
+      <View style={[styles.actionEmoji, { backgroundColor: color }]}>
+        <Text style={{ fontSize: 22 }}>{emoji}</Text>
+      </View>
+      <View style={{ flex: 1 }}>
+        <Text style={styles.actionTitle}>{title}</Text>
+        <Text style={styles.actionDesc}>{sub}</Text>
+      </View>
+    </TouchableOpacity>
+  )
+}
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FFF7ED',
-  },
-  scroll: {
-    padding: 20,
-    gap: 20,
-    paddingBottom: 40,
-  },
-  welcomeSection: {
-    gap: 4,
-  },
-  greeting: {
-    fontSize: 28,
-    fontWeight: '700',
-    color: '#292524',
-  },
-  welcomeBack: {
-    fontSize: 18,
-    color: '#78716C',
-  },
-  statsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 12,
-  },
+  safeArea: { flex: 1, backgroundColor: surface.bg },
+  scroll: { padding: 20, gap: 20, paddingBottom: 40 },
+  greetingRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  greeting: { fontFamily: fontFamily.marker, fontSize: 32, color: colors.chili[500], lineHeight: 36 },
+  subGreeting: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500], marginTop: 4 },
+  statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
   statCard: {
-    width: '47%',
-    flexGrow: 1,
-    padding: 16,
-  },
-  statRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-  },
-  statLabel: {
-    fontSize: 13,
-    fontWeight: '500',
-    color: '#78716C',
-  },
-  statValue: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: '#292524',
-    marginTop: 4,
+    width: '47%', flexGrow: 1, padding: 16, borderRadius: 16,
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    position: 'relative',
   },
   statIcon: {
-    backgroundColor: '#FFF7ED',
-    padding: 8,
-    borderRadius: 10,
+    position: 'absolute', right: 14, top: 14, width: 36, height: 36, borderRadius: 10,
+    alignItems: 'center', justifyContent: 'center',
   },
-  upgradeBanner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 14,
-    borderColor: '#FDE68A',
-    backgroundColor: '#FFFBEB',
+  statLabel: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, letterSpacing: 1,
+    color: colors.ink[400], textTransform: 'uppercase',
   },
-  upgradeIconBox: {
-    width: 44,
-    height: 44,
-    borderRadius: 12,
-    backgroundColor: '#FEF3C7',
-    alignItems: 'center',
-    justifyContent: 'center',
+  statValue: {
+    fontFamily: fontFamily.displayExtraBold, fontSize: 32, color: colors.ink[800], lineHeight: 32, marginTop: 6,
   },
-  upgradeContent: {
-    flex: 1,
-    gap: 2,
+  statSub: { fontFamily: fontFamily.body, fontSize: 11, color: colors.ink[500], marginTop: 6 },
+
+  upgradeCard: {
+    flexDirection: 'row', alignItems: 'center', gap: 14,
+    backgroundColor: colors.jacaranda[500], padding: 18, borderRadius: 20,
   },
-  upgradeTitle: {
-    fontSize: 15,
-    fontWeight: '600',
-    color: '#292524',
+  upgradeIcon: {
+    width: 44, height: 44, borderRadius: 14,
+    backgroundColor: 'rgba(255,255,255,0.2)', alignItems: 'center', justifyContent: 'center',
   },
-  upgradeDesc: {
-    fontSize: 12,
-    color: '#78716C',
+  upgradeTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 17, color: '#FFFFFF' },
+  upgradeDesc: { fontFamily: fontFamily.body, fontSize: 12, color: 'rgba(255,255,255,0.85)', marginTop: 2 },
+  upgradeArrow: { fontFamily: fontFamily.displayExtraBold, fontSize: 22, color: '#FFFFFF' },
+
+  challengeCard: {
+    backgroundColor: colors.chili[500], padding: 20, borderRadius: 20, overflow: 'hidden',
   },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#292524',
-    marginBottom: 16,
+  challengeTitle: {
+    fontFamily: fontFamily.displayExtraBold, fontSize: 22, color: '#FFFFFF', marginTop: 10, lineHeight: 26,
   },
-  actionsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 12,
+  challengeDesc: { fontFamily: fontFamily.body, fontSize: 13, color: 'rgba(255,255,255,0.9)', marginTop: 4 },
+  challengeFooter: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 14 },
+  challengeMeta: { fontFamily: fontFamily.monoBold, fontSize: 11, color: 'rgba(255,255,255,0.9)' },
+
+  sectionTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 20, color: colors.ink[800], marginBottom: 12 },
+
+  actionsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+  action: {
+    width: '47%', flexGrow: 1, flexDirection: 'row', gap: 12, alignItems: 'center',
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 16, padding: 14,
   },
-  actionItem: {
-    width: '47%',
-    flexGrow: 1,
-    borderWidth: 1,
-    borderColor: '#E7E5E4',
-    borderRadius: 12,
-    padding: 14,
-    gap: 6,
+  actionEmoji: {
+    width: 44, height: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center',
   },
-  actionIcon: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 4,
+  actionTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 15, color: colors.ink[800] },
+  actionDesc: { fontFamily: fontFamily.body, fontSize: 11, color: colors.ink[500], marginTop: 2 },
+
+  streakCard: {
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 20, padding: 18,
   },
-  actionTitle: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: '#292524',
-  },
-  actionDesc: {
-    fontSize: 11,
-    color: '#78716C',
-  },
-  streakRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  streakDay: {
-    alignItems: 'center',
-    gap: 6,
-  },
+  streakHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 },
+  streakTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 18, color: colors.ink[800] },
+  streakSub: { fontFamily: fontFamily.body, fontSize: 12, color: colors.ink[500] },
+  streakRow: { flexDirection: 'row', justifyContent: 'space-between' },
+  streakDay: { alignItems: 'center', gap: 6 },
   streakDayLabel: {
-    fontSize: 11,
-    fontWeight: '500',
-    color: '#78716C',
+    fontFamily: fontFamily.monoBold, fontSize: 9, letterSpacing: 1,
+    color: colors.ink[400], textTransform: 'uppercase',
   },
-  streakDot: {
-    width: 40,
-    height: 40,
-    borderRadius: 10,
-    backgroundColor: '#F5F5F4',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  streakDotActive: {
-    backgroundColor: '#F97316',
-  },
-  streakDotToday: {
-    borderWidth: 2,
-    borderColor: '#FDBA74',
-  },
-  streakDotInner: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    backgroundColor: '#D6D3D1',
-  },
-  streakDayNum: {
-    fontSize: 11,
-    color: '#78716C',
-  },
-  emptyState: {
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 24,
-  },
-  emptyText: {
-    fontSize: 14,
-    color: '#78716C',
-    textAlign: 'center',
-  },
+  streakDot: { width: 40, height: 40, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
+  streakDayNum: { fontFamily: fontFamily.monoBold, fontSize: 10, color: colors.ink[500] },
 })
