@@ -15,7 +15,7 @@ import { useRouter, useLocalSearchParams } from 'expo-router'
 import { ArrowLeft, Lock, Sparkles } from 'lucide-react-native'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { getChapterExercises } from '@/data/grammar/exercises'
+import { getChapterExercises } from '@chingon/shared'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { checkAnswer } from '@chingon/shared'
 import type {
@@ -23,7 +23,7 @@ import type {
   MultipleChoiceQuestion,
   FillInBlankQuestion,
   GrammarTestResult,
-} from '@/data/grammar/exerciseTypes'
+} from '@chingon/shared'
 import {
   GrammarAIError,
   generateGrammarQuestions,

@@ -1,17 +1,18 @@
 "use client"
 
+import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { ProgressBar } from "@/components/ui/progress"
 import { LockIcon } from "@/components/ui/icons"
 import { TalaveraTile } from "@/components/ui/motifs"
 
 const LEVELS = [
-  { code: "A1", label: "Principiante", desc: "Saludos, verbos regulares, pronombres", progress: 100, state: "done", color: "var(--chili-500)" },
-  { code: "A2", label: "Elemental",   desc: "Pretérito, futuro, objetos directos",  progress: 62,  state: "current", color: "var(--jade-500)" },
-  { code: "B1", label: "Intermedio",  desc: "Subjuntivo, condicional, por/para",    progress: 0,   state: "locked", color: "var(--cielo-500)" },
-  { code: "B2", label: "Alto",        desc: "Subjuntivo imperfecto, voz pasiva",     progress: 0,   state: "locked", color: "var(--maiz-400)" },
-  { code: "C1", label: "Avanzado",    desc: "Matices, registros, expresiones",        progress: 0,   state: "locked", color: "var(--jacaranda-500)" },
-  { code: "C2", label: "Maestría",    desc: "Fluidez nativa, literatura, dialectos", progress: 0,   state: "locked", color: "var(--rosa-500)" },
+  { code: "A1", label: "Principiante", desc: "Saludos, verbos regulares, pronombres", progress: 100, state: "done",      color: "var(--chili-500)" },
+  { code: "A2", label: "Elemental",   desc: "Pretérito, futuro, objetos directos",  progress: 62,  state: "current",   color: "var(--jade-500)" },
+  { code: "B1", label: "Intermedio",  desc: "Subjuntivo, condicional, por/para",    progress: 0,   state: "available", color: "var(--cielo-500)" },
+  { code: "B2", label: "Alto",        desc: "Subjuntivo imperfecto, voz pasiva",     progress: 0,   state: "available", color: "var(--maiz-400)" },
+  { code: "C1", label: "Avanzado",    desc: "Matices, registros, expresiones",        progress: 0,   state: "available", color: "var(--jacaranda-500)" },
+  { code: "C2", label: "Maestría",    desc: "Fluidez nativa, literatura, dialectos", progress: 0,   state: "available", color: "var(--rosa-500)" },
 ] as const
 
 const LEVEL_BADGE = {
@@ -48,23 +49,19 @@ export default function GrammarPage() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {LEVELS.map((l, i) => {
-            const locked = l.state === "locked"
+          {LEVELS.map((l) => {
+            const locked = false
             const current = l.state === "current"
             const done = l.state === "done"
-            const prevCode = i > 0 ? LEVELS[i - 1].code : null
-            return (
-              <div
-                key={l.code}
-                className={`relative min-h-[240px] overflow-hidden rounded-[20px] p-7 ${
-                  locked
-                    ? "border border-ink-100 bg-ink-50 opacity-60"
-                    : current
-                      ? "border-[3px] bg-white shadow-[0_6px_0_var(--jade-500)]"
-                      : "border border-ink-100 bg-white shadow-sm"
-                }`}
-                style={current ? { borderColor: l.color } : undefined}
-              >
+            const cardClass = `relative block min-h-[240px] overflow-hidden rounded-[20px] p-7 transition-shadow ${
+              locked
+                ? "border border-ink-100 bg-ink-50 opacity-60"
+                : current
+                  ? "border-[3px] bg-white shadow-[0_6px_0_var(--jade-500)] hover:shadow-[0_8px_0_var(--jade-500)]"
+                  : "border border-ink-100 bg-white shadow-sm hover:shadow-md"
+            }`
+            const cardStyle = current ? { borderColor: l.color } : undefined
+            const cardContent = (<>
                 {!locked && (
                   <div className="pointer-events-none absolute -right-8 -top-8 opacity-[0.08]">
                     <TalaveraTile size={120} />
@@ -96,26 +93,31 @@ export default function GrammarPage() {
                 </div>
                 <div className="mt-1 text-sm font-semibold text-ink-600">{l.label}</div>
                 <div className="mt-2 text-xs leading-snug text-ink-500">{l.desc}</div>
-                {!locked ? (
-                  <div className="mt-4">
-                    <ProgressBar value={l.progress} color={l.color} height={8} />
-                    <div className="mt-1.5 font-mono text-[10px] font-semibold text-ink-500">
-                      {l.progress}% ·{" "}
-                      {l.progress === 100 ? "¡ya lo dominas!" : current ? "sigue así" : ""}
-                    </div>
+                <div className="mt-4">
+                  <ProgressBar value={l.progress} color={l.color} height={8} />
+                  <div className="mt-1.5 font-mono text-[11px] font-semibold text-ink-500">
+                    {l.progress}% ·{" "}
+                    {l.progress === 100 ? "¡ya lo dominas!" : current ? "sigue así" : "empezar →"}
                   </div>
-                ) : (
-                  <div className="mt-4 font-mono text-[11px] font-semibold text-ink-500">
-                    Completa {prevCode} primero
-                  </div>
-                )}
+                </div>
                 {/* CEFR family-tag pill bottom-left for color reinforcement */}
                 <div className="absolute bottom-4 left-7">
                   <Badge color={LEVEL_BADGE[l.code]} variant="soft" size="sm">
                     CEFR {l.code}
                   </Badge>
                 </div>
-              </div>
+              </>)
+            return locked ? (
+              <div key={l.code} className={cardClass} style={cardStyle}>{cardContent}</div>
+            ) : (
+              <Link
+                key={l.code}
+                href={`/grammar/${l.code.toLowerCase()}`}
+                className={cardClass}
+                style={cardStyle}
+              >
+                {cardContent}
+              </Link>
             )
           })}
         </div>

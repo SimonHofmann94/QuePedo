@@ -6,12 +6,12 @@ import { ArrowLeft, Lock, CheckCircle2 } from 'lucide-react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
-import { grammarA1 } from '@/data/grammar/a1'
-import { grammarA2 } from '@/data/grammar/a2'
-import { grammarB1 } from '@/data/grammar/b1'
-import { grammarB2 } from '@/data/grammar/b2'
-import { grammarC1 } from '@/data/grammar/c1'
-import { grammarC2 } from '@/data/grammar/c2'
+import { grammarA1 } from '@chingon/shared'
+import { grammarA2 } from '@chingon/shared'
+import { grammarB1 } from '@chingon/shared'
+import { grammarB2 } from '@chingon/shared'
+import { grammarC1 } from '@chingon/shared'
+import { grammarC2 } from '@chingon/shared'
 
 const LEVEL_DATA: Record<string, typeof grammarA1> = {
   a1: grammarA1,

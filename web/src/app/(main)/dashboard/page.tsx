@@ -153,8 +153,8 @@ export default async function DashboardPage() {
             <div className="mt-6 rounded-[20px] border border-ink-100 bg-white p-6 shadow-sm">
               <div className="mb-5 flex items-baseline justify-between">
                 <div>
-                  <div className="font-display text-xl font-bold text-ink-800">Tu semana</div>
-                  <div className="text-xs text-ink-500">¡mantén la racha!</div>
+                  <div className="font-display text-2xl font-bold text-ink-800">Tu semana</div>
+                  <div className="text-sm text-ink-500">¡mantén la racha!</div>
                 </div>
                 <Badge color="maiz" variant="solid">🔥 {currentStreak} días</Badge>
               </div>
@@ -163,7 +163,7 @@ export default async function DashboardPage() {
                   const active = isActive(d)
                   return (
                     <div key={d.toISOString()} className="text-center">
-                      <div className="mb-2 font-mono text-[10px] uppercase tracking-wider text-ink-400">
+                      <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-ink-400">
                         {DAY_LABELS_ES[d.getDay()]}
                       </div>
                       <div
@@ -175,7 +175,7 @@ export default async function DashboardPage() {
                       >
                         {active ? "🔥" : "·"}
                       </div>
-                      <div className="mt-1.5 font-mono text-[10px] font-semibold text-ink-500">
+                      <div className="mt-1.5 font-mono text-[11px] font-semibold text-ink-500">
                         {d.getDate()}
                       </div>
                     </div>
@@ -204,7 +204,7 @@ export default async function DashboardPage() {
                 5 minutos · B1 · práctica de habla
               </div>
               <div className="mt-4 flex items-center justify-between">
-                <div className="font-mono text-[11px] opacity-90">+50 XP · +1 🔥</div>
+                <div className="font-mono text-xs opacity-90">+50 XP · +1 🔥</div>
                 <Link
                   href="/exercises"
                   className="rounded-[10px] bg-white px-3.5 py-2 text-[13px] font-bold text-chili-600 shadow-[0_3px_0_rgba(0,0,0,.15)]"
@@ -233,7 +233,7 @@ export default async function DashboardPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="truncate text-[13px] font-semibold text-ink-800">{t}</div>
-                      <div className="font-mono text-[10px] text-ink-400">{s}</div>
+                      <div className="font-mono text-[11px] text-ink-400">{s}</div>
                     </div>
                   </div>
                 ))}
@@ -267,13 +267,13 @@ function StatCard({
       >
         {icon}
       </div>
-      <div className="font-mono text-[10px] font-bold uppercase tracking-wider text-ink-400">
+      <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-ink-400">
         {label}
       </div>
       <div className="mt-2 font-display text-[44px] font-extrabold leading-none tracking-tight text-ink-800">
         {value}
       </div>
-      <div className="mt-1.5 text-xs text-ink-500">{sub}</div>
+      <div className="mt-1.5 text-[13px] text-ink-500">{sub}</div>
     </div>
   )
 }
@@ -304,7 +304,7 @@ function QuickAction({
       </div>
       <div className="flex-1 min-w-0">
         <div className="font-display text-base font-bold text-ink-800">{title}</div>
-        <div className="mt-0.5 truncate text-xs text-ink-500">{sub}</div>
+        <div className="mt-0.5 truncate text-[13px] text-ink-500">{sub}</div>
       </div>
       <ArrowIcon size={18} className="text-ink-400" />
     </Link>

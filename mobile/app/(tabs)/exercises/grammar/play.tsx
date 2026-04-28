@@ -21,7 +21,7 @@ import type {
   FillInBlankQuestion,
   SentenceReorderQuestion,
   ErrorCorrectionQuestion,
-} from '@/data/grammar/exerciseTypes'
+} from '@chingon/shared'
 import { getGrammarExercises, GrammarExerciseError } from '@/services/grammarExercise'
 
 interface ExerciseResult {

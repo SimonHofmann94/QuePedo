@@ -1,11 +1,11 @@
 import { supabase } from '@/lib/supabase'
-import { grammarA1 } from '@/data/grammar/a1'
-import { grammarA2 } from '@/data/grammar/a2'
-import { grammarB1 } from '@/data/grammar/b1'
-import { grammarB2 } from '@/data/grammar/b2'
-import { grammarC1 } from '@/data/grammar/c1'
-import { grammarC2 } from '@/data/grammar/c2'
-import type { GrammarLevel, GrammarChapter } from '@/data/grammar/types'
+import { grammarA1 } from '@chingon/shared'
+import { grammarA2 } from '@chingon/shared'
+import { grammarB1 } from '@chingon/shared'
+import { grammarB2 } from '@chingon/shared'
+import { grammarC1 } from '@chingon/shared'
+import { grammarC2 } from '@chingon/shared'
+import type { GrammarLevel, GrammarChapter } from '@chingon/shared'
 import type { SpeakingExercise, WordResult } from '@/data/speaking/exerciseTypes'
 
 const LEVEL_DATA: Record<string, GrammarLevel> = {

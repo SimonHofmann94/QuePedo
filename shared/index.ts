@@ -10,6 +10,9 @@ export * from './constants/navigation'
 export * from './constants/greetings'
 export * from './constants/subscription'
 
+// Grammar content + exercises
+export * from './grammar'
+
 // Utils
 export * from './utils/quiz'
 export * from './utils/translations'
