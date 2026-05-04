@@ -442,6 +442,14 @@ export default function TermsPage() {
               >
                 support@chingon.app
               </a>
+              <br />
+              Full address and legal information:{" "}
+              <Link
+                href="/impressum"
+                className="text-chili-500 hover:text-chili-600"
+              >
+                Impressum
+              </Link>
             </p>
           </section>
         </div>

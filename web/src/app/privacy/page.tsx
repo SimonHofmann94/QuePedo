@@ -48,7 +48,15 @@ export default function PrivacyPage() {
             </p>
             <p>
               <strong>Data controller:</strong> Simon Hofmann, located in
-              Germany. For privacy questions or to exercise your rights, contact{" "}
+              Germany. Full contact and address information can be found in
+              our{" "}
+              <Link
+                href="/impressum"
+                className="text-chili-500 hover:text-chili-600"
+              >
+                Impressum
+              </Link>
+              . For privacy questions or to exercise your rights, contact{" "}
               <a
                 href="mailto:privacy@chingon.app"
                 className="text-chili-500 hover:text-chili-600"
