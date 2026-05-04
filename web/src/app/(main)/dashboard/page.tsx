@@ -141,6 +141,13 @@ export default async function DashboardPage() {
                 sub="Expande tu cuaderno"
               />
               <QuickAction
+                href="/vocabulary/lists"
+                color="var(--rosa-500)"
+                emoji="📖"
+                title="Listas de vocabulario"
+                sub="A1 a C2 · curadas por nuestros maestros"
+              />
+              <QuickAction
                 href="/profile"
                 color="var(--jacaranda-500)"
                 emoji="📊"

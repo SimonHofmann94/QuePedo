@@ -20,6 +20,8 @@ import {
   PlusIcon,
   SparkleIcon,
   SearchIcon,
+  BookIcon,
+  ArrowIcon,
 } from "@/components/ui/icons"
 import { Trash2 } from "lucide-react"
 import {
@@ -187,6 +189,34 @@ export default function VocabularyPage() {
           </div>
         </div>
 
+        {/* Curated lists CTA — prominent banner */}
+        <Link
+          href="/vocabulary/lists"
+          className="group mb-7 flex items-center gap-4 rounded-[20px] border-[3px] border-chili-500 bg-white p-5 shadow-[0_4px_0_0_var(--chili-700)] transition-transform duration-100 hover:bg-chili-50 active:translate-y-1 active:shadow-none md:p-6"
+        >
+          <div
+            className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[16px] bg-chili-500 text-white shadow-[0_3px_0_rgba(0,0,0,.15)] md:h-16 md:w-16"
+          >
+            <BookIcon size={28} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="font-mono text-[11px] font-bold uppercase tracking-[2px] text-chili-600">
+              Vocab base · 6 niveles
+            </div>
+            <div className="mt-0.5 font-display text-[22px] font-extrabold leading-tight tracking-tight text-ink-800 md:text-[26px]">
+              Más vocabulario
+            </div>
+            <div className="mt-1 text-[13px] text-ink-500 md:text-sm">
+              Explora nuestras listas curadas por nivel · A1 a C2
+            </div>
+          </div>
+          <div className="hidden shrink-0 items-center gap-2 rounded-[12px] bg-chili-500 px-4 py-2.5 font-bold text-white shadow-[0_3px_0_var(--chili-700)] sm:flex">
+            ¡Dale!
+            <ArrowIcon size={18} />
+          </div>
+          <ArrowIcon size={22} className="shrink-0 text-chili-500 sm:hidden" />
+        </Link>
+
         {/* Search + Segment */}
         <div className="mb-5 flex flex-wrap gap-3">
           <div className="relative min-w-[280px] flex-1">
@@ -320,12 +350,6 @@ export default function VocabularyPage() {
         )}
 
         <div className="mt-8 flex flex-wrap gap-6">
-          <Link
-            href="/vocabulary/lists"
-            className="font-mono text-xs uppercase tracking-wider text-chili-600 hover:underline"
-          >
-            Listas CEFR (A1–C2) →
-          </Link>
           <Link
             href="/vocabulary/browser"
             className="font-mono text-xs uppercase tracking-wider text-ink-500 hover:underline"

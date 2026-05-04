@@ -5,9 +5,17 @@
  * and translating Spanish lemmas to German via Gemini.
  *
  * Usage:
- *   GEMINI_API_KEY=xxx node scripts/build-vocab.mjs              # build all levels
- *   GEMINI_API_KEY=xxx node scripts/build-vocab.mjs b1 b2        # only b1, b2
- *   node scripts/build-vocab.mjs --dry-run                       # preview buckets, no API calls
+ *   GEMINI_API_KEY=xxx node scripts/build-vocab.mjs                       # build all levels
+ *   GEMINI_API_KEY=xxx node scripts/build-vocab.mjs --levels=a1,a2        # only a1, a2
+ *   GEMINI_API_KEY=xxx node scripts/build-vocab.mjs b1 b2                 # legacy positional
+ *   node scripts/build-vocab.mjs --dry-run --levels=a1,a2                 # preview, no API calls
+ *
+ * Behavior:
+ *   - Resume-safe: appends to existing {level}.json, skips terms already present.
+ *   - Cross-level dedup: a candidate is rejected if its normalized Spanish term
+ *     already exists in ANY {a1,a2,b1,b2,c1,c2}.json (including itself). Existing
+ *     entries are NEVER removed — dedup only filters NEW candidates.
+ *   - Each level grows toward LEVEL_TARGETS[level] (early-stop when reached).
  *
  * Source: https://github.com/doozan/spanish_data (CC-BY-4.0)
  */
@@ -22,18 +30,54 @@ const VOCAB_DIR = path.join(ROOT, 'shared', 'content', 'vocab')
 const FREQ_URL = 'https://raw.githubusercontent.com/doozan/spanish_data/master/frequency.csv'
 const CACHE_FILE = '/tmp/qp-spanish-frequency.csv'
 
-// CEFR buckets (rank ranges in the filtered frequency list)
+// Level metadata + canonical title for the JSON file header.
 const BUCKETS = {
-  a1: { range: [1, 300],     title: 'A1 — Principiante' },
-  a2: { range: [301, 800],   title: 'A2 — Elemental' },
-  b1: { range: [801, 1800],  title: 'B1 — Intermedio' },
-  b2: { range: [1801, 3200], title: 'B2 — Alto' },
-  c1: { range: [3201, 5000], title: 'C1 — Avanzado' },
-  c2: { range: [5001, 7500], title: 'C2 — Maestría' },
+  a1: { title: 'A1 — Principiante' },
+  a2: { title: 'A2 — Elemental' },
+  b1: { title: 'B1 — Intermedio' },
+  b2: { title: 'B2 — Alto' },
+  c1: { title: 'C1 — Avanzado' },
+  c2: { title: 'C2 — Maestría' },
+}
+
+// Target word counts per level. Used to early-stop harvesting.
+const LEVEL_TARGETS = {
+  a1: 500,
+  a2: 800,
+  b1: 1000,
+  b2: 1400,
+  c1: 1800,
+  c2: 2500,
+}
+
+// Frequency-rank harvest ranges per level. These are intentionally WIDER than
+// the final target so cross-level dedup (which removes terms already present
+// in OTHER level files) still leaves enough candidates to hit the target.
+//   - A1 biased to top 1000 (high-frequency beginner core)
+//   - A2 spans 500–2500 (overlaps B1 by rank, but normalized-term dedup
+//     filters those out)
+//   - B1/B2/C1/C2 keep their original tight ranges to preserve the
+//     existing densely-packed files.
+const LEVEL_RANGES = {
+  a1: [1, 1000],
+  a2: [200, 8000],
+  b1: [801, 1800],
+  b2: [1801, 3200],
+  c1: [3201, 5000],
+  c2: [5001, 7500],
 }
 
 // We only keep "content words". Skip purely grammatical entries.
 const KEEP_POS = new Set(['n', 'v', 'adj', 'adv', 'num', 'interj', 'phrase'])
+
+// Mirrors the normalization used by `normalizeAnswer` in shared/utils/quiz.ts:
+// lowercase + trim, then strip leading Spanish articles. Punctuation stripping
+// is omitted (it doesn't apply to lemmas in the frequency list).
+const LEADING_ARTICLE_RE = /^(el|la|los|las|un|una|unos|unas)\s+/i
+function normalizeTerm(s) {
+  if (!s) return ''
+  return s.toLowerCase().trim().replace(LEADING_ARTICLE_RE, '').trim()
+}
 
 async function fetchFreq() {
   try {
@@ -66,12 +110,32 @@ function parseFreq(text) {
   return out
 }
 
-function bucketize(words) {
-  const buckets = {}
-  for (const [level, { range }] of Object.entries(BUCKETS)) {
-    buckets[level] = words.filter((w) => w.rank >= range[0] && w.rank <= range[1])
+function harvestForLevel(words, level) {
+  const [lo, hi] = LEVEL_RANGES[level]
+  return words.filter((w) => w.rank >= lo && w.rank <= hi)
+}
+
+/**
+ * Load every existing {level}.json and return:
+ *   - perLevel: { a1: [VocabWord, …], … }  (raw arrays, in file order)
+ *   - allTerms: Set<normalizedTerm>        (union across ALL levels)
+ */
+async function loadExistingVocab() {
+  const perLevel = {}
+  const allTerms = new Set()
+  for (const level of Object.keys(BUCKETS)) {
+    const file = path.join(VOCAB_DIR, `${level}.json`)
+    let words = []
+    try {
+      const prev = JSON.parse(await fs.readFile(file, 'utf8'))
+      words = Array.isArray(prev?.words) ? prev.words : []
+    } catch {
+      // file missing or unreadable — treat as empty
+    }
+    perLevel[level] = words
+    for (const w of words) allTerms.add(normalizeTerm(w.es))
   }
-  return buckets
+  return { perLevel, allTerms }
 }
 
 // Models to try in order — fall back if one is overloaded.
@@ -156,47 +220,80 @@ Return ONLY the JSON array, no markdown, no explanation.`
   throw lastErr ?? new Error('All models exhausted')
 }
 
-async function buildLevel(level, words, apiKey, dryRun) {
-  console.log(`\n=== ${level.toUpperCase()} (${words.length} words) ===`)
+/**
+ * Plan a level: returns the list of NEW candidate words to translate, given
+ *   - the harvested rank range
+ *   - the cross-level term blocklist (every term already in any *.json)
+ *   - the per-level target (early-stop once we've planned that many new words)
+ *
+ * Within a single planning call, we also dedupe by normalized term so the
+ * frequency CSV doesn't yield two surface forms that collapse to the same key.
+ */
+function planLevel(level, harvested, blocklist) {
+  const existingCount = blocklist.existingPerLevel[level]
+  const target = LEVEL_TARGETS[level]
+  const slotsLeft = Math.max(0, target - existingCount)
+
+  const seenInPlan = new Set()
+  const planned = []
+  for (const w of harvested) {
+    if (planned.length >= slotsLeft) break
+    const norm = normalizeTerm(w.es)
+    if (!norm) continue
+    if (blocklist.allTerms.has(norm)) continue
+    if (seenInPlan.has(norm)) continue
+    seenInPlan.add(norm)
+    planned.push(w)
+  }
+  return { planned, slotsLeft, existingCount, target }
+}
+
+async function buildLevel(level, planned, perLevelExisting, dryRun, apiKey) {
+  const file = path.join(VOCAB_DIR, `${level}.json`)
+  const existing = [...perLevelExisting]
+
   if (dryRun) {
-    console.log('  Sample:', words.slice(0, 5).map((w) => w.es).join(', '), '…')
+    const sample = planned.slice(0, 8).map((w) => `${w.es}(${w.rank})`).join(', ')
+    console.log(`  Sample new: ${sample}${planned.length > 8 ? ' …' : ''}`)
     return
   }
   if (!apiKey) {
     console.log('  ⚠ No GEMINI_API_KEY — skipping translation')
     return
   }
-  const BATCH = 50
-  const file = path.join(VOCAB_DIR, `${level}.json`)
-
-  // Resume: load existing translations, skip words already done
-  let existing = []
-  try {
-    const prev = JSON.parse(await fs.readFile(file, 'utf8'))
-    existing = Array.isArray(prev?.words) ? prev.words : []
-  } catch {}
-  const doneRanks = new Set(existing.map((w) => w.rank))
-  const remaining = words.filter((w) => !doneRanks.has(w.rank))
-  if (existing.length > 0) {
-    console.log(`  Resuming: ${existing.length} already translated, ${remaining.length} remaining`)
+  if (planned.length === 0) {
+    console.log('  Nothing to do (target already met).')
+    return
   }
 
+  const BATCH = 50
+
   const flush = async () => {
-    const all = [...existing].sort((a, b) => a.rank - b.rank)
+    // Append, dedupe again (defensive against any race / re-runs), preserve
+    // existing order then sort by rank for deterministic file output.
+    const seen = new Set()
+    const merged = []
+    for (const w of existing) {
+      const n = normalizeTerm(w.es)
+      if (seen.has(n)) continue
+      seen.add(n)
+      merged.push(w)
+    }
+    merged.sort((a, b) => (a.rank ?? 0) - (b.rank ?? 0))
     const list = {
       level: level.toUpperCase(),
       title: BUCKETS[level].title,
       source: 'doozan/spanish_data (CC-BY-4.0) + Gemini-translated',
       generatedAt: new Date().toISOString().split('T')[0],
-      wordCount: all.length,
-      words: all,
+      wordCount: merged.length,
+      words: merged,
     }
     await fs.writeFile(file, JSON.stringify(list, null, 2))
   }
 
-  const totalBatches = Math.ceil(remaining.length / BATCH)
-  for (let i = 0; i < remaining.length; i += BATCH) {
-    const batch = remaining.slice(i, i + BATCH)
+  const totalBatches = Math.ceil(planned.length / BATCH)
+  for (let i = 0; i < planned.length; i += BATCH) {
+    const batch = planned.slice(i, i + BATCH)
     process.stdout.write(`  Batch ${i / BATCH + 1}/${totalBatches} (${batch.length} words)…`)
     try {
       const translated = await translateBatch(batch, apiKey)
@@ -215,11 +312,24 @@ async function buildLevel(level, words, apiKey, dryRun) {
   console.log(`✓ Wrote ${file} (${existing.length} words total)`)
 }
 
+function parseLevelArgs(args) {
+  // Accept --levels=a1,a2 OR positional `a1 a2 b1`.
+  const flag = args.find((a) => a.startsWith('--levels='))
+  if (flag) {
+    return flag
+      .slice('--levels='.length)
+      .split(',')
+      .map((s) => s.trim().toLowerCase())
+      .filter(Boolean)
+  }
+  return args.filter((a) => /^[a-c][12]$/i.test(a)).map((a) => a.toLowerCase())
+}
+
 async function main() {
   const args = process.argv.slice(2)
   const dryRun = args.includes('--dry-run')
-  const targets = args.filter((a) => a.match(/^[a-c][12]$/))
-  const levels = targets.length > 0 ? targets : Object.keys(BUCKETS)
+  const requested = parseLevelArgs(args)
+  const levels = requested.length > 0 ? requested : Object.keys(BUCKETS)
 
   const apiKey = process.env.GEMINI_API_KEY
   if (!apiKey && !dryRun) {
@@ -230,14 +340,42 @@ async function main() {
   const words = parseFreq(csvText)
   console.log(`Parsed ${words.length} content words from frequency.csv`)
 
-  const buckets = bucketize(words)
+  // Load EVERY existing level for cross-level dedup, regardless of which
+  // levels we're building this run.
+  const { perLevel, allTerms } = await loadExistingVocab()
+  const existingPerLevel = Object.fromEntries(
+    Object.keys(BUCKETS).map((lvl) => [lvl, perLevel[lvl].length]),
+  )
+  console.log(`Cross-level dedup pool: ${allTerms.size} unique normalized terms across all levels`)
+  console.log(`Existing per level: ${Object.entries(existingPerLevel).map(([k, v]) => `${k}=${v}`).join(', ')}`)
 
   for (const level of levels) {
-    if (!buckets[level]) {
+    if (!BUCKETS[level]) {
       console.warn(`Unknown level: ${level}`)
       continue
     }
-    await buildLevel(level, buckets[level], apiKey, dryRun)
+    const harvested = harvestForLevel(words, level)
+    const { planned, existingCount, target } = planLevel(level, harvested, {
+      allTerms,
+      existingPerLevel,
+    })
+
+    const slotsLeft = Math.max(0, target - existingCount)
+    const shortfall = Math.max(0, slotsLeft - planned.length)
+    const totalBatches = Math.ceil(planned.length / 50)
+
+    console.log(`\n=== ${level.toUpperCase()} ===`)
+    console.log(`  range:           ranks ${LEVEL_RANGES[level][0]}–${LEVEL_RANGES[level][1]}`)
+    console.log(`  existing:        ${existingCount}`)
+    console.log(`  target:          ${target}`)
+    console.log(`  slots remaining: ${slotsLeft}`)
+    console.log(`  candidates:      ${harvested.length} harvested → ${planned.length} after cross-level dedup`)
+    console.log(`  to request:      ${planned.length} (batches of 50 → ${totalBatches} batch${totalBatches === 1 ? '' : 'es'})`)
+    if (shortfall > 0) {
+      console.log(`  ⚠ shortfall:     ${shortfall} (target won't be met — widen LEVEL_RANGES.${level} or lower LEVEL_TARGETS.${level})`)
+    }
+
+    await buildLevel(level, planned, perLevel[level], dryRun, apiKey)
   }
 
   console.log('\n✓ Done.')

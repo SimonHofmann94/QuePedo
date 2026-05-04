@@ -1,105 +1,5637 @@
 {
   "level": "A2",
   "title": "A2 — Elemental",
-  "source": "Hand-curated from doozan/spanish_data (CC-BY-4.0)",
-  "generatedAt": "2026-04-28",
-  "wordCount": 80,
+  "source": "doozan/spanish_data (CC-BY-4.0) + Gemini-translated",
+  "generatedAt": "2026-05-04",
+  "wordCount": 800,
   "words": [
-    { "es": "encontrar", "de": "finden", "pos": "v", "rank": 120, "example": "No encuentro mis llaves." },
-    { "es": "creer", "de": "glauben", "pos": "v", "rank": 75, "example": "Creo que sí." },
-    { "es": "esperar", "de": "warten / hoffen", "pos": "v", "rank": 145, "example": "Espero el bus." },
-    { "es": "llevar", "de": "tragen / mitnehmen", "pos": "v", "rank": 105, "example": "Llevo una mochila." },
-    { "es": "dejar", "de": "lassen / verlassen", "pos": "v", "rank": 165, "example": "Deja el libro aquí." },
-    { "es": "llegar", "de": "ankommen", "pos": "v", "rank": 125, "example": "Llego a las nueve." },
-    { "es": "pasar", "de": "passieren / vorbeigehen", "pos": "v", "rank": 70, "example": "¿Qué pasa?" },
-    { "es": "deber", "de": "müssen / sollen", "pos": "v", "rank": 165, "example": "Debes estudiar." },
-    { "es": "parecer", "de": "scheinen", "pos": "v", "rank": 175, "example": "Parece fácil." },
-    { "es": "quedar", "de": "bleiben / sich verabreden", "pos": "v", "rank": 195, "example": "Quedamos a las siete." },
-    { "es": "empezar", "de": "anfangen", "pos": "v", "rank": 215, "example": "Empezamos ahora." },
-    { "es": "terminar", "de": "beenden / fertig werden", "pos": "v", "rank": 245, "example": "Termino el libro." },
-    { "es": "abrir", "de": "öffnen", "pos": "v", "rank": 270, "example": "Abre la puerta." },
-    { "es": "cerrar", "de": "schließen", "pos": "v", "rank": 295, "example": "Cierra la ventana." },
-    { "es": "escuchar", "de": "hören / zuhören", "pos": "v", "rank": 290, "example": "Escucho música." },
-    { "es": "explicar", "de": "erklären", "pos": "v", "rank": 310, "example": "Explica la regla." },
-    { "es": "preguntar", "de": "fragen", "pos": "v", "rank": 330, "example": "Pregunta al profesor." },
-    { "es": "responder", "de": "antworten", "pos": "v", "rank": 380, "example": "Respondo al email." },
-    { "es": "ayudar", "de": "helfen", "pos": "v", "rank": 360, "example": "¿Me ayudas?" },
-    { "es": "buscar", "de": "suchen", "pos": "v", "rank": 200, "example": "Busco un hotel." },
-    { "es": "perder", "de": "verlieren", "pos": "v", "rank": 260, "example": "Perdí el tren." },
-    { "es": "ganar", "de": "gewinnen / verdienen", "pos": "v", "rank": 280, "example": "Ganamos el partido." },
-    { "es": "viajar", "de": "reisen", "pos": "v", "rank": 410, "example": "Viajo a México." },
-    { "es": "conocer", "de": "kennen / kennenlernen", "pos": "v", "rank": 170, "example": "Conozco a Juan." },
-    { "es": "olvidar", "de": "vergessen", "pos": "v", "rank": 340, "example": "Olvidé el paraguas." },
-    { "es": "recordar", "de": "sich erinnern", "pos": "v", "rank": 320, "example": "Recuerdo ese día." },
-    { "es": "pagar", "de": "zahlen", "pos": "v", "rank": 370, "example": "Yo pago la cuenta." },
-    { "es": "cocinar", "de": "kochen", "pos": "v", "rank": 600, "example": "Mi padre cocina." },
-    { "es": "probar", "de": "probieren / versuchen", "pos": "v", "rank": 460, "example": "Prueba el flan." },
-    { "es": "necesitar", "de": "brauchen", "pos": "v", "rank": 230, "example": "Necesito ayuda." },
-
-    { "es": "calle", "de": "Straße", "pos": "n", "gender": "f", "rank": 290, "example": "Vivo en esta calle." },
-    { "es": "tienda", "de": "Geschäft / Laden", "pos": "n", "gender": "f", "rank": 480, "example": "Voy a la tienda." },
-    { "es": "mercado", "de": "Markt", "pos": "n", "gender": "m", "rank": 430, "example": "El mercado abre temprano." },
-    { "es": "restaurante", "de": "Restaurant", "pos": "n", "gender": "m", "rank": 540, "example": "Cenamos en un restaurante." },
-    { "es": "hotel", "de": "Hotel", "pos": "n", "gender": "m", "rank": 580, "example": "Reservé un hotel." },
-    { "es": "playa", "de": "Strand", "pos": "n", "gender": "f", "rank": 520, "example": "La playa está cerca." },
-    { "es": "montaña", "de": "Berg", "pos": "n", "gender": "f", "rank": 560, "example": "Las montañas son altas." },
-    { "es": "coche", "de": "Auto", "pos": "n", "gender": "m", "rank": 310, "example": "Mi coche es nuevo." },
-    { "es": "tren", "de": "Zug", "pos": "n", "gender": "m", "rank": 470, "example": "El tren llega tarde." },
-    { "es": "avión", "de": "Flugzeug", "pos": "n", "gender": "m", "rank": 510, "example": "El avión despega." },
-    { "es": "billete", "de": "Ticket / Fahrkarte", "pos": "n", "gender": "m", "rank": 720, "example": "Compré un billete." },
-    { "es": "dinero", "de": "Geld", "pos": "n", "gender": "m", "rank": 260, "example": "No tengo dinero." },
-    { "es": "precio", "de": "Preis", "pos": "n", "gender": "m", "rank": 380, "example": "¿Cuál es el precio?" },
-    { "es": "trabajo", "de": "Arbeit", "pos": "n", "gender": "m", "rank": 140, "example": "Mi trabajo es difícil." },
-    { "es": "escuela", "de": "Schule", "pos": "n", "gender": "f", "rank": 410, "example": "Voy a la escuela." },
-    { "es": "universidad", "de": "Universität", "pos": "n", "gender": "f", "rank": 580, "example": "Estudio en la universidad." },
-    { "es": "libro", "de": "Buch", "pos": "n", "gender": "m", "rank": 250, "example": "Leo un libro interesante." },
-    { "es": "película", "de": "Film", "pos": "n", "gender": "f", "rank": 530, "example": "Me gusta esa película." },
-    { "es": "música", "de": "Musik", "pos": "n", "gender": "f", "rank": 360, "example": "Escucho música." },
-    { "es": "fiesta", "de": "Fest / Party", "pos": "n", "gender": "f", "rank": 440, "example": "Vamos a la fiesta." },
-    { "es": "regalo", "de": "Geschenk", "pos": "n", "gender": "m", "rank": 690, "example": "Te traje un regalo." },
-    { "es": "problema", "de": "Problem", "pos": "n", "gender": "m", "rank": 220, "example": "Tengo un problema." },
-    { "es": "idea", "de": "Idee", "pos": "n", "gender": "f", "rank": 270, "example": "Buena idea." },
-    { "es": "respuesta", "de": "Antwort", "pos": "n", "gender": "f", "rank": 460, "example": "No sé la respuesta." },
-    { "es": "pregunta", "de": "Frage", "pos": "n", "gender": "f", "rank": 380, "example": "Tengo una pregunta." },
-    { "es": "historia", "de": "Geschichte", "pos": "n", "gender": "f", "rank": 240, "example": "Es una historia larga." },
-    { "es": "verdad", "de": "Wahrheit", "pos": "n", "gender": "f", "rank": 200, "example": "Dime la verdad." },
-    { "es": "mundo", "de": "Welt", "pos": "n", "gender": "m", "rank": 130, "example": "El mundo es grande." },
-
-    { "es": "rápido", "de": "schnell", "pos": "adj", "rank": 380, "example": "Un coche rápido." },
-    { "es": "lento", "de": "langsam", "pos": "adj", "rank": 580, "example": "El servicio es lento." },
-    { "es": "fácil", "de": "einfach / leicht", "pos": "adj", "rank": 310, "example": "Es fácil." },
-    { "es": "difícil", "de": "schwierig", "pos": "adj", "rank": 290, "example": "Es difícil." },
-    { "es": "caliente", "de": "heiß / warm", "pos": "adj", "rank": 700, "example": "El café está caliente." },
-    { "es": "frío", "de": "kalt", "pos": "adj", "rank": 510, "example": "Tengo frío." },
-    { "es": "alto", "de": "hoch / groß (Person)", "pos": "adj", "rank": 220, "example": "Es muy alto." },
-    { "es": "bajo", "de": "niedrig / klein (Person)", "pos": "adj", "rank": 240, "example": "Habla en voz baja." },
-    { "es": "feliz", "de": "glücklich", "pos": "adj", "rank": 460, "example": "Estoy feliz." },
-    { "es": "triste", "de": "traurig", "pos": "adj", "rank": 580, "example": "Está triste hoy." },
-    { "es": "interesante", "de": "interessant", "pos": "adj", "rank": 540, "example": "Un libro interesante." },
-    { "es": "aburrido", "de": "langweilig", "pos": "adj", "rank": 950, "example": "Estoy aburrido." },
-    { "es": "importante", "de": "wichtig", "pos": "adj", "rank": 180, "example": "Es muy importante." },
-
-    { "es": "después", "de": "danach", "pos": "adv", "rank": 95, "example": "Después comemos." },
-    { "es": "antes", "de": "vorher", "pos": "adv", "rank": 110, "example": "Antes vivía aquí." },
-    { "es": "luego", "de": "später / dann", "pos": "adv", "rank": 180, "example": "Hasta luego." },
-    { "es": "todavía", "de": "noch", "pos": "adv", "rank": 195, "example": "Todavía no." },
-    { "es": "ya", "de": "schon", "pos": "adv", "rank": 22, "example": "Ya lo sé." },
-    { "es": "también", "de": "auch", "pos": "adv", "rank": 65, "example": "Yo también." },
-    { "es": "tampoco", "de": "auch nicht", "pos": "adv", "rank": 350, "example": "Yo tampoco." },
-
-    { "es": "cuando", "de": "wenn / als", "pos": "conj", "rank": 65, "example": "Cuando llueve, leo." },
-    { "es": "mientras", "de": "während", "pos": "conj", "rank": 240, "example": "Mientras trabajo, escucho música." },
-    { "es": "aunque", "de": "obwohl", "pos": "conj", "rank": 280, "example": "Aunque llueva, voy." },
-
-    { "es": "entre", "de": "zwischen", "pos": "prep", "rank": 85, "example": "Entre tú y yo." },
-    { "es": "sobre", "de": "über / auf", "pos": "prep", "rank": 105, "example": "El libro sobre la mesa." },
-    { "es": "hasta", "de": "bis", "pos": "prep", "rank": 75, "example": "Hasta mañana." },
-    { "es": "desde", "de": "seit / von", "pos": "prep", "rank": 120, "example": "Desde ayer." },
-    { "es": "según", "de": "laut / gemäß", "pos": "prep", "rank": 220, "example": "Según el plan." },
-
-    { "es": "buenos días", "de": "guten Morgen", "pos": "phrase", "rank": 850, "example": "Buenos días, profesor." },
-    { "es": "buenas tardes", "de": "guten Tag / guten Nachmittag", "pos": "phrase", "rank": 870, "example": "Buenas tardes." },
-    { "es": "buenas noches", "de": "guten Abend / gute Nacht", "pos": "phrase", "rank": 880, "example": "Buenas noches, mamá." },
-    { "es": "de nada", "de": "gern geschehen", "pos": "phrase", "rank": 900, "example": "—Gracias. —De nada." }
+    {
+      "es": "ya",
+      "de": "schon",
+      "pos": "adv",
+      "rank": 22,
+      "example": "Ya lo sé."
+    },
+    {
+      "es": "también",
+      "de": "auch",
+      "pos": "adv",
+      "rank": 65,
+      "example": "Yo también."
+    },
+    {
+      "es": "cuando",
+      "de": "wenn / als",
+      "pos": "conj",
+      "rank": 65,
+      "example": "Cuando llueve, leo."
+    },
+    {
+      "es": "pasar",
+      "de": "passieren / vorbeigehen",
+      "pos": "v",
+      "rank": 70,
+      "example": "¿Qué pasa?"
+    },
+    {
+      "es": "creer",
+      "de": "glauben",
+      "pos": "v",
+      "rank": 75,
+      "example": "Creo que sí."
+    },
+    {
+      "es": "hasta",
+      "de": "bis",
+      "pos": "prep",
+      "rank": 75,
+      "example": "Hasta mañana."
+    },
+    {
+      "es": "entre",
+      "de": "zwischen",
+      "pos": "prep",
+      "rank": 85,
+      "example": "Entre tú y yo."
+    },
+    {
+      "es": "después",
+      "de": "danach",
+      "pos": "adv",
+      "rank": 95,
+      "example": "Después comemos."
+    },
+    {
+      "es": "llevar",
+      "de": "tragen / mitnehmen",
+      "pos": "v",
+      "rank": 105,
+      "example": "Llevo una mochila."
+    },
+    {
+      "es": "sobre",
+      "de": "über / auf",
+      "pos": "prep",
+      "rank": 105,
+      "example": "El libro sobre la mesa."
+    },
+    {
+      "es": "antes",
+      "de": "vorher",
+      "pos": "adv",
+      "rank": 110,
+      "example": "Antes vivía aquí."
+    },
+    {
+      "es": "encontrar",
+      "de": "finden",
+      "pos": "v",
+      "rank": 120,
+      "example": "No encuentro mis llaves."
+    },
+    {
+      "es": "desde",
+      "de": "seit / von",
+      "pos": "prep",
+      "rank": 120,
+      "example": "Desde ayer."
+    },
+    {
+      "es": "llegar",
+      "de": "ankommen",
+      "pos": "v",
+      "rank": 125,
+      "example": "Llego a las nueve."
+    },
+    {
+      "es": "mundo",
+      "de": "Welt",
+      "pos": "n",
+      "gender": "m",
+      "rank": 130,
+      "example": "El mundo es grande."
+    },
+    {
+      "es": "trabajo",
+      "de": "Arbeit",
+      "pos": "n",
+      "gender": "m",
+      "rank": 140,
+      "example": "Mi trabajo es difícil."
+    },
+    {
+      "es": "esperar",
+      "de": "warten / hoffen",
+      "pos": "v",
+      "rank": 145,
+      "example": "Espero el bus."
+    },
+    {
+      "es": "dejar",
+      "de": "lassen / verlassen",
+      "pos": "v",
+      "rank": 165,
+      "example": "Deja el libro aquí."
+    },
+    {
+      "es": "deber",
+      "de": "müssen / sollen",
+      "pos": "v",
+      "rank": 165,
+      "example": "Debes estudiar."
+    },
+    {
+      "es": "conocer",
+      "de": "kennen / kennenlernen",
+      "pos": "v",
+      "rank": 170,
+      "example": "Conozco a Juan."
+    },
+    {
+      "es": "parecer",
+      "de": "scheinen",
+      "pos": "v",
+      "rank": 175,
+      "example": "Parece fácil."
+    },
+    {
+      "es": "importante",
+      "de": "wichtig",
+      "pos": "adj",
+      "rank": 180,
+      "example": "Es muy importante."
+    },
+    {
+      "es": "luego",
+      "de": "später / dann",
+      "pos": "adv",
+      "rank": 180,
+      "example": "Hasta luego."
+    },
+    {
+      "es": "quedar",
+      "de": "bleiben / sich verabreden",
+      "pos": "v",
+      "rank": 195,
+      "example": "Quedamos a las siete."
+    },
+    {
+      "es": "todavía",
+      "de": "noch",
+      "pos": "adv",
+      "rank": 195,
+      "example": "Todavía no."
+    },
+    {
+      "es": "buscar",
+      "de": "suchen",
+      "pos": "v",
+      "rank": 200,
+      "example": "Busco un hotel."
+    },
+    {
+      "es": "verdad",
+      "de": "Wahrheit",
+      "pos": "n",
+      "gender": "f",
+      "rank": 200,
+      "example": "Dime la verdad."
+    },
+    {
+      "es": "fin",
+      "de": "das Ende",
+      "en": "fin",
+      "pos": "n",
+      "rank": 201
+    },
+    {
+      "es": "camino",
+      "de": "der Weg",
+      "en": "camino",
+      "pos": "n",
+      "rank": 203
+    },
+    {
+      "es": "esposo",
+      "de": "der Ehemann",
+      "en": "esposo",
+      "pos": "n",
+      "rank": 204
+    },
+    {
+      "es": "permitir",
+      "de": "erlauben",
+      "en": "permitir",
+      "pos": "v",
+      "rank": 205
+    },
+    {
+      "es": "recibir",
+      "de": "empfangen",
+      "en": "recibir",
+      "pos": "v",
+      "rank": 206
+    },
+    {
+      "es": "significar",
+      "de": "bedeuten",
+      "en": "significar",
+      "pos": "v",
+      "rank": 209
+    },
+    {
+      "es": "suceder",
+      "de": "geschehen",
+      "en": "suceder",
+      "pos": "v",
+      "rank": 210
+    },
+    {
+      "es": "muerte",
+      "de": "der Tod",
+      "en": "muerte",
+      "pos": "n",
+      "rank": 211
+    },
+    {
+      "es": "millón",
+      "de": "die Million",
+      "en": "millón",
+      "pos": "n",
+      "rank": 212
+    },
+    {
+      "es": "general",
+      "de": "allgemein",
+      "en": "general",
+      "pos": "adj",
+      "rank": 213
+    },
+    {
+      "es": "empezar",
+      "de": "anfangen",
+      "pos": "v",
+      "rank": 215,
+      "example": "Empezamos ahora."
+    },
+    {
+      "es": "realidad",
+      "de": "die Realität",
+      "en": "realidad",
+      "pos": "n",
+      "rank": 215
+    },
+    {
+      "es": "caer",
+      "de": "fallen",
+      "en": "caer",
+      "pos": "v",
+      "rank": 216
+    },
+    {
+      "es": "enviar",
+      "de": "senden",
+      "en": "enviar",
+      "pos": "v",
+      "rank": 218
+    },
+    {
+      "es": "acercar",
+      "de": "nähern",
+      "en": "acercar",
+      "pos": "v",
+      "rank": 219
+    },
+    {
+      "es": "problema",
+      "de": "Problem",
+      "pos": "n",
+      "gender": "m",
+      "rank": 220,
+      "example": "Tengo un problema."
+    },
+    {
+      "es": "alto",
+      "de": "hoch / groß (Person)",
+      "pos": "adj",
+      "rank": 220,
+      "example": "Es muy alto."
+    },
+    {
+      "es": "según",
+      "de": "laut / gemäß",
+      "pos": "prep",
+      "rank": 220,
+      "example": "Según el plan."
+    },
+    {
+      "es": "equipo",
+      "de": "die Ausrüstung",
+      "en": "equipo",
+      "pos": "n",
+      "rank": 220
+    },
+    {
+      "es": "ayuda",
+      "de": "die Hilfe",
+      "en": "ayuda",
+      "pos": "n",
+      "rank": 221
+    },
+    {
+      "es": "cuerpo",
+      "de": "der Körper",
+      "en": "cuerpo",
+      "pos": "n",
+      "rank": 222
+    },
+    {
+      "es": "jefe",
+      "de": "der Chef",
+      "en": "jefe",
+      "pos": "n",
+      "rank": 223
+    },
+    {
+      "es": "presidente",
+      "de": "der Präsident",
+      "en": "presidente",
+      "pos": "n",
+      "rank": 224
+    },
+    {
+      "es": "mover",
+      "de": "bewegen",
+      "en": "mover",
+      "pos": "v",
+      "rank": 225
+    },
+    {
+      "es": "gobierno",
+      "de": "die Regierung",
+      "en": "gobierno",
+      "pos": "n",
+      "rank": 228
+    },
+    {
+      "es": "quizá",
+      "de": "vielleicht",
+      "en": "quizá",
+      "pos": "adv",
+      "rank": 229
+    },
+    {
+      "es": "necesitar",
+      "de": "brauchen",
+      "pos": "v",
+      "rank": 230,
+      "example": "Necesito ayuda."
+    },
+    {
+      "es": "comenzar",
+      "de": "beginnen",
+      "en": "comenzar",
+      "pos": "v",
+      "rank": 230
+    },
+    {
+      "es": "joven",
+      "de": "jung",
+      "en": "joven",
+      "pos": "adj",
+      "rank": 231
+    },
+    {
+      "es": "tierra",
+      "de": "die Erde",
+      "en": "tierra",
+      "pos": "n",
+      "rank": 233
+    },
+    {
+      "es": "número",
+      "de": "die Nummer",
+      "en": "número",
+      "pos": "n",
+      "rank": 234
+    },
+    {
+      "es": "final",
+      "de": "das Finale",
+      "en": "final",
+      "pos": "n",
+      "rank": 237
+    },
+    {
+      "es": "regresar",
+      "de": "zurückkehren",
+      "en": "regresar",
+      "pos": "v",
+      "rank": 238
+    },
+    {
+      "es": "grupo",
+      "de": "die Gruppe",
+      "en": "grupo",
+      "pos": "n",
+      "rank": 239
+    },
+    {
+      "es": "historia",
+      "de": "Geschichte",
+      "pos": "n",
+      "gender": "f",
+      "rank": 240,
+      "example": "Es una historia larga."
+    },
+    {
+      "es": "bajo",
+      "de": "niedrig / klein (Person)",
+      "pos": "adj",
+      "rank": 240,
+      "example": "Habla en voz baja."
+    },
+    {
+      "es": "mientras",
+      "de": "während",
+      "pos": "conj",
+      "rank": 240,
+      "example": "Mientras trabajo, escucho música."
+    },
+    {
+      "es": "guerra",
+      "de": "der Krieg",
+      "en": "guerra",
+      "pos": "n",
+      "rank": 240
+    },
+    {
+      "es": "cariño",
+      "de": "die Zuneigung",
+      "en": "cariño",
+      "pos": "n",
+      "rank": 241
+    },
+    {
+      "es": "además",
+      "de": "außerdem",
+      "en": "además",
+      "pos": "adv",
+      "rank": 242
+    },
+    {
+      "es": "posible",
+      "de": "möglich",
+      "en": "posible",
+      "pos": "adj",
+      "rank": 243
+    },
+    {
+      "es": "echar",
+      "de": "werfen",
+      "en": "echar",
+      "pos": "v",
+      "rank": 244
+    },
+    {
+      "es": "terminar",
+      "de": "beenden / fertig werden",
+      "pos": "v",
+      "rank": 245,
+      "example": "Termino el libro."
+    },
+    {
+      "es": "clase",
+      "de": "die Klasse",
+      "en": "clase",
+      "pos": "n",
+      "rank": 245
+    },
+    {
+      "es": "arma",
+      "de": "die Waffe",
+      "en": "arma",
+      "pos": "n",
+      "rank": 246
+    },
+    {
+      "es": "pronto",
+      "de": "bald",
+      "en": "pronto",
+      "pos": "adv",
+      "rank": 248
+    },
+    {
+      "es": "convertir",
+      "de": "verwandeln",
+      "en": "convertir",
+      "pos": "v",
+      "rank": 249
+    },
+    {
+      "es": "libro",
+      "de": "Buch",
+      "pos": "n",
+      "gender": "m",
+      "rank": 250,
+      "example": "Leo un libro interesante."
+    },
+    {
+      "es": "cara",
+      "de": "das Gesicht",
+      "en": "cara",
+      "pos": "n",
+      "rank": 251
+    },
+    {
+      "es": "genial",
+      "de": "genial",
+      "en": "genial",
+      "pos": "adj",
+      "rank": 252
+    },
+    {
+      "es": "tocar",
+      "de": "berühren",
+      "en": "tocar",
+      "pos": "v",
+      "rank": 253
+    },
+    {
+      "es": "largo",
+      "de": "lang",
+      "en": "largo",
+      "pos": "adj",
+      "rank": 254
+    },
+    {
+      "es": "juego",
+      "de": "das Spiel",
+      "en": "juego",
+      "pos": "n",
+      "rank": 255
+    },
+    {
+      "es": "meter",
+      "de": "legen",
+      "en": "meter",
+      "pos": "v",
+      "rank": 257
+    },
+    {
+      "es": "igual",
+      "de": "gleich",
+      "en": "igual",
+      "pos": "adj",
+      "rank": 258
+    },
+    {
+      "es": "incluso",
+      "de": "sogar",
+      "en": "incluso",
+      "pos": "adv",
+      "rank": 259
+    },
+    {
+      "es": "perder",
+      "de": "verlieren",
+      "pos": "v",
+      "rank": 260,
+      "example": "Perdí el tren."
+    },
+    {
+      "es": "dinero",
+      "de": "Geld",
+      "pos": "n",
+      "gender": "m",
+      "rank": 260,
+      "example": "No tengo dinero."
+    },
+    {
+      "es": "doctor",
+      "de": "der Doktor",
+      "en": "doctor",
+      "pos": "n",
+      "rank": 260
+    },
+    {
+      "es": "corazón",
+      "de": "das Herz",
+      "en": "corazón",
+      "pos": "n",
+      "rank": 261
+    },
+    {
+      "es": "detener",
+      "de": "anhalten",
+      "en": "detener",
+      "pos": "v",
+      "rank": 262
+    },
+    {
+      "es": "siquiera",
+      "de": "wenigstens",
+      "en": "siquiera",
+      "pos": "adv",
+      "rank": 264
+    },
+    {
+      "es": "decidir",
+      "de": "entscheiden",
+      "en": "decidir",
+      "pos": "v",
+      "rank": 265
+    },
+    {
+      "es": "suerte",
+      "de": "das Glück",
+      "en": "suerte",
+      "pos": "n",
+      "rank": 266
+    },
+    {
+      "es": "correr",
+      "de": "rennen",
+      "en": "correr",
+      "pos": "v",
+      "rank": 269
+    },
+    {
+      "es": "abrir",
+      "de": "öffnen",
+      "pos": "v",
+      "rank": 270,
+      "example": "Abre la puerta."
+    },
+    {
+      "es": "idea",
+      "de": "Idee",
+      "pos": "n",
+      "gender": "f",
+      "rank": 270,
+      "example": "Buena idea."
+    },
+    {
+      "es": "funcionar",
+      "de": "funktionieren",
+      "en": "funcionar",
+      "pos": "v",
+      "rank": 270
+    },
+    {
+      "es": "vivo",
+      "de": "lebendig",
+      "en": "vivo",
+      "pos": "adj",
+      "rank": 271
+    },
+    {
+      "es": "luz",
+      "de": "das Licht",
+      "en": "luz",
+      "pos": "n",
+      "rank": 272
+    },
+    {
+      "es": "quizás",
+      "de": "vielleicht",
+      "en": "quizás",
+      "pos": "adv",
+      "rank": 273
+    },
+    {
+      "es": "justo",
+      "de": "gerecht",
+      "en": "justo",
+      "pos": "adj",
+      "rank": 274
+    },
+    {
+      "es": "miedo",
+      "de": "die Angst",
+      "en": "miedo",
+      "pos": "n",
+      "rank": 275
+    },
+    {
+      "es": "modo",
+      "de": "die Art",
+      "en": "modo",
+      "pos": "n",
+      "rank": 276
+    },
+    {
+      "es": "relación",
+      "de": "die Beziehung",
+      "en": "relación",
+      "pos": "n",
+      "rank": 277
+    },
+    {
+      "es": "cambio",
+      "de": "die Veränderung",
+      "en": "cambio",
+      "pos": "n",
+      "rank": 278
+    },
+    {
+      "es": "público",
+      "de": "öffentlich",
+      "en": "público",
+      "pos": "adj",
+      "rank": 279
+    },
+    {
+      "es": "ganar",
+      "de": "gewinnen / verdienen",
+      "pos": "v",
+      "rank": 280,
+      "example": "Ganamos el partido."
+    },
+    {
+      "es": "aunque",
+      "de": "obwohl",
+      "pos": "conj",
+      "rank": 280,
+      "example": "Aunque llueva, voy."
+    },
+    {
+      "es": "derecho",
+      "de": "das Recht",
+      "en": "derecho",
+      "pos": "n",
+      "rank": 280
+    },
+    {
+      "es": "presentar",
+      "de": "vorstellen",
+      "en": "presentar",
+      "pos": "v",
+      "rank": 281
+    },
+    {
+      "es": "cerca",
+      "de": "nahe",
+      "en": "cerca",
+      "pos": "adv",
+      "rank": 282
+    },
+    {
+      "es": "suficiente",
+      "de": "genug",
+      "en": "suficiente",
+      "pos": "adj",
+      "rank": 283
+    },
+    {
+      "es": "prueba",
+      "de": "der Beweis",
+      "en": "prueba",
+      "pos": "n",
+      "rank": 284
+    },
+    {
+      "es": "próximo",
+      "de": "nächster",
+      "en": "próximo",
+      "pos": "adj",
+      "rank": 285
+    },
+    {
+      "es": "fuerte",
+      "de": "stark",
+      "en": "fuerte",
+      "pos": "adj",
+      "rank": 286
+    },
+    {
+      "es": "existir",
+      "de": "existieren",
+      "en": "existir",
+      "pos": "v",
+      "rank": 287
+    },
+    {
+      "es": "sentido",
+      "de": "der Sinn",
+      "en": "sentido",
+      "pos": "n",
+      "rank": 288
+    },
+    {
+      "es": "orden",
+      "de": "die Ordnung",
+      "en": "orden",
+      "pos": "n",
+      "rank": 289
+    },
+    {
+      "es": "escuchar",
+      "de": "hören / zuhören",
+      "pos": "v",
+      "rank": 290,
+      "example": "Escucho música."
+    },
+    {
+      "es": "calle",
+      "de": "Straße",
+      "pos": "n",
+      "gender": "f",
+      "rank": 290,
+      "example": "Vivo en esta calle."
+    },
+    {
+      "es": "difícil",
+      "de": "schwierig",
+      "pos": "adj",
+      "rank": 290,
+      "example": "Es difícil."
+    },
+    {
+      "es": "perro",
+      "de": "der Hund",
+      "en": "perro",
+      "pos": "n",
+      "rank": 290
+    },
+    {
+      "es": "humano",
+      "de": "menschlich",
+      "en": "humano",
+      "pos": "adj",
+      "rank": 291
+    },
+    {
+      "es": "vuelta",
+      "de": "die Runde",
+      "en": "vuelta",
+      "pos": "n",
+      "rank": 292
+    },
+    {
+      "es": "listo",
+      "de": "bereit",
+      "en": "listo",
+      "pos": "adj",
+      "rank": 293
+    },
+    {
+      "es": "mostrar",
+      "de": "zeigen",
+      "en": "mostrar",
+      "pos": "v",
+      "rank": 294
+    },
+    {
+      "es": "cerrar",
+      "de": "schließen",
+      "pos": "v",
+      "rank": 295,
+      "example": "Cierra la ventana."
+    },
+    {
+      "es": "subir",
+      "de": "hinaufsteigen",
+      "en": "subir",
+      "pos": "v",
+      "rank": 295
+    },
+    {
+      "es": "servir",
+      "de": "dienen",
+      "en": "servir",
+      "pos": "v",
+      "rank": 297
+    },
+    {
+      "es": "ox",
+      "de": "och",
+      "en": "ox",
+      "pos": "interj",
+      "rank": 298
+    },
+    {
+      "es": "sentar",
+      "de": "sitzen",
+      "en": "sentar",
+      "pos": "v",
+      "rank": 299
+    },
+    {
+      "es": "salvar",
+      "de": "retten",
+      "en": "salvar",
+      "pos": "v",
+      "rank": 300
+    },
+    {
+      "es": "fuerza",
+      "de": "die Kraft",
+      "en": "fuerza",
+      "pos": "n",
+      "rank": 302
+    },
+    {
+      "es": "sistema",
+      "de": "das System",
+      "en": "sistema",
+      "pos": "n",
+      "rank": 303
+    },
+    {
+      "es": "levantar",
+      "de": "heben",
+      "en": "levantar",
+      "pos": "v",
+      "rank": 306
+    },
+    {
+      "es": "adelante",
+      "de": "vorwärts",
+      "en": "adelante",
+      "pos": "adv",
+      "rank": 307
+    },
+    {
+      "es": "mil",
+      "de": "tausend",
+      "en": "mil",
+      "pos": "num",
+      "rank": 308
+    },
+    {
+      "es": "considerar",
+      "de": "betrachten",
+      "en": "considerar",
+      "pos": "v",
+      "rank": 309
+    },
+    {
+      "es": "explicar",
+      "de": "erklären",
+      "pos": "v",
+      "rank": 310,
+      "example": "Explica la regla."
+    },
+    {
+      "es": "coche",
+      "de": "Auto",
+      "pos": "n",
+      "gender": "m",
+      "rank": 310,
+      "example": "Mi coche es nuevo."
+    },
+    {
+      "es": "fácil",
+      "de": "einfach / leicht",
+      "pos": "adj",
+      "rank": 310,
+      "example": "Es fácil."
+    },
+    {
+      "es": "paso",
+      "de": "der Schritt",
+      "en": "paso",
+      "pos": "n",
+      "rank": 310
+    },
+    {
+      "es": "asegurar",
+      "de": "sicherstellen",
+      "en": "asegurar",
+      "pos": "v",
+      "rank": 311
+    },
+    {
+      "es": "aceptar",
+      "de": "akzeptieren",
+      "en": "aceptar",
+      "pos": "v",
+      "rank": 312
+    },
+    {
+      "es": "quitar",
+      "de": "wegnehmen",
+      "en": "quitar",
+      "pos": "v",
+      "rank": 313
+    },
+    {
+      "es": "plan",
+      "de": "der Plan",
+      "en": "plan",
+      "pos": "n",
+      "rank": 314
+    },
+    {
+      "es": "pueblo",
+      "de": "das Dorf",
+      "en": "pueblo",
+      "pos": "n",
+      "rank": 316
+    },
+    {
+      "es": "cuidado",
+      "de": "die Sorge",
+      "en": "cuidado",
+      "pos": "n",
+      "rank": 317
+    },
+    {
+      "es": "allá",
+      "de": "dort",
+      "en": "allá",
+      "pos": "adv",
+      "rank": 319
+    },
+    {
+      "es": "recordar",
+      "de": "sich erinnern",
+      "pos": "v",
+      "rank": 320,
+      "example": "Recuerdo ese día."
+    },
+    {
+      "es": "partido",
+      "de": "die Partei",
+      "en": "partido",
+      "pos": "n",
+      "rank": 320
+    },
+    {
+      "es": "diferente",
+      "de": "unterschiedlich",
+      "en": "diferente",
+      "pos": "adj",
+      "rank": 321
+    },
+    {
+      "es": "amar",
+      "de": "lieben",
+      "en": "amar",
+      "pos": "v",
+      "rank": 323
+    },
+    {
+      "es": "coger",
+      "de": "nehmen",
+      "en": "coger",
+      "pos": "v",
+      "rank": 324
+    },
+    {
+      "es": "disparar",
+      "de": "schießen",
+      "en": "disparar",
+      "pos": "v",
+      "rank": 325
+    },
+    {
+      "es": "disculpar",
+      "de": "entschuldigen",
+      "en": "disculpar",
+      "pos": "v",
+      "rank": 326
+    },
+    {
+      "es": "pie",
+      "de": "der Fuß",
+      "en": "pie",
+      "pos": "n",
+      "rank": 327
+    },
+    {
+      "es": "frente",
+      "de": "die Stirn",
+      "en": "frente",
+      "pos": "n",
+      "rank": 329
+    },
+    {
+      "es": "preguntar",
+      "de": "fragen",
+      "pos": "v",
+      "rank": 330,
+      "example": "Pregunta al profesor."
+    },
+    {
+      "es": "sangre",
+      "de": "das Blut",
+      "en": "sangre",
+      "pos": "n",
+      "rank": 331
+    },
+    {
+      "es": "oportunidad",
+      "de": "die Gelegenheit",
+      "en": "oportunidad",
+      "pos": "n",
+      "rank": 332
+    },
+    {
+      "es": "muchacho",
+      "de": "der Junge",
+      "en": "muchacho",
+      "pos": "n",
+      "rank": 333
+    },
+    {
+      "es": "real",
+      "de": "real",
+      "en": "real",
+      "pos": "adj",
+      "rank": 334
+    },
+    {
+      "es": "situación",
+      "de": "die Situation",
+      "en": "situación",
+      "pos": "n",
+      "rank": 335
+    },
+    {
+      "es": "política",
+      "de": "die Politik",
+      "en": "política",
+      "pos": "n",
+      "rank": 336
+    },
+    {
+      "es": "ley",
+      "de": "das Gesetz",
+      "en": "ley",
+      "pos": "n",
+      "rank": 337
+    },
+    {
+      "es": "vender",
+      "de": "verkaufen",
+      "en": "vender",
+      "pos": "v",
+      "rank": 338
+    },
+    {
+      "es": "teléfono",
+      "de": "das Telefon",
+      "en": "teléfono",
+      "pos": "n",
+      "rank": 339
+    },
+    {
+      "es": "olvidar",
+      "de": "vergessen",
+      "pos": "v",
+      "rank": 340,
+      "example": "Olvidé el paraguas."
+    },
+    {
+      "es": "extraño",
+      "de": "fremd",
+      "en": "extraño",
+      "pos": "adj",
+      "rank": 341
+    },
+    {
+      "es": "perdonar",
+      "de": "verzeihen",
+      "en": "perdonar",
+      "pos": "v",
+      "rank": 342
+    },
+    {
+      "es": "arriba",
+      "de": "oben",
+      "en": "arriba",
+      "pos": "adv",
+      "rank": 343
+    },
+    {
+      "es": "aparecer",
+      "de": "erscheinen",
+      "en": "aparecer",
+      "pos": "v",
+      "rank": 344
+    },
+    {
+      "es": "servicio",
+      "de": "der Service",
+      "en": "servicio",
+      "pos": "n",
+      "rank": 345
+    },
+    {
+      "es": "novio",
+      "de": "der Freund",
+      "en": "novio",
+      "pos": "n",
+      "rank": 346
+    },
+    {
+      "es": "especial",
+      "de": "speziell",
+      "en": "especial",
+      "pos": "adj",
+      "rank": 348
+    },
+    {
+      "es": "casar",
+      "de": "heiraten",
+      "en": "casar",
+      "pos": "v",
+      "rank": 349
+    },
+    {
+      "es": "tampoco",
+      "de": "auch nicht",
+      "pos": "adv",
+      "rank": 350,
+      "example": "Yo tampoco."
+    },
+    {
+      "es": "puesto",
+      "de": "der Posten",
+      "en": "puesto",
+      "pos": "n",
+      "rank": 350
+    },
+    {
+      "es": "dólar",
+      "de": "der Dollar",
+      "en": "dólar",
+      "pos": "n",
+      "rank": 351
+    },
+    {
+      "es": "cuándo",
+      "de": "wann",
+      "en": "cuándo",
+      "pos": "adv",
+      "rank": 352
+    },
+    {
+      "es": "duro",
+      "de": "hart",
+      "en": "duro",
+      "pos": "adj",
+      "rank": 353
+    },
+    {
+      "es": "nacional",
+      "de": "national",
+      "en": "nacional",
+      "pos": "adj",
+      "rank": 354
+    },
+    {
+      "es": "recuerdo",
+      "de": "die Erinnerung",
+      "en": "recuerdo",
+      "pos": "n",
+      "rank": 355
+    },
+    {
+      "es": "lograr",
+      "de": "erreichen",
+      "en": "lograr",
+      "pos": "v",
+      "rank": 356
+    },
+    {
+      "es": "robar",
+      "de": "stehlen",
+      "en": "robar",
+      "pos": "v",
+      "rank": 357
+    },
+    {
+      "es": "seguridad",
+      "de": "die Sicherheit",
+      "en": "seguridad",
+      "pos": "n",
+      "rank": 358
+    },
+    {
+      "es": "prometer",
+      "de": "versprechen",
+      "en": "prometer",
+      "pos": "v",
+      "rank": 359
+    },
+    {
+      "es": "ayudar",
+      "de": "helfen",
+      "pos": "v",
+      "rank": 360,
+      "example": "¿Me ayudas?"
+    },
+    {
+      "es": "música",
+      "de": "Musik",
+      "pos": "n",
+      "gender": "f",
+      "rank": 360,
+      "example": "Escucho música."
+    },
+    {
+      "es": "enseñar",
+      "de": "lehren",
+      "en": "enseñar",
+      "pos": "v",
+      "rank": 360
+    },
+    {
+      "es": "obra",
+      "de": "das Werk",
+      "en": "obra",
+      "pos": "n",
+      "rank": 361
+    },
+    {
+      "es": "descubrir",
+      "de": "entdecken",
+      "en": "descubrir",
+      "pos": "v",
+      "rank": 362
+    },
+    {
+      "es": "andar",
+      "de": "gehen",
+      "en": "andar",
+      "pos": "v",
+      "rank": 363
+    },
+    {
+      "es": "cuanto",
+      "de": "wie viel",
+      "en": "cuanto",
+      "pos": "adv",
+      "rank": 366
+    },
+    {
+      "es": "lista",
+      "de": "die Liste",
+      "en": "lista",
+      "pos": "n",
+      "rank": 367
+    },
+    {
+      "es": "español",
+      "de": "spanisch",
+      "en": "español",
+      "pos": "adj",
+      "rank": 368
+    },
+    {
+      "es": "sonar",
+      "de": "klingen",
+      "en": "sonar",
+      "pos": "v",
+      "rank": 369
+    },
+    {
+      "es": "pagar",
+      "de": "zahlen",
+      "pos": "v",
+      "rank": 370,
+      "example": "Yo pago la cuenta."
+    },
+    {
+      "es": "referir",
+      "de": "beziehen",
+      "en": "referir",
+      "pos": "v",
+      "rank": 370
+    },
+    {
+      "es": "vino",
+      "de": "der Wein",
+      "en": "vino",
+      "pos": "n",
+      "rank": 371
+    },
+    {
+      "es": "centro",
+      "de": "das Zentrum",
+      "en": "centro",
+      "pos": "n",
+      "rank": 372
+    },
+    {
+      "es": "asunto",
+      "de": "die Angelegenheit",
+      "en": "asunto",
+      "pos": "n",
+      "rank": 373
+    },
+    {
+      "es": "encantar",
+      "de": "lieben",
+      "en": "encantar",
+      "pos": "v",
+      "rank": 374
+    },
+    {
+      "es": "embargo",
+      "de": "die Beschlagnahme",
+      "en": "embargo",
+      "pos": "n",
+      "rank": 375
+    },
+    {
+      "es": "imaginar",
+      "de": "sich vorstellen",
+      "en": "imaginar",
+      "pos": "v",
+      "rank": 376
+    },
+    {
+      "es": "información",
+      "de": "die Information",
+      "en": "información",
+      "pos": "n",
+      "rank": 377
+    },
+    {
+      "es": "habitación",
+      "de": "das Zimmer",
+      "en": "habitación",
+      "pos": "n",
+      "rank": 378
+    },
+    {
+      "es": "aprender",
+      "de": "lernen",
+      "en": "aprender",
+      "pos": "v",
+      "rank": 379
+    },
+    {
+      "es": "responder",
+      "de": "antworten",
+      "pos": "v",
+      "rank": 380,
+      "example": "Respondo al email."
+    },
+    {
+      "es": "precio",
+      "de": "Preis",
+      "pos": "n",
+      "gender": "m",
+      "rank": 380,
+      "example": "¿Cuál es el precio?"
+    },
+    {
+      "es": "pregunta",
+      "de": "Frage",
+      "pos": "n",
+      "gender": "f",
+      "rank": 380,
+      "example": "Tengo una pregunta."
+    },
+    {
+      "es": "rápido",
+      "de": "schnell",
+      "pos": "adj",
+      "rank": 380,
+      "example": "Un coche rápido."
+    },
+    {
+      "es": "falta",
+      "de": "der Mangel",
+      "en": "lack",
+      "pos": "n",
+      "rank": 380
+    },
+    {
+      "es": "cielo",
+      "de": "der Himmel",
+      "en": "sky",
+      "pos": "n",
+      "rank": 381
+    },
+    {
+      "es": "realizar",
+      "de": "realisieren",
+      "en": "to realize",
+      "pos": "v",
+      "rank": 383
+    },
+    {
+      "es": "negocio",
+      "de": "das Geschäft",
+      "en": "business",
+      "pos": "n",
+      "rank": 384
+    },
+    {
+      "es": "sueño",
+      "de": "der Traum",
+      "en": "dream",
+      "pos": "n",
+      "rank": 385
+    },
+    {
+      "es": "atrás",
+      "de": "zurück",
+      "en": "back",
+      "pos": "adv",
+      "rank": 386
+    },
+    {
+      "es": "social",
+      "de": "sozial",
+      "en": "social",
+      "pos": "adj",
+      "rank": 387
+    },
+    {
+      "es": "capitán",
+      "de": "der Kapitän",
+      "en": "captain",
+      "pos": "n",
+      "rank": 388
+    },
+    {
+      "es": "bebé",
+      "de": "das Baby",
+      "en": "baby",
+      "pos": "n",
+      "rank": 390
+    },
+    {
+      "es": "libre",
+      "de": "frei",
+      "en": "free",
+      "pos": "adj",
+      "rank": 391
+    },
+    {
+      "es": "voz",
+      "de": "die Stimme",
+      "en": "voice",
+      "pos": "n",
+      "rank": 392
+    },
+    {
+      "es": "foto",
+      "de": "das Foto",
+      "en": "photo",
+      "pos": "n",
+      "rank": 393
+    },
+    {
+      "es": "abajo",
+      "de": "unten",
+      "en": "down",
+      "pos": "adv",
+      "rank": 394
+    },
+    {
+      "es": "par",
+      "de": "das Paar",
+      "en": "pair",
+      "pos": "n",
+      "rank": 395
+    },
+    {
+      "es": "paz",
+      "de": "der Frieden",
+      "en": "peace",
+      "pos": "n",
+      "rank": 396
+    },
+    {
+      "es": "confiar",
+      "de": "vertrauen",
+      "en": "to trust",
+      "pos": "v",
+      "rank": 397
+    },
+    {
+      "es": "callar",
+      "de": "still sein",
+      "en": "to be quiet",
+      "pos": "v",
+      "rank": 398
+    },
+    {
+      "es": "culpa",
+      "de": "die Schuld",
+      "en": "fault",
+      "pos": "n",
+      "rank": 399
+    },
+    {
+      "es": "ofrecer",
+      "de": "anbieten",
+      "en": "to offer",
+      "pos": "v",
+      "rank": 401
+    },
+    {
+      "es": "noticia",
+      "de": "die Nachricht",
+      "en": "news",
+      "pos": "n",
+      "rank": 402
+    },
+    {
+      "es": "bajar",
+      "de": "hinuntergehen",
+      "en": "to go down",
+      "pos": "v",
+      "rank": 403
+    },
+    {
+      "es": "desear",
+      "de": "wünschen",
+      "en": "to wish",
+      "pos": "v",
+      "rank": 404
+    },
+    {
+      "es": "diablo",
+      "de": "der Teufel",
+      "en": "devil",
+      "pos": "n",
+      "rank": 406
+    },
+    {
+      "es": "resto",
+      "de": "der Rest",
+      "en": "rest",
+      "pos": "n",
+      "rank": 407
+    },
+    {
+      "es": "siguiente",
+      "de": "nächste",
+      "en": "next",
+      "pos": "adj",
+      "rank": 408
+    },
+    {
+      "es": "cuidar",
+      "de": "kümmern",
+      "en": "to take care of",
+      "pos": "v",
+      "rank": 409
+    },
+    {
+      "es": "viajar",
+      "de": "reisen",
+      "pos": "v",
+      "rank": 410,
+      "example": "Viajo a México."
+    },
+    {
+      "es": "escuela",
+      "de": "Schule",
+      "pos": "n",
+      "gender": "f",
+      "rank": 410,
+      "example": "Voy a la escuela."
+    },
+    {
+      "es": "carta",
+      "de": "der Brief",
+      "en": "letter",
+      "pos": "n",
+      "rank": 411
+    },
+    {
+      "es": "preparar",
+      "de": "vorbereiten",
+      "en": "to prepare",
+      "pos": "v",
+      "rank": 412
+    },
+    {
+      "es": "don",
+      "de": "das Geschenk",
+      "en": "gift",
+      "pos": "n",
+      "rank": 413
+    },
+    {
+      "es": "correcto",
+      "de": "korrekt",
+      "en": "correct",
+      "pos": "adj",
+      "rank": 414
+    },
+    {
+      "es": "programa",
+      "de": "das Programm",
+      "en": "program",
+      "pos": "n",
+      "rank": 415
+    },
+    {
+      "es": "sitio",
+      "de": "der Ort",
+      "en": "site",
+      "pos": "n",
+      "rank": 417
+    },
+    {
+      "es": "campo",
+      "de": "das Feld",
+      "en": "field",
+      "pos": "n",
+      "rank": 418
+    },
+    {
+      "es": "elegir",
+      "de": "wählen",
+      "en": "to choose",
+      "pos": "v",
+      "rank": 419
+    },
+    {
+      "es": "exactamente",
+      "de": "genau",
+      "en": "exactly",
+      "pos": "adv",
+      "rank": 420
+    },
+    {
+      "es": "parar",
+      "de": "stoppen",
+      "en": "to stop",
+      "pos": "v",
+      "rank": 421
+    },
+    {
+      "es": "unido",
+      "de": "vereinigt",
+      "en": "united",
+      "pos": "adj",
+      "rank": 422
+    },
+    {
+      "es": "desaparecer",
+      "de": "verschwinden",
+      "en": "to disappear",
+      "pos": "v",
+      "rank": 423
+    },
+    {
+      "es": "hermoso",
+      "de": "schön",
+      "en": "beautiful",
+      "pos": "adj",
+      "rank": 424
+    },
+    {
+      "es": "mentir",
+      "de": "lügen",
+      "en": "to lie",
+      "pos": "v",
+      "rank": 425
+    },
+    {
+      "es": "romper",
+      "de": "brechen",
+      "en": "to break",
+      "pos": "v",
+      "rank": 426
+    },
+    {
+      "es": "invitar",
+      "de": "einladen",
+      "en": "to invite",
+      "pos": "v",
+      "rank": 427
+    },
+    {
+      "es": "peor",
+      "de": "schlechter",
+      "en": "worse",
+      "pos": "adj",
+      "rank": 429
+    },
+    {
+      "es": "mercado",
+      "de": "Markt",
+      "pos": "n",
+      "gender": "m",
+      "rank": 430,
+      "example": "El mercado abre temprano."
+    },
+    {
+      "es": "obtener",
+      "de": "bekommen",
+      "en": "to get",
+      "pos": "v",
+      "rank": 430
+    },
+    {
+      "es": "molestar",
+      "de": "stören",
+      "en": "to bother",
+      "pos": "v",
+      "rank": 431
+    },
+    {
+      "es": "lejos",
+      "de": "weit weg",
+      "en": "far",
+      "pos": "adv",
+      "rank": 432
+    },
+    {
+      "es": "necesario",
+      "de": "notwendig",
+      "en": "necessary",
+      "pos": "adj",
+      "rank": 433
+    },
+    {
+      "es": "cama",
+      "de": "das Bett",
+      "en": "bed",
+      "pos": "n",
+      "rank": 434
+    },
+    {
+      "es": "utilizar",
+      "de": "benutzen",
+      "en": "to use",
+      "pos": "v",
+      "rank": 435
+    },
+    {
+      "es": "abuelo",
+      "de": "der Großvater",
+      "en": "grandfather",
+      "pos": "n",
+      "rank": 436
+    },
+    {
+      "es": "viaje",
+      "de": "die Reise",
+      "en": "trip",
+      "pos": "n",
+      "rank": 437
+    },
+    {
+      "es": "demonio",
+      "de": "der Dämon",
+      "en": "demon",
+      "pos": "n",
+      "rank": 438
+    },
+    {
+      "es": "perfecto",
+      "de": "perfekt",
+      "en": "perfect",
+      "pos": "adj",
+      "rank": 439
+    },
+    {
+      "es": "fiesta",
+      "de": "Fest / Party",
+      "pos": "n",
+      "gender": "f",
+      "rank": 440,
+      "example": "Vamos a la fiesta."
+    },
+    {
+      "es": "raro",
+      "de": "selten",
+      "en": "rare",
+      "pos": "adj",
+      "rank": 440
+    },
+    {
+      "es": "tirar",
+      "de": "werfen",
+      "en": "throw",
+      "pos": "v",
+      "rank": 441
+    },
+    {
+      "es": "despertar",
+      "de": "aufwachen",
+      "en": "wake up",
+      "pos": "v",
+      "rank": 442
+    },
+    {
+      "es": "resultar",
+      "de": "sich herausstellen",
+      "en": "turn out",
+      "pos": "v",
+      "rank": 443
+    },
+    {
+      "es": "oficial",
+      "de": "offiziell",
+      "en": "official",
+      "pos": "adj",
+      "rank": 444
+    },
+    {
+      "es": "probablemente",
+      "de": "wahrscheinlich",
+      "en": "probably",
+      "pos": "adv",
+      "rank": 445
+    },
+    {
+      "es": "oficina",
+      "de": "das Büro",
+      "en": "office",
+      "pos": "n",
+      "rank": 446
+    },
+    {
+      "es": "continuar",
+      "de": "fortsetzen",
+      "en": "continue",
+      "pos": "v",
+      "rank": 447
+    },
+    {
+      "es": "acción",
+      "de": "die Aktion",
+      "en": "action",
+      "pos": "n",
+      "rank": 449
+    },
+    {
+      "es": "línea",
+      "de": "die Linie",
+      "en": "line",
+      "pos": "n",
+      "rank": 450
+    },
+    {
+      "es": "agente",
+      "de": "der Agent",
+      "en": "agent",
+      "pos": "n",
+      "rank": 451
+    },
+    {
+      "es": "personal",
+      "de": "persönlich",
+      "en": "personal",
+      "pos": "adj",
+      "rank": 452
+    },
+    {
+      "es": "papel",
+      "de": "das Papier",
+      "en": "paper",
+      "pos": "n",
+      "rank": 453
+    },
+    {
+      "es": "aire",
+      "de": "die Luft",
+      "en": "air",
+      "pos": "n",
+      "rank": 455
+    },
+    {
+      "es": "arreglar",
+      "de": "reparieren",
+      "en": "fix",
+      "pos": "v",
+      "rank": 456
+    },
+    {
+      "es": "puta",
+      "de": "die Hure",
+      "en": "whore",
+      "pos": "n",
+      "rank": 457
+    },
+    {
+      "es": "principio",
+      "de": "der Grundsatz",
+      "en": "principle",
+      "pos": "n",
+      "rank": 458
+    },
+    {
+      "es": "simplemente",
+      "de": "einfach",
+      "en": "simply",
+      "pos": "adv",
+      "rank": 459
+    },
+    {
+      "es": "probar",
+      "de": "probieren / versuchen",
+      "pos": "v",
+      "rank": 460,
+      "example": "Prueba el flan."
+    },
+    {
+      "es": "respuesta",
+      "de": "Antwort",
+      "pos": "n",
+      "gender": "f",
+      "rank": 460,
+      "example": "No sé la respuesta."
+    },
+    {
+      "es": "feliz",
+      "de": "glücklich",
+      "pos": "adj",
+      "rank": 460,
+      "example": "Estoy feliz."
+    },
+    {
+      "es": "empresa",
+      "de": "das Unternehmen",
+      "en": "company",
+      "pos": "n",
+      "rank": 460
+    },
+    {
+      "es": "director",
+      "de": "der Direktor",
+      "en": "director",
+      "pos": "n",
+      "rank": 462
+    },
+    {
+      "es": "través",
+      "de": "der Weg",
+      "en": "way",
+      "pos": "n",
+      "rank": 463
+    },
+    {
+      "es": "producir",
+      "de": "produzieren",
+      "en": "produce",
+      "pos": "v",
+      "rank": 464
+    },
+    {
+      "es": "ejemplo",
+      "de": "das Beispiel",
+      "en": "example",
+      "pos": "n",
+      "rank": 465
+    },
+    {
+      "es": "amo",
+      "de": "der Herr",
+      "en": "master",
+      "pos": "n",
+      "rank": 466
+    },
+    {
+      "es": "rey",
+      "de": "der König",
+      "en": "king",
+      "pos": "n",
+      "rank": 467
+    },
+    {
+      "es": "cuarto",
+      "de": "das Zimmer",
+      "en": "room",
+      "pos": "n",
+      "rank": 468
+    },
+    {
+      "es": "idiota",
+      "de": "Idiot",
+      "en": "idiot",
+      "pos": "adj",
+      "rank": 469
+    },
+    {
+      "es": "tren",
+      "de": "Zug",
+      "pos": "n",
+      "gender": "m",
+      "rank": 470,
+      "example": "El tren llega tarde."
+    },
+    {
+      "es": "verdadero",
+      "de": "wahr",
+      "en": "true",
+      "pos": "adj",
+      "rank": 470
+    },
+    {
+      "es": "pesar",
+      "de": "leidtun",
+      "en": "regret",
+      "pos": "v",
+      "rank": 471
+    },
+    {
+      "es": "bastar",
+      "de": "reichen",
+      "en": "suffice",
+      "pos": "v",
+      "rank": 473
+    },
+    {
+      "es": "decisión",
+      "de": "die Entscheidung",
+      "en": "decision",
+      "pos": "n",
+      "rank": 474
+    },
+    {
+      "es": "control",
+      "de": "die Kontrolle",
+      "en": "control",
+      "pos": "n",
+      "rank": 475
+    },
+    {
+      "es": "hospital",
+      "de": "das Krankenhaus",
+      "en": "hospital",
+      "pos": "n",
+      "rank": 476
+    },
+    {
+      "es": "marido",
+      "de": "der Ehemann",
+      "en": "husband",
+      "pos": "n",
+      "rank": 477
+    },
+    {
+      "es": "fuego",
+      "de": "das Feuer",
+      "en": "fire",
+      "pos": "n",
+      "rank": 478
+    },
+    {
+      "es": "tema",
+      "de": "das Thema",
+      "en": "topic",
+      "pos": "n",
+      "rank": 479
+    },
+    {
+      "es": "tienda",
+      "de": "Geschäft / Laden",
+      "pos": "n",
+      "gender": "f",
+      "rank": 480,
+      "example": "Voy a la tienda."
+    },
+    {
+      "es": "nivel",
+      "de": "die Ebene",
+      "en": "level",
+      "pos": "n",
+      "rank": 481
+    },
+    {
+      "es": "evitar",
+      "de": "vermeiden",
+      "en": "avoid",
+      "pos": "v",
+      "rank": 482
+    },
+    {
+      "es": "estudio",
+      "de": "das Studium",
+      "en": "study",
+      "pos": "n",
+      "rank": 483
+    },
+    {
+      "es": "mensaje",
+      "de": "die Nachricht",
+      "en": "message",
+      "pos": "n",
+      "rank": 485
+    },
+    {
+      "es": "resultado",
+      "de": "das Ergebnis",
+      "en": "result",
+      "pos": "n",
+      "rank": 486
+    },
+    {
+      "es": "error",
+      "de": "der Fehler",
+      "en": "error",
+      "pos": "n",
+      "rank": 487
+    },
+    {
+      "es": "lleno",
+      "de": "voll",
+      "en": "full",
+      "pos": "adj",
+      "rank": 489
+    },
+    {
+      "es": "maldito",
+      "de": "verdammt",
+      "en": "damned",
+      "pos": "adj",
+      "rank": 490
+    },
+    {
+      "es": "compañero",
+      "de": "der Kamerad",
+      "en": "companion",
+      "pos": "n",
+      "rank": 491
+    },
+    {
+      "es": "soler",
+      "de": "pflegen",
+      "en": "usually",
+      "pos": "v",
+      "rank": 492
+    },
+    {
+      "es": "reconocer",
+      "de": "erkennen",
+      "en": "recognize",
+      "pos": "v",
+      "rank": 493
+    },
+    {
+      "es": "pobre",
+      "de": "arm",
+      "en": "pobre",
+      "pos": "adj",
+      "rank": 494
+    },
+    {
+      "es": "atención",
+      "de": "die Aufmerksamkeit",
+      "en": "atención",
+      "pos": "n",
+      "rank": 495
+    },
+    {
+      "es": "zona",
+      "de": "die Zone",
+      "en": "zona",
+      "pos": "n",
+      "rank": 496
+    },
+    {
+      "es": "vista",
+      "de": "die Sicht",
+      "en": "vista",
+      "pos": "n",
+      "rank": 497
+    },
+    {
+      "es": "escapar",
+      "de": "entkommen",
+      "en": "escapar",
+      "pos": "v",
+      "rank": 498
+    },
+    {
+      "es": "cumplir",
+      "de": "erfüllen",
+      "en": "cumplir",
+      "pos": "v",
+      "rank": 499
+    },
+    {
+      "es": "edad",
+      "de": "das Alter",
+      "en": "edad",
+      "pos": "n",
+      "rank": 500
+    },
+    {
+      "es": "comprender",
+      "de": "verstehen",
+      "en": "comprender",
+      "pos": "v",
+      "rank": 502
+    },
+    {
+      "es": "mandar",
+      "de": "senden",
+      "en": "mandar",
+      "pos": "v",
+      "rank": 503
+    },
+    {
+      "es": "abogado",
+      "de": "der Anwalt",
+      "en": "abogado",
+      "pos": "n",
+      "rank": 504
+    },
+    {
+      "es": "dirección",
+      "de": "die Adresse",
+      "en": "dirección",
+      "pos": "n",
+      "rank": 505
+    },
+    {
+      "es": "partir",
+      "de": "teilen",
+      "en": "partir",
+      "pos": "v",
+      "rank": 506
+    },
+    {
+      "es": "temer",
+      "de": "fürchten",
+      "en": "temer",
+      "pos": "v",
+      "rank": 507
+    },
+    {
+      "es": "alegrar",
+      "de": "erfreuen",
+      "en": "alegrar",
+      "pos": "v",
+      "rank": 508
+    },
+    {
+      "es": "estúpido",
+      "de": "dumm",
+      "en": "estúpido",
+      "pos": "adj",
+      "rank": 509
+    },
+    {
+      "es": "avión",
+      "de": "Flugzeug",
+      "pos": "n",
+      "gender": "m",
+      "rank": 510,
+      "example": "El avión despega."
+    },
+    {
+      "es": "frío",
+      "de": "kalt",
+      "pos": "adj",
+      "rank": 510,
+      "example": "Tengo frío."
+    },
+    {
+      "es": "fondo",
+      "de": "der Boden",
+      "en": "fondo",
+      "pos": "n",
+      "rank": 510
+    },
+    {
+      "es": "llorar",
+      "de": "weinen",
+      "en": "llorar",
+      "pos": "v",
+      "rank": 511
+    },
+    {
+      "es": "señorito",
+      "de": "der Herr",
+      "en": "señorito",
+      "pos": "n",
+      "rank": 512
+    },
+    {
+      "es": "lindo",
+      "de": "hübsch",
+      "en": "lindo",
+      "pos": "adj",
+      "rank": 513
+    },
+    {
+      "es": "medio",
+      "de": "mittel",
+      "en": "medio",
+      "pos": "adj",
+      "rank": 514
+    },
+    {
+      "es": "compañía",
+      "de": "die Gesellschaft",
+      "en": "compañía",
+      "pos": "n",
+      "rank": 515
+    },
+    {
+      "es": "tranquilar",
+      "de": "beruhigen",
+      "en": "tranquilar",
+      "pos": "v",
+      "rank": 516
+    },
+    {
+      "es": "actuar",
+      "de": "handeln",
+      "en": "actuar",
+      "pos": "v",
+      "rank": 517
+    },
+    {
+      "es": "proceso",
+      "de": "der Prozess",
+      "en": "proceso",
+      "pos": "n",
+      "rank": 518
+    },
+    {
+      "es": "investigación",
+      "de": "die Untersuchung",
+      "en": "investigación",
+      "pos": "n",
+      "rank": 519
+    },
+    {
+      "es": "playa",
+      "de": "Strand",
+      "pos": "n",
+      "gender": "f",
+      "rank": 520,
+      "example": "La playa está cerca."
+    },
+    {
+      "es": "tonto",
+      "de": "dumm",
+      "en": "tonto",
+      "pos": "adj",
+      "rank": 520
+    },
+    {
+      "es": "duda",
+      "de": "der Zweifel",
+      "en": "duda",
+      "pos": "n",
+      "rank": 522
+    },
+    {
+      "es": "preferir",
+      "de": "bevorzugen",
+      "en": "preferir",
+      "pos": "v",
+      "rank": 523
+    },
+    {
+      "es": "conducir",
+      "de": "fahren",
+      "en": "conducir",
+      "pos": "v",
+      "rank": 524
+    },
+    {
+      "es": "estado",
+      "de": "der Zustand",
+      "en": "estado",
+      "pos": "n",
+      "rank": 525
+    },
+    {
+      "es": "mía",
+      "de": "meins",
+      "en": "mía",
+      "pos": "n",
+      "rank": 526
+    },
+    {
+      "es": "ropa",
+      "de": "die Kleidung",
+      "en": "ropa",
+      "pos": "n",
+      "rank": 527
+    },
+    {
+      "es": "valor",
+      "de": "der Wert",
+      "en": "valor",
+      "pos": "n",
+      "rank": 528
+    },
+    {
+      "es": "profesor",
+      "de": "der Professor",
+      "en": "profesor",
+      "pos": "n",
+      "rank": 529
+    },
+    {
+      "es": "película",
+      "de": "Film",
+      "pos": "n",
+      "gender": "f",
+      "rank": 530,
+      "example": "Me gusta esa película."
+    },
+    {
+      "es": "reunión",
+      "de": "die Besprechung",
+      "en": "reunión",
+      "pos": "n",
+      "rank": 530
+    },
+    {
+      "es": "boca",
+      "de": "der Mund",
+      "en": "boca",
+      "pos": "n",
+      "rank": 531
+    },
+    {
+      "es": "cámara",
+      "de": "die Kamera",
+      "en": "cámara",
+      "pos": "n",
+      "rank": 532
+    },
+    {
+      "es": "conocido",
+      "de": "bekannt",
+      "en": "conocido",
+      "pos": "adj",
+      "rank": 533
+    },
+    {
+      "es": "espacio",
+      "de": "der Raum",
+      "en": "espacio",
+      "pos": "n",
+      "rank": 534
+    },
+    {
+      "es": "encima",
+      "de": "oben",
+      "en": "encima",
+      "pos": "adv",
+      "rank": 535
+    },
+    {
+      "es": "imagen",
+      "de": "das Bild",
+      "en": "imagen",
+      "pos": "n",
+      "rank": 536
+    },
+    {
+      "es": "abierto",
+      "de": "offen",
+      "en": "abierto",
+      "pos": "adj",
+      "rank": 537
+    },
+    {
+      "es": "cargo",
+      "de": "die Position",
+      "en": "cargo",
+      "pos": "n",
+      "rank": 539
+    },
+    {
+      "es": "restaurante",
+      "de": "Restaurant",
+      "pos": "n",
+      "gender": "m",
+      "rank": 540,
+      "example": "Cenamos en un restaurante."
+    },
+    {
+      "es": "interesante",
+      "de": "interessant",
+      "pos": "adj",
+      "rank": 540,
+      "example": "Un libro interesante."
+    },
+    {
+      "es": "caballero",
+      "de": "der Herr",
+      "en": "caballero",
+      "pos": "n",
+      "rank": 540
+    },
+    {
+      "es": "cantar",
+      "de": "singen",
+      "en": "cantar",
+      "pos": "v",
+      "rank": 541
+    },
+    {
+      "es": "posibilidad",
+      "de": "die Möglichkeit",
+      "en": "posibilidad",
+      "pos": "n",
+      "rank": 542
+    },
+    {
+      "es": "detrás",
+      "de": "hinten",
+      "en": "detrás",
+      "pos": "adv",
+      "rank": 543
+    },
+    {
+      "es": "proteger",
+      "de": "schützen",
+      "en": "proteger",
+      "pos": "v",
+      "rank": 544
+    },
+    {
+      "es": "sufrir",
+      "de": "leiden",
+      "en": "sufrir",
+      "pos": "v",
+      "rank": 546
+    },
+    {
+      "es": "golpear",
+      "de": "schlagen",
+      "en": "golpear",
+      "pos": "v",
+      "rank": 547
+    },
+    {
+      "es": "abandonar",
+      "de": "aufgeben",
+      "en": "abandonar",
+      "pos": "v",
+      "rank": 548
+    },
+    {
+      "es": "consejo",
+      "de": "der Rat",
+      "en": "consejo",
+      "pos": "n",
+      "rank": 549
+    },
+    {
+      "es": "asesino",
+      "de": "der Mörder",
+      "en": "asesino",
+      "pos": "n",
+      "rank": 550
+    },
+    {
+      "es": "caminar",
+      "de": "gehen",
+      "en": "caminar",
+      "pos": "v",
+      "rank": 551
+    },
+    {
+      "es": "daño",
+      "de": "der Schaden",
+      "en": "daño",
+      "pos": "n",
+      "rank": 552
+    },
+    {
+      "es": "sociedad",
+      "de": "die Gesellschaft",
+      "en": "sociedad",
+      "pos": "n",
+      "rank": 553
+    },
+    {
+      "es": "base",
+      "de": "die Basis",
+      "en": "base",
+      "pos": "n",
+      "rank": 554
+    },
+    {
+      "es": "proyecto",
+      "de": "das Projekt",
+      "en": "proyecto",
+      "pos": "n",
+      "rank": 555
+    },
+    {
+      "es": "anoche",
+      "de": "gestern Abend",
+      "en": "anoche",
+      "pos": "adv",
+      "rank": 556
+    },
+    {
+      "es": "mesa",
+      "de": "der Tisch",
+      "en": "mesa",
+      "pos": "n",
+      "rank": 557
+    },
+    {
+      "es": "paciente",
+      "de": "der Patient",
+      "en": "paciente",
+      "pos": "n",
+      "rank": 558
+    },
+    {
+      "es": "tercero",
+      "de": "dritter",
+      "en": "tercero",
+      "pos": "adj",
+      "rank": 559
+    },
+    {
+      "es": "montaña",
+      "de": "Berg",
+      "pos": "n",
+      "gender": "f",
+      "rank": 560,
+      "example": "Las montañas son altas."
+    },
+    {
+      "es": "crear",
+      "de": "erschaffen",
+      "en": "crear",
+      "pos": "v",
+      "rank": 560
+    },
+    {
+      "es": "dirigir",
+      "de": "leiten",
+      "en": "dirigir",
+      "pos": "v",
+      "rank": 561
+    },
+    {
+      "es": "capaz",
+      "de": "fähig",
+      "en": "capaz",
+      "pos": "adj",
+      "rank": 562
+    },
+    {
+      "es": "movimiento",
+      "de": "die Bewegung",
+      "en": "movimiento",
+      "pos": "n",
+      "rank": 563
+    },
+    {
+      "es": "increíble",
+      "de": "unglaublich",
+      "en": "increíble",
+      "pos": "adj",
+      "rank": 564
+    },
+    {
+      "es": "divertido",
+      "de": "lustig",
+      "en": "divertido",
+      "pos": "adj",
+      "rank": 565
+    },
+    {
+      "es": "principal",
+      "de": "hauptsächlich",
+      "en": "principal",
+      "pos": "adj",
+      "rank": 566
+    },
+    {
+      "es": "maestro",
+      "de": "der Meister",
+      "en": "maestro",
+      "pos": "n",
+      "rank": 567
+    },
+    {
+      "es": "recoger",
+      "de": "abholen",
+      "en": "recoger",
+      "pos": "v",
+      "rank": 568
+    },
+    {
+      "es": "carrera",
+      "de": "die Karriere",
+      "en": "carrera",
+      "pos": "n",
+      "rank": 569
+    },
+    {
+      "es": "caballo",
+      "de": "das Pferd",
+      "en": "caballo",
+      "pos": "n",
+      "rank": 570
+    },
+    {
+      "es": "siglo",
+      "de": "das Jahrhundert",
+      "en": "siglo",
+      "pos": "n",
+      "rank": 571
+    },
+    {
+      "es": "pena",
+      "de": "die Strafe",
+      "en": "pena",
+      "pos": "n",
+      "rank": 573
+    },
+    {
+      "es": "antiguo",
+      "de": "alt",
+      "en": "antiguo",
+      "pos": "adj",
+      "rank": 574
+    },
+    {
+      "es": "ocupar",
+      "de": "besetzen",
+      "en": "ocupar",
+      "pos": "v",
+      "rank": 575
+    },
+    {
+      "es": "asesinar",
+      "de": "ermorden",
+      "en": "asesinar",
+      "pos": "v",
+      "rank": 576
+    },
+    {
+      "es": "banco",
+      "de": "die Bank",
+      "en": "banco",
+      "pos": "n",
+      "rank": 577
+    },
+    {
+      "es": "político",
+      "de": "politisch",
+      "en": "político",
+      "pos": "adj",
+      "rank": 578
+    },
+    {
+      "es": "mayoría",
+      "de": "die Mehrheit",
+      "en": "mayoría",
+      "pos": "n",
+      "rank": 579
+    },
+    {
+      "es": "hotel",
+      "de": "Hotel",
+      "pos": "n",
+      "gender": "m",
+      "rank": 580,
+      "example": "Reservé un hotel."
+    },
+    {
+      "es": "universidad",
+      "de": "Universität",
+      "pos": "n",
+      "gender": "f",
+      "rank": 580,
+      "example": "Estudio en la universidad."
+    },
+    {
+      "es": "lento",
+      "de": "langsam",
+      "pos": "adj",
+      "rank": 580,
+      "example": "El servicio es lento."
+    },
+    {
+      "es": "triste",
+      "de": "traurig",
+      "pos": "adj",
+      "rank": 580,
+      "example": "Está triste hoy."
+    },
+    {
+      "es": "miembro",
+      "de": "das Mitglied",
+      "en": "miembro",
+      "pos": "n",
+      "rank": 580
+    },
+    {
+      "es": "condición",
+      "de": "die Bedingung",
+      "en": "condición",
+      "pos": "n",
+      "rank": 581
+    },
+    {
+      "es": "efecto",
+      "de": "der Effekt",
+      "en": "efecto",
+      "pos": "n",
+      "rank": 582
+    },
+    {
+      "es": "económico",
+      "de": "wirtschaftlich",
+      "en": "económico",
+      "pos": "adj",
+      "rank": 583
+    },
+    {
+      "es": "volar",
+      "de": "fliegen",
+      "en": "volar",
+      "pos": "v",
+      "rank": 584
+    },
+    {
+      "es": "brazo",
+      "de": "der Arm",
+      "en": "brazo",
+      "pos": "n",
+      "rank": 585
+    },
+    {
+      "es": "ministro",
+      "de": "der Minister",
+      "en": "ministro",
+      "pos": "n",
+      "rank": 586
+    },
+    {
+      "es": "libertad",
+      "de": "die Freiheit",
+      "en": "libertad",
+      "pos": "n",
+      "rank": 587
+    },
+    {
+      "es": "asesinato",
+      "de": "der Mord",
+      "en": "asesinato",
+      "pos": "n",
+      "rank": 588
+    },
+    {
+      "es": "reunir",
+      "de": "versammeln",
+      "en": "reunir",
+      "pos": "v",
+      "rank": 589
+    },
+    {
+      "es": "crecer",
+      "de": "wachsen",
+      "en": "crecer",
+      "pos": "v",
+      "rank": 590
+    },
+    {
+      "es": "alcanzar",
+      "de": "erreichen",
+      "en": "alcanzar",
+      "pos": "v",
+      "rank": 591
+    },
+    {
+      "es": "devolver",
+      "de": "zurückgeben",
+      "en": "devolver",
+      "pos": "v",
+      "rank": 592
+    },
+    {
+      "es": "interés",
+      "de": "das Interesse",
+      "en": "interés",
+      "pos": "n",
+      "rank": 593
+    },
+    {
+      "es": "joder",
+      "de": "ficken",
+      "en": "joder",
+      "pos": "v",
+      "rank": 594
+    },
+    {
+      "es": "animal",
+      "de": "das Tier",
+      "en": "animal",
+      "pos": "n",
+      "rank": 595
+    },
+    {
+      "es": "destruir",
+      "de": "zerstören",
+      "en": "destruir",
+      "pos": "v",
+      "rank": 596
+    },
+    {
+      "es": "sol",
+      "de": "die Sonne",
+      "en": "sol",
+      "pos": "n",
+      "rank": 597
+    },
+    {
+      "es": "entregar",
+      "de": "liefern",
+      "en": "entregar",
+      "pos": "v",
+      "rank": 598
+    },
+    {
+      "es": "color",
+      "de": "die Farbe",
+      "en": "color",
+      "pos": "n",
+      "rank": 599
+    },
+    {
+      "es": "cocinar",
+      "de": "kochen",
+      "pos": "v",
+      "rank": 600,
+      "example": "Mi padre cocina."
+    },
+    {
+      "es": "caja",
+      "de": "die Kiste",
+      "en": "caja",
+      "pos": "n",
+      "rank": 600
+    },
+    {
+      "es": "cliente",
+      "de": "der Kunde",
+      "en": "cliente",
+      "pos": "n",
+      "rank": 601
+    },
+    {
+      "es": "distinto",
+      "de": "unterschiedlich",
+      "en": "distinto",
+      "pos": "adj",
+      "rank": 602
+    },
+    {
+      "es": "víctima",
+      "de": "das Opfer",
+      "en": "víctima",
+      "pos": "n",
+      "rank": 603
+    },
+    {
+      "es": "deseo",
+      "de": "der Wunsch",
+      "en": "deseo",
+      "pos": "n",
+      "rank": 604
+    },
+    {
+      "es": "arte",
+      "de": "die Kunst",
+      "en": "arte",
+      "pos": "n",
+      "rank": 605
+    },
+    {
+      "es": "acompañar",
+      "de": "begleiten",
+      "en": "acompañar",
+      "pos": "v",
+      "rank": 607
+    },
+    {
+      "es": "causa",
+      "de": "die Ursache",
+      "en": "causa",
+      "pos": "n",
+      "rank": 608
+    },
+    {
+      "es": "cita",
+      "de": "der Termin",
+      "en": "cita",
+      "pos": "n",
+      "rank": 609
+    },
+    {
+      "es": "trato",
+      "de": "die Behandlung",
+      "en": "trato",
+      "pos": "n",
+      "rank": 610
+    },
+    {
+      "es": "demostrar",
+      "de": "beweisen",
+      "en": "demostrar",
+      "pos": "v",
+      "rank": 611
+    },
+    {
+      "es": "aforar",
+      "de": "eichen",
+      "en": "aforar",
+      "pos": "v",
+      "rank": 612
+    },
+    {
+      "es": "jamás",
+      "de": "niemals",
+      "en": "jamás",
+      "pos": "adv",
+      "rank": 613
+    },
+    {
+      "es": "recuperar",
+      "de": "wiedererlangen",
+      "en": "recuperar",
+      "pos": "v",
+      "rank": 614
+    },
+    {
+      "es": "merecer",
+      "de": "verdienen",
+      "en": "merecer",
+      "pos": "v",
+      "rank": 615
+    },
+    {
+      "es": "estrella",
+      "de": "der Stern",
+      "en": "estrella",
+      "pos": "n",
+      "rank": 617
+    },
+    {
+      "es": "sexo",
+      "de": "das Geschlecht",
+      "en": "sexo",
+      "pos": "n",
+      "rank": 618
+    },
+    {
+      "es": "normal",
+      "de": "normal",
+      "en": "normal",
+      "pos": "adj",
+      "rank": 619
+    },
+    {
+      "es": "bailar",
+      "de": "tanzen",
+      "en": "bailar",
+      "pos": "v",
+      "rank": 620
+    },
+    {
+      "es": "incluir",
+      "de": "einschließen",
+      "en": "incluir",
+      "pos": "v",
+      "rank": 621
+    },
+    {
+      "es": "dolor",
+      "de": "der Schmerz",
+      "en": "dolor",
+      "pos": "n",
+      "rank": 622
+    },
+    {
+      "es": "mitad",
+      "de": "die Hälfte",
+      "en": "mitad",
+      "pos": "n",
+      "rank": 623
+    },
+    {
+      "es": "gusto",
+      "de": "der Geschmack",
+      "en": "gusto",
+      "pos": "n",
+      "rank": 624
+    },
+    {
+      "es": "canción",
+      "de": "das Lied",
+      "en": "canción",
+      "pos": "n",
+      "rank": 625
+    },
+    {
+      "es": "militar",
+      "de": "militärisch",
+      "en": "militar",
+      "pos": "adj",
+      "rank": 627
+    },
+    {
+      "es": "baño",
+      "de": "das Bad",
+      "en": "baño",
+      "pos": "n",
+      "rank": 628
+    },
+    {
+      "es": "i",
+      "de": "das Ich",
+      "en": "i",
+      "pos": "n",
+      "rank": 629
+    },
+    {
+      "es": "querido",
+      "de": "lieb",
+      "en": "querido",
+      "pos": "adj",
+      "rank": 630
+    },
+    {
+      "es": "reír",
+      "de": "lachen",
+      "en": "reír",
+      "pos": "v",
+      "rank": 632
+    },
+    {
+      "es": "respecto",
+      "de": "die Hinsicht",
+      "en": "respecto",
+      "pos": "n",
+      "rank": 633
+    },
+    {
+      "es": "salud",
+      "de": "die Gesundheit",
+      "en": "salud",
+      "pos": "n",
+      "rank": 634
+    },
+    {
+      "es": "completo",
+      "de": "vollständig",
+      "en": "completo",
+      "pos": "adj",
+      "rank": 635
+    },
+    {
+      "es": "sal",
+      "de": "das Salz",
+      "en": "sal",
+      "pos": "n",
+      "rank": 636
+    },
+    {
+      "es": "mente",
+      "de": "der Geist",
+      "en": "mente",
+      "pos": "n",
+      "rank": 637
+    },
+    {
+      "es": "suelo",
+      "de": "der Boden",
+      "en": "suelo",
+      "pos": "n",
+      "rank": 638
+    },
+    {
+      "es": "cortar",
+      "de": "schneiden",
+      "en": "cortar",
+      "pos": "v",
+      "rank": 639
+    },
+    {
+      "es": "posición",
+      "de": "die Position",
+      "en": "posición",
+      "pos": "n",
+      "rank": 640
+    },
+    {
+      "es": "medida",
+      "de": "das Maß",
+      "en": "medida",
+      "pos": "n",
+      "rank": 641
+    },
+    {
+      "es": "especie",
+      "de": "die Art",
+      "en": "especie",
+      "pos": "n",
+      "rank": 642
+    },
+    {
+      "es": "diferencia",
+      "de": "der Unterschied",
+      "en": "diferencia",
+      "pos": "n",
+      "rank": 644
+    },
+    {
+      "es": "formar",
+      "de": "formen",
+      "en": "formar",
+      "pos": "v",
+      "rank": 645
+    },
+    {
+      "es": "maravilloso",
+      "de": "wunderbar",
+      "en": "maravilloso",
+      "pos": "adj",
+      "rank": 647
+    },
+    {
+      "es": "pelo",
+      "de": "das Haar",
+      "en": "pelo",
+      "pos": "n",
+      "rank": 648
+    },
+    {
+      "es": "luchar",
+      "de": "kämpfen",
+      "en": "luchar",
+      "pos": "v",
+      "rank": 649
+    },
+    {
+      "es": "opinión",
+      "de": "die Meinung",
+      "en": "opinión",
+      "pos": "n",
+      "rank": 650
+    },
+    {
+      "es": "resolver",
+      "de": "lösen",
+      "en": "resolver",
+      "pos": "v",
+      "rank": 652
+    },
+    {
+      "es": "elección",
+      "de": "die Wahl",
+      "en": "elección",
+      "pos": "n",
+      "rank": 654
+    },
+    {
+      "es": "interior",
+      "de": "das Innere",
+      "en": "interior",
+      "pos": "n",
+      "rank": 655
+    },
+    {
+      "es": "silencio",
+      "de": "die Stille",
+      "en": "silencio",
+      "pos": "n",
+      "rank": 656
+    },
+    {
+      "es": "necesidad",
+      "de": "die Notwendigkeit",
+      "en": "necessity",
+      "pos": "n",
+      "rank": 657
+    },
+    {
+      "es": "odio",
+      "de": "der Hass",
+      "en": "hate",
+      "pos": "n",
+      "rank": 658
+    },
+    {
+      "es": "experiencia",
+      "de": "die Erfahrung",
+      "en": "experience",
+      "pos": "n",
+      "rank": 659
+    },
+    {
+      "es": "actividad",
+      "de": "die Aktivität",
+      "en": "activity",
+      "pos": "n",
+      "rank": 660
+    },
+    {
+      "es": "guardar",
+      "de": "speichern",
+      "en": "save",
+      "pos": "v",
+      "rank": 661
+    },
+    {
+      "es": "droga",
+      "de": "die Droge",
+      "en": "drug",
+      "pos": "n",
+      "rank": 662
+    },
+    {
+      "es": "controlar",
+      "de": "kontrollieren",
+      "en": "control",
+      "pos": "v",
+      "rank": 663
+    },
+    {
+      "es": "accidente",
+      "de": "der Unfall",
+      "en": "accident",
+      "pos": "n",
+      "rank": 664
+    },
+    {
+      "es": "club",
+      "de": "der Club",
+      "en": "club",
+      "pos": "n",
+      "rank": 665
+    },
+    {
+      "es": "ejército",
+      "de": "die Armee",
+      "en": "army",
+      "pos": "n",
+      "rank": 666
+    },
+    {
+      "es": "mar",
+      "de": "das Meer",
+      "en": "sea",
+      "pos": "n",
+      "rank": 667
+    },
+    {
+      "es": "ataque",
+      "de": "der Angriff",
+      "en": "attack",
+      "pos": "n",
+      "rank": 668
+    },
+    {
+      "es": "imposible",
+      "de": "unmöglich",
+      "en": "impossible",
+      "pos": "adj",
+      "rank": 669
+    },
+    {
+      "es": "contacto",
+      "de": "der Kontakt",
+      "en": "contact",
+      "pos": "n",
+      "rank": 670
+    },
+    {
+      "es": "privado",
+      "de": "privat",
+      "en": "private",
+      "pos": "adj",
+      "rank": 671
+    },
+    {
+      "es": "alma",
+      "de": "die Seele",
+      "en": "soul",
+      "pos": "n",
+      "rank": 672
+    },
+    {
+      "es": "común",
+      "de": "gemeinsam",
+      "en": "common",
+      "pos": "adj",
+      "rank": 673
+    },
+    {
+      "es": "soldado",
+      "de": "der Soldat",
+      "en": "soldier",
+      "pos": "n",
+      "rank": 674
+    },
+    {
+      "es": "llave",
+      "de": "der Schlüssel",
+      "en": "key",
+      "pos": "n",
+      "rank": 675
+    },
+    {
+      "es": "energía",
+      "de": "die Energie",
+      "en": "energy",
+      "pos": "n",
+      "rank": 676
+    },
+    {
+      "es": "barco",
+      "de": "das Schiff",
+      "en": "ship",
+      "pos": "n",
+      "rank": 677
+    },
+    {
+      "es": "observar",
+      "de": "beobachten",
+      "en": "observe",
+      "pos": "v",
+      "rank": 678
+    },
+    {
+      "es": "juez",
+      "de": "der Richter",
+      "en": "judge",
+      "pos": "n",
+      "rank": 679
+    },
+    {
+      "es": "atacar",
+      "de": "angreifen",
+      "en": "attack",
+      "pos": "v",
+      "rank": 680
+    },
+    {
+      "es": "preparado",
+      "de": "vorbereitet",
+      "en": "prepared",
+      "pos": "adj",
+      "rank": 681
+    },
+    {
+      "es": "río",
+      "de": "der Fluss",
+      "en": "river",
+      "pos": "n",
+      "rank": 682
+    },
+    {
+      "es": "señalar",
+      "de": "anzeigen",
+      "en": "indicate",
+      "pos": "v",
+      "rank": 684
+    },
+    {
+      "es": "negar",
+      "de": "leugnen",
+      "en": "deny",
+      "pos": "v",
+      "rank": 685
+    },
+    {
+      "es": "dulce",
+      "de": "die Süßigkeit",
+      "en": "sweet",
+      "pos": "n",
+      "rank": 687
+    },
+    {
+      "es": "marchar",
+      "de": "marschieren",
+      "en": "march",
+      "pos": "v",
+      "rank": 688
+    },
+    {
+      "es": "operación",
+      "de": "die Operation",
+      "en": "operation",
+      "pos": "n",
+      "rank": 689
+    },
+    {
+      "es": "regalo",
+      "de": "Geschenk",
+      "pos": "n",
+      "gender": "m",
+      "rank": 690,
+      "example": "Te traje un regalo."
+    },
+    {
+      "es": "encuentro",
+      "de": "die Begegnung",
+      "en": "encounter",
+      "pos": "n",
+      "rank": 690
+    },
+    {
+      "es": "fuente",
+      "de": "die Quelle",
+      "en": "source",
+      "pos": "n",
+      "rank": 691
+    },
+    {
+      "es": "informe",
+      "de": "der Bericht",
+      "en": "report",
+      "pos": "n",
+      "rank": 692
+    },
+    {
+      "es": "izquierda",
+      "de": "die Linke",
+      "en": "left",
+      "pos": "n",
+      "rank": 693
+    },
+    {
+      "es": "pierna",
+      "de": "das Bein",
+      "en": "leg",
+      "pos": "n",
+      "rank": 694
+    },
+    {
+      "es": "sala",
+      "de": "der Saal",
+      "en": "hall",
+      "pos": "n",
+      "rank": 695
+    },
+    {
+      "es": "nacer",
+      "de": "geboren werden",
+      "en": "be born",
+      "pos": "v",
+      "rank": 696
+    },
+    {
+      "es": "apenas",
+      "de": "kaum",
+      "en": "hardly",
+      "pos": "adv",
+      "rank": 697
+    },
+    {
+      "es": "averiguar",
+      "de": "herausfinden",
+      "en": "find out",
+      "pos": "v",
+      "rank": 699
+    },
+    {
+      "es": "caliente",
+      "de": "heiß / warm",
+      "pos": "adj",
+      "rank": 700,
+      "example": "El café está caliente."
+    },
+    {
+      "es": "esconder",
+      "de": "verstecken",
+      "en": "hide",
+      "pos": "v",
+      "rank": 700
+    },
+    {
+      "es": "señal",
+      "de": "das Signal",
+      "en": "signal",
+      "pos": "n",
+      "rank": 701
+    },
+    {
+      "es": "anterior",
+      "de": "vorherig",
+      "en": "previous",
+      "pos": "adj",
+      "rank": 702
+    },
+    {
+      "es": "costar",
+      "de": "kosten",
+      "en": "cost",
+      "pos": "v",
+      "rank": 703
+    },
+    {
+      "es": "muestra",
+      "de": "die Probe",
+      "en": "sample",
+      "pos": "n",
+      "rank": 704
+    },
+    {
+      "es": "nota",
+      "de": "die Note",
+      "en": "note",
+      "pos": "n",
+      "rank": 705
+    },
+    {
+      "es": "derecha",
+      "de": "die Rechte",
+      "en": "right",
+      "pos": "n",
+      "rank": 706
+    },
+    {
+      "es": "escena",
+      "de": "die Szene",
+      "en": "scene",
+      "pos": "n",
+      "rank": 707
+    },
+    {
+      "es": "soltar",
+      "de": "loslassen",
+      "en": "release",
+      "pos": "v",
+      "rank": 709
+    },
+    {
+      "es": "menor",
+      "de": "geringer",
+      "en": "minor",
+      "pos": "adj",
+      "rank": 711
+    },
+    {
+      "es": "metro",
+      "de": "die U-Bahn",
+      "en": "metro",
+      "pos": "n",
+      "rank": 712
+    },
+    {
+      "es": "entrada",
+      "de": "der Eingang",
+      "en": "entrada",
+      "pos": "n",
+      "rank": 713
+    },
+    {
+      "es": "edificio",
+      "de": "das Gebäude",
+      "en": "edificio",
+      "pos": "n",
+      "rank": 715
+    },
+    {
+      "es": "enfermedad",
+      "de": "die Krankheit",
+      "en": "enfermedad",
+      "pos": "n",
+      "rank": 716
+    },
+    {
+      "es": "traje",
+      "de": "der Anzug",
+      "en": "traje",
+      "pos": "n",
+      "rank": 717
+    },
+    {
+      "es": "gritar",
+      "de": "schreien",
+      "en": "gritar",
+      "pos": "v",
+      "rank": 718
+    },
+    {
+      "es": "totalmente",
+      "de": "vollständig",
+      "en": "totalmente",
+      "pos": "adv",
+      "rank": 719
+    },
+    {
+      "es": "billete",
+      "de": "Ticket / Fahrkarte",
+      "pos": "n",
+      "gender": "m",
+      "rank": 720,
+      "example": "Compré un billete."
+    },
+    {
+      "es": "contestar",
+      "de": "antworten",
+      "en": "contestar",
+      "pos": "v",
+      "rank": 720
+    },
+    {
+      "es": "peligroso",
+      "de": "gefährlich",
+      "en": "peligroso",
+      "pos": "adj",
+      "rank": 721
+    },
+    {
+      "es": "salvo",
+      "de": "gerettet",
+      "en": "salvo",
+      "pos": "adj",
+      "rank": 722
+    },
+    {
+      "es": "jurar",
+      "de": "schwören",
+      "en": "jurar",
+      "pos": "v",
+      "rank": 723
+    },
+    {
+      "es": "agradecer",
+      "de": "danken",
+      "en": "agradecer",
+      "pos": "v",
+      "rank": 724
+    },
+    {
+      "es": "disculpa",
+      "de": "die Entschuldigung",
+      "en": "disculpa",
+      "pos": "n",
+      "rank": 725
+    },
+    {
+      "es": "simple",
+      "de": "einfach",
+      "en": "simple",
+      "pos": "adj",
+      "rank": 726
+    },
+    {
+      "es": "uh",
+      "de": "äh",
+      "en": "uh",
+      "pos": "interj",
+      "rank": 727
+    },
+    {
+      "es": "debido",
+      "de": "fällig",
+      "en": "debido",
+      "pos": "adj",
+      "rank": 728
+    },
+    {
+      "es": "unir",
+      "de": "vereinigen",
+      "en": "unir",
+      "pos": "v",
+      "rank": 729
+    },
+    {
+      "es": "disfrutar",
+      "de": "genießen",
+      "en": "disfrutar",
+      "pos": "v",
+      "rank": 730
+    },
+    {
+      "es": "internacional",
+      "de": "international",
+      "en": "internacional",
+      "pos": "adj",
+      "rank": 731
+    },
+    {
+      "es": "total",
+      "de": "gesamt",
+      "en": "total",
+      "pos": "adj",
+      "rank": 732
+    },
+    {
+      "es": "equivocado",
+      "de": "falsch",
+      "en": "equivocado",
+      "pos": "adj",
+      "rank": 733
+    },
+    {
+      "es": "casado",
+      "de": "verheiratet",
+      "en": "casado",
+      "pos": "adj",
+      "rank": 734
+    },
+    {
+      "es": "cena",
+      "de": "das Abendessen",
+      "en": "cena",
+      "pos": "n",
+      "rank": 735
+    },
+    {
+      "es": "guardia",
+      "de": "die Wache",
+      "en": "guardia",
+      "pos": "n",
+      "rank": 736
+    },
+    {
+      "es": "desarrollo",
+      "de": "die Entwicklung",
+      "en": "desarrollo",
+      "pos": "n",
+      "rank": 737
+    },
+    {
+      "es": "apostar",
+      "de": "wetten",
+      "en": "apostar",
+      "pos": "v",
+      "rank": 738
+    },
+    {
+      "es": "presente",
+      "de": "gegenwärtig",
+      "en": "presente",
+      "pos": "adj",
+      "rank": 739
+    },
+    {
+      "es": "odiar",
+      "de": "hassen",
+      "en": "odiar",
+      "pos": "v",
+      "rank": 740
+    },
+    {
+      "es": "cuestión",
+      "de": "die Frage",
+      "en": "cuestión",
+      "pos": "n",
+      "rank": 741
+    },
+    {
+      "es": "pelear",
+      "de": "streiten",
+      "en": "pelear",
+      "pos": "v",
+      "rank": 742
+    },
+    {
+      "es": "acordar",
+      "de": "zustimmen",
+      "en": "acordar",
+      "pos": "v",
+      "rank": 743
+    },
+    {
+      "es": "dato",
+      "de": "die Angabe",
+      "en": "dato",
+      "pos": "n",
+      "rank": 744
+    },
+    {
+      "es": "motivo",
+      "de": "der Grund",
+      "en": "motivo",
+      "pos": "n",
+      "rank": 745
+    },
+    {
+      "es": "enfrentar",
+      "de": "konfrontieren",
+      "en": "enfrentar",
+      "pos": "v",
+      "rank": 746
+    },
+    {
+      "es": "crimen",
+      "de": "das Verbrechen",
+      "en": "crimen",
+      "pos": "n",
+      "rank": 747
+    },
+    {
+      "es": "flor",
+      "de": "die Blume",
+      "en": "flor",
+      "pos": "n",
+      "rank": 748
+    },
+    {
+      "es": "boda",
+      "de": "die Hochzeit",
+      "en": "boda",
+      "pos": "n",
+      "rank": 749
+    },
+    {
+      "es": "representar",
+      "de": "darstellen",
+      "en": "representar",
+      "pos": "v",
+      "rank": 750
+    },
+    {
+      "es": "unidad",
+      "de": "die Einheit",
+      "en": "unidad",
+      "pos": "n",
+      "rank": 751
+    },
+    {
+      "es": "montón",
+      "de": "der Haufen",
+      "en": "montón",
+      "pos": "n",
+      "rank": 752
+    },
+    {
+      "es": "éxito",
+      "de": "der Erfolg",
+      "en": "éxito",
+      "pos": "n",
+      "rank": 753
+    },
+    {
+      "es": "haz",
+      "de": "der Bund",
+      "en": "haz",
+      "pos": "n",
+      "rank": 754
+    },
+    {
+      "es": "peligro",
+      "de": "die Gefahr",
+      "en": "peligro",
+      "pos": "n",
+      "rank": 755
+    },
+    {
+      "es": "golpe",
+      "de": "der Schlag",
+      "en": "golpe",
+      "pos": "n",
+      "rank": 756
+    },
+    {
+      "es": "corto",
+      "de": "kurz",
+      "en": "corto",
+      "pos": "adj",
+      "rank": 757
+    },
+    {
+      "es": "construir",
+      "de": "bauen",
+      "en": "construir",
+      "pos": "v",
+      "rank": 758
+    },
+    {
+      "es": "mencionar",
+      "de": "erwähnen",
+      "en": "mencionar",
+      "pos": "v",
+      "rank": 759
+    },
+    {
+      "es": "revisar",
+      "de": "überprüfen",
+      "en": "revisar",
+      "pos": "v",
+      "rank": 760
+    },
+    {
+      "es": "atrapar",
+      "de": "fangen",
+      "en": "atrapar",
+      "pos": "v",
+      "rank": 761
+    },
+    {
+      "es": "producto",
+      "de": "das Produkt",
+      "en": "producto",
+      "pos": "n",
+      "rank": 762
+    },
+    {
+      "es": "manejar",
+      "de": "handhaben",
+      "en": "manejar",
+      "pos": "v",
+      "rank": 763
+    },
+    {
+      "es": "carne",
+      "de": "das Fleisch",
+      "en": "carne",
+      "pos": "n",
+      "rank": 764
+    },
+    {
+      "es": "ventana",
+      "de": "das Fenster",
+      "en": "ventana",
+      "pos": "n",
+      "rank": 766
+    },
+    {
+      "es": "interesar",
+      "de": "interessieren",
+      "en": "interesar",
+      "pos": "v",
+      "rank": 767
+    },
+    {
+      "es": "despedir",
+      "de": "entlassen",
+      "en": "despedir",
+      "pos": "v",
+      "rank": 768
+    },
+    {
+      "es": "alejar",
+      "de": "entfernen",
+      "en": "alejar",
+      "pos": "v",
+      "rank": 769
+    },
+    {
+      "es": "natural",
+      "de": "natürlich",
+      "en": "natural",
+      "pos": "adj",
+      "rank": 770
+    },
+    {
+      "es": "oro",
+      "de": "das Gold",
+      "en": "oro",
+      "pos": "n",
+      "rank": 771
+    },
+    {
+      "es": "cometer",
+      "de": "begehen",
+      "en": "cometer",
+      "pos": "v",
+      "rank": 772
+    },
+    {
+      "es": "huir",
+      "de": "fliehen",
+      "en": "huir",
+      "pos": "v",
+      "rank": 773
+    },
+    {
+      "es": "lamento",
+      "de": "die Klage",
+      "en": "lamento",
+      "pos": "n",
+      "rank": 774
+    },
+    {
+      "es": "informar",
+      "de": "informieren",
+      "en": "informar",
+      "pos": "v",
+      "rank": 775
+    },
+    {
+      "es": "acto",
+      "de": "die Handlung",
+      "en": "acto",
+      "pos": "n",
+      "rank": 776
+    },
+    {
+      "es": "cárcel",
+      "de": "das Gefängnis",
+      "en": "cárcel",
+      "pos": "n",
+      "rank": 777
+    },
+    {
+      "es": "hallar",
+      "de": "finden",
+      "en": "hallar",
+      "pos": "v",
+      "rank": 778
+    },
+    {
+      "es": "radio",
+      "de": "das Radio",
+      "en": "radio",
+      "pos": "n",
+      "rank": 779
+    },
+    {
+      "es": "profesional",
+      "de": "professionell",
+      "en": "profesional",
+      "pos": "adj",
+      "rank": 781
+    },
+    {
+      "es": "local",
+      "de": "lokal",
+      "en": "local",
+      "pos": "adj",
+      "rank": 782
+    },
+    {
+      "es": "hambre",
+      "de": "der Hunger",
+      "en": "hambre",
+      "pos": "n",
+      "rank": 783
+    },
+    {
+      "es": "departamento",
+      "de": "die Abteilung",
+      "en": "departamento",
+      "pos": "n",
+      "rank": 784
+    },
+    {
+      "es": "piso",
+      "de": "die Wohnung",
+      "en": "piso",
+      "pos": "n",
+      "rank": 785
+    },
+    {
+      "es": "finalmente",
+      "de": "schließlich",
+      "en": "finalmente",
+      "pos": "adv",
+      "rank": 786
+    },
+    {
+      "es": "espalda",
+      "de": "der Rücken",
+      "en": "espalda",
+      "pos": "n",
+      "rank": 787
+    },
+    {
+      "es": "completamente",
+      "de": "vollständig",
+      "en": "completamente",
+      "pos": "adv",
+      "rank": 789
+    },
+    {
+      "es": "terrible",
+      "de": "schrecklich",
+      "en": "terrible",
+      "pos": "adj",
+      "rank": 790
+    },
+    {
+      "es": "norte",
+      "de": "der Norden",
+      "en": "norte",
+      "pos": "n",
+      "rank": 791
+    },
+    {
+      "es": "cerrado",
+      "de": "geschlossen",
+      "en": "cerrado",
+      "pos": "adj",
+      "rank": 792
+    },
+    {
+      "es": "aspecto",
+      "de": "der Aspekt",
+      "en": "aspecto",
+      "pos": "n",
+      "rank": 793
+    },
+    {
+      "es": "familiar",
+      "de": "familiär",
+      "en": "familiar",
+      "pos": "adj",
+      "rank": 794
+    },
+    {
+      "es": "visita",
+      "de": "der Besuch",
+      "en": "visita",
+      "pos": "n",
+      "rank": 795
+    },
+    {
+      "es": "aun",
+      "de": "noch",
+      "en": "aun",
+      "pos": "adv",
+      "rank": 796
+    },
+    {
+      "es": "adónde",
+      "de": "wohin",
+      "en": "adónde",
+      "pos": "adv",
+      "rank": 797
+    },
+    {
+      "es": "contrario",
+      "de": "entgegengesetzt",
+      "en": "contrario",
+      "pos": "adj",
+      "rank": 798
+    },
+    {
+      "es": "enterar",
+      "de": "mitteilen",
+      "en": "enterar",
+      "pos": "v",
+      "rank": 799
+    },
+    {
+      "es": "broma",
+      "de": "der Scherz",
+      "en": "broma",
+      "pos": "n",
+      "rank": 800
+    },
+    {
+      "es": "buenos días",
+      "de": "guten Morgen",
+      "pos": "phrase",
+      "rank": 850,
+      "example": "Buenos días, profesor."
+    },
+    {
+      "es": "buenas tardes",
+      "de": "guten Tag / guten Nachmittag",
+      "pos": "phrase",
+      "rank": 870,
+      "example": "Buenas tardes."
+    },
+    {
+      "es": "buenas noches",
+      "de": "guten Abend / gute Nacht",
+      "pos": "phrase",
+      "rank": 880,
+      "example": "Buenas noches, mamá."
+    },
+    {
+      "es": "de nada",
+      "de": "gern geschehen",
+      "pos": "phrase",
+      "rank": 900,
+      "example": "—Gracias. —De nada."
+    },
+    {
+      "es": "aburrido",
+      "de": "langweilig",
+      "pos": "adj",
+      "rank": 950,
+      "example": "Estoy aburrido."
+    },
+    {
+      "es": "debajo",
+      "de": "darunter",
+      "en": "debajo",
+      "pos": "adv",
+      "rank": 1062
+    },
+    {
+      "es": "ojalá",
+      "de": "hoffentlich",
+      "en": "ojalá",
+      "pos": "adv",
+      "rank": 1339
+    },
+    {
+      "es": "video",
+      "de": "das Video",
+      "en": "video",
+      "pos": "n",
+      "rank": 2483
+    },
+    {
+      "es": "u",
+      "de": "das \"oder\"",
+      "en": "u",
+      "pos": "n",
+      "rank": 4566
+    },
+    {
+      "es": "península",
+      "de": "die Halbinsel",
+      "en": "península",
+      "pos": "n",
+      "rank": 4937
+    },
+    {
+      "es": "ahuyentar",
+      "de": "verjagen",
+      "en": "ahuyentar",
+      "pos": "v",
+      "rank": 7504
+    },
+    {
+      "es": "cayo",
+      "de": "der Fels",
+      "en": "cayo",
+      "pos": "n",
+      "rank": 7505
+    },
+    {
+      "es": "adivino",
+      "de": "der Wahrsager",
+      "en": "adivino",
+      "pos": "n",
+      "rank": 7506
+    },
+    {
+      "es": "barbaridad",
+      "de": "die Barbarei",
+      "en": "barbaridad",
+      "pos": "n",
+      "rank": 7507
+    },
+    {
+      "es": "involuntario",
+      "de": "unfreiwillig",
+      "en": "involuntario",
+      "pos": "adj",
+      "rank": 7508
+    },
+    {
+      "es": "sonoro",
+      "de": "klingend",
+      "en": "sonoro",
+      "pos": "adj",
+      "rank": 7509
+    },
+    {
+      "es": "armónico",
+      "de": "harmonisch",
+      "en": "armónico",
+      "pos": "adj",
+      "rank": 7510
+    },
+    {
+      "es": "incomprensible",
+      "de": "unverständlich",
+      "en": "incomprensible",
+      "pos": "adj",
+      "rank": 7511
+    },
+    {
+      "es": "mezquita",
+      "de": "die Moschee",
+      "en": "mezquita",
+      "pos": "n",
+      "rank": 7512
+    },
+    {
+      "es": "coyote",
+      "de": "der Kojote",
+      "en": "coyote",
+      "pos": "n",
+      "rank": 7513
+    },
+    {
+      "es": "exclusión",
+      "de": "der Ausschluss",
+      "en": "exclusión",
+      "pos": "n",
+      "rank": 7514
+    },
+    {
+      "es": "superstición",
+      "de": "der Aberglaube",
+      "en": "superstición",
+      "pos": "n",
+      "rank": 7515
+    },
+    {
+      "es": "credencial",
+      "de": "die Anmeldebescheinigung",
+      "en": "credencial",
+      "pos": "n",
+      "rank": 7516
+    },
+    {
+      "es": "desolado",
+      "de": "verödet",
+      "en": "desolado",
+      "pos": "adj",
+      "rank": 7517
+    },
+    {
+      "es": "Reich",
+      "de": "das Reich",
+      "en": "Reich",
+      "pos": "n",
+      "rank": 7518
+    },
+    {
+      "es": "azteca",
+      "de": "aztekisch",
+      "en": "azteca",
+      "pos": "adj",
+      "rank": 7519
+    },
+    {
+      "es": "robusto",
+      "de": "robust",
+      "en": "robusto",
+      "pos": "adj",
+      "rank": 7520
+    },
+    {
+      "es": "abanico",
+      "de": "der Fächer",
+      "en": "abanico",
+      "pos": "n",
+      "rank": 7521
+    },
+    {
+      "es": "imposición",
+      "de": "die Auferlegung",
+      "en": "imposición",
+      "pos": "n",
+      "rank": 7522
+    },
+    {
+      "es": "clientela",
+      "de": "die Kundschaft",
+      "en": "clientela",
+      "pos": "n",
+      "rank": 7523
+    },
+    {
+      "es": "desviación",
+      "de": "die Abweichung",
+      "en": "desviación",
+      "pos": "n",
+      "rank": 7524
+    },
+    {
+      "es": "halagado",
+      "de": "geschmeichelt",
+      "en": "halagado",
+      "pos": "adj",
+      "rank": 7525
+    },
+    {
+      "es": "primar",
+      "de": "vorherrschen",
+      "en": "primar",
+      "pos": "v",
+      "rank": 7526
+    },
+    {
+      "es": "temple",
+      "de": "die Haltung",
+      "en": "temple",
+      "pos": "n",
+      "rank": 7527
+    },
+    {
+      "es": "bajada",
+      "de": "der Abstieg",
+      "en": "bajada",
+      "pos": "n",
+      "rank": 7528
+    },
+    {
+      "es": "tachar",
+      "de": "tadeln",
+      "en": "tachar",
+      "pos": "v",
+      "rank": 7529
+    },
+    {
+      "es": "antojarse",
+      "de": "sich aufdrängen",
+      "en": "antojarse",
+      "pos": "v",
+      "rank": 7530
+    },
+    {
+      "es": "fijación",
+      "de": "die Fixierung",
+      "en": "fijación",
+      "pos": "n",
+      "rank": 7531
+    },
+    {
+      "es": "sardina",
+      "de": "die Sardine",
+      "en": "sardina",
+      "pos": "n",
+      "rank": 7532
+    },
+    {
+      "es": "superintendente",
+      "de": "der Superintendent",
+      "en": "superintendente",
+      "pos": "n",
+      "rank": 7533
+    },
+    {
+      "es": "suspenso",
+      "de": "die Nachprüfung",
+      "en": "suspenso",
+      "pos": "n",
+      "rank": 7534
+    },
+    {
+      "es": "calavera",
+      "de": "der Totenkopf",
+      "en": "calavera",
+      "pos": "n",
+      "rank": 7535
+    },
+    {
+      "es": "abertura",
+      "de": "die Öffnung",
+      "en": "abertura",
+      "pos": "n",
+      "rank": 7536
+    },
+    {
+      "es": "brear",
+      "de": "pechieren",
+      "en": "brear",
+      "pos": "v",
+      "rank": 7537
+    },
+    {
+      "es": "ostentar",
+      "de": "zur Schau stellen",
+      "en": "ostentar",
+      "pos": "v",
+      "rank": 7538
+    },
+    {
+      "es": "bribón",
+      "de": "der Gauner",
+      "en": "bribón",
+      "pos": "n",
+      "rank": 7539
+    },
+    {
+      "es": "fúnebre",
+      "de": "grabes",
+      "en": "fúnebre",
+      "pos": "adj",
+      "rank": 7540
+    },
+    {
+      "es": "insolente",
+      "de": "unverschämt",
+      "en": "insolente",
+      "pos": "adj",
+      "rank": 7541
+    },
+    {
+      "es": "vicioso",
+      "de": "lüstern",
+      "en": "vicioso",
+      "pos": "adj",
+      "rank": 7542
+    },
+    {
+      "es": "comercializar",
+      "de": "vermarkten",
+      "en": "comercializar",
+      "pos": "v",
+      "rank": 7543
+    },
+    {
+      "es": "bocina",
+      "de": "die Hupe",
+      "en": "bocina",
+      "pos": "n",
+      "rank": 7544
+    },
+    {
+      "es": "emanar",
+      "de": "ausströmen",
+      "en": "emanar",
+      "pos": "v",
+      "rank": 7545
+    },
+    {
+      "es": "avena",
+      "de": "der Hafer",
+      "en": "avena",
+      "pos": "n",
+      "rank": 7546
+    },
+    {
+      "es": "minucioso",
+      "de": "minuziös",
+      "en": "minucioso",
+      "pos": "adj",
+      "rank": 7547
+    },
+    {
+      "es": "perfilar",
+      "de": "skizzieren",
+      "en": "perfilar",
+      "pos": "v",
+      "rank": 7548
+    },
+    {
+      "es": "residencial",
+      "de": "Wohn",
+      "en": "residencial",
+      "pos": "adj",
+      "rank": 7549
+    },
+    {
+      "es": "expulsado",
+      "de": "ausgeschlossen",
+      "en": "expulsado",
+      "pos": "adj",
+      "rank": 7550
+    },
+    {
+      "es": "menear",
+      "de": "bewegen",
+      "en": "menear",
+      "pos": "v",
+      "rank": 7551
+    },
+    {
+      "es": "gruñido",
+      "de": "das Knurren",
+      "en": "gruñido",
+      "pos": "n",
+      "rank": 7552
+    },
+    {
+      "es": "incumbir",
+      "de": "obliegen",
+      "en": "incumbir",
+      "pos": "v",
+      "rank": 7553
+    },
+    {
+      "es": "silbato",
+      "de": "die Pfeife",
+      "en": "silbato",
+      "pos": "n",
+      "rank": 7554
+    },
+    {
+      "es": "ablandar",
+      "de": "erweichen",
+      "en": "ablandar",
+      "pos": "v",
+      "rank": 7555
+    },
+    {
+      "es": "historieta",
+      "de": "die Comic-Geschichte",
+      "en": "historieta",
+      "pos": "n",
+      "rank": 7556
+    },
+    {
+      "es": "prescripción",
+      "de": "die Vorschrift",
+      "en": "prescripción",
+      "pos": "n",
+      "rank": 7557
+    },
+    {
+      "es": "anexo",
+      "de": "der Anhang",
+      "en": "anexo",
+      "pos": "n",
+      "rank": 7558
+    },
+    {
+      "es": "bulevar",
+      "de": "der Boulevard",
+      "en": "bulevar",
+      "pos": "n",
+      "rank": 7559
+    },
+    {
+      "es": "competitividad",
+      "de": "die Wettbewerbsfähigkeit",
+      "en": "competitividad",
+      "pos": "n",
+      "rank": 7560
+    },
+    {
+      "es": "ordenamiento",
+      "de": "die Ordnung",
+      "en": "ordenamiento",
+      "pos": "n",
+      "rank": 7561
+    },
+    {
+      "es": "trivial",
+      "de": "trivial",
+      "en": "trivial",
+      "pos": "adj",
+      "rank": 7562
+    },
+    {
+      "es": "cuchilla",
+      "de": "die Klinge",
+      "en": "cuchilla",
+      "pos": "n",
+      "rank": 7563
+    },
+    {
+      "es": "platicar",
+      "de": "reden",
+      "en": "platicar",
+      "pos": "v",
+      "rank": 7564
+    },
+    {
+      "es": "magnificar",
+      "de": "vergrößern",
+      "en": "magnificar",
+      "pos": "v",
+      "rank": 7565
+    },
+    {
+      "es": "olvidado",
+      "de": "vergessen",
+      "en": "olvidado",
+      "pos": "adj",
+      "rank": 7566
+    },
+    {
+      "es": "redimir",
+      "de": "erlösen",
+      "en": "redimir",
+      "pos": "v",
+      "rank": 7567
+    },
+    {
+      "es": "arqueólogo",
+      "de": "der Archäologe",
+      "en": "arqueólogo",
+      "pos": "n",
+      "rank": 7568
+    },
+    {
+      "es": "citación",
+      "de": "die Vorladung",
+      "en": "citación",
+      "pos": "n",
+      "rank": 7569
+    },
+    {
+      "es": "desbordar",
+      "de": "überlaufen",
+      "en": "desbordar",
+      "pos": "v",
+      "rank": 7570
+    },
+    {
+      "es": "exprimir",
+      "de": "auspressen",
+      "en": "exprimir",
+      "pos": "v",
+      "rank": 7571
+    },
+    {
+      "es": "misionero",
+      "de": "der Missionar",
+      "en": "misionero",
+      "pos": "n",
+      "rank": 7572
+    },
+    {
+      "es": "exhalar",
+      "de": "ausatmen",
+      "en": "exhalar",
+      "pos": "v",
+      "rank": 7573
+    },
+    {
+      "es": "sincronizado",
+      "de": "synchronisiert",
+      "en": "sincronizado",
+      "pos": "adj",
+      "rank": 7574
+    },
+    {
+      "es": "carroza",
+      "de": "die Kutsche",
+      "en": "carroza",
+      "pos": "n",
+      "rank": 7575
+    },
+    {
+      "es": "gruñir",
+      "de": "knurren",
+      "en": "gruñir",
+      "pos": "v",
+      "rank": 7576
+    },
+    {
+      "es": "pulir",
+      "de": "polieren",
+      "en": "pulir",
+      "pos": "v",
+      "rank": 7577
+    },
+    {
+      "es": "equilibrar",
+      "de": "ausgleichen",
+      "en": "equilibrar",
+      "pos": "v",
+      "rank": 7578
+    },
+    {
+      "es": "planetario",
+      "de": "planetarisch",
+      "en": "planetario",
+      "pos": "adj",
+      "rank": 7579
+    },
+    {
+      "es": "cofre",
+      "de": "die Truhe",
+      "en": "cofre",
+      "pos": "n",
+      "rank": 7580
+    },
+    {
+      "es": "extrañamente",
+      "de": "seltsamerweise",
+      "en": "extrañamente",
+      "pos": "adv",
+      "rank": 7581
+    },
+    {
+      "es": "minimizar",
+      "de": "minimieren",
+      "en": "minimizar",
+      "pos": "v",
+      "rank": 7582
+    },
+    {
+      "es": "caprichoso",
+      "de": "launisch",
+      "en": "caprichoso",
+      "pos": "adj",
+      "rank": 7583
+    },
+    {
+      "es": "caricatura",
+      "de": "die Karikatur",
+      "en": "caricatura",
+      "pos": "n",
+      "rank": 7584
+    },
+    {
+      "es": "colmillo",
+      "de": "der Eckzahn",
+      "en": "colmillo",
+      "pos": "n",
+      "rank": 7585
+    },
+    {
+      "es": "mercader",
+      "de": "der Händler",
+      "en": "mercader",
+      "pos": "n",
+      "rank": 7586
+    },
+    {
+      "es": "muleta",
+      "de": "die Krücke",
+      "en": "muleta",
+      "pos": "n",
+      "rank": 7587
+    },
+    {
+      "es": "ascendente",
+      "de": "aufsteigend",
+      "en": "ascendente",
+      "pos": "adj",
+      "rank": 7588
+    },
+    {
+      "es": "idiotez",
+      "de": "die Idiotie",
+      "en": "idiotez",
+      "pos": "n",
+      "rank": 7589
+    },
+    {
+      "es": "liquidación",
+      "de": "die Liquidation",
+      "en": "liquidación",
+      "pos": "n",
+      "rank": 7590
+    },
+    {
+      "es": "alcoba",
+      "de": "das Alkoven",
+      "en": "alcoba",
+      "pos": "n",
+      "rank": 7591
+    },
+    {
+      "es": "anterioridad",
+      "de": "die Vorherigkeit",
+      "en": "anterioridad",
+      "pos": "n",
+      "rank": 7592
+    },
+    {
+      "es": "brother",
+      "de": "der Bruder",
+      "en": "brother",
+      "pos": "n",
+      "rank": 7593
+    },
+    {
+      "es": "escotilla",
+      "de": "die Luke",
+      "en": "escotilla",
+      "pos": "n",
+      "rank": 7594
+    },
+    {
+      "es": "pose",
+      "de": "die Pose",
+      "en": "pose",
+      "pos": "n",
+      "rank": 7595
+    },
+    {
+      "es": "tacaño",
+      "de": "geizig",
+      "en": "tacaño",
+      "pos": "adj",
+      "rank": 7596
+    },
+    {
+      "es": "cuidador",
+      "de": "der Betreuer",
+      "en": "cuidador",
+      "pos": "n",
+      "rank": 7597
+    },
+    {
+      "es": "especializar",
+      "de": "spezialisieren",
+      "en": "especializar",
+      "pos": "v",
+      "rank": 7598
+    },
+    {
+      "es": "faceta",
+      "de": "die Facette",
+      "en": "faceta",
+      "pos": "n",
+      "rank": 7599
+    },
+    {
+      "es": "pepino",
+      "de": "die Gurke",
+      "en": "pepino",
+      "pos": "n",
+      "rank": 7600
+    },
+    {
+      "es": "untar",
+      "de": "bestreichen",
+      "en": "untar",
+      "pos": "v",
+      "rank": 7601
+    },
+    {
+      "es": "apagón",
+      "de": "der Stromausfall",
+      "en": "apagón",
+      "pos": "n",
+      "rank": 7602
+    },
+    {
+      "es": "meteorológico",
+      "de": "meteorologisch",
+      "en": "meteorológico",
+      "pos": "adj",
+      "rank": 7603
+    },
+    {
+      "es": "orador",
+      "de": "der Redner",
+      "en": "orador",
+      "pos": "n",
+      "rank": 7604
+    },
+    {
+      "es": "óxido",
+      "de": "das Oxid",
+      "en": "óxido",
+      "pos": "n",
+      "rank": 7605
+    },
+    {
+      "es": "lavadora",
+      "de": "die Waschmaschine",
+      "en": "lavadora",
+      "pos": "n",
+      "rank": 7606
+    },
+    {
+      "es": "pulpo",
+      "de": "der Oktopus",
+      "en": "pulpo",
+      "pos": "n",
+      "rank": 7607
+    },
+    {
+      "es": "batear",
+      "de": "schlagen",
+      "en": "batear",
+      "pos": "v",
+      "rank": 7608
+    },
+    {
+      "es": "subversivo",
+      "de": "subversiv",
+      "en": "subversivo",
+      "pos": "adj",
+      "rank": 7609
+    },
+    {
+      "es": "convergencia",
+      "de": "die Konvergenz",
+      "en": "convergencia",
+      "pos": "n",
+      "rank": 7610
+    },
+    {
+      "es": "entablar",
+      "de": "aufnehmen",
+      "en": "entablar",
+      "pos": "v",
+      "rank": 7611
+    },
+    {
+      "es": "celta",
+      "de": "keltisch",
+      "en": "celta",
+      "pos": "adj",
+      "rank": 7612
+    },
+    {
+      "es": "delantal",
+      "de": "die Schürze",
+      "en": "delantal",
+      "pos": "n",
+      "rank": 7613
+    },
+    {
+      "es": "forjar",
+      "de": "schmieden",
+      "en": "forjar",
+      "pos": "v",
+      "rank": 7614
+    },
+    {
+      "es": "lujuria",
+      "de": "die Wollust",
+      "en": "lujuria",
+      "pos": "n",
+      "rank": 7615
+    },
+    {
+      "es": "obstrucción",
+      "de": "die Obstruktion",
+      "en": "obstrucción",
+      "pos": "n",
+      "rank": 7616
+    },
+    {
+      "es": "amontonar",
+      "de": "aufhäufen",
+      "en": "amontonar",
+      "pos": "v",
+      "rank": 7617
+    },
+    {
+      "es": "inclusión",
+      "de": "die Inklusion",
+      "en": "inclusión",
+      "pos": "n",
+      "rank": 7618
+    },
+    {
+      "es": "cabal",
+      "de": "vollständig",
+      "en": "cabal",
+      "pos": "adj",
+      "rank": 7619
+    },
+    {
+      "es": "cultivado",
+      "de": "kultiviert",
+      "en": "cultivado",
+      "pos": "adj",
+      "rank": 7620
+    },
+    {
+      "es": "pum",
+      "de": "autsch",
+      "en": "pum",
+      "pos": "interj",
+      "rank": 7621
+    },
+    {
+      "es": "banquillo",
+      "de": "die Bank",
+      "en": "banquillo",
+      "pos": "n",
+      "rank": 7622
+    },
+    {
+      "es": "tambalear",
+      "de": "wanken",
+      "en": "tambalear",
+      "pos": "v",
+      "rank": 7623
+    },
+    {
+      "es": "inmovilizar",
+      "de": "immobilisieren",
+      "en": "inmovilizar",
+      "pos": "v",
+      "rank": 7624
+    },
+    {
+      "es": "brujería",
+      "de": "die Hexerei",
+      "en": "brujería",
+      "pos": "n",
+      "rank": 7625
+    },
+    {
+      "es": "intensamente",
+      "de": "intensiv",
+      "en": "intensamente",
+      "pos": "adv",
+      "rank": 7626
+    },
+    {
+      "es": "moretón",
+      "de": "der Bluterguss",
+      "en": "moretón",
+      "pos": "n",
+      "rank": 7627
+    },
+    {
+      "es": "nata",
+      "de": "die Sahne",
+      "en": "nata",
+      "pos": "n",
+      "rank": 7628
+    },
+    {
+      "es": "obsequio",
+      "de": "das Geschenk",
+      "en": "obsequio",
+      "pos": "n",
+      "rank": 7629
+    },
+    {
+      "es": "Jedi",
+      "de": "der Jedi",
+      "en": "Jedi",
+      "pos": "n",
+      "rank": 7630
+    },
+    {
+      "es": "aplicable",
+      "de": "anwendbar",
+      "en": "aplicable",
+      "pos": "adj",
+      "rank": 7631
+    },
+    {
+      "es": "arrugado",
+      "de": "zerknittert",
+      "en": "arrugado",
+      "pos": "adj",
+      "rank": 7632
+    },
+    {
+      "es": "discográfico",
+      "de": "platten",
+      "en": "discográfico",
+      "pos": "adj",
+      "rank": 7633
+    },
+    {
+      "es": "vocabulario",
+      "de": "das Vokabular",
+      "en": "vocabulario",
+      "pos": "n",
+      "rank": 7634
+    },
+    {
+      "es": "alarmante",
+      "de": "alarmierend",
+      "en": "alarmante",
+      "pos": "adj",
+      "rank": 7635
+    },
+    {
+      "es": "concursante",
+      "de": "der Teilnehmer",
+      "en": "concursante",
+      "pos": "n",
+      "rank": 7636
+    },
+    {
+      "es": "mercantil",
+      "de": "kommerziell",
+      "en": "mercantil",
+      "pos": "adj",
+      "rank": 7637
+    },
+    {
+      "es": "pesimista",
+      "de": "pessimistisch",
+      "en": "pesimista",
+      "pos": "adj",
+      "rank": 7638
+    },
+    {
+      "es": "retroceso",
+      "de": "der Rückschritt",
+      "en": "retroceso",
+      "pos": "n",
+      "rank": 7639
+    },
+    {
+      "es": "custodiar",
+      "de": "bewachen",
+      "en": "custodiar",
+      "pos": "v",
+      "rank": 7640
+    },
+    {
+      "es": "desigual",
+      "de": "ungleich",
+      "en": "desigual",
+      "pos": "adj",
+      "rank": 7641
+    },
+    {
+      "es": "estirado",
+      "de": "gestreckt",
+      "en": "estirado",
+      "pos": "adj",
+      "rank": 7642
+    },
+    {
+      "es": "mediterráneo",
+      "de": "mediterran",
+      "en": "mediterráneo",
+      "pos": "adj",
+      "rank": 7643
+    },
+    {
+      "es": "serbio",
+      "de": "der Serbe",
+      "en": "serbio",
+      "pos": "n",
+      "rank": 7644
+    },
+    {
+      "es": "agitación",
+      "de": "die Aufregung",
+      "en": "agitación",
+      "pos": "n",
+      "rank": 7645
+    },
+    {
+      "es": "comparecencia",
+      "de": "die Anhörung",
+      "en": "comparecencia",
+      "pos": "n",
+      "rank": 7646
+    },
+    {
+      "es": "opresión",
+      "de": "die Unterdrückung",
+      "en": "opresión",
+      "pos": "n",
+      "rank": 7647
+    },
+    {
+      "es": "recalcar",
+      "de": "betonen",
+      "en": "recalcar",
+      "pos": "v",
+      "rank": 7648
+    },
+    {
+      "es": "bufón",
+      "de": "der Narr",
+      "en": "bufón",
+      "pos": "n",
+      "rank": 7649
+    },
+    {
+      "es": "conjuntamente",
+      "de": "gemeinsam",
+      "en": "conjuntamente",
+      "pos": "adv",
+      "rank": 7650
+    },
+    {
+      "es": "petra",
+      "de": "der Stein",
+      "en": "petra",
+      "pos": "n",
+      "rank": 7651
+    },
+    {
+      "es": "confortable",
+      "de": "komfortabel",
+      "en": "confortable",
+      "pos": "adj",
+      "rank": 7652
+    },
+    {
+      "es": "pope",
+      "de": "der Papst",
+      "en": "pope",
+      "pos": "n",
+      "rank": 7653
+    },
+    {
+      "es": "deficiente",
+      "de": "mangelhaft",
+      "en": "deficiente",
+      "pos": "adj",
+      "rank": 7654
+    },
+    {
+      "es": "limite",
+      "de": "die Grenze",
+      "en": "limite",
+      "pos": "n",
+      "rank": 7655
+    },
+    {
+      "es": "mediación",
+      "de": "die Vermittlung",
+      "en": "mediación",
+      "pos": "n",
+      "rank": 7656
+    },
+    {
+      "es": "esmoquin",
+      "de": "der Smoking",
+      "en": "esmoquin",
+      "pos": "n",
+      "rank": 7657
+    },
+    {
+      "es": "paleta",
+      "de": "die Palette",
+      "en": "paleta",
+      "pos": "n",
+      "rank": 7658
+    },
+    {
+      "es": "dúo",
+      "de": "das Duo",
+      "en": "dúo",
+      "pos": "n",
+      "rank": 7659
+    },
+    {
+      "es": "textil",
+      "de": "textil",
+      "en": "textil",
+      "pos": "adj",
+      "rank": 7660
+    },
+    {
+      "es": "genital",
+      "de": "das Genital",
+      "en": "genital",
+      "pos": "n",
+      "rank": 7661
+    },
+    {
+      "es": "sublime",
+      "de": "erhaben",
+      "en": "sublime",
+      "pos": "adj",
+      "rank": 7662
+    },
+    {
+      "es": "afirmativo",
+      "de": "bejahend",
+      "en": "afirmativo",
+      "pos": "adj",
+      "rank": 7663
+    },
+    {
+      "es": "cordial",
+      "de": "herzlich",
+      "en": "cordial",
+      "pos": "adj",
+      "rank": 7664
+    },
+    {
+      "es": "inventor",
+      "de": "der Erfinder",
+      "en": "inventor",
+      "pos": "n",
+      "rank": 7665
+    },
+    {
+      "es": "soplo",
+      "de": "der Hauch",
+      "en": "soplo",
+      "pos": "n",
+      "rank": 7666
+    },
+    {
+      "es": "conformidad",
+      "de": "die Übereinstimmung",
+      "en": "conformidad",
+      "pos": "n",
+      "rank": 7667
+    },
+    {
+      "es": "inmoral",
+      "de": "unmoralisch",
+      "en": "inmoral",
+      "pos": "adj",
+      "rank": 7668
+    },
+    {
+      "es": "anatomía",
+      "de": "die Anatomie",
+      "en": "anatomía",
+      "pos": "n",
+      "rank": 7669
+    },
+    {
+      "es": "clamar",
+      "de": "rufen",
+      "en": "clamar",
+      "pos": "v",
+      "rank": 7670
+    },
+    {
+      "es": "invernadero",
+      "de": "das Gewächshaus",
+      "en": "invernadero",
+      "pos": "n",
+      "rank": 7671
+    },
+    {
+      "es": "acatar",
+      "de": "befolgen",
+      "en": "acatar",
+      "pos": "v",
+      "rank": 7672
+    },
+    {
+      "es": "templado",
+      "de": "mild",
+      "en": "templado",
+      "pos": "adj",
+      "rank": 7673
+    }
   ]
 }

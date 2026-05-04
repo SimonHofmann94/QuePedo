@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { View, Text, FlatList, StyleSheet, TouchableOpacity, Alert, RefreshControl } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Plus, Sparkles, Trash2, BookOpen } from 'lucide-react-native'
+import { useRouter } from 'expo-router'
+import { Plus, Sparkles, Trash2, BookOpen, ChevronRight } from 'lucide-react-native'
 import { SearchInput } from '@/components/ui/SearchInput'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
@@ -11,7 +12,7 @@ import { translationsMatch, getDisplayTranslation, FREE_TIER_LIMITS, type UserVo
 import { AddVocabModal } from '@/components/vocabulary/AddVocabModal'
 import { AIGeneratorModal } from '@/components/vocabulary/AIGeneratorModal'
 import { useSubscription } from '@/contexts/SubscriptionContext'
-import { colors, fontFamily, surface, LEVEL_COLOR } from '@/constants/theme'
+import { colors, fontFamily, surface, LEVEL_COLOR, chunkyShadow } from '@/constants/theme'
 
 type Level = keyof typeof LEVEL_COLOR
 function levelFromDifficulty(d: number): Level {
@@ -23,6 +24,7 @@ const LEVEL_FAMILY = {
 } as const
 
 export default function VocabularyScreen() {
+  const router = useRouter()
   const { isPremium, tacoBalance, canAddVocabulary, presentPaywall, refreshSubscription } = useSubscription()
   const [vocab, setVocab] = useState<UserVocabulary[]>([])
   const [search, setSearch] = useState('')
@@ -185,6 +187,22 @@ export default function VocabularyScreen() {
         refreshControl={
           <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.chili[500]} />
         }
+        ListHeaderComponent={
+          <TouchableOpacity
+            onPress={() => router.push('/(tabs)/vocabulary/lists')}
+            activeOpacity={0.85}
+            style={styles.ctaCard}
+          >
+            <View style={styles.ctaIcon}>
+              <BookOpen size={24} color="#FFFFFF" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.ctaTitle}>Más vocabulario</Text>
+              <Text style={styles.ctaSubtitle}>Listas curadas · A1 a C2</Text>
+            </View>
+            <ChevronRight size={22} color="#FFFFFF" />
+          </TouchableOpacity>
+        }
         ListEmptyComponent={
           <View style={styles.empty}>
             <Text style={styles.emptyEmoji}>🌶</Text>
@@ -252,6 +270,23 @@ const styles = StyleSheet.create({
   },
   clearText: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[500] },
   list: { paddingHorizontal: 20, gap: 10, paddingBottom: 100 },
+  ctaCard: {
+    flexDirection: 'row', alignItems: 'center', gap: 14,
+    backgroundColor: colors.chili[500], borderRadius: 18, padding: 16,
+    marginBottom: 14,
+    ...chunkyShadow(colors.chili[700]),
+  },
+  ctaIcon: {
+    width: 44, height: 44, borderRadius: 12,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    alignItems: 'center', justifyContent: 'center',
+  },
+  ctaTitle: {
+    fontFamily: fontFamily.displayExtraBold, fontSize: 17, color: '#FFFFFF',
+  },
+  ctaSubtitle: {
+    fontFamily: fontFamily.body, fontSize: 12, color: 'rgba(255,255,255,0.9)', marginTop: 2,
+  },
   vocabItem: {
     flexDirection: 'row', alignItems: 'center', gap: 10,
     backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
