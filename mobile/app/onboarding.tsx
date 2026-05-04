@@ -8,6 +8,7 @@ import { Logo } from '@/components/ui/Logo'
 import { supabase } from '@/lib/supabase'
 import { useAuth } from '@/contexts/AuthContext'
 import { colors, fontFamily, surface } from '@/constants/theme'
+import { checkAchievements } from '@/services/achievements'
 
 export default function OnboardingScreen() {
   const router = useRouter()
@@ -58,6 +59,11 @@ export default function OnboardingScreen() {
       Alert.alert('¡Ay, no!', 'No se pudo guardar el perfil. Inténtalo de nuevo.')
       setIsLoading(false)
     } else {
+      try {
+        await checkAchievements({ type: 'onboarding_completed' })
+      } catch (err) {
+        console.error('[onboarding] achievement check failed:', err)
+      }
       router.replace('/(tabs)/dashboard')
     }
   }

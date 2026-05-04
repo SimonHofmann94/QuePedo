@@ -9,6 +9,8 @@ export * from './constants/colors'
 export * from './constants/navigation'
 export * from './constants/greetings'
 export * from './constants/subscription'
+export * from './constants/analytics'
+export * from './constants/achievements'
 
 // Grammar content + exercises
 export * from './grammar'
@@ -19,3 +21,5 @@ export * from './content/vocab'
 // Utils
 export * from './utils/quiz'
 export * from './utils/translations'
+export * from './utils/analytics'
+export * from './utils/sm2'

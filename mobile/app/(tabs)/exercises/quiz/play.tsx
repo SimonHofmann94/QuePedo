@@ -6,7 +6,13 @@ import { ArrowLeft, Send, SkipForward } from 'lucide-react-native'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { getUserVocabulary } from '@/services/vocabulary'
-import { getDisplayTranslation, checkAnswer, type QuizSettings, type QuizResult, type UserVocabulary } from '@chingon/shared'
+// SRS: integrated by Agent E. Records SM-2 reviews on each answer; sources
+// words from `getDueWords` when settings.reviewMode is true.
+import { recordReview, getDueWords } from '@/services/srs'
+import { getDisplayTranslation, checkAnswer, type QuizSettings, type QuizResult, type UserVocabulary, AnalyticsEvent, createTracker } from '@chingon/shared'
+import { posthog } from '@/lib/posthog'
+
+const track = createTracker(posthog)
 
 export default function QuizPlayScreen() {
   const router = useRouter()
@@ -32,22 +38,38 @@ export default function QuizPlayScreen() {
       const parsed: QuizSettings = JSON.parse(settingsParam)
       setSettings(parsed)
 
-      const vocab = await getUserVocabulary()
-      let filtered = vocab.filter((v: UserVocabulary) =>
-        parsed.difficulty.includes(v.difficulty_rating || 1)
-      )
-
-      const shuffled = filtered.sort(() => Math.random() - 0.5)
-      const selected = shuffled.slice(0, parsed.wordCount)
-
-      if (selected.length === 0) {
-        alert('No vocabulary found matching your criteria.')
-        router.replace('/(tabs)/vocabulary')
-        return
+      let selected: UserVocabulary[]
+      if (parsed.reviewMode) {
+        const due = await getDueWords(undefined, parsed.wordCount)
+        selected = due.filter((v: UserVocabulary) =>
+          parsed.difficulty.includes(v.difficulty_rating || 1),
+        )
+        if (selected.length === 0) {
+          alert('¡Órale! No hay palabras pendientes de repaso.')
+          router.replace('/(tabs)/exercises/quiz')
+          return
+        }
+      } else {
+        const vocab = await getUserVocabulary()
+        const filtered = vocab.filter((v: UserVocabulary) =>
+          parsed.difficulty.includes(v.difficulty_rating || 1),
+        )
+        const shuffled = filtered.sort(() => Math.random() - 0.5)
+        selected = shuffled.slice(0, parsed.wordCount)
+        if (selected.length === 0) {
+          alert('¡Ay, no! No hay palabras para este quiz. Añade vocabulario primero.')
+          router.replace('/(tabs)/vocabulary')
+          return
+        }
       }
 
       setWords(selected)
       setIsLoading(false)
+      track(AnalyticsEvent.QUIZ_STARTED, {
+        word_count: selected.length,
+        quiz_type: parsed.quizType,
+        review_mode: !!parsed.reviewMode,
+      })
     }
 
     loadQuiz()
@@ -84,6 +106,10 @@ export default function QuizPlayScreen() {
     setShowResult(true)
 
     setResults(prev => [...prev, { word, correct, userAnswer, correctAnswer }])
+    // SRS: correct -> q=5, incorrect -> q=1.
+    if (word?.id) {
+      void recordReview(word.id, correct ? 5 : 1)
+    }
   }
 
   const handleNext = () => {
@@ -93,6 +119,14 @@ export default function QuizPlayScreen() {
       setShowResult(false)
     } else {
       // Quiz complete — navigate to results
+      const correctCount = results.filter((r) => r.correct).length
+      track(AnalyticsEvent.QUIZ_COMPLETED, {
+        word_count: words.length,
+        correct_count: correctCount,
+        accuracy: Math.round((correctCount / words.length) * 100),
+        quiz_type: settings?.quizType ?? null,
+        review_mode: !!settings?.reviewMode,
+      })
       router.replace({
         pathname: '/(tabs)/exercises/quiz/results',
         params: { results: JSON.stringify({ results: [...results], settings }) },
@@ -102,6 +136,10 @@ export default function QuizPlayScreen() {
 
   const handleSkip = () => {
     setResults(prev => [...prev, { word, correct: false, userAnswer: '(skipped)', correctAnswer: getCorrectAnswer() }])
+    // SRS: skip -> q=3 ("I gave up but saw it").
+    if (word?.id) {
+      void recordReview(word.id, 3)
+    }
     if (currentIndex < words.length - 1) {
       setCurrentIndex(i => i + 1)
       setUserAnswer('')

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans, Caprasimo, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -46,6 +47,7 @@ export default function RootLayout({
         className={`${fraunces.variable} ${jakarta.variable} ${caprasimo.variable} ${jetbrains.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

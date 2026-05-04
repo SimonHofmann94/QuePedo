@@ -7,10 +7,15 @@ import { EffectCards, Keyboard } from "swiper/modules"
 import type { Swiper as SwiperType } from "swiper"
 import { ArrowLeft, Send, SkipForward } from "lucide-react"
 import { getUserVocabulary } from "@/actions/vocabulary"
+// SRS: integrated by Agent E. Records SM-2 reviews on each answer; sources
+// words from `getDueWords` when settings.reviewMode is true (or ?mode=review).
+import { recordReview, getDueWords } from "@/actions/srs"
 import { UserVocabulary } from "@/types/schemas"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
+import { initPostHog } from "@/lib/posthog"
+import { AnalyticsEvent, createTracker } from "@chingon/shared"
 
 import "swiper/css"
 import "swiper/css/effect-cards"
@@ -22,6 +27,7 @@ interface QuizSettings {
   quizType: "term_to_translation" | "translation_to_term"
   showContext: boolean
   showTags: boolean
+  reviewMode?: boolean
 }
 
 interface QuizResult {
@@ -72,23 +78,57 @@ export default function QuizPlayPage() {
   useEffect(() => {
     const loadQuiz = async () => {
       const saved = sessionStorage.getItem("quizSettings")
-      if (!saved) {
+      // SRS: also accept ?mode=review query param so the dashboard badge can
+      // deep-link straight into a review session without preloading settings.
+      const urlMode = typeof window !== "undefined"
+        ? new URLSearchParams(window.location.search).get("mode")
+        : null
+      const isReview = urlMode === "review" || (saved ? !!JSON.parse(saved).reviewMode : false)
+      if (!saved && !isReview) {
         router.push("/exercises/quiz")
         return
       }
-      const parsed: QuizSettings = JSON.parse(saved)
+      const parsed: QuizSettings = saved
+        ? JSON.parse(saved)
+        : {
+          wordCount: 20,
+          difficulty: [1, 2, 3, 4, 5],
+          level: ["A1", "A2", "B1", "B2", "C1", "C2"],
+          quizType: "term_to_translation",
+          showContext: true,
+          showTags: false,
+          reviewMode: true,
+        }
+      if (urlMode === "review") parsed.reviewMode = true
       setSettings(parsed)
-      const vocab = await getUserVocabulary()
-      const filtered = vocab.filter((v) => parsed.difficulty.includes(v.difficulty_rating || 1))
-      const shuffled = filtered.sort(() => Math.random() - 0.5)
-      const selected = shuffled.slice(0, parsed.wordCount)
-      if (selected.length === 0) {
-        alert("¡Ay, no! No hay palabras para este quiz. Añade vocabulario primero.")
-        router.push("/vocabulary")
-        return
+
+      let selected: UserVocabulary[]
+      if (parsed.reviewMode) {
+        const due = await getDueWords(undefined, parsed.wordCount)
+        selected = due.filter((v) => parsed.difficulty.includes(v.difficulty_rating || 1))
+        if (selected.length === 0) {
+          alert("¡Órale! No hay palabras pendientes de repaso. ¡Vuelve más tarde!")
+          router.push("/exercises/quiz")
+          return
+        }
+      } else {
+        const vocab = await getUserVocabulary()
+        const filtered = vocab.filter((v) => parsed.difficulty.includes(v.difficulty_rating || 1))
+        const shuffled = filtered.sort(() => Math.random() - 0.5)
+        selected = shuffled.slice(0, parsed.wordCount)
+        if (selected.length === 0) {
+          alert("¡Ay, no! No hay palabras para este quiz. Añade vocabulario primero.")
+          router.push("/vocabulary")
+          return
+        }
       }
       setWords(selected)
       setIsLoading(false)
+      createTracker(initPostHog())(AnalyticsEvent.QUIZ_STARTED, {
+        word_count: selected.length,
+        quiz_type: parsed.quizType,
+        review_mode: !!parsed.reviewMode,
+      })
     }
     loadQuiz()
   }, [router])
@@ -107,13 +147,18 @@ export default function QuizPlayPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!userAnswer.trim()) return
+    const word = getCurrentWord()
     const correct = checkAnswer(userAnswer, getCorrectAnswer())
     setIsCorrect(correct)
     setShowResult(true)
     setResults((p) => [
       ...p,
-      { word: getCurrentWord(), correct, userAnswer, correctAnswer: getCorrectAnswer() },
+      { word, correct, userAnswer, correctAnswer: getCorrectAnswer() },
     ])
+    // SRS: correct -> q=5, incorrect -> q=1.
+    if (word?.id) {
+      void recordReview(word.id, correct ? 5 : 1)
+    }
   }
 
   const handleNext = () => {
@@ -122,16 +167,30 @@ export default function QuizPlayPage() {
       setUserAnswer("")
       setShowResult(false)
     } else {
+      const correctCount = results.filter((r) => r.correct).length
+      createTracker(initPostHog())(AnalyticsEvent.QUIZ_COMPLETED, {
+        word_count: words.length,
+        correct_count: correctCount,
+        accuracy: Math.round((correctCount / words.length) * 100),
+        quiz_type: settings?.quizType ?? null,
+        review_mode: !!settings?.reviewMode,
+      })
       sessionStorage.setItem("quizResults", JSON.stringify({ results, settings }))
       router.push("/exercises/quiz/results")
     }
   }
 
   const handleSkip = () => {
+    const word = getCurrentWord()
     setResults((p) => [
       ...p,
-      { word: getCurrentWord(), correct: false, userAnswer: "(skipped)", correctAnswer: getCorrectAnswer() },
+      { word, correct: false, userAnswer: "(skipped)", correctAnswer: getCorrectAnswer() },
     ])
+    // SRS: skip -> q=3 ("I gave up but saw it"). Keeps a 3-level signal
+    // (5 / 3 / 1) without inventing a hint button.
+    if (word?.id) {
+      void recordReview(word.id, 3)
+    }
     handleNext()
   }
 

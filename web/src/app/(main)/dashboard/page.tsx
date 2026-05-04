@@ -3,6 +3,7 @@ import { redirect } from "next/navigation"
 import { getCurrentUser } from "@/actions/auth"
 import { getUserProfile } from "@/actions/profile"
 import { getUserActivityDates, getUserStreak } from "@/actions/activity"
+import { getReviewStats } from "@/actions/srs"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Sunburst } from "@/components/ui/motifs"
@@ -43,6 +44,7 @@ export default async function DashboardPage() {
   const activityDates = activityResult.data || []
   const streakResult = await getUserStreak()
   const currentStreak = streakResult.streak || 0
+  const reviewStats = await getReviewStats()
 
   const displayName = user.user_metadata?.name || user.email?.split("@")[0] || "amigo"
   const greeting = pickGreeting(displayName)
@@ -74,12 +76,23 @@ export default async function DashboardPage() {
             </div>
             <div className="mt-2 text-base text-ink-500">{todayEs}</div>
           </div>
-          <Link href="/exercises">
-            <Button variant="primary">
-              <PlayIcon size={16} />
-              Continuar lección
-            </Button>
-          </Link>
+          <div className="flex flex-wrap items-center gap-3">
+            {reviewStats.due_now > 0 && (
+              <Link
+                href="/exercises/quiz?mode=review"
+                className="flex items-center gap-2 rounded-full bg-jacaranda-500 px-4 py-2 font-mono text-xs font-bold uppercase tracking-wider text-white shadow-[0_3px_0_var(--jacaranda-700)] transition-transform hover:-translate-y-px"
+              >
+                <span>⏰</span>
+                <span>Repaso pendiente: {reviewStats.due_now} palabra{reviewStats.due_now === 1 ? "" : "s"}</span>
+              </Link>
+            )}
+            <Link href="/exercises">
+              <Button variant="primary">
+                <PlayIcon size={16} />
+                Continuar lección
+              </Button>
+            </Link>
+          </div>
         </div>
 
         {/* Stats grid */}

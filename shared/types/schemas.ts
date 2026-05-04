@@ -90,6 +90,8 @@ export interface QuizSettings {
     quizType: 'term_to_translation' | 'translation_to_term'
     showContext: boolean
     showTags: boolean
+    /** When true, source words from the SRS due-queue (`getDueWords`) instead of random sample. */
+    reviewMode?: boolean
 }
 
 export interface QuizResult {

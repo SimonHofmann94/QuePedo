@@ -1,5 +1,6 @@
 import { supabase } from '@/lib/supabase'
 import { userVocabularySchema, FREE_TIER_LIMITS } from '@chingon/shared'
+import { checkAchievements } from '@/services/achievements'
 
 export async function getUserVocabulary() {
   const { data: { user } } = await supabase.auth.getUser()
@@ -74,6 +75,15 @@ export async function addVocabulary(
   if (error) {
     console.error('Error adding vocabulary:', error)
     return { error: 'Failed to add vocabulary' }
+  }
+
+  try {
+    await checkAchievements({
+      type: 'vocab_added',
+      payload: { source: source === 'ai_generated' ? 'ai' : 'manual' },
+    })
+  } catch (err) {
+    console.error('[vocabulary] achievement check failed:', err)
   }
 
   return { success: true }

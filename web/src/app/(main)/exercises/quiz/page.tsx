@@ -14,6 +14,7 @@ interface QuizSettings {
   quizType: QuizType
   showContext: boolean
   showTags: boolean
+  reviewMode: boolean
 }
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const
@@ -30,6 +31,7 @@ export default function QuizSettingsPage() {
     quizType: "term_to_translation",
     showContext: true,
     showTags: false,
+    reviewMode: false,
   })
   const [isLoading, setIsLoading] = useState(false)
 
@@ -178,6 +180,11 @@ export default function QuizSettingsPage() {
           {/* Options */}
           <Section label="Opciones">
             <div className="space-y-3">
+              <CheckRow
+                checked={settings.reviewMode}
+                onChange={(v) => setSettings((p) => ({ ...p, reviewMode: v }))}
+                label="Modo Repaso · solo palabras pendientes (SRS)"
+              />
               <CheckRow
                 checked={settings.showContext}
                 onChange={(v) => setSettings((p) => ({ ...p, showContext: v }))}

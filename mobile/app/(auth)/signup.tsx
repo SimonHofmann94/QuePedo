@@ -7,6 +7,10 @@ import { Input } from '@/components/ui/Input'
 import { Logo } from '@/components/ui/Logo'
 import { signUpWithEmail, signInWithGoogle } from '@/services/auth'
 import { colors, fontFamily, surface } from '@/constants/theme'
+import { posthog } from '@/lib/posthog'
+import { AnalyticsEvent, createTracker } from '@chingon/shared'
+
+const track = createTracker(posthog)
 
 export default function SignupScreen() {
   const [email, setEmail] = useState('')
@@ -17,6 +21,7 @@ export default function SignupScreen() {
   const [isLoading, setIsLoading] = useState(false)
 
   async function handleEmailSignUp() {
+    track(AnalyticsEvent.SIGNUP_STARTED, { method: 'email' })
     setError('')
     setMessage('')
     if (password !== confirmPassword) {
@@ -41,6 +46,7 @@ export default function SignupScreen() {
   }
 
   async function handleGoogleSignUp() {
+    track(AnalyticsEvent.SIGNUP_STARTED, { method: 'google' })
     setError('')
     const result = await signInWithGoogle()
     if (result?.error) setError(result.error)

@@ -9,11 +9,27 @@ import {
 import { Caprasimo_400Regular } from '@expo-google-fonts/caprasimo'
 import { JetBrainsMono_500Medium, JetBrainsMono_700Bold } from '@expo-google-fonts/jetbrains-mono'
 import { View } from 'react-native'
+import * as Sentry from '@sentry/react-native'
+import { PostHogProvider } from 'posthog-react-native'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { SubscriptionProvider } from '@/contexts/SubscriptionContext'
 import { surface } from '@/constants/theme'
+import { posthog } from '@/lib/posthog'
 
-export default function RootLayout() {
+// Initialise Sentry as early as possible — before the first render — so
+// crashes in font-loading code are captured.
+const SENTRY_DSN = process.env.EXPO_PUBLIC_SENTRY_DSN_MOBILE
+if (SENTRY_DSN && !__DEV__) {
+  Sentry.init({
+    dsn: SENTRY_DSN,
+    tracesSampleRate: 0.1,
+    replaysSessionSampleRate: 0.1,
+    replaysOnErrorSampleRate: 1.0,
+    sendDefaultPii: false,
+  })
+}
+
+function RootLayout() {
   const [fontsLoaded] = useFraunces({
     Fraunces_700Bold,
     Fraunces_800ExtraBold,
@@ -29,7 +45,7 @@ export default function RootLayout() {
     return <View style={{ flex: 1, backgroundColor: surface.bg }} />
   }
 
-  return (
+  const tree = (
     <AuthProvider>
       <SubscriptionProvider>
         <StatusBar style="dark" />
@@ -48,4 +64,10 @@ export default function RootLayout() {
       </SubscriptionProvider>
     </AuthProvider>
   )
+
+  // Wrap in PostHogProvider only when a client exists — local dev without
+  // EXPO_PUBLIC_POSTHOG_KEY just renders the bare tree.
+  return posthog ? <PostHogProvider client={posthog}>{tree}</PostHogProvider> : tree
 }
+
+export default Sentry.wrap(RootLayout)

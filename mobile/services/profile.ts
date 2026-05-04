@@ -1,5 +1,7 @@
 import { supabase } from '@/lib/supabase'
-import { userProfileSchema, type UserProfileInput } from '@chingon/shared'
+import { userProfileSchema, type UserProfileInput, AnalyticsEvent } from '@chingon/shared'
+import { posthog } from '@/lib/posthog'
+import { checkAchievements } from '@/services/achievements'
 
 export async function getUserProfile(userId?: string) {
   const targetUserId = userId || (await supabase.auth.getUser()).data.user?.id
@@ -40,6 +42,17 @@ export async function updateUserProfile(profileData: UserProfileInput) {
 
   if (error) {
     return { error: error.message }
+  }
+
+  posthog?.capture(AnalyticsEvent.ONBOARDING_COMPLETED, {
+    native_language: validated.native_language,
+    proficiency_level: validated.proficiency_level,
+  })
+
+  try {
+    await checkAchievements({ type: 'onboarding_completed' })
+  } catch (err) {
+    console.error('[profile] achievement check failed:', err)
   }
 
   return { data }

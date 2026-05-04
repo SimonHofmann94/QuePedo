@@ -3,6 +3,9 @@
 import { createClient } from "@/utils/supabase/server"
 import { userProfileSchema, type UserProfileInput } from "@/types/schemas"
 import { revalidatePath } from "next/cache"
+import { getPostHogServer } from "@/lib/posthog-server"
+import { AnalyticsEvent } from "@chingon/shared"
+import { checkAchievements } from "@/actions/achievements"
 
 export async function getUserProfile(userId?: string) {
     const supabase = await createClient()
@@ -49,6 +52,25 @@ export async function updateUserProfile(profileData: UserProfileInput) {
 
     if (error) {
         return { error: error.message }
+    }
+
+    const ph = getPostHogServer()
+    if (ph) {
+        ph.capture({
+            distinctId: user.id,
+            event: AnalyticsEvent.ONBOARDING_COMPLETED,
+            properties: {
+                native_language: validated.native_language,
+                proficiency_level: validated.proficiency_level,
+            },
+        })
+        await ph.shutdown()
+    }
+
+    try {
+        await checkAchievements({ type: "onboarding_completed" })
+    } catch (err) {
+        console.error("[profile] achievement check failed:", err)
     }
 
     revalidatePath("/dashboard")

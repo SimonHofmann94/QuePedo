@@ -3,33 +3,61 @@
 import { createClient } from "@/utils/supabase/client"
 import { useRouter } from "next/navigation"
 import { LogOut } from "lucide-react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Avatar } from "@/components/ui/avatar"
 import { ProgressBar } from "@/components/ui/progress"
 import { Sunburst, TalaveraTile } from "@/components/ui/motifs"
 import { BookIcon, FireIcon, GearIcon, SparkleIcon } from "@/components/ui/icons"
-
-const ACHIEVEMENTS = [
-  { emoji: "🌶", label: "Primera lección", color: "var(--chili-500)", done: true },
-  { emoji: "🔥", label: "7 días",          color: "var(--maiz-400)",  done: true },
-  { emoji: "🔥", label: "14 días",         color: "var(--chili-500)", done: true },
-  { emoji: "📚", label: "100 palabras",    color: "var(--cielo-500)", done: true },
-  { emoji: "🎯", label: "10/10 quiz",      color: "var(--jade-500)",  done: true },
-  { emoji: "🏆", label: "A1 completo",     color: "var(--jacaranda-500)", done: true },
-  { emoji: "🌵", label: "30 días",         color: "var(--ink-300)",   done: false },
-  { emoji: "📖", label: "500 palabras",    color: "var(--ink-300)",   done: false },
-  { emoji: "🗣", label: "Primer habla",    color: "var(--ink-300)",   done: false },
-  { emoji: "🎉", label: "A2 completo",     color: "var(--ink-300)",   done: false },
-] as const
+import { useSubscription } from "@/contexts/SubscriptionProvider"
+import { ACHIEVEMENTS, colors as designColors, type Achievement } from "@chingon/shared"
+import { getUserAchievements } from "@/actions/achievements"
 
 export default function ProfilePage() {
   const router = useRouter()
   const supabase = createClient()
+  const { isPremium, manageSubscription } = useSubscription()
+  const [managingSub, setManagingSub] = useState(false)
+  const [earnedIds, setEarnedIds] = useState<Set<string>>(new Set())
+  const [achievementsLoaded, setAchievementsLoaded] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    getUserAchievements()
+      .then((rows) => {
+        if (!cancelled) setEarnedIds(new Set(rows.map((r) => r.id)))
+      })
+      .catch((err) => console.error("[profile] load achievements failed:", err))
+      .finally(() => {
+        if (!cancelled) setAchievementsLoaded(true)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  const earnedCount = earnedIds.size
+  const totalCount = ACHIEVEMENTS.length
 
   const handleLogout = async () => {
     await supabase.auth.signOut()
     router.push("/login")
+  }
+
+  const handleManageSubscription = async () => {
+    setManagingSub(true)
+    try {
+      const url = await manageSubscription()
+      if (url) {
+        window.open(url, "_blank", "noopener,noreferrer")
+      } else {
+        // No managementURL → no active web sub → bounce to pricing.
+        router.push("/pricing")
+      }
+    } finally {
+      setManagingSub(false)
+    }
   }
 
   return (
@@ -73,6 +101,57 @@ export default function ProfilePage() {
           </div>
         </div>
 
+        {/* Subscription CTA — RevenueCat Web Billing */}
+        {isPremium ? (
+          <div className="flex flex-wrap items-center justify-between gap-4 rounded-[20px] border-[3px] border-jade-500 bg-white p-5 shadow-[0_4px_0_0_var(--jade-500)]">
+            <div className="min-w-0">
+              <Badge color="jade" variant="solid" size="sm">¡Eres Premium!</Badge>
+              <div className="mt-2 font-display text-xl font-extrabold text-ink-800">
+                Suscripción activa
+              </div>
+              <div className="mt-1 text-sm text-ink-500">
+                Gracias por apoyar a Chingón, ¡eres un verdadero chingón!
+              </div>
+            </div>
+            <Button
+              variant="outline"
+              onClick={handleManageSubscription}
+              disabled={managingSub}
+            >
+              <GearIcon size={16} />
+              {managingSub ? "Cocinando…" : "Gestionar suscripción"}
+            </Button>
+          </div>
+        ) : (
+          <div
+            className="relative flex flex-wrap items-center justify-between gap-4 overflow-hidden rounded-[20px] p-5 text-white"
+            style={{
+              background:
+                "linear-gradient(135deg, var(--chili-500), var(--maiz-400))",
+              boxShadow: "0 4px 0 0 var(--chili-700)",
+            }}
+          >
+            <div className="pointer-events-none absolute -right-6 -top-6 opacity-20">
+              <Sunburst size={140} color="var(--maiz-200)" />
+            </div>
+            <div className="relative min-w-0">
+              <div className="font-mono text-[10px] font-bold uppercase tracking-wider opacity-90">
+                Hazte Premium
+              </div>
+              <div className="mt-1 font-display text-xl font-extrabold leading-tight md:text-2xl">
+                Desbloquea todo: gramática, cultura y más
+              </div>
+            </div>
+            <Button
+              variant="secondary"
+              className="relative"
+              onClick={() => router.push("/pricing")}
+            >
+              ¡Dale!
+            </Button>
+          </div>
+        )}
+
         <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
           {/* LEFT */}
           <div>
@@ -83,34 +162,28 @@ export default function ProfilePage() {
               <StatCard label="Palabras" value="247" sub="+12 esta semana" color="var(--cielo-500)" icon={<BookIcon />} />
             </div>
 
-            <div className="mt-7 mb-3 font-display text-xl font-bold text-ink-800">
-              Logros desbloqueados
+            <div className="mt-7 mb-3 flex items-end justify-between">
+              <div className="font-display text-xl font-bold text-ink-800">
+                Logros desbloqueados
+              </div>
+              <div className="font-mono text-[11px] font-bold uppercase tracking-wider text-ink-500">
+                {achievementsLoaded
+                  ? `${earnedCount} de ${totalCount} desbloqueados`
+                  : "Cocinando…"}
+              </div>
             </div>
             <div className="rounded-[20px] border border-ink-100 bg-white p-6 shadow-sm">
               <div className="grid grid-cols-5 gap-3">
-                {ACHIEVEMENTS.map((a, i) => (
-                  <div key={i} className="text-center">
-                    <div
-                      className="flex aspect-square w-full items-center justify-center rounded-[16px] text-2xl md:text-3xl"
-                      style={{
-                        background: a.done ? "white" : "var(--ink-50)",
-                        border: a.done
-                          ? `3px solid ${a.color}`
-                          : "3px dashed var(--ink-200)",
-                        boxShadow: a.done ? `0 4px 0 ${a.color}` : "none",
-                        opacity: a.done ? 1 : 0.4,
-                      }}
-                    >
-                      {a.emoji}
-                    </div>
-                    <div
-                      className="mt-2 font-mono text-[9px] font-bold uppercase tracking-wide"
-                      style={{ color: a.done ? "var(--ink-700)" : "var(--ink-400)" }}
-                    >
-                      {a.label}
-                    </div>
-                  </div>
-                ))}
+                {ACHIEVEMENTS.map((a) => {
+                  const earned = earnedIds.has(a.id)
+                  return (
+                    <AchievementCard
+                      key={a.id}
+                      achievement={a}
+                      earned={earned}
+                    />
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -194,6 +267,40 @@ function StatCard({
         {value}
       </div>
       <div className="mt-1.5 text-xs text-ink-500">{sub}</div>
+    </div>
+  )
+}
+
+function AchievementCard({
+  achievement,
+  earned,
+}: {
+  achievement: Achievement
+  earned: boolean
+}) {
+  // Pull the 500-stop hex for the achievement's color family.
+  const family = designColors[achievement.color] as Record<string, string>
+  const accent = family["500"] ?? family["400"] ?? "#1a1915"
+  return (
+    <div className="text-center" title={achievement.description}>
+      <div
+        className="flex aspect-square w-full items-center justify-center rounded-[16px] text-2xl md:text-3xl"
+        style={{
+          background: earned ? "white" : "var(--ink-50)",
+          border: earned ? `3px solid ${accent}` : "3px dashed var(--ink-200)",
+          boxShadow: earned ? `0 4px 0 ${accent}` : "none",
+          opacity: earned ? 1 : 0.4,
+          filter: earned ? "none" : "grayscale(1)",
+        }}
+      >
+        {achievement.emoji}
+      </div>
+      <div
+        className="mt-2 font-mono text-[9px] font-bold uppercase tracking-wide"
+        style={{ color: earned ? "var(--ink-700)" : "var(--ink-400)" }}
+      >
+        {achievement.label}
+      </div>
     </div>
   )
 }

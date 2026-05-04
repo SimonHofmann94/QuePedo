@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Logo } from "@/components/ui/logo"
 import { cn } from "@/lib/utils"
+import { checkAchievements } from "@/actions/achievements"
 
 export default function OnboardingPage() {
   const router = useRouter()
@@ -71,6 +72,11 @@ export default function OnboardingPage() {
       alert("¡Ay, no! No se pudo guardar el perfil. Inténtalo de nuevo.")
       setIsLoading(false)
     } else {
+      try {
+        await checkAchievements({ type: "onboarding_completed" })
+      } catch (err) {
+        console.error("[onboarding] achievement check failed:", err)
+      }
       router.push("/dashboard")
     }
   }

@@ -10,6 +10,7 @@ import { useSubscription } from '@/contexts/SubscriptionContext'
 import { getUserProfile } from '@/services/profile'
 import { getUserActivityDates, getUserStreak } from '@/services/activity'
 import { getUserVocabulary } from '@/services/vocabulary'
+import { getReviewStats } from '@/services/srs'
 import { colors, fontFamily, surface } from '@/constants/theme'
 
 const GREETINGS_ES = [
@@ -34,19 +35,22 @@ export default function DashboardScreen() {
   const [vocabCount, setVocabCount] = useState(0)
   const [streak, setStreak] = useState(0)
   const [activityDates, setActivityDates] = useState<string[]>([])
+  const [dueNow, setDueNow] = useState(0)
 
   const displayName = user?.user_metadata?.name || user?.email?.split('@')[0] || 'amigo'
   const [greeting] = useState(() => pickGreeting(displayName))
 
   const loadData = useCallback(async () => {
-    const [vocab, streakResult, activityResult] = await Promise.all([
+    const [vocab, streakResult, activityResult, reviewStats] = await Promise.all([
       getUserVocabulary(),
       getUserStreak(),
       getUserActivityDates(),
+      getReviewStats(),
     ])
     setVocabCount(vocab.length)
     setStreak(streakResult.streak || 0)
     setActivityDates(activityResult.data || [])
+    setDueNow(reviewStats.due_now)
   }, [])
 
   useEffect(() => {
@@ -87,6 +91,21 @@ export default function DashboardScreen() {
           </View>
           <Badge color="maiz" variant="solid">🌮 {isPremium ? '∞' : tacoBalance}</Badge>
         </View>
+
+        {/* SRS: Repaso pendiente badge — only shown when due_now > 0. */}
+        {dueNow > 0 && (
+          <TouchableOpacity
+            onPress={() => router.push('/(tabs)/exercises/quiz?mode=review' as never)}
+            activeOpacity={0.85}
+            style={styles.reviewBadge}
+          >
+            <Text style={styles.reviewBadgeIcon}>⏰</Text>
+            <Text style={styles.reviewBadgeText}>
+              Repaso pendiente: {dueNow} palabra{dueNow === 1 ? '' : 's'}
+            </Text>
+            <Text style={styles.reviewBadgeArrow}>→</Text>
+          </TouchableOpacity>
+        )}
 
         {/* Stats */}
         <View style={styles.statsGrid}>
@@ -282,4 +301,16 @@ const styles = StyleSheet.create({
   },
   streakDot: { width: 40, height: 40, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
   streakDayNum: { fontFamily: fontFamily.monoBold, fontSize: 10, color: colors.ink[500] },
+
+  reviewBadge: {
+    flexDirection: 'row', alignItems: 'center', gap: 10,
+    backgroundColor: colors.jacaranda[500],
+    paddingHorizontal: 16, paddingVertical: 12, borderRadius: 999,
+  },
+  reviewBadgeIcon: { fontSize: 16 },
+  reviewBadgeText: {
+    flex: 1, fontFamily: fontFamily.monoBold, fontSize: 12,
+    color: '#FFFFFF', letterSpacing: 0.8, textTransform: 'uppercase',
+  },
+  reviewBadgeArrow: { fontFamily: fontFamily.displayExtraBold, fontSize: 18, color: '#FFFFFF' },
 })

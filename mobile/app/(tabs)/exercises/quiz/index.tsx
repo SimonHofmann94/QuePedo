@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Alert } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useRouter } from 'expo-router'
+import { useRouter, useLocalSearchParams } from 'expo-router'
 import { Button } from '@/components/ui/Button'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { FREE_TIER_LIMITS, type QuizSettings } from '@chingon/shared'
@@ -11,6 +11,7 @@ type Level = keyof typeof LEVEL_COLOR
 
 export default function QuizSettingsScreen() {
   const router = useRouter()
+  const { mode } = useLocalSearchParams<{ mode?: string }>()
   const { isPremium, dailyQuizCount, canTakeQuiz, presentPaywall } = useSubscription()
   const [settings, setSettings] = useState<QuizSettings>({
     wordCount: 10,
@@ -19,7 +20,15 @@ export default function QuizSettingsScreen() {
     quizType: 'term_to_translation',
     showContext: true,
     showTags: false,
+    reviewMode: false,
   })
+
+  // SRS: pre-toggle Modo Repaso when arriving via dashboard deep-link.
+  useEffect(() => {
+    if (mode === 'review') {
+      setSettings((p) => ({ ...p, reviewMode: true }))
+    }
+  }, [mode])
 
   const difficulties = [1, 2, 3, 4, 5]
   const levels: Level[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -160,6 +169,11 @@ export default function QuizSettingsScreen() {
 
           {/* Options */}
           <Section label="Opciones">
+            <CheckRow
+              checked={!!settings.reviewMode}
+              onToggle={() => setSettings(p => ({ ...p, reviewMode: !p.reviewMode }))}
+              label="Modo Repaso · solo palabras pendientes (SRS)"
+            />
             <CheckRow
               checked={settings.showContext}
               onToggle={() => setSettings(p => ({ ...p, showContext: !p.showContext }))}

@@ -3,6 +3,7 @@
 import { createClient } from "@/utils/supabase/server"
 import { userVocabularySchema } from "@/types/schemas"
 import { revalidatePath } from "next/cache"
+import { checkAchievements } from "@/actions/achievements"
 
 export async function getUserVocabulary() {
     const supabase = await createClient()
@@ -69,6 +70,15 @@ export async function addVocabulary(formData: unknown, source: 'manual' | 'ai_ge
     if (error) {
         console.error('Error adding vocabulary:', error)
         return { error: "Failed to add vocabulary" }
+    }
+
+    try {
+        await checkAchievements({
+            type: 'vocab_added',
+            payload: { source: source === 'ai_generated' ? 'ai' : 'manual' },
+        })
+    } catch (err) {
+        console.error('[vocabulary] achievement check failed:', err)
     }
 
     revalidatePath('/vocabulary')

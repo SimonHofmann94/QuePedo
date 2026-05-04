@@ -10,6 +10,8 @@ import { useAuth } from '@/contexts/AuthContext'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { supabase } from '@/lib/supabase'
 import { colors, fontFamily, surface } from '@/constants/theme'
+import { ACHIEVEMENTS, type Achievement } from '@chingon/shared'
+import { getUserAchievements } from '@/services/achievements'
 
 type Profile = {
   id: string
@@ -30,6 +32,7 @@ export default function ProfileScreen() {
   const [editForm, setEditForm] = useState<Profile>({} as Profile)
   const [loading, setLoading] = useState(true)
   const [refreshing, setRefreshing] = useState(false)
+  const [earnedIds, setEarnedIds] = useState<Set<string>>(new Set())
 
   const fetchProfile = useCallback(async () => {
     if (!user) return
@@ -46,15 +49,26 @@ export default function ProfileScreen() {
     setLoading(false)
   }, [user])
 
+  const fetchAchievements = useCallback(async () => {
+    if (!user) return
+    try {
+      const rows = await getUserAchievements()
+      setEarnedIds(new Set(rows.map((r) => r.id)))
+    } catch (err) {
+      console.error('[profile] load achievements failed:', err)
+    }
+  }, [user])
+
   useEffect(() => {
     fetchProfile()
-  }, [fetchProfile])
+    fetchAchievements()
+  }, [fetchProfile, fetchAchievements])
 
   const onRefresh = useCallback(async () => {
     setRefreshing(true)
-    await Promise.all([fetchProfile(), refreshSubscription()])
+    await Promise.all([fetchProfile(), refreshSubscription(), fetchAchievements()])
     setRefreshing(false)
-  }, [fetchProfile, refreshSubscription])
+  }, [fetchProfile, refreshSubscription, fetchAchievements])
 
   const handleSave = async () => {
     if (!profile) return
@@ -202,6 +216,23 @@ export default function ProfileScreen() {
           </View>
         </View>
 
+        {/* Achievements */}
+        <View style={styles.achHeader}>
+          <Text style={styles.achTitle}>Logros</Text>
+          <Text style={styles.achCount}>
+            {earnedIds.size} de {ACHIEVEMENTS.length} desbloqueados
+          </Text>
+        </View>
+        <View style={styles.achGrid}>
+          {ACHIEVEMENTS.map((a) => (
+            <AchievementTile
+              key={a.id}
+              achievement={a}
+              earned={earnedIds.has(a.id)}
+            />
+          ))}
+        </View>
+
         {/* Subscription CTA */}
         {isPremium ? (
           <Button variant="ghost" onPress={presentCustomerCenter}>
@@ -240,6 +271,43 @@ export default function ProfileScreen() {
         </Button>
       </ScrollView>
     </SafeAreaView>
+  )
+}
+
+function AchievementTile({
+  achievement,
+  earned,
+}: {
+  achievement: Achievement
+  earned: boolean
+}) {
+  const family = (colors as Record<string, Record<string, string>>)[achievement.color]
+  const accent = family?.['500'] ?? family?.['400'] ?? colors.ink[800]
+  return (
+    <View style={styles.achTileWrap}>
+      <View
+        style={[
+          styles.achTile,
+          {
+            backgroundColor: earned ? '#FFFFFF' : colors.ink[50],
+            borderColor: earned ? accent : colors.ink[200],
+            borderStyle: earned ? 'solid' : 'dashed',
+            opacity: earned ? 1 : 0.45,
+          },
+        ]}
+      >
+        <Text style={styles.achEmoji}>{achievement.emoji}</Text>
+      </View>
+      <Text
+        style={[
+          styles.achLabel,
+          { color: earned ? colors.ink[700] : colors.ink[400] },
+        ]}
+        numberOfLines={2}
+      >
+        {achievement.label}
+      </Text>
+    </View>
   )
 }
 
@@ -308,5 +376,36 @@ const styles = StyleSheet.create({
   memberSince: {
     fontFamily: fontFamily.monoBold, fontSize: 11, color: colors.ink[400],
     textAlign: 'center',
+  },
+
+  achHeader: {
+    flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end',
+    marginTop: 4,
+  },
+  achTitle: {
+    fontFamily: fontFamily.displayExtraBold, fontSize: 18, color: colors.ink[800],
+  },
+  achCount: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, letterSpacing: 1,
+    color: colors.ink[500], textTransform: 'uppercase',
+  },
+  achGrid: {
+    flexDirection: 'row', flexWrap: 'wrap', gap: 10,
+    backgroundColor: surface.card,
+    borderRadius: 20, borderWidth: 1, borderColor: colors.ink[100],
+    padding: 14,
+  },
+  achTileWrap: {
+    width: '22%', alignItems: 'center', gap: 6,
+  },
+  achTile: {
+    width: '100%', aspectRatio: 1,
+    borderRadius: 14, borderWidth: 3,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  achEmoji: { fontSize: 22 },
+  achLabel: {
+    fontFamily: fontFamily.monoBold, fontSize: 9, letterSpacing: 0.5,
+    textAlign: 'center', textTransform: 'uppercase',
   },
 })

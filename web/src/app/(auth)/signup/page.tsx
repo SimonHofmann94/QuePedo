@@ -8,6 +8,8 @@ import { Input } from "@/components/ui/input"
 import { Logo } from "@/components/ui/logo"
 import { signInWithGoogle, signUpWithEmail } from "@/actions/auth"
 import { AlertCircle } from "lucide-react"
+import { initPostHog } from "@/lib/posthog"
+import { AnalyticsEvent, createTracker } from "@chingon/shared"
 
 export default function SignupPage() {
   const router = useRouter()
@@ -18,11 +20,13 @@ export default function SignupPage() {
   const [isLoading, setIsLoading] = useState(false)
 
   async function handleGoogleSignUp() {
+    createTracker(initPostHog())(AnalyticsEvent.SIGNUP_STARTED, { method: "google" })
     await signInWithGoogle()
   }
 
   async function handleEmailSignUp(e: React.FormEvent) {
     e.preventDefault()
+    createTracker(initPostHog())(AnalyticsEvent.SIGNUP_STARTED, { method: "email" })
     setError("")
     if (password !== confirmPassword) {
       setError("Las contraseñas no coinciden")
