@@ -30,10 +30,9 @@ export default function ImpressumPage() {
             <p>
               <strong>Simon Hofmann</strong>
               <br />
-              {/* TODO: Vollständige Postanschrift eintragen — gesetzlich Pflicht */}
-              [Straße und Hausnummer]
+              Am Messehaus 21
               <br />
-              [PLZ Ort]
+              90489 Nürnberg
               <br />
               Deutschland
             </p>
@@ -65,18 +64,10 @@ export default function ImpressumPage() {
           </section>
 
           <section>
-            <h2>Umsatzsteuer-ID</h2>
+            <h2>Umsatzsteuer</h2>
             <p>
-              {/*
-                Falls du eine USt-IdNr. nach § 27 a UStG hast, hier eintragen.
-                Falls du als Kleinunternehmer nach § 19 UStG agierst, ist
-                keine USt-ID erforderlich — dann kannst du diesen Block
-                weglassen oder durch den Kleinunternehmer-Hinweis ersetzen:
-                "Hinweis: Als Kleinunternehmer im Sinne von § 19 Abs. 1
-                UStG wird keine Umsatzsteuer berechnet."
-              */}
-              [USt-IdNr. eintragen — z. B. &bdquo;DE123456789&ldquo; — oder Block entfernen,
-              falls Kleinunternehmer]
+              Als Kleinunternehmer im Sinne von § 19 Abs. 1 UStG wird keine
+              Umsatzsteuer berechnet und folglich auch nicht ausgewiesen.
             </p>
           </section>
 
@@ -85,10 +76,9 @@ export default function ImpressumPage() {
             <p>
               Simon Hofmann
               <br />
-              {/* Anschrift identisch mit Diensteanbieter */}
-              [Straße und Hausnummer]
+              Am Messehaus 21
               <br />
-              [PLZ Ort]
+              90489 Nürnberg
             </p>
           </section>
 
