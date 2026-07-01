@@ -1,21 +1,6 @@
 import { supabase } from '@/lib/supabase'
-import { grammarA1 } from '@chingon/shared'
-import { grammarA2 } from '@chingon/shared'
-import { grammarB1 } from '@chingon/shared'
-import { grammarB2 } from '@chingon/shared'
-import { grammarC1 } from '@chingon/shared'
-import { grammarC2 } from '@chingon/shared'
-import type { GrammarLevel, GrammarChapter } from '@chingon/shared'
-import type { SpeakingExercise, WordResult } from '@/data/speaking/exerciseTypes'
-
-const LEVEL_DATA: Record<string, GrammarLevel> = {
-  a1: grammarA1,
-  a2: grammarA2,
-  b1: grammarB1,
-  b2: grammarB2,
-  c1: grammarC1,
-  c2: grammarC2,
-}
+import { getChapter, serializeChapterContent } from '@chingon/shared'
+import type { SpeakingExercise } from '@chingon/shared'
 
 export type SpeakingExerciseErrorCode =
   | 'AUTH_ERROR'
@@ -37,38 +22,6 @@ export class SpeakingExerciseError extends Error {
     this.code = code
     this.details = details
   }
-}
-
-function serializeChapterContent(chapter: GrammarChapter): string {
-  const parts: string[] = [`Chapter: ${chapter.title}`]
-
-  for (const section of chapter.sections) {
-    parts.push(`\n## ${section.title}`)
-    for (const block of section.blocks) {
-      switch (block.type) {
-        case 'text':
-          if (block.content) parts.push(block.content)
-          break
-        case 'rules':
-          if (block.items) parts.push(block.items.map((r) => `- ${r}`).join('\n'))
-          break
-        case 'examples':
-          if (block.examples) {
-            parts.push(block.examples.map((e) => `${e.es} — ${e.en}`).join('\n'))
-          }
-          break
-        case 'table':
-          if (block.headers && block.rows) {
-            parts.push(block.headers.join(' | '))
-            parts.push(block.rows.map((r) => r.join(' | ')).join('\n'))
-          }
-          break
-      }
-    }
-  }
-
-  const full = parts.join('\n')
-  return full.length > 2000 ? full.slice(0, 2000) + '...' : full
 }
 
 /**
@@ -136,8 +89,7 @@ export async function getSpeakingExercises(
   }
 
   // Cache miss — get chapter data and call edge function
-  const levelData = LEVEL_DATA[level.toLowerCase()]
-  const chapter = levelData?.chapters.find((c) => c.id === chapterId)
+  const chapter = getChapter(level, chapterId)
   if (!chapter) {
     throw new SpeakingExerciseError('NO_EXERCISES', 'Chapter not found')
   }
@@ -211,7 +163,11 @@ export async function getSpeakingExercises(
   return selectExercises(data as SpeakingExercise[], count)
 }
 
-export async function evaluateSpeaking(
+/**
+ * Optional AI-generated feedback for an incorrect spoken answer.
+ * Non-fatal: callers should treat failures as "no feedback".
+ */
+export async function getSpeakingFeedback(
   expectedText: string,
   transcribedText: string,
   exerciseType: string,
@@ -244,106 +200,4 @@ export async function evaluateSpeaking(
     corrections: Array.isArray(data?.corrections) ? data.corrections : [],
     tip: data?.tip || '',
   }
-}
-
-/**
- * Normalize text for comparison: lowercase, remove punctuation, trim.
- */
-function normalizeForComparison(text: string): string {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[.,!?¿¡'";\-:()]/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
-/**
- * Compare expected and transcribed texts word by word.
- * Returns per-word results and an overall correct boolean.
- */
-export function compareTexts(
-  expected: string,
-  transcribed: string,
-): { wordResults: WordResult[]; isCorrect: boolean } {
-  const expectedWords = normalizeForComparison(expected).split(' ').filter(Boolean)
-  const transcribedWords = normalizeForComparison(transcribed).split(' ').filter(Boolean)
-
-  // Use LCS-based alignment for word-by-word diff
-  const results: WordResult[] = []
-  const lcs = computeLCS(expectedWords, transcribedWords)
-
-  let ei = 0
-  let ti = 0
-  let li = 0
-
-  while (ei < expectedWords.length || ti < transcribedWords.length) {
-    if (li < lcs.length && ei < expectedWords.length && ti < transcribedWords.length
-        && expectedWords[ei] === lcs[li] && transcribedWords[ti] === lcs[li]) {
-      results.push({ word: transcribedWords[ti], status: 'correct' })
-      ei++
-      ti++
-      li++
-    } else if (li < lcs.length && ei < expectedWords.length && expectedWords[ei] !== lcs[li]) {
-      // Expected word not in LCS — it's missing from transcription
-      results.push({ word: expectedWords[ei], status: 'missing' })
-      ei++
-    } else if (ti < transcribedWords.length && (li >= lcs.length || transcribedWords[ti] !== lcs[li])) {
-      // Transcribed word not in LCS — it's extra
-      if (ei < expectedWords.length && li < lcs.length) {
-        results.push({ word: transcribedWords[ti], status: 'incorrect', expected: expectedWords[ei] })
-        ei++
-      } else {
-        results.push({ word: transcribedWords[ti], status: 'extra' })
-      }
-      ti++
-    } else if (ei < expectedWords.length) {
-      results.push({ word: expectedWords[ei], status: 'missing' })
-      ei++
-    } else {
-      break
-    }
-  }
-
-  const incorrectCount = results.filter((r) => r.status !== 'correct').length
-  const isCorrect = incorrectCount === 0
-
-  return { wordResults: results, isCorrect }
-}
-
-/**
- * Compute the Longest Common Subsequence of two string arrays.
- */
-function computeLCS(a: string[], b: string[]): string[] {
-  const m = a.length
-  const n = b.length
-  const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0))
-
-  for (let i = 1; i <= m; i++) {
-    for (let j = 1; j <= n; j++) {
-      if (a[i - 1] === b[j - 1]) {
-        dp[i][j] = dp[i - 1][j - 1] + 1
-      } else {
-        dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
-      }
-    }
-  }
-
-  // Backtrack to find the LCS
-  const result: string[] = []
-  let i = m
-  let j = n
-  while (i > 0 && j > 0) {
-    if (a[i - 1] === b[j - 1]) {
-      result.unshift(a[i - 1])
-      i--
-      j--
-    } else if (dp[i - 1][j] > dp[i][j - 1]) {
-      i--
-    } else {
-      j--
-    }
-  }
-
-  return result
 }

@@ -21,18 +21,18 @@ import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import {
   getSpeakingExercises,
-  evaluateSpeaking,
-  compareTexts,
+  getSpeakingFeedback,
   SpeakingExerciseError,
 } from '@/services/speakingExercise'
-import type {
-  SpeakingExercise,
-  SpeakingResult,
-  ReadAloudExercise,
-  TranslateSpeakExercise,
-  ListenRepeatExercise,
-  WordResult,
-} from '@/data/speaking/exerciseTypes'
+import {
+  evaluateSpeaking,
+  type SpeakingExercise,
+  type SpeakingResult,
+  type ReadAloudExercise,
+  type TranslateSpeakExercise,
+  type ListenRepeatExercise,
+  type WordResult,
+} from '@chingon/shared'
 import { grammarA1 } from '@chingon/shared'
 import { grammarA2 } from '@chingon/shared'
 import { grammarB1 } from '@chingon/shared'
@@ -196,18 +196,12 @@ export default function SpeakingExercisePlayScreen() {
 
     const expectedText = getExpectedText()
 
-    // Check acceptable variations for translate_speak
-    let comparison = compareTexts(expectedText, transcription)
-
-    if (!comparison.isCorrect && exercise.type === 'translate_speak' && exercise.acceptableVariations) {
-      for (const variation of exercise.acceptableVariations) {
-        const altComparison = compareTexts(variation, transcription)
-        if (altComparison.isCorrect) {
-          comparison = altComparison
-          break
-        }
-      }
-    }
+    // Grade, honoring acceptable variations for translate_speak.
+    const comparison = evaluateSpeaking(
+      expectedText,
+      transcription,
+      exercise.type === 'translate_speak' ? exercise.acceptableVariations : undefined,
+    )
 
     setWordResults(comparison.wordResults)
     setIsCorrect(comparison.isCorrect)
@@ -217,7 +211,7 @@ export default function SpeakingExercisePlayScreen() {
     if (!comparison.isCorrect) {
       setIsEvaluating(true)
       try {
-        const feedback = await evaluateSpeaking(
+        const feedback = await getSpeakingFeedback(
           expectedText,
           transcription,
           exercise.type,

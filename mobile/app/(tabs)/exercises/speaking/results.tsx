@@ -5,7 +5,7 @@ import { useRouter, useLocalSearchParams } from 'expo-router'
 import { Trophy, RotateCcw, Home, Target, TrendingUp, AlertTriangle } from 'lucide-react-native'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import type { SpeakingResult, WordResult } from '@/data/speaking/exerciseTypes'
+import type { SpeakingResult, WordResult } from '@chingon/shared'
 
 function getExerciseTypeLabel(type: string): string {
   switch (type) {

@@ -45,13 +45,13 @@ export default function ExercisesScreen() {
       title: 'Escucha', desc: 'Audio nativo · comprensión',
       icon: Headphones, badge: 'Audio', badgeColor: 'cielo',
       color: colors.cielo[500], emoji: '🎧',
-      locked: !isPremium, onPress: () => {},
+      locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/escucha'),
     },
     {
       title: 'Escritura', desc: 'Prompts con AI',
       icon: PenTool, badge: 'AI', badgeColor: 'jacaranda',
       color: colors.jacaranda[500], emoji: '✍️',
-      locked: !isPremium, onPress: () => {},
+      locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/escritura'),
     },
     {
       title: 'Juegos', desc: 'Aprende jugando',

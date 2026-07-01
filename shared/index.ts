@@ -15,6 +15,15 @@ export * from './constants/achievements'
 // Grammar content + exercises
 export * from './grammar'
 
+// Speaking exercises (types + pure grading; speech I/O stays platform-specific)
+export * from './speaking'
+
+// Writing (types + pure logic; platform I/O stays platform-specific)
+export * from './writing'
+
+// Listening (types + pure logic; TTS stays platform-specific)
+export * from './listening'
+
 // Base CEFR vocabulary lists (premium content)
 export * from './content/vocab'
 

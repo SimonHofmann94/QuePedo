@@ -1,3 +1,7 @@
+// Speaking exercise types — shared between web and mobile.
+// Platform UIs own speech I/O (STT/TTS); these types + the grading logic
+// in ./grading are the only pure pieces that live in shared.
+
 export interface ReadAloudExercise {
   type: 'read_aloud'
   spanishText: string
@@ -21,6 +25,8 @@ export interface ListenRepeatExercise {
 }
 
 export type SpeakingExercise = ReadAloudExercise | TranslateSpeakExercise | ListenRepeatExercise
+
+export type SpeakingExerciseType = SpeakingExercise['type']
 
 export interface WordResult {
   word: string

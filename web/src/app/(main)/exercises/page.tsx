@@ -2,11 +2,13 @@
 
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { useSubscription } from "@/contexts/SubscriptionProvider"
 import {
   ArrowIcon,
   BookIcon,
   DumbbellIcon,
   HeartIcon,
+  LockIcon,
   MicIcon,
   PlayIcon,
   SparkleIcon,
@@ -20,6 +22,7 @@ type Tile = {
   href: string
   badge?: { label: string; color: "chili" | "rosa" | "jade" | "cielo" | "maiz" | "jacaranda" | "ink" }
   icon?: React.ReactNode
+  premium?: boolean
 }
 
 const TILES: Tile[] = [
@@ -37,9 +40,10 @@ const TILES: Tile[] = [
     sub: "Pronunciación con AI · STT",
     emoji: "🎤",
     color: "var(--rosa-500)",
-    href: "/exercises",
+    href: "/exercises/speaking",
     badge: { label: "AI", color: "rosa" },
     icon: <MicIcon size={18} />,
+    premium: true,
   },
   {
     title: "Gramática",
@@ -55,18 +59,20 @@ const TILES: Tile[] = [
     sub: "Audio nativo · comprensión",
     emoji: "🎧",
     color: "var(--cielo-500)",
-    href: "/exercises",
+    href: "/exercises/escucha",
     badge: { label: "Audio", color: "cielo" },
     icon: <PlayIcon size={18} />,
+    premium: true,
   },
   {
     title: "Escritura",
     sub: "Prompts con feedback AI",
     emoji: "✍️",
     color: "var(--jacaranda-500)",
-    href: "/exercises",
+    href: "/exercises/escritura",
     badge: { label: "AI", color: "jacaranda" },
     icon: <SparkleIcon size={18} />,
+    premium: true,
   },
   {
     title: "Juegos",
@@ -80,6 +86,7 @@ const TILES: Tile[] = [
 ]
 
 export default function ExercisesPage() {
+  const { isPremium } = useSubscription()
   return (
     <div className="p-6 md:p-10">
       <div className="mx-auto max-w-7xl">
@@ -139,10 +146,16 @@ export default function ExercisesPage() {
                   <div className="font-display text-xl font-bold tracking-tight text-ink-800">
                     {t.title}
                   </div>
-                  {t.badge && (
-                    <Badge color={t.badge.color} variant="soft" size="sm">
-                      {t.badge.label}
+                  {t.premium && !isPremium ? (
+                    <Badge color="maiz" variant="solid" size="sm">
+                      <LockIcon size={11} /> Premium
                     </Badge>
+                  ) : (
+                    t.badge && (
+                      <Badge color={t.badge.color} variant="soft" size="sm">
+                        {t.badge.label}
+                      </Badge>
+                    )
                   )}
                 </div>
                 <div className="mt-1 text-sm text-ink-500">{t.sub}</div>
