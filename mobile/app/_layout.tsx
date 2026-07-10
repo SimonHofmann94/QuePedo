@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 import { useFonts as useFraunces, Fraunces_700Bold, Fraunces_800ExtraBold } from '@expo-google-fonts/fraunces'
@@ -11,10 +12,21 @@ import { JetBrainsMono_500Medium, JetBrainsMono_700Bold } from '@expo-google-fon
 import { View } from 'react-native'
 import * as Sentry from '@sentry/react-native'
 import { PostHogProvider } from 'posthog-react-native'
-import { AuthProvider } from '@/contexts/AuthContext'
+import { AuthProvider, useAuth } from '@/contexts/AuthContext'
 import { SubscriptionProvider } from '@/contexts/SubscriptionContext'
 import { surface } from '@/constants/theme'
 import { posthog } from '@/lib/posthog'
+import { bootstrapLocale } from '@/lib/i18n'
+
+// Applies the startup locale (AsyncStorage → profile → device → default) and
+// re-resolves whenever the signed-in user changes. Renders nothing.
+function LocaleBootstrap() {
+  const { user } = useAuth()
+  useEffect(() => {
+    bootstrapLocale(user?.id)
+  }, [user?.id])
+  return null
+}
 
 // Initialise Sentry as early as possible — before the first render — so
 // crashes in font-loading code are captured.
@@ -47,6 +59,7 @@ function RootLayout() {
 
   const tree = (
     <AuthProvider>
+      <LocaleBootstrap />
       <SubscriptionProvider>
         <StatusBar style="dark" />
         <Stack

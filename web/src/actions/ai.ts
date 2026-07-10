@@ -10,8 +10,6 @@ export async function generateVocabulary(userPrompt: string, count: number = 5) 
         throw new Error("API key not configured")
     }
 
-    console.log("API Key present:", apiKey.substring(0, 8) + "..." + apiKey.substring(apiKey.length - 4))
-
     try {
         // Initialize client inside function to ensure env is loaded
         const genAI = new GoogleGenerativeAI(apiKey)

@@ -121,6 +121,9 @@ export async function getSpeakingFeedback(
   level: string,
   chapterTitle: string,
 ): Promise<SpeakingFeedback | null> {
+  // Same premium gate as getSpeakingExercises — feedback is a Premium AI feature.
+  if (!(await isUserPremium())) return null
+
   try {
     const supabase = await createClient()
     const { data, error } = await supabase.functions.invoke("evaluate-speaking", {

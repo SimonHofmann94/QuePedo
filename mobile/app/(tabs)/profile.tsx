@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
-import { View, Text, ScrollView, StyleSheet, RefreshControl, TextInput, Alert } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, RefreshControl, TextInput, Alert, Pressable } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import { useTranslation } from 'react-i18next'
 import { Pencil, Save, LogOut, Crown } from 'lucide-react-native'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
@@ -9,8 +10,9 @@ import { ProgressBar } from '@/components/ui/ProgressBar'
 import { useAuth } from '@/contexts/AuthContext'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { supabase } from '@/lib/supabase'
+import { setLocale } from '@/lib/i18n'
 import { colors, fontFamily, surface } from '@/constants/theme'
-import { ACHIEVEMENTS, type Achievement } from '@chingon/shared'
+import { ACHIEVEMENTS, LOCALES, LOCALE_LABELS, type Achievement } from '@chingon/shared'
 import { getUserAchievements } from '@/services/achievements'
 
 type Profile = {
@@ -26,6 +28,7 @@ type Profile = {
 
 export default function ProfileScreen() {
   const { user, signOut } = useAuth()
+  const { t, i18n } = useTranslation('common')
   const { isPremium, presentPaywall, presentCustomerCenter, refreshSubscription } = useSubscription()
   const [profile, setProfile] = useState<Profile | null>(null)
   const [isEditing, setIsEditing] = useState(false)
@@ -260,6 +263,27 @@ export default function ProfileScreen() {
           </Text>
         )}
 
+        {/* Language switcher */}
+        <View style={styles.langCard}>
+          <Text style={styles.langLabel}>{t('appLanguage')}</Text>
+          <View style={styles.langRow}>
+            {LOCALES.map((loc) => {
+              const active = i18n.language === loc
+              return (
+                <Pressable
+                  key={loc}
+                  onPress={() => setLocale(loc, user?.id)}
+                  style={[styles.langPill, active && styles.langPillActive]}
+                >
+                  <Text style={[styles.langPillText, active && styles.langPillTextActive]}>
+                    {LOCALE_LABELS[loc]}
+                  </Text>
+                </Pressable>
+              )
+            })}
+          </View>
+        </View>
+
         {/* Logout */}
         <Button variant="danger" onPress={handleLogout} size="md">
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
@@ -377,6 +401,28 @@ const styles = StyleSheet.create({
     fontFamily: fontFamily.monoBold, fontSize: 11, color: colors.ink[400],
     textAlign: 'center',
   },
+
+  langCard: {
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderRadius: 20, padding: 16, gap: 12,
+  },
+  langLabel: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, letterSpacing: 1,
+    color: colors.ink[400], textTransform: 'uppercase',
+  },
+  langRow: { flexDirection: 'row', gap: 8 },
+  langPill: {
+    flex: 1, height: 44, borderRadius: 999,
+    borderWidth: 2, borderColor: colors.ink[200], backgroundColor: '#FFFFFF',
+    alignItems: 'center', justifyContent: 'center',
+  },
+  langPillActive: {
+    borderColor: colors.chili[500], backgroundColor: colors.chili[50],
+  },
+  langPillText: {
+    fontFamily: fontFamily.bodyBold, fontSize: 13, color: colors.ink[600],
+  },
+  langPillTextActive: { color: colors.chili[700] },
 
   achHeader: {
     flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end',

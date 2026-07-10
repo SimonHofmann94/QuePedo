@@ -40,7 +40,8 @@
           "microphonePermission": "QuePedo needs access to your microphone for speaking exercises.",
           "speechRecognitionPermission": "QuePedo needs access to speech recognition for speaking exercises."
         }
-      ]
+      ],
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true

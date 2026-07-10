@@ -2,11 +2,13 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useTranslations } from "next-intl"
 import { cn } from "@/lib/utils"
 import { navigationItems } from "@/lib/navigation"
 
 export function BottomNav() {
     const pathname = usePathname()
+    const t = useTranslations("nav")
 
     return (
         <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-ink-100 bg-card pb-[env(safe-area-inset-bottom)] md:hidden">
@@ -32,7 +34,7 @@ export function BottomNav() {
                             >
                                 <item.icon className="h-5 w-5" />
                             </div>
-                            <span>{item.title}</span>
+                            <span>{t(item.titleKey)}</span>
                         </Link>
                     )
                 })}

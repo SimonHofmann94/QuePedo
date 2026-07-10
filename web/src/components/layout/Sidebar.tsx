@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
+import { useTranslations } from "next-intl"
 import { LogOut } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { navigationItems } from "@/lib/navigation"
@@ -13,6 +14,7 @@ export function Sidebar() {
     const pathname = usePathname()
     const router = useRouter()
     const supabase = createClient()
+    const t = useTranslations("nav")
 
     const handleLogout = async () => {
         await supabase.auth.signOut()
@@ -40,7 +42,7 @@ export function Sidebar() {
                             )}
                         >
                             <item.icon className="h-5 w-5" />
-                            {item.title}
+                            {t(item.titleKey)}
                         </Link>
                     )
                 })}

@@ -24,6 +24,9 @@ export * from './writing'
 // Listening (types + pure logic; TTS stays platform-specific)
 export * from './listening'
 
+// i18n catalogs (de/en/es) + locale helpers; brand flavor stays in `voice`
+export * from './i18n'
+
 // Base CEFR vocabulary lists (premium content)
 export * from './content/vocab'
 

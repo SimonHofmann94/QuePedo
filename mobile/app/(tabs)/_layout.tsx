@@ -1,11 +1,13 @@
 import { View, StyleSheet } from 'react-native'
 import { Tabs } from 'expo-router'
+import { useTranslation } from 'react-i18next'
 import { LayoutDashboard, Book, Dumbbell, BookOpenText, Globe, User } from 'lucide-react-native'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { colors, fontFamily, surface } from '@/constants/theme'
 
 export default function TabLayout() {
   const { isPremium } = useSubscription()
+  const { t } = useTranslation('nav')
 
   return (
     <Tabs
@@ -31,28 +33,28 @@ export default function TabLayout() {
       <Tabs.Screen
         name="dashboard"
         options={{
-          title: 'Inicio',
+          title: t('dashboard'),
           tabBarIcon: ({ color, size }) => <LayoutDashboard size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="vocabulary"
         options={{
-          title: 'Vocab',
+          title: t('vocabulary'),
           tabBarIcon: ({ color, size }) => <Book size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="exercises"
         options={{
-          title: 'Ejercicios',
+          title: t('exercises'),
           tabBarIcon: ({ color, size }) => <Dumbbell size={size} color={color} />,
         }}
       />
       <Tabs.Screen
         name="grammar"
         options={{
-          title: 'Gramática',
+          title: t('grammar'),
           tabBarIcon: ({ color, size }) => (
             <View>
               <BookOpenText size={size} color={color} />
@@ -64,7 +66,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="culture"
         options={{
-          title: 'Cultura',
+          title: t('culture'),
           tabBarIcon: ({ color, size }) => (
             <View>
               <Globe size={size} color={color} />
@@ -76,7 +78,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Perfil',
+          title: t('profile'),
           tabBarIcon: ({ color, size }) => <User size={size} color={color} />,
         }}
       />

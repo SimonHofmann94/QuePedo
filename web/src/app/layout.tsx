@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans, Caprasimo, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale } from "next-intl/server";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -36,18 +38,21 @@ export const metadata: Metadata = {
   description: "Real slang, real culture, real conversations. Learn the Spanish people actually speak.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
   return (
-    <html lang="es">
+    <html lang={locale}>
       <body
         className={`${fraunces.variable} ${jakarta.variable} ${caprasimo.variable} ${jetbrains.variable} antialiased`}
       >
-        {children}
-        <Analytics />
+        <NextIntlClientProvider>
+          {children}
+          <Analytics />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

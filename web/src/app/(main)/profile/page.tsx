@@ -11,6 +11,7 @@ import { ProgressBar } from "@/components/ui/progress"
 import { Sunburst, TalaveraTile } from "@/components/ui/motifs"
 import { BookIcon, FireIcon, GearIcon, SparkleIcon } from "@/components/ui/icons"
 import { useSubscription } from "@/contexts/SubscriptionProvider"
+import { LanguageSwitcher } from "@/components/features/profile/LanguageSwitcher"
 import { ACHIEVEMENTS, colors as designColors, type Achievement } from "@chingon/shared"
 import { getUserAchievements } from "@/actions/achievements"
 
@@ -227,6 +228,8 @@ export default function ProfilePage() {
               <div className="my-1 h-px bg-ink-100" />
               <LanguageRow flag="🇲🇽" name="Español" sub="Aprendiendo" badgeColor="chili" badge="A2" badgeVariant="solid" />
             </div>
+
+            <LanguageSwitcher />
 
             <Button variant="ghost" className="w-full">
               <GearIcon size={16} />
