@@ -58,3 +58,6 @@ node_modules/
 
 # Claude Code local state
 .claude/
+
+# Brainstorming visual companion sessions
+.superpowers/
