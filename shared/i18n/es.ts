@@ -9,6 +9,7 @@ export const es: Messages = {
     vocabulary: "Vocabulario",
     grammar: "Gramática",
     exercises: "Ejercicios",
+    games: "Juegos",
     culture: "Cultura",
     profile: "Perfil",
   },

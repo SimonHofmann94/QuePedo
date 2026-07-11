@@ -24,6 +24,9 @@ export * from './writing'
 // Listening (types + pure logic; TTS stays platform-specific)
 export * from './listening'
 
+// Juegos (pure game logic; clocks/animation/IO stay platform-specific)
+export * from './games'
+
 // i18n catalogs (de/en/es) + locale helpers; brand flavor stays in `voice`
 export * from './i18n'
 

@@ -14,7 +14,6 @@ export const PREMIUM_FEATURES = [
   'writing_exercise',
   'speaking_exercise',
   'listening_exercise',
-  'games',
   'ai_generation',
   'unlimited_vocabulary',
   'unlimited_quizzes',

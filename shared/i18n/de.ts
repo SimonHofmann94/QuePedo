@@ -7,6 +7,7 @@ export const de: Messages = {
     vocabulary: "Vokabeln",
     grammar: "Grammatik",
     exercises: "Übungen",
+    games: "Spiele",
     culture: "Kultur",
     profile: "Profil",
   },

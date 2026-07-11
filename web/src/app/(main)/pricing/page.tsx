@@ -17,7 +17,6 @@ const FEATURE_COPY: Record<(typeof PREMIUM_FEATURES)[number], string> = {
   writing_exercise: "Ejercicios de escritura con AI",
   speaking_exercise: "Práctica de habla con feedback",
   listening_exercise: "Ejercicios de escucha",
-  games: "Mini-juegos y desafíos",
   ai_generation: "Vocabulario generado con AI",
   unlimited_vocabulary: "Vocabulario ilimitado",
   unlimited_quizzes: "Quizzes ilimitados al día",

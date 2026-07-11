@@ -113,10 +113,12 @@ Personal best = `max(score)` query — no separate stats table.
 `submitGameResult()` (Zod-validated) performs, in order:
 
 1. Plausibility check — reject impossible results (score > maximum achievable for the
-   reported `correct`/`total`; `duration_ms` outside 10 s – 10 min).
+   reported `correct`/`total`; `duration_ms` outside 5 s – 10 min — 5 s because an
+   all-miss Chili Rush death can legitimately end in ~6 s).
 2. Insert into `game_results`.
-3. Record `user_activity` with a new `'game'` activity type (streak credit). The
-   activity-type constraint in the existing migration must be extended.
+3. Record `user_activity` via the existing `recordActivity()` / `record_user_activity`
+   RPC (streak credit). *(Corrected at planning: `user_activity` is date-keyed with no
+   activity-type column — no migration needed.)*
 4. Award tacos through the **existing** taco-balance mechanism (the same path other
    features debit/credit) — no new ledger.
 5. Check `games` achievements (no-op until PR 3 ships the group).

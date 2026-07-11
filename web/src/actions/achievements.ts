@@ -28,6 +28,19 @@ export type TriggerContext =
   | { type: "grammar_chapter_opened"; payload?: { chapter?: string } }
   | { type: "grammar_chapter_completed"; payload?: { level?: string; chapter?: string } }
   | { type: "streak_updated"; payload?: { streak?: number } }
+  // Emitted by submitGameResult since PR1; unlock logic lands with the
+  // `games` achievement group (PR3). Until then this trigger is a no-op.
+  | {
+      type: "game_completed"
+      payload?: {
+        gameId?: string
+        combo?: number
+        perfectBoard?: boolean
+        noHints?: boolean
+        correct?: number
+        total?: number
+      }
+    }
   | { type: "onboarding_completed"; payload?: Record<string, never> }
   | { type: "premium_purchased"; payload?: Record<string, never> }
   | { type: "culture_lesson_opened"; payload?: { lessonId?: string; country?: string } }
@@ -202,6 +215,12 @@ export async function checkAchievements(
       case "premium_purchased": {
         idsToUnlock.push("premium")
         idsToUnlock.push("grammar_premium")
+        break
+      }
+
+      case "game_completed": {
+        // No-op until PR3 ships the `games` achievement group — the trigger
+        // is already emitted by submitGameResult so PR3 is purely additive.
         break
       }
 

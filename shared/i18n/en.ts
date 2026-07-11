@@ -15,6 +15,7 @@ export const en = {
     vocabulary: "Vocabulary",
     grammar: "Grammar",
     exercises: "Exercises",
+    games: "Games",
     culture: "Culture",
     profile: "Profile",
   },

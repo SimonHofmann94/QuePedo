@@ -5,6 +5,7 @@ import {
     Globe,
     User,
     Dumbbell,
+    Gamepad2,
 } from "lucide-react"
 import type { Messages } from "@chingon/shared"
 
@@ -24,6 +25,7 @@ export const navigationItems: NavigationItem[] = [
     { titleKey: "vocabulary", href: "/vocabulary", icon: Book },
     { titleKey: "grammar", href: "/grammar", icon: Library },
     { titleKey: "exercises", href: "/exercises", icon: Dumbbell },
+    { titleKey: "games", href: "/games", icon: Gamepad2 },
     { titleKey: "culture", href: "/culture", icon: Globe },
     { titleKey: "profile", href: "/profile", icon: User },
 ]
