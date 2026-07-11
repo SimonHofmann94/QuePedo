@@ -15,7 +15,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { initPostHog } from "@/lib/posthog"
-import { AnalyticsEvent, createTracker } from "@chingon/shared"
+import { AnalyticsEvent, createTracker, getDisplayTranslation } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 import "swiper/css"
 import "swiper/css/effect-cards"
@@ -37,14 +38,6 @@ interface QuizResult {
   correctAnswer: string
 }
 
-function getDisplayTranslation(translations: Record<string, string>): string {
-  if (!translations || typeof translations !== "object") return ""
-  if (translations.de) return translations.de
-  if (translations.en) return translations.en
-  const keys = Object.keys(translations)
-  return keys.length > 0 ? translations[keys[0]] : ""
-}
-
 function normalizeAnswer(a: string) {
   return a
     .toLowerCase()
@@ -63,6 +56,7 @@ function checkAnswer(user: string, correct: string): boolean {
 }
 
 export default function QuizPlayPage() {
+  const locale = useLocale()
   const router = useRouter()
   const swiperRef = useRef<SwiperType | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -141,7 +135,7 @@ export default function QuizPlayPage() {
   const getCorrectAnswer = () => {
     const w = getCurrentWord()
     if (!w) return ""
-    return settings?.quizType === "term_to_translation" ? getDisplayTranslation(w.translations) : w.term
+    return settings?.quizType === "term_to_translation" ? getDisplayTranslation(w.translations, locale) : w.term
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -253,7 +247,7 @@ export default function QuizPlayPage() {
               <div className="font-display text-3xl font-extrabold tracking-tight text-ink-800 md:text-4xl">
                 {settings.quizType === "term_to_translation"
                   ? w.term
-                  : getDisplayTranslation(w.translations)}
+                  : getDisplayTranslation(w.translations, locale)}
               </div>
               {settings.showContext && w.context_sentence && (
                 <div className="mt-4 text-sm italic text-ink-500">💡 {w.context_sentence}</div>

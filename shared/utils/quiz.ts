@@ -1,9 +1,11 @@
 /**
  * Get the best display translation from a translations record.
- * Prefers German, then English, then first available.
+ * Prefers the active app locale, then German, then English, then first available.
+ * `locale` is optional so unwired callers keep the legacy de→en→first behavior.
  */
-export function getDisplayTranslation(translations: Record<string, string>): string {
+export function getDisplayTranslation(translations: Record<string, string>, locale?: string): string {
     if (!translations || typeof translations !== 'object') return ''
+    if (locale && translations[locale]) return translations[locale]
     if (translations.de) return translations.de
     if (translations.en) return translations.en
     const keys = Object.keys(translations)

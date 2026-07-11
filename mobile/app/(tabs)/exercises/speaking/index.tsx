@@ -4,29 +4,17 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter } from 'expo-router'
 import { ArrowLeft, Mic } from 'lucide-react-native'
 import { Card } from '@/components/ui/Card'
-import { grammarA1 } from '@chingon/shared'
-import { grammarA2 } from '@chingon/shared'
-import { grammarB1 } from '@chingon/shared'
-import { grammarB2 } from '@chingon/shared'
-import { grammarC1 } from '@chingon/shared'
-import { grammarC2 } from '@chingon/shared'
+import { getGrammarLevel } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 
 const LEVELS = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2'] as const
 
-const LEVEL_DATA: Record<string, typeof grammarA1> = {
-  a1: grammarA1,
-  a2: grammarA2,
-  b1: grammarB1,
-  b2: grammarB2,
-  c1: grammarC1,
-  c2: grammarC2,
-}
-
 export default function SpeakingExerciseSettingsScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const [selectedLevel, setSelectedLevel] = useState<string>('a1')
 
-  const levelData = LEVEL_DATA[selectedLevel]
+  const levelData = getGrammarLevel(selectedLevel, i18n.language)
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>

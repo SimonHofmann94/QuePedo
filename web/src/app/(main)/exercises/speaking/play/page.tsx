@@ -13,6 +13,7 @@ import {
   type SpeakingResult,
   type WordResult,
 } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 // ── Web Speech API (not in lib.dom.d.ts) — minimal typed surface ────────
 interface SpeechAlt { transcript: string }
@@ -48,10 +49,10 @@ const TYPE_LABEL: Record<SpeakingExercise["type"], string> = {
 
 export default function SpeakingPlayPage() {
   const router = useRouter()
+  const locale = useLocale()
 
   const [level, setLevel] = useState("a1")
   const [chapterId, setChapterId] = useState(0)
-  const [chapterTitle, setChapterTitle] = useState("")
 
   const [exercises, setExercises] = useState<SpeakingExercise[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -80,6 +81,8 @@ export default function SpeakingPlayPage() {
   const [hasListened, setHasListened] = useState(false)
   const [showSpanishText, setShowSpanishText] = useState(false)
 
+  const chapterTitle =
+    getGrammarLevel(level, locale)?.chapters.find((c) => c.id === chapterId)?.title || ""
   const exercise = exercises[currentIndex]
   const total = exercises.length
   const progress = total > 0 ? ((currentIndex + 1) / total) * 100 : 0
@@ -94,7 +97,6 @@ export default function SpeakingPlayPage() {
     const ch = parseInt(params.get("chapter") || "0", 10)
     setLevel(lvl)
     setChapterId(ch)
-    setChapterTitle(getGrammarLevel(lvl)?.chapters.find((c) => c.id === ch)?.title || "")
 
     let cancelled = false
     ;(async () => {

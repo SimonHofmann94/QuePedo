@@ -7,10 +7,12 @@ import { SearchInput } from '@/components/ui/SearchInput'
 import { Badge } from '@/components/ui/Badge'
 import { getUserVocabulary } from '@/services/vocabulary'
 import { translationsMatch, getDisplayTranslation, type UserVocabulary } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 import { colors, fontFamily, surface } from '@/constants/theme'
 
 export default function VocabularyBrowserScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const [vocab, setVocab] = useState<UserVocabulary[]>([])
   const [search, setSearch] = useState('')
   const [refreshing, setRefreshing] = useState(false)
@@ -61,7 +63,7 @@ export default function VocabularyBrowserScreen() {
           <View style={styles.row}>
             <View style={styles.rowMain}>
               <Text style={styles.term}>{item.term}</Text>
-              <Text style={styles.translation}>{getDisplayTranslation(item.translations)}</Text>
+              <Text style={styles.translation}>{getDisplayTranslation(item.translations, i18n.language)}</Text>
             </View>
             {item.tags && item.tags.length > 0 && (
               <View style={styles.tagsRow}>

@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge"
 import { ProgressRing } from "@/components/ui/progress"
 import { Sunburst } from "@/components/ui/motifs"
 import { UserVocabulary } from "@/types/schemas"
+import { getDisplayTranslation } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 interface QuizResult {
   word: UserVocabulary
@@ -19,15 +21,8 @@ interface QuizData {
   settings: { wordCount: number; quizType: string }
 }
 
-function getDisplayTranslation(translations: Record<string, string>): string {
-  if (!translations || typeof translations !== "object") return ""
-  if (translations.de) return translations.de
-  if (translations.en) return translations.en
-  const keys = Object.keys(translations)
-  return keys.length > 0 ? translations[keys[0]] : ""
-}
-
 export default function QuizResultsPage() {
+  const locale = useLocale()
   const router = useRouter()
   const [quizData] = useState<QuizData | null>(() => {
     if (typeof window === "undefined") return null
@@ -134,7 +129,7 @@ export default function QuizResultsPage() {
                     {w.term}
                   </div>
                   <div className="truncate text-xs text-ink-500">
-                    {getDisplayTranslation(w.translations)}
+                    {getDisplayTranslation(w.translations, locale)}
                   </div>
                 </div>
                 <div className="flex shrink-0 gap-1">

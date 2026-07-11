@@ -29,6 +29,8 @@ import {
   deleteMultipleVocabulary,
 } from "@/actions/vocabulary"
 import { UserVocabulary } from "@/types/schemas"
+import { getDisplayTranslation } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const
 type Level = (typeof LEVELS)[number]
@@ -63,14 +65,6 @@ function levelFromDifficulty(d: number): Level {
   return (["A1", "A2", "B1", "B2", "C1"][Math.max(0, Math.min(4, d - 1))] as Level)
 }
 
-function getDisplayTranslation(translations: Record<string, string>): string {
-  if (!translations || typeof translations !== "object") return ""
-  if (translations.de) return translations.de
-  if (translations.en) return translations.en
-  const keys = Object.keys(translations)
-  return keys.length > 0 ? translations[keys[0]] : ""
-}
-
 function translationsMatch(translations: Record<string, string>, search: string): boolean {
   if (!translations || typeof translations !== "object") return false
   return Object.values(translations).some((t) =>
@@ -81,6 +75,7 @@ function translationsMatch(translations: Record<string, string>, search: string)
 type Filter = "all" | "new" | "review" | "mastered"
 
 export default function VocabularyPage() {
+  const locale = useLocale()
   const [isAddOpen, setIsAddOpen] = useState(false)
   const [isAiOpen, setIsAiOpen] = useState(false)
   const [vocab, setVocab] = useState<UserVocabulary[]>([])
@@ -301,7 +296,7 @@ export default function VocabularyPage() {
                     {w.term}
                   </div>
                   <div className="mt-1 text-[13px] text-ink-500">
-                    {getDisplayTranslation(w.translations)}
+                    {getDisplayTranslation(w.translations, locale)}
                   </div>
                   {w.context_sentence && (
                     <div className="mt-1 text-[11px] italic text-ink-400">

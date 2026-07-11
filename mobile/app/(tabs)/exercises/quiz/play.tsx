@@ -11,11 +11,13 @@ import { getUserVocabulary } from '@/services/vocabulary'
 import { recordReview, getDueWords } from '@/services/srs'
 import { getDisplayTranslation, checkAnswer, type QuizSettings, type QuizResult, type UserVocabulary, AnalyticsEvent, createTracker } from '@chingon/shared'
 import { posthog } from '@/lib/posthog'
+import { useTranslation } from 'react-i18next'
 
 const track = createTracker(posthog)
 
 export default function QuizPlayScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { settings: settingsParam } = useLocalSearchParams<{ settings: string }>()
   const inputRef = useRef<TextInput>(null)
 
@@ -86,13 +88,13 @@ export default function QuizPlayScreen() {
     if (!word) return ''
     return settings?.quizType === 'term_to_translation'
       ? word.term
-      : getDisplayTranslation(word.translations)
+      : getDisplayTranslation(word.translations, i18n.language)
   }
 
   const getCorrectAnswer = () => {
     if (!word) return ''
     return settings?.quizType === 'term_to_translation'
-      ? getDisplayTranslation(word.translations)
+      ? getDisplayTranslation(word.translations, i18n.language)
       : word.term
   }
 

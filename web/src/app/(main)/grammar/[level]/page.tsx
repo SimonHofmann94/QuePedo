@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { LockIcon } from "@/components/ui/icons"
 import { getGrammarLevel } from "@chingon/shared"
+import { getLocale } from "next-intl/server"
 import { isFreeGrammarLevel, isUserPremium } from "@/lib/premium"
 
 const LEVEL_TITLES: Record<string, string> = {
@@ -39,7 +40,8 @@ export default async function GrammarLevelPage({
   params: Promise<{ level: string }>
 }) {
   const { level } = await params
-  const data = getGrammarLevel(level)
+  const locale = await getLocale()
+  const data = getGrammarLevel(level, locale)
   if (!data) notFound()
 
   const color = LEVEL_HEX[level.toLowerCase()] ?? "var(--chili-500)"

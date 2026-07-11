@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/Badge'
 import { TacoBalance } from '@/components/ui/TacoBalance'
 import { getUserVocabulary, deleteMultipleVocabulary } from '@/services/vocabulary'
 import { translationsMatch, getDisplayTranslation, FREE_TIER_LIMITS, type UserVocabulary } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 import { AddVocabModal } from '@/components/vocabulary/AddVocabModal'
 import { AIGeneratorModal } from '@/components/vocabulary/AIGeneratorModal'
 import { useSubscription } from '@/contexts/SubscriptionContext'
@@ -25,6 +26,7 @@ const LEVEL_FAMILY = {
 
 export default function VocabularyScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { isPremium, tacoBalance, canAddVocabulary, presentPaywall, refreshSubscription } = useSubscription()
   const [vocab, setVocab] = useState<UserVocabulary[]>([])
   const [search, setSearch] = useState('')
@@ -123,7 +125,7 @@ export default function VocabularyScreen() {
             <Text style={styles.levelTag}>{level}</Text>
           </View>
           <Text style={styles.vocabTerm}>{item.term}</Text>
-          <Text style={styles.vocabTranslation}>{getDisplayTranslation(item.translations)}</Text>
+          <Text style={styles.vocabTranslation}>{getDisplayTranslation(item.translations, i18n.language)}</Text>
         </View>
         <View style={styles.difficultyRow}>
           {[1, 2, 3, 4, 5].map(d => (

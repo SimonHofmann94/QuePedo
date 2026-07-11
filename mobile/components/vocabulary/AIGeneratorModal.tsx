@@ -8,6 +8,7 @@ import { TacoBalance } from '@/components/ui/TacoBalance'
 import { generateVocabulary, AIGenerationError } from '@/services/ai'
 import { addVocabulary } from '@/services/vocabulary'
 import { getDisplayTranslation } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 
 interface GeneratedWord {
@@ -26,6 +27,7 @@ interface Props {
 }
 
 export function AIGeneratorModal({ visible, onClose, onSuccess }: Props) {
+  const { i18n } = useTranslation()
   const { isPremium, tacoBalance, presentPaywall, refreshTacoBalance } = useSubscription()
   const [prompt, setPrompt] = useState('')
   const [count, setCount] = useState('5')
@@ -157,7 +159,7 @@ export function AIGeneratorModal({ visible, onClose, onSuccess }: Props) {
                 >
                   <View style={styles.wordMain}>
                     <Text style={styles.wordTerm}>{word.term}</Text>
-                    <Text style={styles.wordTranslation}>{getDisplayTranslation(word.translations)}</Text>
+                    <Text style={styles.wordTranslation}>{getDisplayTranslation(word.translations, i18n.language)}</Text>
                     {word.context_sentence && (
                       <Text style={styles.wordContext}>{word.context_sentence}</Text>
                     )}

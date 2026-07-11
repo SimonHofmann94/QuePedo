@@ -7,23 +7,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
-import { grammarA1 } from '@chingon/shared'
-import { grammarA2 } from '@chingon/shared'
-import { grammarB1 } from '@chingon/shared'
-import { grammarB2 } from '@chingon/shared'
-import { grammarC1 } from '@chingon/shared'
-import { grammarC2 } from '@chingon/shared'
-import { getChapterExercises } from '@chingon/shared'
+import { getGrammarLevel, getChapterExercises } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 import type { GrammarContentBlock, GrammarChapter } from '@chingon/shared'
-
-const LEVEL_DATA: Record<string, typeof grammarA1> = {
-  a1: grammarA1,
-  a2: grammarA2,
-  b1: grammarB1,
-  b2: grammarB2,
-  c1: grammarC1,
-  c2: grammarC2,
-}
 
 function TextBlock({ content }: { content: string }) {
   return <Text style={styles.textBlock}>{content}</Text>
@@ -99,10 +85,11 @@ function ContentBlockRenderer({ block }: { block: GrammarContentBlock }) {
 
 export default function GrammarLessonScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { level, chapter: chapterParam } = useLocalSearchParams<{ level: string; chapter: string }>()
   const [isCompleted, setIsCompleted] = useState(false)
 
-  const levelData = LEVEL_DATA[level || '']
+  const levelData = getGrammarLevel(level || '', i18n.language)
   const chapterId = parseInt(chapterParam || '0', 10)
   const chapter = levelData?.chapters.find((c) => c.id === chapterId)
 

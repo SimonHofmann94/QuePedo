@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { CheckIcon, SparkleIcon, XIcon } from "@/components/ui/icons"
+import { getDisplayTranslation } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 interface GeneratedWord {
   term: string
@@ -18,14 +20,8 @@ interface GeneratedWord {
   synonyms: string[]
 }
 
-function getDisplayTranslation(translations: Record<string, string>): string {
-  if (translations.de) return translations.de
-  if (translations.en) return translations.en
-  const keys = Object.keys(translations)
-  return keys.length > 0 ? translations[keys[0]] : ""
-}
-
 export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
+  const locale = useLocale()
   const [prompt, setPrompt] = useState("")
   const [count, setCount] = useState(5)
   const [isLoading, setIsLoading] = useState(false)
@@ -140,7 +136,7 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
                   <div className="font-display text-lg font-bold tracking-tight text-ink-800">
                     {word.term}
                   </div>
-                  <div className="text-sm text-ink-500">{getDisplayTranslation(word.translations)}</div>
+                  <div className="text-sm text-ink-500">{getDisplayTranslation(word.translations, locale)}</div>
                   {word.context_sentence && (
                     <div className="mt-1 text-xs italic text-ink-400">
                       {word.context_sentence}

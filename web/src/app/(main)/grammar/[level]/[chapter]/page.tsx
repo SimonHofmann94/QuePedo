@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { getChapter, getChapterExercises } from "@chingon/shared"
 import type { GrammarContentBlock } from "@chingon/shared"
+import { getLocale } from "next-intl/server"
 import { ChapterExercises } from "./ChapterExercises"
 import { isFreeGrammarLevel, isUserPremium } from "@/lib/premium"
 
@@ -21,7 +22,8 @@ export default async function GrammarChapterPage({
   const chapterId = parseInt(chapter, 10)
   if (isNaN(chapterId)) notFound()
 
-  const data = getChapter(level, chapterId)
+  const locale = await getLocale()
+  const data = getChapter(level, chapterId, locale)
   if (!data) notFound()
 
   // Premium gate — redirect to level page (which renders the lock card)

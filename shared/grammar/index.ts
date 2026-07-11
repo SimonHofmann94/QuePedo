@@ -19,7 +19,10 @@ import { grammarB1 } from './b1'
 import { grammarB2 } from './b2'
 import { grammarC1 } from './c1'
 import { grammarC2 } from './c2'
+import { grammarA1De } from './a1.de'
 
+// Base content = English explanations + Spanish examples. Used for en/es and as
+// the fallback for any locale whose translated file doesn't exist yet.
 export const grammarLevels: Record<string, GrammarLevel> = {
   a1: grammarA1,
   a2: grammarA2,
@@ -29,11 +32,31 @@ export const grammarLevels: Record<string, GrammarLevel> = {
   c2: grammarC2,
 }
 
-export function getGrammarLevel(level: string): GrammarLevel | null {
-  return grammarLevels[level.toLowerCase()] ?? null
+// Per-locale overrides. Add a1.de/a2.de/… files here as they are authored.
+// Files may be PARTIAL — a locale file only needs the chapters that have been
+// translated; the rest fall back to English base (see merge in getGrammarLevel).
+const grammarLevelsByLocale: Record<string, Record<string, GrammarLevel>> = {
+  de: { a1: grammarA1De },
 }
 
-export function getChapter(level: string, chapterId: number) {
-  const data = getGrammarLevel(level)
+// Returns base (English) content overlaid with any translated chapters for the
+// locale. Keeps the full base chapter set so a partial locale file never hides
+// existing chapters — untranslated chapters render in English until authored.
+export function getGrammarLevel(level: string, locale?: string): GrammarLevel | null {
+  const key = level.toLowerCase()
+  const base = grammarLevels[key] ?? null
+  const localized = locale ? grammarLevelsByLocale[locale]?.[key] : undefined
+  if (!localized) return base
+  if (!base) return localized
+  return {
+    ...localized,
+    chapters: base.chapters.map(
+      (ch) => localized.chapters.find((c) => c.id === ch.id) ?? ch,
+    ),
+  }
+}
+
+export function getChapter(level: string, chapterId: number, locale?: string) {
+  const data = getGrammarLevel(level, locale)
   return data?.chapters.find((c) => c.id === chapterId) ?? null
 }

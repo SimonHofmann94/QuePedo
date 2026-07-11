@@ -6,21 +6,8 @@ import { ArrowLeft, Lock, CheckCircle2 } from 'lucide-react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
-import { grammarA1 } from '@chingon/shared'
-import { grammarA2 } from '@chingon/shared'
-import { grammarB1 } from '@chingon/shared'
-import { grammarB2 } from '@chingon/shared'
-import { grammarC1 } from '@chingon/shared'
-import { grammarC2 } from '@chingon/shared'
-
-const LEVEL_DATA: Record<string, typeof grammarA1> = {
-  a1: grammarA1,
-  a2: grammarA2,
-  b1: grammarB1,
-  b2: grammarB2,
-  c1: grammarC1,
-  c2: grammarC2,
-}
+import { getGrammarLevel } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 
 const LEVEL_TITLES: Record<string, string> = {
   a1: 'A1 — Beginner',
@@ -33,10 +20,11 @@ const LEVEL_TITLES: Record<string, string> = {
 
 export default function GrammarChaptersScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { level } = useLocalSearchParams<{ level: string }>()
   const [completedChapters, setCompletedChapters] = useState<number[]>([])
 
-  const levelData = LEVEL_DATA[level || '']
+  const levelData = getGrammarLevel(level || '', i18n.language)
   const levelTitle = LEVEL_TITLES[level || ''] || level?.toUpperCase()
 
   const loadProgress = useCallback(async () => {

@@ -33,23 +33,15 @@ import {
   type ListenRepeatExercise,
   type WordResult,
 } from '@chingon/shared'
-import { grammarA1 } from '@chingon/shared'
-import { grammarA2 } from '@chingon/shared'
-import { grammarB1 } from '@chingon/shared'
-import { grammarB2 } from '@chingon/shared'
-import { grammarC1 } from '@chingon/shared'
-import { grammarC2 } from '@chingon/shared'
-
-const LEVEL_DATA: Record<string, typeof grammarA1> = {
-  a1: grammarA1, a2: grammarA2, b1: grammarB1,
-  b2: grammarB2, c1: grammarC1, c2: grammarC2,
-}
+import { getGrammarLevel } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 
 export default function SpeakingExercisePlayScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { level, chapter: chapterParam } = useLocalSearchParams<{ level: string; chapter: string }>()
   const chapterId = parseInt(chapterParam || '0', 10)
-  const chapterTitle = LEVEL_DATA[level?.toLowerCase() || 'a1']?.chapters.find((c) => c.id === chapterId)?.title || ''
+  const chapterTitle = getGrammarLevel(level?.toLowerCase() || 'a1', i18n.language)?.chapters.find((c) => c.id === chapterId)?.title || ''
 
   const [exercises, setExercises] = useState<SpeakingExercise[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)

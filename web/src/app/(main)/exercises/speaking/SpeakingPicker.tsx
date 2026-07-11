@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { ArrowLeft, Mic } from "lucide-react"
 import { getGrammarLevel } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const
 const LEVEL_COLOR: Record<string, string> = {
@@ -13,8 +14,9 @@ const LEVEL_COLOR: Record<string, string> = {
 
 export function SpeakingPicker() {
   const router = useRouter()
+  const locale = useLocale()
   const [selectedLevel, setSelectedLevel] = useState<(typeof LEVELS)[number]>("A1")
-  const levelData = getGrammarLevel(selectedLevel)
+  const levelData = getGrammarLevel(selectedLevel, locale)
 
   return (
     <div className="p-6 md:p-10">

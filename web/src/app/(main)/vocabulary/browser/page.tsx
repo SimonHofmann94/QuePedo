@@ -13,6 +13,8 @@ import {
   deleteMultipleVocabulary,
 } from "@/actions/vocabulary"
 import { UserVocabulary } from "@/types/schemas"
+import { getDisplayTranslation } from "@chingon/shared"
+import { useLocale } from "next-intl"
 
 type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2"
 
@@ -29,13 +31,6 @@ function levelFromDifficulty(d: number): Level {
   return (["A1", "A2", "B1", "B2", "C1"][Math.max(0, Math.min(4, d - 1))] as Level)
 }
 
-function getDisplay(translations: Record<string, string>): string {
-  if (translations?.de) return translations.de
-  if (translations?.en) return translations.en
-  const k = Object.keys(translations || {})
-  return k.length > 0 ? translations[k[0]] : ""
-}
-
 function translationsMatch(translations: Record<string, string>, search: string): boolean {
   if (!translations || typeof translations !== "object") return false
   return Object.values(translations).some((t) =>
@@ -44,6 +39,7 @@ function translationsMatch(translations: Record<string, string>, search: string)
 }
 
 export default function VocabularyBrowserPage() {
+  const locale = useLocale()
   const router = useRouter()
   const [vocab, setVocab] = useState<UserVocabulary[]>([])
   const [search, setSearch] = useState("")
@@ -258,7 +254,7 @@ export default function VocabularyBrowserPage() {
                         {w.term}
                       </td>
                       <td className="px-4 py-3 text-sm text-ink-600">
-                        {getDisplay(w.translations)}
+                        {getDisplayTranslation(w.translations, locale)}
                       </td>
                       <td className="px-4 py-3">
                         <div className="flex flex-wrap gap-1.5">

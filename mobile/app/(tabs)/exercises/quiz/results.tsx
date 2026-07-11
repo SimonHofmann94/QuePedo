@@ -6,9 +6,11 @@ import { Trophy, RotateCcw, Home, Target, TrendingUp, AlertTriangle } from 'luci
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { getDisplayTranslation, type QuizResult, type UserVocabulary } from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 
 export default function QuizResultsScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { results: resultsParam } = useLocalSearchParams<{ results: string }>()
   const [quizData, setQuizData] = useState<{ results: QuizResult[]; settings: any } | null>(null)
 
@@ -95,7 +97,7 @@ export default function QuizResultsScreen() {
               <View key={i} style={styles.reviewRow}>
                 <View style={styles.reviewMain}>
                   <Text style={styles.reviewTerm}>{word.term}</Text>
-                  <Text style={styles.reviewTranslation}>{getDisplayTranslation(word.translations)}</Text>
+                  <Text style={styles.reviewTranslation}>{getDisplayTranslation(word.translations, i18n.language)}</Text>
                 </View>
                 <View style={styles.diffRow}>
                   {[1, 2, 3, 4, 5].map(d => (
