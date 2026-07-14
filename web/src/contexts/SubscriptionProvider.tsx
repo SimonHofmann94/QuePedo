@@ -58,7 +58,11 @@ export function SubscriptionProvider({
 }: ProviderProps) {
   const supabase = useMemo(() => createClient(), [])
 
-  const [userId, setUserId] = useState<string | null>(null)
+  // undefined = auth not resolved yet, null = definitively signed out. The
+  // distinction matters: the bootstrap below must NOT clear the server-seeded
+  // `initialIsPremium` (which includes is_admin) while auth is still unknown —
+  // admins have no RevenueCat entitlement, so a premature reset was permanent.
+  const [userId, setUserId] = useState<string | null | undefined>(undefined)
   const [isPremium, setIsPremium] = useState<boolean>(initialIsPremium)
   const [isLoading, setIsLoading] = useState<boolean>(true)
   const [currentOffering, setCurrentOffering] = useState<Offering | null>(null)
@@ -95,7 +99,9 @@ export function SubscriptionProvider({
     let cancelled = false
 
     async function bootstrap() {
-      if (!userId) {
+      if (userId === undefined) return // auth still resolving — keep the seed
+      if (userId === null) {
+        // Real sign-out: now clearing premium is correct.
         setIsPremium(false)
         setCurrentOffering(null)
         setIsLoading(false)
