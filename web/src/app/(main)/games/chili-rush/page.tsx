@@ -13,8 +13,11 @@ import {
   type SubmitGameOutcome,
 } from "@chingon/shared"
 import { submitGameResult } from "@/actions/games"
-import { useGameWords } from "../useGameWords"
+import { useGameWords, useVocabSource } from "../useGameWords"
+import { VocabPicker } from "../VocabPicker"
 import { ReadyCard, ResultCard } from "../ResultCard"
+import { playCorrect, playWrong, playCombo } from "../sounds"
+import { Burst, Shake, useReducedMotion } from "../juice"
 
 const CFG = GAME_CONFIG.chili_rush
 const BASKET_COLORS = ["jade", "cielo", "maiz"] as const
@@ -24,8 +27,15 @@ function fallMs(speedLevel: number): number {
   return Math.max(1400, 4200 - (speedLevel - 1) * 500)
 }
 
+/** Deterministic per-drop horizontal spawn (30–70%) — no extra state. */
+function spawnLeft(queueIndex: number): number {
+  return 30 + ((queueIndex * 47) % 41)
+}
+
 export default function ChiliRushPage() {
-  const { pool, error } = useGameWords(CFG.minWords)
+  const [vocabSource, setVocabSource] = useVocabSource("chili_rush")
+  const { pool, error } = useGameWords(CFG.minWords, vocabSource)
+  const reduced = useReducedMotion()
   const [state, setState] = useState<ChiliRushState | null>(null)
   const [elapsed, setElapsed] = useState(0)
   const [outcome, setOutcome] = useState<SubmitGameOutcome | null>(null)
@@ -94,6 +104,7 @@ export default function ChiliRushPage() {
         <ReadyCard
           emoji="🌶"
           instructions="Las palabras caen — toca la canasta con la traducción correcta antes de que lleguen al suelo. Tres vidas, 90 segundos, cada vez más rápido."
+          extra={<VocabPicker value={vocabSource} onChange={setVocabSource} />}
           onStart={() => start(pool)}
         />
       </GameShell>
@@ -108,42 +119,176 @@ export default function ChiliRushPage() {
   }
 
   const secondsLeft = Math.max(0, Math.ceil((CFG.sessionMs - elapsed) / 1000))
+  // Fire trail intensity: combo ×3 → 🔥, ×4 → 🔥🔥, ×5 → 🔥🔥🔥
+  const fireLevel = Math.max(0, Math.min(state.combo, CFG.comboCap) - 2)
+  const dropMs = fallMs(state.speedLevel)
+
+  // Sounds live in the event handlers (never in effect bodies). Correctness
+  // is known synchronously from the rendered drop, so feedback is instant.
+  // Guarding the blip with `elapsed` (250ms fresh) keeps this render-pure;
+  // `answer` still applies the precise clock before mutating state.
+  const tapBasket = (i: number) => {
+    if (!state.current || isOver(state, elapsed)) return
+    if (i === state.current.correctIndex) {
+      if (state.combo >= 2) playCombo(state.combo)
+      else playCorrect()
+    } else {
+      playWrong()
+    }
+    answer(i)
+  }
+  const wordLanded = () => {
+    if (!state.current || isOver(state, elapsed)) return
+    playWrong()
+    answer(null)
+  }
 
   return (
     <GameShell>
       {/* HUD */}
       <div className="mb-4 flex items-center justify-between">
-        <div className="text-xl">{"🌶".repeat(state.lives)}<span className="opacity-20">{"🌶".repeat(CFG.lives - state.lives)}</span></div>
-        <div className="font-mono text-sm font-bold text-ink-600">
-          {state.combo > 1 && <span className="mr-3 text-chili-500">×{state.combo} 🔥</span>}
+        {/* Lives — lost chilis burn out (shrink + fade + desaturate) */}
+        <div className="text-xl">
+          {Array.from({ length: CFG.lives }, (_, i) => (
+            <span
+              key={i}
+              className="inline-block transition-all duration-500"
+              style={
+                i < state.lives
+                  ? undefined
+                  : { opacity: 0.15, transform: "scale(0.6) rotate(20deg)", filter: "grayscale(1)" }
+              }
+            >
+              🌶
+            </span>
+          ))}
+        </div>
+        <div className={`font-mono text-sm font-bold ${secondsLeft <= 10 ? "text-rosa-500" : "text-ink-600"}`}>
+          {state.combo > 1 && (
+            <span
+              key={state.combo}
+              className="mr-3 inline-block text-chili-500"
+              style={reduced ? undefined : { animation: "hud-pop 0.3s ease-out" }}
+            >
+              ×{state.combo} 🔥
+            </span>
+          )}
           0:{String(secondsLeft).padStart(2, "0")}
         </div>
-        <div className="font-display text-2xl font-extrabold text-ink-800">{state.score}</div>
+        <div
+          key={state.score}
+          className="font-display text-2xl font-extrabold text-ink-800"
+          style={reduced ? undefined : { animation: "hud-pop 0.3s ease-out" }}
+        >
+          {state.score}
+        </div>
       </div>
 
-      {/* Play field */}
-      <div className="relative h-[420px] overflow-hidden rounded-[20px] border border-ink-100 bg-white shadow-sm">
-        <style>{`@keyframes chili-fall { from { top: -56px } to { top: calc(100% - 64px) } }`}</style>
-        {state.current && (
-          <div
-            key={state.queueIndex}
-            onAnimationEnd={() => answer(null)}
-            className="absolute left-1/2 -translate-x-1/2 rounded-[12px] border-2 border-chili-500 bg-white px-5 py-2.5 font-display text-xl font-extrabold text-ink-800 shadow-[0_3px_0_var(--chili-700)]"
-            style={{ animation: `chili-fall ${fallMs(state.speedLevel)}ms linear forwards` }}
-          >
-            {state.current.word.es}
-          </div>
-        )}
-      </div>
+      {/* Play field — shakes on every miss/wrong tap */}
+      <Shake trigger={state.misses}>
+        <div className="relative h-[420px] overflow-hidden rounded-[20px] border border-ink-100 bg-white shadow-sm">
+          <style>{`
+            @keyframes chili-fall { from { top: -56px } to { top: calc(100% - 64px) } }
+            @keyframes chili-wobble { 0%, 100% { transform: rotate(-2.5deg) } 50% { transform: rotate(2.5deg) } }
+            @keyframes danger-glow { 0%, 68% { opacity: 0 } 90%, 100% { opacity: 0.5 } }
+            @keyframes hud-pop { 0% { transform: scale(1) } 40% { transform: scale(1.4) } 100% { transform: scale(1) } }
+            @keyframes speed-flash { 0% { opacity: 0; transform: scale(0.6) } 15% { opacity: 1; transform: scale(1.1) } 35% { transform: scale(1) } 70% { opacity: 1; transform: scale(1) } 100% { opacity: 0; transform: scale(1) } }
+            @keyframes speed-flash-fade { 0% { opacity: 0 } 15%, 70% { opacity: 1 } 100% { opacity: 0 } }
+            @keyframes sun-rotate { from { transform: rotate(0) } to { transform: rotate(360deg) } }
+          `}</style>
 
-      {/* Baskets */}
-      <div className="mt-4 grid grid-cols-3 gap-3">
+          {/* Idle life: slow sunburst so the field never looks static */}
+          {!reduced && (
+            <div
+              aria-hidden
+              className="pointer-events-none absolute rounded-full"
+              style={{
+                width: 560,
+                height: 560,
+                left: "calc(50% - 280px)",
+                top: "calc(50% - 280px)",
+                background: "repeating-conic-gradient(var(--maiz-400) 0deg 10deg, transparent 10deg 26deg)",
+                opacity: 0.07,
+                animation: "sun-rotate 90s linear infinite",
+              }}
+            />
+          )}
+
+          {/* Danger glow — same duration/key as the drop, so it fades in
+              over the last ~30% of the fall with zero JS ticking */}
+          {state.current && (
+            <div
+              key={`danger-${state.queueIndex}`}
+              aria-hidden
+              className="pointer-events-none absolute inset-x-0 bottom-0 h-28 opacity-0"
+              style={{
+                background: "linear-gradient(to top, var(--rosa-500), transparent)",
+                animation: `danger-glow ${dropMs}ms linear forwards`,
+              }}
+            />
+          )}
+
+          {/* Falling word — varied spawn X, wobble, fire trail at combo ≥ 3 */}
+          {state.current && (
+            <div
+              key={state.queueIndex}
+              onAnimationEnd={(e) => {
+                if (e.target === e.currentTarget) wordLanded()
+              }}
+              className="absolute -translate-x-1/2"
+              style={{
+                left: `${spawnLeft(state.queueIndex)}%`,
+                animation: `chili-fall ${dropMs}ms linear forwards`,
+              }}
+            >
+              {fireLevel > 0 && (
+                <div aria-hidden className="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-base">
+                  {"🔥".repeat(fireLevel)}
+                </div>
+              )}
+              <div
+                className="rounded-[12px] border-2 border-chili-500 bg-white px-5 py-2.5 font-display text-xl font-extrabold text-ink-800"
+                style={{
+                  boxShadow:
+                    fireLevel > 0
+                      ? `0 3px 0 var(--chili-700), 0 0 ${8 + fireLevel * 8}px var(--maiz-400)`
+                      : "0 3px 0 var(--chili-700)",
+                  animation: reduced ? undefined : "chili-wobble 1s ease-in-out infinite",
+                }}
+              >
+                {state.current.word.es}
+              </div>
+            </div>
+          )}
+
+          {/* Speed level up — interstitial flash, remounts per level */}
+          {state.speedLevel > 1 && (
+            <div
+              key={`speed-${state.speedLevel}`}
+              className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center"
+            >
+              <span
+                className="font-display text-4xl font-extrabold text-chili-500 opacity-0"
+                style={{
+                  textShadow: "0 3px 0 var(--maiz-400)",
+                  animation: `${reduced ? "speed-flash-fade" : "speed-flash"} 1.1s ease-out forwards`,
+                }}
+              >
+                ¡Más rápido!
+              </span>
+            </div>
+          )}
+        </div>
+      </Shake>
+
+      {/* Baskets — mini papel-picado burst on every catch */}
+      <div className="relative mt-4 grid grid-cols-3 gap-3">
         {state.current?.options.map((label, i) => (
           <button
             key={`${state.queueIndex}-${i}`}
             type="button"
-            onClick={() => answer(i)}
-            className="rounded-[14px] px-3 py-4 font-display text-base font-bold text-white transition-transform duration-100 active:translate-y-1 active:shadow-none"
+            onClick={() => tapBasket(i)}
+            className="rounded-[14px] px-3 py-4 font-display text-base font-bold text-white transition-transform duration-100 active:translate-y-1 active:shadow-none!"
             style={{
               background: `var(--${BASKET_COLORS[i]}-500)`,
               boxShadow: `0 4px 0 var(--${BASKET_COLORS[i]}-700)`,
@@ -152,6 +297,7 @@ export default function ChiliRushPage() {
             🧺 {label}
           </button>
         ))}
+        <Burst trigger={state.catches} count={10} />
       </div>
     </GameShell>
   )

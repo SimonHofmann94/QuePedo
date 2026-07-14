@@ -13,8 +13,11 @@ import {
   type SubmitGameOutcome,
 } from "@chingon/shared"
 import { submitGameResult } from "@/actions/games"
-import { useGameWords } from "../useGameWords"
+import { useGameWords, useVocabSource } from "../useGameWords"
+import { VocabPicker } from "../VocabPicker"
 import { ReadyCard, ResultCard } from "../ResultCard"
+import { playCorrect, playWrong, playFanfare, playTick } from "../sounds"
+import { Burst, useReducedMotion } from "../juice"
 
 const CFG = GAME_CONFIG.loteria
 
@@ -28,11 +31,17 @@ function speakSpanish(text: string) {
 }
 
 export default function LoteriaPage() {
-  const { pool, error } = useGameWords(CFG.boardSize)
+  const [vocabSource, setVocabSource] = useVocabSource("loteria")
+  const { pool, error } = useGameWords(CFG.boardSize, vocabSource)
+  const reduced = useReducedMotion()
   const [state, setState] = useState<LoteriaState | null>(null)
   const [outcome, setOutcome] = useState<SubmitGameOutcome | null>(null)
   const [wrongFlash, setWrongFlash] = useState<number | null>(null)
-  const [loteriaFlash, setLoteriaFlash] = useState(false)
+  // ¡LOTERÍA! beat: bonus shown on the overlay, `final` = board completed.
+  const [loteriaFlash, setLoteriaFlash] = useState<{ bonus: number; final: boolean } | null>(null)
+  const [burst, setBurst] = useState(0)
+  // Bumped per game so the board remounts and the deal-in replays on "Otra vez".
+  const [round, setRound] = useState(0)
   const startRef = useRef(0)
   const submittedRef = useRef(false)
   const lastPayloadRef = useRef<Parameters<typeof submitGameResult>[0] | null>(null)
@@ -40,7 +49,10 @@ export default function LoteriaPage() {
   const start = useCallback((p: SessionWord[]) => {
     submittedRef.current = false
     setOutcome(null)
+    setWrongFlash(null)
+    setLoteriaFlash(null)
     startRef.current = Date.now()
+    setRound((r) => r + 1)
     setState(initLoteria(p))
   }, [])
 
@@ -72,16 +84,30 @@ export default function LoteriaPage() {
     setState(next)
 
     if (next.wrongTaps > state.wrongTaps) {
+      playWrong()
       setWrongFlash(cellIndex)
       setTimeout(() => setWrongFlash(null), 400)
       return
     }
-    if (call) speakSpanish(call.es)
-    if (next.linesCompleted > state.linesCompleted) {
-      setLoteriaFlash(true)
-      setTimeout(() => setLoteriaFlash(false), 1200)
+
+    playCorrect()
+    // El cantor confirms the match — delayed so TTS doesn't collide with playCorrect().
+    if (call) setTimeout(() => speakSpanish(call.es), 450)
+
+    const gainedLines = next.linesCompleted - state.linesCompleted
+    if (gainedLines > 0) {
+      playFanfare()
+      setBurst((b) => b + 1)
+      setLoteriaFlash({ bonus: gainedLines * CFG.lineBonus, final: next.over })
+      setTimeout(() => setLoteriaFlash(null), next.over ? 1400 : 1100)
+    } else if (!next.over) {
+      // The next card gets flicked onto the table.
+      setTimeout(() => playTick(), 280)
     }
-    if (next.over) finish(next)
+
+    // Hold the final ¡LOTERÍA! beat before the result card takes over. The
+    // last tap always completes its row + column, so the overlay always fires.
+    if (next.over) setTimeout(() => finish(next), 1500)
   }
 
   if (error) return <GameShell><p className="text-center text-ink-500">{error}</p></GameShell>
@@ -92,6 +118,7 @@ export default function LoteriaPage() {
         <ReadyCard
           emoji="🎴"
           instructions="Como la lotería de siempre: se canta la traducción y tú encuentras la palabra en tu tabla de 4×4. Completa filas y columnas para el bonus ¡LOTERÍA!"
+          extra={<VocabPicker value={vocabSource} onChange={setVocabSource} />}
           onStart={() => start(pool)}
         />
       </GameShell>
@@ -109,50 +136,140 @@ export default function LoteriaPage() {
 
   return (
     <GameShell>
+      <style>{`
+        @keyframes loteria-deal {
+          0%   { opacity: 0; transform: translateY(18px) scale(0.8); }
+          70%  { opacity: 1; transform: translateY(-3px) scale(1.04); }
+          100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes bean-stamp {
+          0%   { opacity: 0; transform: scale(2.4) rotate(-25deg); }
+          55%  { opacity: 1; transform: scale(0.8) rotate(8deg); }
+          78%  { transform: scale(1.15) rotate(-3deg); }
+          100% { transform: scale(1) rotate(0deg); }
+        }
+        @keyframes loteria-shake {
+          0%, 100% { transform: translateX(0); }
+          20% { transform: translateX(-5px); }
+          40% { transform: translateX(4px); }
+          60% { transform: translateX(-3px); }
+          80% { transform: translateX(2px); }
+        }
+        @keyframes caller-pop {
+          0%   { opacity: 0; transform: translateY(-10px) scale(0.7); }
+          60%  { opacity: 1; transform: translateY(2px) scale(1.06); }
+          100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes score-pop {
+          0%   { transform: scale(1.5); }
+          100% { transform: scale(1); }
+        }
+        @keyframes loteria-pop {
+          0%   { opacity: 0; transform: scale(0.5) rotate(-5deg); }
+          60%  { opacity: 1; transform: scale(1.1) rotate(2deg); }
+          100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
+      `}</style>
+
       {/* HUD */}
       <div className="mb-4 flex items-center justify-between">
         <div className="font-mono text-xs uppercase tracking-wider text-ink-500">
           Carta {Math.min(state.callIndex + 1, CFG.boardSize)} / {CFG.boardSize}
         </div>
-        <div className="font-display text-2xl font-extrabold text-ink-800">{state.score}</div>
+        <div
+          key={state.score}
+          className="font-display text-2xl font-extrabold text-ink-800"
+          style={reduced ? undefined : { animation: "score-pop 0.25s ease-out" }}
+        >
+          {state.score}
+        </div>
       </div>
 
-      {/* Caller */}
-      <div className="mb-5 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full bg-jacaranda-500 px-6 py-3 font-display text-lg font-extrabold text-white shadow-[0_4px_0_var(--jacaranda-700)]">
-          <Volume2 className="h-5 w-5" />
-          {call?.display}
-        </span>
-        {loteriaFlash && (
-          <div className="mt-3 animate-bounce font-display text-2xl font-extrabold text-maiz-500">
-            ¡LOTERÍA! +{CFG.lineBonus}
-          </div>
+      {/* Caller — keyed per call so each new card pops in */}
+      <div className="mb-5 min-h-[52px] text-center">
+        {call && (
+          <span
+            key={`${round}-${state.callIndex}`}
+            className="inline-flex items-center gap-2 rounded-full bg-jacaranda-500 px-6 py-3 font-display text-lg font-extrabold text-white shadow-[0_4px_0_var(--jacaranda-700)]"
+            style={reduced ? undefined : { animation: "caller-pop 0.3s ease-out backwards" }}
+          >
+            <Volume2 className="h-5 w-5" />
+            {call.display}
+          </span>
         )}
       </div>
 
       {/* Board */}
-      <div className="grid grid-cols-4 gap-2.5">
-        {state.board.map((w, i) => {
-          const marked = state.marked[i]
-          const wrong = wrongFlash === i
-          return (
-            <button
-              key={w.id}
-              type="button"
-              disabled={marked}
-              onClick={() => tap(i)}
-              className={`rounded-[12px] border-2 px-2 py-4 text-center font-display text-sm font-bold leading-tight transition-all ${
-                marked
-                  ? "border-jade-500 bg-jade-500 text-white"
-                  : wrong
-                    ? "border-rosa-500 bg-rosa-50 text-rosa-600"
-                    : "border-ink-200 bg-white text-ink-800 shadow-[0_3px_0_var(--ink-200)] active:translate-y-0.5 active:shadow-none"
-              }`}
+      <div className="relative">
+        <div key={round} className="grid grid-cols-4 gap-2.5">
+          {state.board.map((w, i) => {
+            const marked = state.marked[i]
+            const wrong = wrongFlash === i
+            return (
+              // Deal-in lives on the wrapper so the shake (on the button)
+              // toggling off never re-triggers it.
+              <div
+                key={w.id}
+                style={
+                  reduced
+                    ? undefined
+                    : { animation: `loteria-deal 0.4s ease-out ${i * 45}ms backwards` }
+                }
+              >
+                <button
+                  type="button"
+                  disabled={marked}
+                  onClick={() => tap(i)}
+                  style={
+                    wrong && !reduced
+                      ? { animation: "loteria-shake 0.35s ease-in-out" }
+                      : undefined
+                  }
+                  className={`relative h-full w-full rounded-[12px] border-2 px-2 py-4 text-center font-display text-sm font-bold leading-tight transition-all ${
+                    marked
+                      ? "border-jade-500 bg-jade-50 text-ink-300"
+                      : wrong
+                        ? "border-rosa-500 bg-rosa-50 text-rosa-600"
+                        : "border-masa-300 bg-masa-50 text-ink-800 shadow-[0_3px_0_var(--masa-300),inset_0_0_0_2px_var(--masa-50),inset_0_0_0_3px_var(--masa-200)] active:translate-y-0.5 active:shadow-[inset_0_0_0_2px_var(--masa-50),inset_0_0_0_3px_var(--masa-200)]"
+                  }`}
+                >
+                  {/* Corner number, like the classic cards */}
+                  <span className="pointer-events-none absolute left-1.5 top-1 font-mono text-[9px] leading-none text-masa-500">
+                    {i + 1}
+                  </span>
+                  <span>{w.es}</span>
+                  {marked && (
+                    <span
+                      className="pointer-events-none absolute inset-0 flex items-center justify-center text-3xl drop-shadow-sm"
+                      style={reduced ? undefined : { animation: "bean-stamp 0.32s ease-out" }}
+                    >
+                      🫘
+                    </span>
+                  )}
+                </button>
+              </div>
+            )
+          })}
+        </div>
+
+        <Burst trigger={burst} count={state.over ? 48 : 28} />
+
+        {/* ¡LOTERÍA! beat — holds over the board while the fanfare plays */}
+        {loteriaFlash && (
+          <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+            <div
+              className="rounded-[20px] border-2 border-maiz-400 bg-ink-900/90 px-8 py-5 text-center"
+              style={reduced ? undefined : { animation: "loteria-pop 0.35s ease-out backwards" }}
             >
-              {marked ? "✓" : w.es}
-            </button>
-          )
-        })}
+              <div className="font-marker text-4xl text-maiz-400">¡LOTERÍA!</div>
+              <div className="mt-1 font-mono text-xs uppercase tracking-[2px] text-white">
+                {loteriaFlash.final
+                  ? `¡Tabla llena, chingón! +${loteriaFlash.bonus}`
+                  : `+${loteriaFlash.bonus} puntos`}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </GameShell>
   )
