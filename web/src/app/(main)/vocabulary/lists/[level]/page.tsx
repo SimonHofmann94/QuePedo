@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { LockIcon } from "@/components/ui/icons"
 import { getVocabList } from "@chingon/shared"
+import { isUserPremium } from "@/lib/premium"
 import { VocabListClient } from "./VocabListClient"
 
 const LEVEL_COLOR: Record<string, "chili" | "rosa" | "jade" | "cielo" | "maiz" | "jacaranda"> = {
@@ -52,9 +53,8 @@ export default async function VocabListLevelPage({
   const family = LEVEL_COLOR[list.level]
   const isFree = FREE_LEVELS.has(level.toLowerCase())
 
-  // Premium gate stub: in production, check user subscription via Supabase profile.
-  // For now we let A1+A2 through and show a soft paywall on B1+.
-  if (!isFree) {
+  // Premium gate: A1+A2 free; B1+ needs premium or admin (same as grammar).
+  if (!isFree && !(await isUserPremium())) {
     return (
       <div className="p-6 md:p-10">
         <div className="mx-auto max-w-2xl">

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { ProgressBar } from "@/components/ui/progress"
 import { LockIcon } from "@/components/ui/icons"
 import { getAllVocabLevels } from "@chingon/shared"
+import { isUserPremium } from "@/lib/premium"
 
 const LEVEL_COLOR: Record<string, "chili" | "rosa" | "jade" | "cielo" | "maiz" | "jacaranda"> = {
   A1: "chili", A2: "jade", B1: "cielo", B2: "maiz", C1: "jacaranda", C2: "rosa",
@@ -30,7 +31,8 @@ const LEVEL_DESC: Record<string, string> = {
 // MVP: A1 + A2 free as teaser, B1+ premium
 const FREE_LEVELS = new Set(["A1", "A2"])
 
-export default function VocabListsPage() {
+export default async function VocabListsPage() {
+  const premium = await isUserPremium()
   const lists = getAllVocabLevels()
 
   return (
@@ -86,7 +88,7 @@ export default function VocabListsPage() {
                     <Badge color={family} variant="soft" size="sm">
                       {list.wordCount} palabras
                     </Badge>
-                    {!isFree && !empty && (
+                    {!isFree && !empty && !premium && (
                       <Badge color="maiz" variant="solid" size="sm">
                         <LockIcon size={12} /> Premium
                       </Badge>
