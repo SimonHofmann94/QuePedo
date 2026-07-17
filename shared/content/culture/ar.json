@@ -1,0 +1,105 @@
+{
+  "id": "ar",
+  "flag": "🇦🇷",
+  "name": { "en": "Argentina", "de": "Argentinien" },
+  "nameEs": "Argentina",
+  "capital": "Buenos Aires",
+  "population": "46 M",
+  "intro": {
+    "en": "Argentina speaks Spanish with an Italian soul: millions of immigrants left behind big hand gestures, a singsong intonation and words like 'laburar'. Argentinians say 'vos' instead of 'tú' ('vos tenés'), pronounce 'll' and 'y' as 'sh' ('cashe' for calle) and sip mate all day like it's a national duty. This is the home of tango, Messi and the loudest football stadiums on Earth.",
+    "de": "Argentinien spricht Spanisch mit italienischer Seele: Millionen Einwanderer hinterließen große Gesten, eine singende Satzmelodie und Wörter wie 'laburar'. Argentinier sagen 'vos' statt 'tú' ('vos tenés'), sprechen 'll' und 'y' wie 'sch' ('Casche' statt calle) und schlürfen den ganzen Tag Mate, als wäre es Bürgerpflicht. Hier sind Tango, Messi und die lautesten Fußballstadien der Welt zu Hause."
+  },
+  "funFact": {
+    "en": "Argentina has more psychologists per capita than any other country — around 220 per 100,000 people, many of them clustered in Buenos Aires' 'Villa Freud' district. Therapy is a perfectly normal dinner-table topic.",
+    "de": "Argentinien hat mehr Psychologen pro Kopf als jedes andere Land — rund 220 pro 100.000 Einwohner, viele davon im Stadtteil 'Villa Freud' in Buenos Aires. Therapie ist dort ein ganz normales Tischgespräch."
+  },
+  "slang": [
+    {
+      "term": "che",
+      "meaning": { "en": "hey / mate — the little word that gave Che Guevara his nickname", "de": "hey / Alter — das Wörtchen, das Che Guevara seinen Spitznamen gab" },
+      "example": "Che, ¿me pasás la yerba?"
+    },
+    {
+      "term": "boludo / boluda",
+      "meaning": { "en": "dude — or idiot; insult and term of endearment, tone decides", "de": "Alter — oder Idiot; Beleidigung und Kosewort zugleich, der Ton entscheidet" },
+      "example": "¡Che, boludo, llegás tarde otra vez!"
+    },
+    {
+      "term": "quilombo",
+      "meaning": { "en": "mess, chaos, total disaster", "de": "Chaos, Durcheinander, das reinste Tohuwabohu" },
+      "example": "El tránsito hoy es un quilombo."
+    },
+    {
+      "term": "copado",
+      "meaning": { "en": "cool, great (people or things)", "de": "cool, super (für Menschen wie Dinge)" },
+      "example": "Tu amiga es re copada."
+    },
+    {
+      "term": "laburar",
+      "meaning": { "en": "to work — straight from Italian 'lavorare'", "de": "arbeiten — direkt vom italienischen 'lavorare'" },
+      "example": "Mañana laburo desde las siete."
+    },
+    {
+      "term": "mina",
+      "meaning": { "en": "girl, woman — classic lunfardo, the slang of old Buenos Aires", "de": "Mädchen, Frau — klassisches Lunfardo, der Slang des alten Buenos Aires" },
+      "example": "La mina del bar canta tango los viernes."
+    },
+    {
+      "term": "posta",
+      "meaning": { "en": "for real, no kidding — the Argentine seal of truth", "de": "echt jetzt, ohne Witz — das argentinische Wahrheitssiegel" },
+      "example": "Posta, es la mejor pizza de Buenos Aires."
+    },
+    {
+      "term": "re",
+      "meaning": { "en": "super, totally — glue it onto almost anything", "de": "mega, total — lässt sich an fast alles kleben" },
+      "example": "Estoy re cansado, che."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el colectivo", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: el autobús / el camión (Mexico)", "de": "anderswo: el autobús / el camión (Mexiko)" } },
+    { "es": "la frutilla", "translation": { "en": "strawberry", "de": "Erdbeere" }, "note": { "en": "elsewhere: la fresa", "de": "anderswo: la fresa" } },
+    { "es": "la palta", "translation": { "en": "avocado", "de": "Avocado" }, "note": { "en": "Spain & Mexico: el aguacate", "de": "Spanien & Mexiko: el aguacate" } },
+    { "es": "el subte", "translation": { "en": "subway (Buenos Aires metro)", "de": "U-Bahn (die Metro von Buenos Aires)" }, "note": { "en": "short for 'subterráneo' — elsewhere: el metro", "de": "kurz für 'subterráneo' — anderswo: el metro" } },
+    { "es": "la remera", "translation": { "en": "t-shirt", "de": "T-Shirt" }, "note": { "en": "elsewhere: la camiseta / la playera (Mexico)", "de": "anderswo: la camiseta / la playera (Mexiko)" } },
+    { "es": "la birome", "translation": { "en": "ballpoint pen", "de": "Kugelschreiber" }, "note": { "en": "named after László Bíró, who patented it in Buenos Aires — elsewhere: el bolígrafo", "de": "benannt nach László Bíró, der ihn in Buenos Aires patentierte — anderswo: el bolígrafo" } },
+    { "es": "el pibe / la piba", "translation": { "en": "kid, young person", "de": "Kind, junger Mensch" }, "note": { "en": "elsewhere: el chico — Maradona was 'el pibe de oro'", "de": "anderswo: el chico — Maradona war 'el pibe de oro'" } },
+    { "es": "el choclo", "translation": { "en": "corn on the cob", "de": "Maiskolben" }, "note": { "en": "from Quechua — in Mexico: el elote", "de": "aus dem Quechua — in Mexiko: el elote" } }
+  ],
+  "sights": [
+    {
+      "name": "Cataratas del Iguazú",
+      "description": { "en": "275 waterfalls thundering through rainforest — stand on the walkway over the Garganta del Diablo and feel the spray from 80 m below.", "de": "275 Wasserfälle donnern durch den Regenwald — steh auf dem Steg über der Garganta del Diablo und spür die Gischt aus 80 m Tiefe." },
+      "lat": -25.6953,
+      "lng": -54.4367,
+      "emoji": "💦"
+    },
+    {
+      "name": "Glaciar Perito Moreno",
+      "description": { "en": "A 60-m wall of blue ice in Patagonia that groans and calves house-sized chunks into the lake — one of the few glaciers still advancing.", "de": "Eine 60 m hohe Wand aus blauem Eis in Patagonien, die ächzt und hausgroße Brocken in den See kalbt — einer der wenigen Gletscher, die noch wachsen." },
+      "lat": -50.4667,
+      "lng": -73.05,
+      "emoji": "🧊"
+    },
+    {
+      "name": "Caminito, La Boca",
+      "description": { "en": "Buenos Aires' most photographed street: corrugated-iron houses painted in leftover ship paint, tango dancers on every corner.", "de": "Die meistfotografierte Straße von Buenos Aires: Wellblechhäuser, bemalt mit übrig gebliebener Schiffsfarbe, Tango-Tänzer an jeder Ecke." },
+      "lat": -34.6389,
+      "lng": -58.3631,
+      "emoji": "🎨"
+    },
+    {
+      "name": "El Obelisco",
+      "description": { "en": "The 67-m needle on Avenida 9 de Julio — one of the widest avenues in the world — where every Argentine football victory is celebrated.", "de": "Die 67-m-Nadel auf der Avenida 9 de Julio — einer der breitesten Straßen der Welt — hier wird jeder argentinische Fußballsieg gefeiert." },
+      "lat": -34.6037,
+      "lng": -58.3816,
+      "emoji": "🗼"
+    },
+    {
+      "name": "Cerro de los Siete Colores",
+      "description": { "en": "The 'Hill of Seven Colors' above the village of Purmamarca in the Quebrada de Humahuaca — mineral layers painted in red, ochre, green and violet.", "de": "Der 'Berg der sieben Farben' über dem Dorf Purmamarca in der Quebrada de Humahuaca — Mineralschichten in Rot, Ocker, Grün und Violett." },
+      "lat": -23.745,
+      "lng": -65.5,
+      "emoji": "🌈"
+    }
+  ]
+}

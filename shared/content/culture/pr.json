@@ -1,0 +1,104 @@
+{
+  "id": "pr",
+  "flag": "🇵🇷",
+  "name": { "en": "Puerto Rico", "de": "Puerto Rico" },
+  "nameEs": "Puerto Rico",
+  "capital": "San Juan",
+  "population": "3.2 M",
+  "intro": {
+    "en": "Puerto Rico lives in two languages at once: as a US territory, its Spanish slides in and out of English mid-sentence — you 'janguear' (hang out) with your 'corillo' and pay with 'chavos'. This small island gave the world reggaetón, from Daddy Yankee to Bad Bunny, who raps proudly in Puerto Rican slang. Boricuas — the islanders' own name for themselves, from the Taíno 'Borikén' — speak Caribbean Spanish at full speed, with the 'r' often melting into an 'l': 'puelto' instead of 'puerto'.",
+    "de": "Puerto Rico lebt in zwei Sprachen gleichzeitig: Als US-Territorium gleitet sein Spanisch mitten im Satz ins Englische — man geht mit dem 'corillo' zum 'janguear' (abhängen) und zahlt mit 'chavos'. Diese kleine Insel hat der Welt den Reggaetón geschenkt, von Daddy Yankee bis Bad Bunny, der stolz in puerto-ricanischem Slang rappt. Boricuas — so nennen sich die Insulaner selbst, nach dem Taíno-Namen 'Borikén' — sprechen karibisches Spanisch in vollem Tempo, wobei das 'r' gern zum 'l' schmilzt: 'puelto' statt 'puerto'."
+  },
+  "funFact": {
+    "en": "Puerto Ricans have been US citizens since 1917 — yet islanders still can't vote in presidential elections and have no voting member of Congress.",
+    "de": "Puerto-Ricaner sind seit 1917 US-Staatsbürger — trotzdem dürfen die Insulaner bis heute nicht bei Präsidentschaftswahlen abstimmen und haben kein stimmberechtigtes Mitglied im Kongress."
+  },
+  "slang": [
+    {
+      "term": "boricua",
+      "meaning": { "en": "Puerto Rican — a proud self-designation from the Taíno name 'Borikén'", "de": "Puerto-Ricaner(in) — stolze Selbstbezeichnung nach dem Taíno-Namen 'Borikén'" },
+      "example": "¡Yo soy boricua, pa' que tú lo sepas!"
+    },
+    {
+      "term": "¡Wepa!",
+      "meaning": { "en": "Yay! / Let's go! — pure bottled Puerto Rican joy", "de": "Jaaa! / Los geht's! — pure puerto-ricanische Lebensfreude in einem Wort" },
+      "example": "¡Wepa! ¡Ganamos el partido!"
+    },
+    {
+      "term": "janguear",
+      "meaning": { "en": "to hang out — Spanglish, straight from English 'to hang'", "de": "abhängen — Spanglish, direkt vom englischen 'to hang'" },
+      "example": "Vamos a janguear en la playa este fin de semana."
+    },
+    {
+      "term": "los chavos",
+      "meaning": { "en": "money", "de": "Geld, Kohle" },
+      "example": "No tengo chavos hasta el viernes."
+    },
+    {
+      "term": "el corillo",
+      "meaning": { "en": "your crew, your circle of friends", "de": "deine Clique, dein Freundeskreis" },
+      "example": "Salí con el corillo a La Placita."
+    },
+    {
+      "term": "al garete",
+      "meaning": { "en": "chaotic, out of control — originally a nautical term for drifting rudderless", "de": "chaotisch, außer Kontrolle — ursprünglich ein Seemannsausdruck für steuerloses Treiben" },
+      "example": "Sin plan y sin mapa, andamos al garete."
+    },
+    {
+      "term": "brutal",
+      "meaning": { "en": "awesome, amazing — a big compliment, not a complaint", "de": "der Hammer, großartig — ein dickes Kompliment, keine Beschwerde" },
+      "example": "El concierto de anoche estuvo brutal."
+    },
+    {
+      "term": "bregar",
+      "meaning": { "en": "to deal with it, to hustle through — practically a Puerto Rican philosophy of life", "de": "sich durchschlagen, mit etwas klarkommen — praktisch eine puerto-ricanische Lebensphilosophie" },
+      "example": "Hay que bregar con lo que hay."
+    }
+  ],
+  "vocabulary": [
+    { "es": "la china", "translation": { "en": "orange (the fruit)", "de": "Orange (die Frucht)" }, "note": { "en": "elsewhere: la naranja — 'jugo de china' confuses every newcomer", "de": "anderswo: la naranja — 'jugo de china' verwirrt jeden Neuankömmling" } },
+    { "es": "la guagua", "translation": { "en": "bus — but also an SUV or pickup", "de": "Bus — aber auch SUV oder Pickup" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } },
+    { "es": "el zafacón", "translation": { "en": "trash can", "de": "Mülleimer" }, "note": { "en": "elsewhere: el basurero / la papelera", "de": "anderswo: el basurero / la papelera" } },
+    { "es": "el mahón", "translation": { "en": "jeans", "de": "Jeans" }, "note": { "en": "elsewhere: los vaqueros / los jeans", "de": "anderswo: los vaqueros / los jeans" } },
+    { "es": "el chinchorro", "translation": { "en": "cheap roadside eatery or bar", "de": "einfache Straßenkneipe oder Imbiss am Straßenrand" }, "note": { "en": "'chinchorreo' is the beloved sport of hopping from one to the next", "de": "'chinchorreo' ist der beliebte Sport, von einem zum nächsten zu ziehen" } },
+    { "es": "la piragua", "translation": { "en": "shaved-ice cone with fruit syrup, sold from street carts", "de": "geschabtes Eis mit Fruchtsirup, verkauft an Straßenwagen" }, "note": { "en": "elsewhere a 'piragua' is a canoe", "de": "anderswo ist eine 'piragua' ein Kanu" } },
+    { "es": "el mofongo", "translation": { "en": "mashed fried plantains with garlic and pork crackling — the island's signature dish", "de": "gestampfte frittierte Kochbananen mit Knoblauch und Schweinekrusten — das Signature-Gericht der Insel" }, "note": { "en": "order it 'relleno' — stuffed with shrimp or chicken", "de": "bestell ihn 'relleno' — gefüllt mit Garnelen oder Hähnchen" } }
+  ],
+  "sights": [
+    {
+      "name": "Castillo San Felipe del Morro",
+      "description": { "en": "Six levels of Spanish fortress guarding San Juan Bay since 1539 — its huge lawn is now the city's favorite kite-flying spot.", "de": "Sechs Ebenen spanischer Festung bewachen die Bucht von San Juan seit 1539 — die riesige Rasenfläche davor ist heute der liebste Drachensteig-Platz der Stadt." },
+      "lat": 18.4711,
+      "lng": -66.124,
+      "emoji": "🏰"
+    },
+    {
+      "name": "El Yunque",
+      "description": { "en": "The only tropical rainforest in the US National Forest system — at night thousands of tiny coquí frogs sing the island's unofficial anthem.", "de": "Der einzige tropische Regenwald im US-Nationalforstsystem — nachts singen Tausende winziger Coquí-Frösche die inoffizielle Hymne der Insel." },
+      "lat": 18.2951,
+      "lng": -65.791,
+      "emoji": "🐸"
+    },
+    {
+      "name": "Bahía Mosquito, Vieques",
+      "description": { "en": "The brightest bioluminescent bay on Earth, Guinness-certified — every paddle stroke sets off swirls of glowing blue plankton.", "de": "Die hellste Biolumineszenz-Bucht der Erde, mit Guinness-Zertifikat — jeder Paddelschlag entfacht Wirbel aus blau leuchtendem Plankton." },
+      "lat": 18.0956,
+      "lng": -65.4438,
+      "emoji": "✨"
+    },
+    {
+      "name": "Playa Flamenco, Culebra",
+      "description": { "en": "A horseshoe of powder-white sand regularly ranked among the world's best beaches — complete with a rusting, graffiti-covered US Navy tank.", "de": "Ein Hufeisen aus puderweißem Sand, regelmäßig unter den besten Stränden der Welt gelistet — inklusive eines rostenden, graffitibedeckten US-Navy-Panzers." },
+      "lat": 18.3311,
+      "lng": -65.3172,
+      "emoji": "🏖️"
+    },
+    {
+      "name": "La Placita de Santurce",
+      "description": { "en": "A produce market by day that turns into San Juan's biggest open-air salsa party by night, Thursday through Saturday.", "de": "Tagsüber ein Obst- und Gemüsemarkt, nachts San Juans größte Open-Air-Salsa-Party — von Donnerstag bis Samstag." },
+      "lat": 18.4515,
+      "lng": -66.0672,
+      "emoji": "💃"
+    }
+  ]
+}

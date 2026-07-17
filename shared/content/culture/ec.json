@@ -1,0 +1,104 @@
+{
+  "id": "ec",
+  "flag": "🇪🇨",
+  "name": { "en": "Ecuador", "de": "Ecuador" },
+  "nameEs": "Ecuador",
+  "capital": "Quito",
+  "population": "18 M",
+  "intro": {
+    "en": "Ecuador squeezes the Amazon, the Andes and the Galápagos into a country smaller than Germany — and its Spanish is just as layered. Highland 'serranos' speak slowly and melodically, sprinkling in Kichwa words like 'ñaño' (brother) and 'chuchaqui' (hangover), while the coast around Guayaquil swallows syllables Caribbean-style. It's a polite, diminutive-loving Spanish: even a quick favor becomes 'un favorcito', and a coffee is always 'un cafecito'.",
+    "de": "Ecuador quetscht Amazonas, Anden und Galápagos in ein Land, das kleiner ist als Deutschland — und sein Spanisch ist genauso vielschichtig. Im Hochland sprechen die 'serranos' langsam und melodisch und streuen Kichwa-Wörter ein wie 'ñaño' (Bruder) oder 'chuchaqui' (Kater), während die Küste um Guayaquil Silben verschluckt wie in der Karibik. Ein höfliches, verniedlichungsverliebtes Spanisch: Selbst ein kleiner Gefallen wird zum 'favorcito', und Kaffee gibt's grundsätzlich als 'cafecito'."
+  },
+  "funFact": {
+    "en": "The summit of Ecuador's Chimborazo volcano is the farthest point from the Earth's center — because of the planet's equatorial bulge it beats Mount Everest by more than 2 km.",
+    "de": "Der Gipfel des ecuadorianischen Vulkans Chimborazo ist der am weitesten vom Erdmittelpunkt entfernte Punkt — dank der Äquatorwölbung der Erde schlägt er den Mount Everest um mehr als 2 km."
+  },
+  "slang": [
+    {
+      "term": "ñaño / ñaña",
+      "meaning": { "en": "brother / sister, also a close friend — straight from Kichwa", "de": "Bruder / Schwester, auch enger Freund — direkt aus dem Kichwa" },
+      "example": "Mi ñaño vive en Quito, cerca del centro."
+    },
+    {
+      "term": "¡Chuta!",
+      "meaning": { "en": "Damn! / Wow! — the all-purpose highland exclamation", "de": "Mist! / Wow! — der Allzweck-Ausruf des Hochlands" },
+      "example": "¡Chuta, me olvidé las llaves en la casa!"
+    },
+    {
+      "term": "de ley",
+      "meaning": { "en": "definitely, for sure — literally 'by law'", "de": "auf jeden Fall, sicher — wörtlich 'per Gesetz'" },
+      "example": "De ley vamos a la fiesta el sábado."
+    },
+    {
+      "term": "¡Achachay!",
+      "meaning": { "en": "Brrr, it's freezing! — pure Kichwa, heard all over the Andes", "de": "Brrr, ist das kalt! — pures Kichwa, in den ganzen Anden zu hören" },
+      "example": "¡Achachay! Está helando en Quito esta noche."
+    },
+    {
+      "term": "camellar",
+      "meaning": { "en": "to work hard, to grind — from 'camello' (camel), the workhorse", "de": "hart arbeiten, schuften — von 'camello' (Kamel), dem Lasttier" },
+      "example": "Mañana tengo que camellar todo el día."
+    },
+    {
+      "term": "la farra",
+      "meaning": { "en": "party, night out", "de": "Party, durchgemachte Nacht" },
+      "example": "La farra duró hasta las cinco de la mañana."
+    },
+    {
+      "term": "pluto / pluta",
+      "meaning": { "en": "drunk", "de": "betrunken" },
+      "example": "Después de la farra, todos estaban plutos."
+    },
+    {
+      "term": "¡Chendo!",
+      "meaning": { "en": "Just kidding! — classic Quito slang to defuse a joke", "de": "War nur Spaß! — klassischer Quito-Slang, um einen Witz zu entschärfen" },
+      "example": "Me comí todo tu almuerzo... ¡chendo!"
+    }
+  ],
+  "vocabulary": [
+    { "es": "la chompa", "translation": { "en": "jacket, sweater", "de": "Jacke, Pulli" }, "note": { "en": "elsewhere: la chaqueta / el suéter", "de": "anderswo: la chaqueta / el suéter" } },
+    { "es": "la guagua", "translation": { "en": "baby, small child", "de": "Baby, kleines Kind" }, "note": { "en": "from Kichwa 'wawa' — careful: in the Caribbean 'guagua' is the bus", "de": "aus dem Kichwa 'wawa' — Vorsicht: in der Karibik ist die 'guagua' der Bus" } },
+    { "es": "el chuchaqui", "translation": { "en": "hangover", "de": "Kater" }, "note": { "en": "elsewhere: la resaca — another gift from Kichwa", "de": "anderswo: la resaca — noch ein Geschenk aus dem Kichwa" } },
+    { "es": "el canguil", "translation": { "en": "popcorn — served with ceviche on the coast", "de": "Popcorn — an der Küste gibt's das zum Ceviche" }, "note": { "en": "elsewhere: las palomitas", "de": "anderswo: las palomitas" } },
+    { "es": "el cuy", "translation": { "en": "guinea pig — an Andean delicacy, roasted whole", "de": "Meerschweinchen — eine Anden-Delikatesse, im Ganzen gegrillt" }, "note": { "en": "yes, really — a festive dish since Inca times", "de": "ja, wirklich — ein Festessen seit der Inka-Zeit" } },
+    { "es": "la yapa", "translation": { "en": "a little extra the vendor throws in for free", "de": "die kleine Gratis-Zugabe vom Händler" }, "note": { "en": "from Kichwa 'yapay' (to add) — ask '¿y la yapita?' at the market", "de": "aus dem Kichwa 'yapay' (hinzufügen) — frag auf dem Markt nach '¿y la yapita?'" } },
+    { "es": "el mote", "translation": { "en": "hominy corn — big soft kernels served with everything in the Sierra", "de": "gekochter Weißmais — dicke, weiche Körner, die es in der Sierra zu allem gibt" }, "note": { "en": "the classic side for 'hornado' (roast pork)", "de": "die klassische Beilage zu 'hornado' (Spanferkel)" } }
+  ],
+  "sights": [
+    {
+      "name": "Islas Galápagos",
+      "description": { "en": "Darwin's living laboratory 1,000 km offshore — giant tortoises over 100 years old and wildlife with zero fear of humans.", "de": "Darwins lebendes Labor 1.000 km vor der Küste — Riesenschildkröten, älter als 100 Jahre, und Tiere ganz ohne Scheu vor Menschen." },
+      "lat": -0.9538,
+      "lng": -90.9656,
+      "emoji": "🐢"
+    },
+    {
+      "name": "Centro Histórico de Quito",
+      "description": { "en": "At 2,850 m the world's second-highest capital — its colonial center was one of the first two UNESCO World Heritage Sites ever declared, back in 1978.", "de": "Mit 2.850 m die zweithöchste Hauptstadt der Welt — ihre koloniale Altstadt war 1978 eine der allerersten beiden UNESCO-Welterbestätten überhaupt." },
+      "lat": -0.2202,
+      "lng": -78.5123,
+      "emoji": "⛪"
+    },
+    {
+      "name": "Volcán Cotopaxi",
+      "description": { "en": "A perfectly cone-shaped, glacier-capped active volcano at 5,897 m — on clear days it looms over Quito like a postcard backdrop.", "de": "Ein perfekt kegelförmiger, vergletscherter aktiver Vulkan mit 5.897 m — an klaren Tagen thront er über Quito wie eine Postkartenkulisse." },
+      "lat": -0.6805,
+      "lng": -78.4378,
+      "emoji": "🌋"
+    },
+    {
+      "name": "Laguna Quilotoa",
+      "description": { "en": "An emerald crater lake at 3,900 m, born of a massive eruption around 800 years ago — the rim hike takes your breath away, literally.", "de": "Ein smaragdgrüner Kratersee auf 3.900 m, entstanden durch einen gewaltigen Ausbruch vor rund 800 Jahren — die Kraterrand-Wanderung raubt dir den Atem, wortwörtlich." },
+      "lat": -0.8583,
+      "lng": -78.9004,
+      "emoji": "💧"
+    },
+    {
+      "name": "Mitad del Mundo",
+      "description": { "en": "The 'Middle of the World' monument north of Quito, where you straddle the equator — GPS later revealed the true line runs about 240 m away.", "de": "Das Denkmal zur 'Mitte der Welt' nördlich von Quito, wo du mit einem Bein in jeder Hemisphäre stehst — GPS zeigte später: Die echte Linie verläuft rund 240 m weiter." },
+      "lat": -0.0022,
+      "lng": -78.4558,
+      "emoji": "🌍"
+    }
+  ]
+}

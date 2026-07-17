@@ -1,0 +1,99 @@
+{
+  "id": "hn",
+  "flag": "🇭🇳",
+  "name": { "en": "Honduras", "de": "Honduras" },
+  "nameEs": "Honduras",
+  "capital": "Tegucigalpa",
+  "population": "11 M",
+  "intro": {
+    "en": "Hondurans proudly call themselves 'catrachos' — after General Xatruch, who drove out the American filibuster William Walker in 1856 — and they speak a laid-back Spanish built on 'vos'. The country stretches between two oceans: Garífuna drums and reef diving on the Caribbean side, quiet beaches on the Pacific. Add the Mayan ruins of Copán and mountains full of coffee, and you get Central America's most underrated country.",
+    "de": "Die Honduraner nennen sich stolz 'catrachos' — nach General Xatruch, der 1856 den amerikanischen Söldner William Walker vertrieb — und sprechen ein entspanntes Spanisch, das auf 'vos' gebaut ist. Das Land spannt sich zwischen zwei Ozeanen: Garífuna-Trommeln und Riff-Tauchen auf der Karibikseite, stille Strände am Pazifik. Dazu die Maya-Ruinen von Copán und Berge voller Kaffee — Zentralamerikas am meisten unterschätztes Land."
+  },
+  "funFact": {
+    "en": "In the town of Yoro it rains fish: after heavy storms in May or June, locals collect live fish from the streets. The 'Lluvia de Peces' has had its own festival since 1998 — and science still argues about the explanation.",
+    "de": "In der Stadt Yoro regnet es Fische: Nach schweren Unwettern im Mai oder Juni sammeln die Einwohner lebende Fische von der Straße. Die 'Lluvia de Peces' hat seit 1998 ihr eigenes Festival — und die Wissenschaft streitet bis heute über die Erklärung."
+  },
+  "slang": [
+    {
+      "term": "catracho / catracha",
+      "meaning": { "en": "Honduran — the proud self-designation, derived from General Florencio Xatruch", "de": "Honduraner(in) — die stolze Selbstbezeichnung, abgeleitet von General Florencio Xatruch" },
+      "example": "¡Soy catracho de pura cepa!"
+    },
+    {
+      "term": "maje",
+      "meaning": { "en": "dude, mate — but careful: with the wrong tone it means 'idiot'", "de": "Alter, Kumpel — aber Vorsicht: im falschen Ton heißt es 'Idiot'" },
+      "example": "¿Qué onda, maje? ¿Vamos al estadio?"
+    },
+    {
+      "term": "cheque",
+      "meaning": { "en": "OK, deal, all good — the catracho thumbs-up", "de": "okay, geht klar, alles gut — das Daumenhoch der Catrachos" },
+      "example": "—Nos vemos a las cinco. —¡Cheque!"
+    },
+    {
+      "term": "alero",
+      "meaning": { "en": "best friend, wingman — literally 'roof eave': friends under one roof", "de": "bester Freund, Kumpel — wörtlich 'Dachvorsprung': Freunde unter einem Dach" },
+      "example": "Mi alero y yo vamos a todos lados juntos."
+    },
+    {
+      "term": "pijudo",
+      "meaning": { "en": "great, awesome — vulgar root but an everyday compliment; not for job interviews", "de": "super, genial — vulgärer Wortstamm, aber Alltagskompliment; nichts fürs Bewerbungsgespräch" },
+      "example": "La playa de Tela está bien pijuda."
+    },
+    {
+      "term": "birria",
+      "meaning": { "en": "beer — in Mexico it's a meat stew, in Honduras it's a cold one", "de": "Bier — in Mexiko ein Fleischeintopf, in Honduras ein Kaltgetränk" },
+      "example": "Vamos por unas birrias después del trabajo."
+    },
+    {
+      "term": "macizo",
+      "meaning": { "en": "cool, solid, great", "de": "cool, stark, klasse" },
+      "example": "¡Macizo tu carro nuevo, maje!"
+    }
+  ],
+  "vocabulary": [
+    { "es": "la pulpería", "translation": { "en": "corner shop, mini grocery", "de": "Tante-Emma-Laden an der Ecke" }, "note": { "en": "elsewhere: la tienda", "de": "anderswo: la tienda" } },
+    { "es": "el pisto", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — shared with Guatemala and El Salvador", "de": "anderswo: el dinero — teilt sich Honduras mit Guatemala und El Salvador" } },
+    { "es": "el cipote / la cipota", "translation": { "en": "kid, child", "de": "Kind" }, "note": { "en": "elsewhere: el niño — also used in El Salvador", "de": "anderswo: el niño — auch in El Salvador gebräuchlich" } },
+    { "es": "la baleada", "translation": { "en": "folded flour tortilla with beans, cheese and cream — Honduras' favorite street food", "de": "gefaltete Weizentortilla mit Bohnen, Käse und Sahne — Honduras' liebstes Streetfood" }, "note": { "en": "uniquely Honduran — you won't find it anywhere else", "de": "gibt es nur in Honduras — sonst nirgends" } },
+    { "es": "el rapidito", "translation": { "en": "city minibus", "de": "Minibus im Stadtverkehr" }, "note": { "en": "elsewhere: el microbús", "de": "anderswo: el microbús" } },
+    { "es": "la charamusca", "translation": { "en": "frozen fruit treat in a little plastic bag", "de": "gefrorene Fruchtsüßigkeit im Plastikbeutelchen" }, "note": { "en": "in Mexico a 'charamusca' is a twisted hard candy", "de": "in Mexiko ist eine 'charamusca' ein gedrehtes Hartkaramell" } },
+    { "es": "el guaro", "translation": { "en": "booze, especially cheap sugarcane liquor", "de": "Schnaps, vor allem billiger Zuckerrohrschnaps" }, "note": { "en": "understood across Central America", "de": "wird in ganz Zentralamerika verstanden" } }
+  ],
+  "sights": [
+    {
+      "name": "Copán",
+      "description": { "en": "Mayan city famed for its intricately carved stelae and the Hieroglyphic Stairway — 63 steps carrying the longest known Mayan inscription.", "de": "Maya-Stadt, berühmt für ihre kunstvoll gemeißelten Stelen und die Hieroglyphentreppe — 63 Stufen mit der längsten bekannten Maya-Inschrift." },
+      "lat": 14.8372,
+      "lng": -89.1425,
+      "emoji": "🗿"
+    },
+    {
+      "name": "Roatán",
+      "description": { "en": "The largest of the Bay Islands, sitting right on the Mesoamerican Reef — the second-largest barrier reef on Earth, with English Creole spoken ashore.", "de": "Die größte der Islas de la Bahía, direkt am Mesoamerikanischen Riff — dem zweitgrößten Barriereriff der Erde; an Land spricht man englisches Kreol." },
+      "lat": 16.3178,
+      "lng": -86.5397,
+      "emoji": "🤿"
+    },
+    {
+      "name": "Utila",
+      "description": { "en": "Backpacker diving capital of the Caribbean — some of the world's cheapest scuba certifications, and whale sharks cruising past offshore.", "de": "Backpacker-Tauchhauptstadt der Karibik — einige der günstigsten Tauchscheine der Welt, und vor der Küste ziehen Walhaie vorbei." },
+      "lat": 16.09,
+      "lng": -86.89,
+      "emoji": "🦈"
+    },
+    {
+      "name": "Lago de Yojoa",
+      "description": { "en": "Honduras' largest natural lake, framed by two national parks — nearly 500 bird species, coffee farms and roadside stalls selling fried fish.", "de": "Honduras' größter Natursee, eingerahmt von zwei Nationalparks — fast 500 Vogelarten, Kaffeefarmen und Straßenstände mit gebratenem Fisch." },
+      "lat": 14.8667,
+      "lng": -87.9833,
+      "emoji": "🐦"
+    },
+    {
+      "name": "Cayos Cochinos",
+      "description": { "en": "A tiny protected archipelago of two islands and 13 cays — no cars, no roads, Garífuna villages and postcard-perfect reefs.", "de": "Winziger geschützter Archipel aus zwei Inseln und 13 Cays — keine Autos, keine Straßen, Garífuna-Dörfer und Riffe wie von der Postkarte." },
+      "lat": 15.9667,
+      "lng": -86.4833,
+      "emoji": "🏝️"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "ve",
+  "flag": "🇻🇪",
+  "name": { "en": "Venezuela", "de": "Venezuela" },
+  "nameEs": "Venezuela",
+  "capital": "Caracas",
+  "population": "28 M",
+  "intro": {
+    "en": "Venezuela speaks a warm Caribbean Spanish that makes everything small and dear: you don't drink a coffee, you drink a 'cafecito' — and even 'now' softens into 'ahorita'. Everyone is 'chamo' or 'pana', and 'chévere' makes everything cool — nowhere is the word used more lovingly than here. It's a country of superlatives: the world's tallest waterfall, the Caribbean's longest coastline, and the arepa, a corn pocket Venezuelans will defend against Colombia to their last breath.",
+    "de": "Venezuela spricht ein warmes karibisches Spanisch, das alles klein und liebenswert macht: Man trinkt keinen Kaffee, sondern ein 'cafecito' — und selbst 'jetzt' wird sanft zu 'ahorita'. Jeder ist 'chamo' oder 'pana', und 'chévere' macht alles cool — nirgends wird das Wort liebevoller benutzt als hier. Ein Land der Superlative: der höchste Wasserfall der Welt, die längste Karibikküste und die Arepa, ein Maisfladen, den Venezolaner bis zum letzten Atemzug gegen Kolumbien verteidigen."
+  },
+  "funFact": {
+    "en": "Angel Falls is named after US pilot Jimmie Angel, who crash-landed his plane on top of the tepui in 1937 while hunting for gold — the aircraft sat up there for 33 years before being airlifted out.",
+    "de": "Der Salto Ángel ist nach dem US-Piloten Jimmie Angel benannt, der 1937 auf Goldsuche mit seinem Flugzeug auf dem Tepui bruchlandete — die Maschine stand dort 33 Jahre, bevor sie ausgeflogen wurde."
+  },
+  "slang": [
+    {
+      "term": "chamo / chama",
+      "meaning": { "en": "dude, kid — the Venezuelan 'güey', used in every second sentence", "de": "Alter, Junge/Mädel — das venezolanische 'güey', in jedem zweiten Satz zu hören" },
+      "example": "¡Chamo, tienes que ver esto!"
+    },
+    {
+      "term": "chévere",
+      "meaning": { "en": "cool, great — the Caribbean's favorite word, nowhere more at home than in Venezuela", "de": "cool, super — das Lieblingswort der Karibik, nirgends mehr zu Hause als in Venezuela" },
+      "example": "La fiesta de anoche estuvo chévere."
+    },
+    {
+      "term": "pana",
+      "meaning": { "en": "close friend, buddy — 'ser pana' means being genuinely kind", "de": "enger Freund, Kumpel — 'ser pana' heißt auch, ehrlich nett zu sein" },
+      "example": "Él es mi pana desde el colegio."
+    },
+    {
+      "term": "burda",
+      "meaning": { "en": "very, a lot — 'burda de bueno' means really good", "de": "sehr, total — 'burda de bueno' heißt richtig gut" },
+      "example": "Esa película está burda de buena."
+    },
+    {
+      "term": "vaina",
+      "meaning": { "en": "thing, stuff — the Swiss army knife of Venezuelan Spanish", "de": "Ding, Zeug — das Schweizer Taschenmesser des venezolanischen Spanisch" },
+      "example": "Pásame esa vaina que está en la mesa."
+    },
+    {
+      "term": "¡Épale!",
+      "meaning": { "en": "Hey! / Hi there! — the friendly attention-grabber", "de": "Hey! / Na du! — der freundliche Aufmerksamkeits-Wecker" },
+      "example": "¡Épale chamo! ¿Cómo estás?"
+    },
+    {
+      "term": "sifrino / sifrina",
+      "meaning": { "en": "posh, preppy, stuck-up", "de": "schickimicki, versnobt" },
+      "example": "Esa zona de Caracas es de gente sifrina."
+    },
+    {
+      "term": "¡Qué ladilla!",
+      "meaning": { "en": "What a drag! — literally 'what a crab louse'", "de": "Wie nervig! — wörtlich 'was für eine Filzlaus'" },
+      "example": "¡Qué ladilla este tráfico, chamo!"
+    }
+  ],
+  "vocabulary": [
+    { "es": "la arepa", "translation": { "en": "grilled corn pocket, stuffed with almost anything — Venezuela's daily bread", "de": "gegrillte Maistasche, mit fast allem gefüllt — Venezuelas tägliches Brot" }, "note": { "en": "Colombia makes them flatter and often unfilled — don't say that too loudly in Caracas", "de": "in Kolumbien sind sie flacher und oft ungefüllt — sag das in Caracas lieber nicht zu laut" } },
+    { "es": "el cambur", "translation": { "en": "banana", "de": "Banane" }, "note": { "en": "elsewhere: el plátano / la banana", "de": "anderswo: el plátano / la banana" } },
+    { "es": "las caraotas", "translation": { "en": "black beans, part of the national dish 'pabellón criollo'", "de": "schwarze Bohnen, Teil des Nationalgerichts 'pabellón criollo'" }, "note": { "en": "elsewhere: los frijoles", "de": "anderswo: los frijoles" } },
+    { "es": "la franela", "translation": { "en": "t-shirt", "de": "T-Shirt" }, "note": { "en": "elsewhere: la camiseta", "de": "anderswo: la camiseta" } },
+    { "es": "las cotufas", "translation": { "en": "popcorn", "de": "Popcorn" }, "note": { "en": "elsewhere: las palomitas — allegedly from English 'corn to fry'", "de": "anderswo: las palomitas — angeblich vom englischen 'corn to fry'" } },
+    { "es": "la lechosa", "translation": { "en": "papaya", "de": "Papaya" }, "note": { "en": "elsewhere: la papaya", "de": "anderswo: la papaya" } },
+    { "es": "los tequeños", "translation": { "en": "deep-fried cheese sticks — the star of every Venezuelan party", "de": "frittierte Käsestangen — der Star jeder venezolanischen Party" }, "note": { "en": "named after the town of Los Teques", "de": "benannt nach der Stadt Los Teques" } },
+    { "es": "la camionetica", "translation": { "en": "small city bus", "de": "kleiner Stadtbus" }, "note": { "en": "elsewhere: el autobús — literally 'little truck'", "de": "anderswo: el autobús — wörtlich 'Lastwägelchen'" } }
+  ],
+  "sights": [
+    {
+      "name": "Salto Ángel",
+      "description": { "en": "The world's tallest waterfall — 979 m of water free-falling off Auyán-tepui, so high that much of it turns to mist before ever hitting the ground.", "de": "Der höchste Wasserfall der Welt — 979 m Wasser im freien Fall vom Auyán-Tepui, so hoch, dass ein Großteil zu Nebel wird, bevor er je den Boden erreicht." },
+      "lat": 5.9701,
+      "lng": -62.5362,
+      "emoji": "💦"
+    },
+    {
+      "name": "Monte Roraima",
+      "description": { "en": "A flat-topped tepui at the triple border with Brazil and Guyana — its otherworldly plateau inspired Arthur Conan Doyle's 'The Lost World'.", "de": "Ein Tafelberg am Dreiländereck mit Brasilien und Guyana — sein außerirdisch wirkendes Plateau inspirierte Arthur Conan Doyles 'Die vergessene Welt'." },
+      "lat": 5.1433,
+      "lng": -60.7625,
+      "emoji": "⛰️"
+    },
+    {
+      "name": "Los Roques",
+      "description": { "en": "An archipelago of some 350 islets and cays with water so clear that anchored boats seem to hover in mid-air.", "de": "Ein Archipel aus rund 350 Inselchen und Riffen mit so klarem Wasser, dass ankernde Boote in der Luft zu schweben scheinen." },
+      "lat": 11.9506,
+      "lng": -66.6772,
+      "emoji": "🏝️"
+    },
+    {
+      "name": "Relámpago del Catatumbo",
+      "description": { "en": "Where the Catatumbo river meets Lake Maracaibo, lightning flashes up to 260 nights a year — a natural lighthouse sailors have navigated by for centuries.", "de": "Wo der Catatumbo in den Maracaibo-See mündet, blitzt es bis zu 260 Nächte im Jahr — ein natürlicher Leuchtturm, nach dem Seefahrer seit Jahrhunderten navigieren." },
+      "lat": 9.34,
+      "lng": -71.73,
+      "emoji": "⚡"
+    },
+    {
+      "name": "Teleférico de Mérida",
+      "description": { "en": "The world's highest and longest cable car — 12.5 km from Mérida up to Pico Espejo at 4,765 m in the Venezuelan Andes.", "de": "Die höchste und längste Seilbahn der Welt — 12,5 km von Mérida hinauf zum Pico Espejo auf 4.765 m in den venezolanischen Anden." },
+      "lat": 8.5897,
+      "lng": -71.1445,
+      "emoji": "🚠"
+    }
+  ]
+}

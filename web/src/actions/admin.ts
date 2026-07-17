@@ -1,6 +1,11 @@
 "use server"
 
 import { createClient } from "@/utils/supabase/server"
+import {
+  cultureCountrySchema,
+  getCultureCountry,
+  type CultureCountry,
+} from "@chingon/shared"
 
 // Admin surface — every RPC re-checks is_admin server-side (022), so these
 // wrappers stay thin: session → rpc → typed result.
@@ -78,4 +83,47 @@ export async function adminStats(): Promise<AdminStats | null> {
     return null
   }
   return data as AdminStats
+}
+
+// ── Culture CMS ──────────────────────────────────────────────────────────
+// Editor initial state: DB override if present, else the bundled base.
+// Saves are zod-validated here, then hard-gated again in the RPC (admin
+// check, id match, size cap). Rows materialize lazily on first save.
+
+export async function adminGetCultureCountry(
+  id: string,
+): Promise<{ country: CultureCountry; source: "db" | "bundle" } | null> {
+  const supabase = await createClient()
+  const { data } = await supabase
+    .from("culture_content")
+    .select("content")
+    .eq("id", id.toLowerCase())
+    .maybeSingle()
+  if (data?.content) {
+    const parsed = cultureCountrySchema.safeParse(data.content)
+    if (parsed.success) return { country: parsed.data as CultureCountry, source: "db" }
+  }
+  const bundled = getCultureCountry(id)
+  return bundled ? { country: bundled, source: "bundle" } : null
+}
+
+export async function adminSaveCultureCountry(
+  input: unknown,
+): Promise<{ success: boolean; error?: string }> {
+  const parsed = cultureCountrySchema.safeParse(input)
+  if (!parsed.success) {
+    const issue = parsed.error.issues[0]
+    return { success: false, error: `Inválido: ${issue.path.join(".")} — ${issue.message}` }
+  }
+
+  const supabase = await createClient()
+  const { data, error } = await supabase.rpc("admin_upsert_culture_content", {
+    p_id: parsed.data.id,
+    p_content: parsed.data,
+  })
+  if (error) {
+    console.error("[admin] save culture error:", error)
+    return { success: false, error: "No se pudo guardar el contenido" }
+  }
+  return { success: data === true }
 }

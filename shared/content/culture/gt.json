@@ -1,0 +1,105 @@
+{
+  "id": "gt",
+  "flag": "🇬🇹",
+  "name": { "en": "Guatemala", "de": "Guatemala" },
+  "nameEs": "Guatemala",
+  "capital": "Ciudad de Guatemala",
+  "population": "18 M",
+  "intro": {
+    "en": "Guatemala is the heart of the Mayan world: 22 Mayan languages are spoken here alongside Spanish, and you'll hear them mingling at every market. Guatemalans proudly call themselves 'chapines' and say 'vos' instead of 'tú'. Their Spanish sounds gentle and courteous, sprinkled with words from Nahuatl and Mayan languages — and between volcano-ringed lakes and colonial Antigua, the country packs an absurd amount of beauty into a small space.",
+    "de": "Guatemala ist das Herz der Maya-Welt: Neben Spanisch werden hier 22 Maya-Sprachen gesprochen, und auf jedem Markt hörst du sie durcheinander. Die Guatemalteken nennen sich stolz 'chapines' und sagen 'vos' statt 'tú'. Ihr Spanisch klingt sanft und höflich, gespickt mit Wörtern aus Nahuatl und Maya-Sprachen — und zwischen vulkanumringten Seen und dem kolonialen Antigua packt das Land absurd viel Schönheit auf kleinen Raum."
+  },
+  "funFact": {
+    "en": "Guatemala's currency is named after a bird: the quetzal. The Maya traded with its shimmering tail feathers — the birds were caught, plucked and released, because killing a quetzal was punishable by death.",
+    "de": "Guatemalas Währung ist nach einem Vogel benannt: dem Quetzal. Die Maya handelten mit seinen schillernden Schwanzfedern — die Vögel wurden gefangen, gerupft und freigelassen, denn einen Quetzal zu töten stand unter Todesstrafe."
+  },
+  "slang": [
+    {
+      "term": "chilero",
+      "meaning": { "en": "cool, great — the chapín all-purpose compliment", "de": "cool, klasse — das Allzweck-Kompliment der Chapines" },
+      "example": "¡Qué chilero está tu carro, vos!"
+    },
+    {
+      "term": "cerote",
+      "meaning": { "en": "dude, buddy — between close friends only; literally vulgar, so handle with care", "de": "Alter, Kumpel — nur unter engen Freunden; wörtlich vulgär, also mit Vorsicht genießen" },
+      "example": "¿Qué onda, cerote? ¡Tanto tiempo sin verte!"
+    },
+    {
+      "term": "patojo / patoja",
+      "meaning": { "en": "kid, boy/girl — Guatemala's own word for children", "de": "Kind, Junge/Mädchen — Guatemalas ureigenes Wort für Kinder" },
+      "example": "Los patojos están jugando en el parque."
+    },
+    {
+      "term": "¡Aguas!",
+      "meaning": { "en": "Watch out! — just like in Mexico", "de": "Vorsicht! — genau wie in Mexiko" },
+      "example": "¡Aguas con esa camioneta, vos!"
+    },
+    {
+      "term": "cabal",
+      "meaning": { "en": "exactly, spot on — the perfect one-word agreement", "de": "genau, exakt — die perfekte Ein-Wort-Zustimmung" },
+      "example": "—¿Costó cien quetzales? —Cabal."
+    },
+    {
+      "term": "shute",
+      "meaning": { "en": "nosy — someone who sticks their nose into everything", "de": "neugierig — jemand, der seine Nase überall reinsteckt" },
+      "example": "No seás shute, eso no te importa."
+    },
+    {
+      "term": "clavo",
+      "meaning": { "en": "problem, embarrassing mess (literally 'nail')", "de": "Problem, peinliche Angelegenheit (wörtlich 'Nagel')" },
+      "example": "Se me olvidó su cumpleaños — ¡qué gran clavo!"
+    },
+    {
+      "term": "chispudo",
+      "meaning": { "en": "sharp, quick-witted (from 'chispa', spark)", "de": "aufgeweckt, helle (von 'chispa', Funke)" },
+      "example": "Esa patoja es bien chispuda, aprende rapidísimo."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el pisto", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — 'pisto' also works in El Salvador and Honduras", "de": "anderswo: el dinero — 'pisto' funktioniert auch in El Salvador und Honduras" } },
+    { "es": "la camioneta", "translation": { "en": "bus — the famous brightly painted 'chicken buses'", "de": "Bus — die berühmten bunt bemalten 'Chicken Buses'" }, "note": { "en": "elsewhere a 'camioneta' is a pickup truck or van", "de": "anderswo ist eine 'camioneta' ein Pickup oder Kleinbus" } },
+    { "es": "el chucho", "translation": { "en": "dog", "de": "Hund" }, "note": { "en": "elsewhere: el perro — in Guatemala 'chucho' also means glutton", "de": "anderswo: el perro — in Guatemala heißt 'chucho' auch Vielfraß" } },
+    { "es": "la chumpa", "translation": { "en": "jacket", "de": "Jacke" }, "note": { "en": "elsewhere: la chaqueta", "de": "anderswo: la chaqueta" } },
+    { "es": "la pajilla", "translation": { "en": "drinking straw", "de": "Strohhalm" }, "note": { "en": "elsewhere: la pajita, in Mexico: el popote", "de": "anderswo: la pajita, in Mexiko: el popote" } },
+    { "es": "los poporopos", "translation": { "en": "popcorn", "de": "Popcorn" }, "note": { "en": "elsewhere: las palomitas", "de": "anderswo: las palomitas" } },
+    { "es": "el colocho", "translation": { "en": "curl; curly-haired person", "de": "Locke; Lockenkopf" }, "note": { "en": "elsewhere: el rizo", "de": "anderswo: el rizo" } },
+    { "es": "la refacción", "translation": { "en": "snack, light meal", "de": "Snack, Zwischenmahlzeit" }, "note": { "en": "elsewhere: la merienda — in most countries 'refacción' means spare part", "de": "anderswo: la merienda — in den meisten Ländern ist eine 'refacción' ein Ersatzteil" } }
+  ],
+  "sights": [
+    {
+      "name": "Tikal",
+      "description": { "en": "Mayan metropolis deep in the jungle — Temple IV rises 70 m above the canopy, howler monkeys provide the soundtrack, and Star Wars filmed a rebel base here.", "de": "Maya-Metropole tief im Dschungel — Tempel IV ragt 70 m über die Baumkronen, Brüllaffen liefern den Soundtrack, und Star Wars drehte hier eine Rebellenbasis." },
+      "lat": 17.222,
+      "lng": -89.6237,
+      "emoji": "🛕"
+    },
+    {
+      "name": "Lago de Atitlán",
+      "description": { "en": "A lake in a volcanic caldera, ringed by three volcanoes and a dozen Mayan villages — Aldous Huxley thought it out-beautified Lake Como.", "de": "Ein See in einer Vulkan-Caldera, umringt von drei Vulkanen und einem Dutzend Maya-Dörfern — Aldous Huxley fand ihn schöner als den Comer See." },
+      "lat": 14.6907,
+      "lng": -91.2025,
+      "emoji": "🌋"
+    },
+    {
+      "name": "Antigua Guatemala",
+      "description": { "en": "Colonial capital wrecked by earthquakes in 1773 and never fully rebuilt — pastel facades, cobblestones and the Santa Catalina arch with Volcán de Agua looming behind it.", "de": "Koloniale Hauptstadt, 1773 von Erdbeben zerstört und nie ganz wiederaufgebaut — Pastellfassaden, Kopfsteinpflaster und der Santa-Catalina-Bogen mit dem Volcán de Agua dahinter." },
+      "lat": 14.5586,
+      "lng": -90.7295,
+      "emoji": "⛪"
+    },
+    {
+      "name": "Semuc Champey",
+      "description": { "en": "Turquoise limestone pools stacked in the jungle — the río Cahabón thunders through a cave directly beneath the natural bridge you're swimming on.", "de": "Türkisfarbene Kalksteinbecken mitten im Dschungel — der Río Cahabón donnert durch eine Höhle direkt unter der Naturbrücke, auf der du badest." },
+      "lat": 15.5333,
+      "lng": -89.956,
+      "emoji": "🏞️"
+    },
+    {
+      "name": "Chichicastenango",
+      "description": { "en": "One of Latin America's largest indigenous markets (Thursdays and Sundays) — on the steps of Santo Tomás, Mayan rituals blend with Catholic mass.", "de": "Einer der größten indigenen Märkte Lateinamerikas (donnerstags und sonntags) — auf den Stufen von Santo Tomás vermischen sich Maya-Rituale mit katholischer Messe." },
+      "lat": 14.9433,
+      "lng": -91.1111,
+      "emoji": "🧺"
+    }
+  ]
+}

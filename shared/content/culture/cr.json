@@ -1,0 +1,105 @@
+{
+  "id": "cr",
+  "flag": "🇨🇷",
+  "name": { "en": "Costa Rica", "de": "Costa Rica" },
+  "nameEs": "Costa Rica",
+  "capital": "San José",
+  "population": "5 M",
+  "intro": {
+    "en": "In Costa Rica, 'pura vida' isn't a phrase — it's the national operating system: hello, goodbye, thank you and a whole life philosophy in two words. Ticos soften everything with diminutives (un momentico, un cafecito) and famously prefer 'usted' and 'vos' over 'tú', even between friends. The country protects around a quarter of its territory in national parks and squeezes roughly 5% of the planet's biodiversity into a land smaller than Bavaria. Spanish here sounds gentle, melodic and relentlessly polite — just like the people.",
+    "de": "In Costa Rica ist 'pura vida' keine Floskel, sondern das Betriebssystem des Landes: Begrüßung, Abschied, Dankeschön und Lebensphilosophie in zwei Wörtern. Ticos verniedlichen alles mit Diminutiven (un momentico, un cafecito) und sagen lieber 'usted' und 'vos' als 'tú' — sogar unter Freunden. Rund ein Viertel des Landes steht unter Naturschutz, und auf einer Fläche kleiner als Bayern drängeln sich etwa 5 % der weltweiten Artenvielfalt. Das Spanisch hier klingt sanft, melodisch und unerschütterlich höflich — genau wie die Menschen."
+  },
+  "funFact": {
+    "en": "Costa Rica abolished its army on 1 December 1948 and poured the money into schools and health care instead — today the country regularly runs on more than 98% renewable electricity.",
+    "de": "Costa Rica hat am 1. Dezember 1948 seine Armee abgeschafft und das Geld stattdessen in Schulen und Gesundheit gesteckt — heute läuft das Land regelmäßig mit über 98 % erneuerbarem Strom."
+  },
+  "slang": [
+    {
+      "term": "¡Pura vida!",
+      "meaning": { "en": "hello, goodbye, thanks, 'all good' — the all-purpose tico phrase and a philosophy of life", "de": "Hallo, Tschüss, Danke, 'alles bestens' — die Allzweck-Floskel der Ticos und eine Lebensphilosophie" },
+      "example": "—¿Cómo estás? —¡Pura vida, mae!"
+    },
+    {
+      "term": "mae",
+      "meaning": { "en": "dude, mate — the Costa Rican 'güey', dropped into every second sentence", "de": "Alter, Kumpel — das costa-ricanische 'güey', landet in jedem zweiten Satz" },
+      "example": "Mae, ¿vamos a la playa este finde?"
+    },
+    {
+      "term": "tuanis",
+      "meaning": { "en": "cool, nice, all good", "de": "cool, entspannt, alles gut" },
+      "example": "El concierto estuvo tuanis, mae."
+    },
+    {
+      "term": "chunche",
+      "meaning": { "en": "thingamajig — any object whose name escapes you", "de": "Dingsbums — jedes Objekt, dessen Name dir gerade nicht einfällt" },
+      "example": "Pasame ese chunche que está en la mesa."
+    },
+    {
+      "term": "¡Qué chiva!",
+      "meaning": { "en": "How cool! (literally 'what a goat')", "de": "Wie cool! (wörtlich 'was für eine Ziege')" },
+      "example": "¡Qué chiva tu bici nueva!"
+    },
+    {
+      "term": "diay",
+      "meaning": { "en": "well… / so… — the untranslatable tico filler that starts half of all answers", "de": "tja… / na ja… — der unübersetzbare Tico-Füller, mit dem die Hälfte aller Antworten beginnt" },
+      "example": "Diay, ¿qué le vamos a hacer?"
+    },
+    {
+      "term": "brete",
+      "meaning": { "en": "work, job", "de": "Arbeit, Job" },
+      "example": "Mañana tengo brete desde las siete."
+    },
+    {
+      "term": "agüevado",
+      "meaning": { "en": "bored, bummed out, down", "de": "gelangweilt, niedergeschlagen, mies drauf" },
+      "example": "Estoy agüevado, no hay nada que hacer."
+    }
+  ],
+  "vocabulary": [
+    { "es": "la soda", "translation": { "en": "small, cheap local eatery", "de": "kleines, günstiges Lokal" }, "note": { "en": "elsewhere 'soda' is a fizzy drink — here it's where you eat a casado for a few colones", "de": "anderswo ist 'soda' ein Sprudelgetränk — hier isst du dort für ein paar Colones deinen Casado" } },
+    { "es": "el casado", "translation": { "en": "the classic lunch plate: rice, beans, plantain, salad and meat", "de": "der klassische Mittagsteller: Reis, Bohnen, Kochbanane, Salat und Fleisch" }, "note": { "en": "literally 'married man' — everything on one plate, like marriage", "de": "wörtlich 'verheirateter Mann' — alles auf einem Teller, wie in der Ehe" } },
+    { "es": "el zaguate", "translation": { "en": "street dog, mutt", "de": "Straßenhund, Promenadenmischung" }, "note": { "en": "from Nahuatl — elsewhere: perro callejero", "de": "aus dem Nahuatl — anderswo: perro callejero" } },
+    { "es": "la goma", "translation": { "en": "hangover", "de": "Kater" }, "note": { "en": "elsewhere: la resaca", "de": "anderswo: la resaca" } },
+    { "es": "el chante", "translation": { "en": "house, home, your place", "de": "Haus, Bude, Zuhause" }, "note": { "en": "elsewhere: la casa", "de": "anderswo: la casa" } },
+    { "es": "la pulpería", "translation": { "en": "corner store, mini-market", "de": "Tante-Emma-Laden an der Ecke" }, "note": { "en": "elsewhere: la tienda de abarrotes", "de": "anderswo: la tienda de abarrotes" } },
+    { "es": "el güila / la güila", "translation": { "en": "kid, child", "de": "Kind, Gör" }, "note": { "en": "harmless in Costa Rica — in Mexico it's a serious insult, so watch where you use it", "de": "in Costa Rica harmlos — in Mexiko eine heftige Beleidigung, also Vorsicht, wo du es benutzt" } },
+    { "es": "la birra", "translation": { "en": "beer (casual)", "de": "Bier (locker gesagt)" }, "note": { "en": "elsewhere: la cerveza — usually an ice-cold Imperial here", "de": "anderswo: la cerveza — hier meistens ein eiskaltes Imperial" } }
+  ],
+  "sights": [
+    {
+      "name": "Volcán Arenal",
+      "description": { "en": "A picture-perfect volcanic cone that erupted almost daily until 2010 — now you soak in hot springs heated by its magma at its feet.", "de": "Ein bilderbuchperfekter Vulkankegel, der bis 2010 fast täglich Feuer spuckte — heute badest du an seinem Fuß in Thermalquellen, die sein Magma heizt." },
+      "lat": 10.463,
+      "lng": -84.7033,
+      "emoji": "🌋"
+    },
+    {
+      "name": "Monteverde",
+      "description": { "en": "Cloud forest at 1,400 m where you cross hanging bridges through the canopy hunting for a glimpse of the resplendent quetzal.", "de": "Nebelwald auf 1.400 m, wo du über Hängebrücken durch die Baumkronen läufst — immer auf der Suche nach dem prächtigen Quetzal." },
+      "lat": 10.3,
+      "lng": -84.79,
+      "emoji": "☁️"
+    },
+    {
+      "name": "Parque Nacional Manuel Antonio",
+      "description": { "en": "Rainforest meets white beaches — and cheeky white-faced capuchin monkeys who will absolutely try to steal your lunch.", "de": "Regenwald trifft weiße Strände — und freche Kapuzineraffen, die ganz sicher versuchen, dir dein Mittagessen zu klauen." },
+      "lat": 9.39,
+      "lng": -84.14,
+      "emoji": "🐒"
+    },
+    {
+      "name": "Tortuguero",
+      "description": { "en": "A car-free maze of jungle canals on the Caribbean coast — from July to October, green sea turtles haul themselves ashore to nest.", "de": "Ein autofreies Labyrinth aus Dschungelkanälen an der Karibikküste — von Juli bis Oktober robben hier Grüne Meeresschildkröten zur Eiablage an Land." },
+      "lat": 10.5417,
+      "lng": -83.502,
+      "emoji": "🐢"
+    },
+    {
+      "name": "Teatro Nacional, San José",
+      "description": { "en": "San José's marble-and-gold theatre from 1897 — the coffee barons taxed their own exports to pay for it.", "de": "San Josés Theater aus Marmor und Gold von 1897 — die Kaffeebarone besteuerten ihre eigenen Exporte, um es zu bezahlen." },
+      "lat": 9.9333,
+      "lng": -84.0776,
+      "emoji": "🎭"
+    }
+  ]
+}

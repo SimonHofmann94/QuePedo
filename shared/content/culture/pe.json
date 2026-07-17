@@ -1,0 +1,105 @@
+{
+  "id": "pe",
+  "flag": "🇵🇪",
+  "name": { "en": "Peru", "de": "Peru" },
+  "nameEs": "Perú",
+  "capital": "Lima",
+  "population": "34 M",
+  "intro": {
+    "en": "Peruvian Spanish is often called the easiest to understand in South America: clear, unhurried, and sprinkled with words from Quechua — the language of the Incas, still spoken by some four million Peruvians. This is the land of Machu Picchu and a genuine national food obsession: Lima's restaurants regularly top the world's-best lists, and ceviche is practically a religion with its own public holiday.",
+    "de": "Peruanisches Spanisch gilt als das am leichtesten verständliche Südamerikas: klar, unaufgeregt und gespickt mit Wörtern aus dem Quechua — der Sprache der Inka, die noch heute rund vier Millionen Peruaner sprechen. Das ist das Land von Machu Picchu und einer echten nationalen Food-Besessenheit: Limas Restaurants landen regelmäßig ganz oben auf den Weltbesten-Listen, und Ceviche ist praktisch eine Religion mit eigenem Feiertag."
+  },
+  "funFact": {
+    "en": "Peru grows around 4,000 varieties of native potato — the potato was first domesticated near Lake Titicaca some 8,000 years ago, millennia before it ever reached Europe.",
+    "de": "In Peru wachsen rund 4.000 einheimische Kartoffelsorten — die Kartoffel wurde vor etwa 8.000 Jahren am Titicacasee domestiziert, Jahrtausende bevor sie je Europa erreichte."
+  },
+  "slang": [
+    {
+      "term": "pata",
+      "meaning": { "en": "friend, buddy (literally 'paw')", "de": "Freund, Kumpel (wörtlich 'Pfote')" },
+      "example": "Voy al cine con mis patas."
+    },
+    {
+      "term": "chévere",
+      "meaning": { "en": "cool, great — shared with Colombia and Venezuela", "de": "cool, super — teilt sich Peru mit Kolumbien und Venezuela" },
+      "example": "¡Qué chévere tu nueva chamba!"
+    },
+    {
+      "term": "el jato",
+      "meaning": { "en": "house, home, your place", "de": "Haus, Bude, dein Zuhause" },
+      "example": "¿Vamos a mi jato a ver el partido?"
+    },
+    {
+      "term": "pe",
+      "meaning": { "en": "filler tacked onto almost everything — 'ya pe', 'sí pe'", "de": "Füllwort, das an fast alles gehängt wird — 'ya pe', 'sí pe'" },
+      "example": "Ya pe, vamos de una vez."
+    },
+    {
+      "term": "la chamba",
+      "meaning": { "en": "work, job — Peru shares this one with Mexico", "de": "Arbeit, Job — das teilt sich Peru mit Mexiko" },
+      "example": "Mañana tengo chamba temprano."
+    },
+    {
+      "term": "al toque",
+      "meaning": { "en": "right away, in a flash", "de": "sofort, auf die Schnelle" },
+      "example": "Te llamo al toque, dame cinco minutos."
+    },
+    {
+      "term": "bacán",
+      "meaning": { "en": "cool, excellent", "de": "cool, spitze" },
+      "example": "La playa estuvo bacán."
+    },
+    {
+      "term": "causa",
+      "meaning": { "en": "close friend — also the name of Peru's famous layered potato dish", "de": "enger Freund — heißt auch Perus berühmtes Kartoffel-Schichtgericht" },
+      "example": "Oe causa, ¿qué haces este sábado?"
+    }
+  ],
+  "vocabulary": [
+    { "es": "la chompa", "translation": { "en": "sweater", "de": "Pullover" }, "note": { "en": "elsewhere: el suéter / (Spain) el jersey — from English 'jumper'", "de": "anderswo: el suéter / (Spanien) el jersey — vom englischen 'jumper'" } },
+    { "es": "el choclo", "translation": { "en": "corn on the cob — with giant Andean kernels", "de": "Maiskolben — mit riesigen Anden-Körnern" }, "note": { "en": "from Quechua 'choqllo' — in Mexico: el elote", "de": "vom Quechua 'choqllo' — in Mexiko: el elote" } },
+    { "es": "el chifa", "translation": { "en": "Chinese-Peruvian restaurant (and its cuisine)", "de": "chinesisch-peruanisches Restaurant (und seine Küche)" }, "note": { "en": "a fusion born from Cantonese immigrants — Lima has thousands of them", "de": "eine Fusionsküche kantonesischer Einwanderer — Lima hat Tausende davon" } },
+    { "es": "la combi", "translation": { "en": "minibus, shared van", "de": "Minibus, Sammeltaxi" }, "note": { "en": "elsewhere: el microbús — Lima's chaotic transport backbone", "de": "anderswo: el microbús — das chaotische Rückgrat von Limas Verkehr" } },
+    { "es": "la palta", "translation": { "en": "avocado", "de": "Avocado" }, "note": { "en": "from Quechua — Spain & Mexico: el aguacate", "de": "aus dem Quechua — Spanien & Mexiko: el aguacate" } },
+    { "es": "la cuadra", "translation": { "en": "city block", "de": "Häuserblock" }, "note": { "en": "distances are given in cuadras: 'a tres cuadras' = three blocks away", "de": "Entfernungen misst man in Cuadras: 'a tres cuadras' = drei Blocks weiter" } },
+    { "es": "el grifo", "translation": { "en": "gas station", "de": "Tankstelle" }, "note": { "en": "in Spain 'grifo' is a water tap — elsewhere: la gasolinera", "de": "in Spanien ist 'grifo' der Wasserhahn — anderswo: la gasolinera" } },
+    { "es": "la lúcuma", "translation": { "en": "lúcuma — sweet Andean fruit", "de": "Lúcuma — süße Andenfrucht" }, "note": { "en": "Peru's favorite ice cream flavor, tastes like caramel and maple", "de": "Perus liebste Eissorte, schmeckt nach Karamell und Ahorn" } }
+  ],
+  "sights": [
+    {
+      "name": "Machu Picchu",
+      "description": { "en": "The 15th-century Inca citadel at 2,430 m, hidden so well in the cloud forest that the Spanish conquistadors never found it.", "de": "Die Inka-Zitadelle aus dem 15. Jahrhundert auf 2.430 m, so gut im Nebelwald versteckt, dass die spanischen Eroberer sie nie fanden." },
+      "lat": -13.1631,
+      "lng": -72.545,
+      "emoji": "🦙"
+    },
+    {
+      "name": "Cusco",
+      "description": { "en": "The former Inca capital — colonial churches sit on Inca walls so precisely cut that you can't slide a knife blade between the stones.", "de": "Die einstige Inka-Hauptstadt — Kolonialkirchen stehen auf Inka-Mauern, deren Steine so präzise gefugt sind, dass keine Messerklinge dazwischenpasst." },
+      "lat": -13.5164,
+      "lng": -71.9785,
+      "emoji": "🧱"
+    },
+    {
+      "name": "Lago Titicaca",
+      "description": { "en": "The world's highest navigable lake at 3,812 m — the Uros people live on floating islands they weave entirely from totora reeds.", "de": "Der höchstgelegene schiffbare See der Welt auf 3.812 m — das Volk der Uros lebt auf schwimmenden Inseln, komplett aus Totora-Schilf geflochten." },
+      "lat": -15.8402,
+      "lng": -70.0219,
+      "emoji": "🛶"
+    },
+    {
+      "name": "Líneas de Nazca",
+      "description": { "en": "Giant desert geoglyphs scratched into the ground 2,000 years ago — the hummingbird alone spans 96 m and is only visible from the air.", "de": "Riesige Wüsten-Geoglyphen, vor 2.000 Jahren in den Boden geritzt — allein der Kolibri misst 96 m und ist nur aus der Luft zu erkennen." },
+      "lat": -14.7167,
+      "lng": -75.1333,
+      "emoji": "🛩️"
+    },
+    {
+      "name": "Huacachina",
+      "description": { "en": "A palm-fringed desert oasis around a natural lagoon — ride a dune buggy and sandboard down some of the highest dunes in the Americas.", "de": "Eine palmengesäumte Wüstenoase um eine natürliche Lagune — düse im Buggy durch die Dünen und sandboarde einige der höchsten Sandberge Amerikas hinab." },
+      "lat": -14.0875,
+      "lng": -75.7626,
+      "emoji": "🏜️"
+    }
+  ]
+}

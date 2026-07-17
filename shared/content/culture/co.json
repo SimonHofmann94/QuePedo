@@ -1,0 +1,105 @@
+{
+  "id": "co",
+  "flag": "🇨🇴",
+  "name": { "en": "Colombia", "de": "Kolumbien" },
+  "nameEs": "Colombia",
+  "capital": "Bogotá",
+  "population": "52 M",
+  "intro": {
+    "en": "Colombians will happily tell you they speak the clearest Spanish in Latin America — and the Bogotá accent really is a favorite among learners. But Colombia is many countries in one: Caribbean coast, Andean highlands, Amazon jungle and coffee hills, each with its own accent and rhythm. Expect relentless friendliness, 'usted' even between close friends, and cumbia and vallenato pouring out of every doorway.",
+    "de": "Kolumbianer erzählen dir gern, dass sie das klarste Spanisch Lateinamerikas sprechen — und tatsächlich lieben Sprachlerner den Akzent von Bogotá. Dabei ist Kolumbien viele Länder in einem: Karibikküste, Anden, Amazonas und Kaffeehügel, jede Region mit eigenem Akzent und Rhythmus. Rechne mit grenzenloser Herzlichkeit, 'usted' selbst unter engen Freunden und Cumbia und Vallenato aus jeder offenen Tür."
+  },
+  "funFact": {
+    "en": "Colombia is the most biodiverse country on Earth per square kilometer — and the world number one for birds, with nearly 2,000 species: about one in five of all bird species on the planet.",
+    "de": "Kolumbien ist pro Quadratkilometer das artenreichste Land der Erde — und die weltweite Nummer eins bei Vögeln, mit fast 2.000 Arten: ungefähr jede fünfte Vogelart des Planeten."
+  },
+  "slang": [
+    {
+      "term": "parcero / parce",
+      "meaning": { "en": "buddy, mate — the signature word of Medellín", "de": "Kumpel, Bro — das Erkennungswort von Medellín" },
+      "example": "¿Qué más, parce? ¿Cómo va todo?"
+    },
+    {
+      "term": "¿Qué más?",
+      "meaning": { "en": "the standard Colombian greeting — literally 'what else?', means 'how are you?'", "de": "die kolumbianische Standard-Begrüßung — wörtlich 'was sonst?', heißt 'wie geht's?'" },
+      "example": "¡Hola! ¿Qué más? ¿Bien o no?"
+    },
+    {
+      "term": "bacano",
+      "meaning": { "en": "cool, awesome", "de": "cool, klasse" },
+      "example": "El concierto estuvo muy bacano."
+    },
+    {
+      "term": "chimba",
+      "meaning": { "en": "awesome — or terrible, context decides (a bit crude, but everywhere)", "de": "geil — oder furchtbar, der Kontext entscheidet (etwas derb, aber allgegenwärtig)" },
+      "example": "¡Qué chimba de fiesta, parce!"
+    },
+    {
+      "term": "vaina",
+      "meaning": { "en": "thing, stuff — the universal placeholder word", "de": "Ding, Kram — das Universalwort für alles" },
+      "example": "Pásame esa vaina que está en la mesa."
+    },
+    {
+      "term": "parche",
+      "meaning": { "en": "your group of friends — or the plan you have with them", "de": "deine Clique — oder das, was ihr zusammen vorhabt" },
+      "example": "Esta noche hay parche en casa de Andrés."
+    },
+    {
+      "term": "dar papaya",
+      "meaning": { "en": "to make yourself an easy target — don't flash your phone on the bus", "de": "sich zur leichten Beute machen — also das Handy im Bus lieber stecken lassen" },
+      "example": "No des papaya con el celular en la calle."
+    },
+    {
+      "term": "rumbear",
+      "meaning": { "en": "to party — 'la rumba' is the night out", "de": "feiern gehen — 'la rumba' ist die Partynacht" },
+      "example": "El viernes vamos a rumbear en Cali."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el tinto", "translation": { "en": "small black coffee", "de": "kleiner schwarzer Kaffee" }, "note": { "en": "in Spain 'tinto' is red wine — in Colombia it's the coffee offered to you everywhere", "de": "in Spanien ist 'tinto' Rotwein — in Kolumbien der Kaffee, der dir überall angeboten wird" } },
+    { "es": "la arepa", "translation": { "en": "grilled corn cake, eaten with everything", "de": "gegrillter Maisfladen, wird zu allem gegessen" }, "note": { "en": "breakfast staple in Colombia and Venezuela", "de": "Frühstücksklassiker in Kolumbien und Venezuela" } },
+    { "es": "el camello", "translation": { "en": "work, job (literally 'camel')", "de": "Arbeit, Job (wörtlich 'Kamel')" }, "note": { "en": "elsewhere: el trabajo — 'camellar' = to work hard", "de": "anderswo: el trabajo — 'camellar' = schuften" } },
+    { "es": "la pola", "translation": { "en": "beer", "de": "Bier" }, "note": { "en": "elsewhere: la cerveza — named after independence heroine Policarpa Salavarrieta", "de": "anderswo: la cerveza — benannt nach der Unabhängigkeitsheldin Policarpa Salavarrieta" } },
+    { "es": "el chino / la china", "translation": { "en": "kid (in Bogotá)", "de": "Kind (in Bogotá)" }, "note": { "en": "elsewhere: el niño — nothing to do with China, likely from Quechua", "de": "anderswo: el niño — hat nichts mit China zu tun, stammt wohl aus dem Quechua" } },
+    { "es": "¡A la orden!", "translation": { "en": "'at your service!' — heard in every shop, taxi and market", "de": "'zu Diensten!' — hörst du in jedem Laden, Taxi und Markt" }, "note": { "en": "both 'can I help you?' and 'you're welcome'", "de": "heißt sowohl 'kann ich helfen?' als auch 'gern geschehen'" } },
+    { "es": "la ñapa", "translation": { "en": "the little extra you get for free", "de": "die kleine Gratis-Zugabe" }, "note": { "en": "ask for it at the market — from Quechua 'yapa'", "de": "frag auf dem Markt danach — vom Quechua 'yapa'" } },
+    { "es": "el pelado / la pelada", "translation": { "en": "kid, young person", "de": "Kind, junger Mensch" }, "note": { "en": "elsewhere: el joven — literally 'the bald one'", "de": "anderswo: el joven — wörtlich 'der Kahle'" } }
+  ],
+  "sights": [
+    {
+      "name": "Cartagena de Indias",
+      "description": { "en": "The walled colonial city on the Caribbean — bougainvillea spilling over wooden balconies, and 400-year-old ramparts built to keep out pirates.", "de": "Die koloniale Festungsstadt an der Karibik — Bougainvillea quillt über Holzbalkone, und 400 Jahre alte Stadtmauern hielten einst Piraten fern." },
+      "lat": 10.4236,
+      "lng": -75.551,
+      "emoji": "🏰"
+    },
+    {
+      "name": "Valle de Cocora",
+      "description": { "en": "A misty green valley dotted with wax palms up to 60 m tall — the tallest palm trees in the world and Colombia's national tree.", "de": "Ein nebelverhangenes grünes Tal voller Wachspalmen, bis zu 60 m hoch — die höchsten Palmen der Welt und Kolumbiens Nationalbaum." },
+      "lat": 4.6381,
+      "lng": -75.487,
+      "emoji": "🌴"
+    },
+    {
+      "name": "Comuna 13, Medellín",
+      "description": { "en": "Once the most dangerous neighborhood in the world, now an open-air gallery of street art — ride the outdoor escalators up the hillside.", "de": "Einst das gefährlichste Viertel der Welt, heute eine Open-Air-Galerie voller Street-Art — fahr mit den Rolltreppen den Hang hinauf." },
+      "lat": 6.2529,
+      "lng": -75.619,
+      "emoji": "🖌️"
+    },
+    {
+      "name": "Ciudad Perdida",
+      "description": { "en": "The 'Lost City' of the Tayrona, 650 years older than Machu Picchu — reachable only by a four-day jungle trek and 1,200 stone steps.", "de": "Die 'Verlorene Stadt' der Tayrona, 650 Jahre älter als Machu Picchu — erreichbar nur über einen viertägigen Dschungel-Trek und 1.200 Steinstufen." },
+      "lat": 11.0383,
+      "lng": -73.925,
+      "emoji": "🌿"
+    },
+    {
+      "name": "Monserrate, Bogotá",
+      "description": { "en": "The white pilgrimage church perched at 3,152 m above Bogotá — take the cable car up and watch the endless city glitter below.", "de": "Die weiße Wallfahrtskirche thront auf 3.152 m über Bogotá — nimm die Seilbahn hinauf und schau zu, wie die endlose Stadt unter dir glitzert." },
+      "lat": 4.6058,
+      "lng": -74.0557,
+      "emoji": "⛰️"
+    }
+  ]
+}

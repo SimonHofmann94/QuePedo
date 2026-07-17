@@ -1,120 +1,104 @@
-"use client";
+"use client"
 
-import { useLayoutEffect, useRef } from 'react';
-import * as am5 from "@amcharts/amcharts5";
-import * as am5map from "@amcharts/amcharts5/map";
-import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow";
-import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import { useRouter } from 'next/navigation';
+import { useLayoutEffect, useRef } from "react"
+import * as am5 from "@amcharts/amcharts5"
+import * as am5map from "@amcharts/amcharts5/map"
+import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow"
+import am5themes_Animated from "@amcharts/amcharts5/themes/Animated"
+import { colors } from "@chingon/shared"
 
-export function WorldMap() {
-    const chartRef = useRef<am5map.MapChart | null>(null);
-    const router = useRouter();
+export interface WorldMapCountry {
+  /** Lowercase ISO-2 id. */
+  id: string
+  flag: string
+  /** Already localized on the server. */
+  name: string
+}
 
-    useLayoutEffect(() => {
-        const root = am5.Root.new("chartdiv");
+interface WorldMapProps {
+  countries: WorldMapCountry[]
+  /** Fired with the lowercase ISO-2 id when a highlighted country is clicked. */
+  onSelect?: (id: string) => void
+}
 
-        root.setThemes([
-            am5themes_Animated.new(root)
-        ]);
+// Note: `countries` and `onSelect` are effect dependencies — pass referentially
+// stable values (server props / useState setter) or the map rebuilds per render.
+export function WorldMap({ countries, onSelect }: WorldMapProps) {
+  const divRef = useRef<HTMLDivElement>(null)
 
-        const chart = root.container.children.push(am5map.MapChart.new(root, {
-            panX: "rotateX",
-            projection: am5map.geoMercator(),
-            minZoomLevel: 0.8,
-            rotationX: -45.33,
-            translateX: 1281,
-            translateY: 373
-        }));
+  useLayoutEffect(() => {
+    if (!divRef.current) return
 
-        // Background
-        const backgroundSeries = chart.series.push(
-            am5map.MapPolygonSeries.new(root, {})
-        );
+    const root = am5.Root.new(divRef.current)
+    root.setThemes([am5themes_Animated.new(root)])
 
-        backgroundSeries.mapPolygons.template.setAll({
-            fill: am5.color(0x1a1a1a),
-            fillOpacity: 1,
-            strokeOpacity: 0
-        });
+    const chart = root.container.children.push(
+      am5map.MapChart.new(root, {
+        panX: "rotateX",
+        projection: am5map.geoMercator(),
+        minZoomLevel: 0.8,
+        // Center the hispanosphere (Americas + Spain) on load
+        rotationX: -55,
+      }),
+    )
 
-        backgroundSeries.data.push({
-            geometry: am5map.getGeoRectangle(90, 180, -90, -180)
-        });
+    // Backdrop: every country, muted, inert. Interactivity lives entirely in
+    // the culture series below — keeping this series listener-free is what
+    // stops the rest of the world from hovering/clicking.
+    const backdropSeries = chart.series.push(
+      am5map.MapPolygonSeries.new(root, {
+        geoJSON: am5geodata_worldLow,
+        exclude: ["AQ"],
+      }),
+    )
+    backdropSeries.mapPolygons.template.setAll({
+      fill: am5.color(colors.masa[200]),
+      stroke: am5.color(colors.ink[100]),
+      strokeWidth: 0.5,
+      interactive: false,
+    })
 
-        // Polygon Series
-        const polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
-            geoJSON: am5geodata_worldLow,
-            exclude: ["AQ"]
-        }));
+    // Culture series: only the Spanish-speaking countries, rendered on top.
+    // amCharts polygon ids are UPPERCASE ISO-2.
+    const cultureSeries = chart.series.push(
+      am5map.MapPolygonSeries.new(root, {
+        geoJSON: am5geodata_worldLow,
+        include: countries.map((c) => c.id.toUpperCase()),
+      }),
+    )
+    cultureSeries.mapPolygons.template.setAll({
+      fill: am5.color(colors.chili[400]),
+      stroke: am5.color(colors.chili[600]),
+      strokeWidth: 0.5,
+      interactive: true,
+      cursorOverStyle: "pointer",
+      tooltipText: "{flag} {name}",
+    })
+    cultureSeries.mapPolygons.template.states.create("hover", {
+      fill: am5.color(colors.jade[400]),
+    })
 
-        polygonSeries.mapPolygons.template.setAll({
-            tooltipText: "{name}",
-            toggleKey: "active",
-            interactive: true,
-            fill: am5.color(0xaaaaaa),
-            fillOpacity: 0.2,
-            cursorOverStyle: "pointer"
-        });
+    // MUST come before data.setAll: setAll creates the polygon instances and
+    // template events are only copied to instances at creation time —
+    // listeners added afterwards silently never fire.
+    cultureSeries.mapPolygons.template.events.on("click", (ev) => {
+      const id = (ev.target.dataItem?.dataContext as { id?: string } | undefined)?.id
+      if (id) onSelect?.(id.toLowerCase())
+    })
 
-        polygonSeries.mapPolygons.template.states.create("hover", {
-            fill: am5.color(0xff9966),
-            fillOpacity: 0.7
-        });
+    cultureSeries.data.setAll(
+      countries.map((c) => ({ id: c.id.toUpperCase(), flag: c.flag, name: c.name })),
+    )
 
-        polygonSeries.mapPolygons.template.states.create("active", {
-            fill: am5.color(0xff9966),
-            fillOpacity: 1
-        });
+    const zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}))
+    zoomControl.homeButton.set("visible", true)
 
-        // Click Event
-        polygonSeries.mapPolygons.template.events.on("click", function (ev) {
-            const dataItem = ev.target.dataItem;
-            if (dataItem) {
-                const dataContext = dataItem.dataContext as { id?: string } | undefined;
-                if (dataContext?.id) {
-                    router.push(`/culture/${dataContext.id}`);
-                }
-            }
-        });
+    chart.appear(600, 100)
 
-        // Highlighted Countries Data
-        polygonSeries.data.setAll([
-            { id: "VE", name: "Venezuela", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "UY", name: "Uruguay", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "SV", name: "El Salvador", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "PY", name: "Paraguay", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "PR", name: "Puerto Rico", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "PE", name: "Peru", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "PA", name: "Panama", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "NI", name: "Nicaragua", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "MX", name: "Mexico", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "HN", name: "Honduras", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "GT", name: "Guatemala", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "ES", name: "Spain", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "EC", name: "Ecuador", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "DO", name: "Dominican Republic", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "CU", name: "Cuba", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "CR", name: "Costa Rica", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "CO", name: "Colombia", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "CL", name: "Chile", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "BO", name: "Bolivia", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "BZ", name: "Belize", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } },
-            { id: "AR", name: "Argentina", polygonSettings: { fill: am5.color(0xe5880f), fillOpacity: 1 } }
-        ]);
+    return () => {
+      root.dispose()
+    }
+  }, [countries, onSelect])
 
-        // Zoom Control
-        const zoomControl = chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
-        zoomControl.homeButton.set("visible", true);
-
-        chartRef.current = chart;
-
-        return () => {
-            root.dispose();
-        };
-    }, [router]);
-
-    return (
-        <div id="chartdiv" style={{ width: "100%", height: "80vh" }}></div>
-    );
+  return <div ref={divRef} style={{ width: "100%", height: "100%" }} />
 }

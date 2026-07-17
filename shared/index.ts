@@ -33,6 +33,9 @@ export * from './i18n'
 // Base CEFR vocabulary lists (premium content)
 export * from './content/vocab'
 
+// Culture content (countries, slang, sights) — en/de localized
+export * from './content/culture'
+
 // Utils
 export * from './utils/quiz'
 export * from './utils/translations'

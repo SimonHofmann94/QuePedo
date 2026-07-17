@@ -5,6 +5,11 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      // react-native lives in mobile/node_modules (not hoisted); packages hoisted to the
+      // repo root (e.g. react-native-gesture-handler) can't resolve its types without this.
+      "react-native": [
+        "./node_modules/react-native"
       ]
     }
   },

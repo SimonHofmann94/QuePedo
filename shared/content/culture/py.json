@@ -1,0 +1,104 @@
+{
+  "id": "py",
+  "flag": "🇵🇾",
+  "name": { "en": "Paraguay", "de": "Paraguay" },
+  "nameEs": "Paraguay",
+  "capital": "Asunción",
+  "population": "6 M",
+  "intro": {
+    "en": "Paraguay is the only country in the Americas that is truly bilingual: Guaraní is co-official and spoken by around 90% of the population — including people with no indigenous ancestry. In everyday life, most Paraguayans speak 'jopara', a fluid mix that switches between Spanish and Guaraní mid-sentence. Even the currency is called the guaraní. Add ice-cold tereré passed around in a circle and one of the world's biggest hydroelectric dams, and you have South America's most underrated country.",
+    "de": "Paraguay ist das einzige wirklich zweisprachige Land Amerikas: Guaraní ist ko-offizielle Amtssprache und wird von rund 90 % der Bevölkerung gesprochen — auch von Menschen ohne indigene Wurzeln. Im Alltag sprechen die meisten Paraguayer 'Jopara', einen fließenden Mix, der mitten im Satz zwischen Spanisch und Guaraní wechselt. Sogar die Währung heißt Guaraní. Dazu eiskalter Tereré, der in der Runde kreist, und einer der größten Staudämme der Welt — fertig ist Südamerikas unterschätztestes Land."
+  },
+  "funFact": {
+    "en": "Paraguay's flag is the only national flag in the world with different emblems on the front and back: the state coat of arms on one side, the treasury seal with a lion on the other.",
+    "de": "Paraguays Flagge ist die einzige Nationalflagge der Welt mit unterschiedlichen Emblemen auf Vorder- und Rückseite: vorne das Staatswappen, hinten das Schatzamtssiegel mit einem Löwen."
+  },
+  "slang": [
+    {
+      "term": "¿Mba'éichapa?",
+      "meaning": { "en": "How are you? — the Guaraní greeting everyone uses, regardless of background", "de": "Wie geht's? — die Guaraní-Begrüßung, die wirklich jeder benutzt, egal welcher Herkunft" },
+      "example": "¿Mba'éichapa? ¡Tanto tiempo sin verte!"
+    },
+    {
+      "term": "na",
+      "meaning": { "en": "please (softening particle from Guaraní, tacked onto requests)", "de": "bitte (abmildernde Partikel aus dem Guaraní, wird an Bitten angehängt)" },
+      "example": "Vení na un poco, quiero mostrarte algo."
+    },
+    {
+      "term": "de gua'u",
+      "meaning": { "en": "just pretend, not for real, jokingly — from Guaraní 'gua'u' (fake)", "de": "nur zum Schein, nicht im Ernst, aus Spaß — von Guaraní 'gua'u' (unecht)" },
+      "example": "Te dije de gua'u nomás, no te enojes."
+    },
+    {
+      "term": "kaigue",
+      "meaning": { "en": "listless, zero energy, can't be bothered — a Guaraní word for a very universal feeling", "de": "schlapp, null Energie, keinen Bock — ein Guaraní-Wort für ein sehr universelles Gefühl" },
+      "example": "Hoy estoy kaigue, no quiero salir de casa."
+    },
+    {
+      "term": "purete",
+      "meaning": { "en": "cool, awesome", "de": "cool, klasse" },
+      "example": "¡Qué purete tu moto nueva!"
+    },
+    {
+      "term": "argel",
+      "meaning": { "en": "charmless, unfriendly, no grace — a very Paraguayan insult", "de": "uncharmant, unfreundlich, ohne jede Anmut — eine sehr paraguayische Beleidigung" },
+      "example": "No seas argel y saludá a la gente."
+    },
+    {
+      "term": "¡ndéra!",
+      "meaning": { "en": "expression of frustration or surprise, from Guaraní", "de": "Ausruf von Frust oder Überraschung, aus dem Guaraní" },
+      "example": "¡Ndéra! Otra vez se cortó la luz."
+    },
+    {
+      "term": "luego",
+      "meaning": { "en": "emphasis filler meaning 'just / really' — calqued from the Guaraní particle 'voi', not 'later'", "de": "Betonungsfüller im Sinne von 'eben / halt' — Lehnübersetzung der Guaraní-Partikel 'voi', bedeutet hier nicht 'später'" },
+      "example": "Así luego es él, no va a cambiar."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el tereré", "translation": { "en": "ice-cold mate with herbs, drunk in rounds with friends", "de": "eiskalter Mate mit Kräutern, wird in der Runde mit Freunden getrunken" }, "note": { "en": "Paraguay's national drink — UNESCO intangible cultural heritage since 2020", "de": "Paraguays Nationalgetränk — seit 2020 immaterielles UNESCO-Kulturerbe" } },
+    { "es": "la chipa", "translation": { "en": "chewy cheese-and-manioc bread ring", "de": "zäh-saftiger Käse-Maniok-Kringel" }, "note": { "en": "sold warm by 'chiperas' on every bus and street corner", "de": "wird von 'Chiperas' warm in jedem Bus und an jeder Straßenecke verkauft" } },
+    { "es": "la mandioca", "translation": { "en": "cassava — on the table at every Paraguayan meal", "de": "Maniok — steht bei jeder paraguayischen Mahlzeit auf dem Tisch" }, "note": { "en": "elsewhere: la yuca", "de": "anderswo: la yuca" } },
+    { "es": "el mitã'i", "translation": { "en": "little kid (Guaraní)", "de": "kleines Kind (Guaraní)" }, "note": { "en": "elsewhere: el niño", "de": "anderswo: el niño" } },
+    { "es": "la despensa", "translation": { "en": "small corner grocery store", "de": "kleiner Lebensmittelladen an der Ecke" }, "note": { "en": "elsewhere 'despensa' is a pantry; the shop is a tienda or almacén", "de": "anderswo ist 'despensa' die Speisekammer; der Laden heißt tienda oder almacén" } },
+    { "es": "el ñandutí", "translation": { "en": "delicate 'spiderweb' lace from Itauguá", "de": "filigrane 'Spinnennetz'-Spitze aus Itauguá" }, "note": { "en": "Guaraní for 'spiderweb' — Paraguay's signature craft", "de": "Guaraní für 'Spinnennetz' — Paraguays berühmtestes Kunsthandwerk" } },
+    { "es": "el kure", "translation": { "en": "pig, pork (Guaraní)", "de": "Schwein, Schweinefleisch (Guaraní)" }, "note": { "en": "elsewhere: el cerdo — everyday jopara in the kitchen", "de": "anderswo: el cerdo — Alltags-Jopara in der Küche" } }
+  ],
+  "sights": [
+    {
+      "name": "Saltos del Monday",
+      "description": { "en": "A 40-meter triple waterfall thundering through rainforest — living forever in the shadow of nearby Iguazú, and blissfully uncrowded because of it.", "de": "Ein 40 Meter hoher Dreifach-Wasserfall, der durch den Regenwald donnert — für immer im Schatten des nahen Iguazú, und genau deshalb herrlich leer." },
+      "lat": -25.5883,
+      "lng": -54.6717,
+      "emoji": "💦"
+    },
+    {
+      "name": "Represa de Itaipú",
+      "description": { "en": "One of the largest hydroelectric plants on Earth, shared with Brazil — it covers nearly all of Paraguay's electricity, with plenty left to export.", "de": "Eines der größten Wasserkraftwerke der Erde, geteilt mit Brasilien — es deckt fast Paraguays gesamten Strombedarf, und für den Export bleibt noch reichlich übrig." },
+      "lat": -25.408,
+      "lng": -54.589,
+      "emoji": "⚡"
+    },
+    {
+      "name": "Misión Jesuítica de Trinidad",
+      "description": { "en": "Paraguay's UNESCO World Heritage site: red sandstone ruins of a Jesuit mission with a stone frieze of angels playing instruments.", "de": "Paraguays UNESCO-Welterbe: rote Sandsteinruinen einer Jesuitenmission mit einem Steinfries voller musizierender Engel." },
+      "lat": -27.1325,
+      "lng": -55.6997,
+      "emoji": "⛪"
+    },
+    {
+      "name": "Palacio de los López, Asunción",
+      "description": { "en": "The presidential palace on the banks of the Paraguay River — at night its illuminated facade is the capital's favorite photo backdrop.", "de": "Der Präsidentenpalast am Ufer des Río Paraguay — nachts ist seine beleuchtete Fassade das beliebteste Fotomotiv der Hauptstadt." },
+      "lat": -25.28,
+      "lng": -57.6368,
+      "emoji": "🏛️"
+    },
+    {
+      "name": "Costanera de Encarnación",
+      "description": { "en": "A genuine river beach on the Paraná — every February, Paraguay's carnival capital turns the promenade into one long parade.", "de": "Ein echter Flussstrand am Paraná — jeden Februar verwandelt Paraguays Karnevalshauptstadt die Promenade in einen einzigen langen Umzug." },
+      "lat": -27.331,
+      "lng": -55.866,
+      "emoji": "🏖️"
+    }
+  ]
+}

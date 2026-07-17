@@ -1,0 +1,105 @@
+{
+  "id": "cl",
+  "flag": "🇨🇱",
+  "name": { "en": "Chile", "de": "Chile" },
+  "nameEs": "Chile",
+  "capital": "Santiago de Chile",
+  "population": "20 M",
+  "intro": {
+    "en": "Chileans speak the Spanish that other native speakers joke they can't understand: lightning-fast, final syllables swallowed ('¿cómo estái?'), and packed with slang no textbook teaches. Master 'cachai' and 'po' and you've earned serious bragging rights. The country itself is geographic madness — 4,300 km long and on average just 180 km wide, stretching from the driest desert on Earth to Patagonian glaciers.",
+    "de": "Chilenen sprechen das Spanisch, über das andere Muttersprachler witzeln, sie verstünden es selbst nicht: rasend schnell, verschluckte Endsilben ('¿cómo estái?') und vollgepackt mit Slang, den kein Lehrbuch kennt. Wer 'cachai' und 'po' draufhat, darf zu Recht angeben. Das Land selbst ist geografischer Irrsinn — 4.300 km lang und im Schnitt nur 180 km breit, von der trockensten Wüste der Erde bis zu Patagoniens Gletschern."
+  },
+  "funFact": {
+    "en": "Parts of Chile's Atacama Desert went more than 400 years without measurable rainfall — the landscape is so Mars-like that NASA tests its rover equipment there.",
+    "de": "Teile der Atacama-Wüste haben über 400 Jahre lang keinen messbaren Regen gesehen — die Landschaft ist dem Mars so ähnlich, dass die NASA dort ihre Rover testet."
+  },
+  "slang": [
+    {
+      "term": "cachai",
+      "meaning": { "en": "you know? / get it? — ends half of all Chilean sentences", "de": "verstehst du? / checkst du? — beendet die Hälfte aller chilenischen Sätze" },
+      "example": "Estaba súper cansado, cachai, y me fui a la casa."
+    },
+    {
+      "term": "po",
+      "meaning": { "en": "emphasis particle from 'pues' — sí po, no po, ya po", "de": "Nachdruck-Partikel von 'pues' — sí po, no po, ya po" },
+      "example": "—¿Vamos? —¡Sí po, obvio!"
+    },
+    {
+      "term": "fome",
+      "meaning": { "en": "boring, lame", "de": "langweilig, öde" },
+      "example": "La película estuvo fome, mejor vemos otra."
+    },
+    {
+      "term": "bacán",
+      "meaning": { "en": "cool, awesome", "de": "cool, genial" },
+      "example": "¡Qué bacán tu bici nueva!"
+    },
+    {
+      "term": "weón / weona",
+      "meaning": { "en": "dude — or idiot; THE Chilean word, tone is everything", "de": "Alter — oder Idiot; DAS chilenische Wort schlechthin, der Ton macht alles" },
+      "example": "Oye weón, ¿viste el partido anoche?"
+    },
+    {
+      "term": "el carrete",
+      "meaning": { "en": "party, night out — 'carretear' is the verb", "de": "Party, Feier — 'carretear' ist das Verb dazu" },
+      "example": "El sábado hay carrete en la casa de la Vale."
+    },
+    {
+      "term": "al tiro",
+      "meaning": { "en": "right away, immediately (literally 'at the shot')", "de": "sofort, auf der Stelle (wörtlich 'auf den Schuss')" },
+      "example": "Voy al tiro, espérame cinco minutos."
+    },
+    {
+      "term": "la raja",
+      "meaning": { "en": "amazing, the best (informal and a bit crude — use among friends)", "de": "der Hammer, das Beste (salopp und etwas derb — nur unter Freunden)" },
+      "example": "El concierto estuvo la raja."
+    }
+  ],
+  "vocabulary": [
+    { "es": "la palta", "translation": { "en": "avocado — Chile's national obsession", "de": "Avocado — Chiles Nationalobsession" }, "note": { "en": "'pan con palta' is a way of life — Spain & Mexico: el aguacate", "de": "'pan con palta' ist eine Lebenseinstellung — Spanien & Mexiko: el aguacate" } },
+    { "es": "el pololo / la polola", "translation": { "en": "boyfriend / girlfriend", "de": "fester Freund / feste Freundin" }, "note": { "en": "elsewhere: el novio — in Chile 'novio' already means fiancé", "de": "anderswo: el novio — in Chile heißt 'novio' schon Verlobter" } },
+    { "es": "la micro", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } },
+    { "es": "la luca", "translation": { "en": "1,000 pesos", "de": "1.000 Pesos" }, "note": { "en": "'cinco lucas' = 5,000 pesos — essential market vocabulary", "de": "'cinco lucas' = 5.000 Pesos — unverzichtbar auf dem Markt" } },
+    { "es": "el completo", "translation": { "en": "Chilean hot dog piled with avocado, tomato and mayo", "de": "chilenischer Hotdog, hoch beladen mit Avocado, Tomate und Mayo" }, "note": { "en": "the 'completo italiano' is named for the colors of the Italian flag", "de": "der 'completo italiano' ist nach den Farben der italienischen Flagge benannt" } },
+    { "es": "la guagua", "translation": { "en": "baby", "de": "Baby" }, "note": { "en": "from Quechua 'wawa' — careful: in the Caribbean 'guagua' means bus", "de": "vom Quechua 'wawa' — Achtung: in der Karibik ist 'guagua' der Bus" } },
+    { "es": "el taco", "translation": { "en": "traffic jam", "de": "Stau" }, "note": { "en": "in Mexico a taco is food — in Chile it's gridlock; elsewhere: el atasco", "de": "in Mexiko ist ein Taco Essen — in Chile ist es Stau; anderswo: el atasco" } },
+    { "es": "harto", "translation": { "en": "a lot, plenty", "de": "viel, jede Menge" }, "note": { "en": "elsewhere: mucho — 'harta gente' = loads of people", "de": "anderswo: mucho — 'harta gente' = jede Menge Leute" } }
+  ],
+  "sights": [
+    {
+      "name": "Torres del Paine",
+      "description": { "en": "Three granite towers rising 2,500 m out of the Patagonian steppe — guanacos graze beneath while condors circle the peaks.", "de": "Drei Granittürme, die 2.500 m aus der patagonischen Steppe aufragen — darunter grasen Guanakos, darüber kreisen Kondore." },
+      "lat": -50.9417,
+      "lng": -72.9944,
+      "emoji": "🏔️"
+    },
+    {
+      "name": "Valle de la Luna",
+      "description": { "en": "The 'Valley of the Moon' in the Atacama — salt-crusted dunes and rock formations that glow orange and purple at sunset.", "de": "Das 'Tal des Mondes' in der Atacama — salzverkrustete Dünen und Felsformationen, die im Sonnenuntergang orange und violett glühen." },
+      "lat": -22.9167,
+      "lng": -68.3167,
+      "emoji": "🌙"
+    },
+    {
+      "name": "Valparaíso",
+      "description": { "en": "A UNESCO port city painted across 40-odd hills — ride the century-old funiculars past murals covering entire house facades.", "de": "Eine UNESCO-Hafenstadt, verteilt über gut 40 Hügel — fahr mit den hundertjährigen Standseilbahnen an Wandbildern vorbei, die ganze Fassaden bedecken." },
+      "lat": -33.0472,
+      "lng": -71.6127,
+      "emoji": "🚡"
+    },
+    {
+      "name": "Rapa Nui (Isla de Pascua)",
+      "description": { "en": "Easter Island, 3,500 km off the coast — at Ahu Tongariki, fifteen moai statues stand in a row with their backs to the Pacific.", "de": "Die Osterinsel, 3.500 km vor der Küste — am Ahu Tongariki stehen fünfzehn Moai in einer Reihe, mit dem Rücken zum Pazifik." },
+      "lat": -27.1258,
+      "lng": -109.2769,
+      "emoji": "🗿"
+    },
+    {
+      "name": "Volcán Villarrica",
+      "description": { "en": "One of the most active volcanoes in South America — its perfectly conical, snow-capped crater smokes gently above the lake town of Pucón.", "de": "Einer der aktivsten Vulkane Südamerikas — sein perfekt kegelförmiger, schneebedeckter Krater raucht sanft über dem Seestädtchen Pucón." },
+      "lat": -39.42,
+      "lng": -71.9333,
+      "emoji": "🌋"
+    }
+  ]
+}

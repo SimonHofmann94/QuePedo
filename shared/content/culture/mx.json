@@ -1,0 +1,105 @@
+{
+  "id": "mx",
+  "flag": "🇲🇽",
+  "name": { "en": "Mexico", "de": "Mexiko" },
+  "nameEs": "México",
+  "capital": "Ciudad de México",
+  "population": "130 M",
+  "intro": {
+    "en": "Mexico is the largest Spanish-speaking country in the world — and the home of the slang this app is named after. Mexican Spanish is playful, musical and full of double meanings: an entire conversation can be built around the word 'chingar'. From mariachi and street tacos to Frida Kahlo and Día de Muertos, Mexican culture has shaped how the whole world imagines Latin America.",
+    "de": "Mexiko ist das größte spanischsprachige Land der Welt — und die Heimat des Slangs, nach dem diese App benannt ist. Mexikanisches Spanisch ist verspielt, musikalisch und voller Doppeldeutigkeiten: Um das Wort 'chingar' allein kann man ganze Gespräche aufbauen. Von Mariachi und Street-Tacos bis zu Frida Kahlo und dem Día de Muertos hat Mexikos Kultur geprägt, wie die ganze Welt sich Lateinamerika vorstellt."
+  },
+  "funFact": {
+    "en": "Mexico City is sinking up to 50 cm per year — it was built on a drained lake where the Aztec capital Tenochtitlán once stood.",
+    "de": "Mexiko-Stadt sinkt bis zu 50 cm pro Jahr — sie wurde auf einem trockengelegten See erbaut, wo einst die Azteken-Hauptstadt Tenochtitlán stand."
+  },
+  "slang": [
+    {
+      "term": "¿Qué onda?",
+      "meaning": { "en": "What's up? — the universal Mexican greeting", "de": "Was geht? — die universelle mexikanische Begrüßung" },
+      "example": "¿Qué onda, güey? ¿Vamos por unos tacos?"
+    },
+    {
+      "term": "¡No manches!",
+      "meaning": { "en": "No way! / You're kidding! (polite version of 'no mames')", "de": "Echt jetzt?! / Das gibt's nicht! (höfliche Version von 'no mames')" },
+      "example": "¡No manches! ¿Ganaste la lotería?"
+    },
+    {
+      "term": "güey",
+      "meaning": { "en": "dude, mate — used constantly between friends", "de": "Alter, Kumpel — wird ständig unter Freunden benutzt" },
+      "example": "Oye güey, ¿ya viste eso?"
+    },
+    {
+      "term": "¡Órale!",
+      "meaning": { "en": "Wow! / Alright! / Let's go! — depends entirely on tone", "de": "Wow! / Na gut! / Los geht's! — hängt ganz vom Ton ab" },
+      "example": "¡Órale! No sabía que hablabas español."
+    },
+    {
+      "term": "chido",
+      "meaning": { "en": "cool, great", "de": "cool, super" },
+      "example": "Está bien chido tu coche."
+    },
+    {
+      "term": "¡Aguas!",
+      "meaning": { "en": "Watch out! (literally 'waters!' — from when people emptied buckets out of windows)", "de": "Vorsicht! (wörtlich 'Wasser!' — daher, dass früher Eimer aus dem Fenster gekippt wurden)" },
+      "example": "¡Aguas con el escalón!"
+    },
+    {
+      "term": "la neta",
+      "meaning": { "en": "the truth / honestly — 'la neta' is sacred in Mexican conversation", "de": "die Wahrheit / ehrlich gesagt — 'la neta' ist heilig im mexikanischen Gespräch" },
+      "example": "La neta, ese restaurante no me gustó."
+    },
+    {
+      "term": "¡chingón!",
+      "meaning": { "en": "awesome, badass (careful: the root word is vulgar, but 'chingón' is a compliment)", "de": "großartig, der Hammer (Vorsicht: der Wortstamm ist vulgär, aber 'chingón' ist ein Kompliment)" },
+      "example": "Tu proyecto quedó bien chingón."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el camión", "translation": { "en": "bus", "de": "Bus" }, "note": { "en": "elsewhere: el autobús — in Mexico 'camión' means city bus, not truck", "de": "anderswo: el autobús — in Mexiko ist 'camión' der Stadtbus, nicht der Lkw" } },
+    { "es": "la torta", "translation": { "en": "Mexican sandwich on a bolillo roll", "de": "mexikanisches Sandwich im Bolillo-Brötchen" }, "note": { "en": "in Spain 'torta' is a cake — order carefully", "de": "in Spanien ist 'torta' ein Kuchen — Vorsicht beim Bestellen" } },
+    { "es": "el chamaco", "translation": { "en": "kid, child", "de": "Kind, Gör" }, "note": { "en": "elsewhere: el niño", "de": "anderswo: el niño" } },
+    { "es": "la chamba", "translation": { "en": "work, job", "de": "Arbeit, Job" }, "note": { "en": "elsewhere: el trabajo", "de": "anderswo: el trabajo" } },
+    { "es": "ahorita", "translation": { "en": "right now — or in five minutes, or never", "de": "sofort — oder in fünf Minuten, oder nie" }, "note": { "en": "famously elastic Mexican time", "de": "berühmt-dehnbare mexikanische Zeitangabe" } },
+    { "es": "el elote", "translation": { "en": "corn on the cob (street food staple)", "de": "Maiskolben (Streetfood-Klassiker)" }, "note": { "en": "from Nahuatl 'elotl'", "de": "aus dem Nahuatl 'elotl'" } },
+    { "es": "la alberca", "translation": { "en": "swimming pool", "de": "Schwimmbad, Pool" }, "note": { "en": "elsewhere: la piscina", "de": "anderswo: la piscina" } },
+    { "es": "padrísimo", "translation": { "en": "fantastic, super cool", "de": "fantastisch, mega cool" }, "note": { "en": "from 'padre' (cool) — yes, 'father' means cool here", "de": "von 'padre' (cool) — ja, 'Vater' heißt hier cool" } }
+  ],
+  "sights": [
+    {
+      "name": "Teotihuacán",
+      "description": { "en": "The 'City of the Gods' — climb the Pyramid of the Sun, one of the largest pyramids on Earth, built around 100 CE.", "de": "Die 'Stadt der Götter' — besteige die Sonnenpyramide, eine der größten Pyramiden der Erde, erbaut um 100 n. Chr." },
+      "lat": 19.6925,
+      "lng": -98.8438,
+      "emoji": "🛕"
+    },
+    {
+      "name": "Chichén Itzá",
+      "description": { "en": "Mayan wonder of the world in Yucatán — at the equinox, a serpent of shadow slithers down El Castillo.", "de": "Maya-Weltwunder in Yucatán — zur Tagundnachtgleiche gleitet eine Schattenschlange die Stufen von El Castillo hinab." },
+      "lat": 20.6843,
+      "lng": -88.5678,
+      "emoji": "🐍"
+    },
+    {
+      "name": "Centro Histórico, CDMX",
+      "description": { "en": "The beating heart of Mexico City: the Zócalo, the Metropolitan Cathedral and Diego Rivera's murals — all built on Aztec ruins.", "de": "Das schlagende Herz von Mexiko-Stadt: der Zócalo, die Kathedrale und Diego Riveras Wandbilder — alles auf Azteken-Ruinen erbaut." },
+      "lat": 19.4326,
+      "lng": -99.1332,
+      "emoji": "🏛️"
+    },
+    {
+      "name": "Oaxaca de Juárez",
+      "description": { "en": "Mexico's culinary capital — mole, mezcal and the most spectacular Día de Muertos celebrations in the country.", "de": "Mexikos kulinarische Hauptstadt — Mole, Mezcal und die spektakulärsten Día-de-Muertos-Feiern des Landes." },
+      "lat": 17.0732,
+      "lng": -96.7266,
+      "emoji": "💀"
+    },
+    {
+      "name": "Tulum",
+      "description": { "en": "Mayan cliff-top ruins over turquoise Caribbean water — the only archaeological site with its own beach.", "de": "Maya-Ruinen auf Klippen über türkisem Karibikwasser — die einzige Ausgrabungsstätte mit eigenem Strand." },
+      "lat": 20.2114,
+      "lng": -87.4654,
+      "emoji": "🏖️"
+    }
+  ]
+}

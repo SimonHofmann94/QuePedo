@@ -1,0 +1,105 @@
+{
+  "id": "uy",
+  "flag": "🇺🇾",
+  "name": { "en": "Uruguay", "de": "Uruguay" },
+  "nameEs": "Uruguay",
+  "capital": "Montevideo",
+  "population": "3.4 M",
+  "intro": {
+    "en": "Uruguay speaks Rioplatense Spanish like its big neighbor Argentina: 'vos' instead of 'tú', and 'll' and 'y' pronounced as a soft 'sh' — 'calle' becomes 'cashe'. But the mate obsession is even more intense here: the thermos under the arm is practically part of the national dress code, indoors and out. This small, laid-back country of 3.4 million gave the world candombe drumming, the word 'ta' for everything, and two football World Cup titles. Understated, ironic and deeply chill — that's Uruguay.",
+    "de": "Uruguay spricht Rioplatense-Spanisch wie der große Nachbar Argentinien: 'vos' statt 'tú', und 'll' und 'y' klingen wie ein weiches 'sch' — aus 'calle' wird 'casche'. Die Mate-Besessenheit ist hier aber noch eine Stufe härter: Die Thermoskanne unterm Arm gehört quasi zur Nationaltracht, drinnen wie draußen. Dieses kleine, tiefenentspannte Land mit 3,4 Millionen Einwohnern schenkte der Welt die Candombe-Trommeln, das Allzweckwort 'ta' und zwei Fußball-Weltmeistertitel. Understatement, Ironie und maximale Gelassenheit — das ist Uruguay."
+  },
+  "funFact": {
+    "en": "Uruguayans drink more mate than anyone on Earth — around 10 kg of yerba per person per year, more than in Argentina. Special shoulder bags for thermos plus mate gourd are sold everywhere.",
+    "de": "Uruguayer trinken mehr Mate als irgendjemand sonst auf der Welt — rund 10 kg Yerba pro Kopf und Jahr, mehr als in Argentinien. Spezielle Umhängetaschen für Thermoskanne plus Mate-Becher gibt es an jeder Ecke."
+  },
+  "slang": [
+    {
+      "term": "bo",
+      "meaning": { "en": "hey, mate — Uruguay's answer to the Argentine 'che', tacked onto every sentence", "de": "hey, Alter — Uruguays Antwort auf das argentinische 'che', an jeden Satz drangehängt" },
+      "example": "Bo, ¿viste el partido anoche?"
+    },
+    {
+      "term": "ta",
+      "meaning": { "en": "okay, fine, deal — the shortest possible Uruguayan answer to almost anything", "de": "okay, passt, abgemacht — die kürzestmögliche uruguayische Antwort auf fast alles" },
+      "example": "—¿Nos vemos a las ocho? —Ta."
+    },
+    {
+      "term": "salado",
+      "meaning": { "en": "intense — either really tough or really awesome, context decides (literally 'salty')", "de": "krass — entweder richtig hart oder richtig großartig, der Kontext entscheidet (wörtlich 'salzig')" },
+      "example": "El examen estuvo salado, bo."
+    },
+    {
+      "term": "botija",
+      "meaning": { "en": "kid, youngster — deeply Uruguayan", "de": "Kind, Jugendlicher — zutiefst uruguayisch" },
+      "example": "Los botijas están jugando en la rambla."
+    },
+    {
+      "term": "gurí / gurisa",
+      "meaning": { "en": "kid — a Guaraní loanword used in Uruguay and northern Argentina", "de": "Kind — ein Guaraní-Lehnwort, das in Uruguay und Nordargentinien benutzt wird" },
+      "example": "Ese gurí es el hijo de la vecina."
+    },
+    {
+      "term": "pila",
+      "meaning": { "en": "a lot, loads — 'me gusta pila' = I like it a lot", "de": "viel, jede Menge — 'me gusta pila' = ich mag es total" },
+      "example": "Me gusta pila el candombe."
+    },
+    {
+      "term": "de más",
+      "meaning": { "en": "great, awesome", "de": "super, großartig" },
+      "example": "La playa estaba de más ayer."
+    },
+    {
+      "term": "ni ahí",
+      "meaning": { "en": "no way / couldn't care less", "de": "auf keinen Fall / ist mir völlig egal" },
+      "example": "—¿Vas a trabajar un domingo? —Ni ahí."
+    }
+  ],
+  "vocabulary": [
+    { "es": "los championes", "translation": { "en": "sneakers, trainers", "de": "Turnschuhe, Sneaker" }, "note": { "en": "elsewhere: zapatillas, tenis — one of Uruguay's most famous regionalisms", "de": "anderswo: zapatillas, tenis — einer der berühmtesten Uruguayismen" } },
+    { "es": "la caldera", "translation": { "en": "kettle (for mate water)", "de": "Wasserkessel (fürs Mate-Wasser)" }, "note": { "en": "in Argentina: la pava, elsewhere: el hervidor", "de": "in Argentinien: la pava, anderswo: el hervidor" } },
+    { "es": "el pancho", "translation": { "en": "hot dog", "de": "Hotdog" }, "note": { "en": "elsewhere: perrito caliente", "de": "anderswo: perrito caliente" } },
+    { "es": "el bizcocho", "translation": { "en": "small sweet or savory pastry, eaten with mate", "de": "kleines süßes oder salziges Gebäck, wird zum Mate gegessen" }, "note": { "en": "in Spain a bizcocho is a sponge cake", "de": "in Spanien ist ein Bizcocho ein Rührkuchen" } },
+    { "es": "el refuerzo", "translation": { "en": "simple sandwich on a bread roll", "de": "einfaches belegtes Brötchen" }, "note": { "en": "literally 'reinforcement' — elsewhere: bocadillo, sándwich", "de": "wörtlich 'Verstärkung' — anderswo: bocadillo, sándwich" } },
+    { "es": "el ómnibus", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: autobús, colectivo or camión", "de": "anderswo: autobús, colectivo oder camión" } },
+    { "es": "la nafta", "translation": { "en": "gasoline, petrol", "de": "Benzin" }, "note": { "en": "shared with Argentina — elsewhere: gasolina", "de": "wie in Argentinien — anderswo: gasolina" } },
+    { "es": "la rambla", "translation": { "en": "waterfront promenade — Montevideo's stretches over 22 km", "de": "Uferpromenade — die von Montevideo ist über 22 km lang" }, "note": { "en": "less a street than a way of life: mate, sunset, friends", "de": "weniger eine Straße als ein Lebensgefühl: Mate, Sonnenuntergang, Freunde" } }
+  ],
+  "sights": [
+    {
+      "name": "La Mano de Punta del Este",
+      "description": { "en": "Five giant concrete fingers rising from the sand since 1982 — the unofficial symbol of South America's most glamorous beach town.", "de": "Fünf riesige Betonfinger, die seit 1982 aus dem Sand ragen — das inoffizielle Wahrzeichen von Südamerikas glamourösestem Badeort." },
+      "lat": -34.9608,
+      "lng": -54.941,
+      "emoji": "✋"
+    },
+    {
+      "name": "Mercado del Puerto, Montevideo",
+      "description": { "en": "An 1868 iron market hall filled with asado smoke — order grilled meat and a 'medio y medio' and watch the parrilleros work the coals.", "de": "Eine eiserne Markthalle von 1868 voller Asado-Rauch — bestell Grillfleisch und einen 'medio y medio' und schau den Parrilleros an der Glut zu." },
+      "lat": -34.906,
+      "lng": -56.2114,
+      "emoji": "🥩"
+    },
+    {
+      "name": "Colonia del Sacramento",
+      "description": { "en": "Cobblestoned UNESCO old town that Portugal and Spain fought over for a century — climb the lighthouse for sunset over the Río de la Plata.", "de": "Kopfsteingepflasterte UNESCO-Altstadt, um die sich Portugal und Spanien ein Jahrhundert lang stritten — steig zum Sonnenuntergang über dem Río de la Plata auf den Leuchtturm." },
+      "lat": -34.4714,
+      "lng": -57.8442,
+      "emoji": "🏮"
+    },
+    {
+      "name": "Cabo Polonio",
+      "description": { "en": "A hamlet in the dunes with no roads and no power grid — you arrive by 4x4 over the sand, greeted by one of South America's largest sea lion colonies.", "de": "Ein Weiler in den Dünen ohne Straßen und ohne Stromnetz — du kommst per Geländewagen über den Sand an, begrüßt von einer der größten Seelöwenkolonien Südamerikas." },
+      "lat": -34.403,
+      "lng": -53.786,
+      "emoji": "🦭"
+    },
+    {
+      "name": "Estadio Centenario",
+      "description": { "en": "The stadium that hosted the first football World Cup final in 1930 — Uruguay won, and FIFA later declared it a Monument of World Football.", "de": "Das Stadion des allerersten Fußball-WM-Finales 1930 — Uruguay gewann, und die FIFA erklärte es später zum Monument des Weltfußballs." },
+      "lat": -34.8945,
+      "lng": -56.1531,
+      "emoji": "⚽"
+    }
+  ]
+}

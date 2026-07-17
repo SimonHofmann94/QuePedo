@@ -1,0 +1,104 @@
+{
+  "id": "cu",
+  "flag": "🇨🇺",
+  "name": { "en": "Cuba", "de": "Kuba" },
+  "nameEs": "Cuba",
+  "capital": "La Habana",
+  "population": "11 M",
+  "intro": {
+    "en": "Cuba is the Caribbean's largest island, and its Spanish sounds like it's being danced: final -s sounds vanish, syllables melt together, and everything moves at the speed of a son montuno. Decades of revolution and isolation gave Cuban Spanish a vocabulary all its own — from 'yuma' for foreigners to Soviet-era loanwords. Add rum, vintage Chevrolets and the son rhythms that later became salsa, and you get a country that talks the way it makes music.",
+    "de": "Kuba ist die größte Insel der Karibik, und ihr Spanisch klingt, als würde es getanzt: End-s verschwinden, Silben verschmelzen, und alles läuft im Tempo eines Son Montuno. Jahrzehnte von Revolution und Isolation haben dem kubanischen Spanisch ein ganz eigenes Vokabular beschert — von 'yuma' für Ausländer bis zu Lehnwörtern aus der Sowjetzeit. Dazu Rum, alte Chevrolets und die Son-Rhythmen, aus denen später die Salsa wurde — ein Land, das so spricht, wie es Musik macht."
+  },
+  "funFact": {
+    "en": "Around 60,000 pre-1959 American cars still cruise Cuba's streets — kept alive for decades with tractor parts, Soviet engines and pure ingenuity, because the US embargo cut off spare parts.",
+    "de": "Rund 60.000 amerikanische Autos von vor 1959 rollen noch heute durch Kubas Straßen — jahrzehntelang am Leben gehalten mit Traktorteilen, Sowjet-Motoren und purem Erfindergeist, weil das US-Embargo den Nachschub an Ersatzteilen kappte."
+  },
+  "slang": [
+    {
+      "term": "asere",
+      "meaning": { "en": "mate, buddy — Havana's favorite word, of Afro-Cuban origin", "de": "Kumpel, Alter — Havannas Lieblingswort, afrokubanischen Ursprungs" },
+      "example": "¡Asere, hace tiempo que no te veo!"
+    },
+    {
+      "term": "¿Qué bolá?",
+      "meaning": { "en": "What's up? — the Cuban greeting; even Obama used it on his 2016 Havana visit", "de": "Was geht? — die kubanische Begrüßung; sogar Obama benutzte sie 2016 bei seinem Havanna-Besuch" },
+      "example": "¿Qué bolá, asere? ¿Vamos a la playa?"
+    },
+    {
+      "term": "yuma",
+      "meaning": { "en": "foreigner, especially from the US — 'la Yuma' is the United States itself", "de": "Ausländer, vor allem aus den USA — 'la Yuma' sind die Vereinigten Staaten selbst" },
+      "example": "Mi primo se fue pa' la Yuma el año pasado."
+    },
+    {
+      "term": "la jama",
+      "meaning": { "en": "food, grub — 'jamar' is to eat", "de": "Essen, Futter — 'jamar' heißt essen" },
+      "example": "Vamos a buscar jama, tengo un hambre tremenda."
+    },
+    {
+      "term": "pinchar",
+      "meaning": { "en": "to work — nothing to do with the standard meaning 'to prick'", "de": "arbeiten — hat nichts mit der Standardbedeutung 'stechen' zu tun" },
+      "example": "Mañana no puedo, tengo que pinchar temprano."
+    },
+    {
+      "term": "fula",
+      "meaning": { "en": "a US dollar; as an adjective: bad, shady", "de": "ein US-Dollar; als Adjektiv: schlecht, zwielichtig" },
+      "example": "Eso cuesta veinte fulas en el mercado."
+    },
+    {
+      "term": "¡Chao pescao!",
+      "meaning": { "en": "Bye! (literally 'bye, fish!' — the classic reply is 'y a la vuelta picadillo')", "de": "Tschüss! (wörtlich 'tschüss, Fisch!' — die klassische Antwort lautet 'y a la vuelta picadillo')" },
+      "example": "Nos vemos mañana. ¡Chao pescao!"
+    },
+    {
+      "term": "estar hecho un mango",
+      "meaning": { "en": "to be gorgeous — in Cuba an attractive person is literally 'a mango'", "de": "umwerfend aussehen — in Kuba ist eine attraktive Person wörtlich 'eine Mango'" },
+      "example": "¿Viste al cantante? ¡Está hecho un mango!"
+    }
+  ],
+  "vocabulary": [
+    { "es": "la guagua", "translation": { "en": "bus", "de": "Bus" }, "note": { "en": "elsewhere: el autobús — all over the Caribbean the bus is a 'guagua'", "de": "anderswo: el autobús — in der ganzen Karibik ist der Bus eine 'guagua'" } },
+    { "es": "la fruta bomba", "translation": { "en": "papaya", "de": "Papaya" }, "note": { "en": "careful: in Cuba 'papaya' is vulgar — always order 'fruta bomba'", "de": "Vorsicht: 'papaya' ist auf Kuba vulgär — bestell immer 'fruta bomba'" } },
+    { "es": "la máquina", "translation": { "en": "shared taxi, usually a classic American car", "de": "Sammeltaxi, meist ein amerikanischer Oldtimer" }, "note": { "en": "elsewhere: el taxi colectivo — also called 'almendrón' (big almond)", "de": "anderswo: el taxi colectivo — auch 'almendrón' (große Mandel) genannt" } },
+    { "es": "los espejuelos", "translation": { "en": "glasses", "de": "Brille" }, "note": { "en": "elsewhere: las gafas / los lentes", "de": "anderswo: las gafas / los lentes" } },
+    { "es": "la jaba", "translation": { "en": "plastic bag, shopping bag", "de": "Plastiktüte, Einkaufstasche" }, "note": { "en": "elsewhere: la bolsa", "de": "anderswo: la bolsa" } },
+    { "es": "la pincha", "translation": { "en": "work, job", "de": "Arbeit, Job" }, "note": { "en": "elsewhere: el trabajo", "de": "anderswo: el trabajo" } },
+    { "es": "los jimaguas", "translation": { "en": "twins", "de": "Zwillinge" }, "note": { "en": "elsewhere: los gemelos — a word of Afro-Cuban origin", "de": "anderswo: los gemelos — ein Wort afrokubanischen Ursprungs" } }
+  ],
+  "sights": [
+    {
+      "name": "Habana Vieja",
+      "description": { "en": "Havana's UNESCO-listed old town — 500 years of colonial facades, with 1950s Chevrolets rumbling past pastel-colored arcades.", "de": "Havannas Altstadt, UNESCO-Welterbe — 500 Jahre Kolonialfassaden, während Chevrolets aus den 50ern an pastellfarbenen Arkaden vorbeirumpeln." },
+      "lat": 23.1355,
+      "lng": -82.3589,
+      "emoji": "🏛️"
+    },
+    {
+      "name": "El Malecón",
+      "description": { "en": "Havana's 8-km seafront wall — the city's open-air living room, where musicians, fishermen and lovers gather while waves crash over the road.", "de": "Havannas 8 km lange Uferpromenade — das Freiluft-Wohnzimmer der Stadt, wo sich Musiker, Angler und Verliebte treffen, während Wellen über die Straße schlagen." },
+      "lat": 23.1443,
+      "lng": -82.383,
+      "emoji": "🌊"
+    },
+    {
+      "name": "Valle de Viñales",
+      "description": { "en": "Lush valley dotted with dome-shaped mogote hills — the world's finest tobacco grows here, in fields still plowed with oxen.", "de": "Sattgrünes Tal voller kuppelförmiger Mogote-Hügel — hier wächst der beste Tabak der Welt, auf Feldern, die noch mit Ochsen gepflügt werden." },
+      "lat": 22.6167,
+      "lng": -83.7167,
+      "emoji": "🌿"
+    },
+    {
+      "name": "Trinidad",
+      "description": { "en": "A cobblestoned colonial time capsule frozen around 1850, when sugar fortunes built its pastel palaces and church towers.", "de": "Eine kopfsteingepflasterte koloniale Zeitkapsel, eingefroren um 1850, als Zuckervermögen ihre Pastellpaläste und Kirchtürme bauten." },
+      "lat": 21.8042,
+      "lng": -79.9847,
+      "emoji": "🏘️"
+    },
+    {
+      "name": "Varadero",
+      "description": { "en": "Twenty kilometers of powder-white sand on the narrow Hicacos peninsula — Cuba's most famous stretch of Caribbean turquoise.", "de": "Zwanzig Kilometer puderweißer Sand auf der schmalen Hicacos-Halbinsel — Kubas berühmtester Streifen Karibiktürkis." },
+      "lat": 23.1568,
+      "lng": -81.2444,
+      "emoji": "🏖️"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "pa",
+  "flag": "🇵🇦",
+  "name": { "en": "Panama", "de": "Panama" },
+  "nameEs": "Panamá",
+  "capital": "Ciudad de Panamá",
+  "population": "4.5 M",
+  "intro": {
+    "en": "Panama is the crossroads of the world: a country built around a canal that splits two continents and connects two oceans. Its Spanish is fast, Caribbean-flavored and full of swallowed s-sounds, spiced with English loanwords left behind by West Indian canal workers and decades of US presence — plus 'buco' (a lot), a souvenir from the failed French canal attempt. Skyscrapers tower over the capital while Guna women sell molas a boat ride away. And yes, salsa legend Rubén Blades is Panamanian.",
+    "de": "Panama ist die Kreuzung der Welt: ein Land, gebaut um einen Kanal, der zwei Kontinente trennt und zwei Ozeane verbindet. Das Spanisch hier ist schnell, karibisch gefärbt und voller verschluckter s-Laute, gewürzt mit englischen Lehnwörtern von westindischen Kanalarbeitern und Jahrzehnten US-Präsenz — plus 'buco' (viel), ein Souvenir des gescheiterten französischen Kanalversuchs. Über der Hauptstadt ragen Wolkenkratzer auf, während Guna-Frauen eine Bootsfahrt entfernt ihre Molas verkaufen. Und ja: Salsa-Legende Rubén Blades ist Panamaer."
+  },
+  "funFact": {
+    "en": "The cheapest Panama Canal toll ever was 36 cents — paid by adventurer Richard Halliburton, who swam the canal in 1928. Today big container ships pay over a million dollars per crossing.",
+    "de": "Die günstigste Kanalgebühr aller Zeiten betrug 36 Cent — gezahlt vom Abenteurer Richard Halliburton, der den Panamakanal 1928 durchschwamm. Heute zahlen große Containerschiffe über eine Million Dollar pro Durchfahrt."
+  },
+  "slang": [
+    {
+      "term": "¿Qué xopá?",
+      "meaning": { "en": "What's up? — '¿qué pasó?' with the syllables flipped, the signature Panama City greeting", "de": "Was geht? — '¿qué pasó?' mit vertauschten Silben, die typische Begrüßung in Panama-Stadt" },
+      "example": "¿Qué xopá, fren? ¿Todo bien?"
+    },
+    {
+      "term": "¡Chuleta!",
+      "meaning": { "en": "Dang! / Oh no! — a harmless exclamation, literally 'pork chop'", "de": "Mist! / Oh nein! — ein harmloser Ausruf, wörtlich 'Schweinekotelett'" },
+      "example": "¡Chuleta! Se me olvidó la billetera."
+    },
+    {
+      "term": "buco",
+      "meaning": { "en": "a lot, loads — from French 'beaucoup', a relic of the French canal era", "de": "viel, jede Menge — vom französischen 'beaucoup', ein Relikt der französischen Kanal-Ära" },
+      "example": "Había buco gente en el concierto."
+    },
+    {
+      "term": "pelao / pelaíta",
+      "meaning": { "en": "kid, young guy/girl — how Panamanians refer to almost anyone younger than them", "de": "Kind, junger Typ / junges Mädchen — so nennen Panamaer fast jeden, der jünger ist als sie" },
+      "example": "Ese pelao juega bola todos los días."
+    },
+    {
+      "term": "fren",
+      "meaning": { "en": "friend, buddy — straight from English", "de": "Freund, Kumpel — direkt aus dem Englischen übernommen" },
+      "example": "Voy al cine con mis frens esta noche."
+    },
+    {
+      "term": "vaina",
+      "meaning": { "en": "thing, stuff — the universal Caribbean placeholder word, used constantly in Panama", "de": "Ding, Zeug — das universelle Platzhalterwort der Karibik, in Panama ständig im Einsatz" },
+      "example": "Pásame esa vaina que está ahí."
+    },
+    {
+      "term": "tongo",
+      "meaning": { "en": "cop, police officer (colloquial)", "de": "Polizist, Bulle (umgangssprachlich)" },
+      "example": "Baja la velocidad, que ahí hay un tongo."
+    },
+    {
+      "term": "ahuevao",
+      "meaning": { "en": "clueless, slow on the uptake — rough but affectionate between friends", "de": "begriffsstutzig, auf der Leitung stehend — derb, aber unter Freunden liebevoll gemeint" },
+      "example": "No seas ahuevao, era una broma."
+    }
+  ],
+  "vocabulary": [
+    { "es": "la chicha", "translation": { "en": "fresh fruit juice", "de": "frischer Fruchtsaft" }, "note": { "en": "elsewhere chicha is a fermented corn drink — in Panama it's any fresh juice", "de": "anderswo ist Chicha ein vergorenes Maisgetränk — in Panama jeder frisch gepresste Saft" } },
+    { "es": "el diablo rojo", "translation": { "en": "'red devil' — a retired US school bus, wildly painted and run as public transport", "de": "'roter Teufel' — ein ausgemusterter US-Schulbus, wild bemalt und als Linienbus unterwegs" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } },
+    { "es": "el raspao", "translation": { "en": "shaved ice with syrup and condensed milk", "de": "geschabtes Eis mit Sirup und Kondensmilch" }, "note": { "en": "elsewhere: raspado or granizado", "de": "anderswo: raspado oder granizado" } },
+    { "es": "el camarón", "translation": { "en": "odd job, side gig", "de": "Gelegenheitsjob, Nebenverdienst" }, "note": { "en": "literally 'shrimp' — folk etymology says it comes from US bosses saying 'come around (tomorrow)' to day laborers", "de": "wörtlich 'Garnele' — der Volksmund leitet es von US-Vorarbeitern ab, die Tagelöhnern 'come around (tomorrow)' zuriefen" } },
+    { "es": "la pinta", "translation": { "en": "a (cold) beer", "de": "ein (kaltes) Bier" }, "note": { "en": "elsewhere 'pinta' means look/appearance", "de": "anderswo bedeutet 'pinta' Aussehen" } },
+    { "es": "fulo / fula", "translation": { "en": "blond, fair-haired person", "de": "blonde, hellhaarige Person" }, "note": { "en": "uniquely Panamanian — elsewhere: rubio/rubia", "de": "typisch panamaisch — anderswo: rubio/rubia" } },
+    { "es": "yeyé", "translation": { "en": "posh, preppy, rich-kid style", "de": "schickimicki, versnobt, reiche-Kids-Stil" }, "note": { "en": "'gente yeyé' — Panama's upper-class crowd", "de": "'gente yeyé' — Panamas Schickeria" } }
+  ],
+  "sights": [
+    {
+      "name": "Canal de Panamá — Esclusas de Miraflores",
+      "description": { "en": "Watch 300-meter ships get lifted 16 meters in the Miraflores locks — the engineering marvel that pays a big chunk of the national budget.", "de": "Sieh zu, wie 300-Meter-Schiffe in den Miraflores-Schleusen 16 Meter angehoben werden — das Ingenieurswunder, das einen dicken Teil des Staatshaushalts finanziert." },
+      "lat": 8.9977,
+      "lng": -79.5911,
+      "emoji": "🚢"
+    },
+    {
+      "name": "Casco Viejo",
+      "description": { "en": "Panama City's UNESCO-listed colonial quarter — crumbling facades next to rooftop bars, with the skyline glittering across the bay.", "de": "Panama-Stadts koloniale Altstadt mit UNESCO-Siegel — bröckelnde Fassaden neben Rooftop-Bars, und über der Bucht glitzert die Skyline." },
+      "lat": 8.9517,
+      "lng": -79.5353,
+      "emoji": "🏘️"
+    },
+    {
+      "name": "Guna Yala (San Blas)",
+      "description": { "en": "365 Caribbean islands — one for every day of the year — governed autonomously by the Guna, famous for their hand-sewn molas.", "de": "365 Karibikinseln — eine für jeden Tag des Jahres — autonom verwaltet von den Guna, berühmt für ihre handgenähten Molas." },
+      "lat": 9.57,
+      "lng": -78.82,
+      "emoji": "🏝️"
+    },
+    {
+      "name": "Bocas del Toro",
+      "description": { "en": "Laid-back Caribbean archipelago where water taxis replace cars and starfish carpet the shallows of Playa Estrella.", "de": "Entspanntes Karibik-Archipel, wo Wassertaxis die Autos ersetzen und Seesterne das flache Wasser der Playa Estrella pflastern." },
+      "lat": 9.3403,
+      "lng": -82.242,
+      "emoji": "🐬"
+    },
+    {
+      "name": "Parque Nacional Coiba",
+      "description": { "en": "A former penal colony turned UNESCO marine park — dive with whale sharks and hammerheads in Pacific waters barely touched by humans.", "de": "Eine ehemalige Sträflingsinsel, heute UNESCO-Meerespark — tauche mit Walhaien und Hammerhaien in einem Pazifik, den kaum ein Mensch berührt hat." },
+      "lat": 7.47,
+      "lng": -81.76,
+      "emoji": "🦈"
+    }
+  ]
+}

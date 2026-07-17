@@ -1,0 +1,105 @@
+{
+  "id": "es",
+  "flag": "🇪🇸",
+  "name": { "en": "Spain", "de": "Spanien" },
+  "nameEs": "España",
+  "capital": "Madrid",
+  "population": "48 M",
+  "intro": {
+    "en": "Spain is where Spanish was born — and where it sounds noticeably different from Latin America. Spaniards use 'vosotros' for 'you all', pronounce 'z' and soft 'c' like an English 'th' (gracias → 'grathias'), and fire off sentences at machine-gun speed. Add dinner at 10 pm, a bar on every corner and legendary nightlife, and you get a country that treats life as something to be enjoyed loudly.",
+    "de": "Spanien ist das Mutterland des Spanischen — und klingt doch ganz anders als Lateinamerika. Spanier sagen 'vosotros' für 'ihr', sprechen 'z' und weiches 'c' wie ein englisches 'th' (gracias → 'grathias') und reden in Maschinengewehr-Tempo. Dazu Abendessen um 22 Uhr, eine Bar an jeder Ecke und legendäres Nachtleben — ein Land, das das Leben laut und in vollen Zügen genießt."
+  },
+  "funFact": {
+    "en": "Spain runs on the 'wrong' time zone: in 1940 Franco moved the clocks to Berlin time — geographically Spain belongs in the same zone as London. That's one reason Spaniards eat dinner so famously late.",
+    "de": "Spanien lebt in der 'falschen' Zeitzone: 1940 stellte Franco die Uhren auf Berliner Zeit um — geografisch gehört Spanien in dieselbe Zone wie London. Auch deshalb essen Spanier so berühmt-berüchtigt spät zu Abend."
+  },
+  "slang": [
+    {
+      "term": "vale",
+      "meaning": { "en": "okay, alright — you'll hear it roughly every ten seconds", "de": "okay, alles klar — hörst du ungefähr alle zehn Sekunden" },
+      "example": "Vale, vale, nos vemos a las ocho."
+    },
+    {
+      "term": "tío / tía",
+      "meaning": { "en": "dude / girl (literally 'uncle/aunt') — the Spanish 'güey'", "de": "Alter / Süße (wörtlich 'Onkel/Tante') — das spanische 'güey'" },
+      "example": "¡Tío, no te vas a creer lo que me ha pasado!"
+    },
+    {
+      "term": "guay",
+      "meaning": { "en": "cool, great", "de": "cool, super" },
+      "example": "¡Qué guay tu chaqueta nueva!"
+    },
+    {
+      "term": "flipar",
+      "meaning": { "en": "to freak out, to be blown away", "de": "ausflippen, völlig aus dem Häuschen sein" },
+      "example": "Estoy flipando con esta serie, tío."
+    },
+    {
+      "term": "currar",
+      "meaning": { "en": "to work (informal) — 'el curro' is the job", "de": "arbeiten, malochen — 'el curro' ist der Job" },
+      "example": "Mañana no puedo, tengo que currar."
+    },
+    {
+      "term": "molar",
+      "meaning": { "en": "to be cool, to rock — 'me mola' = I dig it", "de": "cool sein, rocken — 'me mola' = das feiert mich an" },
+      "example": "Me mola mucho este bar."
+    },
+    {
+      "term": "ser la leche",
+      "meaning": { "en": "to be amazing (literally 'to be the milk')", "de": "der Hammer sein (wörtlich 'die Milch sein')" },
+      "example": "Este concierto es la leche."
+    },
+    {
+      "term": "majo / maja",
+      "meaning": { "en": "nice, likeable — the standard compliment for people", "de": "nett, sympathisch — das Standard-Kompliment für Menschen" },
+      "example": "La nueva profe es muy maja."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el coche", "translation": { "en": "car", "de": "Auto" }, "note": { "en": "Latin America: el carro / el auto", "de": "Lateinamerika: el carro / el auto" } },
+    { "es": "el ordenador", "translation": { "en": "computer", "de": "Computer" }, "note": { "en": "Latin America: la computadora", "de": "Lateinamerika: la computadora" } },
+    { "es": "el móvil", "translation": { "en": "mobile phone", "de": "Handy" }, "note": { "en": "Latin America: el celular", "de": "Lateinamerika: el celular" } },
+    { "es": "el zumo", "translation": { "en": "juice", "de": "Saft" }, "note": { "en": "Latin America: el jugo", "de": "Lateinamerika: el jugo" } },
+    { "es": "las gafas", "translation": { "en": "glasses", "de": "Brille" }, "note": { "en": "Latin America usually: los lentes / los anteojos", "de": "Lateinamerika meist: los lentes / los anteojos" } },
+    { "es": "el piso", "translation": { "en": "flat, apartment", "de": "Wohnung" }, "note": { "en": "in Latin America 'piso' just means floor — there it's el departamento", "de": "in Lateinamerika heißt 'piso' nur Fußboden — dort sagt man el departamento" } },
+    { "es": "conducir", "translation": { "en": "to drive", "de": "Auto fahren" }, "note": { "en": "Latin America: manejar", "de": "Lateinamerika: manejar" } },
+    { "es": "la patata", "translation": { "en": "potato", "de": "Kartoffel" }, "note": { "en": "Latin America: la papa — the original Quechua word", "de": "Lateinamerika: la papa — das ursprüngliche Quechua-Wort" } }
+  ],
+  "sights": [
+    {
+      "name": "Sagrada Família",
+      "description": { "en": "Gaudí's unfinished basilica in Barcelona — under construction since 1882, its towers rise like dripping sandcastles.", "de": "Gaudís unvollendete Basilika in Barcelona — seit 1882 im Bau, ihre Türme ragen auf wie tropfende Sandburgen." },
+      "lat": 41.4036,
+      "lng": 2.1744,
+      "emoji": "⛪"
+    },
+    {
+      "name": "La Alhambra",
+      "description": { "en": "Moorish palace city above Granada — ceilings of carved stucco so fine they look like frozen lace.", "de": "Maurische Palaststadt über Granada — Stuckdecken, so fein geschnitzt, dass sie wie gefrorene Spitze wirken." },
+      "lat": 37.1761,
+      "lng": -3.5881,
+      "emoji": "🕌"
+    },
+    {
+      "name": "Museo del Prado",
+      "description": { "en": "Madrid's art cathedral — stand in front of Velázquez's Las Meninas and let the painting stare back at you.", "de": "Madrids Kunst-Kathedrale — stell dich vor Velázquez' Las Meninas und lass das Gemälde zurückstarren." },
+      "lat": 40.4138,
+      "lng": -3.6921,
+      "emoji": "🖼️"
+    },
+    {
+      "name": "Plaza de España, Sevilla",
+      "description": { "en": "A half-moon of tiled alcoves, one for every Spanish province — so cinematic it doubled as a palace in Star Wars.", "de": "Ein Halbmond aus Kachel-Nischen, eine für jede spanische Provinz — so filmreif, dass sie in Star Wars als Palast diente." },
+      "lat": 37.3772,
+      "lng": -5.9869,
+      "emoji": "💃"
+    },
+    {
+      "name": "Santiago de Compostela",
+      "description": { "en": "The end of the Camino — pilgrims have walked here for 1,000 years to watch the giant Botafumeiro censer swing through the cathedral.", "de": "Das Ziel des Jakobswegs — seit 1.000 Jahren pilgern Menschen hierher, um den riesigen Botafumeiro durch die Kathedrale schwingen zu sehen." },
+      "lat": 42.8806,
+      "lng": -8.5449,
+      "emoji": "🥾"
+    }
+  ]
+}

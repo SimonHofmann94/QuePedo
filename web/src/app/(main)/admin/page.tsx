@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { redirect } from "next/navigation"
 import { isCallerAdmin, adminListUsers, adminStats } from "@/actions/admin"
 import { AdminUsersTable } from "./AdminUsersTable"
@@ -50,6 +51,25 @@ export default async function AdminPage() {
             </div>
           ))}
         </div>
+
+        {/* Culture CMS entry */}
+        <Link
+          href="/admin/culture"
+          className="group mb-8 flex items-center gap-4 rounded-[20px] border-[3px] border-cielo-500 bg-white p-5 shadow-[0_4px_0_0_var(--cielo-700)] transition-transform duration-100 active:translate-y-1 active:shadow-none"
+        >
+          <div className="text-4xl">🌎</div>
+          <div className="flex-1">
+            <div className="font-display text-xl font-extrabold leading-tight tracking-tight text-ink-800">
+              Contenido cultural
+            </div>
+            <p className="mt-1 text-sm text-ink-500">
+              Edita las 21 páginas de países: intro, slang, vocabulario y lugares
+            </p>
+          </div>
+          <span className="font-display text-sm font-bold text-cielo-500 transition-transform group-hover:translate-x-1">
+            ¡Dale! →
+          </span>
+        </Link>
 
         <AdminUsersTable initialUsers={users} />
       </div>

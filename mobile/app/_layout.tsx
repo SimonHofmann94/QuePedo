@@ -10,6 +10,7 @@ import {
 import { Caprasimo_400Regular } from '@expo-google-fonts/caprasimo'
 import { JetBrainsMono_500Medium, JetBrainsMono_700Bold } from '@expo-google-fonts/jetbrains-mono'
 import { View } from 'react-native'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import * as Sentry from '@sentry/react-native'
 import { PostHogProvider } from 'posthog-react-native'
 import { AuthProvider, useAuth } from '@/contexts/AuthContext'
@@ -80,7 +81,11 @@ function RootLayout() {
 
   // Wrap in PostHogProvider only when a client exists — local dev without
   // EXPO_PUBLIC_POSTHOG_KEY just renders the bare tree.
-  return posthog ? <PostHogProvider client={posthog}>{tree}</PostHogProvider> : tree
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      {posthog ? <PostHogProvider client={posthog}>{tree}</PostHogProvider> : tree}
+    </GestureHandlerRootView>
+  )
 }
 
 export default Sentry.wrap(RootLayout)

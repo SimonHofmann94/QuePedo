@@ -1,0 +1,99 @@
+{
+  "id": "bo",
+  "flag": "🇧🇴",
+  "name": { "en": "Bolivia", "de": "Bolivien" },
+  "nameEs": "Bolivia",
+  "capital": "Sucre / La Paz",
+  "population": "12 M",
+  "intro": {
+    "en": "Bolivia is South America at full intensity: the seat of government, La Paz, sits at 3,600 m, and the altiplano stretches even higher. Most Bolivians grow up between languages — Quechua and Aymara are official alongside Spanish, and 36 indigenous languages are written into the constitution. Andean Spanish borrows happily: a baby is a 'wawa', a hangover a 'ch'aki', and sentences like to end in 'pues'.",
+    "de": "Bolivien ist Südamerika in voller Intensität: Der Regierungssitz La Paz liegt auf 3.600 m, und das Altiplano zieht sich noch höher hinauf. Die meisten Bolivianer wachsen zwischen den Sprachen auf — Quechua und Aymara sind neben Spanisch offiziell, 36 indigene Sprachen stehen in der Verfassung. Das Anden-Spanisch bedient sich munter: Ein Baby ist eine 'wawa', der Kater ein 'ch'aki', und Sätze enden gern auf 'pues'."
+  },
+  "funFact": {
+    "en": "The clock on Bolivia's congress building in La Paz runs backwards. The 'Clock of the South' was reversed in 2014 as a statement that the southern hemisphere doesn't have to tick like the north.",
+    "de": "Die Uhr am bolivianischen Kongressgebäude in La Paz läuft rückwärts. Die 'Uhr des Südens' wurde 2014 umgedreht — als Statement, dass die Südhalbkugel nicht so ticken muss wie der Norden."
+  },
+  "slang": [
+    {
+      "term": "chango / changa",
+      "meaning": { "en": "boy/girl, young person", "de": "Junge/Mädchen, junger Mensch" },
+      "example": "Ese chango juega bien al fútbol."
+    },
+    {
+      "term": "jailón / jailona",
+      "meaning": { "en": "posh, snobby rich kid (from English 'high')", "de": "schickimicki, versnobtes reiches Kind (vom englischen 'high')" },
+      "example": "Esa discoteca está llena de jailones."
+    },
+    {
+      "term": "pues",
+      "meaning": { "en": "the sentence-final seasoning — Bolivians sprinkle it onto everything: 'ya pues', 'no pues', '¿dónde pues?'", "de": "das Satzende-Gewürz — Bolivianer streuen es über alles: 'ya pues', 'no pues', '¿dónde pues?'" },
+      "example": "Apurate pues, que llegamos tarde."
+    },
+    {
+      "term": "ch'aki",
+      "meaning": { "en": "hangover — straight from Quechua for 'dry'", "de": "Kater — direkt aus dem Quechua für 'trocken'" },
+      "example": "Tengo un ch'aki terrible después del carnaval."
+    },
+    {
+      "term": "camba",
+      "meaning": { "en": "someone from the eastern lowlands around Santa Cruz — counterpart of 'colla', the highlander", "de": "jemand aus dem östlichen Tiefland um Santa Cruz — Gegenstück zum 'colla' aus dem Hochland" },
+      "example": "Los cambas y los collas se hacen bromas, pero se quieren."
+    },
+    {
+      "term": "chupar",
+      "meaning": { "en": "to drink alcohol — literally 'to suck'", "de": "Alkohol trinken — wörtlich 'saugen'" },
+      "example": "Anoche fuimos a chupar con los del trabajo."
+    },
+    {
+      "term": "elay",
+      "meaning": { "en": "'there you go! / see!' — beloved interjection from the valleys of Cochabamba", "de": "'na also! / siehst du!' — beliebter Ausruf aus den Tälern von Cochabamba" },
+      "example": "¡Elay pues! Te dije que iba a llover."
+    }
+  ],
+  "vocabulary": [
+    { "es": "la chompa", "translation": { "en": "sweater", "de": "Pullover" }, "note": { "en": "from English 'jumper'; elsewhere: el suéter / el jersey", "de": "vom englischen 'jumper'; anderswo: el suéter / el jersey" } },
+    { "es": "la wawa", "translation": { "en": "baby, small child", "de": "Baby, kleines Kind" }, "note": { "en": "from Quechua/Aymara; elsewhere: el bebé", "de": "aus dem Quechua/Aymara; anderswo: el bebé" } },
+    { "es": "la yapa", "translation": { "en": "a little extra thrown in for free at the market", "de": "kleine Gratis-Zugabe auf dem Markt" }, "note": { "en": "from Quechua — just ask: '¿y mi yapa?'", "de": "aus dem Quechua — frag einfach: '¿y mi yapa?'" } },
+    { "es": "el trufi", "translation": { "en": "shared taxi on a fixed route", "de": "Sammeltaxi mit fester Route" }, "note": { "en": "short for 'taxi de ruta fija'; elsewhere: el colectivo", "de": "kurz für 'taxi de ruta fija'; anderswo: el colectivo" } },
+    { "es": "la salteña", "translation": { "en": "juicy baked empanada — the mid-morning snack", "de": "saftige, gebackene Empanada — der Vormittagssnack" }, "note": { "en": "eating one without spilling earns you real respect", "de": "wer sie kleckerfrei isst, erntet echten Respekt" } },
+    { "es": "el api", "translation": { "en": "hot purple-corn drink with cinnamon", "de": "heißes Getränk aus lila Mais mit Zimt" }, "note": { "en": "breakfast classic, usually with a fried 'pastel'", "de": "Frühstücksklassiker, meist mit einem frittierten 'pastel'" } },
+    { "es": "el micro", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } }
+  ],
+  "sights": [
+    {
+      "name": "Salar de Uyuni",
+      "description": { "en": "The world's largest salt flat (over 10,000 km²) — after rain it becomes a giant mirror where sky and earth merge; beneath it lies one of Earth's biggest lithium reserves.", "de": "Die größte Salzpfanne der Welt (über 10.000 km²) — nach Regen wird sie zum riesigen Spiegel, in dem Himmel und Erde verschmelzen; darunter liegt eine der größten Lithium-Reserven der Erde." },
+      "lat": -20.1338,
+      "lng": -67.4891,
+      "emoji": "🧂"
+    },
+    {
+      "name": "Lago Titicaca (Copacabana)",
+      "description": { "en": "The highest navigable lake in the world at 3,812 m — from Copacabana, boats leave for Isla del Sol, birthplace of the sun in Inca mythology.", "de": "Der höchstgelegene schiffbare See der Welt auf 3.812 m — von Copacabana starten Boote zur Isla del Sol, dem Geburtsort der Sonne in der Inka-Mythologie." },
+      "lat": -16.1662,
+      "lng": -69.0862,
+      "emoji": "⛵"
+    },
+    {
+      "name": "La Paz",
+      "description": { "en": "The world's highest seat of government — its metro runs through the air: Mi Teleférico, the largest urban cable-car network on the planet.", "de": "Der höchstgelegene Regierungssitz der Welt — seine Metro schwebt durch die Luft: Mi Teleférico, das größte urbane Seilbahnnetz des Planeten." },
+      "lat": -16.4957,
+      "lng": -68.1335,
+      "emoji": "🚠"
+    },
+    {
+      "name": "Tiwanaku",
+      "description": { "en": "Pre-Inca ruins near Lake Titicaca — the Gateway of the Sun was carved from a single block of andesite more than a thousand years ago.", "de": "Prä-Inka-Ruinen nahe dem Titicacasee — das Sonnentor wurde vor über tausend Jahren aus einem einzigen Andesit-Block gehauen." },
+      "lat": -16.5546,
+      "lng": -68.6734,
+      "emoji": "🗿"
+    },
+    {
+      "name": "Cerro Rico, Potosí",
+      "description": { "en": "The 'rich mountain' whose silver bankrolled the Spanish Empire — in the 1600s Potosí was one of the largest cities in the world, and miners still work its tunnels today.", "de": "Der 'reiche Berg', dessen Silber das spanische Weltreich finanzierte — im 17. Jahrhundert war Potosí eine der größten Städte der Welt, und noch heute arbeiten Bergleute in seinen Stollen." },
+      "lat": -19.6189,
+      "lng": -65.75,
+      "emoji": "⛏️"
+    }
+  ]
+}

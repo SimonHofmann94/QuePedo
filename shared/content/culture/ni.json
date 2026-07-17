@@ -1,0 +1,99 @@
+{
+  "id": "ni",
+  "flag": "🇳🇮",
+  "name": { "en": "Nicaragua", "de": "Nicaragua" },
+  "nameEs": "Nicaragua",
+  "capital": "Managua",
+  "population": "7 M",
+  "intro": {
+    "en": "Nicaragua is the 'land of lakes and volcanoes' — and of poets: Rubén Darío reinvented Spanish-language poetry here, and Nicas will happily quote verse at you over a glass of pinolillo. Nicaraguan Spanish is pure voseo, swallows its final s like the Caribbean, and bends words with playful abandon ('ideay'). On the Caribbean coast, Spanish shares the streets with English Creole and Miskito.",
+    "de": "Nicaragua ist das 'Land der Seen und Vulkane' — und der Dichter: Rubén Darío hat hier die spanischsprachige Lyrik neu erfunden, und Nicas zitieren dir gern Verse zum Glas Pinolillo. Nicaraguanisches Spanisch ist pures Voseo, verschluckt das End-s wie in der Karibik und verbiegt Wörter mit purer Spielfreude ('ideay'). An der Karibikküste teilt sich Spanisch die Straßen mit englischem Kreol und Miskito."
+  },
+  "funFact": {
+    "en": "In the 1980s, deaf children at Managua's first schools for the deaf spontaneously invented an entirely new language. Nicaraguan Sign Language is the only language whose birth linguists were able to watch from day one.",
+    "de": "In den 1980ern erfanden gehörlose Kinder an Managuas ersten Gehörlosenschulen spontan eine komplett neue Sprache. Die Nicaraguanische Gebärdensprache ist die einzige Sprache, deren Geburt Linguisten von Tag eins an beobachten konnten."
+  },
+  "slang": [
+    {
+      "term": "tuani",
+      "meaning": { "en": "cool, nice — the Nica seal of approval", "de": "cool, schön — das Nica-Gütesiegel" },
+      "example": "¡Qué tuani está la fiesta!"
+    },
+    {
+      "term": "chele / chela",
+      "meaning": { "en": "fair-skinned or blond person — affectionate, often used as a nickname", "de": "hellhäutige oder blonde Person — liebevoll gemeint, oft als Spitzname" },
+      "example": "Al chele se le quemó la espalda en la playa."
+    },
+    {
+      "term": "¡Dale pues!",
+      "meaning": { "en": "alright / deal / see you — the all-purpose Nica sign-off", "de": "alles klar / abgemacht / bis dann — der Nica-Universalabschluss" },
+      "example": "—Nos vemos mañana a las ocho. —¡Dale pues!"
+    },
+    {
+      "term": "ideay",
+      "meaning": { "en": "'and so?' / 'what gives?' — quintessentially Nica, contracted from '¿y de ahí?'", "de": "'und jetzt?' / 'was soll das?' — urnicaraguanisch, zusammengezogen aus '¿y de ahí?'" },
+      "example": "Ideay, ¿por qué llegaste tan tarde?"
+    },
+    {
+      "term": "chavalo / chavala",
+      "meaning": { "en": "kid, youngster", "de": "Kind, Jugendliche(r)" },
+      "example": "Los chavalos andan jugando béisbol en la calle."
+    },
+    {
+      "term": "chunche",
+      "meaning": { "en": "thingamajig — works for any object you can't name", "de": "Dingsbums — passt für jedes Objekt, dem der Name fehlt" },
+      "example": "Pasame ese chunche que está en la mesa."
+    },
+    {
+      "term": "deacachimba",
+      "meaning": { "en": "fantastic, amazing — very informal and mildly crude; among friends only", "de": "fantastisch, der Wahnsinn — sehr informell und leicht derb; nur unter Freunden" },
+      "example": "El concierto estuvo deacachimba."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el chigüín", "translation": { "en": "small kid, tot", "de": "kleines Kind, Knirps" }, "note": { "en": "elsewhere: el niño", "de": "anderswo: el niño" } },
+    { "es": "los reales", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — a colonial coin name that simply stuck", "de": "anderswo: el dinero — ein Münzname aus der Kolonialzeit, der einfach geblieben ist" } },
+    { "es": "el pinolillo", "translation": { "en": "toasted corn and cacao drink — the national beverage", "de": "Getränk aus geröstetem Mais und Kakao — das Nationalgetränk" }, "note": { "en": "Nicas proudly call themselves 'pinoleros'", "de": "Nicas nennen sich stolz 'pinoleros'" } },
+    { "es": "el gallo pinto", "translation": { "en": "rice and beans, on the plate practically every day", "de": "Reis mit Bohnen, praktisch täglich auf dem Teller" }, "note": { "en": "Costa Rica claims it too — an eternal, friendly rivalry", "de": "Costa Rica beansprucht es auch — eine ewige, freundschaftliche Rivalität" } },
+    { "es": "el fresco", "translation": { "en": "fresh fruit drink", "de": "frisches Fruchtgetränk" }, "note": { "en": "elsewhere 'refresco' usually means soda", "de": "anderswo ist ein 'refresco' meist Limonade" } },
+    { "es": "la chimbomba", "translation": { "en": "balloon", "de": "Luftballon" }, "note": { "en": "elsewhere: el globo", "de": "anderswo: el globo" } },
+    { "es": "el caite", "translation": { "en": "simple leather sandal", "de": "einfache Ledersandale" }, "note": { "en": "from Nahuatl 'cactli'; elsewhere: la sandalia", "de": "aus dem Nahuatl 'cactli'; anderswo: la sandalia" } }
+  ],
+  "sights": [
+    {
+      "name": "Isla de Ometepe",
+      "description": { "en": "Two volcanoes rising out of Lake Nicaragua form an island shaped like a figure eight — Concepción is a perfect cone and still active.", "de": "Zwei Vulkane, die aus dem Nicaraguasee ragen, bilden eine Insel in Form einer Acht — der Concepción ist ein perfekter Kegel und noch aktiv." },
+      "lat": 11.5148,
+      "lng": -85.5824,
+      "emoji": "🌋"
+    },
+    {
+      "name": "Granada",
+      "description": { "en": "One of the oldest colonial cities on the American mainland (founded 1524) — pastel facades, horse-drawn carriages and volcano views across the lake.", "de": "Eine der ältesten Kolonialstädte auf dem amerikanischen Festland (gegründet 1524) — Pastellfassaden, Pferdekutschen und Vulkanblick über den See." },
+      "lat": 11.9294,
+      "lng": -85.956,
+      "emoji": "🏛️"
+    },
+    {
+      "name": "Volcán Masaya",
+      "description": { "en": "Drive right up to the crater rim and look down at glowing lava — the Spanish called it 'La Boca del Infierno' and planted a cross to exorcise it.", "de": "Fahr bis an den Kraterrand und schau hinunter auf glühende Lava — die Spanier nannten ihn 'La Boca del Infierno' und pflanzten ein Kreuz dagegen." },
+      "lat": 11.9844,
+      "lng": -86.1685,
+      "emoji": "🔥"
+    },
+    {
+      "name": "Catedral de León",
+      "description": { "en": "The largest cathedral in Central America, gleaming white — Rubén Darío is buried inside beneath a weeping lion.", "de": "Die größte Kathedrale Zentralamerikas, strahlend weiß — Rubén Darío liegt hier unter einem weinenden Löwen begraben." },
+      "lat": 12.4345,
+      "lng": -86.878,
+      "emoji": "⛪"
+    },
+    {
+      "name": "Corn Islands",
+      "description": { "en": "Two tiny Caribbean islands 70 km off the coast — English Creole, lobster fishing, and on Little Corn not a single car.", "de": "Zwei winzige Karibikinseln 70 km vor der Küste — englisches Kreol, Hummerfischerei, und auf Little Corn kein einziges Auto." },
+      "lat": 12.17,
+      "lng": -83.06,
+      "emoji": "🏝️"
+    }
+  ]
+}

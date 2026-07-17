@@ -1,0 +1,99 @@
+{
+  "id": "sv",
+  "flag": "🇸🇻",
+  "name": { "en": "El Salvador", "de": "El Salvador" },
+  "nameEs": "El Salvador",
+  "capital": "San Salvador",
+  "population": "6 M",
+  "intro": {
+    "en": "El Salvador is the smallest country in Central America, and its people — the proud 'guanacos' — speak a rapid-fire, vos-based Spanish seasoned with words from Nahuat, the language of the Pipil. Life revolves around the pupusa, eaten with your hands and with fierce local pride. The 'Pulgarcito de América' (Tom Thumb of the Americas) squeezes more than 20 volcanoes and world-class surf breaks into a country you can drive across in three hours.",
+    "de": "El Salvador ist das kleinste Land Zentralamerikas, und seine Leute — die stolzen 'guanacos' — sprechen ein rasantes Spanisch mit 'vos', gewürzt mit Wörtern aus dem Nahuat, der Sprache der Pipil. Alles dreht sich um die Pupusa, die man mit den Händen isst — und mit ordentlich Lokalstolz. Der 'Pulgarcito de América' (Däumling Amerikas) quetscht über 20 Vulkane und Weltklasse-Surfspots in ein Land, das du in drei Stunden durchqueren kannst."
+  },
+  "funFact": {
+    "en": "In 2021, El Salvador became the first country in the world to make Bitcoin legal tender — and it even mines coins with geothermal energy tapped straight from a volcano.",
+    "de": "2021 machte El Salvador als erstes Land der Welt Bitcoin zum gesetzlichen Zahlungsmittel — geschürft wird sogar mit Geothermie, die direkt aus einem Vulkan gezapft wird."
+  },
+  "slang": [
+    {
+      "term": "chivo",
+      "meaning": { "en": "cool, great (literally 'goat')", "de": "cool, klasse (wörtlich 'Ziegenbock')" },
+      "example": "¡Qué chivo tu celular nuevo!"
+    },
+    {
+      "term": "bicho / bicha",
+      "meaning": { "en": "kid, youngster — normal in El Salvador, but vulgar in Puerto Rico, so mind your geography", "de": "Kind, Jugendliche(r) — in El Salvador normal, in Puerto Rico vulgär; also auf die Geografie achten" },
+      "example": "Esos bichos pasan todo el día jugando fútbol."
+    },
+    {
+      "term": "chero / chera",
+      "meaning": { "en": "friend, buddy", "de": "Freund(in), Kumpel" },
+      "example": "Esta noche salgo con mis cheros."
+    },
+    {
+      "term": "¡Puchica!",
+      "meaning": { "en": "dang! / wow! — the softened all-purpose exclamation", "de": "Mist! / Wow! — der entschärfte Allzweck-Ausruf" },
+      "example": "¡Puchica, se me olvidaron las llaves!"
+    },
+    {
+      "term": "vergón",
+      "meaning": { "en": "awesome — vulgar root but an everyday compliment; keep it informal", "de": "der Hammer — vulgärer Ursprung, aber ein Alltagskompliment; bitte nur informell" },
+      "example": "¡El concierto estuvo vergón!"
+    },
+    {
+      "term": "bayunco",
+      "meaning": { "en": "silly, goofy, clowning around", "de": "albern, verpeilt, am Rumkaspern" },
+      "example": "No seás bayunco, estamos en misa."
+    },
+    {
+      "term": "dundo",
+      "meaning": { "en": "dim, slow on the uptake", "de": "begriffsstutzig, schwer von Kapee" },
+      "example": "No seás dundo, era solo una broma."
+    }
+  ],
+  "vocabulary": [
+    { "es": "el pisto", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — also used in Guatemala and Honduras", "de": "anderswo: el dinero — auch in Guatemala und Honduras gebräuchlich" } },
+    { "es": "la pupusa", "translation": { "en": "thick corn tortilla stuffed with cheese, beans or chicharrón — the national dish", "de": "dicke Maistortilla, gefüllt mit Käse, Bohnen oder Chicharrón — das Nationalgericht" }, "note": { "en": "has its own holiday: Día Nacional de la Pupusa, second Sunday of November", "de": "hat einen eigenen Feiertag: Día Nacional de la Pupusa, zweiter Sonntag im November" } },
+    { "es": "el cipote / la cipota", "translation": { "en": "kid, child", "de": "Kind" }, "note": { "en": "elsewhere: el niño — also used in Honduras", "de": "anderswo: el niño — auch in Honduras gebräuchlich" } },
+    { "es": "el guacal", "translation": { "en": "plastic bowl, washbasin", "de": "Plastikschüssel" }, "note": { "en": "from Nahuat 'huacal'; elsewhere: la palangana", "de": "aus dem Nahuat 'huacal'; anderswo: la palangana" } },
+    { "es": "el chompipe", "translation": { "en": "turkey", "de": "Truthahn" }, "note": { "en": "elsewhere: el pavo", "de": "anderswo: el pavo" } },
+    { "es": "el zacate", "translation": { "en": "grass, lawn", "de": "Gras, Rasen" }, "note": { "en": "also used in Mexico; elsewhere: el césped", "de": "auch in Mexiko üblich; anderswo: el césped" } },
+    { "es": "el ayote", "translation": { "en": "squash, pumpkin", "de": "Kürbis" }, "note": { "en": "elsewhere: la calabaza", "de": "anderswo: la calabaza" } }
+  ],
+  "sights": [
+    {
+      "name": "Volcán de Santa Ana",
+      "description": { "en": "El Salvador's highest volcano (2,381 m) — hike to the crater rim and stare down into a steaming, emerald-green sulfur lagoon.", "de": "El Salvadors höchster Vulkan (2.381 m) — wandere zum Kraterrand und blicke hinab in eine dampfende, smaragdgrüne Schwefellagune." },
+      "lat": 13.8528,
+      "lng": -89.6294,
+      "emoji": "🌋"
+    },
+    {
+      "name": "Lago de Coatepeque",
+      "description": { "en": "A volcanic crater lake that periodically turns bright turquoise — locals still debate whether it's algae or magic.", "de": "Ein Vulkan-Kratersee, der sich regelmäßig leuchtend türkis färbt — die Einheimischen streiten noch, ob es Algen sind oder Magie." },
+      "lat": 13.8667,
+      "lng": -89.55,
+      "emoji": "🌊"
+    },
+    {
+      "name": "Playa El Tunco",
+      "description": { "en": "El Salvador's surf capital, named after a pig-shaped rock in the waves — world championships have been surfed at nearby Punta Roca.", "de": "El Salvadors Surf-Hauptstadt, benannt nach einem schweineförmigen Felsen in den Wellen — an der nahen Punta Roca wurden schon Weltmeisterschaften gesurft." },
+      "lat": 13.4928,
+      "lng": -89.3804,
+      "emoji": "🏄"
+    },
+    {
+      "name": "Joya de Cerén",
+      "description": { "en": "The 'Pompeii of the Americas' — a Mayan farming village buried by volcanic ash around 600 CE, preserved down to its corn fields; UNESCO World Heritage.", "de": "Das 'Pompeji Amerikas' — ein Maya-Bauerndorf, um 600 n. Chr. von Vulkanasche begraben und bis zu den Maisfeldern konserviert; UNESCO-Welterbe." },
+      "lat": 13.8278,
+      "lng": -89.3611,
+      "emoji": "🌾"
+    },
+    {
+      "name": "Ruta de las Flores",
+      "description": { "en": "A winding mountain road through coffee country — weekend food festivals in Juayúa and streets full of murals in Ataco.", "de": "Kurvige Bergstraße durchs Kaffeeland — Food-Festivals am Wochenende in Juayúa und Straßen voller Wandbilder in Ataco." },
+      "lat": 13.8414,
+      "lng": -89.7458,
+      "emoji": "🌸"
+    }
+  ]
+}

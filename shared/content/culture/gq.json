@@ -1,0 +1,94 @@
+{
+  "id": "gq",
+  "flag": "🇬🇶",
+  "name": { "en": "Equatorial Guinea", "de": "Äquatorialguinea" },
+  "nameEs": "Guinea Ecuatorial",
+  "capital": "Malabo",
+  "population": "1.7 M",
+  "intro": {
+    "en": "Equatorial Guinea is Africa's only Spanish-speaking country — a Spanish colony until 1968, and today the great outlier of the Spanish-speaking world. Spanish lives here alongside Bantu languages like Fang and Bubi, plus Pichi, an English-based creole spoken on Bioko island. It's also the only place outside Spain where 'vosotros' is standard. The result is a Spanish unlike any other: African rhythm, Bantu and Pichi loanwords, and palm wine instead of sangría.",
+    "de": "Äquatorialguinea ist das einzige spanischsprachige Land Afrikas — bis 1968 spanische Kolonie und heute der große Exot der spanischsprachigen Welt. Spanisch lebt hier Seite an Seite mit Bantusprachen wie Fang und Bubi sowie Pichi, einem englischbasierten Kreol der Insel Bioko. Außerdem ist es der einzige Ort außerhalb Spaniens, an dem 'vosotros' Standard ist. Das Ergebnis ist ein Spanisch wie kein anderes: afrikanischer Rhythmus, Lehnwörter aus Bantu und Pichi — und Palmwein statt Sangría."
+  },
+  "funFact": {
+    "en": "The capital Malabo isn't even on the mainland — it sits on the island of Bioko, closer to Cameroon than to the rest of the country. A brand-new capital, Ciudad de la Paz, is being carved out of the mainland rainforest.",
+    "de": "Die Hauptstadt Malabo liegt nicht einmal auf dem Festland — sie sitzt auf der Insel Bioko, näher an Kamerun als am Rest des Landes. Eine nagelneue Hauptstadt, Ciudad de la Paz, wird gerade in den Regenwald des Festlands gebaut."
+  },
+  "slang": [
+    {
+      "term": "chapear",
+      "meaning": { "en": "to clear brush with a machete — and by extension, to graft, to work hard", "de": "mit der Machete Gestrüpp schlagen — und im übertragenen Sinn: schuften, hart arbeiten" },
+      "example": "El sábado toca chapear la finca antes de que llueva."
+    },
+    {
+      "term": "balele",
+      "meaning": { "en": "communal dance, street party with drums — where the whole village shows up", "de": "Gemeinschaftstanz, Straßenfest mit Trommeln — bei dem das ganze Dorf aufkreuzt" },
+      "example": "Todo el pueblo salió al balele hasta la madrugada."
+    },
+    {
+      "term": "mininga",
+      "meaning": { "en": "girlfriend, young woman (colloquial, from Bantu — can sound cheeky, use with care)", "de": "Freundin, junge Frau (umgangssprachlich, aus dem Bantu — kann flapsig klingen, mit Vorsicht benutzen)" },
+      "example": "Dicen que Andrés tiene una mininga en Bata."
+    },
+    {
+      "term": "poto-poto",
+      "meaning": { "en": "mud, swampy ground — a Pichi word every rainy season brings back", "de": "Schlamm, matschiger Boden — ein Pichi-Wort, das jede Regenzeit zurückbringt" },
+      "example": "Con las lluvias, el camino está puro poto-poto."
+    },
+    {
+      "term": "guachimán",
+      "meaning": { "en": "night watchman, guard — from English 'watchman'", "de": "Nachtwächter, Wachmann — vom englischen 'watchman'" },
+      "example": "El guachimán del edificio conoce a todo el mundo."
+    },
+    {
+      "term": "contrí",
+      "meaning": { "en": "one's home village, homeland — from Pichi 'kontri' (English 'country')", "de": "das Heimatdorf, die Heimat — aus dem Pichi 'kontri' (englisch 'country')" },
+      "example": "En Navidad todos vuelven a su contrí."
+    }
+  ],
+  "vocabulary": [
+    { "es": "la antorcha", "translation": { "en": "flashlight", "de": "Taschenlampe" }, "note": { "en": "elsewhere 'antorcha' is a burning torch — the flashlight is a linterna", "de": "anderswo ist 'antorcha' eine brennende Fackel — die Taschenlampe heißt linterna" } },
+    { "es": "el topé", "translation": { "en": "palm wine", "de": "Palmwein" }, "note": { "en": "tapped fresh from the palm tree and drunk the same day", "de": "wird frisch von der Palme gezapft und noch am selben Tag getrunken" } },
+    { "es": "la malamba", "translation": { "en": "sugar-cane liquor", "de": "Zuckerrohrschnaps" }, "note": { "en": "home-distilled and seriously strong", "de": "selbstgebrannt und ordentlich stark" } },
+    { "es": "el abaá", "translation": { "en": "the Fang 'word house' — an open community hall where village matters are debated", "de": "das 'Haus des Wortes' der Fang — eine offene Gemeinschaftshalle, in der Dorfangelegenheiten verhandelt werden" }, "note": { "en": "from Fang — the social heart of every village", "de": "aus dem Fang — das soziale Herz jedes Dorfes" } },
+    { "es": "el cayuco", "translation": { "en": "dugout canoe", "de": "Einbaum-Kanu" }, "note": { "en": "everyday transport along coasts and rivers", "de": "Alltagstransport an Küsten und Flüssen" } },
+    { "es": "el pepesup", "translation": { "en": "fiery pepper soup with fish or meat", "de": "feurige Pfeffersuppe mit Fisch oder Fleisch" }, "note": { "en": "from Pichi 'pepper soup' — the classic morning-after cure", "de": "aus dem Pichi 'pepper soup' — das klassische Katerfrühstück" } },
+    { "es": "la finca", "translation": { "en": "cocoa farm", "de": "Kakaoplantage" }, "note": { "en": "elsewhere any farm — on Bioko it echoes the island's long cocoa history", "de": "anderswo ein beliebiger Bauernhof — auf Bioko schwingt die lange Kakao-Geschichte der Insel mit" } }
+  ],
+  "sights": [
+    {
+      "name": "Catedral de Santa Isabel, Malabo",
+      "description": { "en": "The neo-Gothic cathedral from 1916 with twin 40-meter towers — the landmark of a capital where colonial Spain meets tropical Africa.", "de": "Die neugotische Kathedrale von 1916 mit zwei 40-Meter-Türmen — das Wahrzeichen einer Hauptstadt, in der Kolonialspanien auf tropisches Afrika trifft." },
+      "lat": 3.755,
+      "lng": 8.781,
+      "emoji": "⛪"
+    },
+    {
+      "name": "Pico Basilé",
+      "description": { "en": "A 3,011-meter volcano towering over Malabo — on clear days you can see Mount Cameroon across the water from the summit road.", "de": "Ein 3.011 Meter hoher Vulkan über Malabo — an klaren Tagen siehst du von der Gipfelstraße den Kamerunberg jenseits des Wassers." },
+      "lat": 3.5763,
+      "lng": 8.7566,
+      "emoji": "🌋"
+    },
+    {
+      "name": "Paseo Marítimo de Bata",
+      "description": { "en": "The mainland's biggest city greets the Atlantic with a long seafront promenade — grilled fish, music and the best sunset in Río Muni.", "de": "Die größte Stadt des Festlands begrüßt den Atlantik mit einer langen Uferpromenade — gegrillter Fisch, Musik und der beste Sonnenuntergang von Río Muni." },
+      "lat": 1.8639,
+      "lng": 9.7658,
+      "emoji": "🌴"
+    },
+    {
+      "name": "Parque Nacional de Monte Alén",
+      "description": { "en": "Vast mainland rainforest that shelters gorillas, chimpanzees and forest elephants — one of Central Africa's best-kept secrets.", "de": "Riesiger Regenwald auf dem Festland, Heimat von Gorillas, Schimpansen und Waldelefanten — eines der bestgehüteten Geheimnisse Zentralafrikas." },
+      "lat": 1.656,
+      "lng": 10.256,
+      "emoji": "🦍"
+    },
+    {
+      "name": "Ureka",
+      "description": { "en": "A village on Bioko's wild southern tip and one of the wettest places on Earth — from November to February, sea turtles nest on its black volcanic beaches.", "de": "Ein Dorf an Biokos wilder Südspitze und einer der regenreichsten Orte der Erde — von November bis Februar legen Meeresschildkröten an den schwarzen Vulkanstränden ihre Eier ab." },
+      "lat": 3.256,
+      "lng": 8.558,
+      "emoji": "🐢"
+    }
+  ]
+}

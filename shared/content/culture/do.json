@@ -1,0 +1,104 @@
+{
+  "id": "do",
+  "flag": "🇩🇴",
+  "name": { "en": "Dominican Republic", "de": "Dominikanische Republik" },
+  "nameEs": "República Dominicana",
+  "capital": "Santo Domingo",
+  "population": "11 M",
+  "intro": {
+    "en": "The Dominican Republic speaks what may be the fastest Spanish in the Caribbean: final -s sounds evaporate, whole syllables get swallowed, and '¿qué es lo que es?' compresses into a snappy '¿qué lo qué?'. This is the birthplace of merengue and bachata — both on UNESCO's cultural heritage list — and home to the oldest European city in the Americas. Dominicans turn conversation into a sport: loud, warm, and always ready for a round of 'chercha' (good-natured banter).",
+    "de": "In der Dominikanischen Republik spricht man das vielleicht schnellste Spanisch der Karibik: End-s verdunsten, ganze Silben werden verschluckt, und aus '¿qué es lo que es?' wird ein knackiges '¿qué lo qué?'. Hier wurden Merengue und Bachata geboren — beide UNESCO-Kulturerbe — und hier steht die älteste europäische Stadt Amerikas. Dominikaner machen aus Unterhaltung einen Sport: laut, herzlich und immer bereit für eine Runde 'chercha' (gutmütige Frotzelei)."
+  },
+  "funFact": {
+    "en": "The Dominican flag is the only national flag in the world with a Bible on it — open, as tradition has it, to John 8:32: 'And the truth shall set you free.'",
+    "de": "Die dominikanische Flagge ist die einzige Nationalflagge der Welt mit einer Bibel darauf — aufgeschlagen, so will es die Tradition, bei Johannes 8,32: 'Und die Wahrheit wird euch frei machen.'"
+  },
+  "slang": [
+    {
+      "term": "¿Qué lo qué?",
+      "meaning": { "en": "What's up? — compressed from '¿qué es lo que es?'", "de": "Was geht? — zusammengeschrumpft aus '¿qué es lo que es?'" },
+      "example": "¿Qué lo qué, manito? ¡Cuánto tiempo!"
+    },
+    {
+      "term": "un chin",
+      "meaning": { "en": "a little bit — one of the few surviving Taíno words", "de": "ein bisschen — eines der wenigen überlebenden Taíno-Wörter" },
+      "example": "Dame un chin de café, por favor."
+    },
+    {
+      "term": "jevi",
+      "meaning": { "en": "cool, nice — from English 'heavy', flipped into a compliment", "de": "cool, super — vom englischen 'heavy', umgedreht zum Kompliment" },
+      "example": "La playa estaba bien jevi ayer."
+    },
+    {
+      "term": "el tíguere",
+      "meaning": { "en": "streetwise guy, smooth operator — a whole Dominican archetype", "de": "gewiefter Typ, Schlitzohr — ein ganzer dominikanischer Archetyp" },
+      "example": "Ese tíguere sabe moverse en la capital."
+    },
+    {
+      "term": "dique",
+      "meaning": { "en": "supposedly, 'yeah right' — flags that you don't quite believe it", "de": "angeblich, 'ja klar' — signalisiert, dass du es nicht so recht glaubst" },
+      "example": "Dique va a llegar temprano... como siempre."
+    },
+    {
+      "term": "la chercha",
+      "meaning": { "en": "loud banter and laughter with friends", "de": "lautes Gefrotzel und Gelächter mit Freunden" },
+      "example": "Anoche la chercha en el colmado duró hasta tarde."
+    },
+    {
+      "term": "ta' to'",
+      "meaning": { "en": "all good, it's settled — short for 'está todo'", "de": "alles klar, passt — kurz für 'está todo'" },
+      "example": "—¿Nos vemos a las ocho? —Ta' to'."
+    },
+    {
+      "term": "la vaina",
+      "meaning": { "en": "thing, stuff — as universal here as in Venezuela", "de": "Ding, Zeug — hier so universell wie in Venezuela" },
+      "example": "¿Dónde pusiste esa vaina que te di?"
+    }
+  ],
+  "vocabulary": [
+    { "es": "la guagua", "translation": { "en": "bus", "de": "Bus" }, "note": { "en": "elsewhere: el autobús — the Caribbean standard", "de": "anderswo: el autobús — der Karibik-Standard" } },
+    { "es": "el concho", "translation": { "en": "shared taxi or moto-taxi on a fixed route", "de": "Sammeltaxi oder Mototaxi auf fester Route" }, "note": { "en": "elsewhere: el taxi colectivo", "de": "anderswo: el taxi colectivo" } },
+    { "es": "el colmado", "translation": { "en": "corner store that sells everything — and doubles as the neighborhood hangout", "de": "Eckladen, der alles verkauft — und nebenbei Treffpunkt des Viertels ist" }, "note": { "en": "elsewhere: la tienda / el ultramarinos", "de": "anderswo: la tienda / el ultramarinos" } },
+    { "es": "la funda", "translation": { "en": "plastic bag", "de": "Plastiktüte" }, "note": { "en": "elsewhere: la bolsa", "de": "anderswo: la bolsa" } },
+    { "es": "las habichuelas", "translation": { "en": "beans — the heart of the daily 'bandera dominicana' lunch", "de": "Bohnen — das Herz des täglichen Mittagessens 'bandera dominicana'" }, "note": { "en": "elsewhere: los frijoles", "de": "anderswo: los frijoles" } },
+    { "es": "el mangú", "translation": { "en": "mashed green plantains — the national breakfast", "de": "Püree aus grünen Kochbananen — das Nationalfrühstück" }, "note": { "en": "with 'los tres golpes': fried cheese, salami and eggs", "de": "mit 'los tres golpes': gebratener Käse, Salami und Ei" } },
+    { "es": "ahorita", "translation": { "en": "in a while, later", "de": "nachher, später" }, "note": { "en": "the opposite of Mexico, where 'ahorita' means (more or less) right now", "de": "das Gegenteil von Mexiko, wo 'ahorita' (mehr oder weniger) sofort heißt" } }
+  ],
+  "sights": [
+    {
+      "name": "Zona Colonial, Santo Domingo",
+      "description": { "en": "The first European city in the Americas (1498) — home to the New World's first cathedral, first university and first paved street.", "de": "Die erste europäische Stadt Amerikas (1498) — mit der ersten Kathedrale, der ersten Universität und der ersten gepflasterten Straße der Neuen Welt." },
+      "lat": 18.4734,
+      "lng": -69.8849,
+      "emoji": "🏰"
+    },
+    {
+      "name": "Pico Duarte",
+      "description": { "en": "The Caribbean's highest peak at 3,098 m — it can drop below freezing up there at night while the beaches simmer at 30 °C.", "de": "Der höchste Gipfel der Karibik mit 3.098 m — nachts kann es dort oben frieren, während die Strände bei 30 °C brutzeln." },
+      "lat": 19.0233,
+      "lng": -70.9978,
+      "emoji": "⛰️"
+    },
+    {
+      "name": "Bahía de Samaná",
+      "description": { "en": "Every January to March some 2,000 humpback whales gather here to mate and calve — one of the world's great whale-watching bays.", "de": "Jedes Jahr von Januar bis März versammeln sich hier rund 2.000 Buckelwale zur Paarung und Geburt — eine der großen Walbeobachtungs-Buchten der Welt." },
+      "lat": 19.2056,
+      "lng": -69.3323,
+      "emoji": "🐋"
+    },
+    {
+      "name": "Playa Bávaro, Punta Cana",
+      "description": { "en": "Fifty kilometers of coconut-lined white sand along the east coast — the postcard every other Caribbean beach gets judged against.", "de": "Fünfzig Kilometer kokosgesäumter weißer Sand an der Ostküste — die Postkarte, an der jeder andere Karibikstrand gemessen wird." },
+      "lat": 18.582,
+      "lng": -68.4055,
+      "emoji": "🏖️"
+    },
+    {
+      "name": "Lago Enriquillo",
+      "description": { "en": "A hypersaline lake about 40 m below sea level — the Caribbean's lowest point, ringed by cacti and patrolled by American crocodiles.", "de": "Ein hypersaliner See rund 40 m unter dem Meeresspiegel — der tiefste Punkt der Karibik, von Kakteen umringt und von Spitzkrokodilen patrouilliert." },
+      "lat": 18.47,
+      "lng": -71.65,
+      "emoji": "🦎"
+    }
+  ]
+}

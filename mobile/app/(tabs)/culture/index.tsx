@@ -1,28 +1,31 @@
+import { useEffect, useState } from 'react'
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter } from 'expo-router'
-import { Globe, Lock } from 'lucide-react-native'
-import { Badge } from '@/components/ui/Badge'
+import { Lock } from 'lucide-react-native'
+import { useTranslation } from 'react-i18next'
 import { Button } from '@/components/ui/Button'
 import { useSubscription } from '@/contexts/SubscriptionContext'
+import { getAllCultureCountries, ct } from '@chingon/shared'
+import { fetchCultureCountries } from '@/services/culture'
 import { colors, fontFamily, surface } from '@/constants/theme'
-
-type ColorFam = 'chili' | 'rosa' | 'jade' | 'cielo' | 'maiz' | 'jacaranda'
-
-const COUNTRIES: Array<{ id: string; name: string; flag: string; phrase: string; mean: string; color: ColorFam }> = [
-  { id: 'mexico',    name: 'México',    flag: '🇲🇽', phrase: '¡No manches!',  mean: '¡No way!',  color: 'chili' },
-  { id: 'argentina', name: 'Argentina', flag: '🇦🇷', phrase: 'Che, boludo',   mean: 'Hey güey',  color: 'cielo' },
-  { id: 'spain',     name: 'España',    flag: '🇪🇸', phrase: 'Vale, tío',     mean: 'OK, tío',   color: 'maiz' },
-  { id: 'colombia',  name: 'Colombia',  flag: '🇨🇴', phrase: '¡Qué chimba!',  mean: '¡Qué bien!',color: 'jade' },
-  { id: 'chile',     name: 'Chile',     flag: '🇨🇱', phrase: '¡Bacán!',       mean: 'Genial',    color: 'rosa' },
-  { id: 'peru',      name: 'Perú',      flag: '🇵🇪', phrase: '¡Qué chévere!', mean: 'Qué bien',  color: 'jacaranda' },
-  { id: 'cuba',      name: 'Cuba',      flag: '🇨🇺', phrase: '¡Asere!',        mean: '¡Compa!',   color: 'chili' },
-  { id: 'venezuela', name: 'Venezuela', flag: '🇻🇪', phrase: '¡Qué pana!',     mean: 'Qué amigo', color: 'jade' },
-]
 
 export default function CultureScreen() {
   const router = useRouter()
+  const { i18n } = useTranslation()
   const { isPremium, presentPaywall } = useSubscription()
+  // Bundled list renders instantly; CMS overrides swap in when the fetch resolves.
+  const [countries, setCountries] = useState(getAllCultureCountries())
+
+  useEffect(() => {
+    let active = true
+    fetchCultureCountries().then((list) => {
+      if (active) setCountries(list)
+    })
+    return () => {
+      active = false
+    }
+  }, [])
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
@@ -48,34 +51,31 @@ export default function CultureScreen() {
           </TouchableOpacity>
         )}
 
-        {/* Featured hero */}
-        <View style={styles.featureCard}>
-          <View style={styles.featureIcon}>
-            <Globe size={32} color="#FFFFFF" />
-          </View>
-          <Badge color="chili" variant="solid" size="sm">🇲🇽 MÉXICO · ESTA SEMANA</Badge>
-          <Text style={styles.featureTitle}>Slang de CDMX</Text>
-          <Text style={styles.featureDesc}>«No manches», «qué padre», «va que va»</Text>
-        </View>
-
         <Text style={styles.sectionTitle}>Países</Text>
         <View style={[styles.grid, !isPremium && { opacity: 0.5 }]}>
-          {COUNTRIES.map((c) => (
-            <TouchableOpacity
-              key={c.id}
-              onPress={() => {
-                if (isPremium) router.push(`/(tabs)/culture/${c.id}`)
-                else presentPaywall()
-              }}
-              activeOpacity={0.85}
-              style={styles.countryCard}
-            >
-              <Text style={styles.countryFlag}>{c.flag}</Text>
-              <Text style={styles.countryName}>{c.name}</Text>
-              <Text style={styles.countryPhrase}>«{c.phrase}»</Text>
-              <Text style={styles.countryMean}>{c.mean}</Text>
-            </TouchableOpacity>
-          ))}
+          {countries.map((c) => {
+            const name = ct(c.name, i18n.language)
+            return (
+              <TouchableOpacity
+                key={c.id}
+                onPress={() => {
+                  if (isPremium) router.push(`/(tabs)/culture/${c.id}`)
+                  else presentPaywall()
+                }}
+                activeOpacity={0.85}
+                style={styles.countryCard}
+              >
+                <Text style={styles.countryFlag}>{c.flag}</Text>
+                <Text style={styles.countryName}>{name}</Text>
+                {c.nameEs !== name && <Text style={styles.countryNameEs}>{c.nameEs}</Text>}
+                {c.slang[0] && (
+                  <Text style={styles.countryPhrase} numberOfLines={1}>
+                    «{c.slang[0].term}»
+                  </Text>
+                )}
+              </TouchableOpacity>
+            )
+          })}
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -102,18 +102,6 @@ const styles = StyleSheet.create({
   },
   lockTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 16, color: '#FFFFFF' },
   lockDesc: { fontFamily: fontFamily.body, fontSize: 12, color: 'rgba(255,255,255,0.9)', marginTop: 2 },
-  featureCard: {
-    backgroundColor: colors.maiz[100], borderWidth: 2, borderColor: colors.maiz[300],
-    borderRadius: 20, padding: 20, gap: 8, alignItems: 'flex-start',
-  },
-  featureIcon: {
-    width: 56, height: 56, borderRadius: 16,
-    backgroundColor: colors.chili[500],
-    alignItems: 'center', justifyContent: 'center',
-    marginBottom: 4,
-  },
-  featureTitle: { fontFamily: fontFamily.displayExtraBold, fontSize: 22, color: colors.ink[800] },
-  featureDesc: { fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[600] },
   sectionTitle: {
     fontFamily: fontFamily.displayExtraBold, fontSize: 20, color: colors.ink[800], marginTop: 4,
   },
@@ -125,10 +113,10 @@ const styles = StyleSheet.create({
   },
   countryFlag: { fontSize: 32 },
   countryName: {
-    fontFamily: fontFamily.bodyBold, fontSize: 13, color: colors.ink[700], marginTop: 4,
+    fontFamily: fontFamily.bodyBold, fontSize: 14, color: colors.ink[800], marginTop: 4,
   },
+  countryNameEs: { fontFamily: fontFamily.body, fontSize: 11, color: colors.ink[400] },
   countryPhrase: {
-    fontFamily: fontFamily.displayExtraBold, fontSize: 16, color: colors.ink[800], marginTop: 4,
+    fontFamily: fontFamily.displayExtraBold, fontSize: 15, color: colors.chili[600], marginTop: 4,
   },
-  countryMean: { fontFamily: fontFamily.body, fontSize: 11, color: colors.ink[500] },
 })
