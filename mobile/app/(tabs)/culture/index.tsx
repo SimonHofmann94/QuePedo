@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter } from 'expo-router'
 import { Lock } from 'lucide-react-native'
@@ -65,14 +65,32 @@ export default function CultureScreen() {
                 activeOpacity={0.85}
                 style={styles.countryCard}
               >
-                <Text style={styles.countryFlag}>{c.flag}</Text>
-                <Text style={styles.countryName}>{name}</Text>
+                {c.heroImage ? (
+                  <Image
+                    // 500px is on Wikimedia's thumbnail-width allowlist, so a card
+                    // can ask for a small file instead of the 1920px hero.
+                    source={{ uri: c.heroImage.url.replace(/\/\d+px-/, '/500px-') }}
+                    style={styles.countryPhoto}
+                    resizeMode="cover"
+                    accessibilityLabel={ct(c.heroImage.alt, i18n.language)}
+                  />
+                ) : (
+                  <Text style={styles.countryFlag}>{c.flag}</Text>
+                )}
+                <Text style={styles.countryName}>
+                  {c.heroImage ? `${c.flag} ` : ''}
+                  {name}
+                </Text>
                 {c.nameEs !== name && <Text style={styles.countryNameEs}>{c.nameEs}</Text>}
-                {c.slang[0] && (
+                {c.tagline ? (
+                  <Text style={styles.countryTagline} numberOfLines={2}>
+                    {ct(c.tagline, i18n.language)}
+                  </Text>
+                ) : c.slang[0] ? (
                   <Text style={styles.countryPhrase} numberOfLines={1}>
                     «{c.slang[0].term}»
                   </Text>
-                )}
+                ) : null}
               </TouchableOpacity>
             )
           })}
@@ -112,6 +130,14 @@ const styles = StyleSheet.create({
     borderRadius: 16, padding: 14, gap: 2,
   },
   countryFlag: { fontSize: 32 },
+  countryPhoto: {
+    width: '100%', aspectRatio: 3 / 2, borderRadius: 10,
+    backgroundColor: colors.masa[100],
+  },
+  countryTagline: {
+    fontFamily: fontFamily.body, fontSize: 11, color: colors.ink[500],
+    lineHeight: 15, marginTop: 3,
+  },
   countryName: {
     fontFamily: fontFamily.bodyBold, fontSize: 14, color: colors.ink[800], marginTop: 4,
   },

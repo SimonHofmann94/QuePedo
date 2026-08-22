@@ -1,13 +1,33 @@
 import { useEffect, useState } from 'react'
-import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, ScrollView, StyleSheet, TouchableOpacity, Image, Linking } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter, useLocalSearchParams } from 'expo-router'
 import { ArrowLeft } from 'lucide-react-native'
 import { useTranslation } from 'react-i18next'
 import { Badge } from '@/components/ui/Badge'
-import { getCultureCountry, ct } from '@chingon/shared'
+import { getCultureCountry, ct, type CultureImage } from '@chingon/shared'
 import { fetchCultureCountry } from '@/services/culture'
 import { colors, fontFamily, surface } from '@/constants/theme'
+
+/**
+ * A Commons photo with its credit line. Plain RN <Image> on purpose —
+ * expo-image isn't installed and one <Image> doesn't justify a native dep.
+ */
+function Photo({ image, locale, radius = 14 }: { image: CultureImage; locale: string; radius?: number }) {
+  return (
+    <View style={{ gap: 4 }}>
+      <Image
+        source={{ uri: image.url }}
+        style={{ width: '100%', aspectRatio: image.width / image.height, borderRadius: radius, backgroundColor: colors.masa[100] }}
+        resizeMode="cover"
+        accessibilityLabel={ct(image.alt, locale)}
+      />
+      <Text style={styles.credit} onPress={() => Linking.openURL(image.sourcePage)}>
+        {image.author} · {image.license}
+      </Text>
+    </View>
+  )
+}
 
 export default function CultureDetailScreen() {
   const router = useRouter()
@@ -53,6 +73,7 @@ export default function CultureDetailScreen() {
         </TouchableOpacity>
 
         {/* Hero */}
+        {country.heroImage ? <Photo image={country.heroImage} locale={locale} radius={20} /> : null}
         <View style={styles.hero}>
           <Text style={styles.flag}>{country.flag}</Text>
           <Text style={styles.name}>{name}</Text>
@@ -61,6 +82,9 @@ export default function CultureDetailScreen() {
             <Badge color="ink" variant="soft" size="sm">{`📍 ${country.capital}`}</Badge>
             <Badge color="ink" variant="soft" size="sm">{`👥 ${country.population}`}</Badge>
           </View>
+          {country.tagline ? (
+            <Text style={styles.tagline}>{ct(country.tagline, locale)}</Text>
+          ) : null}
           <Text style={styles.intro}>{ct(country.intro, locale)}</Text>
         </View>
 
@@ -95,14 +119,66 @@ export default function CultureDetailScreen() {
         {/* Sights — list only, no map on mobile v1 */}
         <Text style={styles.sectionTitle}>Qué visitar</Text>
         {country.sights.map((s) => (
-          <View key={s.name} style={styles.sightCard}>
-            <Text style={styles.sightEmoji}>{s.emoji}</Text>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.sightName}>{s.name}</Text>
-              <Text style={styles.sightDesc}>{ct(s.description, locale)}</Text>
+          <View key={s.name} style={[styles.sightCard, s.image ? styles.cardStacked : null]}>
+            {s.image ? <Photo image={s.image} locale={locale} /> : null}
+            <View style={s.image ? undefined : styles.sightRow}>
+              {s.image ? null : <Text style={styles.sightEmoji}>{s.emoji}</Text>}
+              <View style={{ flex: 1 }}>
+                <Text style={styles.sightName}>
+                  {s.image ? `${s.emoji} ` : ''}
+                  {s.name}
+                </Text>
+                <Text style={styles.sightDesc}>{ct(s.description, locale)}</Text>
+              </View>
             </View>
           </View>
         ))}
+
+        {/* A la mesa */}
+        {country.food?.length ? (
+          <>
+            <Text style={styles.sectionTitle}>A la mesa</Text>
+            {country.food.map((d) => (
+              <View key={d.name} style={[styles.foodCard, styles.cardStacked]}>
+                {d.image ? <Photo image={d.image} locale={locale} /> : null}
+                <View>
+                  <Text style={styles.sightName}>{d.name}</Text>
+                  <Text style={styles.sightDesc}>{ct(d.description, locale)}</Text>
+                </View>
+              </View>
+            ))}
+          </>
+        ) : null}
+
+        {/* Fiestas */}
+        {country.festivals?.length ? (
+          <>
+            <Text style={styles.sectionTitle}>Fiestas</Text>
+            {country.festivals.map((f) => (
+              <View key={f.name} style={[styles.festivalCard, styles.cardStacked]}>
+                {f.image ? <Photo image={f.image} locale={locale} /> : null}
+                <View>
+                  <Text style={styles.whenBadge}>{ct(f.when, locale)}</Text>
+                  <Text style={styles.sightName}>{f.name}</Text>
+                  <Text style={styles.sightDesc}>{ct(f.description, locale)}</Text>
+                </View>
+              </View>
+            ))}
+          </>
+        ) : null}
+
+        {/* Buenas maneras */}
+        {country.etiquette?.length ? (
+          <>
+            <Text style={styles.sectionTitle}>Buenas maneras</Text>
+            {country.etiquette.map((e) => (
+              <View key={e.title} style={styles.etiquetteCard}>
+                <Text style={styles.sightName}>{e.title}</Text>
+                <Text style={styles.sightDesc}>{ct(e.text, locale)}</Text>
+              </View>
+            ))}
+          </>
+        ) : null}
       </ScrollView>
     </SafeAreaView>
   )
@@ -169,6 +245,33 @@ const styles = StyleSheet.create({
     borderRadius: 16, padding: 14,
   },
   sightEmoji: { fontSize: 28 },
+  // A photo card stacks (photo over text); a photoless one keeps the emoji row.
+  cardStacked: { flexDirection: 'column', gap: 10, alignItems: 'stretch' },
+  sightRow: { flexDirection: 'row', gap: 12, alignItems: 'flex-start' },
+  foodCard: {
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderLeftWidth: 4, borderLeftColor: colors.maiz[400],
+    borderRadius: 16, padding: 14,
+  },
+  festivalCard: {
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderLeftWidth: 4, borderLeftColor: colors.rosa[500],
+    borderRadius: 16, padding: 14,
+  },
+  etiquetteCard: {
+    backgroundColor: surface.card, borderWidth: 1, borderColor: colors.ink[100],
+    borderLeftWidth: 4, borderLeftColor: colors.jacaranda[500],
+    borderRadius: 16, padding: 14, gap: 2,
+  },
+  whenBadge: {
+    fontFamily: fontFamily.monoBold, fontSize: 10, color: colors.rosa[700],
+    letterSpacing: 1, textTransform: 'uppercase', marginBottom: 4,
+  },
+  credit: { fontFamily: fontFamily.mono, fontSize: 10, color: colors.ink[400] },
+  tagline: {
+    fontFamily: fontFamily.body, fontSize: 14, color: colors.ink[600],
+    textAlign: 'center', lineHeight: 20, marginTop: 4,
+  },
   sightName: { fontFamily: fontFamily.displayExtraBold, fontSize: 16, color: colors.ink[800] },
   sightDesc: {
     fontFamily: fontFamily.body, fontSize: 13, color: colors.ink[600],

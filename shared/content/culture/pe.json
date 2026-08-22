@@ -1,13 +1,32 @@
 {
   "id": "pe",
   "flag": "🇵🇪",
-  "name": { "en": "Peru", "de": "Peru" },
+  "name": {
+    "en": "Peru",
+    "de": "Peru"
+  },
   "nameEs": "Perú",
   "capital": "Lima",
   "population": "34 M",
+  "tagline": {
+    "en": "Four thousand potatoes, three climates in one country, and a Spanish that Quechua never let go of.",
+    "de": "Viertausend Kartoffeln, drei Klimazonen in einem Land und ein Spanisch, das Quechua nie losgelassen hat."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Machu_Picchu_Panorama_2025.jpg/1920px-Machu_Picchu_Panorama_2025.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Machu_Picchu_Panorama_2025.jpg",
+    "author": "Jorge Castro Ruso",
+    "license": "CC BY-SA 2.0",
+    "width": 1920,
+    "height": 1081,
+    "alt": {
+      "en": "The terraces and stone houses of Machu Picchu on a ridge, with Huayna Picchu rising behind",
+      "de": "Die Terrassen und Steinhäuser von Machu Picchu auf einem Grat, dahinter der Huayna Picchu"
+    }
+  },
   "intro": {
-    "en": "Peruvian Spanish is often called the easiest to understand in South America: clear, unhurried, and sprinkled with words from Quechua — the language of the Incas, still spoken by some four million Peruvians. This is the land of Machu Picchu and a genuine national food obsession: Lima's restaurants regularly top the world's-best lists, and ceviche is practically a religion with its own public holiday.",
-    "de": "Peruanisches Spanisch gilt als das am leichtesten verständliche Südamerikas: klar, unaufgeregt und gespickt mit Wörtern aus dem Quechua — der Sprache der Inka, die noch heute rund vier Millionen Peruaner sprechen. Das ist das Land von Machu Picchu und einer echten nationalen Food-Besessenheit: Limas Restaurants landen regelmäßig ganz oben auf den Weltbesten-Listen, und Ceviche ist praktisch eine Religion mit eigenem Feiertag."
+    "en": "Peruvian Spanish is the variety other Latin Americans say they understand best: consonants stay where they are, the pace is even, and Lima's coastal accent became the default for dubbing films across the region. Underneath it runs Quechua — around four million speakers — which is why a Peruvian says palta, choclo and chompa where a Spaniard says aguacate, maíz and jersey. Everyone has heard of Machu Picchu; fewer know that Lima has thousands of chifas, the Cantonese-Peruvian kitchens founded by contract labourers in the 1850s, or that the 'pe' tacked onto the end of half of all sentences is just 'pues' worn down to one syllable.",
+    "de": "Peruanisches Spanisch gilt unter Lateinamerikanern als das am leichtesten verständliche: Konsonanten bleiben stehen, das Tempo ist gleichmäßig, und Limas Küstenakzent wurde zum Standard für Filmsynchronisation in der ganzen Region. Darunter liegt Quechua — rund vier Millionen Sprecher — und deshalb sagt ein Peruaner palta, choclo und chompa, wo ein Spanier aguacate, maíz und jersey sagt. Machu Picchu kennt jeder; dass Lima Tausende Chifas hat, kantonesisch-peruanische Küchen von Vertragsarbeitern aus den 1850ern, oder dass das an jeden zweiten Satz gehängte 'pe' nur ein abgeschliffenes 'pues' ist, wissen die wenigsten."
   },
   "funFact": {
     "en": "Peru grows around 4,000 varieties of native potato — the potato was first domesticated near Lake Titicaca some 8,000 years ago, millennia before it ever reached Europe.",
@@ -16,90 +35,576 @@
   "slang": [
     {
       "term": "pata",
-      "meaning": { "en": "friend, buddy (literally 'paw')", "de": "Freund, Kumpel (wörtlich 'Pfote')" },
+      "meaning": {
+        "en": "friend, buddy (literally 'paw')",
+        "de": "Freund, Kumpel (wörtlich 'Pfote')"
+      },
       "example": "Voy al cine con mis patas."
     },
     {
       "term": "chévere",
-      "meaning": { "en": "cool, great — shared with Colombia and Venezuela", "de": "cool, super — teilt sich Peru mit Kolumbien und Venezuela" },
+      "meaning": {
+        "en": "cool, great — shared with Colombia and Venezuela",
+        "de": "cool, super — teilt sich Peru mit Kolumbien und Venezuela"
+      },
       "example": "¡Qué chévere tu nueva chamba!"
     },
     {
       "term": "el jato",
-      "meaning": { "en": "house, home, your place", "de": "Haus, Bude, dein Zuhause" },
+      "meaning": {
+        "en": "house, home, your own place",
+        "de": "Haus, Bude, dein eigenes Zuhause"
+      },
       "example": "¿Vamos a mi jato a ver el partido?"
     },
     {
       "term": "pe",
-      "meaning": { "en": "filler tacked onto almost everything — 'ya pe', 'sí pe'", "de": "Füllwort, das an fast alles gehängt wird — 'ya pe', 'sí pe'" },
+      "meaning": {
+        "en": "filler tacked onto almost everything — 'ya pe', 'sí pe'",
+        "de": "Füllwort, das an fast alles gehängt wird — 'ya pe', 'sí pe'"
+      },
       "example": "Ya pe, vamos de una vez."
     },
     {
       "term": "la chamba",
-      "meaning": { "en": "work, job — Peru shares this one with Mexico", "de": "Arbeit, Job — das teilt sich Peru mit Mexiko" },
+      "meaning": {
+        "en": "work, job — Peru shares this one with Mexico",
+        "de": "Arbeit, Job — das teilt sich Peru mit Mexiko"
+      },
       "example": "Mañana tengo chamba temprano."
     },
     {
       "term": "al toque",
-      "meaning": { "en": "right away, in a flash", "de": "sofort, auf die Schnelle" },
+      "meaning": {
+        "en": "right away, in a flash",
+        "de": "sofort, auf die Schnelle"
+      },
       "example": "Te llamo al toque, dame cinco minutos."
     },
     {
       "term": "bacán",
-      "meaning": { "en": "cool, excellent", "de": "cool, spitze" },
+      "meaning": {
+        "en": "cool, excellent — the standard Limeño compliment",
+        "de": "cool, spitze — das Standardlob eines Limeños"
+      },
       "example": "La playa estuvo bacán."
     },
     {
       "term": "causa",
-      "meaning": { "en": "close friend — also the name of Peru's famous layered potato dish", "de": "enger Freund — heißt auch Perus berühmtes Kartoffel-Schichtgericht" },
+      "meaning": {
+        "en": "close friend — also the name of Peru's layered potato dish",
+        "de": "enger Freund — heißt auch Perus Kartoffel-Schichtgericht"
+      },
       "example": "Oe causa, ¿qué haces este sábado?"
+    },
+    {
+      "term": "la yuca",
+      "meaning": {
+        "en": "a lie, a tall story — 'meter yuca' is to spin one",
+        "de": "eine Lüge, ein Märchen — 'meter yuca' heißt aufschneiden"
+      },
+      "example": "No me metas yuca, sé que no fuiste."
     }
   ],
   "vocabulary": [
-    { "es": "la chompa", "translation": { "en": "sweater", "de": "Pullover" }, "note": { "en": "elsewhere: el suéter / (Spain) el jersey — from English 'jumper'", "de": "anderswo: el suéter / (Spanien) el jersey — vom englischen 'jumper'" } },
-    { "es": "el choclo", "translation": { "en": "corn on the cob — with giant Andean kernels", "de": "Maiskolben — mit riesigen Anden-Körnern" }, "note": { "en": "from Quechua 'choqllo' — in Mexico: el elote", "de": "vom Quechua 'choqllo' — in Mexiko: el elote" } },
-    { "es": "el chifa", "translation": { "en": "Chinese-Peruvian restaurant (and its cuisine)", "de": "chinesisch-peruanisches Restaurant (und seine Küche)" }, "note": { "en": "a fusion born from Cantonese immigrants — Lima has thousands of them", "de": "eine Fusionsküche kantonesischer Einwanderer — Lima hat Tausende davon" } },
-    { "es": "la combi", "translation": { "en": "minibus, shared van", "de": "Minibus, Sammeltaxi" }, "note": { "en": "elsewhere: el microbús — Lima's chaotic transport backbone", "de": "anderswo: el microbús — das chaotische Rückgrat von Limas Verkehr" } },
-    { "es": "la palta", "translation": { "en": "avocado", "de": "Avocado" }, "note": { "en": "from Quechua — Spain & Mexico: el aguacate", "de": "aus dem Quechua — Spanien & Mexiko: el aguacate" } },
-    { "es": "la cuadra", "translation": { "en": "city block", "de": "Häuserblock" }, "note": { "en": "distances are given in cuadras: 'a tres cuadras' = three blocks away", "de": "Entfernungen misst man in Cuadras: 'a tres cuadras' = drei Blocks weiter" } },
-    { "es": "el grifo", "translation": { "en": "gas station", "de": "Tankstelle" }, "note": { "en": "in Spain 'grifo' is a water tap — elsewhere: la gasolinera", "de": "in Spanien ist 'grifo' der Wasserhahn — anderswo: la gasolinera" } },
-    { "es": "la lúcuma", "translation": { "en": "lúcuma — sweet Andean fruit", "de": "Lúcuma — süße Andenfrucht" }, "note": { "en": "Peru's favorite ice cream flavor, tastes like caramel and maple", "de": "Perus liebste Eissorte, schmeckt nach Karamell und Ahorn" } }
+    {
+      "es": "la chompa",
+      "translation": {
+        "en": "sweater",
+        "de": "Pullover"
+      },
+      "note": {
+        "en": "elsewhere: el suéter / (Spain) el jersey — from English 'jumper'",
+        "de": "anderswo: el suéter / (Spanien) el jersey — vom englischen 'jumper'"
+      }
+    },
+    {
+      "es": "el choclo",
+      "translation": {
+        "en": "corn on the cob — with giant Andean kernels",
+        "de": "Maiskolben — mit riesigen Anden-Körnern"
+      },
+      "note": {
+        "en": "from Quechua 'choqllo' — in Mexico: el elote",
+        "de": "vom Quechua 'choqllo' — in Mexiko: el elote"
+      }
+    },
+    {
+      "es": "el chifa",
+      "translation": {
+        "en": "Chinese-Peruvian restaurant (and its cuisine)",
+        "de": "chinesisch-peruanisches Restaurant (und seine Küche)"
+      },
+      "note": {
+        "en": "a fusion born from Cantonese immigrants — Lima has thousands of them",
+        "de": "eine Fusionsküche kantonesischer Einwanderer — Lima hat Tausende davon"
+      }
+    },
+    {
+      "es": "la combi",
+      "translation": {
+        "en": "minibus, shared van",
+        "de": "Minibus, Sammeltaxi"
+      },
+      "note": {
+        "en": "elsewhere: el microbús — Lima's chaotic transport backbone",
+        "de": "anderswo: el microbús — das chaotische Rückgrat von Limas Verkehr"
+      }
+    },
+    {
+      "es": "la palta",
+      "translation": {
+        "en": "avocado",
+        "de": "Avocado"
+      },
+      "note": {
+        "en": "from Quechua — Spain & Mexico: el aguacate",
+        "de": "aus dem Quechua — Spanien & Mexiko: el aguacate"
+      }
+    },
+    {
+      "es": "la cuadra",
+      "translation": {
+        "en": "city block",
+        "de": "Häuserblock"
+      },
+      "note": {
+        "en": "distances are given in cuadras: 'a tres cuadras' = three blocks away",
+        "de": "Entfernungen misst man in Cuadras: 'a tres cuadras' = drei Blocks weiter"
+      }
+    },
+    {
+      "es": "el grifo",
+      "translation": {
+        "en": "gas station",
+        "de": "Tankstelle"
+      },
+      "note": {
+        "en": "in Spain 'grifo' is a water tap — elsewhere: la gasolinera",
+        "de": "in Spanien ist 'grifo' der Wasserhahn — anderswo: la gasolinera"
+      }
+    },
+    {
+      "es": "la lúcuma",
+      "translation": {
+        "en": "lúcuma — sweet Andean fruit",
+        "de": "Lúcuma — süße Andenfrucht"
+      },
+      "note": {
+        "en": "Peru's favorite ice cream flavor, tastes like caramel and maple",
+        "de": "Perus liebste Eissorte, schmeckt nach Karamell und Ahorn"
+      }
+    },
+    {
+      "es": "el menú",
+      "translation": {
+        "en": "the fixed-price set lunch",
+        "de": "das Mittagsmenü zum Festpreis"
+      },
+      "note": {
+        "en": "soup, main and drink for a few soles — asking for 'la carta' costs far more",
+        "de": "Suppe, Hauptgang, Getränk für wenige Soles — 'la carta' kostet ein Vielfaches"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Machu Picchu",
-      "description": { "en": "The 15th-century Inca citadel at 2,430 m, hidden so well in the cloud forest that the Spanish conquistadors never found it.", "de": "Die Inka-Zitadelle aus dem 15. Jahrhundert auf 2.430 m, so gut im Nebelwald versteckt, dass die spanischen Eroberer sie nie fanden." },
+      "description": {
+        "en": "Built around 1450 as a country estate for the Inca Pachacútec, abandoned within a century and never written down by the Spanish, which is why it is still standing. The stonework at the Temple of the Sun is fitted without mortar and has held through five hundred years of earthquakes. Buses climb 400 metres of switchbacks from Aguas Calientes; the porters on the Inca Trail do it in sandals.",
+        "de": "Um 1450 als Landsitz des Inka Pachacútec erbaut, binnen eines Jahrhunderts verlassen und von den Spaniern nie verzeichnet — deshalb steht es noch. Das Mauerwerk am Sonnentempel kommt ohne Mörtel aus und hat fünfhundert Jahre Erdbeben überstanden. Busse schrauben sich in Serpentinen 400 Höhenmeter aus Aguas Calientes hinauf; die Träger auf dem Inkapfad gehen in Sandalen."
+      },
       "lat": -13.1631,
       "lng": -72.545,
-      "emoji": "🦙"
+      "emoji": "🦙",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Machu_Picchu%2C_la_maison_du_Gardien.jpg/960px-Machu_Picchu%2C_la_maison_du_Gardien.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_la_maison_du_Gardien.jpg",
+        "author": "PIERRE ANDRE LECLERCQ",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 658,
+        "alt": {
+          "en": "A llama lying on grass below the stone terraces and guardhouse of Machu Picchu",
+          "de": "Ein Lama liegt im Gras unter den Steinterrassen und dem Wächterhaus von Machu Picchu"
+        }
+      }
     },
     {
       "name": "Cusco",
-      "description": { "en": "The former Inca capital — colonial churches sit on Inca walls so precisely cut that you can't slide a knife blade between the stones.", "de": "Die einstige Inka-Hauptstadt — Kolonialkirchen stehen auf Inka-Mauern, deren Steine so präzise gefugt sind, dass keine Messerklinge dazwischenpasst." },
+      "description": {
+        "en": "The Inca called it Qosqo, the navel of the world, and laid its streets out in the shape of a puma. Spanish churches sit straight on Inca foundations: on Hatun Rumiyoc street one block is cut with twelve angles so it locks into its neighbours, and the joints take no mortar at all. At 3,400 metres the coca tea in every hotel lobby is not a souvenir, it is medicine.",
+        "de": "Die Inka nannten sie Qosqo, den Nabel der Welt, und legten ihre Straßen in Form eines Pumas an. Spanische Kirchen stehen direkt auf Inka-Fundamenten: In der Hatun Rumiyoc ist ein Block mit zwölf Kanten geschnitten, damit er in die Nachbarsteine greift, und die Fugen kommen ganz ohne Mörtel aus. Auf 3.400 Metern ist der Cocatee in jeder Hotellobby kein Souvenir, sondern Medizin."
+      },
       "lat": -13.5164,
       "lng": -71.9785,
-      "emoji": "🧱"
+      "emoji": "🧱",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Cusco_-_Plaza_de_Armas_-_panoramio.jpg/960px-Cusco_-_Plaza_de_Armas_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cusco_-_Plaza_de_Armas_-_panoramio.jpg",
+        "author": "Pavel Špindler",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 598,
+        "alt": {
+          "en": "Cusco's Plaza de Armas with the cathedral on one side and the Jesuit church on the other",
+          "de": "Cuscos Plaza de Armas, auf der einen Seite die Kathedrale, auf der anderen die Jesuitenkirche"
+        }
+      }
+    },
+    {
+      "name": "Cañón del Colca",
+      "description": {
+        "en": "Twice as deep as the Grand Canyon, and the Cruz del Cóndor lookout stands exactly where the morning thermals come up the wall. Andean condors ride them past the railing at eye level, three metres of wingspan and barely a wingbeat. The terraces on the slopes below were cut before the Inca arrived and are still farmed by the same villages.",
+        "de": "Doppelt so tief wie der Grand Canyon, und der Aussichtspunkt Cruz del Cóndor liegt genau dort, wo morgens die Thermik an der Wand hochzieht. Andenkondore reiten darauf auf Augenhöhe am Geländer vorbei, drei Meter Spannweite und kaum ein Flügelschlag. Die Terrassen an den Hängen darunter entstanden vor den Inka und werden von denselben Dörfern bestellt."
+      },
+      "lat": -15.6064,
+      "lng": -71.85,
+      "emoji": "🦅",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Andean_condor_%28Vultur_gryphus%29_at_Colca_Canyon.jpg/960px-Andean_condor_%28Vultur_gryphus%29_at_Colca_Canyon.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Andean_condor_(Vultur_gryphus)_at_Colca_Canyon.jpg",
+        "author": "Thomas Fuhrmann",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "An Andean condor seen from below with wings fully spread against a blue sky",
+          "de": "Ein Andenkondor von unten, die Flügel voll ausgebreitet, vor blauem Himmel"
+        }
+      }
     },
     {
       "name": "Lago Titicaca",
-      "description": { "en": "The world's highest navigable lake at 3,812 m — the Uros people live on floating islands they weave entirely from totora reeds.", "de": "Der höchstgelegene schiffbare See der Welt auf 3.812 m — das Volk der Uros lebt auf schwimmenden Inseln, komplett aus Totora-Schilf geflochten." },
+      "description": {
+        "en": "At 3,812 metres it is the highest lake big enough to run ships on, and the Uros live on it rather than beside it: some forty islands woven from totora reed, each rotting away underneath and topped up from above every couple of weeks. The same reed is boat, roof and vegetable — the white base is peeled and eaten. The far shore is Bolivia.",
+        "de": "Auf 3.812 Metern ist er der höchste See, auf dem Schiffe fahren, und die Uros leben auf ihm statt an ihm: rund vierzig Inseln, aus Totora-Schilf geflochten, jede von unten verrottend und alle paar Wochen von oben nachgelegt. Dasselbe Schilf ist Boot, Dach und Gemüse — den weißen Halmfuß schält und isst man. Das Gegenufer ist Bolivien."
+      },
       "lat": -15.8402,
       "lng": -70.0219,
-      "emoji": "🛶"
+      "emoji": "🛶",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Islas_flotantes_de_los_Uros%2C_Lago_Titicaca%2C_Per%C3%BA%2C_2015-08-01%2C_DD_40.JPG/960px-Islas_flotantes_de_los_Uros%2C_Lago_Titicaca%2C_Per%C3%BA%2C_2015-08-01%2C_DD_40.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Islas_flotantes_de_los_Uros,_Lago_Titicaca,_Per%C3%BA,_2015-08-01,_DD_40.JPG",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 654,
+        "alt": {
+          "en": "A twin-hulled totora reed boat moored at the edge of a floating Uros island",
+          "de": "Ein zweirumpfiges Totora-Schilfboot am Rand einer schwimmenden Uros-Insel"
+        }
+      }
     },
     {
       "name": "Líneas de Nazca",
-      "description": { "en": "Giant desert geoglyphs scratched into the ground 2,000 years ago — the hummingbird alone spans 96 m and is only visible from the air.", "de": "Riesige Wüsten-Geoglyphen, vor 2.000 Jahren in den Boden geritzt — allein der Kolibri misst 96 m und ist nur aus der Luft zu erkennen." },
+      "description": {
+        "en": "Between roughly 500 BCE and 500 CE the Nazca swept the dark oxidised stones off the desert floor to expose the pale ground beneath, and it has barely rained since. The hummingbird measures 96 metres across, the pelican 285. From ground level they read as footpaths; the figures only resolve from a light aircraft or the steel viewing tower on the Panamericana.",
+        "de": "Etwa zwischen 500 v. Chr. und 500 n. Chr. räumten die Nazca die dunklen, oxidierten Steine von der Wüstenoberfläche und legten den hellen Boden darunter frei — geregnet hat es seither kaum. Der Kolibri misst 96 Meter, der Pelikan 285. Vom Boden aus wirken sie wie Fußwege; erkennbar werden die Figuren erst aus dem Kleinflugzeug oder vom Stahlturm an der Panamericana."
+      },
       "lat": -14.7167,
       "lng": -75.1333,
-      "emoji": "🛩️"
+      "emoji": "🛩️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_52.JPG/960px-L%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_52.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:L%C3%ADneas_de_Nazca,_Nazca,_Per%C3%BA,_2015-07-29,_DD_52.JPG",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 583,
+        "alt": {
+          "en": "Aerial photograph of the hummingbird geoglyph, pale lines scratched into dark desert",
+          "de": "Luftbild des Kolibri-Geoglyphen, helle Linien in dunkle Wüste gekratzt"
+        }
+      }
     },
     {
       "name": "Huacachina",
-      "description": { "en": "A palm-fringed desert oasis around a natural lagoon — ride a dune buggy and sandboard down some of the highest dunes in the Americas.", "de": "Eine palmengesäumte Wüstenoase um eine natürliche Lagune — düse im Buggy durch die Dünen und sandboarde einige der höchsten Sandberge Amerikas hinab." },
+      "description": {
+        "en": "A lagoon about a hundred metres across, sitting in a hollow of the Ica dunes with palms, a dozen buildings and roughly a hundred permanent residents. Groundwater pumping shrank the water until the town began refilling it from a pipe. Buggies leave in the late afternoon for the dunes behind, several of which top 100 metres.",
+        "de": "Eine Lagune von etwa hundert Metern, in einer Senke der Ica-Dünen gelegen, mit Palmen, einem Dutzend Häusern und rund hundert festen Einwohnern. Grundwasserpumpen ließen das Wasser schrumpfen, bis der Ort es aus einer Leitung nachzufüllen begann. Am späten Nachmittag fahren die Buggys hinaus in die Dünen dahinter, mehrere davon über 100 Meter hoch."
+      },
       "lat": -14.0875,
       "lng": -75.7626,
-      "emoji": "🏜️"
+      "emoji": "🏜️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Oasis_de_Huacachina%2C_Ica%2C_Per%C3%BA%2C_2015-07-29%2C_DD_18.JPG/960px-Oasis_de_Huacachina%2C_Ica%2C_Per%C3%BA%2C_2015-07-29%2C_DD_18.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Oasis_de_Huacachina,_Ica,_Per%C3%BA,_2015-07-29,_DD_18.JPG",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 510,
+        "alt": {
+          "en": "The green lagoon of Huacachina ringed by palms and low buildings, sand dunes all around",
+          "de": "Die grüne Lagune von Huacachina, umringt von Palmen und flachen Häusern, ringsum Sanddünen"
+        }
+      }
+    },
+    {
+      "name": "Lima",
+      "description": {
+        "en": "The Spanish ran their entire South American viceroyalty from this square. The dark wooden balconies boxed onto the facades are Moorish in origin, latticed so the women behind them could watch the street without being seen. Four centuries on, the cooking is what people fly in for, and the ceviche counters at Surquillo market shut by two because the morning's fish is gone.",
+        "de": "Von diesem Platz aus regierten die Spanier ihr gesamtes südamerikanisches Vizekönigreich. Die dunklen Holzbalkone auf den Fassaden stammen aus dem Maurischen, vergittert, damit die Frauen dahinter ungesehen auf die Straße blicken konnten. Vier Jahrhunderte später kommt man wegen der Küche hergeflogen, und die Ceviche-Tresen im Markt von Surquillo schließen um zwei, weil der Fisch weg ist."
+      },
+      "lat": -12.0464,
+      "lng": -77.0428,
+      "emoji": "🍽️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Palacio_municipa_Plaza_Mayor%2C_Lima_P%C3%A9rou_en_2011.jpg/960px-Palacio_municipa_Plaza_Mayor%2C_Lima_P%C3%A9rou_en_2011.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Palacio_municipa_Plaza_Mayor,_Lima_P%C3%A9rou_en_2011.jpg",
+        "author": "Pierre André Leclercq",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 710,
+        "alt": {
+          "en": "The yellow Palacio Municipal on Lima's Plaza Mayor, dark wooden balconies above the arcade",
+          "de": "Der gelbe Palacio Municipal an Limas Plaza Mayor, dunkle Holzbalkone über den Arkaden"
+        }
+      }
+    },
+    {
+      "name": "Belén, Iquitos",
+      "description": {
+        "en": "No road connects Iquitos to the rest of Peru; you arrive by boat or by plane. Its Belén quarter is built on rafts and stilts over the Itaya, and when the river comes up several metres in the wet season the lanes turn into canals and the shops float with them. The market sells live suri grubs, whole paiche and bark tonics by the bottle.",
+        "de": "Keine Straße verbindet Iquitos mit dem übrigen Peru; man kommt per Boot oder Flugzeug. Das Viertel Belén steht auf Flößen und Stelzen über dem Itaya, und wenn der Fluss in der Regenzeit mehrere Meter steigt, werden die Gassen zu Kanälen und die Läden schwimmen mit. Auf dem Markt gibt es lebende Suri-Larven, ganze Paiche und Rindentinkturen flaschenweise."
+      },
+      "lat": -3.7683,
+      "lng": -73.245,
+      "emoji": "🛖",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Venice_of_the_Amazon.jpg/960px-Venice_of_the_Amazon.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Venice_of_the_Amazon.jpg",
+        "author": "Bruno Girin",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "Corrugated roofs of the Belén quarter above muddy lanes and wooden stilt houses",
+          "de": "Wellblechdächer des Viertels Belén über schlammigen Gassen und Stelzenhäusern aus Holz"
+        }
+      }
+    },
+    {
+      "name": "Chan Chan",
+      "description": {
+        "en": "The Chimú raised the largest adobe city in the Americas here from about 900 CE: twenty square kilometres of mud-brick walls and nine walled compounds, one built for each ruler and sealed as his tomb. The friezes show pelicans, fish and nets rather than jaguars, because the Chimú lived off the sea. The Inca took it in 1470, the Spanish took its gold, and every rare rain takes a little more.",
+        "de": "Ab etwa 900 n. Chr. errichteten die Chimú hier die größte Lehmziegelstadt Amerikas: zwanzig Quadratkilometer Adobe-Mauern und neun ummauerte Bezirke, einer je Herrscher, danach als sein Grab versiegelt. Die Friese zeigen Pelikane, Fische und Netze statt Jaguare, denn die Chimú lebten vom Meer. 1470 nahmen die Inka die Stadt, die Spanier das Gold, und jeder seltene Regen nimmt ein Stück mehr."
+      },
+      "lat": -8.1058,
+      "lng": -79.0747,
+      "emoji": "🐟",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Vast_Abobe_Ruins_at_Chan_Chan.JPG/960px-Vast_Abobe_Ruins_at_Chan_Chan.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Vast_Abobe_Ruins_at_Chan_Chan.JPG",
+        "author": "Kevstan",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Weathered adobe walls and corridors of the ruined city of Chan Chan under a pale sky",
+          "de": "Verwitterte Adobe-Mauern und Gänge der Ruinenstadt Chan Chan unter blassem Himmel"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el ceviche",
+      "description": {
+        "en": "White fish cut into cubes and cooked by lime juice alone — fifteen minutes, not hours, or it goes to paste. Boiled sweet potato and giant choclo kernels come alongside to blunt the acid, and the leftover marinade, leche de tigre, is drunk straight from the glass. Cevicherías shut at three; nobody eats it at night.",
+        "de": "Weißer Fisch in Würfeln, gegart allein von Limettensaft — fünfzehn Minuten, nicht Stunden, sonst wird er Brei. Dazu Süßkartoffel und riesige Choclo-Körner gegen die Säure, und die übrige Marinade, leche de tigre, trinkt man direkt aus dem Glas. Cevicherías schließen um drei; abends isst das niemand."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Ceviche_de_pescado_%28La_Punta%2C_Callao%29.jpg/960px-Ceviche_de_pescado_%28La_Punta%2C_Callao%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ceviche_de_pescado_(La_Punta,_Callao).jpg",
+        "author": "Jorge G. Mori",
+        "license": "Public domain",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Fish ceviche with red onion and seaweed, ringed by sweet potato, corn and toasted maize",
+          "de": "Fisch-Ceviche mit roter Zwiebel und Algen, umringt von Süßkartoffel, Mais und Röstmais"
+        }
+      }
+    },
+    {
+      "name": "el lomo saltado",
+      "description": {
+        "en": "Beef strips seared hard in a wok with red onion, tomato and soy sauce, then tipped over french fries and white rice on the same plate. It is the clearest thing chifa cooking left behind on the Peruvian table: Cantonese technique, Andean ingredients, and starch twice over.",
+        "de": "Rindfleischstreifen, scharf im Wok angebraten mit roter Zwiebel, Tomate und Sojasauce, dann über Pommes und weißen Reis gekippt — beides auf demselben Teller. Deutlicher hat die Chifa-Küche nichts auf dem peruanischen Tisch hinterlassen: kantonesische Technik, andine Zutaten, Stärke doppelt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Lomo_saltado_peruano.jpg/960px-Lomo_saltado_peruano.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lomo_saltado_peruano.jpg",
+        "author": "Miguel Alan Córdova Silva",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1025,
+        "alt": {
+          "en": "Beef strips with red onion and tomato beside white rice and chips on a round plate",
+          "de": "Rindfleischstreifen mit roter Zwiebel und Tomate neben weißem Reis und Pommes auf rundem Teller"
+        }
+      }
+    },
+    {
+      "name": "la causa limeña",
+      "description": {
+        "en": "Yellow potato mashed with ají amarillo and lime until it turns school-bus yellow, then layered cold with chicken or crab and avocado and sliced like a terrine. The name comes from the wars of independence, when women sold it in the street 'por la causa' to fund the army.",
+        "de": "Gelbe Kartoffel mit Ají amarillo und Limette zu schulbusgelbem Püree gestampft, dann kalt mit Huhn oder Krabbe und Avocado geschichtet und wie eine Terrine geschnitten. Der Name stammt aus den Unabhängigkeitskriegen, als Frauen sie auf der Straße 'por la causa' für die Armee verkauften."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Causa_lime%C3%B1a_2023.jpg/960px-Causa_lime%C3%B1a_2023.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Causa_lime%C3%B1a_2023.jpg",
+        "author": "GORE Callao",
+        "license": "Public domain",
+        "width": 960,
+        "height": 672,
+        "alt": {
+          "en": "A round yellow potato terrine layered with chicken, topped with diced red pepper",
+          "de": "Eine runde gelbe Kartoffelterrine mit Hühnerfüllung, obenauf rote Paprikawürfel"
+        }
+      }
+    },
+    {
+      "name": "los anticuchos",
+      "description": {
+        "en": "Beef heart marinated in vinegar, cumin and ají panca, threaded onto skewers and grilled over coals on the pavement from about six in the evening. The cut is a colonial leftover: enslaved cooks were handed the offal the household would not eat. Two skewers, a boiled potato, a piece of corn.",
+        "de": "Rinderherz, mariniert in Essig, Kreuzkümmel und Ají panca, auf Spieße gezogen und ab etwa sechs Uhr abends auf dem Gehweg über Kohlen gegrillt. Das Stück ist ein koloniales Erbe: Versklavte Köchinnen bekamen die Innereien, die im Haus niemand aß. Zwei Spieße, eine Salzkartoffel, ein Stück Mais."
+      }
+    },
+    {
+      "name": "el pisco sour",
+      "description": {
+        "en": "Pisco, lime, sugar syrup, egg white and three drops of angostura, shaken until the foam stands a centimetre above the rim. Pisco is grape brandy distilled with no water added, from the port of the same name south of Lima. Peru and Chile have argued over who invented the drink for a century.",
+        "de": "Pisco, Limette, Zuckersirup, Eiweiß und drei Tropfen Angostura, geschüttelt, bis der Schaum einen Zentimeter über dem Rand steht. Pisco ist Traubenbrand, destilliert ohne Wasserzusatz, aus dem gleichnamigen Hafen südlich von Lima. Peru und Chile streiten seit hundert Jahren, wer ihn erfunden hat."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pisco_Sour_in_Lima.jpg/960px-Pisco_Sour_in_Lima.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pisco_Sour_in_Lima.jpg",
+        "author": "young shanahan",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A cocktail glass of pisco sour with a thick pale foam head on a dark wooden bar table",
+          "de": "Ein Cocktailglas Pisco Sour mit dicker heller Schaumkrone auf dunklem Holztresen"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Inti Raymi",
+      "when": {
+        "en": "24 June",
+        "de": "24. Juni"
+      },
+      "description": {
+        "en": "The Inca festival of the sun, banned by the Church in 1572 and staged again from 1944 using Garcilaso de la Vega's account as the script. Around 700 performers walk from the Qorikancha through Cusco up to Sacsayhuamán, where the Inca addresses the sun in Quechua and a llama is symbolically offered.",
+        "de": "Das Sonnenfest der Inka, 1572 von der Kirche verboten und ab 1944 wieder aufgeführt — als Textbuch dient der Bericht des Garcilaso de la Vega. Rund 700 Darsteller ziehen vom Qorikancha durch Cusco hinauf nach Sacsayhuamán, wo der Inka die Sonne auf Quechua anspricht und ein Lama symbolisch geopfert wird."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Inti_Raymi_2007_Cuzco.jpg/960px-Inti_Raymi_2007_Cuzco.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Inti_Raymi_2007_Cuzco.jpg",
+        "author": "Mme Berthe",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A crowd on the hillside above rows of red-clad performers on the field at Sacsayhuamán",
+          "de": "Eine Menge am Hang über Reihen rot gekleideter Darsteller auf dem Feld von Sacsayhuamán"
+        }
+      }
+    },
+    {
+      "name": "Virgen de la Candelaria",
+      "when": {
+        "en": "early February, over two weeks",
+        "de": "Anfang Februar, über zwei Wochen"
+      },
+      "description": {
+        "en": "Puno gives it a fortnight and around 40,000 dancers take part. The Diablada is the set piece: horned masks with light bulbs for eyes, brought over from the mining towns on the Bolivian side of the lake. Brass bands play in the street at 3,800 metres, which is why the tuba players keep stopping for air.",
+        "de": "Puno gibt dem Fest zwei Wochen, rund 40.000 Tänzer machen mit. Prunkstück ist die Diablada: Hörnermasken mit Glühbirnen als Augen, herübergekommen aus den Minenstädten auf der bolivianischen Seeseite. Blaskapellen spielen auf der Straße, auf 3.800 Metern — deshalb setzen die Tubisten dauernd zum Luftholen ab."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/%22sikuris_dentro_de_la_festividad_de_la_candelaria%22.jpg/960px-%22sikuris_dentro_de_la_festividad_de_la_candelaria%22.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%22sikuris_dentro_de_la_festividad_de_la_candelaria%22.jpg",
+        "author": "Leyner MCG",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A dancer spinning in a green skirt and red shawl in a stadium full of spectators",
+          "de": "Eine Tänzerin dreht sich im grünen Rock und roten Umhang in einem vollen Stadion"
+        }
+      }
+    },
+    {
+      "name": "Señor de los Milagros",
+      "when": {
+        "en": "October, main days 18 and 28",
+        "de": "Oktober, Hauptprozessionen am 18. und 28."
+      },
+      "description": {
+        "en": "A Christ painted on an adobe wall by an Angolan slave in 1651 survived the earthquake that flattened the rest of Lima four years later. A copy now crosses the city each October on a two-tonne silver litter, carried in shifts of thirty-two men, and Lima wears purple for the whole month.",
+        "de": "Ein Christusbild, das ein angolanischer Sklave 1651 auf eine Lehmwand malte, überstand das Erdbeben, das vier Jahre später den Rest Limas einebnete. Eine Kopie zieht jeden Oktober auf einer zwei Tonnen schweren Silberbahre durch die Stadt, getragen in Schichten von 32 Männern, und Lima trägt den ganzen Monat Violett."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Procesion_del_Se%C3%B1or_de_los_Milagros2004.jpg/960px-Procesion_del_Se%C3%B1or_de_los_Milagros2004.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Procesion_del_Se%C3%B1or_de_los_Milagros2004.jpg",
+        "author": "12C HSMN",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The gilded litter of the Señor de los Milagros carried at night through incense smoke",
+          "de": "Die vergoldete Bahre des Señor de los Milagros wird nachts durch Weihrauchschwaden getragen"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "A woman is greeted with one kiss on the right cheek, whoever you are; men shake hands. It applies in offices too, and you go round the whole room — anyone skipped will notice.",
+        "de": "Eine Frau begrüßt man mit einem Kuss auf die rechte Wange, egal wer man ist; Männer geben sich die Hand. Auch im Büro, und man geht durch den ganzen Raum — wen man auslässt, merkt es."
+      }
+    },
+    {
+      "title": "La hora peruana",
+      "text": {
+        "en": "For a private invitation, turning up thirty to sixty minutes after the stated time is normal and expected. Business meetings run on the clock; say 'hora exacta' if you mean it.",
+        "de": "Bei privaten Einladungen kommt man dreißig bis sechzig Minuten nach der genannten Zeit — das ist normal. Geschäftstermine laufen nach der Uhr; wer es ernst meint, sagt 'hora exacta'."
+      }
+    },
+    {
+      "title": "El usted",
+      "text": {
+        "en": "Strangers, anyone older and every shopkeeper get 'usted'. Peruvians move to 'tú' slowly, and switching first reads as pushy rather than friendly.",
+        "de": "Fremde, alle Älteren und jeder Ladenbesitzer bekommen 'usted'. Peruaner wechseln langsam zu 'tú', und wer zuerst wechselt, wirkt aufdringlich statt freundlich."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Restaurant bills often already carry a 10 % 'servicio'; another 10 % in cash is usual when the service was good. Taxi fares are agreed before you get in and drivers are not tipped.",
+        "de": "Auf der Rechnung stehen oft schon 10 % 'servicio'; weitere 10 % bar sind üblich, wenn der Service gut war. Taxipreise handelt man vor dem Einsteigen aus, der Fahrer bekommt nichts extra."
+      }
+    },
+    {
+      "title": "El regateo",
+      "text": {
+        "en": "Haggling belongs in craft markets and with taxi drivers, not in shops, restaurants or with the woman selling fruit on the corner. Two or three rounds, then you take the price.",
+        "de": "Gehandelt wird auf Kunsthandwerksmärkten und beim Taxi, nicht im Laden, im Restaurant oder bei der Frau mit dem Obststand an der Ecke. Zwei, drei Runden, dann nimmt man an."
+      }
+    },
+    {
+      "title": "El almuerzo",
+      "text": {
+        "en": "Lunch between one and three is the day's real meal and the reason offices empty. Dinner is small and late, and no Peruvian will order ceviche once the sun is down.",
+        "de": "Das Mittagessen zwischen eins und drei ist die eigentliche Mahlzeit und der Grund, warum Büros leer stehen. Abends isst man wenig und spät — und nie Ceviche nach Sonnenuntergang."
+      }
     }
   ]
 }

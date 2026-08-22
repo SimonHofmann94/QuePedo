@@ -1,104 +1,624 @@
 {
   "id": "cu",
   "flag": "🇨🇺",
-  "name": { "en": "Cuba", "de": "Kuba" },
+  "name": {
+    "en": "Cuba",
+    "de": "Kuba"
+  },
   "nameEs": "Cuba",
   "capital": "La Habana",
   "population": "11 M",
+  "tagline": {
+    "en": "Where Spanish, Yoruba and sugar met — and son, rumba and salsa came out of it.",
+    "de": "Wo Spanisch, Yoruba und Zucker aufeinandertrafen — und Son, Rumba und Salsa herauskamen."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/El_Malecon_Havanna_Sunset_%2816443824281%29.jpg/1920px-El_Malecon_Havanna_Sunset_%2816443824281%29.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Malecon_Havanna_Sunset_(16443824281).jpg",
+    "author": "Ashu Mathura from Amsterdam, The Netherlands",
+    "license": "CC BY-SA 2.0",
+    "width": 1920,
+    "height": 1281,
+    "alt": {
+      "en": "Waves breaking over the sea wall of Havana's Malecón, the city glowing orange at sunset",
+      "de": "Wellen schlagen über die Seemauer des Malecón in Havanna, die Stadt glüht orange im Sonnenuntergang"
+    }
+  },
   "intro": {
-    "en": "Cuba is the Caribbean's largest island, and its Spanish sounds like it's being danced: final -s sounds vanish, syllables melt together, and everything moves at the speed of a son montuno. Decades of revolution and isolation gave Cuban Spanish a vocabulary all its own — from 'yuma' for foreigners to Soviet-era loanwords. Add rum, vintage Chevrolets and the son rhythms that later became salsa, and you get a country that talks the way it makes music.",
-    "de": "Kuba ist die größte Insel der Karibik, und ihr Spanisch klingt, als würde es getanzt: End-s verschwinden, Silben verschmelzen, und alles läuft im Tempo eines Son Montuno. Jahrzehnte von Revolution und Isolation haben dem kubanischen Spanisch ein ganz eigenes Vokabular beschert — von 'yuma' für Ausländer bis zu Lehnwörtern aus der Sowjetzeit. Dazu Rum, alte Chevrolets und die Son-Rhythmen, aus denen später die Salsa wurde — ein Land, das so spricht, wie es Musik macht."
+    "en": "Cuban Spanish is the Caribbean at speed: the final -s disappears ('¿cómo etá?'), an r at the end of a word slides towards l, and whole syllables drop out of the middle. The vocabulary is its own — 'asere' for mate came from the Efik of Calabar, 'yuma' means a foreigner, and 'resolver' does the work of ten other verbs. West African religion arrived with the sugar plantations and stayed: the Yoruba orishas live on inside Catholic saints, which is why the Virgen de la Caridad and Ochún are the same figure. Son, rumba and danzón were all invented on this island, and salsa is what New York later did with the son.",
+    "de": "Kubanisches Spanisch ist Karibik im Schnelldurchlauf: Das End-s verschwindet ('¿cómo etá?'), ein r am Wortende rutscht Richtung l, und mitten im Wort fallen ganze Silben weg. Der Wortschatz gehört ihm allein — 'asere' für Kumpel kam aus dem Efik von Calabar, 'yuma' heißt Ausländer, und 'resolver' erledigt die Arbeit von zehn anderen Verben. Mit den Zuckerplantagen kam westafrikanische Religion und blieb: Die Yoruba-Orishas leben in katholischen Heiligen weiter, weshalb die Virgen de la Caridad und Ochún dieselbe Gestalt sind. Son, Rumba und Danzón entstanden alle auf dieser Insel, und Salsa ist das, was New York später aus dem Son machte."
   },
   "funFact": {
     "en": "Around 60,000 pre-1959 American cars still cruise Cuba's streets — kept alive for decades with tractor parts, Soviet engines and pure ingenuity, because the US embargo cut off spare parts.",
-    "de": "Rund 60.000 amerikanische Autos von vor 1959 rollen noch heute durch Kubas Straßen — jahrzehntelang am Leben gehalten mit Traktorteilen, Sowjet-Motoren und purem Erfindergeist, weil das US-Embargo den Nachschub an Ersatzteilen kappte."
+    "de": "Rund 60.000 amerikanische Autos von vor 1959 rollen noch heute durch Kubas Straßen — jahrzehntelang am Leben gehalten mit Traktorteilen, Sowjet-Motoren und purem Erfindergeist, weil das US-Embargo den Nachschub kappte."
   },
   "slang": [
     {
       "term": "asere",
-      "meaning": { "en": "mate, buddy — Havana's favorite word, of Afro-Cuban origin", "de": "Kumpel, Alter — Havannas Lieblingswort, afrokubanischen Ursprungs" },
+      "meaning": {
+        "en": "mate, buddy — Havana's favorite word, of Afro-Cuban origin",
+        "de": "Kumpel, Alter — Havannas Lieblingswort, afrokubanischen Ursprungs"
+      },
       "example": "¡Asere, hace tiempo que no te veo!"
     },
     {
       "term": "¿Qué bolá?",
-      "meaning": { "en": "What's up? — the Cuban greeting; even Obama used it on his 2016 Havana visit", "de": "Was geht? — die kubanische Begrüßung; sogar Obama benutzte sie 2016 bei seinem Havanna-Besuch" },
+      "meaning": {
+        "en": "What's up? — the Cuban greeting; even Obama used it on his 2016 Havana visit",
+        "de": "Was geht? — die kubanische Begrüßung; sogar Obama benutzte sie 2016 bei seinem Havanna-Besuch"
+      },
       "example": "¿Qué bolá, asere? ¿Vamos a la playa?"
     },
     {
       "term": "yuma",
-      "meaning": { "en": "foreigner, especially from the US — 'la Yuma' is the United States itself", "de": "Ausländer, vor allem aus den USA — 'la Yuma' sind die Vereinigten Staaten selbst" },
+      "meaning": {
+        "en": "foreigner, especially from the US — 'la Yuma' is the United States itself",
+        "de": "Ausländer, vor allem aus den USA — 'la Yuma' sind die Vereinigten Staaten selbst"
+      },
       "example": "Mi primo se fue pa' la Yuma el año pasado."
     },
     {
+      "term": "resolver",
+      "meaning": {
+        "en": "to sort something out by whatever means it takes — the national verb",
+        "de": "etwas irgendwie beschaffen oder hinbekommen — das kubanische Nationalverb"
+      },
+      "example": "Tranquilo, yo resuelvo el transporte."
+    },
+    {
       "term": "la jama",
-      "meaning": { "en": "food, grub — 'jamar' is to eat", "de": "Essen, Futter — 'jamar' heißt essen" },
+      "meaning": {
+        "en": "food, grub — 'jamar' is to eat",
+        "de": "Essen, Futter — 'jamar' heißt essen"
+      },
       "example": "Vamos a buscar jama, tengo un hambre tremenda."
     },
     {
       "term": "pinchar",
-      "meaning": { "en": "to work — nothing to do with the standard meaning 'to prick'", "de": "arbeiten — hat nichts mit der Standardbedeutung 'stechen' zu tun" },
+      "meaning": {
+        "en": "to work — nothing to do with the standard meaning 'to prick'",
+        "de": "arbeiten — hat nichts mit der Standardbedeutung 'stechen' zu tun"
+      },
       "example": "Mañana no puedo, tengo que pinchar temprano."
     },
     {
       "term": "fula",
-      "meaning": { "en": "a US dollar; as an adjective: bad, shady", "de": "ein US-Dollar; als Adjektiv: schlecht, zwielichtig" },
+      "meaning": {
+        "en": "a US dollar; as an adjective: bad, shady",
+        "de": "ein US-Dollar; als Adjektiv: schlecht, zwielichtig"
+      },
       "example": "Eso cuesta veinte fulas en el mercado."
     },
     {
+      "term": "no es fácil",
+      "meaning": {
+        "en": "'it isn't easy' — the sigh that closes any conversation about daily life",
+        "de": "'es ist nicht einfach' — der Seufzer, der jedes Gespräch über den Alltag beendet"
+      },
+      "example": "Hay apagones otra vez... no es fácil."
+    },
+    {
       "term": "¡Chao pescao!",
-      "meaning": { "en": "Bye! (literally 'bye, fish!' — the classic reply is 'y a la vuelta picadillo')", "de": "Tschüss! (wörtlich 'tschüss, Fisch!' — die klassische Antwort lautet 'y a la vuelta picadillo')" },
+      "meaning": {
+        "en": "Bye! (literally 'bye, fish!' — the classic reply is 'y a la vuelta picadillo')",
+        "de": "Tschüss! (wörtlich 'tschüss, Fisch!' — die klassische Antwort lautet 'y a la vuelta picadillo')"
+      },
       "example": "Nos vemos mañana. ¡Chao pescao!"
     },
     {
       "term": "estar hecho un mango",
-      "meaning": { "en": "to be gorgeous — in Cuba an attractive person is literally 'a mango'", "de": "umwerfend aussehen — in Kuba ist eine attraktive Person wörtlich 'eine Mango'" },
+      "meaning": {
+        "en": "to be gorgeous — in Cuba an attractive person is literally 'a mango'",
+        "de": "umwerfend aussehen — in Kuba ist eine attraktive Person wörtlich 'eine Mango'"
+      },
       "example": "¿Viste al cantante? ¡Está hecho un mango!"
     }
   ],
   "vocabulary": [
-    { "es": "la guagua", "translation": { "en": "bus", "de": "Bus" }, "note": { "en": "elsewhere: el autobús — all over the Caribbean the bus is a 'guagua'", "de": "anderswo: el autobús — in der ganzen Karibik ist der Bus eine 'guagua'" } },
-    { "es": "la fruta bomba", "translation": { "en": "papaya", "de": "Papaya" }, "note": { "en": "careful: in Cuba 'papaya' is vulgar — always order 'fruta bomba'", "de": "Vorsicht: 'papaya' ist auf Kuba vulgär — bestell immer 'fruta bomba'" } },
-    { "es": "la máquina", "translation": { "en": "shared taxi, usually a classic American car", "de": "Sammeltaxi, meist ein amerikanischer Oldtimer" }, "note": { "en": "elsewhere: el taxi colectivo — also called 'almendrón' (big almond)", "de": "anderswo: el taxi colectivo — auch 'almendrón' (große Mandel) genannt" } },
-    { "es": "los espejuelos", "translation": { "en": "glasses", "de": "Brille" }, "note": { "en": "elsewhere: las gafas / los lentes", "de": "anderswo: las gafas / los lentes" } },
-    { "es": "la jaba", "translation": { "en": "plastic bag, shopping bag", "de": "Plastiktüte, Einkaufstasche" }, "note": { "en": "elsewhere: la bolsa", "de": "anderswo: la bolsa" } },
-    { "es": "la pincha", "translation": { "en": "work, job", "de": "Arbeit, Job" }, "note": { "en": "elsewhere: el trabajo", "de": "anderswo: el trabajo" } },
-    { "es": "los jimaguas", "translation": { "en": "twins", "de": "Zwillinge" }, "note": { "en": "elsewhere: los gemelos — a word of Afro-Cuban origin", "de": "anderswo: los gemelos — ein Wort afrokubanischen Ursprungs" } }
+    {
+      "es": "la guagua",
+      "translation": {
+        "en": "bus",
+        "de": "Bus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús — all over the Caribbean the bus is a 'guagua'",
+        "de": "anderswo: el autobús — in der ganzen Karibik ist der Bus eine 'guagua'"
+      }
+    },
+    {
+      "es": "la fruta bomba",
+      "translation": {
+        "en": "papaya",
+        "de": "Papaya"
+      },
+      "note": {
+        "en": "careful: in Cuba 'papaya' is vulgar — always order 'fruta bomba'",
+        "de": "Vorsicht: 'papaya' ist auf Kuba vulgär — bestell immer 'fruta bomba'"
+      }
+    },
+    {
+      "es": "la máquina",
+      "translation": {
+        "en": "shared taxi, usually a classic American car",
+        "de": "Sammeltaxi, meist ein amerikanischer Oldtimer"
+      },
+      "note": {
+        "en": "elsewhere: el taxi colectivo — also called 'almendrón' (big almond)",
+        "de": "anderswo: el taxi colectivo — auch 'almendrón' (große Mandel) genannt"
+      }
+    },
+    {
+      "es": "el paladar",
+      "translation": {
+        "en": "a restaurant run out of somebody's home",
+        "de": "ein Restaurant in einer Privatwohnung"
+      },
+      "note": {
+        "en": "named after a restaurant chain in a Brazilian soap opera everyone watched in 1991",
+        "de": "benannt nach einer Lokalkette aus einer brasilianischen Telenovela, die 1991 alle sahen"
+      }
+    },
+    {
+      "es": "la libreta",
+      "translation": {
+        "en": "the ration book, one per household",
+        "de": "das Bezugsheft, eines pro Haushalt"
+      },
+      "note": {
+        "en": "in use since 1962 — it covers rice, sugar, coffee, eggs and a daily bread roll",
+        "de": "seit 1962 in Gebrauch — es deckt Reis, Zucker, Kaffee, Eier und ein Brötchen pro Tag"
+      }
+    },
+    {
+      "es": "los espejuelos",
+      "translation": {
+        "en": "glasses",
+        "de": "Brille"
+      },
+      "note": {
+        "en": "elsewhere: las gafas / los lentes",
+        "de": "anderswo: las gafas / los lentes"
+      }
+    },
+    {
+      "es": "la jaba",
+      "translation": {
+        "en": "plastic bag, shopping bag",
+        "de": "Plastiktüte, Einkaufstasche"
+      },
+      "note": {
+        "en": "elsewhere: la bolsa — and you carry your own, because shops have none",
+        "de": "anderswo: la bolsa — und man bringt sie mit, denn die Läden haben keine"
+      }
+    },
+    {
+      "es": "el pulóver",
+      "translation": {
+        "en": "t-shirt",
+        "de": "T-Shirt"
+      },
+      "note": {
+        "en": "elsewhere: la camiseta — a Cuban 'suéter' is the warm one",
+        "de": "anderswo: la camiseta — ein kubanischer 'suéter' ist der warme"
+      }
+    },
+    {
+      "es": "la pincha",
+      "translation": {
+        "en": "work, job",
+        "de": "Arbeit, Job"
+      },
+      "note": {
+        "en": "elsewhere: el trabajo — 'pinchar' is the verb that goes with it",
+        "de": "anderswo: el trabajo — 'pinchar' ist das Verb dazu"
+      }
+    },
+    {
+      "es": "los jimaguas",
+      "translation": {
+        "en": "twins",
+        "de": "Zwillinge"
+      },
+      "note": {
+        "en": "elsewhere: los gemelos — a word of Afro-Cuban origin",
+        "de": "anderswo: los gemelos — ein Wort afrokubanischen Ursprungs"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Habana Vieja",
-      "description": { "en": "Havana's UNESCO-listed old town — 500 years of colonial facades, with 1950s Chevrolets rumbling past pastel-colored arcades.", "de": "Havannas Altstadt, UNESCO-Welterbe — 500 Jahre Kolonialfassaden, während Chevrolets aus den 50ern an pastellfarbenen Arkaden vorbeirumpeln." },
+      "description": {
+        "en": "Four squares laid out between 1519 and the 1700s, the city wall long gone and the buildings kept up by a state office that pays for restoration out of its own hotels. The cathedral square is paved with coral blocks full of fossils. Behind the repaired facades, one building in three is still a tenement where several families share a courtyard tap.",
+        "de": "Vier Plätze, angelegt zwischen 1519 und dem 18. Jahrhundert, die Stadtmauer längst verschwunden, die Häuser instand gehalten von einem Staatsbüro, das die Restaurierung aus eigenen Hotels bezahlt. Der Kathedralplatz ist mit Korallenblöcken voller Fossilien gepflastert. Hinter den hergerichteten Fassaden ist jedes dritte Haus ein Mietshaus, in dem sich mehrere Familien einen Hahn im Hof teilen."
+      },
       "lat": 23.1355,
       "lng": -82.3589,
-      "emoji": "🏛️"
+      "emoji": "🏛️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Plaza_en_la_Habana_Vieja.JPG/960px-Plaza_en_la_Habana_Vieja.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Plaza_en_la_Habana_Vieja.JPG",
+        "author": "Héctor Valdés Dominguez",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A horse and carriage waiting on the cobbles of a square in Old Havana, facades behind",
+          "de": "Eine Pferdekutsche auf dem Kopfsteinpflaster eines Platzes in Alt-Havanna, dahinter Fassaden"
+        }
+      }
     },
     {
       "name": "El Malecón",
-      "description": { "en": "Havana's 8-km seafront wall — the city's open-air living room, where musicians, fishermen and lovers gather while waves crash over the road.", "de": "Havannas 8 km lange Uferpromenade — das Freiluft-Wohnzimmer der Stadt, wo sich Musiker, Angler und Verliebte treffen, während Wellen über die Straße schlagen." },
+      "description": {
+        "en": "Eight kilometres of sea wall begun by American engineers in 1901, and the only place in Havana with room for everybody. On winter nights the north wind throws waves over the parapet and closes the road; the rest of the year it is fishermen with hand lines, trumpet practice, rum out of a carton and a couple every few metres.",
+        "de": "Acht Kilometer Seemauer, 1901 von amerikanischen Ingenieuren begonnen, und der einzige Ort in Havanna, an dem für alle Platz ist. In Winternächten wirft der Nordwind Wellen über die Brüstung und sperrt die Straße; sonst sind es Angler mit Handleinen, Trompetenübungen, Rum aus dem Tetrapak und alle paar Meter ein Paar."
+      },
       "lat": 23.1443,
       "lng": -82.383,
-      "emoji": "🌊"
+      "emoji": "🌊",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AvMalecon-LaHabanaCuba-04735.jpg/960px-AvMalecon-LaHabanaCuba-04735.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:AvMalecon-LaHabanaCuba-04735.jpg",
+        "author": "Ezarate This is a retouched picture, which means that it has been digitally alte",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 624,
+        "alt": {
+          "en": "A turquoise 1950s American car driving along the empty Malecón road under big clouds",
+          "de": "Ein türkisfarbener US-Wagen der 1950er fährt über die leere Malecón-Straße unter Wolken"
+        }
+      }
     },
     {
       "name": "Valle de Viñales",
-      "description": { "en": "Lush valley dotted with dome-shaped mogote hills — the world's finest tobacco grows here, in fields still plowed with oxen.", "de": "Sattgrünes Tal voller kuppelförmiger Mogote-Hügel — hier wächst der beste Tabak der Welt, auf Feldern, die noch mit Ochsen gepflügt werden." },
+      "description": {
+        "en": "Limestone mogotes stand out of the tobacco fields like teeth, the parts of a cave system that did not collapse. Growers still plough with oxen, because a tractor packs the red soil too hard, and hand-tie the leaves in palm-thatched barns to cure for fifty days. Ninety percent of every crop goes to the state; the tenth a farmer keeps is what he rolls himself.",
+        "de": "Kalkstein-Mogotes stehen wie Zähne aus den Tabakfeldern, die Reste eines Höhlensystems, das nicht eingestürzt ist. Gepflügt wird noch mit Ochsen, weil ein Traktor den roten Boden zu fest verdichtet, und die Blätter hängen von Hand gebunden fünfzig Tage in palmgedeckten Scheunen. Neunzig Prozent jeder Ernte gehen an den Staat; das Zehntel, das dem Bauern bleibt, dreht er selbst."
+      },
       "lat": 22.6167,
       "lng": -83.7167,
-      "emoji": "🌿"
+      "emoji": "🌿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mogotes%2C_Vi%C3%B1ales_Valley%2C_Cuba.jpg/960px-Mogotes%2C_Vi%C3%B1ales_Valley%2C_Cuba.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mogotes,_Vi%C3%B1ales_Valley,_Cuba.jpg",
+        "author": "Charles J. Sharp",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Round limestone mogotes rising above green farmland in the Viñales valley",
+          "de": "Runde Kalkstein-Mogotes über grünem Ackerland im Tal von Viñales"
+        }
+      }
     },
     {
       "name": "Trinidad",
-      "description": { "en": "A cobblestoned colonial time capsule frozen around 1850, when sugar fortunes built its pastel palaces and church towers.", "de": "Eine kopfsteingepflasterte koloniale Zeitkapsel, eingefroren um 1850, als Zuckervermögen ihre Pastellpaläste und Kirchtürme bauten." },
+      "description": {
+        "en": "Sugar money built it and the collapse of sugar froze it. By 1840 the Valle de los Ingenios next door held around fifty mills worked by more than 30,000 enslaved people; when the price fell and the railway went elsewhere, nobody had a reason to knock anything down. The cobbles are ballast stones out of the ships, and cars still struggle on them.",
+        "de": "Zuckergeld baute die Stadt, und der Zusammenbruch des Zuckers hat sie eingefroren. Um 1840 standen im Valle de los Ingenios nebenan rund fünfzig Mühlen, betrieben von über 30.000 versklavten Menschen; als der Preis fiel und die Bahn woanders hinführte, hatte niemand Grund, etwas abzureißen. Das Pflaster ist Ballast aus den Schiffen, und Autos tun sich bis heute schwer damit."
+      },
       "lat": 21.8042,
       "lng": -79.9847,
-      "emoji": "🏘️"
+      "emoji": "🏘️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Plaza_Mayor_-_Trinidad_-_01.jpg/960px-Plaza_Mayor_-_Trinidad_-_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Plaza_Mayor_-_Trinidad_-_01.jpg",
+        "author": "Maesi64",
+        "license": "CC0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Trinidad's Plaza Mayor with white iron railings, palms and the church front behind",
+          "de": "Trinidads Plaza Mayor mit weißen Eisengittern, Palmen und der Kirchenfront dahinter"
+        }
+      }
     },
     {
       "name": "Varadero",
-      "description": { "en": "Twenty kilometers of powder-white sand on the narrow Hicacos peninsula — Cuba's most famous stretch of Caribbean turquoise.", "de": "Zwanzig Kilometer puderweißer Sand auf der schmalen Hicacos-Halbinsel — Kubas berühmtester Streifen Karibiktürkis." },
+      "description": {
+        "en": "Twenty kilometres of white sand on a peninsula barely two hundred metres wide, with sea on both sides of the road. The Du Pont family put a mansion on the highest point in 1930 and a golf course around it; the house is a restaurant now. Cubans were not allowed to book the hotels here at all until 2008, which still shapes who you meet on the sand.",
+        "de": "Zwanzig Kilometer weißer Sand auf einer Halbinsel von kaum zweihundert Metern Breite, links und rechts der Straße das Meer. Die Familie Du Pont setzte 1930 ein Herrenhaus auf den höchsten Punkt und einen Golfplatz drumherum; das Haus ist heute ein Restaurant. Bis 2008 durften Kubaner die Hotels hier gar nicht buchen, was bis heute prägt, wen man am Strand trifft."
+      },
       "lat": 23.1568,
       "lng": -81.2444,
-      "emoji": "🏖️"
+      "emoji": "🏖️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brisas_del_Caribe_15.07.12_-_panoramio.jpg/960px-Brisas_del_Caribe_15.07.12_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Brisas_del_Caribe_15.07.12_-_panoramio.jpg",
+        "author": "shapurma",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Two figures silhouetted at the water's edge on Varadero beach under a red sunset",
+          "de": "Zwei Silhouetten am Wassersaum des Strands von Varadero unter rotem Abendhimmel"
+        }
+      }
+    },
+    {
+      "name": "Camagüey",
+      "description": {
+        "en": "Laid out deliberately without a grid: the streets bend, fork and dead-end, a plan meant to lose the pirates who came up from the coast in the 1600s. Every old courtyard holds a tinajón, a fat clay jar for rainwater — the town counted more than 16,000 of them in the 1800s. Locals say a visitor who drinks from one never leaves.",
+        "de": "Bewusst ohne Raster angelegt: Die Straßen biegen ab, gabeln sich und enden im Nichts — ein Plan, um die Piraten in die Irre zu führen, die im 17. Jahrhundert von der Küste heraufkamen. In jedem alten Hof steht ein Tinajón, ein bauchiger Tonkrug für Regenwasser — im 19. Jahrhundert zählte die Stadt über 16.000 davon. Wer aus einem trinkt, sagt man, geht nie wieder weg."
+      },
+      "lat": 21.3808,
+      "lng": -77.9169,
+      "emoji": "🏺",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/AJM_093_Plaza_de_los_Trabajadores_Camag%C3%BCey.JPG/960px-AJM_093_Plaza_de_los_Trabajadores_Camag%C3%BCey.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:AJM_093_Plaza_de_los_Trabajadores_Camag%C3%BCey.JPG",
+        "author": "Arnoud Joris Maaswinkel",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A blue colonial corner building with a domed turret and a Cuban flag on the plaza",
+          "de": "Ein blaues koloniales Eckhaus mit Kuppelturm und kubanischer Flagge am Platz"
+        }
+      }
+    },
+    {
+      "name": "Santiago de Cuba",
+      "description": {
+        "en": "The other Cuba, and it says so out loud. Son was put together in these mountains before it ever reached Havana, the Tumba Francesa drumming came with Haitian planters after 1791, and the Castillo del Morro guards a harbour mouth barely two hundred metres across. Castro's first attack, on the Moncada barracks in 1953, was timed for carnival week so the noise would cover it.",
+        "de": "Das andere Kuba — und es sagt das laut. Der Son entstand in diesen Bergen, lange bevor er Havanna erreichte, das Trommeln der Tumba Francesa kam nach 1791 mit haitianischen Pflanzern, und das Castillo del Morro bewacht eine Hafeneinfahrt von kaum zweihundert Metern Breite. Castros erster Angriff, 1953 auf die Moncada-Kaserne, lag in der Karnevalswoche, damit der Lärm ihn deckte."
+      },
+      "lat": 20.0217,
+      "lng": -75.8294,
+      "emoji": "🥁",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Castillo_del_Morro%2C_Santiago_de_Cuba_10.jpg/960px-Castillo_del_Morro%2C_Santiago_de_Cuba_10.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Castillo_del_Morro,_Santiago_de_Cuba_10.jpg",
+        "author": "Sangianense",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A stone sentry turret on the wall of Castillo del Morro above the coast and green hills",
+          "de": "Ein steinernes Wachtürmchen an der Mauer des Castillo del Morro über Küste und grünen Hügeln"
+        }
+      }
+    },
+    {
+      "name": "Baracoa",
+      "description": {
+        "en": "Columbus came ashore near here in 1492, and Spain founded its first town on the island in 1511. Then the mountains cut it off for four and a half centuries: until the Farola road opened in 1965 you arrived by boat or not at all. It grows most of Cuba's cacao and cooks with coconut milk and bitter orange in a way nowhere else on the island does.",
+        "de": "Kolumbus ging 1492 in der Nähe an Land, und Spanien gründete hier 1511 seine erste Stadt auf der Insel. Danach schnitten die Berge sie viereinhalb Jahrhunderte lang ab: Bis die Straße La Farola 1965 öffnete, kam man per Boot oder gar nicht. Hier wächst der meiste Kakao Kubas, und gekocht wird mit Kokosmilch und Bitterorange wie sonst nirgends auf der Insel."
+      },
+      "lat": 20.3475,
+      "lng": -74.496,
+      "emoji": "🍫",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/008_Baracoa_town_sunset_in_Cuba%2C_El_Yunque_table_mountain_in_background.jpg/960px-008_Baracoa_town_sunset_in_Cuba%2C_El_Yunque_table_mountain_in_background.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:008_Baracoa_town_sunset_in_Cuba,_El_Yunque_table_mountain_in_background.jpg",
+        "author": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Baracoa's bay at sunset with the flat-topped El Yunque mountain behind the town",
+          "de": "Die Bucht von Baracoa bei Sonnenuntergang, dahinter der Tafelberg El Yunque"
+        }
+      }
+    },
+    {
+      "name": "Bahía de Cochinos",
+      "description": {
+        "en": "The 1961 landing was over in about 65 hours, and every kilometre of the road in still carries a concrete marker with the name of a man who died on it. The same bay is the edge of the Ciénaga de Zapata, the largest wetland in the Caribbean: Cuban crocodiles, flamingos, and flooded caves you can snorkel where fresh water meets salt.",
+        "de": "Die Landung von 1961 war nach rund 65 Stunden vorbei, und an jedem Straßenkilometer hinein steht bis heute ein Betonstein mit dem Namen eines Gefallenen. Dieselbe Bucht ist der Rand der Ciénaga de Zapata, des größten Feuchtgebiets der Karibik: kubanische Krokodile, Flamingos und geflutete Höhlen zum Schnorcheln, wo Süßwasser auf Salzwasser trifft."
+      },
+      "lat": 22.0667,
+      "lng": -81.0333,
+      "emoji": "🐊",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/04052016PlayaGironPropagande.jpg/960px-04052016PlayaGironPropagande.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:04052016PlayaGironPropagande.jpg",
+        "author": "Steph32",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A roadside concrete sign at Playa Girón reading that a decisive battle was fought here",
+          "de": "Ein Betonschild am Straßenrand von Playa Girón mit dem Hinweis auf eine entscheidende Schlacht"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la ropa vieja",
+      "description": {
+        "en": "Flank steak simmered soft, pulled into shreds and cooked down again with onion, pepper, cumin and tomato until it looks like torn-up rags, which is where the name comes from. It arrives with white rice, black beans and fried plantain on the same plate, and no Cuban kitchen does it differently.",
+        "de": "Flanksteak weich geschmort, in Fäden gezupft und noch einmal mit Zwiebel, Paprika, Kreuzkümmel und Tomate eingekocht, bis es wie zerrissene Lumpen aussieht — daher der Name. Dazu weißer Reis, schwarze Bohnen und gebratene Kochbanane auf demselben Teller; anders macht es keine kubanische Küche."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ropa_vieja_plato_cubano_por_excelencia_1.jpg/960px-Ropa_vieja_plato_cubano_por_excelencia_1.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ropa_vieja_plato_cubano_por_excelencia_1.jpg",
+        "author": "El Mono Español",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 677,
+        "alt": {
+          "en": "A home table with shredded beef, rice, black beans, fried pork and fried malanga",
+          "de": "Ein Haustisch mit zerzupftem Rindfleisch, Reis, schwarzen Bohnen, Schweinefleisch und Malanga"
+        }
+      }
+    },
+    {
+      "name": "el congrí",
+      "description": {
+        "en": "Rice and beans cooked together in the bean liquor so the grains come out grey-brown, with garlic, cumin, oregano and a piece of pork fat. In the east it is congrí and made with red beans; in Havana the black-bean version goes by moros y cristianos, Moors and Christians.",
+        "de": "Reis und Bohnen zusammen in der Bohnenbrühe gekocht, sodass die Körner graubraun werden, dazu Knoblauch, Kreuzkümmel, Oregano und ein Stück Schweinefett. Im Osten heißt es Congrí und wird mit roten Bohnen gemacht; in Havanna läuft die schwarze Variante als moros y cristianos."
+      }
+    },
+    {
+      "name": "el lechón asado",
+      "description": {
+        "en": "A whole pig rubbed with garlic, sour orange and oregano, then turned over charcoal for six or seven hours until the skin blisters and cracks. It is Christmas Eve, and any birthday that counts. The mojo left in the tray goes over the rice.",
+        "de": "Ein ganzes Schwein, eingerieben mit Knoblauch, Bitterorange und Oregano, dann sechs, sieben Stunden über Holzkohle gedreht, bis die Haut Blasen wirft und aufreißt. Das ist Heiligabend — und jeder Geburtstag, der zählt. Das Mojo aus dem Blech kommt über den Reis."
+      }
+    },
+    {
+      "name": "los tostones",
+      "description": {
+        "en": "Green plantain cut into discs, fried once, flattened with the bottom of a glass and fried again, then salted while still hot. Starchy rather than sweet, they take the place bread takes elsewhere, and a garlic mojo comes with them for dipping.",
+        "de": "Grüne Kochbanane in Scheiben, einmal frittiert, mit dem Glasboden platt gedrückt und noch einmal frittiert, dann heiß gesalzen. Eher stärkehaltig als süß, nehmen sie den Platz ein, den anderswo das Brot hat, und zum Tunken gibt es Knoblauch-Mojo."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",
+        "author": "AMartiniouk",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A bowl of golden fried plantain discs, flattened and crisp around the edges",
+          "de": "Eine Schale goldener frittierter Kochbananenscheiben, platt gedrückt und knusprig am Rand"
+        }
+      }
+    },
+    {
+      "name": "la pizza de ventanita",
+      "description": {
+        "en": "Sold through a hole in the front wall of somebody's house for a few pesos: thick soft dough, a lot of tomato, and a rubbery local cheese that stretches to the pavement. It is folded in half and handed over on a scrap of cardboard. This is what Cubans actually eat in the street.",
+        "de": "Verkauft durch ein Loch in der Hauswand für ein paar Pesos: dicker weicher Teig, viel Tomate und ein gummiartiger einheimischer Käse, der bis auf den Gehweg fädelt. Sie wird zusammengeklappt und auf einem Stück Pappe gereicht. Das ist, was Kubaner auf der Straße wirklich essen."
+      }
+    },
+    {
+      "name": "el mojito",
+      "description": {
+        "en": "White rum, lime, sugar, soda and hierbabuena, a mint that is not the European peppermint plant and tastes rounder. The leaves get pressed, not shredded. La Bodeguita del Medio sells it by the hundred on the strength of a Hemingway line nobody has ever been able to source.",
+        "de": "Weißer Rum, Limette, Zucker, Soda und Hierbabuena, eine Minze, die nicht die europäische Pfefferminze ist und runder schmeckt. Die Blätter werden angedrückt, nicht zerrissen. La Bodeguita del Medio verkauft ihn hundertweise wegen eines Hemingway-Zitats, das nie jemand belegen konnte."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Fresh_Mojito_Premium.jpg/960px-Fresh_Mojito_Premium.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fresh_Mojito_Premium.jpg",
+        "author": "Rjcastillo",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1440,
+        "alt": {
+          "en": "A tall cut-glass mojito with crushed ice, mint leaves and a dried citrus wheel on the rim",
+          "de": "Ein hohes Kristallglas Mojito mit Crushed Ice, Minzblättern und Zitrusscheibe am Rand"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Carnaval de Santiago de Cuba",
+      "when": {
+        "en": "the last week of July",
+        "de": "die letzte Juliwoche"
+      },
+      "description": {
+        "en": "Congas — street bands of drums, iron and a Chinese cornet — walk through the neighbourhoods and the crowd falls in behind them, a moving mass called the arrollao. The late-July date comes from the end of the sugar harvest, and it is the loudest week in the Cuban year.",
+        "de": "Congas — Straßenbands aus Trommeln, Eisen und chinesischer Trompete — ziehen durch die Viertel, und die Menge fällt hinter ihnen ein, eine wandernde Masse namens Arrollao. Der Termin Ende Juli stammt vom Ende der Zuckerernte, und es ist die lauteste Woche des kubanischen Jahres."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Stgo_de_Cuba_Carnaval_2009_IMG_0523.jpg/960px-Stgo_de_Cuba_Carnaval_2009_IMG_0523.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Stgo_de_Cuba_Carnaval_2009_IMG_0523.jpg",
+        "author": "Christian Pirkl",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Dancers in blue feathered costumes parading down a street lined with spectators",
+          "de": "Tänzerinnen in blauen Federkostümen ziehen eine Straße entlang, gesäumt von Zuschauern"
+        }
+      }
+    },
+    {
+      "name": "Las Parrandas",
+      "when": {
+        "en": "the nights before Christmas",
+        "de": "die Nächte vor Weihnachten"
+      },
+      "description": {
+        "en": "Two neighbourhoods of one town spend a year building fireworks and a lit float the height of a house, then set them off against each other from midnight until dawn. Remedios has done this since about 1820, when a priest sent children out with whistles to wake people for December mass.",
+        "de": "Zwei Viertel derselben Stadt bauen ein Jahr lang an Feuerwerk und einem beleuchteten Wagen von Haushöhe und lassen beides von Mitternacht bis zum Morgengrauen gegeneinander los. Remedios macht das seit etwa 1820, als ein Pfarrer Kinder mit Pfeifen losschickte, um zur Dezembermesse zu wecken."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Carroza_%22Oz_el_poderoso%22%2C_del_barrio_Santa_Teresa%2C_Chivos%2C_Parranda_2025_en_Camajuan%C3%AD%2C_Villa_Clara%2C_Cuba.jpg/960px-Carroza_%22Oz_el_poderoso%22%2C_del_barrio_Santa_Teresa%2C_Chivos%2C_Parranda_2025_en_Camajuan%C3%AD%2C_Villa_Clara%2C_Cuba.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Carroza_%22Oz_el_poderoso%22,_del_barrio_Santa_Teresa,_Chivos,_Parranda_2025_en_Camajuan%C3%AD,_Villa_Clara,_Cuba.jpg",
+        "author": "Raudelct",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1280,
+        "alt": {
+          "en": "A house-high decorated parade float with a rainbow arch and a balloon on top",
+          "de": "Ein haushoher geschmückter Umzugswagen mit Regenbogenbogen und Ballon obenauf"
+        }
+      }
+    },
+    {
+      "name": "Virgen de la Caridad del Cobre",
+      "when": {
+        "en": "8 September",
+        "de": "8. September"
+      },
+      "description": {
+        "en": "Cuba's patron, found floating on a board in the Bay of Nipe around 1612 by two brothers and a slave boy. Pilgrims climb to the basilica at El Cobre and leave what they promised: a crutch, a medal, a lock of hair. In Santería she is also Ochún, orisha of rivers and honey, so the offerings are yellow.",
+        "de": "Kubas Schutzpatronin, um 1612 von zwei Brüdern und einem Sklavenjungen in der Bucht von Nipe treibend gefunden. Pilger steigen zur Basilika von El Cobre hinauf und lassen dort, was sie versprachen: Krücke, Medaille, Haarsträhne. In der Santería ist sie auch Ochún, Orisha der Flüsse — die Gaben sind gelb."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Santiago_Virgen_de_La_Caridad_del_Cobre_hdsr_S5is_Cuba2_835.jpg/960px-Santiago_Virgen_de_La_Caridad_del_Cobre_hdsr_S5is_Cuba2_835.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Santiago_Virgen_de_La_Caridad_del_Cobre_hdsr_S5is_Cuba2_835.jpg",
+        "author": "Hyppolyte de Saint-Rambert",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The cream-and-red basilica of El Cobre seen from a distance among green hills",
+          "de": "Die cremefarben-rote Basilika von El Cobre aus der Ferne zwischen grünen Hügeln"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "A kiss on the cheek for a woman on first meeting, a handshake or a clap on the shoulder between men. Cubans stand close and touch while talking; stepping back reads as dislike.",
+        "de": "Beim ersten Treffen ein Wangenkuss für eine Frau, unter Männern Handschlag oder ein Klaps auf die Schulter. Kubaner stehen nah und fassen beim Reden an; zurückweichen wirkt wie Ablehnung."
+      }
+    },
+    {
+      "title": "¿El último?",
+      "text": {
+        "en": "A Cuban queue is not a line. You arrive, call '¿el último?', note who answers, and then you are free to sit in the shade until that person's turn comes round.",
+        "de": "Eine kubanische Warteschlange steht nicht. Man kommt an, ruft '¿el último?', merkt sich, wer antwortet, und kann sich dann in den Schatten setzen, bis diese Person dran ist."
+      }
+    },
+    {
+      "title": "El tú",
+      "text": {
+        "en": "Almost everybody is 'tú', including strangers and people twice your age. 'Usted' is kept for officials and doctors, and spread around too freely it sounds stiff or sarcastic.",
+        "de": "Fast alle sind 'tú', auch Fremde und Leute doppelt so alt wie man selbst. 'Usted' bleibt Beamten und Ärzten vorbehalten; zu großzügig verteilt klingt es steif oder spöttisch."
+      }
+    },
+    {
+      "title": "La política",
+      "text": {
+        "en": "Cubans discuss the state constantly among themselves and rarely with a visitor they met an hour ago. Let them open it. Recording a complaint, or naming the person who made it, is not yours to do.",
+        "de": "Kubaner reden ständig über den Staat — untereinander, selten mit einem Besucher von vor einer Stunde. Überlass ihnen den Anfang. Beschwerden mitzuschneiden oder Namen zu nennen, steht dir nicht zu."
+      }
+    },
+    {
+      "title": "El piropo",
+      "text": {
+        "en": "Comments called out to women in the street are common and usually meant as flattery rather than threat. Walking on without answering is the standard Cuban response and offends nobody.",
+        "de": "Zurufe an Frauen auf der Straße sind üblich und meist als Kompliment gemeint, nicht als Drohung. Weiterzugehen, ohne zu antworten, ist die übliche kubanische Reaktion und kränkt niemanden."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Ten percent in cash is normal in a paladar and welcome anywhere, because a state wage is a fraction of what the tip is worth. Small notes are far more useful than large ones.",
+        "de": "Zehn Prozent in bar sind im Paladar üblich und überall willkommen, denn ein Staatslohn ist ein Bruchteil dessen, was das Trinkgeld wert ist. Kleine Scheine helfen weit mehr als große."
+      }
     }
   ]
 }

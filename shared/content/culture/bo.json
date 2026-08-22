@@ -1,13 +1,32 @@
 {
   "id": "bo",
   "flag": "🇧🇴",
-  "name": { "en": "Bolivia", "de": "Bolivien" },
+  "name": {
+    "en": "Bolivia",
+    "de": "Bolivien"
+  },
   "nameEs": "Bolivia",
   "capital": "Sucre / La Paz",
   "population": "12 M",
+  "tagline": {
+    "en": "A landlocked country with a navy, two capitals and thirty-seven official languages.",
+    "de": "Ein Binnenland mit eigener Marine, zwei Hauptstädten und siebenunddreißig Amtssprachen."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Luz%2C_Nosotros_y_la_Oscuridad.jpg/1920px-Luz%2C_Nosotros_y_la_Oscuridad.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Luz,_Nosotros_y_la_Oscuridad.jpg",
+    "author": "Erciq",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 960,
+    "alt": {
+      "en": "A thin film of water on the Salar de Uyuni mirroring a bright and a stormy sky",
+      "de": "Ein dünner Wasserfilm auf dem Salar de Uyuni spiegelt einen hellen und einen stürmischen Himmel"
+    }
+  },
   "intro": {
-    "en": "Bolivia is South America at full intensity: the seat of government, La Paz, sits at 3,600 m, and the altiplano stretches even higher. Most Bolivians grow up between languages — Quechua and Aymara are official alongside Spanish, and 36 indigenous languages are written into the constitution. Andean Spanish borrows happily: a baby is a 'wawa', a hangover a 'ch'aki', and sentences like to end in 'pues'.",
-    "de": "Bolivien ist Südamerika in voller Intensität: Der Regierungssitz La Paz liegt auf 3.600 m, und das Altiplano zieht sich noch höher hinauf. Die meisten Bolivianer wachsen zwischen den Sprachen auf — Quechua und Aymara sind neben Spanisch offiziell, 36 indigene Sprachen stehen in der Verfassung. Das Anden-Spanisch bedient sich munter: Ein Baby ist eine 'wawa', der Kater ein 'ch'aki', und Sätze enden gern auf 'pues'."
+    "en": "Bolivia is South America at full intensity: the seat of government sits at 3,600 m in a canyon, while the constitutional capital, Sucre, is 700 km away. Most Bolivians grow up between languages — Quechua and Aymara are official alongside Spanish, and 36 indigenous languages are named in the constitution. Andean Spanish borrows happily and reshapes what it borrows: a baby is a wawa, a hangover a ch'aki, sentences end in pues, and Aymara grammar leaks through when a 'dice' is tacked on to mark hearsay. The country lost its coastline to Chile in 1879, still keeps a navy on Lake Titicaca, and mourns the sea every 23 March.",
+    "de": "Bolivien ist Südamerika in voller Intensität: Der Regierungssitz liegt auf 3.600 m in einer Schlucht, die verfassungsmäßige Hauptstadt Sucre 700 km entfernt. Die meisten Bolivianer wachsen zwischen den Sprachen auf — Quechua und Aymara sind neben Spanisch offiziell, 36 indigene Sprachen stehen in der Verfassung. Das Anden-Spanisch bedient sich munter und formt um, was es sich holt: Ein Baby ist eine wawa, der Kater ein ch'aki, Sätze enden auf pues, und aymarische Grammatik schlägt durch, wenn ein 'dice' angehängt wird, um Hörensagen zu markieren. Die Küste verlor das Land 1879 an Chile, unterhält aber weiter eine Marine auf dem Titicacasee und betrauert das Meer jeden 23. März."
   },
   "funFact": {
     "en": "The clock on Bolivia's congress building in La Paz runs backwards. The 'Clock of the South' was reversed in 2014 as a statement that the southern hemisphere doesn't have to tick like the north.",
@@ -16,84 +35,537 @@
   "slang": [
     {
       "term": "chango / changa",
-      "meaning": { "en": "boy/girl, young person", "de": "Junge/Mädchen, junger Mensch" },
+      "meaning": {
+        "en": "boy/girl, young person",
+        "de": "Junge/Mädchen, junger Mensch"
+      },
       "example": "Ese chango juega bien al fútbol."
     },
     {
       "term": "jailón / jailona",
-      "meaning": { "en": "posh, snobby rich kid (from English 'high')", "de": "schickimicki, versnobtes reiches Kind (vom englischen 'high')" },
+      "meaning": {
+        "en": "posh, snobby rich kid (from English 'high')",
+        "de": "schickimicki, versnobtes reiches Kind (vom englischen 'high')"
+      },
       "example": "Esa discoteca está llena de jailones."
     },
     {
       "term": "pues",
-      "meaning": { "en": "the sentence-final seasoning — Bolivians sprinkle it onto everything: 'ya pues', 'no pues', '¿dónde pues?'", "de": "das Satzende-Gewürz — Bolivianer streuen es über alles: 'ya pues', 'no pues', '¿dónde pues?'" },
+      "meaning": {
+        "en": "the sentence-final seasoning — Bolivians sprinkle it onto everything: 'ya pues', 'no pues', '¿dónde pues?'",
+        "de": "das Satzende-Gewürz — Bolivianer streuen es über alles: 'ya pues', 'no pues', '¿dónde pues?'"
+      },
       "example": "Apurate pues, que llegamos tarde."
     },
     {
       "term": "ch'aki",
-      "meaning": { "en": "hangover — straight from Quechua for 'dry'", "de": "Kater — direkt aus dem Quechua für 'trocken'" },
+      "meaning": {
+        "en": "hangover — straight from Quechua for 'dry'",
+        "de": "Kater — direkt aus dem Quechua für 'trocken'"
+      },
       "example": "Tengo un ch'aki terrible después del carnaval."
     },
     {
       "term": "camba",
-      "meaning": { "en": "someone from the eastern lowlands around Santa Cruz — counterpart of 'colla', the highlander", "de": "jemand aus dem östlichen Tiefland um Santa Cruz — Gegenstück zum 'colla' aus dem Hochland" },
+      "meaning": {
+        "en": "someone from the eastern lowlands around Santa Cruz — counterpart of 'colla', the highlander",
+        "de": "jemand aus dem östlichen Tiefland um Santa Cruz — Gegenstück zum 'colla' aus dem Hochland"
+      },
       "example": "Los cambas y los collas se hacen bromas, pero se quieren."
     },
     {
       "term": "chupar",
-      "meaning": { "en": "to drink alcohol — literally 'to suck'", "de": "Alkohol trinken — wörtlich 'saugen'" },
+      "meaning": {
+        "en": "to drink alcohol — literally 'to suck'",
+        "de": "Alkohol trinken — wörtlich 'saugen'"
+      },
       "example": "Anoche fuimos a chupar con los del trabajo."
     },
     {
       "term": "elay",
-      "meaning": { "en": "'there you go! / see!' — beloved interjection from the valleys of Cochabamba", "de": "'na also! / siehst du!' — beliebter Ausruf aus den Tälern von Cochabamba" },
+      "meaning": {
+        "en": "'there you go! / see!' — beloved interjection from the valleys of Cochabamba",
+        "de": "'na also! / siehst du!' — beliebter Ausruf aus den Tälern von Cochabamba"
+      },
       "example": "¡Elay pues! Te dije que iba a llover."
+    },
+    {
+      "term": "¡Jallalla!",
+      "meaning": {
+        "en": "Long live! / Cheers! — an Aymara and Quechua cry of celebration, shouted at weddings and at swearing-in ceremonies alike",
+        "de": "Es lebe! / Prost! — ein aymarischer und quechuanischer Jubelruf, gebrüllt auf Hochzeiten wie bei Amtseinführungen"
+      },
+      "example": "¡Jallalla Bolivia! ¡Que viva la Pachamama!"
     }
   ],
   "vocabulary": [
-    { "es": "la chompa", "translation": { "en": "sweater", "de": "Pullover" }, "note": { "en": "from English 'jumper'; elsewhere: el suéter / el jersey", "de": "vom englischen 'jumper'; anderswo: el suéter / el jersey" } },
-    { "es": "la wawa", "translation": { "en": "baby, small child", "de": "Baby, kleines Kind" }, "note": { "en": "from Quechua/Aymara; elsewhere: el bebé", "de": "aus dem Quechua/Aymara; anderswo: el bebé" } },
-    { "es": "la yapa", "translation": { "en": "a little extra thrown in for free at the market", "de": "kleine Gratis-Zugabe auf dem Markt" }, "note": { "en": "from Quechua — just ask: '¿y mi yapa?'", "de": "aus dem Quechua — frag einfach: '¿y mi yapa?'" } },
-    { "es": "el trufi", "translation": { "en": "shared taxi on a fixed route", "de": "Sammeltaxi mit fester Route" }, "note": { "en": "short for 'taxi de ruta fija'; elsewhere: el colectivo", "de": "kurz für 'taxi de ruta fija'; anderswo: el colectivo" } },
-    { "es": "la salteña", "translation": { "en": "juicy baked empanada — the mid-morning snack", "de": "saftige, gebackene Empanada — der Vormittagssnack" }, "note": { "en": "eating one without spilling earns you real respect", "de": "wer sie kleckerfrei isst, erntet echten Respekt" } },
-    { "es": "el api", "translation": { "en": "hot purple-corn drink with cinnamon", "de": "heißes Getränk aus lila Mais mit Zimt" }, "note": { "en": "breakfast classic, usually with a fried 'pastel'", "de": "Frühstücksklassiker, meist mit einem frittierten 'pastel'" } },
-    { "es": "el micro", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } }
+    {
+      "es": "la chompa",
+      "translation": {
+        "en": "sweater",
+        "de": "Pullover"
+      },
+      "note": {
+        "en": "from English 'jumper'; elsewhere: el suéter / el jersey",
+        "de": "vom englischen 'jumper'; anderswo: el suéter / el jersey"
+      }
+    },
+    {
+      "es": "la wawa",
+      "translation": {
+        "en": "baby, small child",
+        "de": "Baby, kleines Kind"
+      },
+      "note": {
+        "en": "from Quechua/Aymara; elsewhere: el bebé",
+        "de": "aus dem Quechua/Aymara; anderswo: el bebé"
+      }
+    },
+    {
+      "es": "la yapa",
+      "translation": {
+        "en": "a little extra thrown in for free at the market",
+        "de": "kleine Gratis-Zugabe auf dem Markt"
+      },
+      "note": {
+        "en": "from Quechua — just ask: '¿y mi yapa?'",
+        "de": "aus dem Quechua — frag einfach: '¿y mi yapa?'"
+      }
+    },
+    {
+      "es": "el trufi",
+      "translation": {
+        "en": "shared taxi on a fixed route",
+        "de": "Sammeltaxi mit fester Route"
+      },
+      "note": {
+        "en": "short for 'taxi de ruta fija'; elsewhere: el colectivo",
+        "de": "kurz für 'taxi de ruta fija'; anderswo: el colectivo"
+      }
+    },
+    {
+      "es": "la salteña",
+      "translation": {
+        "en": "juicy baked empanada — the mid-morning snack",
+        "de": "saftige, gebackene Empanada — der Vormittagssnack"
+      },
+      "note": {
+        "en": "eating one without spilling earns you real respect",
+        "de": "wer sie kleckerfrei isst, erntet echten Respekt"
+      }
+    },
+    {
+      "es": "el api",
+      "translation": {
+        "en": "hot purple-corn drink with cinnamon",
+        "de": "heißes Getränk aus lila Mais mit Zimt"
+      },
+      "note": {
+        "en": "breakfast classic, usually with a fried 'pastel'",
+        "de": "Frühstücksklassiker, meist mit einem frittierten 'pastel'"
+      }
+    },
+    {
+      "es": "el micro",
+      "translation": {
+        "en": "city bus",
+        "de": "Stadtbus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús",
+        "de": "anderswo: el autobús"
+      }
+    },
+    {
+      "es": "la llajwa",
+      "translation": {
+        "en": "fresh chilli salsa of locoto and tomato, ground on stone",
+        "de": "frische Chilisalsa aus Locoto und Tomate, auf Stein gemahlen"
+      },
+      "note": {
+        "en": "from Quechua — it stands on the table at every meal, not only spicy ones",
+        "de": "aus dem Quechua — steht bei jeder Mahlzeit auf dem Tisch, nicht nur bei scharfen"
+      }
+    },
+    {
+      "es": "el aguayo",
+      "translation": {
+        "en": "woven rectangular cloth for carrying a baby or the shopping",
+        "de": "gewebtes Rechtecktuch zum Tragen von Baby oder Einkauf"
+      },
+      "note": {
+        "en": "Aymara — the stripe patterns say which valley the weaver comes from",
+        "de": "Aymara — die Streifenmuster verraten, aus welchem Tal die Weberin stammt"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Salar de Uyuni",
-      "description": { "en": "The world's largest salt flat (over 10,000 km²) — after rain it becomes a giant mirror where sky and earth merge; beneath it lies one of Earth's biggest lithium reserves.", "de": "Die größte Salzpfanne der Welt (über 10.000 km²) — nach Regen wird sie zum riesigen Spiegel, in dem Himmel und Erde verschmelzen; darunter liegt eine der größten Lithium-Reserven der Erde." },
-      "lat": -20.1338,
-      "lng": -67.4891,
-      "emoji": "🧂"
+      "description": {
+        "en": "Ten thousand square kilometres of salt crust, level to within a metre across its whole width, which is why satellite teams use it to calibrate altimeters. As it dries the surface sets into a tiling of hexagons about a metre across, each edge a crack where brine pushed up and evaporated. Under it lies something near a fifth of the world's known lithium, still mostly in the ground.",
+        "de": "Zehntausend Quadratkilometer Salzkruste, über die gesamte Breite auf einen Meter genau eben — deshalb kalibrieren Satellitenteams damit ihre Höhenmesser. Beim Trocknen erstarrt die Oberfläche zu einem Muster aus Sechsecken von etwa einem Meter, jede Kante ein Riss, aus dem Sole hochgedrückt ist und verdunstet. Darunter liegt fast ein Fünftel des bekannten Lithiums der Welt, größtenteils unangetastet."
+      },
+      "lat": -20.3333,
+      "lng": -67.7,
+      "emoji": "🧂",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hexagons%2C_Salar_de_Uyuni%2C_Bolivia_%282086104060%29.jpg/960px-Hexagons%2C_Salar_de_Uyuni%2C_Bolivia_%282086104060%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hexagons,_Salar_de_Uyuni,_Bolivia_(2086104060).jpg",
+        "author": "Pedro Szekely from Los Angeles, USA",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Raised white ridges forming hexagons across the dry salt surface to the horizon",
+          "de": "Erhabene weiße Grate bilden Sechsecke über die trockene Salzfläche bis zum Horizont"
+        }
+      }
     },
     {
-      "name": "Lago Titicaca (Copacabana)",
-      "description": { "en": "The highest navigable lake in the world at 3,812 m — from Copacabana, boats leave for Isla del Sol, birthplace of the sun in Inca mythology.", "de": "Der höchstgelegene schiffbare See der Welt auf 3.812 m — von Copacabana starten Boote zur Isla del Sol, dem Geburtsort der Sonne in der Inka-Mythologie." },
-      "lat": -16.1662,
-      "lng": -69.0862,
-      "emoji": "⛵"
+      "name": "Copacabana y la Isla del Sol",
+      "description": {
+        "en": "Titicaca sits at 3,812 m, and from the town pier the boats take about two hours to Isla del Sol, where Inca accounts place the birth of the sun. Copacabana's basilica holds a dark wooden Virgin carved in 1583 by Francisco Tito Yupanqui, and most weekends new cars are lined up outside it, garlanded and doused in beer for the ch'alla blessing.",
+        "de": "Der Titicacasee liegt auf 3.812 m, und vom Pier des Ortes brauchen die Boote rund zwei Stunden zur Isla del Sol, wo nach Inka-Überlieferung die Sonne geboren wurde. In der Basilika von Copacabana steht eine 1583 von Francisco Tito Yupanqui geschnitzte dunkle Holzmadonna, und an den meisten Wochenenden stehen davor neue Autos, bekränzt und mit Bier übergossen, zur Ch'alla-Segnung."
+      },
+      "lat": -16.1656,
+      "lng": -69.0856,
+      "emoji": "⛵",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Isla_del_Sol_y_de_La_Luna_Lago_Titicaca-La_Paz_Nolivia.jpg/960px-Isla_del_Sol_y_de_La_Luna_Lago_Titicaca-La_Paz_Nolivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Isla_del_Sol_y_de_La_Luna_Lago_Titicaca-La_Paz_Nolivia.jpg",
+        "author": "Freddy Jhonny Contreras Huanca",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Terraced brown hillsides dropping to the deep blue water of Lake Titicaca",
+          "de": "Terrassierte braune Hänge fallen zum tiefblauen Wasser des Titicacasees ab"
+        }
+      }
     },
     {
       "name": "La Paz",
-      "description": { "en": "The world's highest seat of government — its metro runs through the air: Mi Teleférico, the largest urban cable-car network on the planet.", "de": "Der höchstgelegene Regierungssitz der Welt — seine Metro schwebt durch die Luft: Mi Teleférico, das größte urbane Seilbahnnetz des Planeten." },
-      "lat": -16.4957,
-      "lng": -68.1335,
-      "emoji": "🚠"
+      "description": {
+        "en": "The city fills a canyon: the wealthy live at the bottom where the air is thicker, and El Alto sits on the rim some 500 m higher. Public transport goes over the top of all of it — Mi Teleférico runs ten colour-coded cable-car lines, the largest urban ropeway network anywhere, at three bolivianos a ride. On the Calle de las Brujas, dried llama foetuses are sold to bury under new houses.",
+        "de": "Die Stadt füllt eine Schlucht: Die Wohlhabenden wohnen unten, wo die Luft dicker ist, El Alto liegt rund 500 m höher auf dem Rand. Der Nahverkehr fährt über alles hinweg — Mi Teleférico betreibt zehn farbcodierte Seilbahnlinien, das größte städtische Seilbahnnetz der Welt, für drei Bolivianos pro Fahrt. In der Calle de las Brujas werden getrocknete Lamaföten verkauft, die unter Neubauten kommen."
+      },
+      "lat": -16.4958,
+      "lng": -68.1333,
+      "emoji": "🚠",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/L%C3%ADnea_Roja_de_Mi_Telef%C3%A9rico_en_La_Paz%2C_Bolivia.jpg/960px-L%C3%ADnea_Roja_de_Mi_Telef%C3%A9rico_en_La_Paz%2C_Bolivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:L%C3%ADnea_Roja_de_Mi_Telef%C3%A9rico_en_La_Paz,_Bolivia.jpg",
+        "author": "EEJCC",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Red cable cars crossing above the packed brick houses of a steep La Paz hillside",
+          "de": "Rote Seilbahnkabinen über den dicht gedrängten Backsteinhäusern eines steilen Hangs in La Paz"
+        }
+      }
     },
     {
       "name": "Tiwanaku",
-      "description": { "en": "Pre-Inca ruins near Lake Titicaca — the Gateway of the Sun was carved from a single block of andesite more than a thousand years ago.", "de": "Prä-Inka-Ruinen nahe dem Titicacasee — das Sonnentor wurde vor über tausend Jahren aus einem einzigen Andesit-Block gehauen." },
+      "description": {
+        "en": "The Gate of the Sun was cut from a single block of andesite weighing around ten tonnes and now stands cracked, having been moved at least once. The city peaked around 800 CE with perhaps 20,000 people, four centuries before the Inca, who arrived later and claimed the ruins as their own origin story. Around 1900 its stones were quarried again for a railway line.",
+        "de": "Das Sonnentor wurde aus einem einzigen Andesitblock von rund zehn Tonnen geschlagen und steht heute gerissen da, weil es mindestens einmal versetzt wurde. Die Stadt hatte um 800 n. Chr. vielleicht 20.000 Einwohner, vier Jahrhunderte vor den Inka, die später kamen und die Ruinen zu ihrer eigenen Ursprungsgeschichte erklärten. Um 1900 brach man erneut Steine daraus für eine Bahnlinie."
+      },
       "lat": -16.5546,
       "lng": -68.6734,
-      "emoji": "🗿"
+      "emoji": "🗿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bol-tihuanaco-sonnentor.jpg/960px-Bol-tihuanaco-sonnentor.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bol-tihuanaco-sonnentor.jpg",
+        "author": "Bgabel",
+        "license": "Public domain",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A free-standing stone gateway carved with a central figure, on bare high plain",
+          "de": "Ein frei stehendes steinernes Tor mit eingemeißelter Mittelfigur auf kahler Hochebene"
+        }
+      }
     },
     {
       "name": "Cerro Rico, Potosí",
-      "description": { "en": "The 'rich mountain' whose silver bankrolled the Spanish Empire — in the 1600s Potosí was one of the largest cities in the world, and miners still work its tunnels today.", "de": "Der 'reiche Berg', dessen Silber das spanische Weltreich finanzierte — im 17. Jahrhundert war Potosí eine der größten Städte der Welt, und noch heute arbeiten Bergleute in seinen Stollen." },
+      "description": {
+        "en": "The mountain gave up enough silver to underwrite the Spanish crown for two centuries; by 1650 Potosí held around 160,000 people, as many as London. The phrase 'vale un potosí' still means priceless in Spanish. The summit has dropped several metres as the honeycomb of shafts collapses, and cooperative miners are working seams inside it today.",
+        "de": "Der Berg lieferte genug Silber, um die spanische Krone zwei Jahrhunderte lang zu finanzieren; um 1650 lebten in Potosí rund 160.000 Menschen, so viele wie in London. Die Wendung 'vale un potosí' heißt im Spanischen bis heute unbezahlbar. Der Gipfel ist um mehrere Meter abgesackt, weil das Wabenwerk der Stollen nachgibt, und Kooperativen bauen dort weiter ab."
+      },
       "lat": -19.6189,
-      "lng": -65.75,
-      "emoji": "⛏️"
+      "lng": -65.7497,
+      "emoji": "⛏️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Potosi_-_Street_with_cerro_de_Potosi_in_background.jpg/960px-Potosi_-_Street_with_cerro_de_Potosi_in_background.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Potosi_-_Street_with_cerro_de_Potosi_in_background.jpg",
+        "author": "P. Hughes",
+        "license": "CC BY 4.0",
+        "width": 960,
+        "height": 639,
+        "alt": {
+          "en": "A steep colonial street in Potosí with the bare cone of Cerro Rico closing the view",
+          "de": "Eine steile Kolonialstraße in Potosí, den Blick schließt der kahle Kegel des Cerro Rico"
+        }
+      }
+    },
+    {
+      "name": "Sucre",
+      "description": {
+        "en": "The constitutional capital, whose whitewash is a municipal rule rather than a habit: every facade in the centre is repainted white by law. Bolivian independence was signed here in 1825, in the Casa de la Libertad, and the supreme court still sits in town although the government does not. Twenty minutes out, a quarry wall at Cal Orck'o carries more than 5,000 dinosaur footprints.",
+        "de": "Die verfassungsmäßige Hauptstadt, deren Weiß eine städtische Vorschrift ist und keine Gewohnheit: Jede Fassade im Zentrum wird per Gesetz weiß gestrichen. Boliviens Unabhängigkeit wurde hier 1825 im Casa de la Libertad unterzeichnet, und der Oberste Gerichtshof tagt weiter in der Stadt, die Regierung nicht. Zwanzig Minuten außerhalb trägt eine Steinbruchwand in Cal Orck'o über 5.000 Dinosaurierfährten."
+      },
+      "lat": -19.0475,
+      "lng": -65.26,
+      "emoji": "🏛️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Catedral_de_Sucre_%28Plaza_Principal%29.jpg/960px-Catedral_de_Sucre_%28Plaza_Principal%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Catedral_de_Sucre_(Plaza_Principal).jpg",
+        "author": "Henry Ponce Barco",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "The white towers of Sucre cathedral above palm trees on the main square",
+          "de": "Die weißen Türme der Kathedrale von Sucre über den Palmen des Hauptplatzes"
+        }
+      }
+    },
+    {
+      "name": "Laguna Colorada",
+      "description": {
+        "en": "A shallow lake at 4,278 m stained rust-red by algae and sediment, with white borax islands standing in it. Three flamingo species feed here, among them James's flamingo, which was believed extinct until a colony turned up on this lake in the 1950s. Nights drop below minus 20 °C and the only shelter for an hour in any direction is an unheated refuge.",
+        "de": "Ein flacher See auf 4.278 m, rostrot gefärbt von Algen und Sedimenten, mit weißen Boraxinseln darin. Drei Flamingoarten fressen hier, darunter der Jamesflamingo, der als ausgestorben galt, bis in den 1950ern an diesem See eine Kolonie auftauchte. Nachts fällt es unter minus 20 °C, und die einzige Unterkunft im Umkreis einer Stunde ist eine Hütte ohne Heizung."
+      },
+      "lat": -22.1986,
+      "lng": -67.7811,
+      "emoji": "🦩",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/James%27s_Flamingoes_in_Laguna_Colorada%2C_Bolivia.jpg/960px-James%27s_Flamingoes_in_Laguna_Colorada%2C_Bolivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:James%27s_Flamingoes_in_Laguna_Colorada,_Bolivia.jpg",
+        "author": "Havardtl",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Pale pink flamingos standing in a red-brown lake with a volcano behind",
+          "de": "Blassrosa Flamingos stehen in einem rotbraunen See, dahinter ein Vulkan"
+        }
+      }
+    },
+    {
+      "name": "Misiones Jesuíticas de Chiquitos",
+      "description": {
+        "en": "Six mission towns built by Jesuits and Chiquitano carpenters between 1691 and 1760, and the only ones in South America still standing and still in use. The churches are timber rather than stone, with painted facades and turned columns. In the 1970s more than 5,000 pages of baroque scores turned up in the village archives; children here now play them on violins made in the same workshops.",
+        "de": "Sechs Missionsorte, zwischen 1691 und 1760 von Jesuiten und Chiquitano-Zimmerleuten gebaut, und die einzigen Südamerikas, die noch stehen und noch genutzt werden. Die Kirchen sind aus Holz statt aus Stein, mit bemalten Fassaden und gedrechselten Säulen. In den 1970ern tauchten in den Dorfarchiven über 5.000 Seiten Barocknoten auf; heute spielen sie Kinder auf Geigen aus denselben Werkstätten."
+      },
+      "lat": -16.2748,
+      "lng": -62.5072,
+      "emoji": "🎻",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/San_Javier_church.JPG/960px-San_Javier_church.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Javier_church.JPG",
+        "author": "Bamse",
+        "license": "CC BY-SA 2.5",
+        "width": 960,
+        "height": 643,
+        "alt": {
+          "en": "A low timber mission church with a painted facade and a separate bell tower",
+          "de": "Eine niedrige Missionskirche aus Holz mit bemalter Fassade und separatem Glockenturm"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional Madidi",
+      "description": {
+        "en": "One park boundary runs from Andean ice at 5,700 m down to 180 m of Amazon floodplain, which is why a survey between 2015 and 2017 counted more than 1,000 bird species inside it — roughly a tenth of all the birds on Earth. The road in from La Paz drops 3,500 m in a few hours, and the old version of it was the Yungas death road.",
+        "de": "Eine einzige Parkgrenze reicht von Andeneis auf 5.700 m bis auf 180 m Amazonasschwemmland — deshalb zählte eine Erhebung zwischen 2015 und 2017 dort über 1.000 Vogelarten, rund ein Zehntel aller Vögel der Erde. Die Straße aus La Paz fällt in wenigen Stunden um 3.500 m, und ihre alte Trasse war die Todesstraße der Yungas."
+      },
+      "lat": -14.3333,
+      "lng": -68.3333,
+      "emoji": "🐆",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/R%C3%ADo_Madidi_-_Parque_Nacional_Madidi_-_La_Paz_-_Bolivia.jpg/960px-R%C3%ADo_Madidi_-_Parque_Nacional_Madidi_-_La_Paz_-_Bolivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Madidi_-_Parque_Nacional_Madidi_-_La_Paz_-_Bolivia.jpg",
+        "author": "Paul B",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 571,
+        "alt": {
+          "en": "A brown river curving between banks of dense rainforest under low cloud",
+          "de": "Ein brauner Fluss windet sich zwischen Ufern aus dichtem Regenwald unter tiefen Wolken"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la salteña",
+      "description": {
+        "en": "A baked empanada with a pleated seam and a filling that is half stew: beef or chicken, potato, peas, an olive and a piece of hard-boiled egg, set with gelatine so it turns to liquid in the oven. Eaten standing between nine and eleven, bitten at one corner and held upright. Anyone who drips is judged.",
+        "de": "Eine gebackene Empanada mit geflochtener Naht und einer Füllung, die halb Eintopf ist: Rind oder Huhn, Kartoffel, Erbsen, eine Olive, ein Stück hartes Ei, mit Gelatine gebunden, damit sie im Ofen flüssig wird. Im Stehen gegessen, an einer Ecke angebissen, senkrecht gehalten. Wer tropft, wird beurteilt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Salte%C3%B1as_%28Plaza_Mayor%29-2011-01.JPG/960px-Salte%C3%B1as_%28Plaza_Mayor%29-2011-01.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Salte%C3%B1as_(Plaza_Mayor)-2011-01.JPG",
+        "author": "Tamorlan",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A single golden baked empanada with a crimped ridge along its top, on a blue napkin",
+          "de": "Eine einzelne goldene Backempanada mit gekniffener Naht obenauf, auf blauer Serviette"
+        }
+      }
+    },
+    {
+      "name": "el silpancho",
+      "description": {
+        "en": "Cochabamba's answer to portion control: rice and boiled potato on the plate first, then a beef steak pounded thin enough to cover all of it, breaded and fried, then two eggs and a raw tomato-and-onion salsa on top. One dish, assembled in layers, and almost nobody finishes it.",
+        "de": "Cochabambas Antwort auf Portionskontrolle: erst Reis und gekochte Kartoffel auf den Teller, dann ein Rindersteak, dünn genug geklopft, um alles zu bedecken, paniert und gebraten, darüber zwei Eier und eine rohe Tomaten-Zwiebel-Salsa. Ein Gericht, in Schichten gebaut, und fast niemand isst es auf."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Silpancho_un_plato_con_historia%2C_tradici%C3%B3n_y_sabor._03.jpg/960px-Silpancho_un_plato_con_historia%2C_tradici%C3%B3n_y_sabor._03.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Silpancho_un_plato_con_historia,_tradici%C3%B3n_y_sabor._03.jpg",
+        "author": "Albaro2020",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Close-up of a breaded steak with a fried egg, diced tomato salsa and potato slices",
+          "de": "Nahaufnahme eines panierten Steaks mit Spiegelei, Tomatenwürfeln und Kartoffelscheiben"
+        }
+      }
+    },
+    {
+      "name": "el pique macho",
+      "description": {
+        "en": "Chips under strips of beef and sliced sausage, buried in onion, tomato, locoto chilli and boiled egg, then flooded with mustard and mayonnaise. It arrives on a platter meant for two, gets ordered for four, and is what a table shares at one in the morning. Llajwa on the side is compulsory.",
+        "de": "Pommes unter Rindfleischstreifen und Wurstscheiben, begraben unter Zwiebel, Tomate, Locoto-Chili und gekochtem Ei, dann mit Senf und Mayonnaise überflutet. Es kommt auf einer Platte für zwei, wird für vier bestellt und ist das, was ein Tisch um ein Uhr nachts teilt. Llajwa dazu ist Pflicht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Pique_Macho_Bolivia.jpg/960px-Pique_Macho_Bolivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pique_Macho_Bolivia.jpg",
+        "author": "MollySVH",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 886,
+        "alt": {
+          "en": "A heaped plate of chips, sausage, onion, tomato and egg under drizzled mustard and mayonnaise",
+          "de": "Ein gehäufter Teller mit Pommes, Wurst, Zwiebel, Tomate und Ei unter Senf- und Mayonnaisefäden"
+        }
+      }
+    },
+    {
+      "name": "el api con pastel",
+      "description": {
+        "en": "Purple maize boiled with cinnamon, clove and orange peel into something between a drink and a porridge, served scalding next to a pastel — a flat sheet of dough with cheese inside, deep-fried and dusted with icing sugar. Street-stall breakfast from five in the morning, and the standard cure for cold.",
+        "de": "Violetter Mais, mit Zimt, Nelke und Orangenschale zu etwas zwischen Getränk und Brei gekocht, kochend heiß serviert neben einem Pastel — einem flachen Teigblatt mit Käse darin, frittiert und mit Puderzucker bestäubt. Frühstück am Straßenstand ab fünf Uhr früh und das Standardmittel gegen Kälte."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Api_con_pastel_orure%C3%B1o.jpg/960px-Api_con_pastel_orure%C3%B1o.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Api_con_pastel_orure%C3%B1o.jpg",
+        "author": "Q'orikenti",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 541,
+        "alt": {
+          "en": "A tall glass of dark purple corn drink beside a plate with a large flat fried pastry",
+          "de": "Ein hohes Glas dunkelviolettes Maisgetränk neben einem Teller mit großem flachem Fritierteig"
+        }
+      }
+    },
+    {
+      "name": "la sopa de maní",
+      "description": {
+        "en": "Ground raw peanuts thicken a beef broth with potato, pasta and a little oregano, and a handful of thin fried potato sticks is dropped on top at the table. It is Sunday lunch across the valleys and reliably the first thing recommended to anyone who has just stepped off a plane at 4,000 m.",
+        "de": "Gemahlene rohe Erdnüsse binden eine Rinderbrühe mit Kartoffel, Nudeln und etwas Oregano, und am Tisch kommt eine Handvoll dünner frittierter Kartoffelstifte obendrauf. In den Tälern ist das Sonntagsmittagessen und verlässlich das Erste, was man jemandem empfiehlt, der eben auf 4.000 m gelandet ist."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Sopa_de_man%C3%AD_cochabambino%2C_Bolivia.jpg/960px-Sopa_de_man%C3%AD_cochabambino%2C_Bolivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Sopa_de_man%C3%AD_cochabambino,_Bolivia.jpg",
+        "author": "Isaacromanfl",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A white bowl of pale yellow soup from above, a nest of thin fried potato sticks in the middle",
+          "de": "Eine weiße Schale hellgelbe Suppe von oben, in der Mitte ein Nest dünner Kartoffelstifte"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Carnaval de Oruro",
+      "when": {
+        "en": "the Saturday before Ash Wednesday",
+        "de": "der Samstag vor Aschermittwoch"
+      },
+      "description": {
+        "en": "Around fifty troupes dance a four-kilometre route into the sanctuary of the Virgen del Socavón, twenty hours without a break, in costumes weighing up to thirty kilos. The Diablada opens it: masks with light-bulb eyes and dragons on the horns, staging the devil's surrender to the miners' Virgin.",
+        "de": "Rund fünfzig Tanzgruppen ziehen eine vier Kilometer lange Route zum Heiligtum der Virgen del Socavón, zwanzig Stunden ohne Pause, in Kostümen von bis zu dreißig Kilo. Die Diablada eröffnet: Masken mit Glühbirnenaugen und Drachen auf den Hörnern, die dem Teufel die Kapitulation vor der Bergarbeiter-Madonna abverlangen."
+      }
+    },
+    {
+      "name": "Alasitas",
+      "when": {
+        "en": "from 24 January",
+        "de": "ab dem 24. Januar"
+      },
+      "description": {
+        "en": "At noon on 24 January, La Paz fills with stalls selling miniatures: tiny banknotes, tiny houses, tiny diplomas, tiny passports with the visa already stamped. Purchases are blessed twice — by a yatiri with incense, then by a priest with holy water — and are meant to arrive full-size within the year.",
+        "de": "Am 24. Januar um zwölf füllt sich La Paz mit Ständen voller Miniaturen: winzige Geldscheine, winzige Häuser, winzige Diplome, winzige Pässe mit schon eingestempeltem Visum. Gekauftes wird zweimal gesegnet — vom Yatiri mit Weihrauch, vom Priester mit Weihwasser — und soll binnen eines Jahres in Originalgröße kommen."
+      }
+    },
+    {
+      "name": "Fiesta de las Ñatitas",
+      "when": {
+        "en": "8 November",
+        "de": "8. November"
+      },
+      "description": {
+        "en": "A week after All Saints, families carry human skulls to the Cementerio General in La Paz to have them blessed. The ñatitas live at home the rest of the year, given cigarettes, coca leaves and flowers, and asked for favours — protection, work, a court case won. Most are not relatives of the family that keeps them.",
+        "de": "Eine Woche nach Allerheiligen tragen Familien menschliche Schädel zum Cementerio General in La Paz, um sie segnen zu lassen. Den Rest des Jahres wohnen die Ñatitas zu Hause, bekommen Zigaretten, Kokablätter und Blumen und werden um Gefallen gebeten — Schutz, Arbeit, einen gewonnenen Prozess. Verwandt sind wenige."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "La ch'alla",
+      "text": {
+        "en": "Before drinking, a little goes on the ground for the Pachamama, and the first glass of a round is often tipped out whole. Doing it is ordinary; skipping it in company gets noticed.",
+        "de": "Vor dem Trinken geht etwas für die Pachamama auf den Boden, und das erste Glas einer Runde wird oft ganz ausgeschüttet. Das ist völlig normal; es in Gesellschaft wegzulassen, fällt auf."
+      }
+    },
+    {
+      "title": "La coca",
+      "text": {
+        "en": "Coca leaves are offered the way coffee is elsewhere, and turning one down from an Aymara or Quechua host reads as a snub. Take three, hold them together, say gracias, then chew.",
+        "de": "Kokablätter bietet man an wie anderswo Kaffee, und eines bei aymarischen oder quechuanischen Gastgebern abzulehnen, gilt als Affront. Nimm drei, halte sie zusammen, sag gracias, dann kaue."
+      }
+    },
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "A short handshake, not a firm one — the Western grip reads as aggressive in the highlands. Titles matter: doctor, ingeniero and licenciado stay attached to the surname long after the introduction.",
+        "de": "Ein kurzer Handschlag, kein fester — der westliche Griff wirkt im Hochland aggressiv. Titel zählen: doctor, ingeniero und licenciado bleiben noch lange nach der Vorstellung am Nachnamen kleben."
+      }
+    },
+    {
+      "title": "La foto",
+      "text": {
+        "en": "Cholitas in bowler hats and layered polleras are not scenery. Asking first is expected, a small payment is sometimes wanted, and a camera raised in a market without asking gets shouted at.",
+        "de": "Cholitas mit Melone und geschichteten Polleras sind keine Kulisse. Vorher zu fragen wird erwartet, manchmal will jemand ein kleines Entgelt, und eine ungefragte Kamera bringt Geschrei ein."
+      }
+    },
+    {
+      "title": "La hora boliviana",
+      "text": {
+        "en": "Social invitations run an hour late by default, and a host who means the printed time says 'hora inglesa' out loud. Meetings and long-distance buses, by contrast, leave when they said.",
+        "de": "Private Einladungen laufen standardmäßig eine Stunde später an, und wer die gedruckte Uhrzeit meint, sagt ausdrücklich 'hora inglesa'. Termine und Überlandbusse dagegen gehen pünktlich."
+      }
     }
   ]
 }

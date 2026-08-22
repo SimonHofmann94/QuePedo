@@ -1,13 +1,32 @@
 {
   "id": "py",
   "flag": "🇵🇾",
-  "name": { "en": "Paraguay", "de": "Paraguay" },
+  "name": {
+    "en": "Paraguay",
+    "de": "Paraguay"
+  },
   "nameEs": "Paraguay",
   "capital": "Asunción",
   "population": "6 M",
+  "tagline": {
+    "en": "Landlocked, bilingual, and drinking iced mate through a cow horn all afternoon.",
+    "de": "Ohne Meer, zweisprachig — und den ganzen Nachmittag Eismate durch ein Kuhhorn."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Asunci%C3%B3n_skyline_from_Chaco%27i.jpg/1920px-Asunci%C3%B3n_skyline_from_Chaco%27i.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Asunci%C3%B3n_skyline_from_Chaco%27i.jpg",
+    "author": "P. S. F. Freitas",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1080,
+    "alt": {
+      "en": "Asunción's towers across the wide Paraguay River, fishing boats moored in the foreground",
+      "de": "Asuncións Hochhäuser über dem breiten Río Paraguay, im Vordergrund vertäute Fischerboote"
+    }
+  },
   "intro": {
-    "en": "Paraguay is the only country in the Americas that is truly bilingual: Guaraní is co-official and spoken by around 90% of the population — including people with no indigenous ancestry. In everyday life, most Paraguayans speak 'jopara', a fluid mix that switches between Spanish and Guaraní mid-sentence. Even the currency is called the guaraní. Add ice-cold tereré passed around in a circle and one of the world's biggest hydroelectric dams, and you have South America's most underrated country.",
-    "de": "Paraguay ist das einzige wirklich zweisprachige Land Amerikas: Guaraní ist ko-offizielle Amtssprache und wird von rund 90 % der Bevölkerung gesprochen — auch von Menschen ohne indigene Wurzeln. Im Alltag sprechen die meisten Paraguayer 'Jopara', einen fließenden Mix, der mitten im Satz zwischen Spanisch und Guaraní wechselt. Sogar die Währung heißt Guaraní. Dazu eiskalter Tereré, der in der Runde kreist, und einer der größten Staudämme der Welt — fertig ist Südamerikas unterschätztestes Land."
+    "en": "Paraguay is the one country in the Americas where the indigenous language won: Guaraní is co-official and spoken by around 90 % of the population, most of whom have no indigenous ancestry at all. Everyday speech is jopara, a mix that changes language mid-sentence — Spanish grammar carrying Guaraní particles, 'na' to soften a request, 'ko' to insist, '-pio' to ask. The currency is the guaraní, and so is the harp, whose thirty-six strings drive the polca paraguaya. The War of the Triple Alliance in the 1860s killed most of the country's men and took a third of its land; what came out the other side sounds and behaves like nowhere else on the continent.",
+    "de": "Paraguay ist das einzige Land Amerikas, in dem die indigene Sprache gewonnen hat: Guaraní ist ko-offiziell und wird von rund 90 % der Bevölkerung gesprochen, die meisten davon ohne indigene Vorfahren. Der Alltag läuft auf Jopara, einem Mix, der mitten im Satz die Sprache wechselt — spanische Grammatik, dazu Guaraní-Partikel: 'na' mildert eine Bitte, 'ko' bekräftigt, '-pio' fragt. Die Währung heißt Guaraní, und so heißt auch die Harfe, deren sechsunddreißig Saiten die Polca Paraguaya antreiben. Der Tripel-Allianz-Krieg der 1860er kostete das Land die meisten seiner Männer und ein Drittel seines Bodens; was danach übrig blieb, klingt und tickt wie nichts sonst auf dem Kontinent."
   },
   "funFact": {
     "en": "Paraguay's flag is the only national flag in the world with different emblems on the front and back: the state coat of arms on one side, the treasury seal with a lion on the other.",
@@ -16,89 +35,629 @@
   "slang": [
     {
       "term": "¿Mba'éichapa?",
-      "meaning": { "en": "How are you? — the Guaraní greeting everyone uses, regardless of background", "de": "Wie geht's? — die Guaraní-Begrüßung, die wirklich jeder benutzt, egal welcher Herkunft" },
+      "meaning": {
+        "en": "How are you? — the Guaraní greeting everyone uses, regardless of background",
+        "de": "Wie geht's? — die Guaraní-Begrüßung, die wirklich jeder benutzt, egal welcher Herkunft"
+      },
       "example": "¿Mba'éichapa? ¡Tanto tiempo sin verte!"
     },
     {
       "term": "na",
-      "meaning": { "en": "please (softening particle from Guaraní, tacked onto requests)", "de": "bitte (abmildernde Partikel aus dem Guaraní, wird an Bitten angehängt)" },
+      "meaning": {
+        "en": "please (softening particle from Guaraní, tacked onto requests)",
+        "de": "bitte (abmildernde Partikel aus dem Guaraní, wird an Bitten angehängt)"
+      },
       "example": "Vení na un poco, quiero mostrarte algo."
     },
     {
       "term": "de gua'u",
-      "meaning": { "en": "just pretend, not for real, jokingly — from Guaraní 'gua'u' (fake)", "de": "nur zum Schein, nicht im Ernst, aus Spaß — von Guaraní 'gua'u' (unecht)" },
+      "meaning": {
+        "en": "just pretend, not for real, jokingly — from Guaraní 'gua'u' (fake)",
+        "de": "nur zum Schein, nicht im Ernst, aus Spaß — von Guaraní 'gua'u' (unecht)"
+      },
       "example": "Te dije de gua'u nomás, no te enojes."
     },
     {
       "term": "kaigue",
-      "meaning": { "en": "listless, zero energy, can't be bothered — a Guaraní word for a very universal feeling", "de": "schlapp, null Energie, keinen Bock — ein Guaraní-Wort für ein sehr universelles Gefühl" },
+      "meaning": {
+        "en": "listless, zero energy, can't be bothered — a Guaraní word for a very universal feeling",
+        "de": "schlapp, null Energie, keinen Bock — ein Guaraní-Wort für ein sehr universelles Gefühl"
+      },
       "example": "Hoy estoy kaigue, no quiero salir de casa."
     },
     {
       "term": "purete",
-      "meaning": { "en": "cool, awesome", "de": "cool, klasse" },
+      "meaning": {
+        "en": "cool, awesome — the everyday word of praise",
+        "de": "cool, klasse — das Alltagswort für Lob"
+      },
       "example": "¡Qué purete tu moto nueva!"
     },
     {
       "term": "argel",
-      "meaning": { "en": "charmless, unfriendly, no grace — a very Paraguayan insult", "de": "uncharmant, unfreundlich, ohne jede Anmut — eine sehr paraguayische Beleidigung" },
+      "meaning": {
+        "en": "charmless, unfriendly, no grace — a very Paraguayan insult",
+        "de": "uncharmant, unfreundlich, ohne jede Anmut — eine sehr paraguayische Beleidigung"
+      },
       "example": "No seas argel y saludá a la gente."
     },
     {
       "term": "¡ndéra!",
-      "meaning": { "en": "expression of frustration or surprise, from Guaraní", "de": "Ausruf von Frust oder Überraschung, aus dem Guaraní" },
+      "meaning": {
+        "en": "expression of frustration or surprise, from Guaraní",
+        "de": "Ausruf von Frust oder Überraschung, aus dem Guaraní"
+      },
       "example": "¡Ndéra! Otra vez se cortó la luz."
     },
     {
       "term": "luego",
-      "meaning": { "en": "emphasis filler meaning 'just / really' — calqued from the Guaraní particle 'voi', not 'later'", "de": "Betonungsfüller im Sinne von 'eben / halt' — Lehnübersetzung der Guaraní-Partikel 'voi', bedeutet hier nicht 'später'" },
+      "meaning": {
+        "en": "emphasis filler meaning 'just / really' — calqued from the Guaraní particle 'voi', not 'later'",
+        "de": "Betonungsfüller im Sinne von 'eben / halt' — Lehnübersetzung der Guaraní-Partikel 'voi', bedeutet hier nicht 'später'"
+      },
       "example": "Así luego es él, no va a cambiar."
+    },
+    {
+      "term": "¡chake!",
+      "meaning": {
+        "en": "watch out! — Guaraní, shouted a fraction of a second before something falls on you",
+        "de": "Achtung! — Guaraní, wird einen Sekundenbruchteil bevor dir etwas auf den Kopf fällt gerufen"
+      },
+      "example": "¡Chake el escalón, está flojo!"
+    },
+    {
+      "term": "-pio",
+      "meaning": {
+        "en": "question particle glued onto the word it questions — Guaraní grammar inside a Spanish sentence",
+        "de": "Fragepartikel, an das befragte Wort angehängt — Guaraní-Grammatik in einem spanischen Satz"
+      },
+      "example": "¿Qué pio querés comer hoy?"
     }
   ],
   "vocabulary": [
-    { "es": "el tereré", "translation": { "en": "ice-cold mate with herbs, drunk in rounds with friends", "de": "eiskalter Mate mit Kräutern, wird in der Runde mit Freunden getrunken" }, "note": { "en": "Paraguay's national drink — UNESCO intangible cultural heritage since 2020", "de": "Paraguays Nationalgetränk — seit 2020 immaterielles UNESCO-Kulturerbe" } },
-    { "es": "la chipa", "translation": { "en": "chewy cheese-and-manioc bread ring", "de": "zäh-saftiger Käse-Maniok-Kringel" }, "note": { "en": "sold warm by 'chiperas' on every bus and street corner", "de": "wird von 'Chiperas' warm in jedem Bus und an jeder Straßenecke verkauft" } },
-    { "es": "la mandioca", "translation": { "en": "cassava — on the table at every Paraguayan meal", "de": "Maniok — steht bei jeder paraguayischen Mahlzeit auf dem Tisch" }, "note": { "en": "elsewhere: la yuca", "de": "anderswo: la yuca" } },
-    { "es": "el mitã'i", "translation": { "en": "little kid (Guaraní)", "de": "kleines Kind (Guaraní)" }, "note": { "en": "elsewhere: el niño", "de": "anderswo: el niño" } },
-    { "es": "la despensa", "translation": { "en": "small corner grocery store", "de": "kleiner Lebensmittelladen an der Ecke" }, "note": { "en": "elsewhere 'despensa' is a pantry; the shop is a tienda or almacén", "de": "anderswo ist 'despensa' die Speisekammer; der Laden heißt tienda oder almacén" } },
-    { "es": "el ñandutí", "translation": { "en": "delicate 'spiderweb' lace from Itauguá", "de": "filigrane 'Spinnennetz'-Spitze aus Itauguá" }, "note": { "en": "Guaraní for 'spiderweb' — Paraguay's signature craft", "de": "Guaraní für 'Spinnennetz' — Paraguays berühmtestes Kunsthandwerk" } },
-    { "es": "el kure", "translation": { "en": "pig, pork (Guaraní)", "de": "Schwein, Schweinefleisch (Guaraní)" }, "note": { "en": "elsewhere: el cerdo — everyday jopara in the kitchen", "de": "anderswo: el cerdo — Alltags-Jopara in der Küche" } }
+    {
+      "es": "el tereré",
+      "translation": {
+        "en": "ice-cold mate with herbs, drunk in rounds with friends",
+        "de": "eiskalter Mate mit Kräutern, wird in der Runde mit Freunden getrunken"
+      },
+      "note": {
+        "en": "Paraguay's national drink — UNESCO intangible cultural heritage since 2020",
+        "de": "Paraguays Nationalgetränk — seit 2020 immaterielles UNESCO-Kulturerbe"
+      }
+    },
+    {
+      "es": "la chipa",
+      "translation": {
+        "en": "chewy cheese-and-manioc bread ring",
+        "de": "zäh-saftiger Käse-Maniok-Kringel"
+      },
+      "note": {
+        "en": "sold warm by 'chiperas' on every bus and street corner",
+        "de": "wird von 'Chiperas' warm in jedem Bus und an jeder Straßenecke verkauft"
+      }
+    },
+    {
+      "es": "la mandioca",
+      "translation": {
+        "en": "cassava — on the table at every Paraguayan meal",
+        "de": "Maniok — steht bei jeder paraguayischen Mahlzeit auf dem Tisch"
+      },
+      "note": {
+        "en": "elsewhere: la yuca",
+        "de": "anderswo: la yuca"
+      }
+    },
+    {
+      "es": "el mitã'i",
+      "translation": {
+        "en": "little kid (Guaraní)",
+        "de": "kleines Kind (Guaraní)"
+      },
+      "note": {
+        "en": "elsewhere: el niño",
+        "de": "anderswo: el niño"
+      }
+    },
+    {
+      "es": "la despensa",
+      "translation": {
+        "en": "small corner grocery store",
+        "de": "kleiner Lebensmittelladen an der Ecke"
+      },
+      "note": {
+        "en": "elsewhere 'despensa' is a pantry; the shop is a tienda or almacén",
+        "de": "anderswo ist 'despensa' die Speisekammer; der Laden heißt tienda oder almacén"
+      }
+    },
+    {
+      "es": "el ñandutí",
+      "translation": {
+        "en": "delicate 'spiderweb' lace from Itauguá",
+        "de": "filigrane 'Spinnennetz'-Spitze aus Itauguá"
+      },
+      "note": {
+        "en": "Guaraní for 'spiderweb' — Paraguay's signature craft",
+        "de": "Guaraní für 'Spinnennetz' — Paraguays berühmtestes Kunsthandwerk"
+      }
+    },
+    {
+      "es": "el kure",
+      "translation": {
+        "en": "pig, pork (Guaraní)",
+        "de": "Schwein, Schweinefleisch (Guaraní)"
+      },
+      "note": {
+        "en": "elsewhere: el cerdo — everyday jopara in the kitchen",
+        "de": "anderswo: el cerdo — Alltags-Jopara in der Küche"
+      }
+    },
+    {
+      "es": "el jopara",
+      "translation": {
+        "en": "the Spanish-Guaraní mix; also a bean and corn stew",
+        "de": "der Spanisch-Guaraní-Mix; außerdem ein Bohnen-Mais-Eintopf"
+      },
+      "note": {
+        "en": "Guaraní for 'mixture' — the stew is eaten on 1 October to chase off hunger",
+        "de": "Guaraní für 'Mischung' — den Eintopf isst man am 1. Oktober, um den Hunger zu vertreiben"
+      }
+    },
+    {
+      "es": "la guampa",
+      "translation": {
+        "en": "hollowed cow-horn cup for tereré",
+        "de": "ausgehöhlter Becher aus Kuhhorn für den Tereré"
+      },
+      "note": {
+        "en": "the metal straw in it is the bombilla; both are carried everywhere",
+        "de": "der Metallhalm darin heißt bombilla; beides trägt man überallhin mit"
+      }
+    },
+    {
+      "es": "el pyrague",
+      "translation": {
+        "en": "informer, snitch",
+        "de": "Spitzel, Denunziant"
+      },
+      "note": {
+        "en": "Guaraní for 'hairy feet' — the word for Stroessner's secret listeners",
+        "de": "Guaraní für 'behaarte Füße' — das Wort für Stroessners heimliche Zuträger"
+      }
+    }
   ],
   "sights": [
     {
-      "name": "Saltos del Monday",
-      "description": { "en": "A 40-meter triple waterfall thundering through rainforest — living forever in the shadow of nearby Iguazú, and blissfully uncrowded because of it.", "de": "Ein 40 Meter hoher Dreifach-Wasserfall, der durch den Regenwald donnert — für immer im Schatten des nahen Iguazú, und genau deshalb herrlich leer." },
-      "lat": -25.5883,
-      "lng": -54.6717,
-      "emoji": "💦"
-    },
-    {
-      "name": "Represa de Itaipú",
-      "description": { "en": "One of the largest hydroelectric plants on Earth, shared with Brazil — it covers nearly all of Paraguay's electricity, with plenty left to export.", "de": "Eines der größten Wasserkraftwerke der Erde, geteilt mit Brasilien — es deckt fast Paraguays gesamten Strombedarf, und für den Export bleibt noch reichlich übrig." },
-      "lat": -25.408,
-      "lng": -54.589,
-      "emoji": "⚡"
-    },
-    {
-      "name": "Misión Jesuítica de Trinidad",
-      "description": { "en": "Paraguay's UNESCO World Heritage site: red sandstone ruins of a Jesuit mission with a stone frieze of angels playing instruments.", "de": "Paraguays UNESCO-Welterbe: rote Sandsteinruinen einer Jesuitenmission mit einem Steinfries voller musizierender Engel." },
+      "name": "Misión de la Santísima Trinidad",
+      "description": {
+        "en": "The Jesuits ran thirty mission towns across this river country from 1609 until Spain expelled the order in 1767, and the Guaraní who lived in them quarried the red sandstone and carved it themselves. Trinidad's surviving frieze shows angels playing the maracá, the harp and the Spanish bassoon. Within a generation of the expulsion the towns stood empty.",
+        "de": "Von 1609 bis zur Vertreibung des Ordens 1767 betrieben die Jesuiten dreißig Missionsdörfer in diesem Flussland, und die Guaraní, die darin lebten, brachen den roten Sandstein und behauten ihn selbst. Trinidads erhaltener Fries zeigt Engel mit Maracá, Harfe und spanischem Fagott. Eine Generation nach der Vertreibung standen die Orte leer."
+      },
       "lat": -27.1325,
       "lng": -55.6997,
-      "emoji": "⛪"
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facade_of_the_new_church_at_La_Sant%C3%ADsima_Trinidad_de_Paran%C3%A1%2C_Paraguay.jpg/960px-Facade_of_the_new_church_at_La_Sant%C3%ADsima_Trinidad_de_Paran%C3%A1%2C_Paraguay.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Facade_of_the_new_church_at_La_Sant%C3%ADsima_Trinidad_de_Paran%C3%A1,_Paraguay.jpg",
+        "author": "Josep M. Gracia",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Roofless red sandstone church walls on cropped grass under a cloudless blue sky",
+          "de": "Dachlose Kirchenmauern aus rotem Sandstein auf kurzem Rasen unter wolkenlosem Himmel"
+        }
+      }
     },
     {
-      "name": "Palacio de los López, Asunción",
-      "description": { "en": "The presidential palace on the banks of the Paraguay River — at night its illuminated facade is the capital's favorite photo backdrop.", "de": "Der Präsidentenpalast am Ufer des Río Paraguay — nachts ist seine beleuchtete Fassade das beliebteste Fotomotiv der Hauptstadt." },
-      "lat": -25.28,
-      "lng": -57.6368,
-      "emoji": "🏛️"
+      "name": "San Cosme y Damián",
+      "description": {
+        "en": "Buenaventura Suárez built an observatory in this mission in the 1700s, grinding lenses from local quartz and running his clocks on water, and published the first astronomical tables calculated in South America. He timed the moons of Jupiter to fix longitude. The rooms now hold a planetarium, and the sky over Misiones is still properly black.",
+        "de": "Buenaventura Suárez baute hier im 18. Jahrhundert ein Observatorium, schliff Linsen aus einheimischem Quarz, ließ seine Uhren mit Wasser laufen und veröffentlichte die ersten in Südamerika berechneten astronomischen Tafeln. Zur Längenbestimmung stoppte er die Jupitermonde. Heute steckt ein Planetarium in den Räumen, und der Himmel über Misiones ist noch richtig schwarz."
+      },
+      "lat": -27.3167,
+      "lng": -56.35,
+      "emoji": "🔭",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Church_of_the_Jesuit_Mission_of_San_Cosme_y_San_Damian%2C_Paraguay.jpg/960px-Church_of_the_Jesuit_Mission_of_San_Cosme_y_San_Damian%2C_Paraguay.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Church_of_the_Jesuit_Mission_of_San_Cosme_y_San_Damian,_Paraguay.jpg",
+        "author": "Josep M. Gracia",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A low tile-roofed mission church of red stone with a columned porch, lawn in front",
+          "de": "Niedrige Missionskirche aus rotem Stein mit Ziegeldach und Säulenvorbau, davor Rasen"
+        }
+      }
     },
     {
       "name": "Costanera de Encarnación",
-      "description": { "en": "A genuine river beach on the Paraná — every February, Paraguay's carnival capital turns the promenade into one long parade.", "de": "Ein echter Flussstrand am Paraná — jeden Februar verwandelt Paraguays Karnevalshauptstadt die Promenade in einen einzigen langen Umzug." },
-      "lat": -27.331,
-      "lng": -55.866,
-      "emoji": "🏖️"
+      "description": {
+        "en": "When the Yacyretá dam finished raising the Paraná in 2011 it drowned Encarnación's old lower town, so the city built a waterfront on top of the loss: three kilometres of imported sand facing Posadas in Argentina across the water. In summer the same promenade becomes the corsódromo for the country's biggest carnival.",
+        "de": "Als der Yacyretá-Staudamm 2011 den Paraná endgültig anstaute, versank Encarnacións alte Unterstadt — also baute die Stadt eine Uferpromenade auf dem Verlust: drei Kilometer aufgeschütteter Sand, gegenüber am anderen Ufer das argentinische Posadas. Im Sommer wird dieselbe Promenade zum Corsódromo des größten Karnevals des Landes."
+      },
+      "lat": -27.3306,
+      "lng": -55.8667,
+      "emoji": "🏖️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Avenida_Costanera%2C_Playa_San_Jos%C3%A9_Encarnci%C3%B3n.jpg/960px-Avenida_Costanera%2C_Playa_San_Jos%C3%A9_Encarnci%C3%B3n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Avenida_Costanera,_Playa_San_Jos%C3%A9_Encarnci%C3%B3n.jpg",
+        "author": "Myparaguay",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 596,
+        "alt": {
+          "en": "A sand beach and empty promenade along a wide river, a city skyline on the far bank",
+          "de": "Sandstrand und leere Promenade an einem breiten Fluss, am anderen Ufer eine Stadtsilhouette"
+        }
+      }
+    },
+    {
+      "name": "Saltos del Monday",
+      "description": {
+        "en": "Three falls dropping about 45 metres into a gorge twenty minutes from Ciudad del Este, and hardly anyone there, because Iguazú is half an hour away and takes every visitor. 'Monday' is not the weekday: in Guaraní monda is theft and y is water, the river of the thief. The last walkway ends close enough that the spray soaks you.",
+        "de": "Drei Fälle, rund 45 Meter tief in eine Schlucht, zwanzig Minuten von Ciudad del Este — und kaum jemand da, weil eine halbe Stunde weiter Iguazú alle Besucher abzieht. 'Monday' ist kein Wochentag: Im Guaraní heißt monda Diebstahl und y Wasser, der Fluss des Diebes. Der letzte Steg endet so nah, dass die Gischt einen durchnässt."
+      },
+      "lat": -25.5883,
+      "lng": -54.6717,
+      "emoji": "💦",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Saltos_del_Monday%2C_Presidente_Franco%2C_Alto_Paran%C3%A1%2C_Paraguay_%2829%29.jpg/960px-Saltos_del_Monday%2C_Presidente_Franco%2C_Alto_Paran%C3%A1%2C_Paraguay_%2829%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Saltos_del_Monday,_Presidente_Franco,_Alto_Paran%C3%A1,_Paraguay_(29).jpg",
+        "author": "FFE.Franco",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A brown waterfall dropping into a forested gorge with a rainbow in the spray",
+          "de": "Ein brauner Wasserfall stürzt in eine bewaldete Schlucht, im Sprühnebel ein Regenbogen"
+        }
+      }
+    },
+    {
+      "name": "Represa de Itaipú",
+      "description": {
+        "en": "Twenty turbines, ten of them Paraguayan, in a concrete wall 7.9 kilometres long across the Paraná. Paraguay uses a fraction of its half and sells the rest to Brazil, which is why the national grid runs on water alone. Filling the reservoir in 1982 drowned the Guairá Falls, until then the largest waterfall on earth by volume.",
+        "de": "Zwanzig Turbinen, zehn davon paraguayisch, in einer 7,9 Kilometer langen Betonwand quer über den Paraná. Paraguay nutzt nur einen Bruchteil seiner Hälfte und verkauft den Rest nach Brasilien — deshalb läuft das nationale Netz allein auf Wasser. Beim Aufstauen 1982 verschwanden die Guairá-Fälle, bis dahin der wasserreichste Wasserfall der Erde."
+      },
+      "lat": -25.4083,
+      "lng": -54.5889,
+      "emoji": "⚡",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Itaipu_Dam_02.jpg/960px-Itaipu_Dam_02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Itaipu_Dam_02.jpg",
+        "author": "Gabriel Resende Veiga",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A concrete dam wall running to the horizon, penstock pipes sloping down its face",
+          "de": "Eine bis zum Horizont laufende Betonstaumauer, an der Front die schrägen Druckrohre"
+        }
+      }
+    },
+    {
+      "name": "Palacio de los López",
+      "description": {
+        "en": "Francisco Solano López began it in 1857 as a palace for himself and never lived in it: he died in 1870 in the last battle of the War of the Triple Alliance, reportedly saying 'muero con mi patria'. It is the seat of government now, lit white every night above the river, and the lawn in front is where Asunción goes to sit.",
+        "de": "Francisco Solano López ließ ihn ab 1857 als Palast für sich selbst bauen und zog nie ein: 1870 fiel er in der letzten Schlacht des Tripel-Allianz-Krieges, angeblich mit den Worten 'muero con mi patria'. Heute ist er Regierungssitz, nachts weiß angestrahlt über dem Fluss, und auf der Wiese davor sitzt halb Asunción."
+      },
+      "lat": -25.28,
+      "lng": -57.6368,
+      "emoji": "🏛️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Palacio_de_L%C3%B3pez_de_noche.jpg/960px-Palacio_de_L%C3%B3pez_de_noche.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Palacio_de_L%C3%B3pez_de_noche.jpg",
+        "author": "Fotografía tomada y subida a Flickr por \"Marco Bogarín\".",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 568,
+        "alt": {
+          "en": "A floodlit white palace with a central tower at night, full moon in the black sky",
+          "de": "Ein nachts angestrahlter weißer Palast mit Mittelturm, am schwarzen Himmel der Vollmond"
+        }
+      }
+    },
+    {
+      "name": "Yaguarón",
+      "description": {
+        "en": "A Franciscan church finished in 1772 whose plain white shell hides an interior made entirely of wood: retablo, pulpit and coffered ceiling all carved by Guaraní craftsmen and painted in red, gold and blue with mineral and plant dyes. The bell tower stands apart from the building on its own timber legs, which is how it survived the church's rebuilding.",
+        "de": "Eine 1772 vollendete Franziskanerkirche, deren schlichte weiße Hülle ein Inneres ganz aus Holz verbirgt: Retabel, Kanzel und Kassettendecke, von Guaraní-Handwerkern geschnitzt und mit Mineral- und Pflanzenfarben rot, gold und blau gefasst. Der Glockenturm steht auf eigenen Holzbeinen neben dem Bau — so überstand er dessen Umbauten."
+      },
+      "lat": -25.5678,
+      "lng": -57.2758,
+      "emoji": "🪵",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/IGLESIA_DE_YAGUARON_-_panoramio.jpg/960px-IGLESIA_DE_YAGUARON_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:IGLESIA_DE_YAGUARON_-_panoramio.jpg",
+        "author": "gomezminck",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A white church at the end of a palm-lined path, a wooden bell tower standing separately at left",
+          "de": "Eine weiße Kirche am Ende eines Palmenwegs, links davon ein freistehender Holzglockenturm"
+        }
+      }
+    },
+    {
+      "name": "Areguá",
+      "description": {
+        "en": "Ceramics are stacked along both sides of the road into town — pots, painted parrots, life-size Nativity sheep — because the clay here fires well and the strawberry season only runs a few months. Areguá sits on a ridge above Lake Ypacaraí, which is why nineteenth-century Asunción summered here and left its shuttered houses behind.",
+        "de": "Zu beiden Seiten der Zufahrtsstraße stapelt sich Keramik — Töpfe, bemalte Papageien, lebensgroße Krippenschafe —, denn der Ton hier brennt gut und die Erdbeersaison dauert nur ein paar Monate. Areguá liegt auf einem Rücken über dem Ypacaraí-See; deshalb sommerte das Asunción des 19. Jahrhunderts hier und ließ seine Häuser mit Fensterläden zurück."
+      },
+      "lat": -25.307,
+      "lng": -57.3853,
+      "emoji": "🏺",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Artesan%C3%ADas_de_Aregu%C3%A1_%288039437870%29.jpg/960px-Artesan%C3%ADas_de_Aregu%C3%A1_%288039437870%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Artesan%C3%ADas_de_Aregu%C3%A1_(8039437870).jpg",
+        "author": "Leandro Neumann Ciuffo",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 641,
+        "alt": {
+          "en": "Roadside stalls packed with clay pots and a large painted parrot figure in the foreground",
+          "de": "Straßenstände voller Tontöpfe, im Vordergrund eine große bemalte Papageienfigur"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional Ybycuí",
+      "description": {
+        "en": "Paraguay's first national park, declared in 1973, protects waterfalls and a ruin at once: La Rosada, the ironworks that cast the cannon for the War of the Triple Alliance until Brazilian troops blew it up in 1869. The stone dam that drove its water wheel still crosses the stream, and the Mbokarusú falls run over black rock into pools upstream.",
+        "de": "Paraguays erster Nationalpark, 1973 ausgewiesen, schützt Wasserfälle und eine Ruine zugleich: La Rosada, das Eisenwerk, das die Kanonen für den Tripel-Allianz-Krieg goss, bis brasilianische Truppen es 1869 sprengten. Das Steinwehr, das sein Wasserrad antrieb, quert noch immer den Bach, und flussaufwärts fällt der Mbokarusú über schwarzen Fels in Becken."
+      },
+      "lat": -26.0167,
+      "lng": -56.8333,
+      "emoji": "⚒️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Presa_de_la_Antigua_Fundici%C3%B3n_de_Hierro_-_La_Rosada_-_panoramio.jpg/960px-Presa_de_la_Antigua_Fundici%C3%B3n_de_Hierro_-_La_Rosada_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Presa_de_la_Antigua_Fundici%C3%B3n_de_Hierro_-_La_Rosada_-_panoramio.jpg",
+        "author": "Diego Fernando Quint…",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A low stone weir of stacked dark blocks across a stream, visitors on the wall behind",
+          "de": "Ein niedriges Steinwehr aus dunklen Blöcken quer über einen Bach, dahinter Besucher auf der Mauer"
+        }
+      }
+    },
+    {
+      "name": "Filadelfia y el Chaco Central",
+      "description": {
+        "en": "Mennonites from Russia and Canada were let into this thorn scrub from 1927 in exchange for clearing it, and were granted their own schools, language and administration; three colonies now supply most of Paraguay's dairy. Street signs are in German, the shop takes guaraníes, Nivaclé and Enlhet workers live at the edge, and the thermometer reaches 45 °C.",
+        "de": "Ab 1927 ließ man Mennoniten aus Russland und Kanada in dieses Dornbuschland — gegen die Auflage, es urbar zu machen, mit eigenen Schulen, eigener Sprache und eigener Verwaltung; drei Kolonien liefern heute den Großteil der paraguayischen Milchprodukte. Die Straßenschilder sind deutsch, der Laden nimmt Guaraníes, am Rand wohnen Nivaclé und Enlhet, und das Thermometer erreicht 45 °C."
+      },
+      "lat": -22.35,
+      "lng": -60.0333,
+      "emoji": "🌵",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/CHA_-_Street_in_Filadelfia%2C_Paraguay%2C_2023.jpg/960px-CHA_-_Street_in_Filadelfia%2C_Paraguay%2C_2023.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:CHA_-_Street_in_Filadelfia,_Paraguay,_2023.jpg",
+        "author": "Josep M. Gracia",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A wide empty street with a swollen-trunked bottle tree on the verge and low buildings behind",
+          "de": "Eine breite leere Straße, am Rand ein Flaschenbaum mit dickem Stamm, dahinter flache Gebäude"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la chipa",
+      "description": {
+        "en": "Cassava starch, Paraguay cheese, eggs and pig fat worked into a ring and baked hot and fast, so the crust cracks open and the middle stays chewy. It goes stale within hours, which is why chiperas sell it from head baskets at bus doors instead of from shops. The Holy Week batch, chipa almidón, is the one built to keep.",
+        "de": "Maniokstärke, Paraguay-Käse, Eier und Schweineschmalz zu einem Ring geformt und heiß gebacken, damit die Kruste aufplatzt und die Mitte zäh bleibt. Nach Stunden ist sie altbacken — deshalb verkaufen Chiperas sie aus Kopfkörben an Bustüren statt im Laden. Die Karwochen-Variante, chipa almidón, ist die haltbare."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Chipa_Paraguay.jpg/960px-Chipa_Paraguay.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chipa_Paraguay.jpg",
+        "author": "Ekem at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A pile of pale golden bread rings with cracked crusts on a white cloth",
+          "de": "Ein Stapel hellgoldener Brotringe mit aufgeplatzter Kruste auf weißem Tuch"
+        }
+      }
+    },
+    {
+      "name": "la sopa paraguaya",
+      "description": {
+        "en": "A cornbread that the whole country insists on calling soup. Cornmeal, fresh cheese, onion cooked in fat and a lot of milk, baked in a tray and cut into squares — dense, salty, eaten warm next to grilled meat. The story runs that a cook of Carlos Antonio López over-thickened the president's soup and served it anyway.",
+        "de": "Ein Maisbrot, das das ganze Land beharrlich Suppe nennt. Maisgrieß, Frischkäse, in Fett gedünstete Zwiebel und viel Milch, im Blech gebacken und in Quadrate geschnitten — dicht, salzig, warm zum Grillfleisch. Der Legende nach geriet einem Koch von Carlos Antonio López die Suppe zu dick, und er trug sie trotzdem auf."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sopa_paraguaya_%28al_horno%29.jpg/960px-Sopa_paraguaya_%28al_horno%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Sopa_paraguaya_(al_horno).jpg",
+        "author": "Horacio Cambeiro",
+        "license": "CC BY 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A golden-brown baked cornbread filling a glass dish, one buttery patch on top",
+          "de": "Ein goldbraun gebackenes Maisbrot füllt eine Glasform, obenauf ein buttriger Fleck"
+        }
+      }
+    },
+    {
+      "name": "el mbejú",
+      "description": {
+        "en": "A flat griddle cake of cassava starch and cheese with no raising agent at all: the starch is rubbed into fat by hand until it looks like wet sand, pressed into a dry pan and turned once. It comes with cocido, yerba mate burnt with sugar and drowned in hot water. Winter breakfast, and the smell reaches the whole street.",
+        "de": "Ein flacher Pfannenfladen aus Maniokstärke und Käse, ganz ohne Triebmittel: Die Stärke wird von Hand ins Fett gerieben, bis sie wie feuchter Sand aussieht, in die trockene Pfanne gedrückt, einmal gewendet. Dazu Cocido — mit Zucker karamellisierter Mate, heiß aufgegossen. Winterfrühstück, das die Straße riecht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Mbeju_and_cocido.jpg/960px-Mbeju_and_cocido.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mbeju_and_cocido.jpg",
+        "author": "Pelufi",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 960,
+        "alt": {
+          "en": "A pale flat cake folded on a square plate beside a mug lettered 'Cocido con Mbejú'",
+          "de": "Ein blasser flacher Fladen auf eckigem Teller, daneben eine Tasse mit Aufschrift 'Cocido con Mbejú'"
+        }
+      }
+    },
+    {
+      "name": "el vorí vorí",
+      "description": {
+        "en": "Cornmeal-and-cheese dumplings the size of marbles, dropped into a chicken broth thick with tomato and onion. 'Vorí' is the Guaraní mouth working on the Spanish 'bolita'. It is eaten scalding in the middle of a 38-degree afternoon, which every Paraguayan will tell you is exactly how you cool down.",
+        "de": "Murmelgroße Klößchen aus Maisgrieß und Käse, in eine mit Tomate und Zwiebel gebundene Hühnerbrühe gegeben. 'Vorí' ist das spanische 'bolita', durch einen Guaraní-Mund gegangen. Man isst es kochend heiß an einem 38-Grad-Nachmittag — und jeder Paraguayer erklärt, dass genau das abkühlt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vori_vori.jpg/960px-Vori_vori.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Vori_vori.jpg",
+        "author": "Marce.af",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 994,
+        "alt": {
+          "en": "A square white bowl of orange broth with pale dumplings and a piece of chicken",
+          "de": "Eine eckige weiße Schale mit oranger Brühe, hellen Klößchen und einem Stück Huhn"
+        }
+      }
+    },
+    {
+      "name": "la chipa guasu",
+      "description": {
+        "en": "Not a chipa at all — 'guasu' is Guaraní for big. Fresh corn scraped off the cob with cheese, egg and milk, baked in a tray until the top browns and the middle sets soft, almost custardy. It turns up at every asado and at Christmas, and whether it should be sweet or savoury has never been settled.",
+        "de": "Gar keine chipa — 'guasu' heißt auf Guaraní groß. Frischer, vom Kolben geschabter Mais mit Käse, Ei und Milch, im Blech gebacken, bis die Oberfläche bräunt und die Mitte weich, fast puddingartig stockt. Kommt bei jedem Asado und zu Weihnachten auf den Tisch, und ob sie süß oder salzig gehört, ist bis heute ungeklärt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Baked_chipa_guaz%C3%BA.jpg/960px-Baked_chipa_guaz%C3%BA.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Baked_chipa_guaz%C3%BA.jpg",
+        "author": "Amambay T",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A deep baking tray of corn bake with a browned, blistered surface",
+          "de": "Ein tiefes Backblech mit Maisauflauf, die Oberfläche gebräunt und blasig"
+        }
+      }
+    },
+    {
+      "name": "el tereré",
+      "description": {
+        "en": "Yerba mate drunk cold: iced water poured over crushed herbs — mint, lemon verbena, burrito — in a thermos, then up a metal bombilla from a cow-horn guampa. One guampa serves the whole circle, refilled by whoever holds the thermos. UNESCO listed the practice and its herb knowledge in 2020.",
+        "de": "Mate kalt getrunken: Eiswasser über zerstoßene Kräuter — Minze, Zitronenverbene, Burrito — in die Thermoskanne, dann durch eine Metall-Bombilla aus der Guampa aus Kuhhorn. Eine Guampa versorgt die ganze Runde, nachgefüllt von dem, der die Kanne hält. 2020 nahm die UNESCO die Praxis samt Kräuterwissen in ihre Liste auf."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Equipo_de_Terer%C3%A9_del_Club_Social_y_Deportivo_Timb%C3%B3.jpg/960px-Equipo_de_Terer%C3%A9_del_Club_Social_y_Deportivo_Timb%C3%B3.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Equipo_de_Terer%C3%A9_del_Club_Social_y_Deportivo_Timb%C3%B3.jpg",
+        "author": "Horacio Cambeiro",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A black thermos jug and a matching horn cup with a metal straw, standing on a football pitch",
+          "de": "Eine schwarze Thermoskanne und ein passender Hornbecher mit Metallhalm auf einem Fußballplatz"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Virgen de Caacupé",
+      "when": {
+        "en": "8 December",
+        "de": "8. Dezember"
+      },
+      "description": {
+        "en": "Up to two million people reach Caacupé for the 8th, most of them walking: the 54 kilometres from Asunción take a night and a day along the hard shoulder, with strangers handing out water. The image is a carved wooden Virgin about 50 centimetres high, made, the story goes, by a Guaraní convert hiding from a raid.",
+        "de": "Bis zu zwei Millionen erreichen Caacupé zum 8., die meisten zu Fuß: Die 54 Kilometer von Asunción brauchen eine Nacht und einen Tag am Straßenrand, Fremde reichen Wasser. Das Bildnis ist eine Holzmadonna von etwa 50 Zentimetern — angeblich von einem Guaraní-Konvertiten, der sich vor einem Überfall versteckte."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Bas%C3%ADlica_de_Caacup%C3%A9.jpg/960px-Bas%C3%ADlica_de_Caacup%C3%A9.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bas%C3%ADlica_de_Caacup%C3%A9.jpg",
+        "author": "Garcia.dennis",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 769,
+        "alt": {
+          "en": "A domed white basilica seen from the air at sunset, an empty plaza and trees in front",
+          "de": "Eine weiße Kuppelbasilika aus der Luft bei Sonnenuntergang, davor leerer Platz und Bäume"
+        }
+      }
+    },
+    {
+      "name": "Carnaval Encarnaceno",
+      "when": {
+        "en": "weekends in January and February",
+        "de": "Wochenenden im Januar und Februar"
+      },
+      "description": {
+        "en": "Encarnación fences off the corsódromo on the costanera for six nights spread over two months. Comparsas of several hundred dancers each compete in sequins and feathers, and the stands arm themselves with cans of nieve — foam snow — and spray everyone in range. The city starts building floats in October.",
+        "de": "Encarnación sperrt an sechs über zwei Monate verteilten Nächten das Corsódromo an der Costanera ab. Comparsas mit je mehreren hundert Tänzern treten in Pailletten und Federn an, und die Tribünen bewaffnen sich mit Dosen voll nieve — Schaumschnee — und sprühen alles ein. Ab Oktober baut die Stadt an den Wagen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Carnaval_of_Encarnaci%C3%B3n_230303.jpg/960px-Carnaval_of_Encarnaci%C3%B3n_230303.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Carnaval_of_Encarnaci%C3%B3n_230303.jpg",
+        "author": "Cmasi",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Dancers in feathered headdresses on a lit float in front of packed night-time stands",
+          "de": "Tänzerinnen mit Federkopfschmuck auf einem beleuchteten Wagen vor vollen Nachttribünen"
+        }
+      }
+    },
+    {
+      "name": "San Juan Ára",
+      "when": {
+        "en": "24 June",
+        "de": "24. Juni"
+      },
+      "description": {
+        "en": "Saint John's night is run as a set of games involving fire: the toro candil, a man under a bull frame with burning horns who charges the crowd; the pelota tata, a rag ball soaked in kerosene, lit, and kicked barefoot; a greased pole with a prize on top. Schools hold them in the yard, and everyone eats mbejú.",
+        "de": "Die Johannisnacht läuft als Reihe von Feuerspielen: der toro candil, ein Mann unter einem Stiergestell mit brennenden Hörnern, der in die Menge stürmt; die pelota tata, ein kerosingetränkter Lumpenball, angezündet und barfuß gekickt; dazu ein eingefetteter Mast mit Preis obendrauf. Schulen machen das im Hof."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "La ronda de tereré",
+      "text": {
+        "en": "The guampa goes round in one direction and everyone drinks from the same bombilla. Say 'gracias' only when you have had enough — it means you are leaving the circle, not that you are grateful.",
+        "de": "Die Guampa geht in eine Richtung reihum, und alle trinken aus derselben Bombilla. 'Gracias' sagst du erst, wenn du genug hast — es heißt, dass du aussteigst, nicht dass du dich bedankst."
+      }
+    },
+    {
+      "title": "No toques la bombilla",
+      "text": {
+        "en": "Never stir the yerba or reposition the metal straw. It is set once by whoever prepared the tereré, and moving it clogs the mate and reads as a comment on their work.",
+        "de": "Rühr nie in der Yerba und rück den Metallhalm nicht zurecht. Er wird einmal gesetzt, von dem, der den Tereré gemacht hat; ihn zu bewegen verstopft den Mate und wirkt wie eine Kritik."
+      }
+    },
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on each cheek between women and between a woman and a man, on arriving and again on leaving. Men shake hands. Two kisses, not one — the Argentine single kiss reads as half a greeting.",
+        "de": "Je ein Kuss auf beide Wangen zwischen Frauen und zwischen Frau und Mann, beim Kommen und beim Gehen. Männer geben die Hand. Zwei Küsse, nicht einer — der argentinische Einzelkuss wirkt halbherzig."
+      }
+    },
+    {
+      "title": "Un poco de guaraní",
+      "text": {
+        "en": "Answering '¿Mba'éichapa?' with 'iporã' changes a room, even if that is everything you have. Guaraní is the language of jokes and affection; Spanish is the one used to argue with the bank.",
+        "de": "Auf '¿Mba'éichapa?' mit 'iporã' zu antworten verändert einen Raum, selbst wenn das alles ist, was du kannst. Guaraní ist die Sprache für Witze und Zuneigung, Spanisch die für Streit mit der Bank."
+      }
+    },
+    {
+      "title": "La hora paraguaya",
+      "text": {
+        "en": "Invitations to a house run about an hour late as a matter of course, and arriving on the dot means catching your hosts mid-shower. Buses, offices and football matches keep real time.",
+        "de": "Einladungen nach Hause laufen selbstverständlich rund eine Stunde später; wer pünktlich klingelt, erwischt die Gastgeber unter der Dusche. Busse, Ämter und Fußballspiele halten die echte Uhrzeit ein."
+      }
     }
   ]
 }

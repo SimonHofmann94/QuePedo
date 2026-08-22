@@ -1,99 +1,595 @@
 {
   "id": "hn",
   "flag": "🇭🇳",
-  "name": { "en": "Honduras", "de": "Honduras" },
+  "name": {
+    "en": "Honduras",
+    "de": "Honduras"
+  },
   "nameEs": "Honduras",
   "capital": "Tegucigalpa",
   "population": "11 M",
+  "tagline": {
+    "en": "Where the Maya world runs out, the Caribbean starts, and everyone answers to 'catracho'.",
+    "de": "Wo die Maya-Welt endet, die Karibik beginnt und jeder auf 'catracho' hört."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Roatan_looking_north_towards_West_End.jpg/1920px-Roatan_looking_north_towards_West_End.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Roatan_looking_north_towards_West_End.jpg",
+    "author": "Pi3.124",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1080,
+    "alt": {
+      "en": "Roatán from the air: a pale reef line in turquoise water along a green wooded coast",
+      "de": "Roatán aus der Luft: eine helle Rifflinie im türkisen Wasser entlang grüner Waldküste"
+    }
+  },
   "intro": {
-    "en": "Hondurans proudly call themselves 'catrachos' — after General Xatruch, who drove out the American filibuster William Walker in 1856 — and they speak a laid-back Spanish built on 'vos'. The country stretches between two oceans: Garífuna drums and reef diving on the Caribbean side, quiet beaches on the Pacific. Add the Mayan ruins of Copán and mountains full of coffee, and you get Central America's most underrated country.",
-    "de": "Die Honduraner nennen sich stolz 'catrachos' — nach General Xatruch, der 1856 den amerikanischen Söldner William Walker vertrieb — und sprechen ein entspanntes Spanisch, das auf 'vos' gebaut ist. Das Land spannt sich zwischen zwei Ozeanen: Garífuna-Trommeln und Riff-Tauchen auf der Karibikseite, stille Strände am Pazifik. Dazu die Maya-Ruinen von Copán und Berge voller Kaffee — Zentralamerikas am meisten unterschätztes Land."
+    "en": "Hondurans call themselves catrachos, after General Florencio Xatruch, whose troops helped drive the American filibuster William Walker out of Nicaragua in 1857 — the Nicaraguans shouted for 'los xatruches', and the name came home mangled. Their Spanish uses vos instead of tú, softens the final s to a breath, and runs on words like pisto for money and cheque for 'deal'. A second culture lives along the north coast: the Garífuna, descendants of Africans and Caribs deported from St Vincent by the British in 1797, who speak an Arawakan language and gave the world punta. Inland it is Copán's carved kings, coffee mountains and Lenca pottery.",
+    "de": "Die Honduraner nennen sich catrachos — nach General Florencio Xatruch, dessen Truppen 1857 halfen, den amerikanischen Söldner William Walker aus Nicaragua zu vertreiben; die Nicaraguaner riefen nach 'los xatruches', und der Name kam verballhornt zurück. Ihr Spanisch benutzt vos statt tú, verschleift das End-s zu einem Hauch und läuft auf Wörtern wie pisto für Geld und cheque für 'geht klar'. An der Nordküste lebt eine zweite Kultur: die Garífuna, Nachfahren von Afrikanern und Kariben, die die Briten 1797 von St. Vincent deportierten, sprechen eine Arawak-Sprache und schenkten der Welt die Punta. Im Landesinneren: Copáns Könige aus Stein, Kaffeeberge und Lenca-Keramik."
   },
   "funFact": {
-    "en": "In the town of Yoro it rains fish: after heavy storms in May or June, locals collect live fish from the streets. The 'Lluvia de Peces' has had its own festival since 1998 — and science still argues about the explanation.",
-    "de": "In der Stadt Yoro regnet es Fische: Nach schweren Unwettern im Mai oder Juni sammeln die Einwohner lebende Fische von der Straße. Die 'Lluvia de Peces' hat seit 1998 ihr eigenes Festival — und die Wissenschaft streitet bis heute über die Erklärung."
+    "en": "In the town of Yoro it rains fish: after heavy storms in May or June, people collect live fish from the streets. The 'Lluvia de Peces' has had its own festival since 1998 — and science still argues about the explanation.",
+    "de": "In der Stadt Yoro regnet es Fische: Nach schweren Unwettern im Mai oder Juni sammeln die Leute lebende Fische von der Straße. Die 'Lluvia de Peces' hat seit 1998 ihr eigenes Festival — und die Wissenschaft streitet bis heute über die Erklärung."
   },
   "slang": [
     {
       "term": "catracho / catracha",
-      "meaning": { "en": "Honduran — the proud self-designation, derived from General Florencio Xatruch", "de": "Honduraner(in) — die stolze Selbstbezeichnung, abgeleitet von General Florencio Xatruch" },
+      "meaning": {
+        "en": "Honduran — the proud self-designation, derived from General Florencio Xatruch",
+        "de": "Honduraner(in) — die stolze Selbstbezeichnung, abgeleitet von General Florencio Xatruch"
+      },
       "example": "¡Soy catracho de pura cepa!"
     },
     {
       "term": "maje",
-      "meaning": { "en": "dude, mate — but careful: with the wrong tone it means 'idiot'", "de": "Alter, Kumpel — aber Vorsicht: im falschen Ton heißt es 'Idiot'" },
+      "meaning": {
+        "en": "dude, mate — but careful: with the wrong tone it means 'idiot'",
+        "de": "Alter, Kumpel — aber Vorsicht: im falschen Ton heißt es 'Idiot'"
+      },
       "example": "¿Qué onda, maje? ¿Vamos al estadio?"
     },
     {
       "term": "cheque",
-      "meaning": { "en": "OK, deal, all good — the catracho thumbs-up", "de": "okay, geht klar, alles gut — das Daumenhoch der Catrachos" },
+      "meaning": {
+        "en": "OK, deal, all good — the catracho thumbs-up",
+        "de": "okay, geht klar, alles gut — das Daumenhoch der Catrachos"
+      },
       "example": "—Nos vemos a las cinco. —¡Cheque!"
     },
     {
       "term": "alero",
-      "meaning": { "en": "best friend, wingman — literally 'roof eave': friends under one roof", "de": "bester Freund, Kumpel — wörtlich 'Dachvorsprung': Freunde unter einem Dach" },
+      "meaning": {
+        "en": "best friend, wingman — literally 'roof eave': friends under one roof",
+        "de": "bester Freund, Kumpel — wörtlich 'Dachvorsprung': Freunde unter einem Dach"
+      },
       "example": "Mi alero y yo vamos a todos lados juntos."
     },
     {
       "term": "pijudo",
-      "meaning": { "en": "great, awesome — vulgar root but an everyday compliment; not for job interviews", "de": "super, genial — vulgärer Wortstamm, aber Alltagskompliment; nichts fürs Bewerbungsgespräch" },
+      "meaning": {
+        "en": "great, awesome — vulgar root but an everyday compliment; not for job interviews",
+        "de": "super, genial — vulgärer Wortstamm, aber Alltagskompliment; nichts fürs Bewerbungsgespräch"
+      },
       "example": "La playa de Tela está bien pijuda."
     },
     {
       "term": "birria",
-      "meaning": { "en": "beer — in Mexico it's a meat stew, in Honduras it's a cold one", "de": "Bier — in Mexiko ein Fleischeintopf, in Honduras ein Kaltgetränk" },
+      "meaning": {
+        "en": "beer — in Mexico it's a meat stew, in Honduras it's a cold one",
+        "de": "Bier — in Mexiko ein Fleischeintopf, in Honduras ein Kaltgetränk"
+      },
       "example": "Vamos por unas birrias después del trabajo."
     },
     {
       "term": "macizo",
-      "meaning": { "en": "cool, solid, great", "de": "cool, stark, klasse" },
+      "meaning": {
+        "en": "cool, solid, great — said of objects more often than people",
+        "de": "cool, stark, klasse — sagt man öfter über Dinge als über Menschen"
+      },
       "example": "¡Macizo tu carro nuevo, maje!"
+    },
+    {
+      "term": "va pue'",
+      "meaning": {
+        "en": "alright then — the standard sign-off, the final s swallowed as always",
+        "de": "na dann, alles klar — der Standard-Abschied, das End-s wie immer verschluckt"
+      },
+      "example": "Va pue', nos vemos mañana temprano."
+    },
+    {
+      "term": "¡pura paja!",
+      "meaning": {
+        "en": "total nonsense, all talk — 'paja' is straw, and by extension hot air",
+        "de": "totaler Quatsch, nur Gerede — 'paja' ist Stroh und damit auch heiße Luft"
+      },
+      "example": "Lo que dijo en la tele es pura paja."
     }
   ],
   "vocabulary": [
-    { "es": "la pulpería", "translation": { "en": "corner shop, mini grocery", "de": "Tante-Emma-Laden an der Ecke" }, "note": { "en": "elsewhere: la tienda", "de": "anderswo: la tienda" } },
-    { "es": "el pisto", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — shared with Guatemala and El Salvador", "de": "anderswo: el dinero — teilt sich Honduras mit Guatemala und El Salvador" } },
-    { "es": "el cipote / la cipota", "translation": { "en": "kid, child", "de": "Kind" }, "note": { "en": "elsewhere: el niño — also used in El Salvador", "de": "anderswo: el niño — auch in El Salvador gebräuchlich" } },
-    { "es": "la baleada", "translation": { "en": "folded flour tortilla with beans, cheese and cream — Honduras' favorite street food", "de": "gefaltete Weizentortilla mit Bohnen, Käse und Sahne — Honduras' liebstes Streetfood" }, "note": { "en": "uniquely Honduran — you won't find it anywhere else", "de": "gibt es nur in Honduras — sonst nirgends" } },
-    { "es": "el rapidito", "translation": { "en": "city minibus", "de": "Minibus im Stadtverkehr" }, "note": { "en": "elsewhere: el microbús", "de": "anderswo: el microbús" } },
-    { "es": "la charamusca", "translation": { "en": "frozen fruit treat in a little plastic bag", "de": "gefrorene Fruchtsüßigkeit im Plastikbeutelchen" }, "note": { "en": "in Mexico a 'charamusca' is a twisted hard candy", "de": "in Mexiko ist eine 'charamusca' ein gedrehtes Hartkaramell" } },
-    { "es": "el guaro", "translation": { "en": "booze, especially cheap sugarcane liquor", "de": "Schnaps, vor allem billiger Zuckerrohrschnaps" }, "note": { "en": "understood across Central America", "de": "wird in ganz Zentralamerika verstanden" } }
+    {
+      "es": "la pulpería",
+      "translation": {
+        "en": "corner shop, mini grocery",
+        "de": "Tante-Emma-Laden an der Ecke"
+      },
+      "note": {
+        "en": "elsewhere: la tienda",
+        "de": "anderswo: la tienda"
+      }
+    },
+    {
+      "es": "el pisto",
+      "translation": {
+        "en": "money",
+        "de": "Geld"
+      },
+      "note": {
+        "en": "elsewhere: el dinero — shared with Guatemala and El Salvador",
+        "de": "anderswo: el dinero — teilt sich Honduras mit Guatemala und El Salvador"
+      }
+    },
+    {
+      "es": "el cipote / la cipota",
+      "translation": {
+        "en": "kid, child",
+        "de": "Kind"
+      },
+      "note": {
+        "en": "elsewhere: el niño — also used in El Salvador",
+        "de": "anderswo: el niño — auch in El Salvador gebräuchlich"
+      }
+    },
+    {
+      "es": "la baleada",
+      "translation": {
+        "en": "folded flour tortilla with beans, cheese and cream",
+        "de": "gefaltete Weizentortilla mit Bohnen, Käse und Sahne"
+      },
+      "note": {
+        "en": "uniquely Honduran — the word means nothing edible anywhere else",
+        "de": "gibt es nur in Honduras — anderswo bedeutet das Wort nichts Essbares"
+      }
+    },
+    {
+      "es": "el rapidito",
+      "translation": {
+        "en": "city minibus",
+        "de": "Minibus im Stadtverkehr"
+      },
+      "note": {
+        "en": "elsewhere: el microbús",
+        "de": "anderswo: el microbús"
+      }
+    },
+    {
+      "es": "la charamusca",
+      "translation": {
+        "en": "frozen fruit treat in a little plastic bag",
+        "de": "gefrorene Fruchtsüßigkeit im Plastikbeutelchen"
+      },
+      "note": {
+        "en": "in Mexico a 'charamusca' is a twisted hard candy",
+        "de": "in Mexiko ist eine 'charamusca' ein gedrehtes Hartkaramell"
+      }
+    },
+    {
+      "es": "el guaro",
+      "translation": {
+        "en": "booze, especially cheap sugarcane liquor",
+        "de": "Schnaps, vor allem billiger Zuckerrohrschnaps"
+      },
+      "note": {
+        "en": "understood across Central America",
+        "de": "wird in ganz Zentralamerika verstanden"
+      }
+    },
+    {
+      "es": "el chele / la chela",
+      "translation": {
+        "en": "fair-skinned or blond person",
+        "de": "helle(r) oder blonde(r) Mensch"
+      },
+      "note": {
+        "en": "used as a nickname to your face, and meant warmly",
+        "de": "wird einem als Spitzname ins Gesicht gesagt und ist freundlich gemeint"
+      }
+    },
+    {
+      "es": "la mara",
+      "translation": {
+        "en": "the crew, your group of friends",
+        "de": "die Truppe, der eigene Freundeskreis"
+      },
+      "note": {
+        "en": "the everyday sense; the same word also names the street gangs",
+        "de": "die Alltagsbedeutung; dasselbe Wort bezeichnet auch die Straßenbanden"
+      }
+    },
+    {
+      "es": "el jocote",
+      "translation": {
+        "en": "small red-yellow plum-like fruit",
+        "de": "kleine rot-gelbe pflaumenartige Frucht"
+      },
+      "note": {
+        "en": "eaten green with salt and chilli, or boiled in syrup at Easter",
+        "de": "grün mit Salz und Chili gegessen oder zu Ostern in Sirup gekocht"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Copán",
-      "description": { "en": "Mayan city famed for its intricately carved stelae and the Hieroglyphic Stairway — 63 steps carrying the longest known Mayan inscription.", "de": "Maya-Stadt, berühmt für ihre kunstvoll gemeißelten Stelen und die Hieroglyphentreppe — 63 Stufen mit der längsten bekannten Maya-Inschrift." },
+      "description": {
+        "en": "The Hieroglyphic Stairway carries about 2,200 glyph blocks up 63 risers — the longest Maya text ever carved, and unreadable in sequence because a 1930s restoration put most of the stones back in the wrong order. The last king, Yax Pasaj, inherited a valley that had already run out of firewood and topsoil. Scarlet macaws still scream over the plaza.",
+        "de": "Die Hieroglyphentreppe trägt rund 2.200 Glyphenblöcke über 63 Stufen — der längste je gemeißelte Maya-Text, in seiner Abfolge aber unlesbar, weil eine Restaurierung in den 1930ern die meisten Steine falsch zurücklegte. Der letzte König Yax Pasaj erbte ein Tal, dem längst Brennholz und Mutterboden ausgegangen waren. Über dem Platz kreischen noch immer Aras."
+      },
       "lat": 14.8372,
       "lng": -89.1425,
-      "emoji": "🗿"
+      "emoji": "🗿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Hieroglyphic_Stairway_of_Cop%C3%A1n_%2840008951705%29.jpg/960px-Hieroglyphic_Stairway_of_Cop%C3%A1n_%2840008951705%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hieroglyphic_Stairway_of_Cop%C3%A1n_(40008951705).jpg",
+        "author": "Hans Birger Nilsen",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 604,
+        "alt": {
+          "en": "A close view of weathered Maya glyph blocks carved into two stone stair risers",
+          "de": "Nahaufnahme verwitterter Maya-Glyphenblöcke in zwei steinernen Stufenkanten"
+        }
+      }
     },
     {
-      "name": "Roatán",
-      "description": { "en": "The largest of the Bay Islands, sitting right on the Mesoamerican Reef — the second-largest barrier reef on Earth, with English Creole spoken ashore.", "de": "Die größte der Islas de la Bahía, direkt am Mesoamerikanischen Riff — dem zweitgrößten Barriereriff der Erde; an Land spricht man englisches Kreol." },
-      "lat": 16.3178,
-      "lng": -86.5397,
-      "emoji": "🤿"
+      "name": "Gracias, Lempira",
+      "description": {
+        "en": "For four years from 1544 this mountain town of a few thousand people held the Audiencia de los Confines, the court that governed Spanish Central America from Chiapas to Panama. Above it stands Cerro Las Minas, at 2,870 m the highest point in Honduras, under cloud forest. East of town, thermal water at around 36 °C runs into stone pools under the trees.",
+        "de": "Vier Jahre lang, ab 1544, saß in diesem Bergstädtchen mit ein paar tausend Einwohnern die Audiencia de los Confines — das Gericht, das Spanisch-Zentralamerika von Chiapas bis Panama regierte. Darüber erhebt sich der Cerro Las Minas, mit 2.870 m der höchste Punkt von Honduras, unter Nebelwald. Östlich des Orts fließt rund 36 °C warmes Wasser in Steinbecken unter Bäumen."
+      },
+      "lat": 14.5833,
+      "lng": -88.5833,
+      "emoji": "♨️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aguas_Termales%2C_Gracias%2C_Lempira.jpg/960px-Aguas_Termales%2C_Gracias%2C_Lempira.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Aguas_Termales,_Gracias,_Lempira.jpg",
+        "author": "ETXEVERZ",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "People bathing in stone-walled thermal pools under tall shade trees",
+          "de": "Badende in steingefassten Thermalbecken unter hohen Schattenbäumen"
+        }
+      }
     },
     {
-      "name": "Utila",
-      "description": { "en": "Backpacker diving capital of the Caribbean — some of the world's cheapest scuba certifications, and whale sharks cruising past offshore.", "de": "Backpacker-Tauchhauptstadt der Karibik — einige der günstigsten Tauchscheine der Welt, und vor der Küste ziehen Walhaie vorbei." },
-      "lat": 16.09,
-      "lng": -86.89,
-      "emoji": "🦈"
+      "name": "Comayagua",
+      "description": {
+        "en": "The cathedral tower keeps a clock built by Moorish craftsmen around 1100 for the Alhambra, given to the town by Philip III and running in Comayagua ever since the 1600s — the oldest working clock in the Americas. Comayagua was the national capital until 1880, when Tegucigalpa took the title. In Holy Week the streets are carpeted in dyed sawdust.",
+        "de": "Im Kathedralturm hängt eine Uhr, die maurische Handwerker um 1100 für die Alhambra bauten; Philipp III. schenkte sie der Stadt, und seit dem 17. Jahrhundert läuft sie in Comayagua — die älteste noch gehende Uhr Amerikas. Bis 1880 war Comayagua Hauptstadt, dann übernahm Tegucigalpa. In der Karwoche liegen Teppiche aus gefärbtem Sägemehl auf den Straßen."
+      },
+      "lat": 14.4517,
+      "lng": -87.6375,
+      "emoji": "🕰️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Comayagua_Cathedral_View_from_the_park.jpg/960px-Comayagua_Cathedral_View_from_the_park.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Comayagua_Cathedral_View_from_the_park.jpg",
+        "author": "Luis Alfredo Romero",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A cream baroque church front and bell tower against deep blue sky, a decorated fir tree beside it",
+          "de": "Cremefarbene Barockfassade mit Glockenturm vor tiefblauem Himmel, daneben ein geschmückter Tannenbaum"
+        }
+      }
+    },
+    {
+      "name": "Basílica de Suyapa",
+      "description": {
+        "en": "The patroness of Honduras is a cedar figure 6.5 centimetres tall, smaller than a thumb, found in a field in 1747 by a farmhand who lay down on it in the dark and could not bring himself to throw it away. The basilica raised for her from 1954 holds thousands under blue glass; the image itself spends most of the year in the small church next door.",
+        "de": "Die Schutzpatronin von Honduras ist eine Zedernfigur von 6,5 Zentimetern, kleiner als ein Daumen, 1747 auf einem Feld von einem Landarbeiter gefunden, der sich im Dunkeln darauf legte und sie danach nicht wegwerfen mochte. Die ab 1954 für sie gebaute Basilika fasst Tausende unter blauem Glas; das Bildnis selbst steht fast das ganze Jahr in der kleinen Kirche nebenan."
+      },
+      "lat": 14.0664,
+      "lng": -87.1556,
+      "emoji": "🙏",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Basilica_de_Suyapa_TGU.jpg/960px-Basilica_de_Suyapa_TGU.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Basilica_de_Suyapa_TGU.jpg",
+        "author": "Luis Alfredo Romero",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Church interior with brown stone columns, a domed ceiling and a flower-covered altar",
+          "de": "Kircheninneres mit braunen Steinsäulen, Kuppeldecke und blumenbedecktem Altar"
+        }
+      }
     },
     {
       "name": "Lago de Yojoa",
-      "description": { "en": "Honduras' largest natural lake, framed by two national parks — nearly 500 bird species, coffee farms and roadside stalls selling fried fish.", "de": "Honduras' größter Natursee, eingerahmt von zwei Nationalparks — fast 500 Vogelarten, Kaffeefarmen und Straßenstände mit gebratenem Fisch." },
+      "description": {
+        "en": "The country's only large natural lake, about 80 km², held between two cloud-forest national parks. Birders have logged more than 400 species around its shore, roughly half of everything recorded in Honduras. Stalls along the north road fry whole lake fish to order, and the Pulhapanzak waterfall drops 43 metres a short way upstream.",
+        "de": "Der einzige große Natursee des Landes, rund 80 km², eingefasst von zwei Nebelwald-Nationalparks. Vogelkundler haben an seinen Ufern über 400 Arten gezählt, etwa die Hälfte aller in Honduras nachgewiesenen. An der Nordstraße braten Stände ganze Seefische auf Bestellung, und flussaufwärts stürzt der Pulhapanzak 43 Meter in die Tiefe."
+      },
       "lat": 14.8667,
       "lng": -87.9833,
-      "emoji": "🐦"
+      "emoji": "🐦",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Lago_de_Yojoa_Honduras.jpg/960px-Lago_de_Yojoa_Honduras.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_de_Yojoa_Honduras.jpg",
+        "author": "JMigdonio",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Low sun behind bare trees on a lake shore, a long jetty mirrored in still water",
+          "de": "Tiefe Sonne hinter kahlen Bäumen am Seeufer, ein langer Steg spiegelt sich im stillen Wasser"
+        }
+      }
+    },
+    {
+      "name": "Tela",
+      "description": {
+        "en": "United Fruit ran its Honduran operation from this bay: the company laid the railway, built the clapboard houses of the Barrio Inglés and planted Lancetilla in 1926 as a test garden for tropical crops. At 1,681 hectares it is still one of the largest tropical botanical gardens anywhere. Garífuna villages sit at both ends of the beach.",
+        "de": "Von dieser Bucht aus führte United Fruit sein honduranisches Geschäft: Der Konzern baute die Eisenbahn, die Holzhäuser des Barrio Inglés und legte 1926 Lancetilla als Versuchsgarten für tropische Nutzpflanzen an. Mit 1.681 Hektar ist er bis heute einer der größten tropischen Botanischen Gärten überhaupt. An beiden Enden des Strands liegen Garífuna-Dörfer."
+      },
+      "lat": 15.7797,
+      "lng": -87.4614,
+      "emoji": "🍌",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Ciudad_de_tela_honduras_mar.jpg/960px-Ciudad_de_tela_honduras_mar.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ciudad_de_tela_honduras_mar.jpg",
+        "author": "Stefano Foggetti",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Aerial view along a curving beach, a long pier on the left and tin roofs of a small town on the right",
+          "de": "Luftbild entlang eines geschwungenen Strands, links ein langer Pier, rechts die Blechdächer einer Kleinstadt"
+        }
+      }
     },
     {
       "name": "Cayos Cochinos",
-      "description": { "en": "A tiny protected archipelago of two islands and 13 cays — no cars, no roads, Garífuna villages and postcard-perfect reefs.", "de": "Winziger geschützter Archipel aus zwei Inseln und 13 Cays — keine Autos, keine Straßen, Garífuna-Dörfer und Riffe wie von der Postkarte." },
+      "description": {
+        "en": "Two rocky islands and thirteen sand cays, closed to commercial fishing since 1993 and watched over by a private foundation. Chachahuate is a Garífuna village of thatched huts on a spit of sand roughly a hundred metres long: no cars, no roads, no mains electricity, and every arrival comes by boat from Nueva Armenia.",
+        "de": "Zwei felsige Inseln und dreizehn Sandcayos, seit 1993 für die kommerzielle Fischerei gesperrt und von einer privaten Stiftung bewacht. Chachahuate ist ein Garífuna-Dorf aus Palmhütten auf einer knapp hundert Meter langen Sandzunge: keine Autos, keine Straßen, kein Stromnetz, und wer kommt, kommt per Boot aus Nueva Armenia."
+      },
       "lat": 15.9667,
       "lng": -86.4833,
-      "emoji": "🏝️"
+      "emoji": "🏝️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Cayo_Garifuna_Chachahuate.jpg/960px-Cayo_Garifuna_Chachahuate.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cayo_Garifuna_Chachahuate.jpg",
+        "author": "Garcia.dennis",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 517,
+        "alt": {
+          "en": "Palm-thatched huts and leaning palms behind a narrow sand beach with wooden boats pulled up",
+          "de": "Palmgedeckte Hütten und schiefe Palmen hinter einem schmalen Sandstrand mit angelandeten Holzbooten"
+        }
+      }
+    },
+    {
+      "name": "Roatán",
+      "description": {
+        "en": "The reef begins a few metres off the sand and then drops away into a wall — this is the southern end of the Mesoamerican Barrier Reef, the biggest in the Atlantic. Ashore, older islanders speak English Creole rather than Spanish: Britain held the Bay Islands until 1861 and settled them with families from the Cayman Islands.",
+        "de": "Das Riff beginnt wenige Meter vor dem Sand und bricht dann in eine Wand ab — hier endet im Süden das Mesoamerikanische Barriereriff, das größte des Atlantiks. An Land sprechen ältere Inselbewohner englisches Kreol statt Spanisch: Bis 1861 gehörten die Islas de la Bahía zu Großbritannien, das sie mit Familien von den Kaimaninseln besiedelte."
+      },
+      "lat": 16.3178,
+      "lng": -86.5397,
+      "emoji": "🤿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/West_Bay_Beach_-Roatan_-Honduras-23May2009-b.jpg/960px-West_Bay_Beach_-Roatan_-Honduras-23May2009-b.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:West_Bay_Beach_-Roatan_-Honduras-23May2009-b.jpg",
+        "author": "Adalberto Hernandez Vega from Copan Ruinas, Honduras",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 639,
+        "alt": {
+          "en": "White sand beach with two kayaks at the waterline and swimmers in flat turquoise sea",
+          "de": "Weißer Sandstrand mit zwei Kajaks am Wasser und Badenden im flachen türkisen Meer"
+        }
+      }
+    },
+    {
+      "name": "Utila",
+      "description": {
+        "en": "The cheapest place on earth to get certified: a four-day open-water course costs less than a decent pair of shoes, and a dozen dive schools compete along one street. Whale sharks feed off the north shore all year, following the tuna boils, so there is no season to wait for — you take a boat out and look for churning water and diving birds.",
+        "de": "Der billigste Ort der Welt für den Tauchschein: Ein viertägiger Open-Water-Kurs kostet weniger als ein ordentliches Paar Schuhe, und ein Dutzend Tauchschulen konkurriert an einer einzigen Straße. Vor der Nordküste fressen Walhaie das ganze Jahr über, den Thunfischschwärmen hinterher — man fährt raus und sucht nach kochendem Wasser und stoßtauchenden Vögeln."
+      },
+      "lat": 16.0923,
+      "lng": -86.8955,
+      "emoji": "🦈",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Utila_At_Dusk_-_panoramio.jpg/960px-Utila_At_Dusk_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Utila_At_Dusk_-_panoramio.jpg",
+        "author": "ogwen",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Dusk over a calm harbour, stilt buildings and jetty lights reflected in the water",
+          "de": "Dämmerung über einem ruhigen Hafen, Stelzenhäuser und Steglichter spiegeln sich im Wasser"
+        }
+      }
+    },
+    {
+      "name": "Reserva del Río Plátano",
+      "description": {
+        "en": "Half a million hectares of rainforest, swamp and pine savanna with no road into it; you go upriver by motorised dugout from the village of Las Marías. Miskito, Pech, Tawahka and Garífuna people live inside the reserve. UNESCO returned it to the World Heritage in Danger list in 2011 over logging, cattle ranching and clandestine airstrips.",
+        "de": "Eine halbe Million Hektar Regenwald, Sumpf und Kiefernsavanne, ohne eine einzige Straße hinein; man fährt vom Dorf Las Marías mit dem Motoreinbaum flussaufwärts. Im Reservat leben Miskito, Pech, Tawahka und Garífuna. 2011 setzte die UNESCO es wegen Holzeinschlag, Viehzucht und heimlicher Landebahnen zurück auf die Rote Liste des Welterbes."
+      },
+      "lat": 15.55,
+      "lng": -84.9,
+      "emoji": "🛶",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Rio_platano.jpg/960px-Rio_platano.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Rio_platano.jpg",
+        "author": "Hjvannes at Dutch Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 553,
+        "alt": {
+          "en": "A shallow brown river between dense green forest walls, driftwood logs in the foreground",
+          "de": "Ein flacher brauner Fluss zwischen dichten grünen Waldwänden, Treibholz im Vordergrund"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la baleada",
+      "description": {
+        "en": "A flour tortilla the width of a plate, folded over refried red beans, salty crumbled cheese and a spoon of mantequilla — a soured cream that is not butter, whatever the name says. That is the sencilla; after it come egg, avocado, chorizo. Eaten with one hand, standing, at any hour of the day.",
+        "de": "Eine Weizentortilla vom Durchmesser eines Tellers, gefaltet über refritos, salzigem Krümelkäse und einem Löffel mantequilla — einer Sauerrahmcreme, die trotz des Namens keine Butter ist. Das ist die sencilla; danach kommen Ei, Avocado, Chorizo. Man isst sie einhändig, im Stehen, zu jeder Tageszeit."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Baleada_en_Cop%C3%A1n.jpg/960px-Baleada_en_Cop%C3%A1n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Baleada_en_Cop%C3%A1n.jpg",
+        "author": "Los viajes del Cangrejo",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 966,
+        "alt": {
+          "en": "An open flour tortilla loaded with scrambled egg, chorizo slices and avocado",
+          "de": "Eine offene Weizentortilla mit Rührei, Chorizoscheiben und Avocado"
+        }
+      }
+    },
+    {
+      "name": "el desayuno catracho",
+      "description": {
+        "en": "The full plate: scrambled egg, refried beans, fried plantain, a wedge of avocado, crumbled cheese, mantequilla and a stack of thick hand-patted corn tortillas, with black coffee beside it. Comedores serve it until eleven, which is roughly why nobody eats lunch before two.",
+        "de": "Der volle Teller: Rührei, refritos, gebratene Kochbanane, ein Stück Avocado, Krümelkäse, mantequilla und ein Stapel dicker, von Hand geklopfter Maistortillas, daneben schwarzer Kaffee. In den comedores gibt es ihn bis elf — ungefähr deshalb isst hier niemand vor zwei zu Mittag."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Honduran_breakfast.jpg/960px-Honduran_breakfast.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Honduran_breakfast.jpg",
+        "author": "Luis Alfredo Romero",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A red-clothed table with coffee, tortillas and a plate of egg, plantain, sausage and avocado",
+          "de": "Rot gedeckter Tisch mit Kaffee, Tortillas und einem Teller mit Ei, Kochbanane, Wurst und Avocado"
+        }
+      }
+    },
+    {
+      "name": "las tajadas",
+      "description": {
+        "en": "Plantain sliced the long way and fried crisp, the base of half the plates in the country. 'Pollo con tajadas' piles fried chicken and shredded cabbage salad on top and arrives in a plastic basket; at breakfast the same tajadas turn up next to beans and egg.",
+        "de": "Kochbanane, längs geschnitten und knusprig frittiert — die Grundlage der halben Landesküche. Beim 'pollo con tajadas' türmen sich Brathähnchen und Krautsalat darauf, serviert im Plastikkörbchen; zum Frühstück liegen dieselben tajadas neben Bohnen und Ei."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cena_T%C3%ADpica_Honduras_%283317227469%29.jpg/960px-Cena_T%C3%ADpica_Honduras_%283317227469%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cena_T%C3%ADpica_Honduras_(3317227469).jpg",
+        "author": "Aleksi Pihkanen from Helsinki, Finland",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "White plate of fried plantain slices with refried beans, scrambled egg, sausages and cream",
+          "de": "Weißer Teller mit frittierten Kochbananenscheiben, refritos, Rührei, Würstchen und Sahne"
+        }
+      }
+    },
+    {
+      "name": "la sopa de caracol",
+      "description": {
+        "en": "Conch simmered in coconut milk with yuca, green plantain and culantro until it thickens. Banda Blanca turned the name into a punta record in 1991 that sold millions and put Honduran music on radios from Mexico to Buenos Aires — most people abroad know the song long before the soup.",
+        "de": "Fechterschnecke, in Kokosmilch mit Yuca, grüner Kochbanane und Culantro dick eingekocht. Banda Blanca machte den Namen 1991 zu einer Punta-Platte, die sich millionenfach verkaufte und honduranische Musik von Mexiko bis Buenos Aires ins Radio brachte — im Ausland kennt man das Lied lange vor der Suppe."
+      }
+    },
+    {
+      "name": "el pan de coco",
+      "description": {
+        "en": "Garífuna coconut bread: grated coconut and its milk kneaded into wheat dough and baked into dense, barely sweet rolls. Women carry them along the Caribbean beaches in flat basins balanced on the head, calling as they go, and the bread is usually still warm when it reaches you.",
+        "de": "Garífuna-Kokosbrot: geriebene Kokosnuss und ihre Milch in Weizenteig geknetet und zu dichten, kaum süßen Brötchen gebacken. Frauen tragen sie in flachen Schüsseln auf dem Kopf die Karibikstrände entlang und rufen dabei aus — meist ist das Brot noch warm, wenn es bei dir ankommt."
+      }
+    },
+    {
+      "name": "el guifiti",
+      "description": {
+        "en": "Garífuna medicine that became a drink: twenty-odd roots, barks and herbs left to steep in white rum for weeks until it turns dark amber and properly bitter. It is poured in small glasses along the north coast, prescribed for colds and hangovers alike, and every family keeps its own mix.",
+        "de": "Garífuna-Medizin, die zum Getränk wurde: gut zwanzig Wurzeln, Rinden und Kräuter ziehen wochenlang in weißem Rum, bis er dunkel bernsteinfarben und richtig bitter ist. An der Nordküste wird er in kleinen Gläsern ausgeschenkt, gegen Erkältung wie gegen Kater — jede Familie hütet ihre eigene Mischung."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Carnaval de La Ceiba",
+      "when": {
+        "en": "the third Saturday of May",
+        "de": "der dritte Samstag im Mai"
+      },
+      "description": {
+        "en": "The Feria de San Isidro runs for two weeks and ends on the Avenida San Isidro: the street closed for a kilometre, floats, punta drums, and crowds estimated at half a million in a city of 200,000. Every night of the week before, a different neighbourhood holds its own carnavalito.",
+        "de": "Die Feria de San Isidro läuft zwei Wochen und endet auf der Avenida San Isidro: einen Kilometer gesperrte Straße, Umzugswagen, Punta-Trommeln und geschätzt eine halbe Million Menschen in einer Stadt mit 200.000 Einwohnern. In der Woche davor feiert jeden Abend ein anderes Viertel sein eigenes carnavalito."
+      }
+    },
+    {
+      "name": "Día de la Virgen de Suyapa",
+      "when": {
+        "en": "3 February",
+        "de": "3. Februar"
+      },
+      "description": {
+        "en": "Pilgrims walk through the night to Tegucigalpa, some covering the last stretch on their knees, and the 6.5-centimetre image is carried from its old chapel into the basilica for the mass. The alba, a service at four in the morning, fills the esplanade while it is still dark.",
+        "de": "Pilger laufen die Nacht hindurch nach Tegucigalpa, manche das letzte Stück auf den Knien, und das 6,5 Zentimeter kleine Bildnis wird aus seiner alten Kapelle in die Basilika getragen. Die alba, ein Gottesdienst um vier Uhr früh, füllt den Vorplatz, während es noch dunkel ist."
+      }
+    },
+    {
+      "name": "Día de la Etnia Garífuna",
+      "when": {
+        "en": "12 April",
+        "de": "12. April"
+      },
+      "description": {
+        "en": "The date marks 1797, when British ships put some 2,000 Garífuna ashore on Roatán after deporting them from St Vincent. Coastal towns re-enact the landing with dugout canoes coming in through the surf, then dance punta and yancunú until light, the primera drum answering the dancer's hips.",
+        "de": "Das Datum steht für 1797, als britische Schiffe rund 2.000 von St. Vincent deportierte Garífuna auf Roatán absetzten. Küstenorte stellen die Landung mit Einbäumen nach, die durch die Brandung kommen, und tanzen dann bis zum Morgen Punta und Yancunú — die primera-Trommel antwortet auf die Hüften der Tänzerin."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El voseo",
+      "text": {
+        "en": "Hondurans say vos, not tú: vos tenés, vos sabés, and the imperative drops its s — vení, mirá, tomá. Textbook tú is understood everywhere but sounds like dialogue from a telenovela.",
+        "de": "Man sagt vos, nicht tú: vos tenés, vos sabés, und der Imperativ verliert sein s — vení, mirá, tomá. Lehrbuch-tú versteht jeder, es klingt aber wie ein Dialog aus einer Telenovela."
+      }
+    },
+    {
+      "title": "El usted cariñoso",
+      "text": {
+        "en": "Usted is not only the formal pronoun here. Parents use it with small children and couples use it with each other, so being addressed as usted is rarely a wall going up.",
+        "de": "Usted ist hier nicht nur die förmliche Anrede. Eltern benutzen es bei kleinen Kindern, Paare untereinander — wer dich siezt, baut also selten eine Mauer auf."
+      }
+    },
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the right cheek between women, and between a woman and a man; men shake hands. Walking into a small shop or a waiting room, greet the whole room out loud with 'buenas'.",
+        "de": "Ein Kuss auf die rechte Wange zwischen Frauen und zwischen Frau und Mann; Männer geben die Hand. Wer einen kleinen Laden oder ein Wartezimmer betritt, grüßt den ganzen Raum laut mit 'buenas'."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Restaurant bills often already carry a 10 % servicio — check the line before adding more. Rounding up is normal in a comedor, and taxi fares are agreed before you get in, so nothing is added after.",
+        "de": "Auf Restaurantrechnungen stehen oft schon 10 % servicio — erst die Zeile prüfen, dann aufschlagen. Im comedor rundet man auf; Taxipreise handelt man vor dem Einsteigen aus, danach kommt nichts dazu."
+      }
+    },
+    {
+      "title": "Los apodos",
+      "text": {
+        "en": "Nicknames arrive fast and land on the body — gordo, flaco, chele, negrita. They are meant warmly, they are used to your face, and objecting to one is stranger than answering to it.",
+        "de": "Spitznamen kommen schnell und zielen auf den Körper — gordo, flaco, chele, negrita. Sie sind freundlich gemeint und werden einem ins Gesicht gesagt; sich zu wehren wirkt seltsamer, als zu antworten."
+      }
     }
   ]
 }

@@ -1,13 +1,32 @@
 {
   "id": "ec",
   "flag": "🇪🇨",
-  "name": { "en": "Ecuador", "de": "Ecuador" },
+  "name": {
+    "en": "Ecuador",
+    "de": "Ecuador"
+  },
   "nameEs": "Ecuador",
   "capital": "Quito",
   "population": "18 M",
+  "tagline": {
+    "en": "The only country named after a line — the equator, which its own monument misses by 240 metres.",
+    "de": "Das einzige Land, das nach einer Linie heißt — dem Äquator, den sein eigenes Denkmal um 240 Meter verfehlt."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Quito_Panorama_of_the_historic_center_from_Casa_Bella_Vista_01.jpg/1920px-Quito_Panorama_of_the_historic_center_from_Casa_Bella_Vista_01.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Quito_Panorama_of_the_historic_center_from_Casa_Bella_Vista_01.jpg",
+    "author": "Ymblanter",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1280,
+    "alt": {
+      "en": "The tiled roofs and church towers of Quito's old town below a ridge of green hills",
+      "de": "Ziegeldächer und Kirchtürme der Altstadt von Quito unter einem Kamm grüner Hügel"
+    }
+  },
   "intro": {
-    "en": "Ecuador squeezes the Amazon, the Andes and the Galápagos into a country smaller than Germany — and its Spanish is just as layered. Highland 'serranos' speak slowly and melodically, sprinkling in Kichwa words like 'ñaño' (brother) and 'chuchaqui' (hangover), while the coast around Guayaquil swallows syllables Caribbean-style. It's a polite, diminutive-loving Spanish: even a quick favor becomes 'un favorcito', and a coffee is always 'un cafecito'.",
-    "de": "Ecuador quetscht Amazonas, Anden und Galápagos in ein Land, das kleiner ist als Deutschland — und sein Spanisch ist genauso vielschichtig. Im Hochland sprechen die 'serranos' langsam und melodisch und streuen Kichwa-Wörter ein wie 'ñaño' (Bruder) oder 'chuchaqui' (Kater), während die Küste um Guayaquil Silben verschluckt wie in der Karibik. Ein höfliches, verniedlichungsverliebtes Spanisch: Selbst ein kleiner Gefallen wird zum 'favorcito', und Kaffee gibt's grundsätzlich als 'cafecito'."
+    "en": "Ecuador fits the Amazon, the Andes and the Galápagos into an area smaller than Nevada, and its Spanish is layered the same way. Highland serranos speak slowly and sing the ends of their sentences, dropping in Kichwa words like ñaño (brother) and chuchaqui (hangover); the coast around Guayaquil swallows final -s the way Cuba does. Everything shrinks: a favour becomes a favorcito, a coffee a cafecito, right here is aquicito. The sucre was scrapped in 2000 for the US dollar, though the country still issues its own centavo coins. The national heartbreak music is the pasillo — waltz-time guitar and the voice of Julio Jaramillo out of a taxi radio at two in the morning.",
+    "de": "Ecuador quetscht Amazonas, Anden und Galápagos in eine Fläche kleiner als Nevada, und sein Spanisch ist genauso geschichtet. Im Hochland sprechen die Serranos langsam und singen die Satzenden, und sie streuen Kichwa-Wörter ein wie ñaño (Bruder) oder chuchaqui (Kater); die Küste um Guayaquil verschluckt das End-s wie Kuba. Alles wird kleiner: aus einem Gefallen wird ein favorcito, aus Kaffee ein cafecito, aus „hier“ ein aquicito. Den Sucre schaffte das Land 2000 zugunsten des US-Dollars ab, eigene Centavo-Münzen gibt das Land aber weiter aus. Die Musik für Liebeskummer ist der Pasillo — Gitarre im Walzertakt und Julio Jaramillos Stimme, nachts um zwei aus dem Taxiradio."
   },
   "funFact": {
     "en": "The summit of Ecuador's Chimborazo volcano is the farthest point from the Earth's center — because of the planet's equatorial bulge it beats Mount Everest by more than 2 km.",
@@ -16,89 +35,514 @@
   "slang": [
     {
       "term": "ñaño / ñaña",
-      "meaning": { "en": "brother / sister, also a close friend — straight from Kichwa", "de": "Bruder / Schwester, auch enger Freund — direkt aus dem Kichwa" },
+      "meaning": {
+        "en": "brother / sister, also a close friend — straight from Kichwa",
+        "de": "Bruder / Schwester, auch enger Freund — direkt aus dem Kichwa"
+      },
       "example": "Mi ñaño vive en Quito, cerca del centro."
     },
     {
       "term": "¡Chuta!",
-      "meaning": { "en": "Damn! / Wow! — the all-purpose highland exclamation", "de": "Mist! / Wow! — der Allzweck-Ausruf des Hochlands" },
+      "meaning": {
+        "en": "Damn! / Wow! — the all-purpose highland exclamation",
+        "de": "Mist! / Wow! — der Allzweck-Ausruf des Hochlands"
+      },
       "example": "¡Chuta, me olvidé las llaves en la casa!"
     },
     {
       "term": "de ley",
-      "meaning": { "en": "definitely, for sure — literally 'by law'", "de": "auf jeden Fall, sicher — wörtlich 'per Gesetz'" },
+      "meaning": {
+        "en": "definitely, for sure — literally 'by law'",
+        "de": "auf jeden Fall, sicher — wörtlich 'per Gesetz'"
+      },
       "example": "De ley vamos a la fiesta el sábado."
     },
     {
       "term": "¡Achachay!",
-      "meaning": { "en": "Brrr, it's freezing! — pure Kichwa, heard all over the Andes", "de": "Brrr, ist das kalt! — pures Kichwa, in den ganzen Anden zu hören" },
+      "meaning": {
+        "en": "Brrr, it's freezing! — pure Kichwa, heard all over the Andes",
+        "de": "Brrr, ist das kalt! — pures Kichwa, in den ganzen Anden zu hören"
+      },
       "example": "¡Achachay! Está helando en Quito esta noche."
     },
     {
       "term": "camellar",
-      "meaning": { "en": "to work hard, to grind — from 'camello' (camel), the workhorse", "de": "hart arbeiten, schuften — von 'camello' (Kamel), dem Lasttier" },
+      "meaning": {
+        "en": "to work hard, to grind — from 'camello' (camel), the workhorse",
+        "de": "hart arbeiten, schuften — von 'camello' (Kamel), dem Lasttier"
+      },
       "example": "Mañana tengo que camellar todo el día."
     },
     {
       "term": "la farra",
-      "meaning": { "en": "party, night out", "de": "Party, durchgemachte Nacht" },
+      "meaning": {
+        "en": "party, a night out that runs until dawn",
+        "de": "Party, eine Nacht, die bis zum Morgengrauen geht"
+      },
       "example": "La farra duró hasta las cinco de la mañana."
     },
     {
       "term": "pluto / pluta",
-      "meaning": { "en": "drunk", "de": "betrunken" },
+      "meaning": {
+        "en": "drunk, hammered — heard mostly in the highlands",
+        "de": "betrunken, blau — vor allem im Hochland zu hören"
+      },
       "example": "Después de la farra, todos estaban plutos."
     },
     {
       "term": "¡Chendo!",
-      "meaning": { "en": "Just kidding! — classic Quito slang to defuse a joke", "de": "War nur Spaß! — klassischer Quito-Slang, um einen Witz zu entschärfen" },
+      "meaning": {
+        "en": "Just kidding! — classic Quito slang to defuse a joke",
+        "de": "War nur Spaß! — klassischer Quito-Slang, um einen Witz zu entschärfen"
+      },
       "example": "Me comí todo tu almuerzo... ¡chendo!"
     }
   ],
   "vocabulary": [
-    { "es": "la chompa", "translation": { "en": "jacket, sweater", "de": "Jacke, Pulli" }, "note": { "en": "elsewhere: la chaqueta / el suéter", "de": "anderswo: la chaqueta / el suéter" } },
-    { "es": "la guagua", "translation": { "en": "baby, small child", "de": "Baby, kleines Kind" }, "note": { "en": "from Kichwa 'wawa' — careful: in the Caribbean 'guagua' is the bus", "de": "aus dem Kichwa 'wawa' — Vorsicht: in der Karibik ist die 'guagua' der Bus" } },
-    { "es": "el chuchaqui", "translation": { "en": "hangover", "de": "Kater" }, "note": { "en": "elsewhere: la resaca — another gift from Kichwa", "de": "anderswo: la resaca — noch ein Geschenk aus dem Kichwa" } },
-    { "es": "el canguil", "translation": { "en": "popcorn — served with ceviche on the coast", "de": "Popcorn — an der Küste gibt's das zum Ceviche" }, "note": { "en": "elsewhere: las palomitas", "de": "anderswo: las palomitas" } },
-    { "es": "el cuy", "translation": { "en": "guinea pig — an Andean delicacy, roasted whole", "de": "Meerschweinchen — eine Anden-Delikatesse, im Ganzen gegrillt" }, "note": { "en": "yes, really — a festive dish since Inca times", "de": "ja, wirklich — ein Festessen seit der Inka-Zeit" } },
-    { "es": "la yapa", "translation": { "en": "a little extra the vendor throws in for free", "de": "die kleine Gratis-Zugabe vom Händler" }, "note": { "en": "from Kichwa 'yapay' (to add) — ask '¿y la yapita?' at the market", "de": "aus dem Kichwa 'yapay' (hinzufügen) — frag auf dem Markt nach '¿y la yapita?'" } },
-    { "es": "el mote", "translation": { "en": "hominy corn — big soft kernels served with everything in the Sierra", "de": "gekochter Weißmais — dicke, weiche Körner, die es in der Sierra zu allem gibt" }, "note": { "en": "the classic side for 'hornado' (roast pork)", "de": "die klassische Beilage zu 'hornado' (Spanferkel)" } }
+    {
+      "es": "la chompa",
+      "translation": {
+        "en": "jacket, sweater",
+        "de": "Jacke, Pulli"
+      },
+      "note": {
+        "en": "elsewhere: la chaqueta / el suéter",
+        "de": "anderswo: la chaqueta / el suéter"
+      }
+    },
+    {
+      "es": "la guagua",
+      "translation": {
+        "en": "baby, small child",
+        "de": "Baby, kleines Kind"
+      },
+      "note": {
+        "en": "from Kichwa 'wawa' — careful: in the Caribbean 'guagua' is the bus",
+        "de": "aus dem Kichwa 'wawa' — Vorsicht: in der Karibik ist die 'guagua' der Bus"
+      }
+    },
+    {
+      "es": "el chuchaqui",
+      "translation": {
+        "en": "hangover",
+        "de": "Kater"
+      },
+      "note": {
+        "en": "elsewhere: la resaca — another gift from Kichwa",
+        "de": "anderswo: la resaca — noch ein Geschenk aus dem Kichwa"
+      }
+    },
+    {
+      "es": "el canguil",
+      "translation": {
+        "en": "popcorn — served with ceviche on the coast",
+        "de": "Popcorn — an der Küste gibt's das zum Ceviche"
+      },
+      "note": {
+        "en": "elsewhere: las palomitas",
+        "de": "anderswo: las palomitas"
+      }
+    },
+    {
+      "es": "el cuy",
+      "translation": {
+        "en": "guinea pig — an Andean delicacy, roasted whole",
+        "de": "Meerschweinchen — eine Anden-Delikatesse, im Ganzen gegrillt"
+      },
+      "note": {
+        "en": "yes, really — a festive dish since Inca times",
+        "de": "ja, wirklich — ein Festessen seit der Inka-Zeit"
+      }
+    },
+    {
+      "es": "la yapa",
+      "translation": {
+        "en": "a little extra the vendor throws in for free",
+        "de": "die kleine Gratis-Zugabe vom Händler"
+      },
+      "note": {
+        "en": "from Kichwa 'yapay' (to add) — ask '¿y la yapita?' at the market",
+        "de": "aus dem Kichwa 'yapay' (hinzufügen) — frag auf dem Markt nach '¿y la yapita?'"
+      }
+    },
+    {
+      "es": "el mote",
+      "translation": {
+        "en": "hominy corn — big soft kernels served with everything in the Sierra",
+        "de": "gekochter Weißmais — dicke, weiche Körner, die es in der Sierra zu allem gibt"
+      },
+      "note": {
+        "en": "the classic side for 'hornado' (roast pork)",
+        "de": "die klassische Beilage zu 'hornado' (Spanferkel)"
+      }
+    },
+    {
+      "es": "los chifles",
+      "translation": {
+        "en": "thin fried plantain chips",
+        "de": "dünne frittierte Kochbananenchips"
+      },
+      "note": {
+        "en": "on the coast they come with everything, the way bread does elsewhere",
+        "de": "an der Küste kommen sie zu allem dazu, so wie anderswo das Brot"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Islas Galápagos",
-      "description": { "en": "Darwin's living laboratory 1,000 km offshore — giant tortoises over 100 years old and wildlife with zero fear of humans.", "de": "Darwins lebendes Labor 1.000 km vor der Küste — Riesenschildkröten, älter als 100 Jahre, und Tiere ganz ohne Scheu vor Menschen." },
-      "lat": -0.9538,
-      "lng": -90.9656,
-      "emoji": "🐢"
+      "description": {
+        "en": "Nine hundred kilometres of open Pacific kept the archipelago's animals from ever learning to fear people: sea lions sleep on the harbour benches in Puerto Ayora and marine iguanas sneeze salt onto the black lava. Giant tortoises pass a hundred years in the highland mud of Santa Cruz. Darwin spent five weeks here in 1835 and mislabelled most of his finches.",
+        "de": "Neunhundert Kilometer offener Pazifik sorgten dafür, dass die Tiere des Archipels nie gelernt haben, Menschen zu fürchten: In Puerto Ayora schlafen Seelöwen auf den Hafenbänken, Meerechsen niesen Salz auf die schwarze Lava. Riesenschildkröten verbringen hundert Jahre im Schlamm des Hochlands von Santa Cruz. Darwin blieb 1835 fünf Wochen und beschriftete die meisten seiner Finken falsch."
+      },
+      "lat": -0.7444,
+      "lng": -90.3139,
+      "emoji": "🐢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Santa_Cruz_giant_tortoise_02.jpg/960px-Santa_Cruz_giant_tortoise_02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Santa_Cruz_giant_tortoise_02.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A Galápagos giant tortoise standing in long grass, neck stretched out",
+          "de": "Eine Galápagos-Riesenschildkröte im hohen Gras, den Hals ausgestreckt"
+        }
+      }
     },
     {
       "name": "Centro Histórico de Quito",
-      "description": { "en": "At 2,850 m the world's second-highest capital — its colonial center was one of the first two UNESCO World Heritage Sites ever declared, back in 1978.", "de": "Mit 2.850 m die zweithöchste Hauptstadt der Welt — ihre koloniale Altstadt war 1978 eine der allerersten beiden UNESCO-Welterbestätten überhaupt." },
-      "lat": -0.2202,
-      "lng": -78.5123,
-      "emoji": "⛪"
+      "description": {
+        "en": "At 2,850 m this is the second-highest capital on Earth, and its colonial core went onto the very first UNESCO World Heritage list in 1978 — more than thirty churches, almost all still in use. Inside La Compañía, seven tonnes of gold leaf cover the vaults. The Plaza Grande fills at midday with shoe-shiners, chess players and men selling lottery tickets.",
+        "de": "Auf 2.850 m die zweithöchste Hauptstadt der Erde, und ihr kolonialer Kern stand 1978 auf der allerersten UNESCO-Welterbeliste — über dreißig Kirchen, fast alle noch in Gebrauch. In La Compañía bedecken sieben Tonnen Blattgold die Gewölbe. Die Plaza Grande füllt sich mittags mit Schuhputzern, Schachspielern und Losverkäufern."
+      },
+      "lat": -0.22,
+      "lng": -78.5121,
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Plaza_Grande%2C_Quito%2C_Ecuador%2C_2015-07-22%2C_DD_80.JPG/960px-Plaza_Grande%2C_Quito%2C_Ecuador%2C_2015-07-22%2C_DD_80.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Plaza_Grande,_Quito,_Ecuador,_2015-07-22,_DD_80.JPG",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 608,
+        "alt": {
+          "en": "Quito's Plaza Grande from above, a tree-lined square ringed by white colonial buildings",
+          "de": "Die Plaza Grande in Quito von oben, ein baumbestandener Platz, umringt von weißen Kolonialbauten"
+        }
+      }
     },
     {
       "name": "Volcán Cotopaxi",
-      "description": { "en": "A perfectly cone-shaped, glacier-capped active volcano at 5,897 m — on clear days it looms over Quito like a postcard backdrop.", "de": "Ein perfekt kegelförmiger, vergletscherter aktiver Vulkan mit 5.897 m — an klaren Tagen thront er über Quito wie eine Postkartenkulisse." },
-      "lat": -0.6805,
+      "description": {
+        "en": "A glaciated cone 5,897 m high that has erupted more than fifty times since 1738, most recently in 2015, when ash fell on Quito's southern suburbs. The páramo around it is grass, wild horses and nothing else for twenty kilometres. Climbers leave the refuge at midnight to be off the summit snow before the sun softens it.",
+        "de": "Ein vergletscherter Kegel von 5.897 m, der seit 1738 über fünfzig Mal ausgebrochen ist, zuletzt 2015, als Asche auf Quitos südliche Vororte fiel. Das Páramo ringsum ist Gras, Wildpferde und zwanzig Kilometer lang sonst nichts. Bergsteiger verlassen die Hütte um Mitternacht, um vor der Sonne wieder vom Gipfelschnee herunter zu sein."
+      },
+      "lat": -0.6806,
       "lng": -78.4378,
-      "emoji": "🌋"
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cotopaxi_01.jpg/960px-Cotopaxi_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The snow-covered symmetrical cone of Cotopaxi above brown grassland",
+          "de": "Der schneebedeckte, symmetrische Kegel des Cotopaxi über braunem Grasland"
+        }
+      }
     },
     {
       "name": "Laguna Quilotoa",
-      "description": { "en": "An emerald crater lake at 3,900 m, born of a massive eruption around 800 years ago — the rim hike takes your breath away, literally.", "de": "Ein smaragdgrüner Kratersee auf 3.900 m, entstanden durch einen gewaltigen Ausbruch vor rund 800 Jahren — die Kraterrand-Wanderung raubt dir den Atem, wortwörtlich." },
-      "lat": -0.8583,
-      "lng": -78.9004,
-      "emoji": "💧"
+      "description": {
+        "en": "The caldera is three kilometres across and the water in it 250 m deep, coloured a hard green by dissolved minerals — no fish, and drinking it is a bad idea. The eruption that tore the hole open happened around 1280 and dropped ash as far as the Amazon lowlands. The rim path runs at 3,900 m: thirty minutes down, ninety back up.",
+        "de": "Die Caldera misst drei Kilometer im Durchmesser, das Wasser darin ist 250 m tief und von gelösten Mineralien hart grün gefärbt — keine Fische, und trinken sollte man es nicht. Der Ausbruch, der das Loch riss, war um 1280 und trug Asche bis ins Amazonastiefland. Der Kraterrandweg liegt auf 3.900 m: dreißig Minuten hinunter, neunzig wieder hinauf."
+      },
+      "lat": -0.8612,
+      "lng": -78.8973,
+      "emoji": "💧",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Panorama_quilotoa_crater_lake_ecuador.jpg/960px-Panorama_quilotoa_crater_lake_ecuador.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_quilotoa_crater_lake_ecuador.jpg",
+        "author": "Annom",
+        "license": "Public domain",
+        "width": 960,
+        "height": 715,
+        "alt": {
+          "en": "A green crater lake ringed by steep bare slopes under a grey sky",
+          "de": "Ein grüner Kratersee, umringt von steilen kahlen Hängen unter grauem Himmel"
+        }
+      }
     },
     {
       "name": "Mitad del Mundo",
-      "description": { "en": "The 'Middle of the World' monument north of Quito, where you straddle the equator — GPS later revealed the true line runs about 240 m away.", "de": "Das Denkmal zur 'Mitte der Welt' nördlich von Quito, wo du mit einem Bein in jeder Hemisphäre stehst — GPS zeigte später: Die echte Linie verläuft rund 240 m weiter." },
+      "description": {
+        "en": "A 30-metre trapezoid north of Quito marks the line the French Geodesic Mission surveyed in 1736 — GPS later put the true equator about 240 m north of it. The error stopped nobody: the yellow stripe painted across the plaza is the most photographed floor in the country, and children balance eggs on nail heads for a certificate that means nothing.",
+        "de": "Ein 30 Meter hohes Trapez nördlich von Quito markiert die Linie, die die Französische Geodätische Mission 1736 vermaß — GPS legte den echten Äquator später rund 240 m weiter nördlich. Der Irrtum stört niemanden: Der gelbe Strich über den Platz ist der meistfotografierte Fußboden des Landes, und Kinder balancieren Eier auf Nagelköpfen für ein Zertifikat, das nichts bedeutet."
+      },
       "lat": -0.0022,
       "lng": -78.4558,
-      "emoji": "🌍"
+      "emoji": "🌍",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Mitad_del_Mundo%2C_Quito%2C_Ecuador%2C_2015-07-22%2C_DD_02.JPG/960px-Mitad_del_Mundo%2C_Quito%2C_Ecuador%2C_2015-07-22%2C_DD_02.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mitad_del_Mundo,_Quito,_Ecuador,_2015-07-22,_DD_02.JPG",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 414,
+        "alt": {
+          "en": "The stone trapezoid monument at Mitad del Mundo seen along its wide paved avenue",
+          "de": "Das steinerne Trapez-Monument der Mitad del Mundo entlang seiner breiten Pflasterallee"
+        }
+      }
+    },
+    {
+      "name": "Otavalo — Plaza de Ponchos",
+      "description": {
+        "en": "The Saturday market spills out of the Plaza de Ponchos into eight surrounding streets, and trade has run on roughly this spot since before the Inca arrived. Otavaleño men wear one long braid and white calf-length trousers; their families sell textiles from Amsterdam to Tokyo. The animal market at the edge of town opens at dawn and is over by nine.",
+        "de": "Der Samstagsmarkt quillt von der Plaza de Ponchos in acht umliegende Straßen, und an ungefähr dieser Stelle wird schon seit vor der Inkazeit gehandelt. Otavaleño-Männer tragen einen einzigen langen Zopf und weiße wadenlange Hosen; ihre Familien verkaufen Textilien von Amsterdam bis Tokio. Der Tiermarkt am Ortsrand öffnet im Morgengrauen und ist um neun vorbei."
+      },
+      "lat": 0.2337,
+      "lng": -78.2617,
+      "emoji": "🧶",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Otavalo_Ecuador_866.jpg/960px-Otavalo_Ecuador_866.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Otavalo_Ecuador_866.jpg",
+        "author": "Arabsalam",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Stalls hung with woven blankets on Otavalo's Plaza de Ponchos, a volcano behind",
+          "de": "Stände voller gewebter Decken auf Otavalos Plaza de Ponchos, dahinter ein Vulkan"
+        }
+      }
+    },
+    {
+      "name": "Cuenca",
+      "description": {
+        "en": "Four rivers cross a colonial grid at 2,560 m, and the blue-tiled domes of the Catedral Nueva rise over a nave built to hold nine thousand people. Its bell towers were left as stumps because the architect miscalculated the load they would put on the foundations. Cuenca is also where the Panama hat is woven — from toquilla straw, never in Panama.",
+        "de": "Vier Flüsse durchziehen ein koloniales Raster auf 2.560 m, und die blau gekachelten Kuppeln der Catedral Nueva erheben sich über einem Kirchenschiff für neuntausend Menschen. Ihre Glockentürme blieben Stümpfe, weil der Architekt die Last auf das Fundament falsch berechnete. In Cuenca wird auch der Panamahut geflochten — aus Toquilla-Stroh, nie in Panama."
+      },
+      "lat": -2.8975,
+      "lng": -79.005,
+      "emoji": "👒",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/C%C3%BApulas_de_la_Catedral_Nueva%2C_Cuenca_-_Ecuador.JPG/960px-C%C3%BApulas_de_la_Catedral_Nueva%2C_Cuenca_-_Ecuador.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:C%C3%BApulas_de_la_Catedral_Nueva,_Cuenca_-_Ecuador.JPG",
+        "author": "Rommel Gsrcía",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The three blue-and-white tiled domes of Cuenca's new cathedral against a pale sky",
+          "de": "Die drei blau-weiß gekachelten Kuppeln der neuen Kathedrale von Cuenca vor blassem Himmel"
+        }
+      }
+    },
+    {
+      "name": "Las Peñas, Guayaquil",
+      "description": {
+        "en": "Four hundred and forty-four numbered steps climb from the river to a lighthouse, past painted clapboard houses that make up Guayaquil's oldest surviving neighbourhood. Every step carries its number stencilled on the tread, so the climb counts itself down. From the top the Guayas is brown, a kilometre wide, and green rafts of water hyacinth drift past on the tide.",
+        "de": "Vierhundertvierundvierzig nummerierte Stufen führen vom Fluss hinauf zu einem Leuchtturm, vorbei an bemalten Holzhäusern — Guayaquils ältestes erhaltenes Viertel. Auf jeder Stufe steht ihre Nummer, der Aufstieg zählt sich also selbst herunter. Von oben ist der Guayas braun und einen Kilometer breit, und grüne Inseln aus Wasserhyazinthen treiben mit der Tide vorbei."
+      },
+      "lat": -2.1829,
+      "lng": -79.875,
+      "emoji": "🎨",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Guayas_from_Santa_Ana.JPG/960px-Guayas_from_Santa_Ana.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Guayas_from_Santa_Ana.JPG",
+        "author": "Marc Figueras (Oersted)",
+        "license": "Public domain",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The wide brown Guayas river seen over the rooftops of Guayaquil from a hillside",
+          "de": "Der breite braune Guayas über den Dächern Guayaquils, von einem Hügel aus gesehen"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional Yasuní",
+      "description": {
+        "en": "One hectare of Yasuní carries more tree species than the whole of North America — the densest patch of biodiversity yet measured on land. Two Waorani groups, the Tagaeri and the Taromenane, live inside it in voluntary isolation. In a 2023 referendum Ecuadorians voted to leave the oil under Block 43 in the ground, and the wells are still being wound down.",
+        "de": "Ein Hektar Yasuní trägt mehr Baumarten als ganz Nordamerika — der dichteste je an Land gemessene Fleck Artenvielfalt. Zwei Waorani-Gruppen, die Tagaeri und die Taromenane, leben darin in freiwilliger Isolation. In einem Referendum stimmten die Ecuadorianer 2023 dafür, das Öl unter Block 43 im Boden zu lassen; die Förderung wird noch abgewickelt."
+      },
+      "lat": -0.77,
+      "lng": -76.1,
+      "emoji": "🦜",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Amazon%C3%ADa_Ecuador.jpg/960px-Amazon%C3%ADa_Ecuador.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Amazon%C3%ADa_Ecuador.jpg",
+        "author": "ALAI - Agencia Latinoamericana de Información",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 639,
+        "alt": {
+          "en": "Dense rainforest canopy with palm fronds reflected in dark still water",
+          "de": "Dichtes Regenwalddach mit Palmwedeln, gespiegelt in dunklem stillem Wasser"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el encebollado",
+      "description": {
+        "en": "Albacore tuna simmered with yuca and cilantro, topped with red onion cured in lime, and eaten for breakfast — most often the morning after. Chifles or popcorn go in by the handful for crunch, and the ají on the table is hotter than it looks. Guayaquil holds a world championship for it.",
+        "de": "Weißer Thunfisch, mit Yuca und Koriander geköchelt, obendrauf in Limette eingelegte rote Zwiebeln — und gegessen wird das zum Frühstück, meist am Morgen danach. Chifles oder Popcorn kommen handweise dazu, und das Ají auf dem Tisch ist schärfer, als es aussieht. Guayaquil richtet dafür eine Weltmeisterschaft aus."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Encebollado_sencillo.jpg/960px-Encebollado_sencillo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Encebollado_sencillo.jpg",
+        "author": "Bjgavilanes",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A white bowl of brown fish and yuca soup, a bag of plantain chips and a lime wedge beside it",
+          "de": "Eine weiße Schale braune Fisch-Yuca-Suppe, daneben eine Tüte Kochbananenchips und ein Stück Limette"
+        }
+      }
+    },
+    {
+      "name": "el hornado",
+      "description": {
+        "en": "A whole pig rubbed with chicha and garlic, roasted overnight in a clay oven, then pulled apart at the market stall while the queue waits. It comes with mote, a fried potato patty and pickled onion; the crackling is sold separately and runs out first. Sunday food in every Sierra town.",
+        "de": "Ein ganzes Schwein, mit Chicha und Knoblauch eingerieben, über Nacht im Lehmofen gegart und dann am Marktstand vor der wartenden Schlange zerlegt. Dazu Mote, ein frittierter Kartoffelpuffer und eingelegte Zwiebeln; die Kruste wird extra verkauft und ist immer zuerst weg. Sonntagsessen in jeder Sierra-Stadt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AMA_Imbabura_Hornado_%2821%29_%2814111637699%29.jpg/960px-AMA_Imbabura_Hornado_%2821%29_%2814111637699%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:AMA_Imbabura_Hornado_(21)_(14111637699).jpg",
+        "author": "amalavida.tv",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 608,
+        "alt": {
+          "en": "A wooden bowl of shredded pork with white hominy, onion salad, avocado and fried plantain",
+          "de": "Eine Holzschale mit zerpflücktem Schwein, weißem Mote, Zwiebelsalat, Avocado und Kochbanane"
+        }
+      }
+    },
+    {
+      "name": "el ceviche de camarón",
+      "description": {
+        "en": "Unlike Peru's, Ecuadorian shrimp ceviche sits in a cold tomato-and-orange broth that gets drunk straight from the bowl at the end, and the shrimp are cooked, not raw. It arrives with chifles, canguil and a spoon. On the coast it is a morning dish: a cevichería that opens after two is not serious.",
+        "de": "Anders als in Peru schwimmt Ecuadors Garnelen-Ceviche in einer kalten Tomaten-Orangen-Brühe, die man am Ende aus der Schale trinkt, und die Garnelen sind gegart, nicht roh. Dazu Chifles, Canguil und ein Löffel. An der Küste gilt: ein Vormittagsgericht — eine Cevichería nach zwei ist nicht ernst zu nehmen."
+      }
+    },
+    {
+      "name": "el bolón de verde",
+      "description": {
+        "en": "A fist of green plantain, mashed while hot with pork crackling or fresh cheese, rolled into a ball and fried again so the outside cracks. Coastal breakfast, taken with black coffee and nothing else. A good one is heavy for its size and breaks open rather than squashing.",
+        "de": "Eine Faust voll grüner Kochbanane, heiß mit Schweinegrieben oder Frischkäse zerstampft, zur Kugel gerollt und noch einmal frittiert, bis die Hülle aufreißt. Küstenfrühstück, dazu schwarzer Kaffee und sonst nichts. Ein guter Bolón ist schwer für seine Größe und bricht auf, statt zu matschen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bolon_ecuatoriano_de_queso_y_chicharr%C3%B3n.jpg/960px-Bolon_ecuatoriano_de_queso_y_chicharr%C3%B3n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bolon_ecuatoriano_de_queso_y_chicharr%C3%B3n.jpg",
+        "author": "Pablo Jarrín",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1280,
+        "alt": {
+          "en": "A yellow-green ball of mashed plantain studded with white cheese and pork crackling, on a foam plate",
+          "de": "Eine gelbgrüne Kugel zerstampfter Kochbanane mit weißen Käsestücken und Grieben auf einem Pappteller"
+        }
+      }
+    },
+    {
+      "name": "la colada morada",
+      "description": {
+        "en": "A thick purple drink of black-corn flour, blackberries, naranjilla and babaco, spiced with cinnamon, cloves and Andean herbs, served hot beside a guagua de pan — sweet bread shaped like a swaddled baby. Families cook it on 2 November and carry it to the cemetery. It is drunk, not eaten, but a spoon comes anyway.",
+        "de": "Ein dickes violettes Getränk aus schwarzem Maismehl, Brombeeren, Naranjilla und Babaco, gewürzt mit Zimt, Nelken und Andenkräutern, heiß serviert mit einer Guagua de Pan — süßem Brot in Babyform. Familien kochen es am 2. November und tragen es zum Friedhof. Getrunken, nicht gegessen — der Löffel kommt trotzdem."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/COLADA_MORADA_Y_GUAGUAS_DE_PAN_%2838016383902%29.jpg/960px-COLADA_MORADA_Y_GUAGUAS_DE_PAN_%2838016383902%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:COLADA_MORADA_Y_GUAGUAS_DE_PAN_(38016383902).jpg",
+        "author": "Agencia de Noticias ANDES",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A glass of dark purple drink next to decorated bread figures shaped like babies",
+          "de": "Ein Glas dunkelviolettes Getränk neben verzierten Brotfiguren in Babyform"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Inti Raymi",
+      "when": {
+        "en": "the week of 21 June",
+        "de": "die Woche um den 21. Juni"
+      },
+      "description": {
+        "en": "Kichwa communities around Otavalo and Cotacachi mark the June solstice by dancing in circles for days, stamping the ground hard enough to wake it for planting. Men wear zamarros — furry chaps — and wide hats, and rival villages meet on the church steps for a ritual scuffle called the toma de la plaza.",
+        "de": "Kichwa-Gemeinden um Otavalo und Cotacachi begehen die Junisonnenwende, indem sie tagelang im Kreis tanzen und den Boden so fest stampfen, dass er zur Aussaat aufwacht. Die Männer tragen Zamarros — Fellhosen — und breite Hüte, und rivalisierende Dörfer treffen sich auf den Kirchenstufen zur Toma de la Plaza."
+      }
+    },
+    {
+      "name": "La Diablada de Píllaro",
+      "when": {
+        "en": "1–6 January",
+        "de": "1.–6. Januar"
+      },
+      "description": {
+        "en": "For six days the town of Píllaro fills with dancers in horned papier-mâché devil masks, each one made by hand and worn by the same family year after year. Real goat and bull horns go into them. It started as mockery of the Spanish clergy and is now on Ecuador's intangible heritage list.",
+        "de": "Sechs Tage lang füllt sich der Ort Píllaro mit Tänzern in gehörnten Teufelsmasken aus Pappmaché, jede handgemacht und Jahr für Jahr von derselben Familie getragen. Echte Ziegen- und Stierhörner stecken darin. Angefangen hat es als Verspottung des spanischen Klerus, heute ist es immaterielles Kulturerbe Ecuadors."
+      }
+    },
+    {
+      "name": "Día de los Difuntos",
+      "when": {
+        "en": "2 November",
+        "de": "2. November"
+      },
+      "description": {
+        "en": "Families spend the day at the cemetery, cleaning graves and eating lunch beside them, with colada morada and guaguas de pan for the dead as much as the living. In the Kichwa communities of Cotopaxi and Chimborazo the food is laid on the grave itself and shared with anyone walking past.",
+        "de": "Familien verbringen den Tag auf dem Friedhof, putzen die Gräber und essen daneben zu Mittag, mit Colada Morada und Guaguas de Pan für die Toten wie für die Lebenden. In den Kichwa-Gemeinden von Cotopaxi und Chimborazo wird das Essen aufs Grab gelegt und mit jedem geteilt, der vorbeikommt."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the right cheek between women, and between a woman and a man, including at a first introduction. Men shake hands. Walking into a shop without a 'buenos días' reads as rude.",
+        "de": "Ein Kuss auf die rechte Wange zwischen Frauen und zwischen Frau und Mann, auch beim ersten Kennenlernen. Männer geben sich die Hand. Einen Laden ohne 'buenos días' zu betreten, gilt als unhöflich."
+      }
+    },
+    {
+      "title": "El usted",
+      "text": {
+        "en": "In the Sierra, usted is used with parents, spouses and small children — it carries warmth, not distance. Tú sounds coastal and a little forward, and vos is not used here at all.",
+        "de": "In der Sierra spricht man Eltern, Ehepartner und kleine Kinder mit usted an — das trägt Nähe, nicht Distanz. Tú klingt küstenhaft und etwas forsch, und vos gibt es hier gar nicht."
+      }
+    },
+    {
+      "title": "El diminutivo",
+      "text": {
+        "en": "The -ito ending softens everything, including words with no size: ahorita, aquicito, todito, despacito. Even a refusal takes it — 'un ratito' buys time that a flat no would not.",
+        "de": "Die Endung -ito macht alles weicher, auch Wörter ohne Größe: ahorita, aquicito, todito, despacito. Selbst eine Absage bekommt sie — 'un ratito' verschafft Zeit, die ein klares Nein nicht gäbe."
+      }
+    },
+    {
+      "title": "La hora ecuatoriana",
+      "text": {
+        "en": "An invitation for eight means turning up around nine. A national campaign against lateness in 2003 changed nothing; business meetings are the one place the clock is taken literally.",
+        "de": "Eine Einladung für acht heißt, gegen neun aufzutauchen. Eine landesweite Kampagne gegen Unpünktlichkeit 2003 hat nichts geändert; nur bei Geschäftsterminen wird die Uhr wörtlich genommen."
+      }
+    },
+    {
+      "title": "La yapa",
+      "text": {
+        "en": "At markets, asking '¿y la yapita?' after paying is expected rather than cheeky — the vendor adds a free handful. Grinding a weaver down over a few cents is not.",
+        "de": "Auf Märkten ist die Frage '¿y la yapita?' nach dem Bezahlen erwartet und nicht frech — der Händler legt eine Handvoll gratis dazu. Eine Weberin um ein paar Cent herunterzuhandeln dagegen schon."
+      }
     }
   ]
 }

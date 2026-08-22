@@ -1,94 +1,560 @@
 {
   "id": "gq",
   "flag": "🇬🇶",
-  "name": { "en": "Equatorial Guinea", "de": "Äquatorialguinea" },
+  "name": {
+    "en": "Equatorial Guinea",
+    "de": "Äquatorialguinea"
+  },
   "nameEs": "Guinea Ecuatorial",
   "capital": "Malabo",
   "population": "1.7 M",
+  "tagline": {
+    "en": "The only country in Africa where Spanish is official — and the only one outside Spain that says 'vosotros'.",
+    "de": "Das einzige Land Afrikas mit Spanisch als Amtssprache — und das einzige außerhalb Spaniens, das 'vosotros' sagt."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/The_Great_Bioko_mountain.jpg/1920px-The_Great_Bioko_mountain.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Great_Bioko_mountain.jpg",
+    "author": "Amitsawant0812",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1440,
+    "alt": {
+      "en": "Cloud spilling over the ridge of a large volcano at sunset, orange light on the sky above",
+      "de": "Wolken ziehen bei Sonnenuntergang über den Rücken eines großen Vulkans, darüber orangefarbener Himmel"
+    }
+  },
   "intro": {
-    "en": "Equatorial Guinea is Africa's only Spanish-speaking country — a Spanish colony until 1968, and today the great outlier of the Spanish-speaking world. Spanish lives here alongside Bantu languages like Fang and Bubi, plus Pichi, an English-based creole spoken on Bioko island. It's also the only place outside Spain where 'vosotros' is standard. The result is a Spanish unlike any other: African rhythm, Bantu and Pichi loanwords, and palm wine instead of sangría.",
-    "de": "Äquatorialguinea ist das einzige spanischsprachige Land Afrikas — bis 1968 spanische Kolonie und heute der große Exot der spanischsprachigen Welt. Spanisch lebt hier Seite an Seite mit Bantusprachen wie Fang und Bubi sowie Pichi, einem englischbasierten Kreol der Insel Bioko. Außerdem ist es der einzige Ort außerhalb Spaniens, an dem 'vosotros' Standard ist. Das Ergebnis ist ein Spanisch wie kein anderes: afrikanischer Rhythmus, Lehnwörter aus Bantu und Pichi — und Palmwein statt Sangría."
+    "en": "Equatorial Guinea is the only African country with Spanish as an official language, and the only place outside Spain where 'vosotros' is normal: people say 'coche', 'móvil' and 'zumo', and often without the Castilian 'th', so 'casa' and 'caza' can sound the same. About two thirds of the country speaks it, almost always as a second language beside Fang, Bubi or Ndowé — and on the island of Bioko beside Pichi, an English-based creole left over from the decades when Britain ran the place as a naval base against the slave trade. Spain ruled until 1968; the Spanish that stayed behind picked up Bantu rhythm, Pichi loanwords and a vocabulary in which 'la antorcha' is a torch you switch on.",
+    "de": "Äquatorialguinea ist das einzige afrikanische Land mit Spanisch als Amtssprache und der einzige Ort außerhalb Spaniens, an dem 'vosotros' normal ist: Man sagt 'coche', 'móvil' und 'zumo' — aber oft ohne das kastilische 'th', sodass 'casa' und 'caza' gleich klingen können. Rund zwei Drittel des Landes sprechen es, fast immer als Zweitsprache neben Fang, Bubi oder Ndowé — auf der Insel Bioko außerdem neben Pichi, einem englischbasierten Kreol aus den Jahrzehnten, in denen Großbritannien den Ort als Flottenstützpunkt gegen den Sklavenhandel führte. Spanien regierte bis 1968; das Spanisch, das blieb, nahm Bantu-Rhythmus und Pichi-Lehnwörter auf — und ein Vokabular, in dem 'la antorcha' eine Taschenlampe ist."
   },
   "funFact": {
-    "en": "The capital Malabo isn't even on the mainland — it sits on the island of Bioko, closer to Cameroon than to the rest of the country. A brand-new capital, Ciudad de la Paz, is being carved out of the mainland rainforest.",
-    "de": "Die Hauptstadt Malabo liegt nicht einmal auf dem Festland — sie sitzt auf der Insel Bioko, näher an Kamerun als am Rest des Landes. Eine nagelneue Hauptstadt, Ciudad de la Paz, wird gerade in den Regenwald des Festlands gebaut."
+    "en": "Despite the name, the equator crosses no part of Equatorial Guinea: the mainland sits just north of it, and only Annobón, an island 600 km out in the Atlantic, lies in the southern hemisphere.",
+    "de": "Trotz des Namens verläuft der Äquator durch kein Stück Äquatorialguineas: Das Festland liegt knapp nördlich davon, und nur Annobón, eine Insel 600 km draußen im Atlantik, liegt auf der Südhalbkugel."
   },
   "slang": [
     {
       "term": "chapear",
-      "meaning": { "en": "to clear brush with a machete — and by extension, to graft, to work hard", "de": "mit der Machete Gestrüpp schlagen — und im übertragenen Sinn: schuften, hart arbeiten" },
+      "meaning": {
+        "en": "to clear brush with a machete — and by extension, to graft, to work hard",
+        "de": "mit der Machete Gestrüpp schlagen — und im übertragenen Sinn: schuften, hart arbeiten"
+      },
       "example": "El sábado toca chapear la finca antes de que llueva."
     },
     {
       "term": "balele",
-      "meaning": { "en": "communal dance, street party with drums — where the whole village shows up", "de": "Gemeinschaftstanz, Straßenfest mit Trommeln — bei dem das ganze Dorf aufkreuzt" },
+      "meaning": {
+        "en": "communal dance, street party with drums — where the whole village shows up",
+        "de": "Gemeinschaftstanz, Straßenfest mit Trommeln — bei dem das ganze Dorf aufkreuzt"
+      },
       "example": "Todo el pueblo salió al balele hasta la madrugada."
     },
     {
       "term": "mininga",
-      "meaning": { "en": "girlfriend, young woman (colloquial, from Bantu — can sound cheeky, use with care)", "de": "Freundin, junge Frau (umgangssprachlich, aus dem Bantu — kann flapsig klingen, mit Vorsicht benutzen)" },
+      "meaning": {
+        "en": "girlfriend, young woman (colloquial, from Bantu — can sound cheeky, use with care)",
+        "de": "Freundin, junge Frau (umgangssprachlich, aus dem Bantu — kann flapsig klingen, mit Vorsicht benutzen)"
+      },
       "example": "Dicen que Andrés tiene una mininga en Bata."
     },
     {
       "term": "poto-poto",
-      "meaning": { "en": "mud, swampy ground — a Pichi word every rainy season brings back", "de": "Schlamm, matschiger Boden — ein Pichi-Wort, das jede Regenzeit zurückbringt" },
+      "meaning": {
+        "en": "mud, swampy ground — a Pichi word every rainy season brings back",
+        "de": "Schlamm, matschiger Boden — ein Pichi-Wort, das jede Regenzeit zurückbringt"
+      },
       "example": "Con las lluvias, el camino está puro poto-poto."
     },
     {
       "term": "guachimán",
-      "meaning": { "en": "night watchman, guard — from English 'watchman'", "de": "Nachtwächter, Wachmann — vom englischen 'watchman'" },
+      "meaning": {
+        "en": "night watchman, guard — from English 'watchman'",
+        "de": "Nachtwächter, Wachmann — vom englischen 'watchman'"
+      },
       "example": "El guachimán del edificio conoce a todo el mundo."
     },
     {
       "term": "contrí",
-      "meaning": { "en": "one's home village, homeland — from Pichi 'kontri' (English 'country')", "de": "das Heimatdorf, die Heimat — aus dem Pichi 'kontri' (englisch 'country')" },
+      "meaning": {
+        "en": "one's home village, homeland — from Pichi 'kontri' (English 'country')",
+        "de": "das Heimatdorf, die Heimat — aus dem Pichi 'kontri' (englisch 'country')"
+      },
       "example": "En Navidad todos vuelven a su contrí."
+    },
+    {
+      "term": "¡Mbolo!",
+      "meaning": {
+        "en": "Hello! — the Fang greeting, used in Spanish conversation by everyone, Fang or not",
+        "de": "Hallo! — der Fang-Gruß, den im spanischen Gespräch alle benutzen, ob Fang oder nicht"
+      },
+      "example": "¡Mbolo, hermano! ¿Cómo estás?"
+    },
+    {
+      "term": "akiba",
+      "meaning": {
+        "en": "thanks — Fang, dropped into Spanish sentences the way 'merci' is in English",
+        "de": "danke — Fang, das genauso in spanische Sätze rutscht wie 'merci' ins Deutsche"
+      },
+      "example": "Akiba por la ayuda, de verdad."
     }
   ],
   "vocabulary": [
-    { "es": "la antorcha", "translation": { "en": "flashlight", "de": "Taschenlampe" }, "note": { "en": "elsewhere 'antorcha' is a burning torch — the flashlight is a linterna", "de": "anderswo ist 'antorcha' eine brennende Fackel — die Taschenlampe heißt linterna" } },
-    { "es": "el topé", "translation": { "en": "palm wine", "de": "Palmwein" }, "note": { "en": "tapped fresh from the palm tree and drunk the same day", "de": "wird frisch von der Palme gezapft und noch am selben Tag getrunken" } },
-    { "es": "la malamba", "translation": { "en": "sugar-cane liquor", "de": "Zuckerrohrschnaps" }, "note": { "en": "home-distilled and seriously strong", "de": "selbstgebrannt und ordentlich stark" } },
-    { "es": "el abaá", "translation": { "en": "the Fang 'word house' — an open community hall where village matters are debated", "de": "das 'Haus des Wortes' der Fang — eine offene Gemeinschaftshalle, in der Dorfangelegenheiten verhandelt werden" }, "note": { "en": "from Fang — the social heart of every village", "de": "aus dem Fang — das soziale Herz jedes Dorfes" } },
-    { "es": "el cayuco", "translation": { "en": "dugout canoe", "de": "Einbaum-Kanu" }, "note": { "en": "everyday transport along coasts and rivers", "de": "Alltagstransport an Küsten und Flüssen" } },
-    { "es": "el pepesup", "translation": { "en": "fiery pepper soup with fish or meat", "de": "feurige Pfeffersuppe mit Fisch oder Fleisch" }, "note": { "en": "from Pichi 'pepper soup' — the classic morning-after cure", "de": "aus dem Pichi 'pepper soup' — das klassische Katerfrühstück" } },
-    { "es": "la finca", "translation": { "en": "cocoa farm", "de": "Kakaoplantage" }, "note": { "en": "elsewhere any farm — on Bioko it echoes the island's long cocoa history", "de": "anderswo ein beliebiger Bauernhof — auf Bioko schwingt die lange Kakao-Geschichte der Insel mit" } }
+    {
+      "es": "vosotros",
+      "translation": {
+        "en": "you (plural, informal)",
+        "de": "ihr (informell, Mehrzahl)"
+      },
+      "note": {
+        "en": "the only country outside Spain where this is standard — elsewhere: ustedes",
+        "de": "das einzige Land außerhalb Spaniens, in dem das Standard ist — anderswo: ustedes"
+      }
+    },
+    {
+      "es": "la antorcha",
+      "translation": {
+        "en": "flashlight",
+        "de": "Taschenlampe"
+      },
+      "note": {
+        "en": "elsewhere 'antorcha' is a burning torch — the flashlight is a linterna",
+        "de": "anderswo ist 'antorcha' eine brennende Fackel — die Taschenlampe heißt linterna"
+      }
+    },
+    {
+      "es": "el coche",
+      "translation": {
+        "en": "car",
+        "de": "Auto"
+      },
+      "note": {
+        "en": "peninsular, kept from Spain — in Latin America: el carro, el auto",
+        "de": "aus Spanien übernommen — in Lateinamerika: el carro, el auto"
+      }
+    },
+    {
+      "es": "el móvil",
+      "translation": {
+        "en": "mobile phone",
+        "de": "Handy"
+      },
+      "note": {
+        "en": "as in Spain — in Latin America: el celular",
+        "de": "wie in Spanien — in Lateinamerika: el celular"
+      }
+    },
+    {
+      "es": "el zumo",
+      "translation": {
+        "en": "juice",
+        "de": "Saft"
+      },
+      "note": {
+        "en": "as in Spain — in Latin America: el jugo",
+        "de": "wie in Spanien — in Lateinamerika: el jugo"
+      }
+    },
+    {
+      "es": "la malamba",
+      "translation": {
+        "en": "sugar-cane liquor",
+        "de": "Zuckerrohrschnaps"
+      },
+      "note": {
+        "en": "home-distilled and seriously strong",
+        "de": "selbstgebrannt und ordentlich stark"
+      }
+    },
+    {
+      "es": "el abaá",
+      "translation": {
+        "en": "the Fang 'word house' — an open hall where village matters are debated",
+        "de": "das 'Haus des Wortes' der Fang — offene Halle für Dorfangelegenheiten"
+      },
+      "note": {
+        "en": "from Fang — the social heart of every village",
+        "de": "aus dem Fang — das soziale Herz jedes Dorfes"
+      }
+    },
+    {
+      "es": "el cayuco",
+      "translation": {
+        "en": "dugout canoe",
+        "de": "Einbaum-Kanu"
+      },
+      "note": {
+        "en": "everyday transport along coasts and rivers",
+        "de": "Alltagstransport an Küsten und Flüssen"
+      }
+    },
+    {
+      "es": "la finca",
+      "translation": {
+        "en": "cocoa farm",
+        "de": "Kakaoplantage"
+      },
+      "note": {
+        "en": "elsewhere any farm — on Bioko it means the island's cocoa estates",
+        "de": "anderswo ein beliebiger Hof — auf Bioko sind die Kakaogüter der Insel gemeint"
+      }
+    }
   ],
   "sights": [
     {
-      "name": "Catedral de Santa Isabel, Malabo",
-      "description": { "en": "The neo-Gothic cathedral from 1916 with twin 40-meter towers — the landmark of a capital where colonial Spain meets tropical Africa.", "de": "Die neugotische Kathedrale von 1916 mit zwei 40-Meter-Türmen — das Wahrzeichen einer Hauptstadt, in der Kolonialspanien auf tropisches Afrika trifft." },
+      "name": "Malabo",
+      "description": {
+        "en": "The capital is not on the mainland: it sits on Bioko, an island 200 km off the country's own coast and much closer to Cameroon than to Bata. Spain called it Santa Isabel until 1973. The neo-Gothic cathedral of 1916 rises over a square of colonial arcades, and the harbour below the town is a drowned volcanic crater with a gap blown out of one side.",
+        "de": "Die Hauptstadt liegt nicht auf dem Festland: Sie sitzt auf Bioko, einer Insel 200 km vor der eigenen Küste und viel näher an Kamerun als an Bata. Spanien nannte sie bis 1973 Santa Isabel. Die neugotische Kathedrale von 1916 überragt einen Platz mit Kolonialarkaden, und der Hafen unterhalb der Stadt ist ein versunkener Vulkankrater mit einer Lücke in der Wand."
+      },
       "lat": 3.755,
       "lng": 8.781,
-      "emoji": "⛪"
+      "emoji": "🏛️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Malabo_%2816513094965%29.jpg/960px-Malabo_%2816513094965%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Malabo_(16513094965).jpg",
+        "author": "Ben Sutherland from Crystal Palace, London, UK",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "A circular fountain playing in a palm-lined square, a church tower and a colonial building behind it",
+          "de": "Ein runder Springbrunnen auf einem von Palmen gesäumten Platz, dahinter ein Kirchturm und ein Kolonialbau"
+        }
+      }
     },
     {
       "name": "Pico Basilé",
-      "description": { "en": "A 3,011-meter volcano towering over Malabo — on clear days you can see Mount Cameroon across the water from the summit road.", "de": "Ein 3.011 Meter hoher Vulkan über Malabo — an klaren Tagen siehst du von der Gipfelstraße den Kamerunberg jenseits des Wassers." },
+      "description": {
+        "en": "A shield volcano of 3,011 metres that takes up the northern half of Bioko and makes its own weather — the summit is in cloud most days, and the road up passes through four vegetation zones in an hour. On the rare clear morning Mount Cameroon shows across forty kilometres of water. The last eruption was around 1923.",
+        "de": "Ein Schildvulkan von 3.011 Metern, der die Nordhälfte Biokos einnimmt und sein eigenes Wetter macht — der Gipfel steckt an den meisten Tagen in Wolken, und die Straße hinauf durchquert in einer Stunde vier Vegetationszonen. An seltenen klaren Morgen zeigt sich der Kamerunberg über vierzig Kilometer Wasser hinweg. Der letzte Ausbruch war um 1923."
+      },
       "lat": 3.5763,
       "lng": 8.7566,
-      "emoji": "🌋"
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Pico_Basil%C3%A9.jpg/960px-Pico_Basil%C3%A9.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pico_Basil%C3%A9.jpg",
+        "author": "Serge Moons",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A broad forested volcano under a cap of cloud, seen over the crowns of trees",
+          "de": "Ein breiter bewaldeter Vulkan unter einer Wolkenhaube, über Baumkronen hinweg gesehen"
+        }
+      }
     },
     {
-      "name": "Paseo Marítimo de Bata",
-      "description": { "en": "The mainland's biggest city greets the Atlantic with a long seafront promenade — grilled fish, music and the best sunset in Río Muni.", "de": "Die größte Stadt des Festlands begrüßt den Atlantik mit einer langen Uferpromenade — gegrillter Fisch, Musik und der beste Sonnenuntergang von Río Muni." },
-      "lat": 1.8639,
-      "lng": 9.7658,
-      "emoji": "🌴"
-    },
-    {
-      "name": "Parque Nacional de Monte Alén",
-      "description": { "en": "Vast mainland rainforest that shelters gorillas, chimpanzees and forest elephants — one of Central Africa's best-kept secrets.", "de": "Riesiger Regenwald auf dem Festland, Heimat von Gorillas, Schimpansen und Waldelefanten — eines der bestgehüteten Geheimnisse Zentralafrikas." },
-      "lat": 1.656,
-      "lng": 10.256,
-      "emoji": "🦍"
+      "name": "Luba",
+      "description": {
+        "en": "Bioko's second town, San Carlos under Spain, a row of low houses on a bay with a deep-water port built for the oil industry. At low tide women pick bilolá sea snails off the rocks on the beach below. Inland stand the cocoa fincas that once made the island rich, most of them now half swallowed by forest.",
+        "de": "Biokos zweite Stadt, unter Spanien San Carlos, eine Reihe niedriger Häuser an einer Bucht mit einem Tiefwasserhafen für die Ölindustrie. Bei Ebbe sammeln Frauen am Strand darunter Bilolá-Meeresschnecken von den Felsen. Landeinwärts stehen die Kakao-Fincas, die die Insel einst reich machten, die meisten halb vom Wald verschluckt."
+      },
+      "lat": 3.457,
+      "lng": 8.554,
+      "emoji": "⚓",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/View_on_Luba%2C_Bioko%2C_2013.JPG/960px-View_on_Luba%2C_Bioko%2C_2013.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:View_on_Luba,_Bioko,_2013.JPG",
+        "author": "Denis Barthel",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A road curving down past low painted houses towards a bay, green hills behind",
+          "de": "Eine Straße führt an niedrigen bunten Häusern vorbei zu einer Bucht, dahinter grüne Hügel"
+        }
+      }
     },
     {
       "name": "Ureka",
-      "description": { "en": "A village on Bioko's wild southern tip and one of the wettest places on Earth — from November to February, sea turtles nest on its black volcanic beaches.", "de": "Ein Dorf an Biokos wilder Südspitze und einer der regenreichsten Orte der Erde — von November bis Februar legen Meeresschildkröten an den schwarzen Vulkanstränden ihre Eier ab." },
+      "description": {
+        "en": "A Bubi village on Bioko's southern tip that takes more than 10,000 mm of rain a year, among the wettest inhabited places on earth, and was reachable only on foot until a road was cut in. Four species of sea turtle come ashore on the black sand between November and February — leatherbacks the size of a dinner table.",
+        "de": "Ein Bubi-Dorf an der Südspitze Biokos, das über 10.000 mm Regen im Jahr abbekommt — einer der nassesten bewohnten Orte der Erde — und bis zum Bau einer Straße nur zu Fuß erreichbar war. Zwischen November und Februar kommen vier Meeresschildkrötenarten an den schwarzen Sand, Lederschildkröten so groß wie ein Esstisch."
+      },
       "lat": 3.256,
       "lng": 8.558,
-      "emoji": "🐢"
+      "emoji": "🐢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Atardecer_en_la_playa_de_Ureca_%28Ureka%29_Guinea_Ecuatorial.jpg/960px-Atardecer_en_la_playa_de_Ureca_%28Ureka%29_Guinea_Ecuatorial.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Atardecer_en_la_playa_de_Ureca_(Ureka)_Guinea_Ecuatorial.jpg",
+        "author": "Francesca Calisti",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1116,
+        "alt": {
+          "en": "The sun low over a wide wet beach, a single tree on a spit reflected in the sand",
+          "de": "Die tief stehende Sonne über einem weiten nassen Strand, ein einzelner Baum spiegelt sich im Sand"
+        }
+      }
+    },
+    {
+      "name": "Paseo Marítimo de Bata",
+      "description": {
+        "en": "Bata is the mainland's port and its biggest city, and the social life of it runs along a seafront walk of palms, lamp posts and concrete pavilions facing the Gulf of Guinea. Grilled fish comes off charcoal braziers at the far end after dark. The oil money of the 2000s shows up here as towers that went up faster than the streets behind them.",
+        "de": "Bata ist der Hafen und die größte Stadt des Festlands, und das gesellschaftliche Leben spielt sich auf einer Uferpromenade ab: Palmen, Laternen und Betonpavillons mit Blick auf den Golf von Guinea. Am hinteren Ende kommt nach Einbruch der Dunkelheit gegrillter Fisch von den Kohlebecken. Das Ölgeld der 2000er zeigt sich als Türme, die schneller wuchsen als die Straßen dahinter."
+      },
+      "lat": 1.8639,
+      "lng": 9.7658,
+      "emoji": "🌴",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Bata%2C_2015-02_-i---i-_%2816326864069%29.jpg/960px-Bata%2C_2015-02_-i---i-_%2816326864069%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bata,_2015-02_-i---i-_(16326864069).jpg",
+        "author": "Ben Sutherland from Crystal Palace, London, UK",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "A wide seafront promenade with palms, lamp posts and a blue pavilion beside the sea",
+          "de": "Eine breite Uferpromenade mit Palmen, Laternen und einem blauen Pavillon am Meer"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional de Monte Alén",
+      "description": {
+        "en": "Roughly 2,000 km² of hill forest in the middle of Río Muni, holding western lowland gorillas, chimpanzees, forest elephants and mandrills. The research trails cut in during the 1990s are still the way in, walked with a guide. Visitor numbers run in the hundreds a year, which means the forest noise is the loudest thing in it.",
+        "de": "Rund 2.000 km² Bergwald mitten in Río Muni, mit Westlichen Flachlandgorillas, Schimpansen, Waldelefanten und Mandrills. Die in den 1990ern geschlagenen Forschungspfade sind bis heute der Weg hinein, begangen mit Führer. Die Besucherzahlen liegen bei einigen Hundert im Jahr — der Lärm des Waldes ist also das Lauteste darin."
+      },
+      "lat": 1.656,
+      "lng": 10.256,
+      "emoji": "🦍",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Nationalpark_Monte_Al%C3%A9n.jpg/960px-Nationalpark_Monte_Al%C3%A9n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nationalpark_Monte_Al%C3%A9n.jpg",
+        "author": "Mehlauge",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Forested ridges running to the horizon, oil palms in the foreground below a terrace",
+          "de": "Bewaldete Bergrücken bis zum Horizont, im Vordergrund Ölpalmen unterhalb einer Terrasse"
+        }
+      }
+    },
+    {
+      "name": "Ciudad de la Paz",
+      "description": {
+        "en": "A capital being built from nothing in the middle of the mainland forest, begun in 2012 under the name Oyala and later renamed. The plan calls for 200,000 people, six-lane boulevards, a golf course and a university, on ground that held only jungle and a river. Ministries have moved in; almost nobody lives there yet.",
+        "de": "Eine Hauptstadt, die aus dem Nichts mitten in den Festlandwald gebaut wird — begonnen 2012 unter dem Namen Oyala und später umbenannt. Vorgesehen sind 200.000 Einwohner, sechsspurige Boulevards, ein Golfplatz und eine Universität, auf Boden, auf dem es nur Urwald und einen Fluss gab. Ministerien sind eingezogen; wohnen tut dort fast niemand."
+      },
+      "lat": 1.5333,
+      "lng": 11.0,
+      "emoji": "🏗️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Autobahnbau_in_Oyala.JPG/960px-Autobahnbau_in_Oyala.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Autobahnbau_in_Oyala.JPG",
+        "author": "Mehlauge",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A man in a white shirt at the edge of a raw earth cutting, with diggers and forest behind",
+          "de": "Ein Mann im weißen Hemd am Rand eines rohen Erdeinschnitts, dahinter Bagger und Wald"
+        }
+      }
+    },
+    {
+      "name": "Basílica de Mongomo",
+      "description": {
+        "en": "One of the largest churches in Africa stands in a town of about 25,000 near the Gabonese border, which happens to be the president's home town. Finished in 2011, it seats around a thousand and copies St Peter's in Rome down to the curved colonnade wrapping the square in front of it.",
+        "de": "Eine der größten Kirchen Afrikas steht in einer Stadt von etwa 25.000 Einwohnern nahe der gabunischen Grenze — zufällig der Heimatort des Präsidenten. Fertiggestellt 2011, fasst sie rund tausend Menschen und kopiert den Petersdom in Rom bis hin zur geschwungenen Kolonnade um den Platz davor."
+      },
+      "lat": 1.628,
+      "lng": 11.317,
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Basilica_of_the_Immaculate_Conception%2C_Mongomo.jpg/960px-Basilica_of_the_Immaculate_Conception%2C_Mongomo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Basilica_of_the_Immaculate_Conception,_Mongomo.jpg",
+        "author": "Kachelus",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A large domed church across an empty paved square framed by a curved colonnade",
+          "de": "Eine große Kuppelkirche über einem leeren gepflasterten Platz, gerahmt von einer geschwungenen Kolonnade"
+        }
+      }
+    },
+    {
+      "name": "Ebebiyín",
+      "description": {
+        "en": "The country's third city sits where Equatorial Guinea, Cameroon and Gabon meet, and its market is where the three actually come together: cassava, plantain, djakató aubergines and dried fish on trestle tables, prices argued in Spanish, French and Fang inside the same sentence. It is also the road head for anyone crossing north.",
+        "de": "Die drittgrößte Stadt des Landes liegt dort, wo Äquatorialguinea, Kamerun und Gabun aufeinandertreffen, und ihr Markt ist der Ort, an dem die drei wirklich zusammenkommen: Maniok, Kochbananen, Djakató-Auberginen und Trockenfisch auf Böcken, und über Preise wird auf Spanisch, Französisch und Fang im selben Satz gestritten. Von hier führt auch die Straße nach Norden."
+      },
+      "lat": 2.15,
+      "lng": 11.33,
+      "emoji": "🛒",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Mercado_en_Ebebiy%C3%ADn.png/960px-Mercado_en_Ebebiy%C3%ADn.png",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mercado_en_Ebebiy%C3%ADn.png",
+        "author": "Miguel Obono Ekieme",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Women behind market tables of tomatoes, cassava roots and bottles under a tarpaulin",
+          "de": "Frauen hinter Markttischen mit Tomaten, Maniokwurzeln und Flaschen unter einer Plane"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el pepesup",
+      "description": {
+        "en": "Fish or meat simmered in a thin, fiery broth with chilli, ginger and country onion, served with the head still in the bowl. It works as breakfast, hangover cure and cold-weather medicine at once, and the name comes straight out of Pichi: 'pepper soup'.",
+        "de": "Fisch oder Fleisch, geköchelt in einer dünnen, feurigen Brühe mit Chili, Ingwer und Buschzwiebel, serviert mit dem Kopf noch in der Schüssel. Sie taugt als Frühstück, Katerkur und Medizin gegen Kälte zugleich, und der Name kommt direkt aus dem Pichi: 'pepper soup'."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pepesup.jpg/500px-Pepesup.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pepesup.jpg",
+        "author": "Miguel Obono",
+        "license": "CC BY-SA 4.0",
+        "width": 500,
+        "height": 281,
+        "alt": {
+          "en": "Two pieces of fish, head included, in a pale clear broth with red chilli in a white bowl",
+          "de": "Zwei Fischstücke, Kopf inklusive, in heller klarer Brühe mit roter Chili in einer weißen Schale"
+        }
+      }
+    },
+    {
+      "name": "el pollo con salsa de cacahuete",
+      "description": {
+        "en": "Chicken browned and then stewed down in ground peanuts until the sauce turns thick and orange with palm oil sitting on top. It is eaten with boiled plantain, yam or rice, and the peanuts are pounded at home rather than bought as a paste.",
+        "de": "Hähnchen wird angebraten und dann in gemahlenen Erdnüssen geschmort, bis die Sauce dick und orange wird und Palmöl obenauf steht. Dazu gibt es gekochte Kochbananen, Yams oder Reis, und die Erdnüsse werden zu Hause gestampft statt als Paste gekauft."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Pollo_en_salsa_de_cacahuete_2.jpg/960px-Pollo_en_salsa_de_cacahuete_2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pollo_en_salsa_de_cacahuete_2.jpg",
+        "author": "Miguel Obono",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Pieces of chicken in a thick orange peanut sauce in a dark pan",
+          "de": "Hähnchenstücke in einer dicken orangefarbenen Erdnusssauce in einer dunklen Pfanne"
+        }
+      }
+    },
+    {
+      "name": "el abalá",
+      "description": {
+        "en": "Red malanga grated raw, mixed with palm oil and salt, wrapped tight in leaves and boiled until it sets into a dense, faintly sweet cake. The parcels come out of the pot dark green and are unwrapped at the table. This is the Fang dish people ask their mothers to make.",
+        "de": "Rohe rote Malanga wird gerieben, mit Palmöl und Salz vermischt, fest in Blätter gewickelt und gekocht, bis sie zu einem dichten, leicht süßen Kuchen fest wird. Die Päckchen kommen dunkelgrün aus dem Topf und werden am Tisch ausgewickelt. Das ist das Fang-Gericht, das man sich von der Mutter wünscht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Abala%2C_malanga_roja_aceite_palma_y_sal.jpg/960px-Abala%2C_malanga_roja_aceite_palma_y_sal.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Abala,_malanga_roja_aceite_palma_y_sal.jpg",
+        "author": "Miguel Obono",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 795,
+        "alt": {
+          "en": "Leaf-wrapped parcels stacked in a blue bucket of water after boiling",
+          "de": "In Blätter gewickelte Päckchen, nach dem Kochen in einem blauen Eimer mit Wasser gestapelt"
+        }
+      }
+    },
+    {
+      "name": "los bilolá",
+      "description": {
+        "en": "Sea snails prised off the rocks at low tide on Bioko's beaches, boiled, pulled out of the shell and cooked again in palm oil with chilli and tomato. They are sold by the bucket, and a plate of them beside plantain is a Sunday on the coast.",
+        "de": "Meeresschnecken, bei Ebbe von den Felsen an Biokos Stränden gelöst, gekocht, aus dem Haus gezogen und noch einmal in Palmöl mit Chili und Tomate zubereitet. Verkauft werden sie eimerweise, und ein Teller davon neben Kochbanane ist ein Sonntag an der Küste."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Caracoles_bilol%C3%A1_en_la_playa_de_Lub%C3%A1_%28desconchados%29.png/960px-Caracoles_bilol%C3%A1_en_la_playa_de_Lub%C3%A1_%28desconchados%29.png",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Caracoles_bilol%C3%A1_en_la_playa_de_Lub%C3%A1_(desconchados).png",
+        "author": "Miguel Obono Ekieme",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Shucked sea snails piled in a black bucket standing on sand",
+          "de": "Aus dem Haus gelöste Meeresschnecken, aufgehäuft in einem schwarzen Eimer auf Sand"
+        }
+      }
+    },
+    {
+      "name": "el topé",
+      "description": {
+        "en": "Palm wine, running from a cut in the trunk into a plastic can hung on the tree. Sweet and barely alcoholic in the morning, sour and much stronger by evening, because it keeps fermenting in the container. It is drunk the same day or not at all.",
+        "de": "Palmwein, der aus einem Schnitt im Stamm in einen an den Baum gehängten Kanister läuft. Morgens süß und kaum alkoholisch, abends sauer und deutlich stärker, weil er im Behälter weitergärt. Getrunken wird er am selben Tag oder gar nicht."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Día de la Independencia",
+      "when": {
+        "en": "12 October",
+        "de": "12. Oktober"
+      },
+      "description": {
+        "en": "Spain handed the colony over on 12 October 1968 — the same date Spain keeps as its own national day. The main ceremony moves to a different city each year, and the host is repainted, resurfaced and rebuilt for it months in advance. Schools drill for weeks; the country watches the parade on television.",
+        "de": "Am 12. Oktober 1968 übergab Spanien die Kolonie — dasselbe Datum, das Spanien als eigenen Nationalfeiertag führt. Die Hauptfeier wandert jedes Jahr in eine andere Stadt, und der Gastgeber wird monatelang vorher neu gestrichen, asphaltiert und umgebaut. Schulen proben wochenlang; das Land sieht die Parade im Fernsehen."
+      }
+    },
+    {
+      "name": "El Djombe",
+      "when": {
+        "en": "18 September",
+        "de": "18. September"
+      },
+      "description": {
+        "en": "On Corisco, an island of some 15 km² off the Río Muni coast, the Benga re-enact the migrations that brought them there: dancers in bark cloth and palm leaves come up out of the water onto the rocks with drums behind them, and the day ends with the whole island eating on the beach.",
+        "de": "Auf Corisco, einer rund 15 km² großen Insel vor der Küste von Río Muni, spielen die Benga die Wanderungen nach, die sie hierher brachten: Tänzer in Rindenbast und Palmblättern steigen aus dem Wasser auf die Felsen, hinter ihnen die Trommeln, und am Ende isst die ganze Insel am Strand."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Fiesta_tradicional_de_los_Benga%2C_Isla_Corisco_-_Guinea_Ecuatorial_04.jpg/960px-Fiesta_tradicional_de_los_Benga%2C_Isla_Corisco_-_Guinea_Ecuatorial_04.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fiesta_tradicional_de_los_Benga,_Isla_Corisco_-_Guinea_Ecuatorial_04.jpg",
+        "author": "Rafael Toledano",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Two dancers in bark cloth and leaf skirts standing on rocks by the water, others behind them",
+          "de": "Zwei Tänzer in Rindenbast und Blattröcken auf Felsen am Wasser, dahinter weitere Menschen"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El vosotros",
+      "text": {
+        "en": "This is the only country outside Spain where 'vosotros' is the everyday plural you. 'Ustedes' among friends is understood, but it lands as stiff and foreign, the way 'thou' would in English.",
+        "de": "Das einzige Land außerhalb Spaniens, in dem 'vosotros' das alltägliche Ihr ist. 'Ustedes' unter Freunden versteht man zwar, es wirkt aber steif und fremd, wie ein 'Ihr Herrschaften' im Deutschen."
+      }
+    },
+    {
+      "title": "Las fotos",
+      "text": {
+        "en": "Photographing airports, ports, bridges, government buildings, soldiers or the presidential palace is prohibited, and the rule is enforced. When in doubt, put the phone away and ask first.",
+        "de": "Flughäfen, Häfen, Brücken, Regierungsgebäude, Soldaten oder den Präsidentenpalast zu fotografieren ist verboten, und die Regel wird durchgesetzt. Im Zweifel das Handy wegstecken und vorher fragen."
+      }
+    },
+    {
+      "title": "El saludo largo",
+      "text": {
+        "en": "Greetings are not a formality here. Health, family and the journey come first, in full, and going straight to the reason you came reads as rude even inside an office.",
+        "de": "Begrüßungen sind hier keine Formsache. Gesundheit, Familie und die Anreise kommen zuerst, vollständig, und sofort zur Sache zu kommen wirkt selbst im Büro unhöflich."
+      }
+    },
+    {
+      "title": "El abaá",
+      "text": {
+        "en": "In a Fang village the abaá, the open-sided word house, is where the men sit and matters get settled. A visitor goes there first and waits to be spoken to, rather than walking up to a house.",
+        "de": "Im Fang-Dorf ist der Abaá, das offene Haus des Wortes, der Ort, an dem die Männer sitzen und Dinge geregelt werden. Ein Besucher geht zuerst dorthin und wartet darauf, angesprochen zu werden."
+      }
+    },
+    {
+      "title": "Los mayores",
+      "text": {
+        "en": "Older people are addressed as 'papá' and 'mamá' whether or not they are related to you, and they are greeted and served first. A first name across a generation gap sounds careless.",
+        "de": "Ältere spricht man mit 'papá' und 'mamá' an, ob verwandt oder nicht, und begrüßt und bedient sie zuerst. Der Vorname über eine Generationengrenze hinweg klingt achtlos."
+      }
     }
   ]
 }

@@ -1,13 +1,32 @@
 {
   "id": "co",
   "flag": "🇨🇴",
-  "name": { "en": "Colombia", "de": "Kolumbien" },
+  "name": {
+    "en": "Colombia",
+    "de": "Kolumbien"
+  },
   "nameEs": "Colombia",
   "capital": "Bogotá",
   "population": "52 M",
+  "tagline": {
+    "en": "The country that will tell you it speaks the clearest Spanish — in about a dozen accents.",
+    "de": "Das Land, das dir sagt, es spreche das klarste Spanisch — in gut einem Dutzend Akzenten."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/BOSQUE_NIEBLA.29.FEB.2109.jpg/1920px-BOSQUE_NIEBLA.29.FEB.2109.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:BOSQUE_NIEBLA.29.FEB.2109.jpg",
+    "author": "Sandra Milena Acosta Hernández",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1440,
+    "alt": {
+      "en": "Tall wax palms scattered across a green misty hillside in the Cocora valley",
+      "de": "Hohe Wachspalmen verteilt über einen grünen, nebligen Hang im Cocora-Tal"
+    }
+  },
   "intro": {
-    "en": "Colombians will happily tell you they speak the clearest Spanish in Latin America — and the Bogotá accent really is a favorite among learners. But Colombia is many countries in one: Caribbean coast, Andean highlands, Amazon jungle and coffee hills, each with its own accent and rhythm. Expect relentless friendliness, 'usted' even between close friends, and cumbia and vallenato pouring out of every doorway.",
-    "de": "Kolumbianer erzählen dir gern, dass sie das klarste Spanisch Lateinamerikas sprechen — und tatsächlich lieben Sprachlerner den Akzent von Bogotá. Dabei ist Kolumbien viele Länder in einem: Karibikküste, Anden, Amazonas und Kaffeehügel, jede Region mit eigenem Akzent und Rhythmus. Rechne mit grenzenloser Herzlichkeit, 'usted' selbst unter engen Freunden und Cumbia und Vallenato aus jeder offenen Tür."
+    "en": "Colombians will tell you, unprompted, that they speak the clearest Spanish in Latin America, and the Bogotá accent really is a favourite among learners: careful consonants, and 'usted' used with strangers, close friends and your own children alike. But the country is several countries at once — a Caribbean coast that swallows the ends of words, Andean cities at 2,600 metres, Amazon jungle and coffee hills, each with its own accent and speed. Cumbia grew out of drum and cane flute on the Caribbean plantations; vallenato is built around a German accordion that arrived through 19th-century trade.",
+    "de": "Kolumbianer erzählen dir ungefragt, dass sie das klarste Spanisch Lateinamerikas sprechen, und tatsächlich lieben Lernende den Akzent von Bogotá: sorgfältige Konsonanten und 'usted' gegenüber Fremden, engen Freunden und den eigenen Kindern gleichermaßen. Doch das Land ist mehrere Länder auf einmal — eine Karibikküste, die Wortenden verschluckt, Andenstädte auf 2.600 Metern, Amazonas und Kaffeehügel, jede Region mit eigenem Akzent und Tempo. Cumbia entstand aus Trommel und Rohrflöte auf den Plantagen der Karibik; Vallenato baut auf einem deutschen Akkordeon auf, das über den Handel des 19. Jahrhunderts kam."
   },
   "funFact": {
     "en": "Colombia is the most biodiverse country on Earth per square kilometer — and the world number one for birds, with nearly 2,000 species: about one in five of all bird species on the planet.",
@@ -16,90 +35,503 @@
   "slang": [
     {
       "term": "parcero / parce",
-      "meaning": { "en": "buddy, mate — the signature word of Medellín", "de": "Kumpel, Bro — das Erkennungswort von Medellín" },
+      "meaning": {
+        "en": "buddy, mate — the signature word of Medellín",
+        "de": "Kumpel, Bro — das Erkennungswort von Medellín"
+      },
       "example": "¿Qué más, parce? ¿Cómo va todo?"
     },
     {
       "term": "¿Qué más?",
-      "meaning": { "en": "the standard Colombian greeting — literally 'what else?', means 'how are you?'", "de": "die kolumbianische Standard-Begrüßung — wörtlich 'was sonst?', heißt 'wie geht's?'" },
+      "meaning": {
+        "en": "the standard Colombian greeting — literally 'what else?', means 'how are you?'",
+        "de": "die kolumbianische Standard-Begrüßung — wörtlich 'was sonst?', heißt 'wie geht's?'"
+      },
       "example": "¡Hola! ¿Qué más? ¿Bien o no?"
     },
     {
       "term": "bacano",
-      "meaning": { "en": "cool, awesome", "de": "cool, klasse" },
+      "meaning": {
+        "en": "cool, great — Colombia's everyday word of approval",
+        "de": "cool, klasse — Kolumbiens Alltagswort für Zustimmung"
+      },
       "example": "El concierto estuvo muy bacano."
     },
     {
       "term": "chimba",
-      "meaning": { "en": "awesome — or terrible, context decides (a bit crude, but everywhere)", "de": "geil — oder furchtbar, der Kontext entscheidet (etwas derb, aber allgegenwärtig)" },
+      "meaning": {
+        "en": "awesome — or terrible, context decides (a bit crude, but everywhere)",
+        "de": "geil — oder furchtbar, der Kontext entscheidet (etwas derb, aber allgegenwärtig)"
+      },
       "example": "¡Qué chimba de fiesta, parce!"
     },
     {
       "term": "vaina",
-      "meaning": { "en": "thing, stuff — the universal placeholder word", "de": "Ding, Kram — das Universalwort für alles" },
+      "meaning": {
+        "en": "thing, stuff — the universal placeholder word",
+        "de": "Ding, Kram — das Universalwort für alles"
+      },
       "example": "Pásame esa vaina que está en la mesa."
     },
     {
       "term": "parche",
-      "meaning": { "en": "your group of friends — or the plan you have with them", "de": "deine Clique — oder das, was ihr zusammen vorhabt" },
+      "meaning": {
+        "en": "your group of friends — or the plan you have with them",
+        "de": "deine Clique — oder das, was ihr zusammen vorhabt"
+      },
       "example": "Esta noche hay parche en casa de Andrés."
     },
     {
       "term": "dar papaya",
-      "meaning": { "en": "to make yourself an easy target — don't flash your phone on the bus", "de": "sich zur leichten Beute machen — also das Handy im Bus lieber stecken lassen" },
+      "meaning": {
+        "en": "to make yourself an easy target — don't flash your phone on the bus",
+        "de": "sich zur leichten Beute machen — also das Handy im Bus lieber stecken lassen"
+      },
       "example": "No des papaya con el celular en la calle."
     },
     {
       "term": "rumbear",
-      "meaning": { "en": "to party — 'la rumba' is the night out", "de": "feiern gehen — 'la rumba' ist die Partynacht" },
+      "meaning": {
+        "en": "to party — 'la rumba' is the night out",
+        "de": "feiern gehen — 'la rumba' ist die Partynacht"
+      },
       "example": "El viernes vamos a rumbear en Cali."
     }
   ],
   "vocabulary": [
-    { "es": "el tinto", "translation": { "en": "small black coffee", "de": "kleiner schwarzer Kaffee" }, "note": { "en": "in Spain 'tinto' is red wine — in Colombia it's the coffee offered to you everywhere", "de": "in Spanien ist 'tinto' Rotwein — in Kolumbien der Kaffee, der dir überall angeboten wird" } },
-    { "es": "la arepa", "translation": { "en": "grilled corn cake, eaten with everything", "de": "gegrillter Maisfladen, wird zu allem gegessen" }, "note": { "en": "breakfast staple in Colombia and Venezuela", "de": "Frühstücksklassiker in Kolumbien und Venezuela" } },
-    { "es": "el camello", "translation": { "en": "work, job (literally 'camel')", "de": "Arbeit, Job (wörtlich 'Kamel')" }, "note": { "en": "elsewhere: el trabajo — 'camellar' = to work hard", "de": "anderswo: el trabajo — 'camellar' = schuften" } },
-    { "es": "la pola", "translation": { "en": "beer", "de": "Bier" }, "note": { "en": "elsewhere: la cerveza — named after independence heroine Policarpa Salavarrieta", "de": "anderswo: la cerveza — benannt nach der Unabhängigkeitsheldin Policarpa Salavarrieta" } },
-    { "es": "el chino / la china", "translation": { "en": "kid (in Bogotá)", "de": "Kind (in Bogotá)" }, "note": { "en": "elsewhere: el niño — nothing to do with China, likely from Quechua", "de": "anderswo: el niño — hat nichts mit China zu tun, stammt wohl aus dem Quechua" } },
-    { "es": "¡A la orden!", "translation": { "en": "'at your service!' — heard in every shop, taxi and market", "de": "'zu Diensten!' — hörst du in jedem Laden, Taxi und Markt" }, "note": { "en": "both 'can I help you?' and 'you're welcome'", "de": "heißt sowohl 'kann ich helfen?' als auch 'gern geschehen'" } },
-    { "es": "la ñapa", "translation": { "en": "the little extra you get for free", "de": "die kleine Gratis-Zugabe" }, "note": { "en": "ask for it at the market — from Quechua 'yapa'", "de": "frag auf dem Markt danach — vom Quechua 'yapa'" } },
-    { "es": "el pelado / la pelada", "translation": { "en": "kid, young person", "de": "Kind, junger Mensch" }, "note": { "en": "elsewhere: el joven — literally 'the bald one'", "de": "anderswo: el joven — wörtlich 'der Kahle'" } }
+    {
+      "es": "el tinto",
+      "translation": {
+        "en": "small black coffee",
+        "de": "kleiner schwarzer Kaffee"
+      },
+      "note": {
+        "en": "in Spain 'tinto' is red wine — in Colombia it's the coffee offered to you everywhere",
+        "de": "in Spanien ist 'tinto' Rotwein — in Kolumbien der Kaffee, der dir überall angeboten wird"
+      }
+    },
+    {
+      "es": "la arepa",
+      "translation": {
+        "en": "grilled corn cake, eaten with everything",
+        "de": "gegrillter Maisfladen, wird zu allem gegessen"
+      },
+      "note": {
+        "en": "breakfast staple in Colombia and Venezuela",
+        "de": "Frühstücksklassiker in Kolumbien und Venezuela"
+      }
+    },
+    {
+      "es": "el camello",
+      "translation": {
+        "en": "work, job (literally 'camel')",
+        "de": "Arbeit, Job (wörtlich 'Kamel')"
+      },
+      "note": {
+        "en": "elsewhere: el trabajo — 'camellar' = to work hard",
+        "de": "anderswo: el trabajo — 'camellar' = schuften"
+      }
+    },
+    {
+      "es": "la pola",
+      "translation": {
+        "en": "beer",
+        "de": "Bier"
+      },
+      "note": {
+        "en": "elsewhere: la cerveza — named after independence heroine Policarpa Salavarrieta",
+        "de": "anderswo: la cerveza — benannt nach der Unabhängigkeitsheldin Policarpa Salavarrieta"
+      }
+    },
+    {
+      "es": "el chino / la china",
+      "translation": {
+        "en": "kid (in Bogotá)",
+        "de": "Kind (in Bogotá)"
+      },
+      "note": {
+        "en": "elsewhere: el niño — nothing to do with China, likely from Quechua",
+        "de": "anderswo: el niño — hat nichts mit China zu tun, stammt wohl aus dem Quechua"
+      }
+    },
+    {
+      "es": "¡A la orden!",
+      "translation": {
+        "en": "'at your service!' — heard in every shop, taxi and market",
+        "de": "'zu Diensten!' — hörst du in jedem Laden, Taxi und Markt"
+      },
+      "note": {
+        "en": "both 'can I help you?' and 'you're welcome'",
+        "de": "heißt sowohl 'kann ich helfen?' als auch 'gern geschehen'"
+      }
+    },
+    {
+      "es": "la ñapa",
+      "translation": {
+        "en": "the little extra you get for free",
+        "de": "die kleine Gratis-Zugabe"
+      },
+      "note": {
+        "en": "ask for it at the market — from Quechua 'yapa'",
+        "de": "frag auf dem Markt danach — vom Quechua 'yapa'"
+      }
+    },
+    {
+      "es": "el pelado / la pelada",
+      "translation": {
+        "en": "kid, young person",
+        "de": "Kind, junger Mensch"
+      },
+      "note": {
+        "en": "elsewhere: el joven — literally 'the bald one'",
+        "de": "anderswo: el joven — wörtlich 'der Kahle'"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Cartagena de Indias",
-      "description": { "en": "The walled colonial city on the Caribbean — bougainvillea spilling over wooden balconies, and 400-year-old ramparts built to keep out pirates.", "de": "Die koloniale Festungsstadt an der Karibik — Bougainvillea quillt über Holzbalkone, und 400 Jahre alte Stadtmauern hielten einst Piraten fern." },
+      "description": {
+        "en": "Eleven kilometres of stone wall built over two centuries because Spain kept losing the town — Francis Drake held it to ransom in 1586 and pulled down part of the cathedral to make the point. Inside, the streets are still named after what was traded on them, and the wooden balconies carry bougainvillea planted by families who have been there for generations.",
+        "de": "Elf Kilometer Steinmauer, über zwei Jahrhunderte gebaut, weil Spanien die Stadt immer wieder verlor — Francis Drake hielt sie 1586 gegen Lösegeld und riss einen Teil der Kathedrale ein, um es zu unterstreichen. Drinnen heißen die Straßen noch nach dem, was auf ihnen gehandelt wurde, und über den Holzbalkonen hängt Bougainvillea von Familien, die seit Generationen dort wohnen."
+      },
       "lat": 10.4236,
       "lng": -75.551,
-      "emoji": "🏰"
+      "emoji": "🏰",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Muralla_%26_Baluarte_de_Santo_Domingo_CTG_11_2019_2149.jpg/960px-Muralla_%26_Baluarte_de_Santo_Domingo_CTG_11_2019_2149.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Muralla_%26_Baluarte_de_Santo_Domingo_CTG_11_2019_2149.jpg",
+        "author": "Mariordo (Mario Roberto Durán Ortiz)",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 768,
+        "alt": {
+          "en": "A wide stone rampart walkway above green grass, with the sea beyond",
+          "de": "Ein breiter Wehrgang aus Stein über grünem Gras, dahinter das Meer"
+        }
+      }
     },
     {
       "name": "Valle de Cocora",
-      "description": { "en": "A misty green valley dotted with wax palms up to 60 m tall — the tallest palm trees in the world and Colombia's national tree.", "de": "Ein nebelverhangenes grünes Tal voller Wachspalmen, bis zu 60 m hoch — die höchsten Palmen der Welt und Kolumbiens Nationalbaum." },
+      "description": {
+        "en": "Wax palms grow to 60 metres here, the tallest palms in the world, and they stand at 2,400 metres in open cattle pasture rather than in jungle. They were cut for Palm Sunday fronds until Colombia made the species its national tree in 1985. A single palm takes about eighty years to reach full height.",
+        "de": "Wachspalmen werden hier 60 Meter hoch, die höchsten Palmen der Welt, und sie stehen auf 2.400 Metern nicht im Dschungel, sondern auf offener Rinderweide. Man schlug sie für Palmsonntagswedel, bis Kolumbien die Art 1985 zum Nationalbaum erklärte. Eine einzelne Palme braucht rund achtzig Jahre bis zur vollen Höhe."
+      },
       "lat": 4.6381,
       "lng": -75.487,
-      "emoji": "🌴"
+      "emoji": "🌴",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Cocora_valley_2.JPG/960px-Cocora_valley_2.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cocora_valley_2.JPG",
+        "author": "Flints",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Slender wax palms on a grassy ridge against a blue sky with white clouds",
+          "de": "Schlanke Wachspalmen auf einem Grasrücken vor blauem Himmel mit weißen Wolken"
+        }
+      }
     },
     {
       "name": "Comuna 13, Medellín",
-      "description": { "en": "Once the most dangerous neighborhood in the world, now an open-air gallery of street art — ride the outdoor escalators up the hillside.", "de": "Einst das gefährlichste Viertel der Welt, heute eine Open-Air-Galerie voller Street-Art — fahr mit den Rolltreppen den Hang hinauf." },
+      "description": {
+        "en": "A hillside barrio the army stormed with helicopters in 2002, and where the city later built six outdoor escalators — 384 metres of them — so that a climb of 28 storeys takes six minutes instead of half an hour. The walls along the route are repainted constantly by crews from the neighbourhood, and the guides grew up here during the fighting.",
+        "de": "Ein Hangviertel, das die Armee 2002 mit Hubschraubern stürmte und in das die Stadt später sechs Freiluft-Rolltreppen baute — 384 Meter lang —, sodass ein Aufstieg von 28 Stockwerken sechs statt dreißig Minuten dauert. Die Wände entlang der Strecke werden von Crews aus dem Viertel ständig neu bemalt, und die Guides wuchsen während der Kämpfe hier auf."
+      },
       "lat": 6.2529,
       "lng": -75.619,
-      "emoji": "🖌️"
+      "emoji": "🖌️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Escaleras_el%C3%A9ctricas_de_la_comuna_13%2C_Medell%C3%ADn_-_03.jpg/960px-Escaleras_el%C3%A9ctricas_de_la_comuna_13%2C_Medell%C3%ADn_-_03.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Escaleras_el%C3%A9ctricas_de_la_comuna_13,_Medell%C3%ADn_-_03.jpg",
+        "author": "Juan Gómez",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 337,
+        "alt": {
+          "en": "Panorama of a hillside barrio of low houses with a white escalator structure",
+          "de": "Panorama eines Hangviertels aus niedrigen Häusern mit weißer Rolltreppenanlage"
+        }
+      }
     },
     {
       "name": "Ciudad Perdida",
-      "description": { "en": "The 'Lost City' of the Tayrona, 650 years older than Machu Picchu — reachable only by a four-day jungle trek and 1,200 stone steps.", "de": "Die 'Verlorene Stadt' der Tayrona, 650 Jahre älter als Machu Picchu — erreichbar nur über einen viertägigen Dschungel-Trek und 1.200 Steinstufen." },
+      "description": {
+        "en": "Teyuna was built by the Tayrona from around 800 CE, six centuries before Machu Picchu, and abandoned during the conquest; looters found it again in 1972. It sits 1,200 stone steps above the river at the end of a four-day walk, and the Kogi who live in the mountains around it still treat the site as theirs.",
+        "de": "Teyuna wurde ab etwa 800 n. Chr. von den Tayrona erbaut, sechs Jahrhunderte vor Machu Picchu, und während der Eroberung aufgegeben; Grabräuber fanden es 1972 wieder. Es liegt 1.200 Steinstufen über dem Fluss am Ende eines viertägigen Marsches, und die Kogi, die ringsum in den Bergen leben, betrachten den Ort bis heute als ihren."
+      },
       "lat": 11.0383,
       "lng": -73.925,
-      "emoji": "🌿"
+      "emoji": "🌿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/CIUDAD_PERDIDA_2.jpg/960px-CIUDAD_PERDIDA_2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:CIUDAD_PERDIDA_2.jpg",
+        "author": "Giancarlos1234",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1449,
+        "alt": {
+          "en": "Circular stone terraces cut into a jungle ridge, with mountains behind",
+          "de": "Runde Steinterrassen in einen Dschungelkamm geschnitten, dahinter Berge"
+        }
+      }
     },
     {
       "name": "Monserrate, Bogotá",
-      "description": { "en": "The white pilgrimage church perched at 3,152 m above Bogotá — take the cable car up and watch the endless city glitter below.", "de": "Die weiße Wallfahrtskirche thront auf 3.152 m über Bogotá — nimm die Seilbahn hinauf und schau zu, wie die endlose Stadt unter dir glitzert." },
+      "description": {
+        "en": "A church at 3,152 metres on the ridge above Bogotá, reached by funicular, cable car or a stone path that pilgrims climb on their knees in Holy Week. The figure inside is a fallen Christ carved in the 1650s, and people leave written petitions at its feet. From the terrace the city runs flat to the horizon in every direction.",
+        "de": "Eine Kirche auf 3.152 Metern am Kamm über Bogotá, erreichbar per Standseilbahn, Seilbahn oder über einen Steinweg, den Pilger in der Karwoche auf Knien hinaufsteigen. Die Figur darin ist ein gefallener Christus aus den 1650ern, und die Leute legen ihm schriftliche Bitten zu Füßen. Von der Terrasse läuft die Stadt flach bis zum Horizont."
+      },
       "lat": 4.6058,
       "lng": -74.0557,
-      "emoji": "⛰️"
+      "emoji": "⛰️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/2017_Bogot%C3%A1_Bas%C3%ADlica_del_Se%C3%B1or_Ca%C3%ADdo_de_Monserrate.jpg/960px-2017_Bogot%C3%A1_Bas%C3%ADlica_del_Se%C3%B1or_Ca%C3%ADdo_de_Monserrate.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:2017_Bogot%C3%A1_Bas%C3%ADlica_del_Se%C3%B1or_Ca%C3%ADdo_de_Monserrate.jpg",
+        "author": "Felipe Restrepo Acosta",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A white church with a bell tower on a wooded hilltop against a blue sky",
+          "de": "Eine weiße Kirche mit Glockenturm auf bewaldeter Kuppe vor blauem Himmel"
+        }
+      }
+    },
+    {
+      "name": "Caño Cristales",
+      "description": {
+        "en": "For about three months a year, roughly June to November, an aquatic plant called Macarenia clavigera turns the riverbed deep red and magenta against yellow sand, green moss and black rock. It needs exactly the right depth of clear water, so the colour arrives late in the wet season and then goes again. Nobody enters the water wearing sunscreen.",
+        "de": "Rund drei Monate im Jahr, etwa von Juni bis November, färbt eine Wasserpflanze namens Macarenia clavigera das Flussbett tiefrot und magenta, dazu gelber Sand, grünes Moos und schwarzer Fels. Sie braucht genau die richtige Tiefe klaren Wassers, deshalb kommt die Farbe spät in der Regenzeit und geht wieder. Mit Sonnencreme steigt hier niemand ins Wasser."
+      },
+      "lat": 2.2642,
+      "lng": -73.7944,
+      "emoji": "🌈",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Canno_Cristales-20180822-091233.jpg/960px-Canno_Cristales-20180822-091233.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Canno_Cristales-20180822-091233.jpg",
+        "author": "Xatly2",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 641,
+        "alt": {
+          "en": "A shallow river with the bed carpeted in magenta plants between pale rocks",
+          "de": "Ein flacher Fluss, dessen Bett zwischen hellen Felsen magentafarben bewachsen ist"
+        }
+      }
+    },
+    {
+      "name": "Catedral de Sal de Zipaquirá",
+      "description": {
+        "en": "A working church carved 180 metres down inside a salt mine, with fourteen stations of the cross cut as chambers along the descent and a cross sixteen metres high lit from behind. Miners built the first version in the 1930s as somewhere to pray before a shift; the present one opened in 1995, after the old tunnels were declared unsafe.",
+        "de": "Eine benutzte Kirche, 180 Meter tief in ein Salzbergwerk geschlagen, mit vierzehn Kreuzwegstationen als Kammern entlang des Abstiegs und einem sechzehn Meter hohen, von hinten beleuchteten Kreuz. Bergleute bauten die erste Fassung in den 1930ern, um vor der Schicht zu beten; die heutige öffnete 1995, nachdem die alten Stollen als unsicher galten."
+      },
+      "lat": 5.0188,
+      "lng": -74.0093,
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Zipaquira_Salt_Cathedral_%289287350499%29.jpg/960px-Zipaquira_Salt_Cathedral_%289287350499%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Zipaquira_Salt_Cathedral_(9287350499).jpg",
+        "author": "Jonny Green",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 1440,
+        "alt": {
+          "en": "An underground rock chamber lit blue, with a large cross glowing at the far end",
+          "de": "Eine unterirdische Felskammer in blauem Licht, am Ende ein großes leuchtendes Kreuz"
+        }
+      }
+    },
+    {
+      "name": "San Agustín",
+      "description": {
+        "en": "More than 500 carved stone figures stand in the hills of Huila — jaguars, birds and human faces with fangs — left by a culture that disappeared around 1350 and wrote nothing down, so nobody knows what language they spoke. Many of them guard burial mounds, and the tallest is over four metres. Serious excavation began only in 1913.",
+        "de": "Über 500 behauene Steinfiguren stehen in den Hügeln von Huila — Jaguare, Vögel und Menschengesichter mit Fangzähnen — hinterlassen von einer Kultur, die um 1350 verschwand und nichts aufschrieb, sodass niemand weiß, welche Sprache sie sprach. Viele bewachen Grabhügel, die größte misst über vier Meter. Ernsthaft gegraben wurde erst ab 1913."
+      },
+      "lat": 1.8886,
+      "lng": -76.2775,
+      "emoji": "🗿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Stone_god_statue_-_The_San_Agust%C3%ADn_Archaeological_Park_%284934797755%29.jpg/960px-Stone_god_statue_-_The_San_Agust%C3%ADn_Archaeological_Park_%284934797755%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Stone_god_statue_-_The_San_Agust%C3%ADn_Archaeological_Park_(4934797755).jpg",
+        "author": "Jorge Láscar from Australia",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A large carved stone figure with round eyes and bared fangs standing on a plinth",
+          "de": "Eine große behauene Steinfigur mit runden Augen und gefletschten Zähnen auf einem Sockel"
+        }
+      }
+    },
+    {
+      "name": "Cali",
+      "description": {
+        "en": "The salsa capital of the world by consensus and by count: several hundred schools, and a local style danced faster than the Cuban original, with the footwork doubled and the upper body held still. The music came ashore on records carried off ships in Buenaventura in the 1960s, and Cali kept it going after New York moved on.",
+        "de": "Die Salsa-Hauptstadt der Welt, nach Konsens wie nach Zahlen: mehrere hundert Schulen und ein lokaler Stil, schneller getanzt als das kubanische Original, mit doppelter Fußarbeit und ruhig gehaltenem Oberkörper. Die Musik kam in den 1960ern auf Schallplatten von Schiffen in Buenaventura an Land, und Cali blieb dabei, als New York weiterzog."
+      },
+      "lat": 3.4206,
+      "lng": -76.5222,
+      "emoji": "💃",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Santiago_de_Cali.jpg/960px-Santiago_de_Cali.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Santiago_de_Cali.jpg",
+        "author": "Aleko | David Alejandro Rendón ©",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "The city of Cali seen from a green hillside, towers rising out of the haze",
+          "de": "Die Stadt Cali von einem grünen Hang aus gesehen, Türme steigen aus dem Dunst"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la bandeja paisa",
+      "description": {
+        "en": "A tray, not a plate: red beans, white rice, minced beef, chorizo, black pudding, a fried egg, a slab of crackling, fried plantain, an arepa and half an avocado. It comes from the Antioquia coffee farms, where the working day started at four in the morning. Nobody finishes it.",
+        "de": "Ein Tablett, kein Teller: rote Bohnen, weißer Reis, Rinderhack, Chorizo, Blutwurst, ein Spiegelei, ein Stück Schwarte, gebratene Kochbanane, eine Arepa und eine halbe Avocado. Es stammt von den Kaffeefarmen Antioquias, wo der Arbeitstag um vier Uhr morgens begann. Niemand isst es auf."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeja_paisa%2C_plato_Colombiano.jpg/960px-Bandeja_paisa%2C_plato_Colombiano.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bandeja_paisa,_plato_Colombiano.jpg",
+        "author": "Wilfredor",
+        "license": "CC0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A tray seen from above holding beans, rice, a fried egg, chorizo and plantain",
+          "de": "Ein Tablett von oben mit Bohnen, Reis, Spiegelei, Chorizo und Kochbanane"
+        }
+      }
+    },
+    {
+      "name": "el ajiaco santafereño",
+      "description": {
+        "en": "A Bogotá soup of chicken and three kinds of potato, one of which dissolves and thickens it, flavoured with guascas — a herb that grows as a weed and tastes of nothing else. Capers, cream and half an avocado go in at the table, by the person eating, in that order.",
+        "de": "Eine Bogotaner Suppe aus Huhn und drei Kartoffelsorten, von denen eine zerfällt und sie bindet, gewürzt mit Guascas — einem Kraut, das als Unkraut wächst und nach nichts anderem schmeckt. Kapern, Sahne und eine halbe Avocado kommen am Tisch dazu, vom Essenden, in dieser Reihenfolge."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ajiaco_in_Bogot%C3%A1.jpg/960px-Ajiaco_in_Bogot%C3%A1.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ajiaco_in_Bogot%C3%A1.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 686,
+        "alt": {
+          "en": "A clay bowl of pale soup with corn, potato slices, capers and avocado",
+          "de": "Eine Tonschale mit heller Suppe, Mais, Kartoffelscheiben, Kapern und Avocado"
+        }
+      }
+    },
+    {
+      "name": "la arepa",
+      "description": {
+        "en": "A disc of ground maize cooked on a griddle, eaten at breakfast with butter and salty cheese, or split open and stuffed. Colombia and Venezuela both claim it and each makes it differently: the Colombian one is usually thinner and plainer, and comes alongside the meal rather than as the meal.",
+        "de": "Eine Scheibe aus gemahlenem Mais, auf der Platte gebacken, zum Frühstück mit Butter und salzigem Käse gegessen oder aufgeschnitten und gefüllt. Kolumbien und Venezuela beanspruchen sie beide und machen sie unterschiedlich: die kolumbianische ist meist dünner und schlichter und Beilage statt Hauptsache."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Arepas_con_queso_y_chorizo_01072011.jpg/960px-Arepas_con_queso_y_chorizo_01072011.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Arepas_con_queso_y_chorizo_01072011.jpg",
+        "author": "Dtarazona",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 539,
+        "alt": {
+          "en": "A plate with a pale grilled arepa, white cheese and two browned chorizos",
+          "de": "Ein Teller mit heller gegrillter Arepa, weißem Käse und zwei gebräunten Chorizos"
+        }
+      }
+    },
+    {
+      "name": "la lechona tolimense",
+      "description": {
+        "en": "A whole pig boned out, filled with its own meat, yellow peas, rice and onion, sewn shut and baked in a clay oven for ten hours until the skin turns glassy. In Tolima it is sold by the portion at roadside stands, with a hard arepa and next to no cutlery.",
+        "de": "Ein ganzes Schwein, entbeint, gefüllt mit dem eigenen Fleisch, gelben Erbsen, Reis und Zwiebel, zugenäht und zehn Stunden im Lehmofen gebacken, bis die Haut glasig wird. In Tolima verkauft man es portionsweise am Straßenrand, dazu eine harte Arepa und so gut wie kein Besteck."
+      }
+    },
+    {
+      "name": "el tinto",
+      "description": {
+        "en": "Small, black, sweet, and carried through the streets in a thermos by vendors who sell it by the plastic cup. Colombia exported nearly all of its good beans for decades, so the tinto habit was built on what was left behind — and that has only recently begun to change.",
+        "de": "Klein, schwarz, süß und von Verkäufern in Thermoskannen durch die Straßen getragen, becherweise verkauft. Kolumbien exportierte jahrzehntelang fast alle guten Bohnen, sodass die Tinto-Gewohnheit auf dem beruhte, was übrig blieb — das ändert sich erst seit Kurzem."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Carnaval de Barranquilla",
+      "when": {
+        "en": "the four days before Ash Wednesday",
+        "de": "die vier Tage vor Aschermittwoch"
+      },
+      "description": {
+        "en": "The character everyone dresses as is the marimonda: a mask with a trunk and enormous ears, invented by a man who could not afford a costume and made one to mock the rich. The parade runs four days, and the last of them closes with the ceremonial burial of a papier-mâché man called Joselito.",
+        "de": "Die Figur, als die sich alle verkleiden, ist die Marimonda: eine Maske mit Rüssel und riesigen Ohren, erfunden von einem Mann, der sich kein Kostüm leisten konnte und damit die Reichen verspottete. Der Umzug läuft vier Tage, und der letzte endet mit dem feierlichen Begräbnis eines Pappmaché-Manns namens Joselito."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Marimonda_-_Carnaval_de_Barranquilla_2012.jpg/960px-Marimonda_-_Carnaval_de_Barranquilla_2012.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Marimonda_-_Carnaval_de_Barranquilla_2012.jpg",
+        "author": "Michele Mariani",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A blue carnival mask with a hanging trunk and large red flower-patterned ears",
+          "de": "Eine blaue Karnevalsmaske mit hängendem Rüssel und großen rot geblümten Ohren"
+        }
+      }
+    },
+    {
+      "name": "Feria de Cali",
+      "when": {
+        "en": "25–30 December",
+        "de": "25.–30. Dezember"
+      },
+      "description": {
+        "en": "Cali spends the last week of the year on salsa: a parade of horses through the city, open-air orchestras on the Autopista, and a competition in which school troupes dance sequences at a speed that is hard to follow from a seat. The city's salsa schools take students from the age of four.",
+        "de": "Cali verbringt die letzte Woche des Jahres mit Salsa: ein Umzug von Reitern durch die Stadt, Freiluft-Orchester an der Autopista und ein Wettbewerb, bei dem Schul-Truppen Sequenzen in einem Tempo tanzen, dem vom Sitz aus kaum zu folgen ist. Die Salsaschulen der Stadt nehmen Schüler ab vier Jahren."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El usted",
+      "text": {
+        "en": "Colombians use usted with strangers, with close friends and with their own children — sometimes with the dog too. Tú exists, but it sounds either flirtatious or foreign, depending on who is listening.",
+        "de": "Kolumbianer benutzen usted gegenüber Fremden, engen Freunden und den eigenen Kindern — manchmal auch dem Hund. Tú gibt es, klingt aber je nach Zuhörer entweder anzüglich oder ausländisch."
+      }
+    },
+    {
+      "title": "¡A la orden!",
+      "text": {
+        "en": "Shopkeepers, waiters and taxi drivers say this constantly. It means 'can I help you' on the way in and 'you're welcome' on the way out, and a nod back is a complete answer.",
+        "de": "Ladenbesitzer, Kellner und Taxifahrer sagen das ständig. Beim Hereinkommen heißt es 'kann ich helfen', beim Gehen 'gern geschehen' — und ein Nicken zurück ist eine vollständige Antwort."
+      }
+    },
+    {
+      "title": "No dar papaya",
+      "text": {
+        "en": "The national rule of thumb: do not make yourself an easy target. Phone out of sight on the street, no visible jewellery — and if something is taken, the local reading is that you handed it over.",
+        "de": "Die nationale Faustregel: Mach dich nicht zur leichten Beute. Handy auf der Straße weg, kein sichtbarer Schmuck — und wird dir etwas genommen, gilt vor Ort, du hättest es hergegeben."
+      }
+    },
+    {
+      "title": "El servicio",
+      "text": {
+        "en": "Restaurants ask '¿desea incluir el servicio?' — a voluntary ten per cent added to the bill. Saying no is legal and normal, saying nothing means yes, so it is worth listening for the question.",
+        "de": "Im Restaurant fragt man '¿desea incluir el servicio?' — freiwillige zehn Prozent auf die Rechnung. Nein zu sagen ist legal und normal, nichts zu sagen heißt ja, also lohnt es, auf die Frage zu achten."
+      }
+    },
+    {
+      "title": "Un beso",
+      "text": {
+        "en": "One kiss on the right cheek between women and between a woman and a man, including at a first introduction. Men shake hands. In Bogotá the greeting is cooler and often just a handshake.",
+        "de": "Ein Kuss auf die rechte Wange zwischen Frauen und zwischen Frau und Mann, auch beim ersten Vorstellen. Männer geben die Hand. In Bogotá fällt die Begrüßung kühler aus, oft ist es nur ein Händedruck."
+      }
     }
   ]
 }

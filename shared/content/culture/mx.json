@@ -1,13 +1,32 @@
 {
   "id": "mx",
   "flag": "🇲🇽",
-  "name": { "en": "Mexico", "de": "Mexiko" },
+  "name": {
+    "en": "Mexico",
+    "de": "Mexiko"
+  },
   "nameEs": "México",
   "capital": "Ciudad de México",
   "population": "130 M",
+  "tagline": {
+    "en": "The country that gave the world its idea of Latin America — and this app its name.",
+    "de": "Das Land, das der Welt ihr Bild von Lateinamerika gab — und dieser App ihren Namen."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_6.jpg/1920px-Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_6.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Plaza_de_la_Constituci%C3%B3n_-_Z%C3%B3calo_de_la_Ciudad_de_M%C3%A9xico_-_6.jpg",
+    "author": "ProtoplasmaKid",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1080,
+    "alt": {
+      "en": "Aerial view of the Zócalo, a huge empty paved square ringed by colonial buildings, flagpole in the centre",
+      "de": "Luftaufnahme des Zócalo, ein riesiger leerer Pflasterplatz, umringt von Kolonialbauten, in der Mitte der Fahnenmast"
+    }
+  },
   "intro": {
-    "en": "Mexico is the largest Spanish-speaking country in the world — and the home of the slang this app is named after. Mexican Spanish is playful, musical and full of double meanings: an entire conversation can be built around the word 'chingar'. From mariachi and street tacos to Frida Kahlo and Día de Muertos, Mexican culture has shaped how the whole world imagines Latin America.",
-    "de": "Mexiko ist das größte spanischsprachige Land der Welt — und die Heimat des Slangs, nach dem diese App benannt ist. Mexikanisches Spanisch ist verspielt, musikalisch und voller Doppeldeutigkeiten: Um das Wort 'chingar' allein kann man ganze Gespräche aufbauen. Von Mariachi und Street-Tacos bis zu Frida Kahlo und dem Día de Muertos hat Mexikos Kultur geprägt, wie die ganze Welt sich Lateinamerika vorstellt."
+    "en": "Mexico is the largest Spanish-speaking country in the world — 130 million speakers, more than Spain and Argentina combined — and the home of the slang this app is named after. Mexican Spanish is playful, musical and full of double meanings: an entire conversation can be built around the single verb 'chingar'. It also carries more Nahuatl than any other variety, which is why the world says tomato, chocolate and avocado. From mariachi and street tacos to Frida Kahlo and Día de Muertos, Mexican culture has shaped how the whole planet pictures Latin America.",
+    "de": "Mexiko ist das größte spanischsprachige Land der Welt — 130 Millionen Sprecher, mehr als Spanien und Argentinien zusammen — und die Heimat des Slangs, nach dem diese App benannt ist. Mexikanisches Spanisch ist verspielt, musikalisch und voller Doppeldeutigkeiten: Um das eine Verb 'chingar' lassen sich ganze Gespräche aufbauen. Es trägt außerdem mehr Nahuatl in sich als jede andere Variante — deshalb sagt die Welt Tomate, Schokolade und Avocado. Von Mariachi und Street-Tacos bis zu Frida Kahlo und dem Día de Muertos hat Mexikos Kultur geprägt, wie sich der ganze Planet Lateinamerika vorstellt."
   },
   "funFact": {
     "en": "Mexico City is sinking up to 50 cm per year — it was built on a drained lake where the Aztec capital Tenochtitlán once stood.",
@@ -16,90 +35,593 @@
   "slang": [
     {
       "term": "¿Qué onda?",
-      "meaning": { "en": "What's up? — the universal Mexican greeting", "de": "Was geht? — die universelle mexikanische Begrüßung" },
+      "meaning": {
+        "en": "What's up? — the universal Mexican greeting",
+        "de": "Was geht? — die universelle mexikanische Begrüßung"
+      },
       "example": "¿Qué onda, güey? ¿Vamos por unos tacos?"
     },
     {
       "term": "¡No manches!",
-      "meaning": { "en": "No way! / You're kidding! (polite version of 'no mames')", "de": "Echt jetzt?! / Das gibt's nicht! (höfliche Version von 'no mames')" },
+      "meaning": {
+        "en": "No way! / You're kidding! (polite version of 'no mames')",
+        "de": "Echt jetzt?! / Das gibt's nicht! (höfliche Version von 'no mames')"
+      },
       "example": "¡No manches! ¿Ganaste la lotería?"
     },
     {
       "term": "güey",
-      "meaning": { "en": "dude, mate — used constantly between friends", "de": "Alter, Kumpel — wird ständig unter Freunden benutzt" },
+      "meaning": {
+        "en": "dude, mate — used constantly between friends",
+        "de": "Alter, Kumpel — wird ständig unter Freunden benutzt"
+      },
       "example": "Oye güey, ¿ya viste eso?"
     },
     {
       "term": "¡Órale!",
-      "meaning": { "en": "Wow! / Alright! / Let's go! — depends entirely on tone", "de": "Wow! / Na gut! / Los geht's! — hängt ganz vom Ton ab" },
+      "meaning": {
+        "en": "Wow! / Alright! / Let's go! — depends entirely on tone",
+        "de": "Wow! / Na gut! / Los geht's! — hängt ganz vom Ton ab"
+      },
       "example": "¡Órale! No sabía que hablabas español."
     },
     {
       "term": "chido",
-      "meaning": { "en": "cool, great", "de": "cool, super" },
+      "meaning": {
+        "en": "cool, great — the all-purpose Mexican compliment",
+        "de": "cool, super — das Allzweck-Kompliment in Mexiko"
+      },
       "example": "Está bien chido tu coche."
     },
     {
       "term": "¡Aguas!",
-      "meaning": { "en": "Watch out! (literally 'waters!' — from when people emptied buckets out of windows)", "de": "Vorsicht! (wörtlich 'Wasser!' — daher, dass früher Eimer aus dem Fenster gekippt wurden)" },
+      "meaning": {
+        "en": "Watch out! (literally 'waters!' — from when people emptied buckets out of windows)",
+        "de": "Vorsicht! (wörtlich 'Wasser!' — daher, dass früher Eimer aus dem Fenster gekippt wurden)"
+      },
       "example": "¡Aguas con el escalón!"
     },
     {
       "term": "la neta",
-      "meaning": { "en": "the truth / honestly — 'la neta' is sacred in Mexican conversation", "de": "die Wahrheit / ehrlich gesagt — 'la neta' ist heilig im mexikanischen Gespräch" },
+      "meaning": {
+        "en": "the truth / honestly — 'la neta' is sacred in Mexican conversation",
+        "de": "die Wahrheit / ehrlich gesagt — 'la neta' ist heilig im mexikanischen Gespräch"
+      },
       "example": "La neta, ese restaurante no me gustó."
     },
     {
       "term": "¡chingón!",
-      "meaning": { "en": "awesome, badass (careful: the root word is vulgar, but 'chingón' is a compliment)", "de": "großartig, der Hammer (Vorsicht: der Wortstamm ist vulgär, aber 'chingón' ist ein Kompliment)" },
+      "meaning": {
+        "en": "awesome, badass (careful: the root word is vulgar, but 'chingón' is a compliment)",
+        "de": "großartig, der Hammer (Vorsicht: der Wortstamm ist vulgär, aber 'chingón' ist ein Kompliment)"
+      },
       "example": "Tu proyecto quedó bien chingón."
+    },
+    {
+      "term": "¿Mande?",
+      "meaning": {
+        "en": "Sorry, what? — Mexico's own 'come again', literally 'command me'",
+        "de": "Wie bitte? — Mexikos eigenes 'nochmal', wörtlich 'befiehl mir'"
+      },
+      "example": "¿Mande? No te escuché bien."
+    },
+    {
+      "term": "fresa",
+      "meaning": {
+        "en": "posh, preppy (literally 'strawberry') — said of people who over-enunciate",
+        "de": "versnobt, Schickimicki (wörtlich 'Erdbeere') — für Leute, die betont vornehm reden"
+      },
+      "example": "Habla bien fresa, ¿no?"
     }
   ],
   "vocabulary": [
-    { "es": "el camión", "translation": { "en": "bus", "de": "Bus" }, "note": { "en": "elsewhere: el autobús — in Mexico 'camión' means city bus, not truck", "de": "anderswo: el autobús — in Mexiko ist 'camión' der Stadtbus, nicht der Lkw" } },
-    { "es": "la torta", "translation": { "en": "Mexican sandwich on a bolillo roll", "de": "mexikanisches Sandwich im Bolillo-Brötchen" }, "note": { "en": "in Spain 'torta' is a cake — order carefully", "de": "in Spanien ist 'torta' ein Kuchen — Vorsicht beim Bestellen" } },
-    { "es": "el chamaco", "translation": { "en": "kid, child", "de": "Kind, Gör" }, "note": { "en": "elsewhere: el niño", "de": "anderswo: el niño" } },
-    { "es": "la chamba", "translation": { "en": "work, job", "de": "Arbeit, Job" }, "note": { "en": "elsewhere: el trabajo", "de": "anderswo: el trabajo" } },
-    { "es": "ahorita", "translation": { "en": "right now — or in five minutes, or never", "de": "sofort — oder in fünf Minuten, oder nie" }, "note": { "en": "famously elastic Mexican time", "de": "berühmt-dehnbare mexikanische Zeitangabe" } },
-    { "es": "el elote", "translation": { "en": "corn on the cob (street food staple)", "de": "Maiskolben (Streetfood-Klassiker)" }, "note": { "en": "from Nahuatl 'elotl'", "de": "aus dem Nahuatl 'elotl'" } },
-    { "es": "la alberca", "translation": { "en": "swimming pool", "de": "Schwimmbad, Pool" }, "note": { "en": "elsewhere: la piscina", "de": "anderswo: la piscina" } },
-    { "es": "padrísimo", "translation": { "en": "fantastic, super cool", "de": "fantastisch, mega cool" }, "note": { "en": "from 'padre' (cool) — yes, 'father' means cool here", "de": "von 'padre' (cool) — ja, 'Vater' heißt hier cool" } }
+    {
+      "es": "el camión",
+      "translation": {
+        "en": "bus",
+        "de": "Bus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús — in Mexico 'camión' means city bus, not truck",
+        "de": "anderswo: el autobús — in Mexiko ist 'camión' der Stadtbus, nicht der Lkw"
+      }
+    },
+    {
+      "es": "la torta",
+      "translation": {
+        "en": "Mexican sandwich on a bolillo roll",
+        "de": "mexikanisches Sandwich im Bolillo-Brötchen"
+      },
+      "note": {
+        "en": "in Spain 'torta' is a cake — order carefully",
+        "de": "in Spanien ist 'torta' ein Kuchen — Vorsicht beim Bestellen"
+      }
+    },
+    {
+      "es": "el chamaco",
+      "translation": {
+        "en": "kid, child",
+        "de": "Kind, Gör"
+      },
+      "note": {
+        "en": "elsewhere: el niño",
+        "de": "anderswo: el niño"
+      }
+    },
+    {
+      "es": "la chamba",
+      "translation": {
+        "en": "work, job",
+        "de": "Arbeit, Job"
+      },
+      "note": {
+        "en": "elsewhere: el trabajo",
+        "de": "anderswo: el trabajo"
+      }
+    },
+    {
+      "es": "ahorita",
+      "translation": {
+        "en": "right now — or in five minutes, or never",
+        "de": "sofort — oder in fünf Minuten, oder nie"
+      },
+      "note": {
+        "en": "famously elastic Mexican time",
+        "de": "berühmt-dehnbare mexikanische Zeitangabe"
+      }
+    },
+    {
+      "es": "el elote",
+      "translation": {
+        "en": "corn on the cob (street food staple)",
+        "de": "Maiskolben (Streetfood-Klassiker)"
+      },
+      "note": {
+        "en": "from Nahuatl 'elotl'",
+        "de": "aus dem Nahuatl 'elotl'"
+      }
+    },
+    {
+      "es": "la alberca",
+      "translation": {
+        "en": "swimming pool",
+        "de": "Schwimmbad, Pool"
+      },
+      "note": {
+        "en": "elsewhere: la piscina",
+        "de": "anderswo: la piscina"
+      }
+    },
+    {
+      "es": "padrísimo",
+      "translation": {
+        "en": "fantastic, super cool",
+        "de": "fantastisch, mega cool"
+      },
+      "note": {
+        "en": "from 'padre' (cool) — yes, 'father' means cool here",
+        "de": "von 'padre' (cool) — ja, 'Vater' heißt hier cool"
+      }
+    },
+    {
+      "es": "la banqueta",
+      "translation": {
+        "en": "pavement, sidewalk",
+        "de": "Bürgersteig"
+      },
+      "note": {
+        "en": "elsewhere: la acera — 'banqueta' is a stool almost everywhere else",
+        "de": "anderswo: la acera — sonst ist 'banqueta' fast überall ein Hocker"
+      }
+    },
+    {
+      "es": "la lana",
+      "translation": {
+        "en": "money, cash (literally 'wool')",
+        "de": "Geld, Kohle (wörtlich 'Wolle')"
+      },
+      "note": {
+        "en": "elsewhere: el dinero / la plata",
+        "de": "anderswo: el dinero / la plata"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Teotihuacán",
-      "description": { "en": "The 'City of the Gods' — climb the Pyramid of the Sun, one of the largest pyramids on Earth, built around 100 CE.", "de": "Die 'Stadt der Götter' — besteige die Sonnenpyramide, eine der größten Pyramiden der Erde, erbaut um 100 n. Chr." },
+      "description": {
+        "en": "Nobody knows what its builders called themselves — 'Teotihuacán', city of the gods, is the name the Aztecs gave the ruins they found abandoned centuries later. At its height around 400 CE it held 125,000 people, making it one of the largest cities on Earth. The Avenue of the Dead runs two kilometres between the pyramids of the Sun and the Moon.",
+        "de": "Niemand weiß, wie sich die Erbauer selbst nannten — 'Teotihuacán', Stadt der Götter, ist der Name, den die Azteken den Ruinen gaben, die sie Jahrhunderte später verlassen vorfanden. Auf ihrem Höhepunkt um 400 n. Chr. lebten hier 125.000 Menschen, eine der größten Städte der Erde. Die Straße der Toten läuft zwei Kilometer zwischen Sonnen- und Mondpyramide."
+      },
       "lat": 19.6925,
       "lng": -98.8438,
-      "emoji": "🛕"
-    },
-    {
-      "name": "Chichén Itzá",
-      "description": { "en": "Mayan wonder of the world in Yucatán — at the equinox, a serpent of shadow slithers down El Castillo.", "de": "Maya-Weltwunder in Yucatán — zur Tagundnachtgleiche gleitet eine Schattenschlange die Stufen von El Castillo hinab." },
-      "lat": 20.6843,
-      "lng": -88.5678,
-      "emoji": "🐍"
+      "emoji": "🛕",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Teotihuacan%2C_Pyramid_of_the_Sun_and_Avenue_of_the_Dead_%2820686678965%29.jpg/960px-Teotihuacan%2C_Pyramid_of_the_Sun_and_Avenue_of_the_Dead_%2820686678965%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Teotihuacan,_Pyramid_of_the_Sun_and_Avenue_of_the_Dead_(20686678965).jpg",
+        "author": "Arian Zwegers from Brussels, Belgium",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The Avenue of the Dead running straight past low platforms toward the Pyramid of the Sun",
+          "de": "Die Straße der Toten führt schnurgerade an niedrigen Plattformen vorbei zur Sonnenpyramide"
+        }
+      }
     },
     {
       "name": "Centro Histórico, CDMX",
-      "description": { "en": "The beating heart of Mexico City: the Zócalo, the Metropolitan Cathedral and Diego Rivera's murals — all built on Aztec ruins.", "de": "Das schlagende Herz von Mexiko-Stadt: der Zócalo, die Kathedrale und Diego Riveras Wandbilder — alles auf Azteken-Ruinen erbaut." },
+      "description": {
+        "en": "The Zócalo is 57,600 square metres of bare paving with a flag the size of a tennis court over the middle. Excavation on the cathedral's north side cut straight into the Templo Mayor of Tenochtitlán — Aztec stone sitting a metre under colonial stone. Eight blocks west, the Palacio de Bellas Artes keeps sinking into the old lakebed under the weight of its own marble.",
+        "de": "Der Zócalo ist ein kahles Pflasterfeld von 57.600 Quadratmetern, darüber eine Fahne so groß wie ein Tennisplatz. Grabungen an der Nordseite der Kathedrale schnitten direkt in den Templo Mayor von Tenochtitlán — Aztekenstein einen Meter unter Kolonialstein. Acht Blocks westlich sinkt der Palacio de Bellas Artes unter dem Gewicht seines eigenen Marmors weiter in den alten Seegrund."
+      },
       "lat": 19.4326,
       "lng": -99.1332,
-      "emoji": "🏛️"
+      "emoji": "🏛️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Bellas_Artes_01.jpg/960px-Bellas_Artes_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bellas_Artes_01.jpg",
+        "author": "Xavier Quetzalcoatl Contreras Castillo",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The Palacio de Bellas Artes, a white marble theatre with an orange-tiled dome, under a blue sky",
+          "de": "Der Palacio de Bellas Artes, ein weißes Marmortheater mit orangefarbener Ziegelkuppel, unter blauem Himmel"
+        }
+      }
     },
     {
-      "name": "Oaxaca de Juárez",
-      "description": { "en": "Mexico's culinary capital — mole, mezcal and the most spectacular Día de Muertos celebrations in the country.", "de": "Mexikos kulinarische Hauptstadt — Mole, Mezcal und die spektakulärsten Día-de-Muertos-Feiern des Landes." },
-      "lat": 17.0732,
-      "lng": -96.7266,
-      "emoji": "💀"
+      "name": "Chichén Itzá",
+      "description": {
+        "en": "El Castillo has 91 steps on each of its four sides; add the top platform and you get 365. Twice a year, at the equinoxes, the afternoon light throws a row of triangular shadows down the northern balustrade that resolves into a serpent sliding toward the carved stone head at the bottom. The ball court beside it carries an echo you can hear from one end to the other.",
+        "de": "El Castillo hat auf jeder seiner vier Seiten 91 Stufen; mit der Plattform oben sind es 365. Zweimal im Jahr, zur Tagundnachtgleiche, wirft das Nachmittagslicht eine Reihe dreieckiger Schatten auf die Nordbalustrade, die sich zu einer Schlange fügt und auf den steinernen Schlangenkopf am Fuß zugleitet. Der Ballspielplatz daneben trägt ein Echo, das man von einem Ende zum anderen hört."
+      },
+      "lat": 20.6843,
+      "lng": -88.5678,
+      "emoji": "🐍",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Chichen_Itza%2C_El_Castillo_%2814180679857%29.jpg/960px-Chichen_Itza%2C_El_Castillo_%2814180679857%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chichen_Itza,_El_Castillo_(14180679857).jpg",
+        "author": "Arian Zwegers from Brussels, Belgium",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The stepped pyramid of El Castillo on mown grass under a cloudy sky",
+          "de": "Die Stufenpyramide El Castillo auf gemähtem Rasen unter bewölktem Himmel"
+        }
+      }
     },
     {
       "name": "Tulum",
-      "description": { "en": "Mayan cliff-top ruins over turquoise Caribbean water — the only archaeological site with its own beach.", "de": "Maya-Ruinen auf Klippen über türkisem Karibikwasser — die einzige Ausgrabungsstätte mit eigenem Strand." },
+      "description": {
+        "en": "The only walled Maya city built on the coast, and the last one still lived in when the Spanish sailed past in 1518. El Castillo stands on a twelve-metre limestone cliff, and a small window in it lines up with a gap in the offshore reef that canoes used as a night entrance. Iguanas now outnumber the guards by a wide margin.",
+        "de": "Die einzige ummauerte Maya-Stadt an der Küste — und die letzte, die noch bewohnt war, als 1518 die Spanier vorbeisegelten. El Castillo steht auf einer zwölf Meter hohen Kalksteinklippe, und ein kleines Fenster darin fluchtet mit einer Lücke im vorgelagerten Riff, die Kanus nachts als Einfahrt nutzten. Leguane sind hier heute deutlich in der Überzahl gegenüber den Wächtern."
+      },
       "lat": 20.2114,
       "lng": -87.4654,
-      "emoji": "🏖️"
+      "emoji": "🏖️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tulum_2.jpg/960px-Tulum_2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tulum_2.jpg",
+        "author": "Popo le Chien",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Grey stone Maya buildings on a green headland above the sea, tall white clouds behind",
+          "de": "Graue Maya-Steinbauten auf einer grünen Landzunge über dem Meer, dahinter hohe weiße Wolken"
+        }
+      }
+    },
+    {
+      "name": "Oaxaca de Juárez",
+      "description": {
+        "en": "The Zapotec-Mixtec capital of Mexican cooking: seven distinct moles, one of them black with burnt chilli seeds and chocolate, and mezcal distilled in villages an hour out of town. The Santo Domingo church interior is gold leaf floor to vault. At the end of October the cemeteries fill with marigolds and brass bands and nobody sleeps for three days.",
+        "de": "Die zapotekisch-mixtekische Hauptstadt der mexikanischen Küche: sieben verschiedene Moles, einer davon schwarz von verbrannten Chilikernen und Schokolade, dazu Mezcal, gebrannt in Dörfern eine Stunde außerhalb. Das Innere der Kirche Santo Domingo ist vom Boden bis ins Gewölbe blattvergoldet. Ende Oktober füllen sich die Friedhöfe mit Ringelblumen und Blaskapellen, und drei Tage lang schläft niemand."
+      },
+      "lat": 17.0732,
+      "lng": -96.7266,
+      "emoji": "💀",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oaxaca_de_Ju%C3%A1rez%2C_29.jpg/960px-Oaxaca_de_Ju%C3%A1rez%2C_29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Oaxaca_de_Ju%C3%A1rez,_29.jpg",
+        "author": "LBM1948",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The stone facade of Santo Domingo church in Oaxaca above a wide flight of steps",
+          "de": "Die Steinfassade der Kirche Santo Domingo in Oaxaca über einer breiten Freitreppe"
+        }
+      }
+    },
+    {
+      "name": "Hierve el Agua",
+      "description": {
+        "en": "Two mineral springs on a ridge in the Sierra Mixteca spill over the edge and have left a fifty-metre curtain of white calcium carbonate down the cliff — a waterfall that has not moved in thousands of years. The water collects at the top in shallow basins at about 22 °C. Zapotec farmers cut irrigation channels from the same springs 2,500 years ago.",
+        "de": "Zwei Mineralquellen auf einem Kamm der Sierra Mixteca laufen über die Kante und haben einen fünfzig Meter langen Vorhang aus weißem Kalk an der Felswand hinterlassen — ein Wasserfall, der sich seit Jahrtausenden nicht bewegt. Oben sammelt sich das Wasser in flachen Becken bei etwa 22 °C. Zapotekische Bauern schlugen vor 2.500 Jahren Bewässerungskanäle aus denselben Quellen."
+      },
+      "lat": 16.8658,
+      "lng": -96.2758,
+      "emoji": "💧",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Cascada_petrificada_de_Hierve_el_Agua_en_Oaxaca.jpg/960px-Cascada_petrificada_de_Hierve_el_Agua_en_Oaxaca.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cascada_petrificada_de_Hierve_el_Agua_en_Oaxaca.jpg",
+        "author": "Holamanueldiaz2",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A cliff of pale mineral columns formed by dripping spring water, seen from below",
+          "de": "Eine Wand aus hellen Mineralsäulen, geformt von tropfendem Quellwasser, von unten gesehen"
+        }
+      }
+    },
+    {
+      "name": "Guanajuato",
+      "description": {
+        "en": "A silver town wedged into a ravine, with its traffic routed through the old flood tunnels underneath — cars vanish into a hillside and surface three streets away. The Callejón del Beso narrows to 68 centimetres, close enough to kiss across from opposite balconies. The municipal museum shows more than fifty naturally mummified bodies, dug up when families stopped paying the grave tax.",
+        "de": "Eine Silberstadt, in eine Schlucht gequetscht, deren Verkehr durch die alten Hochwassertunnel darunter läuft — Autos verschwinden im Hang und tauchen drei Straßen weiter wieder auf. Der Callejón del Beso verengt sich auf 68 Zentimeter, nah genug für einen Kuss von Balkon zu Balkon. Das Stadtmuseum zeigt über fünfzig natürlich mumifizierte Leichen, ausgegraben, als Familien die Grabsteuer nicht mehr zahlten."
+      },
+      "lat": 21.019,
+      "lng": -101.2574,
+      "emoji": "🎭",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/View_of_guanajuato_city.jpg/960px-View_of_guanajuato_city.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_guanajuato_city.jpg",
+        "author": "Asenetp",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Coloured houses covering hillsides above the domes and red roofs of Guanajuato at sunset",
+          "de": "Bunte Häuser überziehen die Hänge über den Kuppeln und roten Dächern von Guanajuato bei Sonnenuntergang"
+        }
+      }
+    },
+    {
+      "name": "Isla de las Muñecas",
+      "description": {
+        "en": "A chinampa island in the canals of Xochimilco, hung with hundreds of weathered dolls. The caretaker, Julián Santana, started nailing them to the trees in the 1950s after a girl drowned nearby; he kept going for fifty years. He drowned in the same canal in 2001. The island is reachable only by trajinera, about two hours from the docks.",
+        "de": "Eine Chinampa-Insel in den Kanälen von Xochimilco, behängt mit Hunderten verwitterter Puppen. Der Hüter Julián Santana begann in den 1950ern damit, sie an die Bäume zu nageln, nachdem in der Nähe ein Mädchen ertrunken war — fünfzig Jahre lang. 2001 ertrank er im selben Kanal. Erreichbar ist die Insel nur per Trajinera, etwa zwei Stunden ab den Anlegern."
+      },
+      "lat": 19.2729,
+      "lng": -99.0881,
+      "emoji": "🪆",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Xochimilco_Dolls%27_Island.jpg/960px-Xochimilco_Dolls%27_Island.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Xochimilco_Dolls%27_Island.jpg",
+        "author": "Esparta Palma",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Two weathered dolls with darkened faces hanging from a tree branch among green leaves",
+          "de": "Zwei verwitterte Puppen mit nachgedunkelten Gesichtern hängen zwischen grünen Blättern an einem Ast"
+        }
+      }
+    },
+    {
+      "name": "Barrancas del Cobre",
+      "description": {
+        "en": "Six canyons in the Sierra Tarahumara, together four times the area of the Grand Canyon and in places 400 metres deeper. The Chepe railway crosses them on 37 bridges and through 86 tunnels, dropping from 2,400 metres to sea level in a single day. The Rarámuri who farm the canyon walls run 100 kilometres at a stretch in sandals cut from tyre rubber.",
+        "de": "Sechs Schluchten in der Sierra Tarahumara, zusammen viermal so groß wie der Grand Canyon und stellenweise 400 Meter tiefer. Die Chepe-Bahn quert sie über 37 Brücken und durch 86 Tunnel und fällt an einem einzigen Tag von 2.400 Metern auf Meereshöhe. Die Rarámuri, die an den Schluchtwänden Felder haben, laufen 100 Kilometer am Stück in Sandalen aus Reifengummi."
+      },
+      "lat": 27.5161,
+      "lng": -107.7658,
+      "emoji": "🚂",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Barranca_del_cobre_2.jpg/960px-Barranca_del_cobre_2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Barranca_del_cobre_2.jpg",
+        "author": "No machine-readable author provided. JensUhlenbrock~commonswiki assumed (based o",
+        "license": "Public domain",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Pine-covered canyon walls dropping away in layers into haze in the Sierra Tarahumara",
+          "de": "Kiefernbewachsene Schluchtwände fallen in Schichten in den Dunst der Sierra Tarahumara ab"
+        }
+      }
+    },
+    {
+      "name": "Palenque",
+      "description": {
+        "en": "Maya ruins standing in Chiapas rainforest, of which maybe a tenth is cleared — the rest lies under root and soil. Under the Temple of the Inscriptions, Alberto Ruz spent four years clearing a hidden stairway and in 1952 reached the sarcophagus of K'inich Janaab' Pakal, buried under a mask of jade mosaic. The noise at dawn comes from howler monkeys.",
+        "de": "Maya-Ruinen im Regenwald von Chiapas, von denen vielleicht ein Zehntel freigelegt ist — der Rest liegt unter Wurzeln und Erde. Unter dem Inschriftentempel räumte Alberto Ruz vier Jahre lang eine verborgene Treppe frei und erreichte 1952 den Sarkophag von K'inich Janaab' Pakal, bestattet unter einer Maske aus Jademosaik. Der Lärm im Morgengrauen kommt von Brüllaffen."
+      },
+      "lat": 17.4842,
+      "lng": -92.0464,
+      "emoji": "🌿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Temple_of_the_Inscriptions%2C_view_from_The_Palace_-_Palenque_Maya_Site%2C_Feb_2020.jpg/960px-Temple_of_the_Inscriptions%2C_view_from_The_Palace_-_Palenque_Maya_Site%2C_Feb_2020.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Temple_of_the_Inscriptions,_view_from_The_Palace_-_Palenque_Maya_Site,_Feb_2020.jpg",
+        "author": "Bernard DUPONT",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 607,
+        "alt": {
+          "en": "The Temple of the Inscriptions, a stepped stone pyramid with a temple on top, backed by forest",
+          "de": "Der Inschriftentempel, eine steinerne Stufenpyramide mit Tempel obenauf, dahinter Wald"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el mole negro",
+      "description": {
+        "en": "Oaxaca's darkest mole: chilhuacle chillies burnt almost to charcoal, plus sesame, plantain, spices and a little chocolate, ground down over hours into a sauce the colour of wet earth. It tastes smoky and barely sweet, never like chocolate. Served over turkey at weddings and funerals both.",
+        "de": "Oaxacas dunkelster Mole: Chilhuacle-Chilis, fast zu Kohle geröstet, dazu Sesam, Kochbanane, Gewürze und etwas Schokolade, über Stunden zu einer Sauce von der Farbe nasser Erde vermahlen. Er schmeckt rauchig und kaum süß, nie nach Schokolade. Serviert wird er über Truthahn — auf Hochzeiten wie auf Beerdigungen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Mole_negro_de_Oaxaca_con_arroz.jpg/960px-Mole_negro_de_Oaxaca_con_arroz.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mole_negro_de_Oaxaca_con_arroz.jpg",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A white plate of meat under an almost black mole sauce, with rice on the side",
+          "de": "Ein weißer Teller mit Fleisch unter fast schwarzer Mole-Sauce, daneben Reis"
+        }
+      }
+    },
+    {
+      "name": "los tacos al pastor",
+      "description": {
+        "en": "Pork marinated in chillies and achiote, stacked on a vertical spit under a pineapple — the technique arrived with Lebanese immigrants in Puebla in the 1930s and swapped lamb for pork. The taquero shaves it onto a small corn tortilla and flicks a piece of pineapple after it, mid-air.",
+        "de": "In Chili und Achiote mariniertes Schweinefleisch, auf einem senkrechten Spieß unter einer Ananas aufgeschichtet — die Technik kam in den 1930ern mit libanesischen Einwanderern nach Puebla, Lamm wurde zu Schwein. Der Taquero schabt es auf eine kleine Maistortilla und schnippt ein Stück Ananas hinterher."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%28El_Flaco%29_Al_Pastor_Tacos.jpg/960px-%28El_Flaco%29_Al_Pastor_Tacos.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:(El_Flaco)_Al_Pastor_Tacos.jpg",
+        "author": "City Foodsters",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A hand holding a paper tray of small tacos topped with coriander and chopped onion",
+          "de": "Eine Hand hält ein Papierschälchen mit kleinen Tacos, belegt mit Koriander und gehackter Zwiebel"
+        }
+      }
+    },
+    {
+      "name": "el elote / los esquites",
+      "description": {
+        "en": "Corn from a pushcart: on the cob, rolled in mayonnaise, crumbled cotija, chilli powder and lime — or 'en vaso', the kernels cut off into a cup and eaten with a spoon, which is what esquites means. The steam whistle on the cart is the sound of a Mexican evening.",
+        "de": "Mais vom Handkarren: am Kolben, gewälzt in Mayonnaise, zerbröseltem Cotija, Chilipulver und Limette — oder 'en vaso', die Körner in einen Becher geschnitten und mit dem Löffel gegessen, und genau das sind Esquites. Die Dampfpfeife am Karren ist der Klang eines mexikanischen Abends."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Esquites_variados.jpg/960px-Esquites_variados.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Esquites_variados.jpg",
+        "author": "Ezaleta",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 674,
+        "alt": {
+          "en": "Clay pots of corn, beans and green kernels on a market stall, a vendor standing behind them",
+          "de": "Tontöpfe mit Mais, Bohnen und grünen Körnern an einem Marktstand, dahinter eine Verkäuferin"
+        }
+      }
+    },
+    {
+      "name": "el pozole",
+      "description": {
+        "en": "A stew of nixtamalised hominy simmered for hours with pork or chicken, eaten on Thursdays and on Independence Night. It arrives plain and the table finishes it: shredded lettuce, radish, oregano, raw onion, lime, dried chilli. The Aztec version was ceremonial, and the meat in it was human.",
+        "de": "Ein Eintopf aus nixtamalisiertem Mais, stundenlang mit Schwein oder Huhn geköchelt, donnerstags und zur Unabhängigkeitsnacht. Er kommt pur, den Rest macht der Tisch: Salat, Radieschen, Oregano, rohe Zwiebel, Limette, getrocknete Chili. Die aztekische Version war zeremoniell — das Fleisch darin war menschlich."
+      }
+    },
+    {
+      "name": "el mezcal",
+      "description": {
+        "en": "Agave roasted in a rock-lined pit, crushed under a stone wheel a horse drags in circles, then distilled twice — which is why it tastes of smoke and tequila does not. It is sipped, never shot, usually with orange slices and sal de gusano, a salt ground with toasted agave worms.",
+        "de": "Agave, in einer steinausgekleideten Grube geröstet, unter einem Steinrad zerquetscht, das ein Pferd im Kreis zieht, und zweimal gebrannt — deshalb schmeckt er nach Rauch und Tequila nicht. Man nippt daran, kippt ihn nie, meist mit Orangenscheiben und Sal de Gusano, einem Salz mit gerösteten Agavenwürmern."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Día de Muertos",
+      "when": {
+        "en": "1–2 November",
+        "de": "1.–2. November"
+      },
+      "description": {
+        "en": "Families build ofrendas — tiered altars with photographs, marigolds, salt, water and the dead person's favourite food and drink — then sit with them in the cemetery overnight. It is loud, not solemn: brass bands, card games, children eating sugar skulls with their own names iced on the forehead.",
+        "de": "Familien bauen Ofrendas — mehrstöckige Altäre mit Fotos, Ringelblumen, Salz, Wasser und dem Lieblingsessen der Verstorbenen — und sitzen die Nacht über bei ihnen auf dem Friedhof. Es ist laut, nicht feierlich: Blaskapellen, Kartenspiele, Kinder, die Zuckerschädel mit dem eigenen Namen auf der Stirn essen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Dia_de_muertos_Altar_religioso.jpg/960px-Dia_de_muertos_Altar_religioso.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Dia_de_muertos_Altar_religioso.jpg",
+        "author": "Luisroj96",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A Day of the Dead altar with candles, orange marigolds, wooden masks and a skeleton figure",
+          "de": "Ein Tag-der-Toten-Altar mit Kerzen, orangefarbenen Ringelblumen, Holzmasken und einer Skelettfigur"
+        }
+      }
+    },
+    {
+      "name": "La Guelaguetza",
+      "when": {
+        "en": "the last two Mondays in July",
+        "de": "die letzten beiden Montage im Juli"
+      },
+      "description": {
+        "en": "Delegations from the eight regions of Oaxaca take an open-air auditorium in turn, dance in their own village's dress, and then throw what they brought into the crowd — bread, mezcal, pineapples, straw hats. 'Guelaguetza' is Zapotec for the obligation to give and to be given to.",
+        "de": "Delegationen aus den acht Regionen Oaxacas betreten nacheinander ein Freilufttheater, tanzen in der Tracht ihres eigenen Dorfes und werfen dann ins Publikum, was sie mitgebracht haben — Brot, Mezcal, Ananas, Strohhüte. 'Guelaguetza' ist zapotekisch für die Pflicht, zu geben und beschenkt zu werden."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Guelaguetza.jpg/960px-Guelaguetza.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Guelaguetza.jpg",
+        "author": "Y! Música",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 639,
+        "alt": {
+          "en": "Dancers in embroidered Oaxacan dress carrying pineapples on their shoulders",
+          "de": "Tänzerinnen in bestickter oaxakischer Tracht tragen Ananas auf den Schultern"
+        }
+      }
+    },
+    {
+      "name": "Las Posadas",
+      "when": {
+        "en": "16–24 December",
+        "de": "16.–24. Dezember"
+      },
+      "description": {
+        "en": "Nine nights of neighbours walking house to house with candles, singing the part of Mary and Joseph asking for a room while the people inside sing the refusal back through the closed door. On the last verse the door opens and the whole street comes in for ponche and a clay piñata with seven points.",
+        "de": "Neun Abende, an denen Nachbarn mit Kerzen von Haus zu Haus ziehen und die Rolle von Maria und Josef singen, die um ein Zimmer bitten, während drinnen die Absage durch die Tür zurückgesungen wird. Bei der letzten Strophe geht die Tür auf, und die Straße kommt herein zu Ponche und einer Tonpiñata mit sieben Zacken."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the right cheek between women, and between a woman and a man; men shake hands or half-hug. Skipping it and just saying hello reads as cold, even at work.",
+        "de": "Ein Kuss auf die rechte Wange zwischen Frauen und zwischen Frau und Mann; Männer geben die Hand oder umarmen sich halb. Es einfach zu überspringen und nur Hallo zu sagen, wirkt kalt — auch im Büro."
+      }
+    },
+    {
+      "title": "Ahorita",
+      "text": {
+        "en": "'Ahorita' means right now, in an hour, or never, and the difference is carried entirely by tone. If you need a time, ask for a number — nobody will be offended.",
+        "de": "'Ahorita' heißt sofort, in einer Stunde oder nie, und den Unterschied trägt allein der Tonfall. Wenn du eine Zeit brauchst, frag nach einer Uhrzeit — das nimmt niemand übel."
+      }
+    },
+    {
+      "title": "Usted primero",
+      "text": {
+        "en": "Usted is the default with anyone older, any shopkeeper and any stranger. Mexicans move to tú when they decide to, and waiting for them to do it costs nothing at all.",
+        "de": "Usted ist die Voreinstellung bei allen Älteren, bei Verkäufern und bei Fremden. Mexikaner wechseln zu tú, wenn sie es beschließen — darauf zu warten kostet überhaupt nichts."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Ten to fifteen per cent in restaurants, in cash on the table. The person who bags your shopping and the man who waves you into a parking space are paid in tips only.",
+        "de": "Zehn bis fünfzehn Prozent im Restaurant, bar auf dem Tisch. Wer im Supermarkt einpackt und wer dich in eine Parklücke einweist, wird ausschließlich mit Trinkgeld bezahlt."
+      }
+    },
+    {
+      "title": "El regateo",
+      "text": {
+        "en": "Haggling belongs in craft markets and with street vendors, not in shops with price tags. One counter-offer is normal, three is rude, and walking away over ten pesos lands badly.",
+        "de": "Feilschen gehört auf Kunsthandwerksmärkte und zu Straßenhändlern, nicht in Läden mit Preisschildern. Ein Gegenangebot ist normal, drei sind unhöflich, und wegen zehn Pesos zu gehen kommt schlecht an."
+      }
+    },
+    {
+      "title": "¿Pica?",
+      "text": {
+        "en": "'¿Pica?' means 'is it hot?', and the answer 'no, no pica' is calibrated to a Mexican mouth. Turning down the salsa is fine — nobody is testing you and nobody is impressed.",
+        "de": "'¿Pica?' heißt 'ist das scharf?', und die Antwort 'no, no pica' ist auf einen mexikanischen Gaumen geeicht. Die Salsa abzulehnen ist in Ordnung — niemand testet dich, niemand ist beeindruckt."
+      }
     }
   ]
 }

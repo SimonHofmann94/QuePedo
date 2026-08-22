@@ -1,13 +1,32 @@
 {
   "id": "ni",
   "flag": "🇳🇮",
-  "name": { "en": "Nicaragua", "de": "Nicaragua" },
+  "name": {
+    "en": "Nicaragua",
+    "de": "Nicaragua"
+  },
   "nameEs": "Nicaragua",
   "capital": "Managua",
   "population": "7 M",
+  "tagline": {
+    "en": "A poet on the banknotes, bull sharks in the lake, and vos in every sentence.",
+    "de": "Ein Dichter auf den Geldscheinen, Bullenhaie im See und vos in jedem Satz."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Concepci%C3%B3n_%28volcano%29._Conceptcion._Ometepe_Island%2C_Nicaragua_03.jpg/1920px-Concepci%C3%B3n_%28volcano%29._Conceptcion._Ometepe_Island%2C_Nicaragua_03.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Concepci%C3%B3n_(volcano)._Conceptcion._Ometepe_Island,_Nicaragua_03.jpg",
+    "author": "Ridiculopathy",
+    "license": "CC0",
+    "width": 1920,
+    "height": 887,
+    "alt": {
+      "en": "The bare cone of Concepción volcano across choppy lake water, forest along the shoreline",
+      "de": "Der kahle Kegel des Vulkans Concepción über aufgewühltem Seewasser, Wald entlang der Uferlinie"
+    }
+  },
   "intro": {
-    "en": "Nicaragua is the 'land of lakes and volcanoes' — and of poets: Rubén Darío reinvented Spanish-language poetry here, and Nicas will happily quote verse at you over a glass of pinolillo. Nicaraguan Spanish is pure voseo, swallows its final s like the Caribbean, and bends words with playful abandon ('ideay'). On the Caribbean coast, Spanish shares the streets with English Creole and Miskito.",
-    "de": "Nicaragua ist das 'Land der Seen und Vulkane' — und der Dichter: Rubén Darío hat hier die spanischsprachige Lyrik neu erfunden, und Nicas zitieren dir gern Verse zum Glas Pinolillo. Nicaraguanisches Spanisch ist pures Voseo, verschluckt das End-s wie in der Karibik und verbiegt Wörter mit purer Spielfreude ('ideay'). An der Karibikküste teilt sich Spanisch die Straßen mit englischem Kreol und Miskito."
+    "en": "Nicaragua calls itself the land of lakes and volcanoes and puts its poet on the money: Rubén Darío, who rebuilt Spanish verse from a village outside León, is on the 100-córdoba note. Nicaraguans say vos, never tú, with endings of its own — vos sos, vos tenés, vení, tomá — and they let the final s go the way the Caribbean does, so 'los dos' arrives as 'lo do'. The word to listen for is 'ideay', squeezed out of '¿y de ahí?', which covers everything from 'and then?' to 'what were you thinking?'. On the Caribbean side Spanish shares the street with English Creole and Miskito, and the national instrument is the marimba de arco, played sitting down with the frame strapped across the player's knees.",
+    "de": "Nicaragua nennt sich das Land der Seen und Vulkane und druckt seinen Dichter aufs Geld: Rubén Darío, der die spanische Lyrik von einem Dorf bei León aus neu baute, steht auf dem 100-Córdoba-Schein. Nicaraguaner sagen vos, nie tú, mit eigenen Endungen — vos sos, vos tenés, vení, tomá — und lassen das End-s fallen wie in der Karibik, aus 'los dos' wird 'lo do'. Das Wort, auf das man hören muss, ist 'ideay', zusammengequetscht aus '¿y de ahí?' und je nach Ton 'und dann?' oder 'was hast du dir dabei gedacht?'. An der Karibikküste teilt sich Spanisch die Straße mit englischem Kreol und Miskito, und das Nationalinstrument ist die Marimba de arco, im Sitzen gespielt, den Rahmen über die Knie geschnallt."
   },
   "funFact": {
     "en": "In the 1980s, deaf children at Managua's first schools for the deaf spontaneously invented an entirely new language. Nicaraguan Sign Language is the only language whose birth linguists were able to watch from day one.",
@@ -16,84 +35,543 @@
   "slang": [
     {
       "term": "tuani",
-      "meaning": { "en": "cool, nice — the Nica seal of approval", "de": "cool, schön — das Nica-Gütesiegel" },
+      "meaning": {
+        "en": "cool, nice — the Nica seal of approval",
+        "de": "cool, schön — das Nica-Gütesiegel"
+      },
       "example": "¡Qué tuani está la fiesta!"
     },
     {
       "term": "chele / chela",
-      "meaning": { "en": "fair-skinned or blond person — affectionate, often used as a nickname", "de": "hellhäutige oder blonde Person — liebevoll gemeint, oft als Spitzname" },
+      "meaning": {
+        "en": "fair-skinned or blond person — affectionate, often used as a nickname",
+        "de": "hellhäutige oder blonde Person — liebevoll gemeint, oft als Spitzname"
+      },
       "example": "Al chele se le quemó la espalda en la playa."
     },
     {
       "term": "¡Dale pues!",
-      "meaning": { "en": "alright / deal / see you — the all-purpose Nica sign-off", "de": "alles klar / abgemacht / bis dann — der Nica-Universalabschluss" },
+      "meaning": {
+        "en": "alright / deal / see you — the all-purpose Nica sign-off",
+        "de": "alles klar / abgemacht / bis dann — der Nica-Universalabschluss"
+      },
       "example": "—Nos vemos mañana a las ocho. —¡Dale pues!"
     },
     {
       "term": "ideay",
-      "meaning": { "en": "'and so?' / 'what gives?' — quintessentially Nica, contracted from '¿y de ahí?'", "de": "'und jetzt?' / 'was soll das?' — urnicaraguanisch, zusammengezogen aus '¿y de ahí?'" },
+      "meaning": {
+        "en": "'and so?' / 'what gives?' — quintessentially Nica, contracted from '¿y de ahí?'",
+        "de": "'und jetzt?' / 'was soll das?' — urnicaraguanisch, zusammengezogen aus '¿y de ahí?'"
+      },
       "example": "Ideay, ¿por qué llegaste tan tarde?"
     },
     {
       "term": "chavalo / chavala",
-      "meaning": { "en": "kid, youngster", "de": "Kind, Jugendliche(r)" },
+      "meaning": {
+        "en": "kid, young person — the default word for anyone under about thirty",
+        "de": "Kind, junger Mensch — das Standardwort für alle unter etwa dreißig"
+      },
       "example": "Los chavalos andan jugando béisbol en la calle."
     },
     {
       "term": "chunche",
-      "meaning": { "en": "thingamajig — works for any object you can't name", "de": "Dingsbums — passt für jedes Objekt, dem der Name fehlt" },
+      "meaning": {
+        "en": "thingamajig — works for any object you can't name",
+        "de": "Dingsbums — passt für jedes Objekt, dem der Name fehlt"
+      },
       "example": "Pasame ese chunche que está en la mesa."
     },
     {
+      "term": "arrecho",
+      "meaning": {
+        "en": "furious — in Colombia the same word means aroused, so pick your country before you use it",
+        "de": "stinksauer — in Kolumbien heißt dasselbe Wort geil, also erst das Land prüfen, dann sagen"
+      },
+      "example": "No le hablés ahorita, anda arrecho."
+    },
+    {
+      "term": "pinche",
+      "meaning": {
+        "en": "stingy, tight-fisted — nothing to do with the Mexican swear word",
+        "de": "geizig, knauserig — hat nichts mit dem mexikanischen Schimpfwort zu tun"
+      },
+      "example": "No seás pinche, pagá vos la cerveza."
+    },
+    {
       "term": "deacachimba",
-      "meaning": { "en": "fantastic, amazing — very informal and mildly crude; among friends only", "de": "fantastisch, der Wahnsinn — sehr informell und leicht derb; nur unter Freunden" },
+      "meaning": {
+        "en": "fantastic, amazing — very informal and mildly crude; among friends only",
+        "de": "fantastisch, der Wahnsinn — sehr informell und leicht derb; nur unter Freunden"
+      },
       "example": "El concierto estuvo deacachimba."
     }
   ],
   "vocabulary": [
-    { "es": "el chigüín", "translation": { "en": "small kid, tot", "de": "kleines Kind, Knirps" }, "note": { "en": "elsewhere: el niño", "de": "anderswo: el niño" } },
-    { "es": "los reales", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — a colonial coin name that simply stuck", "de": "anderswo: el dinero — ein Münzname aus der Kolonialzeit, der einfach geblieben ist" } },
-    { "es": "el pinolillo", "translation": { "en": "toasted corn and cacao drink — the national beverage", "de": "Getränk aus geröstetem Mais und Kakao — das Nationalgetränk" }, "note": { "en": "Nicas proudly call themselves 'pinoleros'", "de": "Nicas nennen sich stolz 'pinoleros'" } },
-    { "es": "el gallo pinto", "translation": { "en": "rice and beans, on the plate practically every day", "de": "Reis mit Bohnen, praktisch täglich auf dem Teller" }, "note": { "en": "Costa Rica claims it too — an eternal, friendly rivalry", "de": "Costa Rica beansprucht es auch — eine ewige, freundschaftliche Rivalität" } },
-    { "es": "el fresco", "translation": { "en": "fresh fruit drink", "de": "frisches Fruchtgetränk" }, "note": { "en": "elsewhere 'refresco' usually means soda", "de": "anderswo ist ein 'refresco' meist Limonade" } },
-    { "es": "la chimbomba", "translation": { "en": "balloon", "de": "Luftballon" }, "note": { "en": "elsewhere: el globo", "de": "anderswo: el globo" } },
-    { "es": "el caite", "translation": { "en": "simple leather sandal", "de": "einfache Ledersandale" }, "note": { "en": "from Nahuatl 'cactli'; elsewhere: la sandalia", "de": "aus dem Nahuatl 'cactli'; anderswo: la sandalia" } }
+    {
+      "es": "el chigüín",
+      "translation": {
+        "en": "small kid, tot",
+        "de": "kleines Kind, Knirps"
+      },
+      "note": {
+        "en": "elsewhere: el niño",
+        "de": "anderswo: el niño"
+      }
+    },
+    {
+      "es": "los reales",
+      "translation": {
+        "en": "money",
+        "de": "Geld"
+      },
+      "note": {
+        "en": "elsewhere: el dinero — a colonial coin name that simply stuck",
+        "de": "anderswo: el dinero — ein Münzname aus der Kolonialzeit, der einfach geblieben ist"
+      }
+    },
+    {
+      "es": "el pinolillo",
+      "translation": {
+        "en": "toasted corn and cacao drink — the national beverage",
+        "de": "Getränk aus geröstetem Mais und Kakao — das Nationalgetränk"
+      },
+      "note": {
+        "en": "Nicas proudly call themselves 'pinoleros'",
+        "de": "Nicas nennen sich stolz 'pinoleros'"
+      }
+    },
+    {
+      "es": "el gallo pinto",
+      "translation": {
+        "en": "rice and red beans, on the plate practically every day",
+        "de": "Reis mit roten Bohnen, praktisch täglich auf dem Teller"
+      },
+      "note": {
+        "en": "Costa Rica claims it too — an eternal, friendly rivalry",
+        "de": "Costa Rica beansprucht es auch — eine ewige, freundschaftliche Rivalität"
+      }
+    },
+    {
+      "es": "el fresco",
+      "translation": {
+        "en": "fresh fruit drink",
+        "de": "frisches Fruchtgetränk"
+      },
+      "note": {
+        "en": "elsewhere 'refresco' usually means soda",
+        "de": "anderswo ist ein 'refresco' meist Limonade"
+      }
+    },
+    {
+      "es": "la chimbomba",
+      "translation": {
+        "en": "balloon",
+        "de": "Luftballon"
+      },
+      "note": {
+        "en": "elsewhere: el globo",
+        "de": "anderswo: el globo"
+      }
+    },
+    {
+      "es": "el caite",
+      "translation": {
+        "en": "simple leather sandal",
+        "de": "einfache Ledersandale"
+      },
+      "note": {
+        "en": "from Nahuatl 'cactli'; elsewhere: la sandalia",
+        "de": "aus dem Nahuatl 'cactli'; anderswo: la sandalia"
+      }
+    },
+    {
+      "es": "la cuajada",
+      "translation": {
+        "en": "fresh salty curd cheese, eaten by hand with a tortilla",
+        "de": "frischer, salziger Quarkkäse, mit einer Tortilla aus der Hand gegessen"
+      },
+      "note": {
+        "en": "sold in a banana leaf at the roadside, not in a shop",
+        "de": "wird im Bananenblatt am Straßenrand verkauft, nicht im Laden"
+      }
+    },
+    {
+      "es": "la güirila",
+      "translation": {
+        "en": "sweet tortilla of young corn",
+        "de": "süße Tortilla aus jungem Mais"
+      },
+      "note": {
+        "en": "a Matagalpa and Jinotega speciality, served with cuajada",
+        "de": "eine Spezialität aus Matagalpa und Jinotega, serviert mit Cuajada"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Isla de Ometepe",
-      "description": { "en": "Two volcanoes rising out of Lake Nicaragua form an island shaped like a figure eight — Concepción is a perfect cone and still active.", "de": "Zwei Vulkane, die aus dem Nicaraguasee ragen, bilden eine Insel in Form einer Acht — der Concepción ist ein perfekter Kegel und noch aktiv." },
+      "description": {
+        "en": "Two volcanoes standing in Lake Nicaragua, tied together by a low isthmus into a figure eight. Concepción, 1,610 m, is a near-perfect cone and still erupts; Maderas is dead, hooded in cloud forest, with a lagoon in its crater. Farmers keep turning up basalt boulders carved with spirals and faces — over a thousand petroglyphs are catalogued here. The ferry from San Jorge takes about an hour.",
+        "de": "Zwei Vulkane, die im Nicaraguasee stehen, von einer flachen Landenge zu einer Acht verbunden. Der Concepción, 1.610 m, ist ein fast perfekter Kegel und bricht noch aus; der Maderas ist erloschen, in Nebelwald gehüllt, mit einer Lagune im Krater. Bauern stoßen immer wieder auf Basaltblöcke voller Spiralen und Gesichter — über tausend Petroglyphen sind hier erfasst. Die Fähre ab San Jorge braucht etwa eine Stunde."
+      },
       "lat": 11.5148,
       "lng": -85.5824,
-      "emoji": "🌋"
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Concepci%C3%B3n_volcano_-_Ometepe_island.jpg/960px-Concepci%C3%B3n_volcano_-_Ometepe_island.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Concepci%C3%B3n_volcano_-_Ometepe_island.jpg",
+        "author": "Hulivili",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "Concepción volcano behind flat green fields under scattered cumulus cloud",
+          "de": "Der Vulkan Concepción hinter flachen grünen Feldern unter verstreuten Haufenwolken"
+        }
+      }
     },
     {
       "name": "Granada",
-      "description": { "en": "One of the oldest colonial cities on the American mainland (founded 1524) — pastel facades, horse-drawn carriages and volcano views across the lake.", "de": "Eine der ältesten Kolonialstädte auf dem amerikanischen Festland (gegründet 1524) — Pastellfassaden, Pferdekutschen und Vulkanblick über den See." },
+      "description": {
+        "en": "Founded in 1524 and burned in 1856 by William Walker, the Tennessee filibuster who had made himself president of Nicaragua; his men left a board reading 'Aquí fue Granada' — here was Granada. The city went back up in the same ochre and cobalt, and Calle La Calzada still runs from the mustard-yellow cathedral down to the water. Offshore lie 365 islets, blown off Mombacho volcano.",
+        "de": "1524 gegründet, 1856 von William Walker niedergebrannt, dem Freibeuter aus Tennessee, der sich zum Präsidenten Nicaraguas gemacht hatte; seine Leute ließen ein Schild zurück: 'Aquí fue Granada' — hier war Granada. Wieder aufgebaut wurde sie in denselben Ocker- und Kobalttönen, und die Calle La Calzada führt weiter von der senfgelben Kathedrale hinunter ans Wasser. Davor liegen 365 Inselchen, vom Mombacho abgesprengt."
+      },
       "lat": 11.9294,
       "lng": -85.956,
-      "emoji": "🏛️"
+      "emoji": "🏛️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Calle_La_Calzada.jpg/960px-Calle_La_Calzada.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Calle_La_Calzada.jpg",
+        "author": "Nolabob",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A cobbled pedestrian street in Granada lined with café tables and green awnings",
+          "de": "Eine gepflasterte Fußgängerstraße in Granada, gesäumt von Cafétischen und grünen Markisen"
+        }
+      }
     },
     {
       "name": "Volcán Masaya",
-      "description": { "en": "Drive right up to the crater rim and look down at glowing lava — the Spanish called it 'La Boca del Infierno' and planted a cross to exorcise it.", "de": "Fahr bis an den Kraterrand und schau hinunter auf glühende Lava — die Spanier nannten ihn 'La Boca del Infierno' und pflanzten ein Kreuz dagegen." },
+      "description": {
+        "en": "One of the few craters on earth where a lava lake is visible from a car park — the road runs to the rim, and cars are parked nose-out so they can leave in a hurry. The Spanish called it La Boca del Infierno, and in 1529 a friar planted a cross above it to hold the devil down; a cross still stands there. Green chocoyo parakeets nest in the crater wall and fly in and out through the sulphur.",
+        "de": "Einer der wenigen Krater der Erde, an dem der Lavasee vom Parkplatz aus zu sehen ist — die Straße führt bis an den Rand, und die Autos parken mit der Nase nach außen, um schnell wegzukommen. Die Spanier nannten ihn La Boca del Infierno; 1529 stellte ein Mönch ein Kreuz darüber auf, um den Teufel unten zu halten, und es steht dort bis heute. Grüne Chocoyo-Sittiche nisten in der Kraterwand, mitten im Schwefel."
+      },
       "lat": 11.9844,
       "lng": -86.1685,
-      "emoji": "🔥"
+      "emoji": "🔥",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Cratervolcan.jpg/960px-Cratervolcan.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cratervolcan.jpg",
+        "author": "Acana689",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "Steam pouring from a wide crater at dusk with red lava glowing at the bottom",
+          "de": "Dampf steigt in der Dämmerung aus einem weiten Krater, unten glüht rote Lava"
+        }
+      }
     },
     {
       "name": "Catedral de León",
-      "description": { "en": "The largest cathedral in Central America, gleaming white — Rubén Darío is buried inside beneath a weeping lion.", "de": "Die größte Kathedrale Zentralamerikas, strahlend weiß — Rubén Darío liegt hier unter einem weinenden Löwen begraben." },
+      "description": {
+        "en": "The largest cathedral in Central America, and the story people tell is that it turned out that way because the drawings sent to Madrid were for something far smaller. Its roof is an expanse of white domes crossed barefoot — shoes scuff the lime render — with the Maribios volcano chain on the skyline. Rubén Darío lies inside under a stone lion in tears, at the foot of a statue of Saint Paul.",
+        "de": "Die größte Kathedrale Zentralamerikas — und der Legende nach wurde sie das nur, weil die nach Madrid geschickten Pläne etwas viel Kleineres zeigten. Ihr Dach ist eine Fläche weißer Kuppeln, die man barfuß überquert, weil Schuhe den Kalkputz aufreiben, am Horizont die Vulkankette der Maribios. Rubén Darío liegt drinnen unter einem weinenden Steinlöwen, zu Füßen einer Statue des heiligen Paulus."
+      },
       "lat": 12.4345,
       "lng": -86.878,
-      "emoji": "⛪"
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Leon_Catedral_Techo_4.jpg/960px-Leon_Catedral_Techo_4.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Leon_Catedral_Techo_4.jpg",
+        "author": "Martin Kulldorff",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 641,
+        "alt": {
+          "en": "White plastered domes and balustrades on the sunlit roof of León cathedral",
+          "de": "Weiß verputzte Kuppeln und Balustraden auf dem sonnigen Dach der Kathedrale von León"
+        }
+      }
+    },
+    {
+      "name": "Cerro Negro",
+      "description": {
+        "en": "The youngest volcano in Central America: it pushed up out of a farmer's field in April 1850 and has erupted around twenty times since. The cone is loose black gravel, which is why people carry plywood boards up the forty-minute climb and sled the 500-metre slope back down in boiler suits and goggles. Riders have been clocked at over 90 km/h on the way.",
+        "de": "Der jüngste Vulkan Zentralamerikas: Er schob sich im April 1850 aus dem Acker eines Bauern und ist seither rund zwanzigmal ausgebrochen. Der Kegel besteht aus lockerem schwarzem Kies, weshalb Leute Sperrholzbretter den vierzigminütigen Aufstieg hochtragen und den 500-Meter-Hang in Overall und Schutzbrille wieder hinunterrutschen. Über 90 km/h wurden dabei schon gemessen."
+      },
+      "lat": 12.5061,
+      "lng": -86.7022,
+      "emoji": "🛷",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Cerro_Negro_volcano_in_Nicaragua_01.jpg/960px-Cerro_Negro_volcano_in_Nicaragua_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cerro_Negro_volcano_in_Nicaragua_01.jpg",
+        "author": "Lionel Duchoiselle",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The bare black and rust-red cone of Cerro Negro seen from the crater rim",
+          "de": "Der kahle schwarz-rostrote Kegel des Cerro Negro, vom Kraterrand aus gesehen"
+        }
+      }
+    },
+    {
+      "name": "Cañón de Somoto",
+      "description": {
+        "en": "A slot canyon at the head of the Río Coco, the longest river in Central America. Czech geologists mapped it in 2004 and the country learned it had a canyon; the farmers upstream had been swimming in it for generations. The walls close to a few metres apart and rise as much as 160, so the way through is part walking, part swimming with your bag in a dry sack.",
+        "de": "Eine Schluchtenge am Oberlauf des Río Coco, des längsten Flusses Zentralamerikas. Tschechische Geologen kartierten sie 2004, und das Land erfuhr, dass es einen Canyon besitzt; die Bauern flussaufwärts badeten schon seit Generationen darin. Die Wände rücken auf wenige Meter zusammen und ragen bis zu 160 hoch, der Weg hindurch ist halb Gehen, halb Schwimmen mit dem Rucksack im Trockensack."
+      },
+      "lat": 13.49,
+      "lng": -86.65,
+      "emoji": "🏞️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Ca%C3%B1on_de_Somoto.jpg/960px-Ca%C3%B1on_de_Somoto.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ca%C3%B1on_de_Somoto.jpg",
+        "author": "Zenia Nuñez",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A green river running between steep rock walls in a narrow canyon",
+          "de": "Ein grüner Fluss zwischen steilen Felswänden in einer engen Schlucht"
+        }
+      }
+    },
+    {
+      "name": "Laguna de Apoyo",
+      "description": {
+        "en": "A crater lake left by an eruption roughly 23,000 years ago, warm along the shore because the rock underneath is still hot. Its floor is the lowest land point in Central America. Six species of cichlid live here and nowhere else on earth — they split from a single Lake Nicaragua ancestor after the crater filled, which is why biologists keep coming back with nets.",
+        "de": "Ein Kratersee, den ein Ausbruch vor etwa 23.000 Jahren hinterließ, am Ufer warm, weil das Gestein darunter noch heiß ist. Sein Grund ist der tiefste Landpunkt Zentralamerikas. Sechs Buntbarscharten leben hier und sonst nirgends auf der Welt — sie spalteten sich von einem einzigen Vorfahren aus dem Nicaraguasee ab, nachdem der Krater vollgelaufen war. Deshalb kommen Biologen immer wieder mit Netzen."
+      },
+      "lat": 11.9236,
+      "lng": -86.0325,
+      "emoji": "💧",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lagoon_Vista_-_Laguna_de_Apoyo_-_Near_Granada_-_Nicaragua_-_01_%2831971805505%29_%282%29.jpg/960px-Lagoon_Vista_-_Laguna_de_Apoyo_-_Near_Granada_-_Nicaragua_-_01_%2831971805505%29_%282%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagoon_Vista_-_Laguna_de_Apoyo_-_Near_Granada_-_Nicaragua_-_01_(31971805505)_(2).jpg",
+        "author": "Adam Jones from Kelowna, BC, Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Deep blue crater-lake water with a wooded rim on the far shore and two small boats",
+          "de": "Tiefblaues Kraterseewasser, am anderen Ufer der bewaldete Rand und zwei kleine Boote"
+        }
+      }
+    },
+    {
+      "name": "Antigua Catedral de Managua",
+      "description": {
+        "en": "Managua's old cathedral has stood roofless since the earthquake of 23 December 1972 flattened the centre of the city and killed something close to ten thousand people. Its steel skeleton was shipped in from Belgium in the 1920s, which is the reason it is upright at all. Across the front runs a painted line of Rubén Darío: 'Si la patria es pequeña, uno grande la sueña.'",
+        "de": "Managuas alte Kathedrale steht ohne Dach, seit das Erdbeben vom 23. Dezember 1972 die Innenstadt niederlegte und annähernd zehntausend Menschen tötete. Ihr Stahlskelett kam in den 1920ern aus Belgien, und nur deshalb steht sie überhaupt noch. Über die Front läuft ein aufgemalter Vers von Rubén Darío: 'Si la patria es pequeña, uno grande la sueña.'"
+      },
+      "lat": 12.1553,
+      "lng": -86.2733,
+      "emoji": "🏚️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Old_Cathedral_of_Managua_with_quote_of_Rub%C3%A9n_Dar%C3%ADo.jpg/960px-Old_Cathedral_of_Managua_with_quote_of_Rub%C3%A9n_Dar%C3%ADo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Old_Cathedral_of_Managua_with_quote_of_Rub%C3%A9n_Dar%C3%ADo.jpg",
+        "author": "Taza",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The empty stone facade of a ruined cathedral with a blue painted band of text across it",
+          "de": "Die leere Steinfassade einer Ruinenkathedrale mit einem blau aufgemalten Schriftband"
+        }
+      }
+    },
+    {
+      "name": "El Castillo, Río San Juan",
+      "description": {
+        "en": "A Spanish fort finished in 1675 on the Río San Juan to stop pirates rowing up to Granada. In 1762 the commander died mid-siege and his nineteen-year-old daughter Rafaela Herrera took over the guns and drove the British back down the river. Eighteen years later a young Horatio Nelson attacked the same walls, took them, and nearly died of fever doing it.",
+        "de": "Eine 1675 vollendete spanische Festung am Río San Juan, die Piraten davon abhalten sollte, bis nach Granada zu rudern. 1762 starb der Kommandant mitten in der Belagerung, und seine neunzehnjährige Tochter Rafaela Herrera übernahm die Kanonen und trieb die Briten den Fluss hinunter zurück. Achtzehn Jahre später nahm ein junger Horatio Nelson dieselben Mauern und wäre dabei fast am Fieber gestorben."
+      },
+      "lat": 11.0186,
+      "lng": -84.4966,
+      "emoji": "🏰",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/El_Castillo05.JPG/960px-El_Castillo05.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Castillo05.JPG",
+        "author": "Stoschmidt",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A wide brown river seen over the crumbling stone wall of a hilltop fortress",
+          "de": "Ein breiter brauner Fluss über der zerfallenden Steinmauer einer Bergfestung"
+        }
+      }
     },
     {
       "name": "Corn Islands",
-      "description": { "en": "Two tiny Caribbean islands 70 km off the coast — English Creole, lobster fishing, and on Little Corn not a single car.", "de": "Zwei winzige Karibikinseln 70 km vor der Küste — englisches Kreol, Hummerfischerei, und auf Little Corn kein einziges Auto." },
+      "description": {
+        "en": "Two islands 70 km off the Caribbean coast where the first language is English Creole, not Spanish, and the lobster boats set the pace of the economy. Little Corn has no cars at all — you walk, or a panga takes you round. Every 27 August the islands cook crab soup in the street to mark the day slavery was abolished here, in 1841.",
+        "de": "Zwei Inseln 70 km vor der Karibikküste, wo die erste Sprache englisches Kreol ist und nicht Spanisch und die Hummerboote den Takt der Wirtschaft vorgeben. Auf Little Corn gibt es überhaupt keine Autos — man geht zu Fuß, oder eine Panga fährt einen herum. Jeden 27. August kochen die Inseln auf der Straße Krabbensuppe, zum Tag der Abschaffung der Sklaverei 1841."
+      },
       "lat": 12.17,
       "lng": -83.06,
-      "emoji": "🏝️"
+      "emoji": "🏝️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Otto_Beach%2C_Little_Corn_Island.jpg/960px-Otto_Beach%2C_Little_Corn_Island.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Otto_Beach,_Little_Corn_Island.jpg",
+        "author": "Brian Johnson & Dane Kantner",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Coconut palms leaning over white sand and turquoise shallows on Little Corn Island",
+          "de": "Kokospalmen neigen sich über weißen Sand und türkises Flachwasser auf Little Corn Island"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el nacatamal",
+      "description": {
+        "en": "Corn masa beaten with lard, packed around pork on the bone with rice, potato, mint, sour orange and a prune, wrapped in plantain leaf, tied with string and boiled for five hours. Sunday breakfast, eaten with bread and black coffee, and the leaf is the plate.",
+        "de": "Maismasa mit Schmalz aufgeschlagen, um Schweinefleisch am Knochen gepackt, dazu Reis, Kartoffel, Minze, Bitterorange und eine Backpflaume, im Bananenblatt verschnürt und fünf Stunden gekocht. Sonntagsfrühstück mit Brot und schwarzem Kaffee, und das Blatt ist der Teller."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Nacatamal_y_patacones_con_frijoles_molidos.jpg/960px-Nacatamal_y_patacones_con_frijoles_molidos.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Nacatamal_y_patacones_con_frijoles_molidos.jpg",
+        "author": "Arturo Sotillo",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "An opened plantain-leaf parcel on a clay plate beside fried plantain rounds topped with tomato",
+          "de": "Ein geöffnetes Bananenblatt-Päckchen auf einem Tonteller neben frittierten Kochbananenscheiben mit Tomate"
+        }
+      }
+    },
+    {
+      "name": "el vigorón",
+      "description": {
+        "en": "Boiled cassava, a heap of vinegary cabbage slaw and a fist of pork crackling, served on a banana leaf with no fork. María Luisa Cisneros put it together in Granada's market in 1914 and named it after a vitamin tonic sold at the time. Eating it neatly is not possible.",
+        "de": "Gekochter Maniok, ein Haufen essigsaurer Krautsalat und eine Faust voll Schweinekrusten, auf einem Bananenblatt serviert, ohne Gabel. María Luisa Cisneros stellte das 1914 auf dem Markt von Granada zusammen und benannte es nach einem damals verkauften Stärkungsmittel. Sauber essen lässt es sich nicht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/VIGORON.JPG/960px-VIGORON.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:VIGORON.JPG",
+        "author": "Nicaraguan food",
+        "license": "Public domain",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Chunks of boiled cassava under pork crackling and shredded cabbage salad on a white plate",
+          "de": "Stücke gekochter Maniok unter Schweinekrusten und Krautsalat auf einem weißen Teller"
+        }
+      }
+    },
+    {
+      "name": "el quesillo",
+      "description": {
+        "en": "A warm tortilla folded round a slab of soft white cheese, pickled onion rings and a slug of sour cream, handed over standing in a plastic bag. The bag is the point: when the cheese is gone you tip the cream pooled at the bottom into your mouth. La Paz Centro and Nagarote argue about whose is better.",
+        "de": "Eine warme Tortilla um eine Scheibe weichen weißen Käse gefaltet, dazu eingelegte Zwiebelringe und ein Schwung saure Sahne, überreicht in einer stehenden Plastiktüte. Die Tüte ist der Punkt: Ist der Käse weg, kippt man sich die Sahne vom Boden in den Mund. La Paz Centro und Nagarote streiten, wer es besser macht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Quesillo_Nicaraguense_forma_habitual_de_consumirlo.jpg/500px-Quesillo_Nicaraguense_forma_habitual_de_consumirlo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Quesillo_Nicaraguense_forma_habitual_de_consumirlo.jpg",
+        "author": "Glados890",
+        "license": "CC BY-SA 4.0",
+        "width": 500,
+        "height": 358,
+        "alt": {
+          "en": "A hand holding a rolled tortilla inside a clear plastic bag in front of a roadside griddle",
+          "de": "Eine Hand hält eine gerollte Tortilla in einer Klarsichttüte vor einer Bratplatte am Straßenrand"
+        }
+      }
+    },
+    {
+      "name": "el rondón",
+      "description": {
+        "en": "The Caribbean coast's coconut stew: fish simmered with cassava, breadfruit and green plantain in coconut milk until the milk turns oily. The name is the English 'rundown' — you run down whatever the boat and the yard produced that day. Cooked in Bluefields and on the Corn Islands, almost never west of them.",
+        "de": "Der Kokoseintopf der Karibikküste: Fisch mit Maniok, Brotfrucht und grüner Kochbanane in Kokosmilch geköchelt, bis die Milch ölig wird. Der Name kommt vom englischen 'rundown' — man treibt zusammen, was Boot und Hof hergaben. Gekocht wird er in Bluefields und auf den Corn Islands, westlich davon fast nie."
+      }
+    },
+    {
+      "name": "el pinolillo",
+      "description": {
+        "en": "Maize toasted with cacao, cinnamon and clove, ground fine and stirred into cold water or milk. It never fully dissolves — the grit settles and you swirl the cup as you drink, by tradition a jícara gourd. Nicaraguans call themselves pinoleros after it.",
+        "de": "Mais, mit Kakao, Zimt und Nelke geröstet, fein gemahlen und in kaltes Wasser oder Milch gerührt. Ganz auflösen tut er sich nie — das Grobe setzt sich ab, und man schwenkt den Becher beim Trinken, traditionell eine Jícara-Kalebasse. Nicaraguaner nennen sich danach pinoleros."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "La Purísima y La Gritería",
+      "when": {
+        "en": "7–8 December",
+        "de": "7.–8. Dezember"
+      },
+      "description": {
+        "en": "Altars to the Virgin go up in front rooms nationwide, and at six on the evening of 7 December the fireworks start. Crowds move house to house; someone shouts '¿Quién causa tanta alegría?' and everyone answers '¡La Concepción de María!' The host hands out la gorra — sugar cane, caramels, clay whistles.",
+        "de": "In Wohnzimmern im ganzen Land werden Marienaltäre aufgebaut, und um sechs am Abend des 7. Dezember beginnt das Feuerwerk. Menschen ziehen von Haus zu Haus; jemand ruft '¿Quién causa tanta alegría?', und alle antworten '¡La Concepción de María!' Der Gastgeber verteilt la gorra — Zuckerrohr, Karamellen, Tonpfeifen."
+      }
+    },
+    {
+      "name": "Santo Domingo de Managua",
+      "when": {
+        "en": "1–10 August",
+        "de": "1.–10. August"
+      },
+      "description": {
+        "en": "Managua's patron saint is a wooden figure five centimetres tall, known to everyone as Minguito. On 1 August a crowd carries him down from the hills into the city and on 10 August carries him back, in a slow crush of brass bands, horses and men dancing coated head to foot in black motor oil.",
+        "de": "Managuas Schutzpatron ist eine fünf Zentimeter große Holzfigur, die alle Minguito nennen. Am 1. August trägt ihn eine Menschenmenge aus den Hügeln in die Stadt und am 10. August wieder zurück, in einem langsamen Gedränge aus Blaskapellen, Pferden und Männern, die von Kopf bis Fuß mit schwarzem Altöl bestrichen tanzen."
+      }
+    },
+    {
+      "name": "Palo de Mayo",
+      "when": {
+        "en": "all through May",
+        "de": "den ganzen Mai über"
+      },
+      "description": {
+        "en": "On the Caribbean coast May belongs to the maypole. Bluefields ties ribbons to a pole in each neighbourhood and the Creole barrios dance round it for a month to drums and banjo, singing lyrics nobody translates for outsiders. The parade on the last day is called Tulululu.",
+        "de": "An der Karibikküste gehört der Mai dem Maibaum. Bluefields bindet in jedem Viertel Bänder an einen Pfahl, und die kreolischen Barrios tanzen einen Monat lang zu Trommeln und Banjo darum herum und singen Texte, die niemand für Auswärtige übersetzt. Der Umzug am letzten Tag heißt Tulululu."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El voseo",
+      "text": {
+        "en": "Nicaraguans say vos, and the verb moves with it: vos sos, vos tenés, vení, sentate. Using tú marks you as foreign or as reading from a textbook; usted is kept for elders and officials.",
+        "de": "Nicaraguaner sagen vos, und das Verb geht mit: vos sos, vos tenés, vení, sentate. Wer tú benutzt, klingt fremd oder nach Lehrbuch; usted bleibt Älteren und Amtspersonen vorbehalten."
+      }
+    },
+    {
+      "title": "¡Adiós! al pasar",
+      "text": {
+        "en": "Passing someone on a road, the greeting is '¡Adiós!', called out without breaking stride. Here it means hello, not goodbye, and walking past in silence reads as a snub.",
+        "de": "Begegnet man jemandem auf der Straße, lautet der Gruß '¡Adiós!', im Vorbeigehen gerufen. Hier heißt das Hallo, nicht Tschüss, und schweigend vorbeizugehen wirkt wie eine Abfuhr."
+      }
+    },
+    {
+      "title": "Las direcciones",
+      "text": {
+        "en": "Addresses run from landmarks, some gone for decades: 'from where the Guanacaste tree was, two blocks al lago.' Al lago means north, arriba east, abajo west. Street names barely feature.",
+        "de": "Adressen laufen über Orientierungspunkte, manche seit Jahrzehnten verschwunden: 'von dort, wo der Guanacaste-Baum stand, zwei Blocks al lago'. Al lago heißt Norden, arriba Osten, abajo Westen."
+      }
+    },
+    {
+      "title": "Señalar con la boca",
+      "text": {
+        "en": "Directions often come with a pushed-out lower lip aimed at the turning rather than a pointed finger. Watch the mouth as well as the hands or you will set off the wrong way.",
+        "de": "Wegbeschreibungen kommen oft mit vorgeschobener Unterlippe in Richtung der Abzweigung statt mit ausgestrecktem Finger. Auf den Mund achten, nicht nur auf die Hände, sonst läuft man falsch los."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Restaurant bills usually already carry a 10 % 'propina voluntaria'. Look for that line before adding more; in a comedor or at a street stall nobody expects a tip at all.",
+        "de": "Restaurantrechnungen enthalten meist schon 10 % 'propina voluntaria'. Erst nach dieser Zeile suchen, bevor man drauflegt; im Comedor oder am Straßenstand erwartet niemand Trinkgeld."
+      }
     }
   ]
 }

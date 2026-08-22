@@ -1,99 +1,619 @@
 {
   "id": "sv",
   "flag": "🇸🇻",
-  "name": { "en": "El Salvador", "de": "El Salvador" },
+  "name": {
+    "en": "El Salvador",
+    "de": "El Salvador"
+  },
   "nameEs": "El Salvador",
   "capital": "San Salvador",
   "population": "6 M",
+  "tagline": {
+    "en": "Twenty volcanoes and a Pacific point break in a country you cross in three hours.",
+    "de": "Zwanzig Vulkane und ein pazifischer Point Break in einem Land, das man in drei Stunden durchquert."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Conchagua%2C_Golfo_de_Fonseca.jpg/1920px-Conchagua%2C_Golfo_de_Fonseca.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Conchagua,_Golfo_de_Fonseca.jpg",
+    "author": "Raúl Arias",
+    "license": "CC BY 2.0",
+    "width": 1920,
+    "height": 763,
+    "alt": {
+      "en": "A green volcanic ridge dropping to the Gulf of Fonseca, low islands on the far water",
+      "de": "Ein grüner Vulkanrücken fällt zum Golf von Fonseca ab, weit draußen flache Inseln"
+    }
+  },
   "intro": {
-    "en": "El Salvador is the smallest country in Central America, and its people — the proud 'guanacos' — speak a rapid-fire, vos-based Spanish seasoned with words from Nahuat, the language of the Pipil. Life revolves around the pupusa, eaten with your hands and with fierce local pride. The 'Pulgarcito de América' (Tom Thumb of the Americas) squeezes more than 20 volcanoes and world-class surf breaks into a country you can drive across in three hours.",
-    "de": "El Salvador ist das kleinste Land Zentralamerikas, und seine Leute — die stolzen 'guanacos' — sprechen ein rasantes Spanisch mit 'vos', gewürzt mit Wörtern aus dem Nahuat, der Sprache der Pipil. Alles dreht sich um die Pupusa, die man mit den Händen isst — und mit ordentlich Lokalstolz. Der 'Pulgarcito de América' (Däumling Amerikas) quetscht über 20 Vulkane und Weltklasse-Surfspots in ein Land, das du in drei Stunden durchqueren kannst."
+    "en": "El Salvador is the smallest country on the American mainland and the only one in Central America with no Caribbean coast — about 300 kilometres of Pacific, and more than twenty volcanoes stacked behind it. Salvadorans call themselves guanacos and talk fast, with vos instead of tú and a final s that dissolves into breath: 'vo' sabé' where the textbook prints 'tú sabes'. Nahuat, the language of the Pipil, left its words on the map and on the table — Cuscatlán, Izalco, the guacal you wash with. Everything social happens around a pupusa: eaten standing, with the hands, and argued over town by town.",
+    "de": "El Salvador ist das kleinste Land des amerikanischen Festlands und das einzige Zentralamerikas ohne Karibikküste — rund 300 Kilometer Pazifik, dahinter über zwanzig Vulkane. Die Salvadorianer nennen sich guanacos und reden schnell, mit vos statt tú und einem End-s, das sich in Luft auflöst: 'vo' sabé', wo im Lehrbuch 'tú sabes' steht. Nahuat, die Sprache der Pipil, hat seine Wörter auf der Landkarte und auf dem Tisch hinterlassen — Cuscatlán, Izalco, der guacal, in dem man spült. Alles Gesellige dreht sich um die Pupusa: im Stehen gegessen, mit den Händen, und von Ort zu Ort umstritten."
   },
   "funFact": {
-    "en": "In 2021, El Salvador became the first country in the world to make Bitcoin legal tender — and it even mines coins with geothermal energy tapped straight from a volcano.",
-    "de": "2021 machte El Salvador als erstes Land der Welt Bitcoin zum gesetzlichen Zahlungsmittel — geschürft wird sogar mit Geothermie, die direkt aus einem Vulkan gezapft wird."
+    "en": "In 2021 El Salvador became the first country to make Bitcoin legal tender, mining some of it with geothermal power tapped from a volcano. Under an IMF deal in 2025 the law was rolled back and accepting it became voluntary.",
+    "de": "2021 machte El Salvador als erstes Land Bitcoin zum gesetzlichen Zahlungsmittel und schürfte einen Teil davon mit Erdwärme aus einem Vulkan. Ein IWF-Abkommen kippte das Gesetz 2025 wieder: Die Annahme ist seither freiwillig."
   },
   "slang": [
     {
       "term": "chivo",
-      "meaning": { "en": "cool, great (literally 'goat')", "de": "cool, klasse (wörtlich 'Ziegenbock')" },
+      "meaning": {
+        "en": "cool, great (literally 'goat')",
+        "de": "cool, klasse (wörtlich 'Ziegenbock')"
+      },
       "example": "¡Qué chivo tu celular nuevo!"
     },
     {
       "term": "bicho / bicha",
-      "meaning": { "en": "kid, youngster — normal in El Salvador, but vulgar in Puerto Rico, so mind your geography", "de": "Kind, Jugendliche(r) — in El Salvador normal, in Puerto Rico vulgär; also auf die Geografie achten" },
+      "meaning": {
+        "en": "kid, youngster — normal in El Salvador, but vulgar in Puerto Rico, so mind your geography",
+        "de": "Kind, Jugendliche(r) — in El Salvador normal, in Puerto Rico vulgär; also auf die Geografie achten"
+      },
       "example": "Esos bichos pasan todo el día jugando fútbol."
     },
     {
       "term": "chero / chera",
-      "meaning": { "en": "friend, buddy", "de": "Freund(in), Kumpel" },
+      "meaning": {
+        "en": "friend, buddy — the word you'll hear most",
+        "de": "Freund(in), Kumpel — das Wort, das du am häufigsten hörst"
+      },
       "example": "Esta noche salgo con mis cheros."
     },
     {
       "term": "¡Puchica!",
-      "meaning": { "en": "dang! / wow! — the softened all-purpose exclamation", "de": "Mist! / Wow! — der entschärfte Allzweck-Ausruf" },
+      "meaning": {
+        "en": "dang! / wow! — the softened all-purpose exclamation",
+        "de": "Mist! / Wow! — der entschärfte Allzweck-Ausruf"
+      },
       "example": "¡Puchica, se me olvidaron las llaves!"
     },
     {
       "term": "vergón",
-      "meaning": { "en": "awesome — vulgar root but an everyday compliment; keep it informal", "de": "der Hammer — vulgärer Ursprung, aber ein Alltagskompliment; bitte nur informell" },
+      "meaning": {
+        "en": "awesome — vulgar root but an everyday compliment; keep it informal",
+        "de": "der Hammer — vulgärer Ursprung, aber ein Alltagskompliment; bitte nur informell"
+      },
       "example": "¡El concierto estuvo vergón!"
     },
     {
       "term": "bayunco",
-      "meaning": { "en": "silly, goofy, clowning around", "de": "albern, verpeilt, am Rumkaspern" },
+      "meaning": {
+        "en": "silly, goofy, clowning around",
+        "de": "albern, verpeilt, am Rumkaspern"
+      },
       "example": "No seás bayunco, estamos en misa."
     },
     {
       "term": "dundo",
-      "meaning": { "en": "dim, slow on the uptake", "de": "begriffsstutzig, schwer von Kapee" },
+      "meaning": {
+        "en": "dim, slow on the uptake",
+        "de": "begriffsstutzig, schwer von Kapee"
+      },
       "example": "No seás dundo, era solo una broma."
+    },
+    {
+      "term": "cabal",
+      "meaning": {
+        "en": "exactly, spot on — agreement, confirmation and 'that's right' in one word",
+        "de": "genau, haargenau — Zustimmung, Bestätigung und 'stimmt' in einem Wort"
+      },
+      "example": "—Salimos a las seis, ¿va? —¡Cabal!"
+    },
+    {
+      "term": "andar bolo",
+      "meaning": {
+        "en": "to be drunk — 'bolo' is the drunk himself, and nobody says 'borracho'",
+        "de": "betrunken sein — 'bolo' ist der Betrunkene selbst, 'borracho' sagt hier niemand"
+      },
+      "example": "No manejés, andás bolo."
     }
   ],
   "vocabulary": [
-    { "es": "el pisto", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — also used in Guatemala and Honduras", "de": "anderswo: el dinero — auch in Guatemala und Honduras gebräuchlich" } },
-    { "es": "la pupusa", "translation": { "en": "thick corn tortilla stuffed with cheese, beans or chicharrón — the national dish", "de": "dicke Maistortilla, gefüllt mit Käse, Bohnen oder Chicharrón — das Nationalgericht" }, "note": { "en": "has its own holiday: Día Nacional de la Pupusa, second Sunday of November", "de": "hat einen eigenen Feiertag: Día Nacional de la Pupusa, zweiter Sonntag im November" } },
-    { "es": "el cipote / la cipota", "translation": { "en": "kid, child", "de": "Kind" }, "note": { "en": "elsewhere: el niño — also used in Honduras", "de": "anderswo: el niño — auch in Honduras gebräuchlich" } },
-    { "es": "el guacal", "translation": { "en": "plastic bowl, washbasin", "de": "Plastikschüssel" }, "note": { "en": "from Nahuat 'huacal'; elsewhere: la palangana", "de": "aus dem Nahuat 'huacal'; anderswo: la palangana" } },
-    { "es": "el chompipe", "translation": { "en": "turkey", "de": "Truthahn" }, "note": { "en": "elsewhere: el pavo", "de": "anderswo: el pavo" } },
-    { "es": "el zacate", "translation": { "en": "grass, lawn", "de": "Gras, Rasen" }, "note": { "en": "also used in Mexico; elsewhere: el césped", "de": "auch in Mexiko üblich; anderswo: el césped" } },
-    { "es": "el ayote", "translation": { "en": "squash, pumpkin", "de": "Kürbis" }, "note": { "en": "elsewhere: la calabaza", "de": "anderswo: la calabaza" } }
+    {
+      "es": "el pisto",
+      "translation": {
+        "en": "money",
+        "de": "Geld"
+      },
+      "note": {
+        "en": "elsewhere: el dinero — also used in Guatemala and Honduras",
+        "de": "anderswo: el dinero — auch in Guatemala und Honduras gebräuchlich"
+      }
+    },
+    {
+      "es": "la pupusa",
+      "translation": {
+        "en": "thick corn tortilla stuffed with cheese, beans or chicharrón",
+        "de": "dicke Maistortilla, gefüllt mit Käse, Bohnen oder Chicharrón"
+      },
+      "note": {
+        "en": "has its own holiday: Día Nacional de la Pupusa, second Sunday of November",
+        "de": "hat einen eigenen Feiertag: Día Nacional de la Pupusa, zweiter Sonntag im November"
+      }
+    },
+    {
+      "es": "el cipote / la cipota",
+      "translation": {
+        "en": "kid, child",
+        "de": "Kind"
+      },
+      "note": {
+        "en": "elsewhere: el niño — also used in Honduras",
+        "de": "anderswo: el niño — auch in Honduras gebräuchlich"
+      }
+    },
+    {
+      "es": "el guacal",
+      "translation": {
+        "en": "plastic bowl, washbasin",
+        "de": "Plastikschüssel"
+      },
+      "note": {
+        "en": "from Nahuat 'huacal'; elsewhere: la palangana",
+        "de": "aus dem Nahuat 'huacal'; anderswo: la palangana"
+      }
+    },
+    {
+      "es": "el chompipe",
+      "translation": {
+        "en": "turkey",
+        "de": "Truthahn"
+      },
+      "note": {
+        "en": "elsewhere: el pavo",
+        "de": "anderswo: el pavo"
+      }
+    },
+    {
+      "es": "el zacate",
+      "translation": {
+        "en": "grass, lawn",
+        "de": "Gras, Rasen"
+      },
+      "note": {
+        "en": "also used in Mexico; elsewhere: el césped",
+        "de": "auch in Mexiko üblich; anderswo: el césped"
+      }
+    },
+    {
+      "es": "el ayote",
+      "translation": {
+        "en": "squash, pumpkin",
+        "de": "Kürbis"
+      },
+      "note": {
+        "en": "elsewhere: la calabaza",
+        "de": "anderswo: la calabaza"
+      }
+    },
+    {
+      "es": "el tunco",
+      "translation": {
+        "en": "pig, pork",
+        "de": "Schwein, Schweinefleisch"
+      },
+      "note": {
+        "en": "elsewhere: el cerdo — and the name of the surf beach",
+        "de": "anderswo: el cerdo — und der Name des Surfstrands"
+      }
+    },
+    {
+      "es": "shuco",
+      "translation": {
+        "en": "dirty, grubby",
+        "de": "dreckig, schmuddelig"
+      },
+      "note": {
+        "en": "from Nahuat; 'atol shuco' is a soured corn drink, deliberately so",
+        "de": "aus dem Nahuat; 'atol shuco' ist ein absichtlich säuerliches Maisgetränk"
+      }
+    },
+    {
+      "es": "la champa",
+      "translation": {
+        "en": "shack, market stall, tarpaulin shelter",
+        "de": "Bude, Marktstand, Planenverschlag"
+      },
+      "note": {
+        "en": "also the tent you sleep in at the beach",
+        "de": "auch das Zelt, in dem man am Strand schläft"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Volcán de Santa Ana",
-      "description": { "en": "El Salvador's highest volcano (2,381 m) — hike to the crater rim and stare down into a steaming, emerald-green sulfur lagoon.", "de": "El Salvadors höchster Vulkan (2.381 m) — wandere zum Kraterrand und blicke hinab in eine dampfende, smaragdgrüne Schwefellagune." },
+      "description": {
+        "en": "El Salvador's highest volcano at 2,381 metres, holding a crater lake the colour of antifreeze — sulphur and dissolved metals, steaming where the vents break the surface. The last eruption, in October 2005, threw rock as far as the coffee farms below and killed two people. The walk up from Cerro Verde takes about two hours through pine and old lava.",
+        "de": "Mit 2.381 Metern der höchste Vulkan El Salvadors, im Krater ein See in der Farbe von Frostschutzmittel — Schwefel und gelöste Metalle, dampfend, wo die Schlote die Oberfläche durchstoßen. Der letzte Ausbruch im Oktober 2005 schleuderte Gestein bis in die Kaffeefarmen darunter und tötete zwei Menschen. Der Aufstieg vom Cerro Verde dauert gut zwei Stunden."
+      },
       "lat": 13.8528,
       "lng": -89.6294,
-      "emoji": "🌋"
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Laguna_crat%C3%A9rica_del_Volc%C3%A1n_de_Santa_Ana_-_El_Salvador.jpg/960px-Laguna_crat%C3%A9rica_del_Volc%C3%A1n_de_Santa_Ana_-_El_Salvador.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Laguna_crat%C3%A9rica_del_Volc%C3%A1n_de_Santa_Ana_-_El_Salvador.jpg",
+        "author": "Erneestoo",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A bright green crater lake ringed by grey ash slopes, steam drifting off the water",
+          "de": "Ein leuchtend grüner Kratersee, umringt von grauen Aschehängen, über dem Wasser Dampf"
+        }
+      }
     },
     {
       "name": "Lago de Coatepeque",
-      "description": { "en": "A volcanic crater lake that periodically turns bright turquoise — locals still debate whether it's algae or magic.", "de": "Ein Vulkan-Kratersee, der sich regelmäßig leuchtend türkis färbt — die Einheimischen streiten noch, ob es Algen sind oder Magie." },
+      "description": {
+        "en": "A caldera roughly six kilometres across, drowned after an eruption tens of thousands of years ago; the water sits 745 metres up and runs more than a hundred metres deep. Every few years it turns bright turquoise for weeks — algae and mineral upwelling, though nobody in the villages accepts that. Weekend houses ring the shore and take most of the access with them.",
+        "de": "Eine Caldera von gut sechs Kilometern Durchmesser, nach einem Ausbruch vor Zehntausenden Jahren mit Wasser gefüllt; der See liegt auf 745 Metern und ist über hundert Meter tief. Alle paar Jahre färbt er sich wochenlang leuchtend türkis — Algen und aufsteigende Mineralien, was in den Dörfern niemand gelten lässt. Wochenendhäuser säumen das Ufer und nehmen den meisten Zugang mit."
+      },
       "lat": 13.8667,
       "lng": -89.55,
-      "emoji": "🌊"
-    },
-    {
-      "name": "Playa El Tunco",
-      "description": { "en": "El Salvador's surf capital, named after a pig-shaped rock in the waves — world championships have been surfed at nearby Punta Roca.", "de": "El Salvadors Surf-Hauptstadt, benannt nach einem schweineförmigen Felsen in den Wellen — an der nahen Punta Roca wurden schon Weltmeisterschaften gesurft." },
-      "lat": 13.4928,
-      "lng": -89.3804,
-      "emoji": "🏄"
+      "emoji": "🌊",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Coatepeque_Vista.jpg/960px-Coatepeque_Vista.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Coatepeque_Vista.jpg",
+        "author": "JMRAFFi",
+        "license": "CC BY 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A round blue crater lake seen from a forested ridge, plains and hills beyond it",
+          "de": "Ein runder blauer Kratersee von einem bewaldeten Grat aus, dahinter Ebene und Hügel"
+        }
+      }
     },
     {
       "name": "Joya de Cerén",
-      "description": { "en": "The 'Pompeii of the Americas' — a Mayan farming village buried by volcanic ash around 600 CE, preserved down to its corn fields; UNESCO World Heritage.", "de": "Das 'Pompeji Amerikas' — ein Maya-Bauerndorf, um 600 n. Chr. von Vulkanasche begraben und bis zu den Maisfeldern konserviert; UNESCO-Welterbe." },
+      "description": {
+        "en": "The Loma Caldera vent buried this farming village under fourteen layers of ash around 600 CE, and everything soft went with it: painted gourds still on their shelves, a half-eaten meal, a field of young maize with the planting ridges intact. No bodies have been found — they had time to run. It is the one place in the Maya world where daily life survived instead of kings.",
+        "de": "Der Schlot der Loma Caldera begrub dieses Bauerndorf um 600 n. Chr. unter vierzehn Ascheschichten, und alles Weiche ging mit: bemalte Kürbisschalen noch auf den Regalen, eine halb gegessene Mahlzeit, ein Feld junger Maispflanzen samt Pflanzdämmen. Leichen fand man keine — die Leute konnten fliehen. Es ist der einzige Ort der Mayawelt, an dem der Alltag überdauerte statt der Könige."
+      },
       "lat": 13.8278,
       "lng": -89.3611,
-      "emoji": "🌾"
+      "emoji": "🌽",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Joya_de_Ceren%2C_La_Libertad.JPG/960px-Joya_de_Ceren%2C_La_Libertad.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Joya_de_Ceren,_La_Libertad.JPG",
+        "author": "BelenM",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Excavated earthen walls and steps of a buried village under a modern shelter roof",
+          "de": "Freigelegte Lehmmauern und Stufen eines verschütteten Dorfes unter einem Schutzdach"
+        }
+      }
     },
     {
-      "name": "Ruta de las Flores",
-      "description": { "en": "A winding mountain road through coffee country — weekend food festivals in Juayúa and streets full of murals in Ataco.", "de": "Kurvige Bergstraße durchs Kaffeeland — Food-Festivals am Wochenende in Juayúa und Straßen voller Wandbilder in Ataco." },
-      "lat": 13.8414,
-      "lng": -89.7458,
-      "emoji": "🌸"
+      "name": "Concepción de Ataco",
+      "description": {
+        "en": "Some fifty murals cover the walls of a coffee town at 1,250 metres on the Ruta de las Flores — women with water jars, cane cutters, the volcanoes — painted by local artists since the mid-2000s. Ataco is Nahuat for 'place of high springs'. Juayúa, twenty minutes on, runs a food fair every single weekend of the year.",
+        "de": "Rund fünfzig Wandbilder bedecken die Mauern eines Kaffeestädtchens auf 1.250 Metern an der Ruta de las Flores — Frauen mit Wasserkrügen, Rohrschneider, die Vulkane —, seit Mitte der 2000er von örtlichen Künstlern gemalt. Ataco heißt auf Nahuat 'Ort der hohen Quellen'. In Juayúa, zwanzig Minuten weiter, läuft jedes Wochenende des Jahres ein Essensmarkt."
+      },
+      "lat": 13.87,
+      "lng": -89.847,
+      "emoji": "🎨",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Murales_de_Ataco_4.JPG/960px-Murales_de_Ataco_4.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Murales_de_Ataco_4.JPG",
+        "author": "Erickssonr",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A wall mural of two women carrying jars, with painted houses, hills and a dog behind them",
+          "de": "Ein Wandbild mit zwei Frauen, die Krüge tragen, dahinter gemalte Häuser, Hügel und ein Hund"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional El Boquerón",
+      "description": {
+        "en": "The summit crater of the San Salvador volcano is a hole about 1.5 kilometres wide and 500 metres deep, with a small cone on the floor left by the 1917 eruption — the one that shook the capital and sent lava down the northern flank. The rim is planted with hydrangeas and coffee, and the whole city sits under it.",
+        "de": "Der Gipfelkrater des Vulkans von San Salvador ist ein Loch von rund 1,5 Kilometern Breite und 500 Metern Tiefe, auf dem Grund ein kleiner Kegel aus dem Ausbruch von 1917 — jenem, der die Hauptstadt erschütterte und Lava über die Nordflanke schickte. Auf dem Rand wachsen Hortensien und Kaffee, und darunter liegt die ganze Stadt."
+      },
+      "lat": 13.7358,
+      "lng": -89.2861,
+      "emoji": "🕳️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Boquer%C3%B3n_crater.jpg/960px-Boquer%C3%B3n_crater.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Boquer%C3%B3n_crater.jpg",
+        "author": "Jpyle490",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 504,
+        "alt": {
+          "en": "A wide forested crater seen from its rim, a small cone visible on the crater floor",
+          "de": "Ein breiter bewaldeter Krater vom Rand aus, auf dem Kratergrund ein kleiner Kegel"
+        }
+      }
+    },
+    {
+      "name": "Iglesia El Rosario",
+      "description": {
+        "en": "From the street it reads as a concrete hangar. Inside, Rubén Martínez threw one parabolic vault over the whole nave in 1971 and set coloured glass into the shell, so the light crosses the floor as a spectrum and moves with the hour. José Matías Delgado, the priest who started the independence movement in 1811, is buried under it.",
+        "de": "Von der Straße wirkt sie wie ein Betonhangar. Drinnen spannte Rubén Martínez 1971 ein einziges Parabelgewölbe über das ganze Schiff und setzte farbiges Glas in die Schale, sodass das Licht als Spektrum über den Boden wandert und mit der Stunde weiterzieht. Darunter liegt José Matías Delgado begraben, der Priester, der 1811 die Unabhängigkeitsbewegung anstieß."
+      },
+      "lat": 13.6963,
+      "lng": -89.19,
+      "emoji": "🌈",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Iglesia_El_Rosario%2C_San_Salvador.JPG/960px-Iglesia_El_Rosario%2C_San_Salvador.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Iglesia_El_Rosario,_San_Salvador.JPG",
+        "author": "BelenM",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A curved raw-concrete church front with a grid of small windows, palms on either side",
+          "de": "Eine gewölbte Sichtbetonfassade mit einem Raster kleiner Fenster, seitlich Palmen"
+        }
+      }
+    },
+    {
+      "name": "Playa El Tunco",
+      "description": {
+        "en": "The rock standing in the surf is the tunco, the pig, and the sand is black because it came off the volcanoes upriver. Ten minutes east at Punta Roca a right-hander runs over rock for hundreds of metres and has held world tour events. Onshore it is one street of hostels, and a rock that looks less like a pig every year.",
+        "de": "Der Fels in der Brandung ist der tunco, das Schwein, und der Sand ist schwarz, weil er von den Vulkanen flussaufwärts stammt. Zehn Minuten östlich, an der Punta Roca, läuft eine Rechte über Hunderte Meter Fels, auf der schon Weltcup-Wettbewerbe stattfanden. An Land: eine Straße voller Hostels — und ein Fels, der jedes Jahr weniger nach Schwein aussieht."
+      },
+      "lat": 13.4928,
+      "lng": -89.3804,
+      "emoji": "🏄",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/2010.05.05.172922_El_Tunco_El_Sunzal_El_Salvador.jpg/960px-2010.05.05.172922_El_Tunco_El_Sunzal_El_Salvador.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:2010.05.05.172922_El_Tunco_El_Sunzal_El_Salvador.jpg",
+        "author": "Hermann Luyken",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A blocky rock standing in breaking surf, one person walking the dark wet sand",
+          "de": "Ein kantiger Fels in der brechenden Brandung, eine Person geht über den dunklen nassen Sand"
+        }
+      }
+    },
+    {
+      "name": "Suchitoto",
+      "description": {
+        "en": "Cobbles, single-storey white houses and a church held up by painted wooden columns, above a lake that only exists because the Cerrón Grande dam flooded the valley in 1976. The town emptied during the war — the guerrilla held the hills behind it — and refilled afterwards with artists and returning families. From November the reservoir fills with migrating birds.",
+        "de": "Kopfsteinpflaster, einstöckige weiße Häuser und eine Kirche auf bemalten Holzsäulen, über einem See, den es nur gibt, weil der Cerrón-Grande-Damm 1976 das Tal flutete. Im Krieg leerte sich der Ort — die Guerrilla hielt die Hügel dahinter — und füllte sich danach mit Künstlern und Rückkehrerfamilien. Ab November sammeln sich Zugvögel auf dem Stausee."
+      },
+      "lat": 13.9375,
+      "lng": -89.0281,
+      "emoji": "🏘️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Suchitoto%2C_El_Salvador_-_panoramio_%2825%29.jpg/960px-Suchitoto%2C_El_Salvador_-_panoramio_%2825%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Suchitoto,_El_Salvador_-_panoramio_(25).jpg",
+        "author": "PABLO NUÑEZ",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A cobbled street of low white houses with tiled roofs under a bright midday sky",
+          "de": "Eine gepflasterte Straße mit niedrigen weißen Häusern und Ziegeldächern im Mittagslicht"
+        }
+      }
+    },
+    {
+      "name": "Perquín",
+      "description": {
+        "en": "The guerrilla ran its own territory from this mountain town, and Radio Venceremos broadcast for eleven years from a transmitter carried between hills on mules. The museum keeps the equipment, a crater left by a 500-pound bomb and the wreck of a downed helicopter. El Mozote, where soldiers killed around a thousand villagers in December 1981, is half an hour away.",
+        "de": "Von diesem Bergstädtchen aus verwaltete die Guerrilla ihr eigenes Gebiet, und Radio Venceremos sendete elf Jahre lang aus einem Sender, den Maultiere von Hügel zu Hügel trugen. Das Museum bewahrt die Geräte, einen Krater von einer 500-Pfund-Bombe und das Wrack eines abgeschossenen Hubschraubers. El Mozote, wo Soldaten im Dezember 1981 rund tausend Dorfbewohner töteten, liegt eine halbe Stunde entfernt."
+      },
+      "lat": 13.9567,
+      "lng": -88.1567,
+      "emoji": "📻",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Original_Radio_Venceremos_transmitter.jpg/960px-Original_Radio_Venceremos_transmitter.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Original_Radio_Venceremos_transmitter.jpg",
+        "author": "PizzaKing13",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 415,
+        "alt": {
+          "en": "Two scratched grey radio transmitter units with dials and meters, on a red cloth",
+          "de": "Zwei zerkratzte graue Funksender mit Drehknöpfen und Anzeigen auf rotem Tuch"
+        }
+      }
+    },
+    {
+      "name": "Bahía de Jiquilisco",
+      "description": {
+        "en": "The largest mangrove system on Central America's Pacific side: 63,000 hectares of channels, sandbars and islands behind a barrier peninsula, a UNESCO biosphere reserve since 2007. A large share of the eastern Pacific's surviving hawksbill turtles nest on these beaches. Boats leave Puerto El Triunfo and run out through water the colour of tea.",
+        "de": "Das größte Mangrovensystem der zentralamerikanischen Pazifikseite: 63.000 Hektar Kanäle, Sandbänke und Inseln hinter einer vorgelagerten Halbinsel, seit 2007 UNESCO-Biosphärenreservat. Ein großer Teil der übrigen Karettschildkröten des Ostpazifiks legt hier seine Eier ab. Von Puerto El Triunfo fahren Boote hinaus, durch teefarbenes Wasser."
+      },
+      "lat": 13.2833,
+      "lng": -88.5333,
+      "emoji": "🐢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bahia_de_Jiquilisco%2C_El_Salvador.JPG/960px-Bahia_de_Jiquilisco%2C_El_Salvador.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahia_de_Jiquilisco,_El_Salvador.JPG",
+        "author": "ElmerGuevara",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A pelican gliding low over calm bay water, a volcano cone rising behind the far shore",
+          "de": "Ein Pelikan gleitet tief über ruhiges Buchtwasser, hinter dem Ufer ein Vulkankegel"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la pupusa",
+      "description": {
+        "en": "A thick corn tortilla stuffed before it is cooked — cheese, refried beans, chicharrón ground to a paste, or loroco, a flower bud that tastes green and faintly bitter. It arrives with curtido, cabbage pickled in vinegar, and a thin tomato salsa, and it is eaten with the hands. You order by the piece; three is dinner.",
+        "de": "Eine dicke Maistortilla, vor dem Backen gefüllt — mit Käse, refritos, zu Paste gemahlenem Chicharrón oder Loroco, einer Blütenknospe, die grün und leicht bitter schmeckt. Dazu kommen curtido, in Essig eingelegter Kohl, und dünne Tomatensalsa; gegessen wird mit den Händen. Bestellt wird stückweise, drei sind ein Essen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pupusas_El_Salvador_Centro_America.JPG/960px-Pupusas_El_Salvador_Centro_America.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pupusas_El_Salvador_Centro_America.JPG",
+        "author": "JMRAFFi",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A plate stacked with thick browned corn cakes, cheese and meat showing at the edges",
+          "de": "Ein Teller voller dicker gebräunter Maisfladen, an den Rändern quellen Käse und Fleisch heraus"
+        }
+      }
+    },
+    {
+      "name": "la yuca frita con chicharrón",
+      "description": {
+        "en": "Cassava boiled soft, then fried until the outside shatters, piled with pork crackling or fried sardine, curtido and salsa, and handed over on a banana leaf. The unfried version, yuca salcochada, skips the pan. Both come from carts that appear outside the churches after evening mass.",
+        "de": "Maniok weich gekocht und dann frittiert, bis die Hülle splittert, darauf Schweinekruste oder gebratene Sardine, curtido und Salsa, gereicht auf einem Bananenblatt. Die ungebratene Variante, yuca salcochada, spart sich die Pfanne. Beide kommen von Karren, die nach der Abendmesse vor den Kirchen auftauchen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Empanada_y_yuca_frita_salvadore%C3%B1a.jpg/960px-Empanada_y_yuca_frita_salvadore%C3%B1a.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Empanada_y_yuca_frita_salvadore%C3%B1a.jpg",
+        "author": "Levystarr",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A tray with fried cassava wedges under salsa and slaw, empanadas and two glasses of juice",
+          "de": "Ein Tablett mit frittierten Maniokstücken unter Salsa und Krautsalat, Empanadas und zwei Gläsern Saft"
+        }
+      }
+    },
+    {
+      "name": "la sopa de pata",
+      "description": {
+        "en": "Cow's foot and tripe simmered for hours with corn on the cob, green banana, chayote and yuca until the collagen makes the broth cling to the spoon. Lime and chilli go in at the table. It is Saturday food and a hangover cure, and the market stalls that make it have sold out by noon.",
+        "de": "Rinderfuß und Kutteln stundenlang mit Maiskolben, grüner Banane, Chayote und Maniok gekocht, bis die Brühe vom Kollagen am Löffel hängen bleibt. Limette und Chili kommen erst am Tisch dazu. Samstagsessen und Katerkur zugleich — die Marktstände, die sie machen, sind mittags ausverkauft."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Sopa_de_pata.jpg/960px-Sopa_de_pata.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Sopa_de_pata.jpg",
+        "author": "Mima",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 703,
+        "alt": {
+          "en": "A deep bowl of orange broth with tripe, a chunk of corn on the cob and vegetables",
+          "de": "Eine tiefe Schale mit oranger Brühe, Kutteln, einem Stück Maiskolben und Gemüse"
+        }
+      }
+    },
+    {
+      "name": "el pan con pavo",
+      "description": {
+        "en": "A turkey sandwich that takes two days. The bird is marinated in relajo — toasted seeds, dried chillies, cloves — roasted, pulled apart, and its cooking juice thickened into a sauce the bread is soaked in. Watercress, cucumber and tomato go on top. Sold from house windows in December and at every fair.",
+        "de": "Ein Truthahn-Sandwich, das zwei Tage braucht. Der Vogel zieht in relajo — gerösteten Kernen, getrockneten Chilis, Nelken —, wird gebraten, zerpflückt, und sein Bratensaft zu einer Sauce gebunden, in die das Brot getunkt wird. Obendrauf Brunnenkresse, Gurke und Tomate. Im Dezember verkauft man ihn aus Hausfenstern."
+      }
+    },
+    {
+      "name": "la quesadilla salvadoreña",
+      "description": {
+        "en": "Nothing to do with the Mexican kind: a sweet pound cake of rice flour, hard cheese, cream and sesame seeds, baked in a tray and eaten with coffee. It is sold in squares at bus stops, wrapped in paper, and the good ones are faintly gritty from the cheese.",
+        "de": "Mit der mexikanischen hat sie nichts zu tun: ein süßer Rührkuchen aus Reismehl, Hartkäse, Sahne und Sesam, im Blech gebacken und zum Kaffee gegessen. Verkauft wird er in Quadraten an Bushaltestellen, in Papier gewickelt, und die guten sind vom Käse leicht körnig."
+      }
+    },
+    {
+      "name": "la horchata de morro",
+      "description": {
+        "en": "Not the rice kind: Salvadoran horchata is built on morro seeds from the calabash tree, toasted with cacao, peanut, sesame and cinnamon, ground fine and stirred cold into milk or water. It comes out grey-brown, tastes of burnt nuts, and every pupusería keeps a jug of it on the counter.",
+        "de": "Nicht die aus Reis: Die salvadorianische Horchata baut auf Morro-Samen vom Kalebassenbaum, geröstet mit Kakao, Erdnuss, Sesam und Zimt, fein gemahlen und kalt in Milch oder Wasser gerührt. Sie wird graubraun, schmeckt nach gerösteten Nüssen, und in jeder Pupusería steht ein Krug davon auf dem Tresen."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Fiestas Agostinas",
+      "when": {
+        "en": "1–6 August",
+        "de": "1.–6. August"
+      },
+      "description": {
+        "en": "San Salvador shuts for a week for the Divino Salvador del Mundo, the figure the country is named after. On the 5th the image is lowered through a hollow globe in front of the cathedral and comes back up dressed in purple — la bajada — while fireworks go off over the towers.",
+        "de": "San Salvador macht eine Woche dicht für den Divino Salvador del Mundo, die Figur, nach der das Land heißt. Am 5. wird das Bildnis vor der Kathedrale durch eine hohle Weltkugel abgesenkt und kommt violett gekleidet wieder hoch — la bajada —, während über den Türmen Feuerwerk hochgeht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Transfiguracion_del_Divino_Salvador_del_Mundo.jpg/960px-Transfiguracion_del_Divino_Salvador_del_Mundo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Transfiguracion_del_Divino_Salvador_del_Mundo.jpg",
+        "author": "Ocastro3",
+        "license": "CC0",
+        "width": 960,
+        "height": 1200,
+        "alt": {
+          "en": "Fireworks and smoke above a floodlit cathedral, a white figure on a blue globe below",
+          "de": "Feuerwerk und Rauch über einer angestrahlten Kathedrale, darunter eine weiße Figur auf blauer Weltkugel"
+        }
+      }
+    },
+    {
+      "name": "Bolas de Fuego",
+      "when": {
+        "en": "31 August",
+        "de": "31. August"
+      },
+      "description": {
+        "en": "Nejapa marks the 1658 eruption that forced its old town to move by throwing fire at itself: two teams in painted faces and thick gloves lob kerosene-soaked rag balls at each other down the main street for about an hour. The official version is that it re-enacts Saint Jerome fighting the devil.",
+        "de": "Nejapa erinnert an den Ausbruch von 1658, der den alten Ort zum Umzug zwang, indem es Feuer auf sich selbst wirft: Zwei Mannschaften mit bemalten Gesichtern und dicken Handschuhen schleudern eine Stunde lang kerosingetränkte Lumpenbälle die Hauptstraße entlang. Offiziell stellt das Hieronymus gegen den Teufel nach."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bolas_de_Fuego_Nejapa%2C_San_Salvador_El_Salvador.JPG/960px-Bolas_de_Fuego_Nejapa%2C_San_Salvador_El_Salvador.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bolas_de_Fuego_Nejapa,_San_Salvador_El_Salvador.JPG",
+        "author": "ElmerGuevara",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A line of fire along a dark street with silhouetted crowds watching from both sides",
+          "de": "Eine Feuerlinie auf einer dunklen Straße, zu beiden Seiten schauen Menschen als Silhouetten zu"
+        }
+      }
+    },
+    {
+      "name": "Día Nacional de la Pupusa",
+      "when": {
+        "en": "second Sunday of November",
+        "de": "zweiter Sonntag im November"
+      },
+      "description": {
+        "en": "A national day for a food, written into law in 2005 along with the pupusa's status as the national dish. Olocuilta, the town on the airport road that lives off pupusas de arroz, cooks them by the thousand, and somebody usually attempts the record for the largest single one — the last ones ran over three metres.",
+        "de": "Ein nationaler Feiertag für ein Essen, 2005 per Gesetz eingeführt, zusammen mit dem Status der Pupusa als Nationalgericht. Olocuilta, der Ort an der Flughafenstraße, der von pupusas de arroz lebt, backt sie zu Tausenden, und meist versucht jemand den Rekord für die größte — zuletzt über drei Meter."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El voseo",
+      "text": {
+        "en": "Salvadorans use vos, and the verb moves with it: vos tenés, vos podés, and the imperative loses its s — mirá, vení, comé. Usted also turns up inside families, not only with strangers.",
+        "de": "Man benutzt vos, und das Verb geht mit: vos tenés, vos podés, und der Imperativ verliert sein s — mirá, vení, comé. Usted taucht auch innerhalb der Familie auf, nicht nur bei Fremden."
+      }
+    },
+    {
+      "title": "Cuidado con 'bicho'",
+      "text": {
+        "en": "'Bicho' means kid here and gets used constantly, about children and about grown friends. In Puerto Rico and parts of Spain the same word is obscene, so know which room you are standing in.",
+        "de": "'Bicho' heißt hier Kind und fällt ständig, über Kinder wie über erwachsene Freunde. In Puerto Rico und Teilen Spaniens ist dasselbe Wort obszön — man sollte also wissen, wo man gerade steht."
+      }
+    },
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the right cheek between women, and between a woman and a man; men shake hands or half-hug. Say 'buenas' out loud on walking into a shop, a bus or a waiting room.",
+        "de": "Ein Kuss auf die rechte Wange zwischen Frauen und zwischen Frau und Mann; Männer geben die Hand oder umarmen sich halb. Beim Betreten von Laden, Bus oder Wartezimmer sagt man laut 'buenas'."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Sit-down bills usually add 10 % as 'servicio' — read the line before topping it up. Pupuserías and market stalls are not tipped, and a taxi fare is agreed through the window before you get in.",
+        "de": "Auf Restaurantrechnungen stehen meist schon 10 % 'servicio' — erst die Zeile lesen, dann aufschlagen. In Pupuserías gibt man kein Trinkgeld, und der Taxipreis wird vorm Einsteigen ausgehandelt."
+      }
+    },
+    {
+      "title": "Hablar de la guerra",
+      "text": {
+        "en": "Almost every family lost someone between 1980 and 1992, and many have relatives in the United States because of it. People will talk about it, often bluntly — but let them bring it up first.",
+        "de": "Fast jede Familie hat zwischen 1980 und 1992 jemanden verloren, und viele haben deshalb Verwandte in den USA. Die Leute reden darüber, oft sehr direkt — aber sie sollten davon anfangen, nicht du."
+      }
     }
   ]
 }

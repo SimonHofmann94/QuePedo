@@ -1,13 +1,32 @@
 {
   "id": "cl",
   "flag": "🇨🇱",
-  "name": { "en": "Chile", "de": "Chile" },
+  "name": {
+    "en": "Chile",
+    "de": "Chile"
+  },
   "nameEs": "Chile",
   "capital": "Santiago de Chile",
   "population": "20 M",
+  "tagline": {
+    "en": "4,300 km from the driest desert on Earth down to the glaciers — and 180 km wide.",
+    "de": "4.300 km von der trockensten Wüste der Erde hinab zu den Gletschern — und 180 km breit."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Cuernos_del_Paine%2C_Parque_Nacional_Torres_del_Paine%2C_Chile6.jpg/1920px-Cuernos_del_Paine%2C_Parque_Nacional_Torres_del_Paine%2C_Chile6.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Cuernos_del_Paine,_Parque_Nacional_Torres_del_Paine,_Chile6.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "width": 1920,
+    "height": 1280,
+    "alt": {
+      "en": "The Cuernos del Paine peaks under cloud above the turquoise water of Lake Pehoé",
+      "de": "Die Gipfel der Cuernos del Paine unter Wolken über dem türkisen Wasser des Lago Pehoé"
+    }
+  },
   "intro": {
-    "en": "Chileans speak the Spanish that other native speakers joke they can't understand: lightning-fast, final syllables swallowed ('¿cómo estái?'), and packed with slang no textbook teaches. Master 'cachai' and 'po' and you've earned serious bragging rights. The country itself is geographic madness — 4,300 km long and on average just 180 km wide, stretching from the driest desert on Earth to Patagonian glaciers.",
-    "de": "Chilenen sprechen das Spanisch, über das andere Muttersprachler witzeln, sie verstünden es selbst nicht: rasend schnell, verschluckte Endsilben ('¿cómo estái?') und vollgepackt mit Slang, den kein Lehrbuch kennt. Wer 'cachai' und 'po' draufhat, darf zu Recht angeben. Das Land selbst ist geografischer Irrsinn — 4.300 km lang und im Schnitt nur 180 km breit, von der trockensten Wüste der Erde bis zu Patagoniens Gletschern."
+    "en": "Chilean Spanish is the variety other Spanish speakers admit defeat on: the pace is fast, final -s disappears, and the verbs carry their own endings — ¿cachai? and ¿estái? where the textbook says ¿entiendes? and ¿estás?. Almost every sentence closes with 'po', the last syllable of 'pues'. The country runs 4,300 km north to south and averages 180 km across, so a Chilean from Arica and one from Punta Arenas live further apart than Lisbon and Moscow. Pablo Neruda won the Nobel here; less exported is the Nueva Canción movement around Violeta Parra, whose 'Gracias a la vida' the whole continent sings.",
+    "de": "Chilenisches Spanisch ist die Variante, bei der andere Spanischsprecher aufgeben: hohes Tempo, verschluckte End-s, und die Verben haben eigene Endungen — ¿cachai? und ¿estái?, wo das Lehrbuch ¿entiendes? und ¿estás? sagt. Fast jeder Satz endet auf 'po', der letzten Silbe von 'pues'. Das Land zieht sich 4.300 km von Nord nach Süd und ist im Schnitt 180 km breit; zwischen einem Chilenen aus Arica und einem aus Punta Arenas liegt mehr als zwischen Lissabon und Moskau. Pablo Neruda bekam hier den Nobelpreis; weniger exportiert wurde die Nueva Canción um Violeta Parra, deren 'Gracias a la vida' der ganze Kontinent singt."
   },
   "funFact": {
     "en": "Parts of Chile's Atacama Desert went more than 400 years without measurable rainfall — the landscape is so Mars-like that NASA tests its rover equipment there.",
@@ -16,90 +35,584 @@
   "slang": [
     {
       "term": "cachai",
-      "meaning": { "en": "you know? / get it? — ends half of all Chilean sentences", "de": "verstehst du? / checkst du? — beendet die Hälfte aller chilenischen Sätze" },
+      "meaning": {
+        "en": "you know? / get it? — ends half of all Chilean sentences",
+        "de": "verstehst du? / checkst du? — beendet die Hälfte aller chilenischen Sätze"
+      },
       "example": "Estaba súper cansado, cachai, y me fui a la casa."
     },
     {
       "term": "po",
-      "meaning": { "en": "emphasis particle from 'pues' — sí po, no po, ya po", "de": "Nachdruck-Partikel von 'pues' — sí po, no po, ya po" },
+      "meaning": {
+        "en": "emphasis particle from 'pues' — sí po, no po, ya po",
+        "de": "Nachdruck-Partikel von 'pues' — sí po, no po, ya po"
+      },
       "example": "—¿Vamos? —¡Sí po, obvio!"
     },
     {
       "term": "fome",
-      "meaning": { "en": "boring, lame", "de": "langweilig, öde" },
+      "meaning": {
+        "en": "boring, lame — the flattest verdict a Chilean can give",
+        "de": "langweilig, öde — das nüchternste Urteil, das ein Chilene fällt"
+      },
       "example": "La película estuvo fome, mejor vemos otra."
     },
     {
       "term": "bacán",
-      "meaning": { "en": "cool, awesome", "de": "cool, genial" },
+      "meaning": {
+        "en": "cool, awesome — the everyday word of approval",
+        "de": "cool, genial — das ganz alltägliche Lob"
+      },
       "example": "¡Qué bacán tu bici nueva!"
     },
     {
       "term": "weón / weona",
-      "meaning": { "en": "dude — or idiot; THE Chilean word, tone is everything", "de": "Alter — oder Idiot; DAS chilenische Wort schlechthin, der Ton macht alles" },
+      "meaning": {
+        "en": "dude — or idiot; THE Chilean word, tone is everything",
+        "de": "Alter — oder Idiot; DAS chilenische Wort schlechthin, der Ton macht alles"
+      },
       "example": "Oye weón, ¿viste el partido anoche?"
     },
     {
       "term": "el carrete",
-      "meaning": { "en": "party, night out — 'carretear' is the verb", "de": "Party, Feier — 'carretear' ist das Verb dazu" },
+      "meaning": {
+        "en": "party, night out — 'carretear' is the verb",
+        "de": "Party, Feier — 'carretear' ist das Verb dazu"
+      },
       "example": "El sábado hay carrete en la casa de la Vale."
     },
     {
       "term": "al tiro",
-      "meaning": { "en": "right away, immediately (literally 'at the shot')", "de": "sofort, auf der Stelle (wörtlich 'auf den Schuss')" },
+      "meaning": {
+        "en": "right away, immediately (literally 'at the shot')",
+        "de": "sofort, auf der Stelle (wörtlich 'auf den Schuss')"
+      },
       "example": "Voy al tiro, espérame cinco minutos."
     },
     {
       "term": "la raja",
-      "meaning": { "en": "amazing, the best (informal and a bit crude — use among friends)", "de": "der Hammer, das Beste (salopp und etwas derb — nur unter Freunden)" },
+      "meaning": {
+        "en": "amazing, the best (informal and a bit crude — use among friends)",
+        "de": "der Hammer, das Beste (salopp und etwas derb — nur unter Freunden)"
+      },
       "example": "El concierto estuvo la raja."
+    },
+    {
+      "term": "la pega",
+      "meaning": {
+        "en": "work, job — 'ir a la pega' is to go to work",
+        "de": "Arbeit, Job — 'ir a la pega' heißt zur Arbeit gehen"
+      },
+      "example": "Salgo de la pega a las seis."
+    },
+    {
+      "term": "cuático",
+      "meaning": {
+        "en": "over the top, intense — said of a person or a situation",
+        "de": "übertrieben, heftig — über einen Menschen oder eine Lage"
+      },
+      "example": "Fue cuático lo que pasó en la reunión."
     }
   ],
   "vocabulary": [
-    { "es": "la palta", "translation": { "en": "avocado — Chile's national obsession", "de": "Avocado — Chiles Nationalobsession" }, "note": { "en": "'pan con palta' is a way of life — Spain & Mexico: el aguacate", "de": "'pan con palta' ist eine Lebenseinstellung — Spanien & Mexiko: el aguacate" } },
-    { "es": "el pololo / la polola", "translation": { "en": "boyfriend / girlfriend", "de": "fester Freund / feste Freundin" }, "note": { "en": "elsewhere: el novio — in Chile 'novio' already means fiancé", "de": "anderswo: el novio — in Chile heißt 'novio' schon Verlobter" } },
-    { "es": "la micro", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } },
-    { "es": "la luca", "translation": { "en": "1,000 pesos", "de": "1.000 Pesos" }, "note": { "en": "'cinco lucas' = 5,000 pesos — essential market vocabulary", "de": "'cinco lucas' = 5.000 Pesos — unverzichtbar auf dem Markt" } },
-    { "es": "el completo", "translation": { "en": "Chilean hot dog piled with avocado, tomato and mayo", "de": "chilenischer Hotdog, hoch beladen mit Avocado, Tomate und Mayo" }, "note": { "en": "the 'completo italiano' is named for the colors of the Italian flag", "de": "der 'completo italiano' ist nach den Farben der italienischen Flagge benannt" } },
-    { "es": "la guagua", "translation": { "en": "baby", "de": "Baby" }, "note": { "en": "from Quechua 'wawa' — careful: in the Caribbean 'guagua' means bus", "de": "vom Quechua 'wawa' — Achtung: in der Karibik ist 'guagua' der Bus" } },
-    { "es": "el taco", "translation": { "en": "traffic jam", "de": "Stau" }, "note": { "en": "in Mexico a taco is food — in Chile it's gridlock; elsewhere: el atasco", "de": "in Mexiko ist ein Taco Essen — in Chile ist es Stau; anderswo: el atasco" } },
-    { "es": "harto", "translation": { "en": "a lot, plenty", "de": "viel, jede Menge" }, "note": { "en": "elsewhere: mucho — 'harta gente' = loads of people", "de": "anderswo: mucho — 'harta gente' = jede Menge Leute" } }
+    {
+      "es": "la palta",
+      "translation": {
+        "en": "avocado — Chile's national obsession",
+        "de": "Avocado — Chiles Nationalobsession"
+      },
+      "note": {
+        "en": "'pan con palta' is a way of life — Spain & Mexico: el aguacate",
+        "de": "'pan con palta' ist eine Lebenseinstellung — Spanien & Mexiko: el aguacate"
+      }
+    },
+    {
+      "es": "el pololo / la polola",
+      "translation": {
+        "en": "boyfriend / girlfriend",
+        "de": "fester Freund / feste Freundin"
+      },
+      "note": {
+        "en": "elsewhere: el novio — in Chile 'novio' already means fiancé",
+        "de": "anderswo: el novio — in Chile heißt 'novio' schon Verlobter"
+      }
+    },
+    {
+      "es": "la micro",
+      "translation": {
+        "en": "city bus",
+        "de": "Stadtbus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús — the Santiago ones are painted green and white",
+        "de": "anderswo: el autobús — die in Santiago sind grün-weiß lackiert"
+      }
+    },
+    {
+      "es": "la luca",
+      "translation": {
+        "en": "1,000 pesos",
+        "de": "1.000 Pesos"
+      },
+      "note": {
+        "en": "'cinco lucas' = 5,000 pesos — essential market vocabulary",
+        "de": "'cinco lucas' = 5.000 Pesos — unverzichtbar auf dem Markt"
+      }
+    },
+    {
+      "es": "el completo",
+      "translation": {
+        "en": "Chilean hot dog piled with avocado, tomato and mayo",
+        "de": "chilenischer Hotdog, hoch beladen mit Avocado, Tomate und Mayo"
+      },
+      "note": {
+        "en": "the 'completo italiano' is named for the colors of the Italian flag",
+        "de": "der 'completo italiano' ist nach den Farben der italienischen Flagge benannt"
+      }
+    },
+    {
+      "es": "la guagua",
+      "translation": {
+        "en": "baby",
+        "de": "Baby"
+      },
+      "note": {
+        "en": "from Quechua 'wawa' — careful: in the Caribbean 'guagua' means bus",
+        "de": "vom Quechua 'wawa' — Achtung: in der Karibik ist 'guagua' der Bus"
+      }
+    },
+    {
+      "es": "el taco",
+      "translation": {
+        "en": "traffic jam",
+        "de": "Stau"
+      },
+      "note": {
+        "en": "in Mexico a taco is food — in Chile it's gridlock; elsewhere: el atasco",
+        "de": "in Mexiko ist ein Taco Essen — in Chile ist es Stau; anderswo: el atasco"
+      }
+    },
+    {
+      "es": "harto",
+      "translation": {
+        "en": "a lot, plenty",
+        "de": "viel, jede Menge"
+      },
+      "note": {
+        "en": "elsewhere: mucho — 'harta gente' = loads of people",
+        "de": "anderswo: mucho — 'harta gente' = jede Menge Leute"
+      }
+    },
+    {
+      "es": "el pituto",
+      "translation": {
+        "en": "a contact who gets you in — pull, connections",
+        "de": "eine Beziehung, die Türen öffnet — Vitamin B"
+      },
+      "note": {
+        "en": "'conseguir algo por pituto' = to get it through who you know",
+        "de": "'conseguir algo por pituto' = etwas über Beziehungen bekommen"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Torres del Paine",
-      "description": { "en": "Three granite towers rising 2,500 m out of the Patagonian steppe — guanacos graze beneath while condors circle the peaks.", "de": "Drei Granittürme, die 2.500 m aus der patagonischen Steppe aufragen — darunter grasen Guanakos, darüber kreisen Kondore." },
+      "description": {
+        "en": "Three granite towers, the tallest close to 2,500 m, left standing when the softer rock around them wore away. The W trek to their base takes four days, and the wind off the Southern Patagonian Ice Field knocks walkers over often enough that the rangers warn about it. Guanacos graze the steppe below in herds, and roughly a hundred pumas live off the guanacos.",
+        "de": "Drei Granittürme, der höchste knapp 2.500 m, stehen geblieben, als das weichere Gestein ringsum abgetragen wurde. Der W-Trek zu ihrem Fuß dauert vier Tage, und der Wind vom südpatagonischen Eisfeld wirft Wanderer oft genug um, dass die Ranger davor warnen. Unten weiden Guanako-Herden in der Steppe, und rund hundert Pumas leben von den Guanakos."
+      },
       "lat": -50.9417,
       "lng": -72.9944,
-      "emoji": "🏔️"
+      "emoji": "🏔️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Pehoe_Lake_view_of_a_guanaco_and_mountains_%285484910628%29.jpg/960px-Pehoe_Lake_view_of_a_guanaco_and_mountains_%285484910628%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pehoe_Lake_view_of_a_guanaco_and_mountains_(5484910628).jpg",
+        "author": "Liam Quinn from Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Snow-covered Paine peaks rising over a green hillside above the lake shore",
+          "de": "Schneebedeckte Paine-Gipfel über einem grünen Hang am Ufer des Sees"
+        }
+      }
     },
     {
       "name": "Valle de la Luna",
-      "description": { "en": "The 'Valley of the Moon' in the Atacama — salt-crusted dunes and rock formations that glow orange and purple at sunset.", "de": "Das 'Tal des Mondes' in der Atacama — salzverkrustete Dünen und Felsformationen, die im Sonnenuntergang orange und violett glühen." },
+      "description": {
+        "en": "A basin of salt and clay behind San Pedro de Atacama, folded upward by the same collision that raised the Andes and rained on almost never since. At sunset the walls run from orange through to violet, and as the temperature drops you can hear the salt crust cracking. Some weather stations in this desert have never recorded a drop of rain.",
+        "de": "Ein Becken aus Salz und Ton hinter San Pedro de Atacama, aufgefaltet von derselben Kollision, die die Anden hob, und seither so gut wie nie beregnet. Zum Sonnenuntergang laufen die Wände von Orange bis Violett, und wenn die Temperatur fällt, hört man die Salzkruste knacken. Manche Messstationen in dieser Wüste haben nie einen Tropfen Regen verzeichnet."
+      },
       "lat": -22.9167,
       "lng": -68.3167,
-      "emoji": "🌙"
+      "emoji": "🌙",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Anfiteatro%2C_Valle_de_la_Luna%2C_San_Pedro_de_Atacama%2C_Chile%2C_2016-02-01%2C_DD_149.JPG/960px-Anfiteatro%2C_Valle_de_la_Luna%2C_San_Pedro_de_Atacama%2C_Chile%2C_2016-02-01%2C_DD_149.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Anfiteatro,_Valle_de_la_Luna,_San_Pedro_de_Atacama,_Chile,_2016-02-01,_DD_149.JPG",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 484,
+        "alt": {
+          "en": "Eroded salt and clay ridges of the Amphitheatre rock formation in low golden light",
+          "de": "Erodierte Salz- und Tonkämme der Felsformation Anfiteatro im tiefen goldenen Licht"
+        }
+      }
     },
     {
       "name": "Valparaíso",
-      "description": { "en": "A UNESCO port city painted across 40-odd hills — ride the century-old funiculars past murals covering entire house facades.", "de": "Eine UNESCO-Hafenstadt, verteilt über gut 40 Hügel — fahr mit den hundertjährigen Standseilbahnen an Wandbildern vorbei, die ganze Fassaden bedecken." },
+      "description": {
+        "en": "Forty-odd hills of corrugated-iron houses painted whatever colour was to hand, stacked above a port that lost most of its traffic when the Panama Canal opened in 1914. Fifteen funiculars were built from 1883 to get people up the slopes; several still run, at walking pace, for a few hundred pesos. Neruda's house on Cerro Florida is full of ships' figureheads.",
+        "de": "Gut vierzig Hügel voller Wellblechhäuser, gestrichen in der Farbe, die gerade da war, gestapelt über einem Hafen, der 1914 mit dem Panamakanal den Großteil seines Verkehrs verlor. Ab 1883 entstanden fünfzehn Standseilbahnen, um die Leute hinaufzubringen; mehrere fahren noch, im Schritttempo, für ein paar hundert Pesos. Nerudas Haus am Cerro Florida ist voller Galionsfiguren."
+      },
       "lat": -33.0472,
       "lng": -71.6127,
-      "emoji": "🚡"
+      "emoji": "🚡",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Valpara%C3%ADso_-_Paseo_Mirador_Atkinson_-_01.jpg/960px-Valpara%C3%ADso_-_Paseo_Mirador_Atkinson_-_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Valpara%C3%ADso_-_Paseo_Mirador_Atkinson_-_01.jpg",
+        "author": "HaSt",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A terrace of green, pink and yellow painted houses behind iron railings in Valparaíso",
+          "de": "Eine Häuserzeile in Grün, Rosa und Gelb hinter Eisengittern in Valparaíso"
+        }
+      }
     },
     {
-      "name": "Rapa Nui (Isla de Pascua)",
-      "description": { "en": "Easter Island, 3,500 km off the coast — at Ahu Tongariki, fifteen moai statues stand in a row with their backs to the Pacific.", "de": "Die Osterinsel, 3.500 km vor der Küste — am Ahu Tongariki stehen fünfzehn Moai in einer Reihe, mit dem Rücken zum Pazifik." },
+      "name": "Rapa Nui",
+      "description": {
+        "en": "The nearest inhabited land is Pitcairn, 2,000 km away. Rapa Nui carvers cut around 900 moai between 1250 and 1500 and moved them upright across the island — modern trials show a team can walk one along with three ropes — and then stopped, mid-quarry. Fifteen stand again at Ahu Tongariki, re-erected in the 1990s after a tsunami had scattered them inland.",
+        "de": "Das nächste bewohnte Land ist Pitcairn, 2.000 km entfernt. Zwischen 1250 und 1500 schlugen Rapa-Nui-Steinmetze rund 900 Moai und bewegten sie aufrecht über die Insel — Versuche zeigen, dass ein Team sie mit drei Seilen gehen lässt — und hörten dann mitten im Steinbruch auf. Fünfzehn stehen wieder am Ahu Tongariki, in den 1990ern neu aufgerichtet, nachdem ein Tsunami sie landeinwärts verstreut hatte."
+      },
       "lat": -27.1258,
       "lng": -109.2769,
-      "emoji": "🗿"
+      "emoji": "🗿",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ahu_Tongariki.jpg/960px-Ahu_Tongariki.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ahu_Tongariki.jpg",
+        "author": "Rivi",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Six moai on their stone platform seen from below against a blue sky, one with a red topknot",
+          "de": "Sechs Moai auf ihrer Steinplattform von unten vor blauem Himmel, einer mit rotem Haarknoten"
+        }
+      }
     },
     {
       "name": "Volcán Villarrica",
-      "description": { "en": "One of the most active volcanoes in South America — its perfectly conical, snow-capped crater smokes gently above the lake town of Pucón.", "de": "Einer der aktivsten Vulkane Südamerikas — sein perfekt kegelförmiger, schneebedeckter Krater raucht sanft über dem Seestädtchen Pucón." },
+      "description": {
+        "en": "One of the few volcanoes anywhere with a lasting lava lake in its crater, which is why the summit glows red at night above the lake town of Pucón. It has erupted around thirty times since 1558 and emptied the town again in March 2015. People climb it in the morning with crampons and an ice axe and slide back down the snow on their backsides.",
+        "de": "Einer der wenigen Vulkane überhaupt mit dauerhaftem Lavasee im Krater — deshalb glüht der Gipfel nachts rot über dem Seestädtchen Pucón. Seit 1558 ist er rund dreißig Mal ausgebrochen, im März 2015 musste der Ort erneut geräumt werden. Morgens steigt man mit Steigeisen und Pickel hinauf und rutscht auf dem Hosenboden den Schnee wieder hinunter."
+      },
       "lat": -39.42,
       "lng": -71.9333,
-      "emoji": "🌋"
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Pucon_Villarrica.JPG/960px-Pucon_Villarrica.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pucon_Villarrica.JPG",
+        "author": "AndyiH",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The snow-covered cone of Villarrica volcano above the dark wooden rooftops of Pucón",
+          "de": "Der schneebedeckte Kegel des Vulkans Villarrica über den dunklen Holzdächern von Pucón"
+        }
+      }
+    },
+    {
+      "name": "Santiago",
+      "description": {
+        "en": "Six million people in a bowl with a 5,000 m wall of Andes down one side — razor-sharp the morning after rain, invisible under smog most other days. The cable car over Cerro San Cristóbal crosses the whole city in about fifteen minutes. Pedro de Valdivia founded the place on the Plaza de Armas in 1541; the Mapuche burned it down five months later.",
+        "de": "Sechs Millionen Menschen in einer Wanne, an einer Seite eine 5.000-Meter-Wand aus Anden — am Morgen nach dem Regen messerscharf, sonst meist unsichtbar im Smog. Die Seilbahn über den Cerro San Cristóbal quert die ganze Stadt in etwa fünfzehn Minuten. Pedro de Valdivia gründete den Ort 1541 an der Plaza de Armas; fünf Monate später brannten ihn die Mapuche nieder."
+      },
+      "lat": -33.4489,
+      "lng": -70.6693,
+      "emoji": "🏙️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Santiago_desde_telef%C3%A9rico_Pedro_de_Valdivia.jpg/960px-Santiago_desde_telef%C3%A9rico_Pedro_de_Valdivia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Santiago_desde_telef%C3%A9rico_Pedro_de_Valdivia.jpg",
+        "author": "Nbendersky",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A cable-car gondola over treetops, Santiago's towers and the snowy Andes beyond",
+          "de": "Eine Seilbahnkabine über Baumwipfeln, dahinter Santiagos Türme und die verschneiten Anden"
+        }
+      }
+    },
+    {
+      "name": "Castro, Chiloé",
+      "description": {
+        "en": "Palafitos: houses on stilts along the tideline, their front doors on the street and their back walls standing on posts in the water. Inland are sixteen wooden churches put up by shipwrights out of larch and cypress, the frames pegged together without nails. The island is also one of only two places on Earth where the potato was domesticated.",
+        "de": "Palafitos: Häuser auf Stelzen entlang der Gezeitenlinie, die Haustür an der Straße, die Rückwand auf Pfosten im Wasser. Im Inselinneren stehen sechzehn Holzkirchen, von Schiffszimmerern aus Lärche und Zypresse gebaut, die Gerüste ohne Nägel verzapft. Die Insel ist außerdem einer von nur zwei Orten der Erde, an denen die Kartoffel domestiziert wurde."
+      },
+      "lat": -42.4828,
+      "lng": -73.7644,
+      "emoji": "🏘️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Palafitos_Chiloe.jpg/960px-Palafitos_Chiloe.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Palafitos_Chiloe.jpg",
+        "author": "Cplandco",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Brightly painted stilt houses on wooden posts over the mudflats at Castro",
+          "de": "Bunt gestrichene Stelzenhäuser auf Holzpfosten über dem Watt von Castro"
+        }
+      }
+    },
+    {
+      "name": "Valle del Elqui",
+      "description": {
+        "en": "A narrow river valley of vineyards between bare brown mountains, with over 300 cloudless nights a year and no city light for a hundred kilometres. Dry dark air like this is why northern Chile now holds more large optical telescopes than anywhere else. The grapes go into pisco, and Gabriela Mistral, the first Latin American to win the Nobel in literature, grew up in Montegrande halfway up the valley.",
+        "de": "Ein schmales Flusstal voller Reben zwischen kahlen braunen Bergen, mit über 300 wolkenlosen Nächten im Jahr und hundert Kilometer weit ohne Stadtlicht. Wegen dieser trockenen dunklen Luft stehen im Norden Chiles heute mehr große optische Teleskope als sonst irgendwo. Die Trauben gehen in den Pisco, und Gabriela Mistral, erste Lateinamerikanerin mit Literaturnobelpreis, wuchs in Montegrande auf halber Talhöhe auf."
+      },
+      "lat": -30.0319,
+      "lng": -70.7081,
+      "emoji": "🔭",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Valle_del_Elqui%2C_Chile_%2811084927583%29.jpg/960px-Valle_del_Elqui%2C_Chile_%2811084927583%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Valle_del_Elqui,_Chile_(11084927583).jpg",
+        "author": "M M from Switzerland",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 641,
+        "alt": {
+          "en": "Green vineyards and orchards on the floor of the Elqui valley between bare brown hills",
+          "de": "Grüne Weinberge und Obstgärten auf dem Talgrund des Elqui zwischen kahlen braunen Hängen"
+        }
+      }
+    },
+    {
+      "name": "Humberstone",
+      "description": {
+        "en": "A saltpetre town in the Atacama built for some 3,700 workers and emptied in 1960, when synthetic nitrate made the mines worthless overnight. The theatre still has its seats, the swimming pool is lined with iron plates off a shipwreck, and the company shop was paid in tokens good nowhere else. The dry air has left it standing exactly as it was abandoned.",
+        "de": "Eine Salpeterstadt in der Atacama, gebaut für rund 3.700 Arbeiter und 1960 geräumt, als synthetischer Stickstoff die Minen über Nacht wertlos machte. Im Theater stehen die Sitze noch, das Schwimmbecken ist mit Eisenplatten eines Schiffswracks ausgekleidet, und im Werksladen zahlte man mit Marken, die sonst nirgends galten. Die trockene Luft hat alles genau so stehen lassen."
+      },
+      "lat": -20.2064,
+      "lng": -69.7961,
+      "emoji": "⚙️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Oficinas_salitreras_de_Humberstone_y_Santa_Laura%2C_Chile%2C_2016-02-11%2C_DD_49.jpg/960px-Oficinas_salitreras_de_Humberstone_y_Santa_Laura%2C_Chile%2C_2016-02-11%2C_DD_49.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Oficinas_salitreras_de_Humberstone_y_Santa_Laura,_Chile,_2016-02-11,_DD_49.jpg",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "An old wooden railway carriage standing beside a white building at Humberstone",
+          "de": "Ein alter Eisenbahnwagen aus Holz neben einem weißen Gebäude in Humberstone"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el completo",
+      "description": {
+        "en": "A hot dog under a mound of chopped tomato, sauerkraut and mashed avocado, finished with a stripe of mayonnaise thick enough to hold a fork upright. The 'italiano' is named for green, white and red, not for Italy. Chileans get through more mayonnaise per head than anyone else in Latin America.",
+        "de": "Ein Hotdog unter einem Berg aus gehackter Tomate, Sauerkraut und zerdrückter Avocado, obendrauf ein Mayonnaise-Streifen, in dem eine Gabel stehen bleibt. Der 'italiano' heißt nach Grün, Weiß und Rot, nicht nach Italien. Chilenen verbrauchen pro Kopf mehr Mayonnaise als alle anderen in Lateinamerika."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Completo_italiano.jpg/960px-Completo_italiano.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Completo_italiano.jpg",
+        "author": "Paul Lowry",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 643,
+        "alt": {
+          "en": "A hand holding a hot dog covered in mashed avocado and a thick layer of mayonnaise",
+          "de": "Eine Hand hält einen Hotdog unter Avocadocreme und einer dicken Schicht Mayonnaise"
+        }
+      }
+    },
+    {
+      "name": "la empanada de pino",
+      "description": {
+        "en": "Baked, never fried, and filled with 'pino': minced beef and onion in roughly equal parts, plus one black olive with the stone still in, half a hard-boiled egg and a few raisins. The raisins split the country down the middle. One is lunch; at a fonda you order two.",
+        "de": "Gebacken, nie frittiert, gefüllt mit 'pino': Rinderhack und Zwiebel etwa zu gleichen Teilen, dazu eine schwarze Olive mit Kern, ein halbes hartgekochtes Ei und ein paar Rosinen. Die Rosinen spalten das Land. Eine ist ein Mittagessen; auf der Fonda bestellt man zwei."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Empanada_de_pino.jpg/960px-Empanada_de_pino.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Empanada_de_pino.jpg",
+        "author": "J B from Champaign, IL, USA",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 575,
+        "alt": {
+          "en": "Two large baked empanadas, browned in patches, on a plate on a yellow tablecloth",
+          "de": "Zwei große gebackene Empanadas mit braunen Flecken auf einem Teller auf gelber Tischdecke"
+        }
+      }
+    },
+    {
+      "name": "el pastel de choclo",
+      "description": {
+        "en": "Beef, chicken, an olive and a boiled egg under a lid of ground sweetcorn and basil, baked in a clay dish until the top browns. Sugar goes on the crust before it enters the oven, so every mouthful is sweet and savoury at once. It is summer food, because it needs fresh corn.",
+        "de": "Rindfleisch, Huhn, eine Olive und ein gekochtes Ei unter einem Deckel aus gemahlenem Zuckermais und Basilikum, im Tontopf gebacken, bis die Oberfläche bräunt. Vor dem Ofen kommt Zucker auf die Kruste, deshalb ist jeder Bissen süß und herzhaft zugleich. Sommerküche, denn es braucht frischen Mais."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Pastel_de_choclo.jpg/960px-Pastel_de_choclo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pastel_de_choclo.jpg",
+        "author": "Paloma Baytelman from Santiago, Chile",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 791,
+        "alt": {
+          "en": "A dark earthenware dish of corn pie with a browned top and a forkful lifted out",
+          "de": "Eine dunkle Tonform mit Maisauflauf, gebräunte Oberfläche, eine Gabel voll herausgehoben"
+        }
+      }
+    },
+    {
+      "name": "el curanto",
+      "description": {
+        "en": "Chiloé cooks it in a hole: stones heated in a fire, then mussels, clams, chicken, sausage, potato dumplings and whole potatoes stacked on them, covered with nalca leaves and earth and left for an hour. The steam is seawater. Everyone digs it out together, which is half the point of it.",
+        "de": "Auf Chiloé wird er in der Grube gegart: Steine im Feuer erhitzt, darauf Miesmuscheln, Venusmuscheln, Huhn, Wurst, Kartoffelklöße und ganze Kartoffeln geschichtet, mit Nalca-Blättern und Erde abgedeckt, eine Stunde lang. Der Dampf ist Meerwasser. Ausgegraben wird gemeinsam, und darum geht es zur Hälfte."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Curanto_en_Hoyo_%28Isla_Mechuque_-_Chilo%C3%A9%29_-_Flickr_-_madhseason_%281%29.jpg/960px-Curanto_en_Hoyo_%28Isla_Mechuque_-_Chilo%C3%A9%29_-_Flickr_-_madhseason_%281%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Curanto_en_Hoyo_(Isla_Mechuque_-_Chilo%C3%A9)_-_Flickr_-_madhseason_(1).jpg",
+        "author": "madhseason from Santiago, CHILE",
+        "license": "CC0",
+        "width": 960,
+        "height": 646,
+        "alt": {
+          "en": "Two women crouching over a smoking earth pit of shellfish beside a large green leaf",
+          "de": "Zwei Frauen hocken über einer rauchenden Erdgrube voller Muscheln neben großem grünem Blatt"
+        }
+      }
+    },
+    {
+      "name": "el terremoto",
+      "description": {
+        "en": "Sweet white pipeño wine in a pint glass with a scoop of pineapple ice cream floating in it and a splash of grenadine or fernet. It is named after the 1985 earthquake, and the second glass is called a 'réplica', an aftershock. Sold in the September fondas and in a handful of Santiago bars year-round.",
+        "de": "Süßer weißer Pipeño im Halbliterglas, darin eine Kugel Ananaseis und ein Schuss Grenadine oder Fernet. Benannt ist er nach dem Erdbeben von 1985, und das zweite Glas heißt 'réplica', Nachbeben. Ausgeschenkt in den Fondas im September und ganzjährig in einer Handvoll Bars in Santiago."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Fiestas Patrias",
+      "when": {
+        "en": "18–19 September",
+        "de": "18.–19. September"
+      },
+      "description": {
+        "en": "Independence weekend, and the country closes for it. Fondas go up in every park: pipeño by the jug, empanadas, and cueca danced in pairs with a white handkerchief held overhead, a courtship dance copied from a rooster circling a hen. The 19th is the military parade. The kite-flying is unofficial and everywhere.",
+        "de": "Das Unabhängigkeitswochenende, für das das Land dichtmacht. In jedem Park stehen Fondas: Pipeño im Krug, Empanadas, und Cueca, zu zweit mit weißem Tuch über dem Kopf getanzt, ein Werbetanz nach dem Hahn, der die Henne umkreist. Am 19. läuft die Militärparade. Drachensteigen ist inoffiziell und überall."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Cueca_en_la_calle_Santiago_2015_dic_f_032.jpg/960px-Cueca_en_la_calle_Santiago_2015_dic_f_032.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cueca_en_la_calle_Santiago_2015_dic_f_032.jpg",
+        "author": "Rodrigo Fernández",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 718,
+        "alt": {
+          "en": "Children and a young woman in huaso and china costume standing by a graffiti wall",
+          "de": "Kinder und eine junge Frau in Huaso- und China-Tracht vor einer Graffiti-Wand"
+        }
+      }
+    },
+    {
+      "name": "La Tirana",
+      "when": {
+        "en": "16 July",
+        "de": "16. Juli"
+      },
+      "description": {
+        "en": "A village of about 500 people in the Atacama takes in some 200,000 for three days. Around two hundred dance groups perform for the Virgen del Carmen in horned diablada masks brought over from the Bolivian altiplano, moving towards the church and never turning their backs on it.",
+        "de": "Ein Dorf von rund 500 Einwohnern in der Atacama nimmt drei Tage lang etwa 200.000 Menschen auf. Etwa zweihundert Tanzgruppen treten für die Virgen del Carmen an, in Hörnermasken der Diablada vom bolivianischen Altiplano, bewegen sich auf die Kirche zu und kehren ihr nie den Rücken."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Mujer_vestida_de_diabla_para_la_Fiesta_de_la_Tirana_2023.jpg/960px-Mujer_vestida_de_diabla_para_la_Fiesta_de_la_Tirana_2023.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mujer_vestida_de_diabla_para_la_Fiesta_de_la_Tirana_2023.jpg",
+        "author": "Asugomez",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A dancer in a horned devil mask and sequinned costume at the Tirana festival",
+          "de": "Eine Tänzerin in gehörnter Teufelsmaske und Paillettenkostüm beim Tirana-Fest"
+        }
+      }
+    },
+    {
+      "name": "Tapati Rapa Nui",
+      "when": {
+        "en": "the first two weeks of February",
+        "de": "die ersten beiden Februarwochen"
+      },
+      "description": {
+        "en": "Two island clans compete for a fortnight in events that are half sport and half ancestry: stone carving, body painting in natural pigment, a slide down the Rano Raraku crater on a banana-trunk sledge, and a crossing of the crater lake on a reed float. The winning clan's candidate is crowned queen of the island.",
+        "de": "Zwei Inselclans messen sich zwei Wochen lang in Disziplinen zwischen Sport und Herkunft: Schnitzen, Bemalung mit Naturpigmenten, eine Rutschpartie den Rano-Raraku-Krater hinab auf einem Bananenstamm-Schlitten, eine Überquerung des Kratersees auf einem Schilffloß. Die Kandidatin des Siegerclans wird Inselkönigin."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tapati_Festival_%2816063854014%29.jpg/960px-Tapati_Festival_%2816063854014%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tapati_Festival_(16063854014).jpg",
+        "author": "Mike W. from Vancouver, Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Performers in feather headdresses on a lit stage in front of a painted Rapa Nui backdrop",
+          "de": "Darsteller mit Federkopfschmuck auf beleuchteter Bühne vor bemalter Rapa-Nui-Kulisse"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the right cheek for a woman, from women and men alike; men shake hands. Chileans greet everyone in the room one by one, and say goodbye to everyone the same way.",
+        "de": "Ein Kuss auf die rechte Wange für eine Frau, von Frauen wie von Männern; Männer geben sich die Hand. Chilenen begrüßen jeden im Raum einzeln — und verabschieden sich genauso."
+      }
+    },
+    {
+      "title": "La once",
+      "text": {
+        "en": "Between six and nine most households sit down to 'once': tea, bread, avocado, ham, cheese. It replaces dinner rather than leading up to it, so an invitation 'a la once' is the meal.",
+        "de": "Zwischen sechs und neun gibt es in den meisten Haushalten 'once': Tee, Brot, Avocado, Schinken, Käse. Sie ersetzt das Abendessen, statt ihm vorauszugehen — eine Einladung 'a la once' ist die Mahlzeit."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Ten percent is printed on the bill as 'propina sugerida' and the waiter asks whether to add it. Saying no is fine and draws no reaction; saying nothing counts as yes.",
+        "de": "Zehn Prozent stehen als 'propina sugerida' auf der Rechnung, und der Kellner fragt, ob sie dazukommen. Nein sagen ist in Ordnung und löst nichts aus; nichts sagen heißt ja."
+      }
+    },
+    {
+      "title": "El codo",
+      "text": {
+        "en": "Tapping your own elbow says that someone is tight with money. Among friends it is a joke; in front of the person's colleagues it is not, so look at the table first.",
+        "de": "Wer sich an den eigenen Ellbogen tippt, sagt damit: der ist geizig. Unter Freunden ein Witz, vor den Kollegen des Betroffenen nicht — also erst schauen, wer am Tisch sitzt."
+      }
+    },
+    {
+      "title": "El voseo chileno",
+      "text": {
+        "en": "Chileans conjugate 'tú' their own way: tenís, podís, querís, estái. It is familiar enough that you use it back only once somebody has used it on you first.",
+        "de": "Chilenen konjugieren 'tú' auf ihre Art: tenís, podís, querís, estái. Das ist so vertraulich, dass man es erst zurückgibt, wenn es jemand einem gegenüber benutzt hat."
+      }
+    },
+    {
+      "title": "La hora",
+      "text": {
+        "en": "Turning up twenty to thirty minutes after the time given is normal for a private invitation. Where 'en punto' is added, and for anything at work, be there on the minute.",
+        "de": "Zwanzig bis dreißig Minuten nach der genannten Zeit zu kommen, ist bei privaten Einladungen normal. Wo 'en punto' dabeisteht, und bei allem Beruflichen, ist man auf die Minute da."
+      }
     }
   ]
 }

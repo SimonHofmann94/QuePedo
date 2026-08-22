@@ -1,13 +1,32 @@
 {
   "id": "gt",
   "flag": "🇬🇹",
-  "name": { "en": "Guatemala", "de": "Guatemala" },
+  "name": {
+    "en": "Guatemala",
+    "de": "Guatemala"
+  },
   "nameEs": "Guatemala",
   "capital": "Ciudad de Guatemala",
   "population": "18 M",
+  "tagline": {
+    "en": "Twenty-two Mayan languages, thirty-seven volcanoes, and a currency named after a bird.",
+    "de": "Zweiundzwanzig Maya-Sprachen, siebenunddreißig Vulkane und eine Währung, die nach einem Vogel heißt."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Lago_de_Atitlan%2C_Solola_Guatemala%2C_February_2020.jpg/1920px-Lago_de_Atitlan%2C_Solola_Guatemala%2C_February_2020.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_de_Atitlan,_Solola_Guatemala,_February_2020.jpg",
+    "author": "Bruno Rijsman",
+    "license": "CC BY-SA 2.0",
+    "width": 1920,
+    "height": 1280,
+    "alt": {
+      "en": "Lake Atitlán seen from above Sololá with two volcanic cones on the far shore",
+      "de": "Der Atitlán-See von oberhalb Sololá aus, am gegenüberliegenden Ufer zwei Vulkankegel"
+    }
+  },
   "intro": {
-    "en": "Guatemala is the heart of the Mayan world: 22 Mayan languages are spoken here alongside Spanish, and you'll hear them mingling at every market. Guatemalans proudly call themselves 'chapines' and say 'vos' instead of 'tú'. Their Spanish sounds gentle and courteous, sprinkled with words from Nahuatl and Mayan languages — and between volcano-ringed lakes and colonial Antigua, the country packs an absurd amount of beauty into a small space.",
-    "de": "Guatemala ist das Herz der Maya-Welt: Neben Spanisch werden hier 22 Maya-Sprachen gesprochen, und auf jedem Markt hörst du sie durcheinander. Die Guatemalteken nennen sich stolz 'chapines' und sagen 'vos' statt 'tú'. Ihr Spanisch klingt sanft und höflich, gespickt mit Wörtern aus Nahuatl und Maya-Sprachen — und zwischen vulkanumringten Seen und dem kolonialen Antigua packt das Land absurd viel Schönheit auf kleinen Raum."
+    "en": "Guatemala is the demographic heart of the Maya world: 22 Mayan languages are recognised as national languages alongside Spanish, and the 2018 census counted 41 % of the population as Maya. Guatemalans call themselves chapines and use vos, not tú, with anyone they like. Their Spanish is famously soft and indirect — 'fíjese que...' opens almost every refusal — and it carries Nahuatl and Maya vocabulary that never travelled: chucho for dog, patojo for kid, chirmol for salsa, and the sh- sound in shute and shuco straight out of the highland languages. Marimba, three men at one long wooden keyboard, is the national instrument by decree and plays at weddings and funerals alike.",
+    "de": "Guatemala ist das demografische Herz der Maya-Welt: 22 Maya-Sprachen sind neben Spanisch als Nationalsprachen anerkannt, und die Volkszählung 2018 zählte 41 % der Bevölkerung als Maya. Die Guatemalteken nennen sich chapines und sagen vos statt tú zu jedem, den sie mögen. Ihr Spanisch gilt als besonders weich und indirekt — mit 'fíjese que...' beginnt fast jede Absage — und es trägt Nahuatl- und Maya-Wörter, die nie weitergereist sind: chucho für Hund, patojo für Kind, chirmol für Salsa, dazu das sch-Geräusch in shute und shuco direkt aus den Hochlandsprachen. Die Marimba, drei Männer an einer langen Holzklaviatur, ist per Dekret Nationalinstrument und spielt auf Hochzeiten wie auf Beerdigungen."
   },
   "funFact": {
     "en": "Guatemala's currency is named after a bird: the quetzal. The Maya traded with its shimmering tail feathers — the birds were caught, plucked and released, because killing a quetzal was punishable by death.",
@@ -16,90 +35,536 @@
   "slang": [
     {
       "term": "chilero",
-      "meaning": { "en": "cool, great — the chapín all-purpose compliment", "de": "cool, klasse — das Allzweck-Kompliment der Chapines" },
+      "meaning": {
+        "en": "cool, great — the chapín all-purpose compliment",
+        "de": "cool, klasse — das Allzweck-Kompliment der Chapines"
+      },
       "example": "¡Qué chilero está tu carro, vos!"
     },
     {
       "term": "cerote",
-      "meaning": { "en": "dude, buddy — between close friends only; literally vulgar, so handle with care", "de": "Alter, Kumpel — nur unter engen Freunden; wörtlich vulgär, also mit Vorsicht genießen" },
+      "meaning": {
+        "en": "dude, buddy — between close friends only; literally vulgar, so handle with care",
+        "de": "Alter, Kumpel — nur unter engen Freunden; wörtlich vulgär, also mit Vorsicht genießen"
+      },
       "example": "¿Qué onda, cerote? ¡Tanto tiempo sin verte!"
     },
     {
       "term": "patojo / patoja",
-      "meaning": { "en": "kid, boy/girl — Guatemala's own word for children", "de": "Kind, Junge/Mädchen — Guatemalas ureigenes Wort für Kinder" },
+      "meaning": {
+        "en": "kid, boy/girl — Guatemala's own word for children",
+        "de": "Kind, Junge/Mädchen — Guatemalas ureigenes Wort für Kinder"
+      },
       "example": "Los patojos están jugando en el parque."
     },
     {
       "term": "¡Aguas!",
-      "meaning": { "en": "Watch out! — just like in Mexico", "de": "Vorsicht! — genau wie in Mexiko" },
+      "meaning": {
+        "en": "Watch out! — just like in Mexico",
+        "de": "Vorsicht! — genau wie in Mexiko"
+      },
       "example": "¡Aguas con esa camioneta, vos!"
     },
     {
       "term": "cabal",
-      "meaning": { "en": "exactly, spot on — the perfect one-word agreement", "de": "genau, exakt — die perfekte Ein-Wort-Zustimmung" },
+      "meaning": {
+        "en": "exactly, spot on — the perfect one-word agreement",
+        "de": "genau, exakt — die perfekte Ein-Wort-Zustimmung"
+      },
       "example": "—¿Costó cien quetzales? —Cabal."
     },
     {
       "term": "shute",
-      "meaning": { "en": "nosy — someone who sticks their nose into everything", "de": "neugierig — jemand, der seine Nase überall reinsteckt" },
+      "meaning": {
+        "en": "nosy — someone who sticks their nose into everything",
+        "de": "neugierig — jemand, der seine Nase überall reinsteckt"
+      },
       "example": "No seás shute, eso no te importa."
     },
     {
       "term": "clavo",
-      "meaning": { "en": "problem, embarrassing mess (literally 'nail')", "de": "Problem, peinliche Angelegenheit (wörtlich 'Nagel')" },
+      "meaning": {
+        "en": "problem, embarrassing mess (literally 'nail')",
+        "de": "Problem, peinliche Angelegenheit (wörtlich 'Nagel')"
+      },
       "example": "Se me olvidó su cumpleaños — ¡qué gran clavo!"
     },
     {
       "term": "chispudo",
-      "meaning": { "en": "sharp, quick-witted (from 'chispa', spark)", "de": "aufgeweckt, helle (von 'chispa', Funke)" },
+      "meaning": {
+        "en": "sharp, quick-witted (from 'chispa', spark)",
+        "de": "aufgeweckt, helle (von 'chispa', Funke)"
+      },
       "example": "Esa patoja es bien chispuda, aprende rapidísimo."
     }
   ],
   "vocabulary": [
-    { "es": "el pisto", "translation": { "en": "money", "de": "Geld" }, "note": { "en": "elsewhere: el dinero — 'pisto' also works in El Salvador and Honduras", "de": "anderswo: el dinero — 'pisto' funktioniert auch in El Salvador und Honduras" } },
-    { "es": "la camioneta", "translation": { "en": "bus — the famous brightly painted 'chicken buses'", "de": "Bus — die berühmten bunt bemalten 'Chicken Buses'" }, "note": { "en": "elsewhere a 'camioneta' is a pickup truck or van", "de": "anderswo ist eine 'camioneta' ein Pickup oder Kleinbus" } },
-    { "es": "el chucho", "translation": { "en": "dog", "de": "Hund" }, "note": { "en": "elsewhere: el perro — in Guatemala 'chucho' also means glutton", "de": "anderswo: el perro — in Guatemala heißt 'chucho' auch Vielfraß" } },
-    { "es": "la chumpa", "translation": { "en": "jacket", "de": "Jacke" }, "note": { "en": "elsewhere: la chaqueta", "de": "anderswo: la chaqueta" } },
-    { "es": "la pajilla", "translation": { "en": "drinking straw", "de": "Strohhalm" }, "note": { "en": "elsewhere: la pajita, in Mexico: el popote", "de": "anderswo: la pajita, in Mexiko: el popote" } },
-    { "es": "los poporopos", "translation": { "en": "popcorn", "de": "Popcorn" }, "note": { "en": "elsewhere: las palomitas", "de": "anderswo: las palomitas" } },
-    { "es": "el colocho", "translation": { "en": "curl; curly-haired person", "de": "Locke; Lockenkopf" }, "note": { "en": "elsewhere: el rizo", "de": "anderswo: el rizo" } },
-    { "es": "la refacción", "translation": { "en": "snack, light meal", "de": "Snack, Zwischenmahlzeit" }, "note": { "en": "elsewhere: la merienda — in most countries 'refacción' means spare part", "de": "anderswo: la merienda — in den meisten Ländern ist eine 'refacción' ein Ersatzteil" } }
+    {
+      "es": "el pisto",
+      "translation": {
+        "en": "money",
+        "de": "Geld"
+      },
+      "note": {
+        "en": "elsewhere: el dinero — 'pisto' also works in El Salvador and Honduras",
+        "de": "anderswo: el dinero — 'pisto' funktioniert auch in El Salvador und Honduras"
+      }
+    },
+    {
+      "es": "la camioneta",
+      "translation": {
+        "en": "bus — the famous brightly painted 'chicken buses'",
+        "de": "Bus — die berühmten bunt bemalten 'Chicken Buses'"
+      },
+      "note": {
+        "en": "elsewhere a 'camioneta' is a pickup truck or van",
+        "de": "anderswo ist eine 'camioneta' ein Pickup oder Kleinbus"
+      }
+    },
+    {
+      "es": "el chucho",
+      "translation": {
+        "en": "dog",
+        "de": "Hund"
+      },
+      "note": {
+        "en": "elsewhere: el perro — in Guatemala 'chucho' also means glutton",
+        "de": "anderswo: el perro — in Guatemala heißt 'chucho' auch Vielfraß"
+      }
+    },
+    {
+      "es": "la chumpa",
+      "translation": {
+        "en": "jacket",
+        "de": "Jacke"
+      },
+      "note": {
+        "en": "elsewhere: la chaqueta",
+        "de": "anderswo: la chaqueta"
+      }
+    },
+    {
+      "es": "la pajilla",
+      "translation": {
+        "en": "drinking straw",
+        "de": "Strohhalm"
+      },
+      "note": {
+        "en": "elsewhere: la pajita, in Mexico: el popote",
+        "de": "anderswo: la pajita, in Mexiko: el popote"
+      }
+    },
+    {
+      "es": "los poporopos",
+      "translation": {
+        "en": "popcorn",
+        "de": "Popcorn"
+      },
+      "note": {
+        "en": "elsewhere: las palomitas",
+        "de": "anderswo: las palomitas"
+      }
+    },
+    {
+      "es": "el colocho",
+      "translation": {
+        "en": "curl; curly-haired person",
+        "de": "Locke; Lockenkopf"
+      },
+      "note": {
+        "en": "elsewhere: el rizo",
+        "de": "anderswo: el rizo"
+      }
+    },
+    {
+      "es": "la refacción",
+      "translation": {
+        "en": "snack, light meal",
+        "de": "Snack, Zwischenmahlzeit"
+      },
+      "note": {
+        "en": "elsewhere: la merienda — in most countries 'refacción' means spare part",
+        "de": "anderswo: la merienda — in den meisten Ländern ist eine 'refacción' ein Ersatzteil"
+      }
+    },
+    {
+      "es": "el chompipe",
+      "translation": {
+        "en": "turkey",
+        "de": "Truthahn"
+      },
+      "note": {
+        "en": "from Nahuatl; elsewhere: el pavo — the bird for kak'ik and Christmas tamales",
+        "de": "aus dem Nahuatl; anderswo: el pavo — der Vogel für Kak'ik und Weihnachtstamales"
+      }
+    },
+    {
+      "es": "el chirmol",
+      "translation": {
+        "en": "fresh chopped tomato salsa with mint",
+        "de": "frische Tomatensalsa mit Minze"
+      },
+      "note": {
+        "en": "from Nahuatl 'chilmolli' — it goes on grilled meat, never on tortilla chips",
+        "de": "aus dem Nahuatl 'chilmolli' — kommt auf Gegrilltes, nie auf Tortillachips"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Tikal",
-      "description": { "en": "Mayan metropolis deep in the jungle — Temple IV rises 70 m above the canopy, howler monkeys provide the soundtrack, and Star Wars filmed a rebel base here.", "de": "Maya-Metropole tief im Dschungel — Tempel IV ragt 70 m über die Baumkronen, Brüllaffen liefern den Soundtrack, und Star Wars drehte hier eine Rebellenbasis." },
-      "lat": 17.222,
-      "lng": -89.6237,
-      "emoji": "🛕"
+      "description": {
+        "en": "Six temple-pyramids stand clear of the canopy; Temple IV, the tallest, reaches 70 m. The city ruled the central Petén for six centuries and collapsed around 900 CE, and the forest covered it so completely that the first survey expedition only arrived in 1848. Howler monkeys start at dawn and sound like something much larger. George Lucas filmed the rebel base here in 1977.",
+        "de": "Sechs Tempelpyramiden ragen über das Blätterdach; Tempel IV, der höchste, misst 70 m. Die Stadt beherrschte den zentralen Petén sechs Jahrhunderte lang und brach um 900 n. Chr. zusammen, worauf der Wald sie so vollständig überwuchs, dass die erste Expedition erst 1848 eintraf. Brüllaffen legen im Morgengrauen los und klingen nach etwas viel Größerem. George Lucas drehte hier 1977 die Rebellenbasis."
+      },
+      "lat": 17.2221,
+      "lng": -89.6236,
+      "emoji": "🛕",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Gran_Plaza_with_Temple_I_-_Tikal_Archaeological_Site_-_Peten_-_Guatemala_%2815684347430%29.jpg/960px-Gran_Plaza_with_Temple_I_-_Tikal_Archaeological_Site_-_Peten_-_Guatemala_%2815684347430%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Gran_Plaza_with_Temple_I_-_Tikal_Archaeological_Site_-_Peten_-_Guatemala_(15684347430).jpg",
+        "author": "Adam Jones from Kelowna, BC, Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The stepped pyramid of Temple I above the grass plaza at Tikal",
+          "de": "Die Stufenpyramide von Tempel I über dem Rasenplatz von Tikal"
+        }
+      }
     },
     {
       "name": "Lago de Atitlán",
-      "description": { "en": "A lake in a volcanic caldera, ringed by three volcanoes and a dozen Mayan villages — Aldous Huxley thought it out-beautified Lake Como.", "de": "Ein See in einer Vulkan-Caldera, umringt von drei Vulkanen und einem Dutzend Maya-Dörfern — Aldous Huxley fand ihn schöner als den Comer See." },
-      "lat": 14.6907,
-      "lng": -91.2025,
-      "emoji": "🌋"
+      "description": {
+        "en": "A caldera 340 m deep filled with water, ringed by three volcanoes and a dozen Maya villages, each with its own weaving pattern and often its own language — Kaqchikel on one shore, Tz'utujil on another. The lake has no surface outlet, so its level rises and falls by metres over decades and swallows the docks. Aldous Huxley preferred it to Lake Como.",
+        "de": "Eine 340 m tiefe, wassergefüllte Caldera, umringt von drei Vulkanen und einem Dutzend Maya-Dörfern, jedes mit eigenem Webmuster und oft eigener Sprache — Kaqchikel am einen Ufer, Tz'utujil am anderen. Der See hat keinen oberirdischen Abfluss, sein Pegel steigt und fällt über Jahrzehnte um Meter und verschluckt die Stege. Aldous Huxley zog ihn dem Comer See vor."
+      },
+      "lat": 14.7,
+      "lng": -91.2,
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Lake_Atitlan_%26_Volcanoes_from_the_East_%286996008535%29.jpg/960px-Lake_Atitlan_%26_Volcanoes_from_the_East_%286996008535%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_Atitlan_%26_Volcanoes_from_the_East_(6996008535).jpg",
+        "author": "Murray Foubister",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Two volcanic cones across the blue water of Lake Atitlán, a village in the foreground",
+          "de": "Zwei Vulkankegel jenseits des blauen Atitlán-Sees, im Vordergrund ein Dorf"
+        }
+      }
     },
     {
       "name": "Antigua Guatemala",
-      "description": { "en": "Colonial capital wrecked by earthquakes in 1773 and never fully rebuilt — pastel facades, cobblestones and the Santa Catalina arch with Volcán de Agua looming behind it.", "de": "Koloniale Hauptstadt, 1773 von Erdbeben zerstört und nie ganz wiederaufgebaut — Pastellfassaden, Kopfsteinpflaster und der Santa-Catalina-Bogen mit dem Volcán de Agua dahinter." },
-      "lat": 14.5586,
-      "lng": -90.7295,
-      "emoji": "⛪"
+      "description": {
+        "en": "The colonial capital until the earthquakes of 1773 emptied it, and the ruins were left standing rather than cleared: roofless naves with grass on the altars, three blocks from working cafés. The Santa Catalina arch was built so that cloistered nuns could cross the street unseen. Volcán de Agua closes the view down every north-south street in the grid.",
+        "de": "Bis zu den Erdbeben von 1773 die koloniale Hauptstadt, danach entvölkert — und die Ruinen ließ man stehen, statt sie abzuräumen: dachlose Kirchenschiffe mit Gras auf den Altären, drei Blocks von funktionierenden Cafés entfernt. Den Bogen von Santa Catalina baute man, damit Klausurnonnen ungesehen die Straße queren konnten. Volcán de Agua schließt jede Nord-Süd-Straße des Rasters ab."
+      },
+      "lat": 14.5575,
+      "lng": -90.7333,
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Santa_Catalina_Arch_-_Antigua_Guatemala_Feb_2020.jpg/960px-Santa_Catalina_Arch_-_Antigua_Guatemala_Feb_2020.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Santa_Catalina_Arch_-_Antigua_Guatemala_Feb_2020.jpg",
+        "author": "Chad Davis",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The yellow Santa Catalina arch spanning a cobbled street, a volcano beyond it",
+          "de": "Der gelbe Santa-Catalina-Bogen über einer Kopfsteinstraße, dahinter ein Vulkan"
+        }
+      }
     },
     {
       "name": "Semuc Champey",
-      "description": { "en": "Turquoise limestone pools stacked in the jungle — the río Cahabón thunders through a cave directly beneath the natural bridge you're swimming on.", "de": "Türkisfarbene Kalksteinbecken mitten im Dschungel — der Río Cahabón donnert durch eine Höhle direkt unter der Naturbrücke, auf der du badest." },
+      "description": {
+        "en": "A limestone bridge 300 m long carries a string of turquoise pools over the río Cahabón, while the river itself vanishes into a cave underneath and comes out as white water at the far end. Springs feed the pools, not the river, which is why they stay clear when the Cahabón runs brown. An hour of unpaved switchbacks separates it from Lanquín.",
+        "de": "Eine 300 m lange Kalksteinbrücke trägt eine Kette türkiser Becken über den Río Cahabón, während der Fluss selbst darunter in einer Höhle verschwindet und am anderen Ende als Wildwasser wieder austritt. Gespeist werden die Becken von Quellen, nicht vom Fluss — deshalb bleiben sie klar, wenn der Cahabón braun führt. Von Lanquín trennt sie eine Stunde Schotterserpentinen."
+      },
       "lat": 15.5333,
-      "lng": -89.956,
-      "emoji": "🏞️"
+      "lng": -89.9611,
+      "emoji": "🏞️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Semuc_Champey%2C_Guatemala.jpg/960px-Semuc_Champey%2C_Guatemala.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Semuc_Champey,_Guatemala.jpg",
+        "author": "Christopher Crouzet",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Stepped turquoise pools in a forested gorge, seen from a viewpoint above",
+          "de": "Gestufte türkise Becken in einer bewaldeten Schlucht, von oben gesehen"
+        }
+      }
     },
     {
       "name": "Chichicastenango",
-      "description": { "en": "One of Latin America's largest indigenous markets (Thursdays and Sundays) — on the steps of Santo Tomás, Mayan rituals blend with Catholic mass.", "de": "Einer der größten indigenen Märkte Lateinamerikas (donnerstags und sonntags) — auf den Stufen von Santo Tomás vermischen sich Maya-Rituale mit katholischer Messe." },
-      "lat": 14.9433,
-      "lng": -91.1111,
-      "emoji": "🧺"
+      "description": {
+        "en": "Thursdays and Sundays the whole town turns into a market, and on the eighteen steps of Santo Tomás — one for each month of the Maya year — prayer-leaders swing censers of copal smoke before mass starts inside. In this church, around 1701, the Dominican Francisco Ximénez copied out the Popol Vuh, which is the only reason the K'iche' creation epic survives.",
+        "de": "Donnerstags und sonntags wird der ganze Ort zum Markt, und auf den achtzehn Stufen von Santo Tomás — eine für jeden Monat des Maya-Jahres — schwenken Gebetsleiter Gefäße mit Kopalrauch, bevor drinnen die Messe beginnt. In dieser Kirche schrieb der Dominikaner Francisco Ximénez um 1701 das Popol Vuh ab — der einzige Grund, warum das K'iche'-Schöpfungsepos überlebt hat."
+      },
+      "lat": 14.9442,
+      "lng": -91.1105,
+      "emoji": "🧺",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Chichicastenango_market.jpg/960px-Chichicastenango_market.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chichicastenango_market.jpg",
+        "author": "Toby Argüelles",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 576,
+        "alt": {
+          "en": "A market aisle hung with embroidered textiles, the white church of Santo Tomás at the end",
+          "de": "Eine Marktgasse voller bestickter Stoffe, am Ende die weiße Kirche Santo Tomás"
+        }
+      }
+    },
+    {
+      "name": "Volcán de Fuego y Acatenango",
+      "description": {
+        "en": "Fuego erupts every fifteen to twenty minutes, day and night, and has done for decades; from the ridge of its dormant neighbour Acatenango the explosions are at eye level. Climbers sleep at 3,600 m to watch them and come down before the afternoon cloud. The 2018 eruption killed at least 190 people in the villages on the southern flank.",
+        "de": "Der Fuego bricht alle fünfzehn bis zwanzig Minuten aus, Tag und Nacht, und das seit Jahrzehnten; vom Grat seines schlafenden Nachbarn Acatenango sind die Explosionen auf Augenhöhe. Bergsteiger übernachten auf 3.600 m, um sie zu sehen, und steigen vor der Nachmittagsbewölkung ab. Der Ausbruch von 2018 tötete mindestens 190 Menschen an der Südflanke."
+      },
+      "lat": 14.5008,
+      "lng": -90.8758,
+      "emoji": "🔥",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Volcanoes_Fuego_%26_Acatenango_16.jpg/960px-Volcanoes_Fuego_%26_Acatenango_16.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Volcanoes_Fuego_%26_Acatenango_16.jpg",
+        "author": "amslerPIX",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Two volcanic peaks side by side above a ridge of dark green farmland",
+          "de": "Zwei Vulkangipfel nebeneinander über einem Kamm aus dunkelgrünem Ackerland"
+        }
+      }
+    },
+    {
+      "name": "Lívingston",
+      "description": {
+        "en": "There is no road in: the town at the mouth of the río Dulce is reached by boat from Puerto Barrios or down the gorge from El Estor. Its people are Garífuna, descended from shipwrecked Africans and Carib islanders whom the British deported from St Vincent in 1797, and they speak Garifuna and English before Spanish. Punta drumming here owes nothing to the marimba.",
+        "de": "Eine Straße gibt es nicht: Der Ort an der Mündung des Río Dulce ist nur per Boot von Puerto Barrios oder durch die Schlucht von El Estor erreichbar. Seine Bewohner sind Garífuna, Nachfahren gestrandeter Afrikaner und karibischer Inselbewohner, die die Briten 1797 von St. Vincent deportierten, und sie sprechen Garifuna und Englisch vor Spanisch. Das Punta-Trommeln verdankt der Marimba nichts."
+      },
+      "lat": 15.83,
+      "lng": -88.75,
+      "emoji": "🥁",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Livingston._Guatemala._-_52742230078.jpg/960px-Livingston._Guatemala._-_52742230078.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Livingston._Guatemala._-_52742230078.jpg",
+        "author": "Globetrotteur17... Ici, là-bas ou ailleurs...",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 454,
+        "alt": {
+          "en": "Low wooden houses along the waterfront at Lívingston seen from the river",
+          "de": "Niedrige Holzhäuser an der Uferstraße von Lívingston, vom Fluss aus gesehen"
+        }
+      }
+    },
+    {
+      "name": "Iglesia de San Andrés Xecul",
+      "description": {
+        "en": "A village church painted a shrieking egg-yolk yellow and crusted with some two hundred and fifty plaster figures — angels, jaguars, climbing vines, cherubs — arranged to a scheme drawn from Maya cosmology rather than any Spanish pattern book. It is seventeenth-century, it is small enough to walk past, and it looks like nothing else in Central America.",
+        "de": "Eine Dorfkirche in schreiendem Eigelb, über und über besetzt mit rund zweihundertfünfzig Stuckfiguren — Engeln, Jaguaren, Rankenwerk, Cherubim — nach einem Schema angeordnet, das eher aus der Maya-Kosmologie stammt als aus einem spanischen Musterbuch. Sie ist aus dem 17. Jahrhundert, klein genug zum Übersehen und sieht aus wie nichts sonst in Mittelamerika."
+      },
+      "lat": 14.9,
+      "lng": -91.4833,
+      "emoji": "💛",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Iglesia_de_San_Andr%C3%A9s_Xecul_03.jpg/960px-Iglesia_de_San_Andr%C3%A9s_Xecul_03.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Andr%C3%A9s_Xecul_03.jpg",
+        "author": "Simon Burchell",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A bright yellow church facade covered in painted plaster figures and vines",
+          "de": "Eine leuchtend gelbe Kirchenfassade voller bemalter Stuckfiguren und Ranken"
+        }
+      }
+    },
+    {
+      "name": "Monterrico",
+      "description": {
+        "en": "Volcanic sand dark enough to burn bare feet by ten in the morning, with a mangrove canal running behind the dunes where the boats leave at first light. Olive ridley and leatherback turtles nest here between July and December, and the hatchery on the beach releases the young at sunset. The Pacific undertow along this stretch is genuinely dangerous.",
+        "de": "Vulkansand, dunkel genug, um ab zehn Uhr morgens nackte Füße zu verbrennen, dahinter ein Mangrovenkanal, auf dem die Boote im ersten Licht ablegen. Zwischen Juli und Dezember legen Oliv-Bastard- und Lederschildkröten hier ihre Eier, und die Aufzuchtstation am Strand lässt die Jungen bei Sonnenuntergang frei. Die Unterströmung ist an diesem Abschnitt wirklich gefährlich."
+      },
+      "lat": 13.8928,
+      "lng": -90.4812,
+      "emoji": "🐢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Black-sand-beach.jpg/960px-Black-sand-beach.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Black-sand-beach.jpg",
+        "author": "DrStockPhoto.com",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A wide empty beach of dark grey sand with surf breaking under a hazy sky",
+          "de": "Ein breiter leerer Strand aus dunkelgrauem Sand, Brandung unter diesigem Himmel"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el pepián",
+      "description": {
+        "en": "The oldest recorded Guatemalan dish: chicken or beef in a sauce of pumpkin seeds, sesame and dried chillies, all toasted black on a comal before grinding, which is where the smoke and the near-brown colour come from. It arrives thick, with rice and a tortilla to push it around.",
+        "de": "Das älteste belegte Gericht Guatemalas: Huhn oder Rind in einer Sauce aus Kürbiskernen, Sesam und getrockneten Chilis, alle auf dem Comal schwarz geröstet, bevor sie gemahlen werden — daher der Rauch und die fast braune Farbe. Es kommt dick auf den Tisch, mit Reis und einer Tortilla zum Schieben."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cocinando_El_Pepian.jpg/960px-Cocinando_El_Pepian.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cocinando_El_Pepian.jpg",
+        "author": "erwin.flores69",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 644,
+        "alt": {
+          "en": "A steel pot of orange-red stew with meat and chopped herbs, a wooden spoon laid across it",
+          "de": "Ein Stahltopf mit orangerotem Eintopf, Fleisch und gehackten Kräutern, quer darüber ein Holzlöffel"
+        }
+      }
+    },
+    {
+      "name": "el fiambre",
+      "description": {
+        "en": "Eaten once a year, on 1 November, at the cemetery. A cold platter of up to fifty ingredients — sausages, pickled vegetables, cheeses, beetroot, olives, sardines, chicken — bound in a vinegar-and-caper dressing each family mixes to its own recipe and refuses to change. It takes two days.",
+        "de": "Gegessen wird es einmal im Jahr, am 1. November, auf dem Friedhof. Eine kalte Platte mit bis zu fünfzig Zutaten — Wurst, eingelegtem Gemüse, Käse, Roter Bete, Oliven, Sardinen, Huhn — gebunden mit einer Essig-Kapern-Marinade, die jede Familie nach eigenem Rezept mischt. Zwei Tage Arbeit."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/El_fiambre.jpg/960px-El_fiambre.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:El_fiambre.jpg",
+        "author": "Luisfi",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Two oval dishes heaped with cold meats and pickled vegetables, garnished with whole peppers",
+          "de": "Zwei ovale Schüsseln, gehäuft mit Aufschnitt und eingelegtem Gemüse, garniert mit ganzen Paprika"
+        }
+      }
+    },
+    {
+      "name": "los chuchitos",
+      "description": {
+        "en": "Small tamales of corn dough with a spoonful of tomato recado and a piece of pork or chicken, tied into a dried maize husk and steamed in a stack. Sold hot from baskets outside the churches after Sunday mass. The husk is the wrapper, not the plate — it peels back like a banana skin.",
+        "de": "Kleine Tamales aus Maisteig mit einem Löffel Tomaten-Recado und einem Stück Schwein oder Huhn, in ein getrocknetes Maisblatt gebunden und im Stapel gedämpft. Nach der Sonntagsmesse heiß aus Körben vor den Kirchen verkauft. Das Blatt ist Verpackung, kein Teller — es schält sich ab wie eine Bananenschale."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Chuchito-canak.jpg/960px-Chuchito-canak.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chuchito-canak.jpg",
+        "author": "Luisfi",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 960,
+        "alt": {
+          "en": "A pale block of steamed corn dough opened out on a large green leaf, topped with red sauce",
+          "de": "Ein heller Block gedämpften Maisteigs, aufgeklappt auf großem grünem Blatt, mit roter Sauce"
+        }
+      }
+    },
+    {
+      "name": "el kak'ik",
+      "description": {
+        "en": "A Q'eqchi' turkey broth from Alta Verapaz, red with achiote and cobán chilli and sharp with samat, a local coriander relative. The bird is native and the recipe pre-Hispanic; Guatemala declared it intangible cultural heritage in 2007. The leg is served standing up out of the bowl.",
+        "de": "Eine Q'eqchi'-Truthahnbrühe aus der Alta Verapaz, rot von Achiote und Cobán-Chili, kräutrig-scharf von Samat, einem lokalen Korianderverwandten. Der Vogel ist heimisch, das Rezept vorspanisch; 2007 erklärte Guatemala es zum immateriellen Kulturerbe. Die Keule steht aufrecht aus der Schale."
+      }
+    },
+    {
+      "name": "el atol de elote",
+      "description": {
+        "en": "Young sweetcorn blended with its own milk, cinnamon and a little sugar, cooked down until it thickens, drunk hot from a plastic cup at a street cart. Guatemalans have atol at seven in the morning and again at seven at night; the savoury version, atol blanco, comes with salt and chilli.",
+        "de": "Junger Zuckermais, mit seiner eigenen Milch, Zimt und wenig Zucker püriert, eingekocht bis er dickt, heiß aus dem Plastikbecher am Straßenkarren getrunken. Guatemalteken trinken Atol um sieben Uhr morgens und noch mal um sieben abends; die herzhafte Variante, Atol blanco, kommt mit Salz und Chili."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/100320_atol_de_elote_guatemala.JPG/960px-100320_atol_de_elote_guatemala.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:100320_atol_de_elote_guatemala.JPG",
+        "author": "Luisfi",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 633,
+        "alt": {
+          "en": "A glass of pale yellow corn drink on a wooden table, a woven sash coiled around it",
+          "de": "Ein Glas hellgelbes Maisgetränk auf einem Holztisch, darum eine gewebte Schärpe gelegt"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Semana Santa en Antigua",
+      "when": {
+        "en": "the week before Easter",
+        "de": "die Woche vor Ostern"
+      },
+      "description": {
+        "en": "Overnight, neighbours dye sawdust and lay it into carpets down the cobbles — flowers, Maya glyphs, saints — twenty metres long and finished minutes before the procession walks straight over them. Eighty men in purple robes carry one float of three and a half tonnes, changing shoulders each block.",
+        "de": "Über Nacht färben Nachbarn Sägemehl und legen daraus Teppiche auf das Kopfsteinpflaster — Blumen, Maya-Glyphen, Heilige — zwanzig Meter lang und Minuten vor der Prozession fertig, die geradewegs darüberläuft. Achtzig Männer in violetten Roben tragen eine Bahre von dreieinhalb Tonnen, Schulterwechsel im Blocktakt."
+      }
+    },
+    {
+      "name": "Barriletes Gigantes de Sumpango",
+      "when": {
+        "en": "1 November",
+        "de": "1. November"
+      },
+      "description": {
+        "en": "Teams spend six months building kites of tissue paper and bamboo up to twenty metres across, painted with messages to the dead, then raise them over the cemetery on All Saints' Day. The biggest never fly — they stand as walls. The smaller ones do, on strings held by six people at once.",
+        "de": "Teams bauen sechs Monate lang Drachen aus Seidenpapier und Bambus von bis zu zwanzig Metern Durchmesser, bemalt mit Botschaften an die Toten, und richten sie an Allerheiligen über dem Friedhof auf. Die größten fliegen nie — sie stehen als Wände. Die kleineren fliegen, an Leinen, die sechs Leute halten."
+      }
+    },
+    {
+      "name": "La Quema del Diablo",
+      "when": {
+        "en": "7 December, 6 p.m.",
+        "de": "7. Dezember, 18 Uhr"
+      },
+      "description": {
+        "en": "At six on the evening of 7 December, households drag their rubbish into the street and set fire to it, often with a papier-mâché devil on top, to burn the year's bad luck out of the house before the Immaculate Conception. Air quality in Guatemala City collapses, and the health ministry says so every year.",
+        "de": "Am Abend des 7. Dezember um sechs schleppen die Haushalte ihren Müll auf die Straße und zünden ihn an, oft mit einem Teufel aus Pappmaché obendrauf, um das Pech des Jahres vor Mariä Empfängnis auszubrennen. Die Luft in Guatemala-Stadt wird unatembar, und das Gesundheitsministerium sagt es jedes Jahr."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El vos",
+      "text": {
+        "en": "Chapines use vos with friends and family and usted with strangers, but tú almost never — from a foreigner it sounds bookish, or like flirting. The verb forms are vení, tenés, mirá.",
+        "de": "Chapines sagen vos zu Freunden und Familie und usted zu Fremden, tú dagegen fast nie — von Ausländern klingt es papieren oder nach Anmache. Die Verbformen lauten vení, tenés, mirá."
+      }
+    },
+    {
+      "title": "Fíjese que…",
+      "text": {
+        "en": "A refusal almost never arrives as 'no'. It arrives as 'fíjese que…' plus a reason, and the reason is not the point — the phrase itself is the no. Pressing for a yes after it is bad form.",
+        "de": "Eine Absage kommt fast nie als 'nein'. Sie kommt als 'fíjese que…' plus Grund, und der Grund ist nicht der Punkt — die Wendung selbst ist das Nein. Danach nachzuhaken, gilt als schlechter Stil."
+      }
+    },
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "A handshake first; the cheek kiss comes once people know each other. Walking into a shop, a bus or a waiting room without a 'buenos días' to the room marks someone out immediately.",
+        "de": "Erst der Handschlag, der Wangenkuss kommt, wenn man sich kennt. Wer einen Laden, einen Bus oder ein Wartezimmer betritt, ohne dem Raum 'buenos días' zu sagen, fällt sofort auf."
+      }
+    },
+    {
+      "title": "La foto",
+      "text": {
+        "en": "Photographing Maya people without asking is taken badly, and in some highland towns very badly. 'Con permiso, ¿le puedo tomar una foto?' costs nothing; a refusal is common and final.",
+        "de": "Maya ungefragt zu fotografieren, kommt schlecht an, in manchen Hochlandorten sehr schlecht. 'Con permiso, ¿le puedo tomar una foto?' kostet nichts; eine Absage ist häufig und endgültig."
+      }
+    },
+    {
+      "title": "El regateo",
+      "text": {
+        "en": "At Chichicastenango and Panajachel the first price is an opening and two rounds are expected. In grocery shops, comedores and on the bus prices are fixed, and haggling there is rude.",
+        "de": "In Chichicastenango und Panajachel ist der erste Preis ein Angebot, zwei Runden gehören dazu. In Läden, Comedores und im Bus sind die Preise fest — dort zu feilschen ist unhöflich."
+      }
     }
   ]
 }

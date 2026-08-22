@@ -1,13 +1,32 @@
 {
   "id": "pa",
   "flag": "🇵🇦",
-  "name": { "en": "Panama", "de": "Panama" },
+  "name": {
+    "en": "Panama",
+    "de": "Panama"
+  },
   "nameEs": "Panamá",
   "capital": "Ciudad de Panamá",
   "population": "4.5 M",
+  "tagline": {
+    "en": "A canal that split a continent, a currency that exists only as coins, and tú where the neighbours say vos.",
+    "de": "Ein Kanal, der einen Kontinent teilt, eine Währung, die es nur als Münzen gibt, und tú, wo die Nachbarn vos sagen."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Panama_City_-_Casco_Viejo.jpg/1920px-Panama_City_-_Casco_Viejo.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Panama_City_-_Casco_Viejo.jpg",
+    "author": "Dr. Thomas Liptak",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1080,
+    "alt": {
+      "en": "The low red-roofed peninsula of Casco Viejo seen across the bay under piled white cloud",
+      "de": "Die flache Halbinsel Casco Viejo mit roten Dächern über der Bucht unter aufgetürmten weißen Wolken"
+    }
+  },
   "intro": {
-    "en": "Panama is the crossroads of the world: a country built around a canal that splits two continents and connects two oceans. Its Spanish is fast, Caribbean-flavored and full of swallowed s-sounds, spiced with English loanwords left behind by West Indian canal workers and decades of US presence — plus 'buco' (a lot), a souvenir from the failed French canal attempt. Skyscrapers tower over the capital while Guna women sell molas a boat ride away. And yes, salsa legend Rubén Blades is Panamanian.",
-    "de": "Panama ist die Kreuzung der Welt: ein Land, gebaut um einen Kanal, der zwei Kontinente trennt und zwei Ozeane verbindet. Das Spanisch hier ist schnell, karibisch gefärbt und voller verschluckter s-Laute, gewürzt mit englischen Lehnwörtern von westindischen Kanalarbeitern und Jahrzehnten US-Präsenz — plus 'buco' (viel), ein Souvenir des gescheiterten französischen Kanalversuchs. Über der Hauptstadt ragen Wolkenkratzer auf, während Guna-Frauen eine Bootsfahrt entfernt ihre Molas verkaufen. Und ja: Salsa-Legende Rubén Blades ist Panamaer."
+    "en": "Panama is a country arranged around a ditch: a canal that cuts the isthmus and, for most of the twentieth century, cut the country in half as well. The Spanish here is fast and Caribbean — the final s goes, the d in pesca'o goes — and it is stitched through with English left by West Indian canal workers and the American Zone: guachimán for watchman, fren for friend, priti for pretty. 'Buco', meaning a lot, is a leftover of the failed French attempt. Younger panameños also flip syllables for fun, so qué pasó becomes qué xopá and primo becomes mopri. Unlike both its neighbours, Panama says tú and never vos. And the salsa on the radio is often Rubén Blades, who is from here and once ran for president.",
+    "de": "Panama ist ein Land, das um einen Graben herum angeordnet ist: einen Kanal, der die Landenge zerschneidet und das Land den größten Teil des 20. Jahrhunderts ebenfalls zerteilt hat. Das Spanisch hier ist schnell und karibisch — das End-s fällt weg, das d in pesca'o auch — und ist durchzogen von Englisch, das westindische Kanalarbeiter und die US-Zone hinterlassen haben: guachimán für Wachmann, fren für Freund, priti für hübsch. 'Buco' für viel ist ein Rest des gescheiterten französischen Versuchs. Jüngere Panamaer drehen zum Spaß Silben um: aus qué pasó wird qué xopá, aus primo mopri. Anders als beide Nachbarn sagt Panama tú und nie vos. Und im Radio läuft oft Rubén Blades, der von hier stammt und einmal Präsident werden wollte."
   },
   "funFact": {
     "en": "The cheapest Panama Canal toll ever was 36 cents — paid by adventurer Richard Halliburton, who swam the canal in 1928. Today big container ships pay over a million dollars per crossing.",
@@ -16,89 +35,571 @@
   "slang": [
     {
       "term": "¿Qué xopá?",
-      "meaning": { "en": "What's up? — '¿qué pasó?' with the syllables flipped, the signature Panama City greeting", "de": "Was geht? — '¿qué pasó?' mit vertauschten Silben, die typische Begrüßung in Panama-Stadt" },
+      "meaning": {
+        "en": "What's up? — '¿qué pasó?' with the syllables flipped, the signature Panama City greeting",
+        "de": "Was geht? — '¿qué pasó?' mit vertauschten Silben, die typische Begrüßung in Panama-Stadt"
+      },
       "example": "¿Qué xopá, fren? ¿Todo bien?"
     },
     {
       "term": "¡Chuleta!",
-      "meaning": { "en": "Dang! / Oh no! — a harmless exclamation, literally 'pork chop'", "de": "Mist! / Oh nein! — ein harmloser Ausruf, wörtlich 'Schweinekotelett'" },
+      "meaning": {
+        "en": "Dang! / Oh no! — a harmless exclamation, literally 'pork chop'",
+        "de": "Mist! / Oh nein! — ein harmloser Ausruf, wörtlich 'Schweinekotelett'"
+      },
       "example": "¡Chuleta! Se me olvidó la billetera."
     },
     {
       "term": "buco",
-      "meaning": { "en": "a lot, loads — from French 'beaucoup', a relic of the French canal era", "de": "viel, jede Menge — vom französischen 'beaucoup', ein Relikt der französischen Kanal-Ära" },
+      "meaning": {
+        "en": "a lot, loads — from French 'beaucoup', a relic of the French canal era",
+        "de": "viel, jede Menge — vom französischen 'beaucoup', ein Relikt der französischen Kanal-Ära"
+      },
       "example": "Había buco gente en el concierto."
     },
     {
       "term": "pelao / pelaíta",
-      "meaning": { "en": "kid, young guy/girl — how Panamanians refer to almost anyone younger than them", "de": "Kind, junger Typ / junges Mädchen — so nennen Panamaer fast jeden, der jünger ist als sie" },
+      "meaning": {
+        "en": "kid, young guy/girl — how Panamanians refer to almost anyone younger than them",
+        "de": "Kind, junger Typ / junges Mädchen — so nennen Panamaer fast jeden, der jünger ist als sie"
+      },
       "example": "Ese pelao juega bola todos los días."
     },
     {
       "term": "fren",
-      "meaning": { "en": "friend, buddy — straight from English", "de": "Freund, Kumpel — direkt aus dem Englischen übernommen" },
+      "meaning": {
+        "en": "friend, buddy — straight from English",
+        "de": "Freund, Kumpel — direkt aus dem Englischen übernommen"
+      },
       "example": "Voy al cine con mis frens esta noche."
     },
     {
       "term": "vaina",
-      "meaning": { "en": "thing, stuff — the universal Caribbean placeholder word, used constantly in Panama", "de": "Ding, Zeug — das universelle Platzhalterwort der Karibik, in Panama ständig im Einsatz" },
+      "meaning": {
+        "en": "thing, stuff — the universal Caribbean placeholder word, used constantly in Panama",
+        "de": "Ding, Zeug — das universelle Platzhalterwort der Karibik, in Panama ständig im Einsatz"
+      },
       "example": "Pásame esa vaina que está ahí."
     },
     {
       "term": "tongo",
-      "meaning": { "en": "cop, police officer (colloquial)", "de": "Polizist, Bulle (umgangssprachlich)" },
+      "meaning": {
+        "en": "cop, police officer (colloquial)",
+        "de": "Polizist, Bulle (umgangssprachlich)"
+      },
       "example": "Baja la velocidad, que ahí hay un tongo."
     },
     {
       "term": "ahuevao",
-      "meaning": { "en": "clueless, slow on the uptake — rough but affectionate between friends", "de": "begriffsstutzig, auf der Leitung stehend — derb, aber unter Freunden liebevoll gemeint" },
+      "meaning": {
+        "en": "clueless, slow on the uptake — rough but affectionate between friends",
+        "de": "begriffsstutzig, auf der Leitung stehend — derb, aber unter Freunden liebevoll gemeint"
+      },
       "example": "No seas ahuevao, era una broma."
     }
   ],
   "vocabulary": [
-    { "es": "la chicha", "translation": { "en": "fresh fruit juice", "de": "frischer Fruchtsaft" }, "note": { "en": "elsewhere chicha is a fermented corn drink — in Panama it's any fresh juice", "de": "anderswo ist Chicha ein vergorenes Maisgetränk — in Panama jeder frisch gepresste Saft" } },
-    { "es": "el diablo rojo", "translation": { "en": "'red devil' — a retired US school bus, wildly painted and run as public transport", "de": "'roter Teufel' — ein ausgemusterter US-Schulbus, wild bemalt und als Linienbus unterwegs" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } },
-    { "es": "el raspao", "translation": { "en": "shaved ice with syrup and condensed milk", "de": "geschabtes Eis mit Sirup und Kondensmilch" }, "note": { "en": "elsewhere: raspado or granizado", "de": "anderswo: raspado oder granizado" } },
-    { "es": "el camarón", "translation": { "en": "odd job, side gig", "de": "Gelegenheitsjob, Nebenverdienst" }, "note": { "en": "literally 'shrimp' — folk etymology says it comes from US bosses saying 'come around (tomorrow)' to day laborers", "de": "wörtlich 'Garnele' — der Volksmund leitet es von US-Vorarbeitern ab, die Tagelöhnern 'come around (tomorrow)' zuriefen" } },
-    { "es": "la pinta", "translation": { "en": "a (cold) beer", "de": "ein (kaltes) Bier" }, "note": { "en": "elsewhere 'pinta' means look/appearance", "de": "anderswo bedeutet 'pinta' Aussehen" } },
-    { "es": "fulo / fula", "translation": { "en": "blond, fair-haired person", "de": "blonde, hellhaarige Person" }, "note": { "en": "uniquely Panamanian — elsewhere: rubio/rubia", "de": "typisch panamaisch — anderswo: rubio/rubia" } },
-    { "es": "yeyé", "translation": { "en": "posh, preppy, rich-kid style", "de": "schickimicki, versnobt, reiche-Kids-Stil" }, "note": { "en": "'gente yeyé' — Panama's upper-class crowd", "de": "'gente yeyé' — Panamas Schickeria" } }
+    {
+      "es": "la chicha",
+      "translation": {
+        "en": "fresh fruit juice",
+        "de": "frischer Fruchtsaft"
+      },
+      "note": {
+        "en": "elsewhere chicha is a fermented corn drink — in Panama it's any fresh juice",
+        "de": "anderswo ist Chicha ein vergorenes Maisgetränk — in Panama jeder frisch gepresste Saft"
+      }
+    },
+    {
+      "es": "el diablo rojo",
+      "translation": {
+        "en": "'red devil' — a retired US school bus, wildly painted and run as public transport",
+        "de": "'roter Teufel' — ein ausgemusterter US-Schulbus, wild bemalt und als Linienbus unterwegs"
+      },
+      "note": {
+        "en": "elsewhere: el autobús",
+        "de": "anderswo: el autobús"
+      }
+    },
+    {
+      "es": "el guachimán",
+      "translation": {
+        "en": "security guard, doorman",
+        "de": "Wachmann, Pförtner"
+      },
+      "note": {
+        "en": "English 'watchman' with a Spanish plural — a souvenir of the Canal Zone",
+        "de": "englisches 'watchman' mit spanischem Plural — ein Souvenir der Kanalzone"
+      }
+    },
+    {
+      "es": "el raspao",
+      "translation": {
+        "en": "shaved ice with syrup and condensed milk",
+        "de": "geschabtes Eis mit Sirup und Kondensmilch"
+      },
+      "note": {
+        "en": "elsewhere: raspado or granizado",
+        "de": "anderswo: raspado oder granizado"
+      }
+    },
+    {
+      "es": "el camarón",
+      "translation": {
+        "en": "odd job, side gig",
+        "de": "Gelegenheitsjob, Nebenverdienst"
+      },
+      "note": {
+        "en": "literally 'shrimp' — folk etymology says it comes from US bosses saying 'come around (tomorrow)' to day laborers",
+        "de": "wörtlich 'Garnele' — der Volksmund leitet es von US-Vorarbeitern ab, die Tagelöhnern 'come around (tomorrow)' zuriefen"
+      }
+    },
+    {
+      "es": "el bulto",
+      "translation": {
+        "en": "school backpack",
+        "de": "Schulrucksack"
+      },
+      "note": {
+        "en": "elsewhere: la mochila — here 'bulto' is what every schoolchild carries",
+        "de": "anderswo: la mochila — hier trägt jedes Schulkind einen 'bulto'"
+      }
+    },
+    {
+      "es": "la pinta",
+      "translation": {
+        "en": "a (cold) beer",
+        "de": "ein (kaltes) Bier"
+      },
+      "note": {
+        "en": "elsewhere 'pinta' means look/appearance",
+        "de": "anderswo bedeutet 'pinta' Aussehen"
+      }
+    },
+    {
+      "es": "fulo / fula",
+      "translation": {
+        "en": "blond, fair-haired person",
+        "de": "blonde, hellhaarige Person"
+      },
+      "note": {
+        "en": "uniquely Panamanian — elsewhere: rubio/rubia",
+        "de": "typisch panamaisch — anderswo: rubio/rubia"
+      }
+    },
+    {
+      "es": "yeyé",
+      "translation": {
+        "en": "posh, preppy, rich-kid style",
+        "de": "schickimicki, versnobt, reiche-Kids-Stil"
+      },
+      "note": {
+        "en": "'gente yeyé' — Panama's upper-class crowd",
+        "de": "'gente yeyé' — Panamas Schickeria"
+      }
+    }
   ],
   "sights": [
     {
-      "name": "Canal de Panamá — Esclusas de Miraflores",
-      "description": { "en": "Watch 300-meter ships get lifted 16 meters in the Miraflores locks — the engineering marvel that pays a big chunk of the national budget.", "de": "Sieh zu, wie 300-Meter-Schiffe in den Miraflores-Schleusen 16 Meter angehoben werden — das Ingenieurswunder, das einen dicken Teil des Staatshaushalts finanziert." },
+      "name": "Esclusas de Miraflores",
+      "description": {
+        "en": "Two chambers raise a ship 16.5 metres in two steps, using nothing but water falling under its own weight — no pump has ever been fitted to the canal. The original chambers measure 320 metres by 33.5, which is why 'panamax' became a shipbuilding dimension. Electric locomotives called mules run on cog rails along the walls and keep the hull off the concrete.",
+        "de": "Zwei Kammern heben ein Schiff in zwei Stufen um 16,5 Meter, allein mit Wasser, das durch sein eigenes Gewicht fällt — eine Pumpe wurde im Kanal nie eingebaut. Die alten Kammern messen 320 mal 33,5 Meter, weshalb 'Panamax' zu einem Schiffbaumaß wurde. Elektrische Loks, mulas genannt, laufen auf Zahnschienen an den Mauern und halten den Rumpf vom Beton fern."
+      },
       "lat": 8.9977,
       "lng": -79.5911,
-      "emoji": "🚢"
+      "emoji": "🚢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Container_Ship_Enters_Miraflores_Locks_-_Panama_Canal.jpg/960px-Container_Ship_Enters_Miraflores_Locks_-_Panama_Canal.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Container_Ship_Enters_Miraflores_Locks_-_Panama_Canal.jpg",
+        "author": "Adam Jones",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The bow of a loaded container ship filling a lock chamber, a Panamanian flag flying beside it",
+          "de": "Der Bug eines beladenen Containerschiffs füllt eine Schleusenkammer, daneben weht die Flagge Panamas"
+        }
+      }
     },
     {
       "name": "Casco Viejo",
-      "description": { "en": "Panama City's UNESCO-listed colonial quarter — crumbling facades next to rooftop bars, with the skyline glittering across the bay.", "de": "Panama-Stadts koloniale Altstadt mit UNESCO-Siegel — bröckelnde Fassaden neben Rooftop-Bars, und über der Bucht glitzert die Skyline." },
+      "description": {
+        "en": "Rebuilt in 1673 behind a wall on a peninsula the Spanish thought easier to defend after they lost the first city. In the ruined Santo Domingo church stands the Arco Chato, a flat brick arch with no keystone that held itself up for three centuries; the story goes it was quoted in Washington as proof the isthmus does not shake. It collapsed in 2003.",
+        "de": "1673 hinter einer Mauer neu errichtet, auf einer Halbinsel, die die Spanier für leichter zu verteidigen hielten, nachdem sie die erste Stadt verloren hatten. In der Ruine von Santo Domingo steht der Arco Chato, ein flacher Ziegelbogen ohne Schlussstein, der sich drei Jahrhunderte lang selbst trug; angeblich galt er in Washington als Beleg, dass die Landenge nicht bebt. 2003 stürzte er ein."
+      },
       "lat": 8.9517,
       "lng": -79.5353,
-      "emoji": "🏘️"
+      "emoji": "🏘️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Casco_Viejo%2C_Panama_City%2C_Panama.jpg/960px-Casco_Viejo%2C_Panama_City%2C_Panama.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Casco_Viejo,_Panama_City,_Panama.jpg",
+        "author": "RB Photo",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 635,
+        "alt": {
+          "en": "A row of restored colonial houses with wooden balconies and white shutters along a narrow street",
+          "de": "Eine Reihe restaurierter Kolonialhäuser mit Holzbalkonen und weißen Läden an einer schmalen Straße"
+        }
+      }
     },
     {
-      "name": "Guna Yala (San Blas)",
-      "description": { "en": "365 Caribbean islands — one for every day of the year — governed autonomously by the Guna, famous for their hand-sewn molas.", "de": "365 Karibikinseln — eine für jeden Tag des Jahres — autonom verwaltet von den Guna, berühmt für ihre handgenähten Molas." },
+      "name": "Panamá Viejo",
+      "description": {
+        "en": "The first European city on the Pacific, founded in 1519, and the warehouse through which Peruvian silver crossed to Spain. Henry Morgan came over the isthmus with about 1,400 men in January 1671 and it burned — whether he lit it or the retreating Spanish did is still argued. The survivors rebuilt eight kilometres down the coast; the cathedral tower is what stayed up.",
+        "de": "Die erste europäische Stadt am Pazifik, 1519 gegründet, und das Lagerhaus, durch das peruanisches Silber nach Spanien ging. Henry Morgan kam im Januar 1671 mit rund 1.400 Mann über die Landenge, und sie brannte — ob er sie anzündete oder die abziehenden Spanier, wird bis heute gestritten. Die Überlebenden bauten acht Kilometer weiter neu; der Kathedralturm blieb stehen."
+      },
+      "lat": 8.9944,
+      "lng": -79.4839,
+      "emoji": "🗼",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Tower_of_the_Cathedral_at_Old_Panama_City_ruins.jpg/960px-Tower_of_the_Cathedral_at_Old_Panama_City_ruins.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tower_of_the_Cathedral_at_Old_Panama_City_ruins.jpg",
+        "author": "Gualberto107",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A roofless stone tower and broken walls above a brick plaza under a grey sky",
+          "de": "Ein dachloser Steinturm und Mauerreste über einem gepflasterten Platz unter grauem Himmel"
+        }
+      }
+    },
+    {
+      "name": "Lago Gatún",
+      "description": {
+        "en": "Damming the Chagres in 1913 made the largest artificial lake on earth at the time and drowned the forest with it, so ships now cross 33 kilometres of what used to be hills. The hilltops became islands. The biggest of them, Barro Colorado, has been a research station since 1923 and is one of the most closely measured patches of tropical forest anywhere.",
+        "de": "Die Aufstauung des Chagres 1913 schuf den damals größten Stausee der Erde und ertränkte den Wald gleich mit — Schiffe queren heute 33 Kilometer ehemaliger Hügel. Aus den Kuppen wurden Inseln. Die größte, Barro Colorado, ist seit 1923 Forschungsstation und einer der am genauesten vermessenen Flecken Tropenwald überhaupt."
+      },
+      "lat": 9.2,
+      "lng": -79.9,
+      "emoji": "🌊",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gatun_Lake_-_50088345977.jpg/960px-Gatun_Lake_-_50088345977.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Gatun_Lake_-_50088345977.jpg",
+        "author": "David Brossard",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Still lake water in early light with a wall of forest running down to the shoreline",
+          "de": "Stilles Seewasser im frühen Licht, eine Wand aus Wald reicht bis ans Ufer"
+        }
+      }
+    },
+    {
+      "name": "Portobelo",
+      "description": {
+        "en": "Columbus named the bay in 1502, and for two centuries Peruvian silver was stacked on this beach for a fair that ran for weeks and moved prices in Europe. Francis Drake died of dysentery offshore in 1596 and went over the side in a lead coffin nobody has found. When Admiral Vernon took the forts in 1739, London named a road after the news: Portobello Road.",
+        "de": "Kolumbus benannte die Bucht 1502, und zwei Jahrhunderte lang stapelte sich hier peruanisches Silber für eine Messe, die wochenlang dauerte und die Preise in Europa bewegte. Francis Drake starb 1596 vor der Küste an Ruhr und ging in einem Bleisarg über Bord, den niemand gefunden hat. Als Admiral Vernon 1739 die Forts nahm, benannte London eine Straße danach: Portobello Road."
+      },
+      "lat": 9.5533,
+      "lng": -79.6553,
+      "emoji": "⚓",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Portobelo.jpg/960px-Portobelo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Portobelo.jpg",
+        "author": "gailf548 from New York State, USA",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "An old iron cannon in a mossy stone embrasure looking out at a yacht in a green bay",
+          "de": "Eine alte Eisenkanone in einer bemoosten Steinscharte mit Blick auf eine Yacht in grüner Bucht"
+        }
+      }
+    },
+    {
+      "name": "Guna Yala",
+      "description": {
+        "en": "Three hundred and sixty-five islands run by the Guna themselves. They rose against Panama in February 1925 and came out of it with a comarca of their own, its own congress and a rule that no outsider may own land. Women sew molas, layered cloth panels cut back to show the colours underneath. In 2024 the first island, Gardi Sugdub, moved to the mainland as the sea came up.",
+        "de": "365 Inseln, von den Guna selbst verwaltet. Im Februar 1925 erhoben sie sich gegen Panama und gingen mit einer eigenen Comarca daraus hervor, mit eigenem Kongress und der Regel, dass kein Auswärtiger Land besitzen darf. Frauen nähen Molas, geschichtete Stoffbahnen, aus denen die Farben darunter herausgeschnitten werden. 2024 zog die erste Insel, Gardi Sugdub, wegen des steigenden Meeres aufs Festland."
+      },
       "lat": 9.57,
       "lng": -78.82,
-      "emoji": "🏝️"
+      "emoji": "🏝️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Isla_Perro_en_la_Comarca_Guna_Yala.JPG/960px-Isla_Perro_en_la_Comarca_Guna_Yala.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Isla_Perro_en_la_Comarca_Guna_Yala.JPG",
+        "author": "Mónica J. Mora",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A tiny palm-covered island with thatched huts, seen across pale turquoise water",
+          "de": "Eine winzige palmenbewachsene Insel mit strohgedeckten Hütten über hellem türkisem Wasser"
+        }
+      }
     },
     {
       "name": "Bocas del Toro",
-      "description": { "en": "Laid-back Caribbean archipelago where water taxis replace cars and starfish carpet the shallows of Playa Estrella.", "de": "Entspanntes Karibik-Archipel, wo Wassertaxis die Autos ersetzen und Seesterne das flache Wasser der Playa Estrella pflastern." },
+      "description": {
+        "en": "An archipelago where the streets stop at the water and water taxis do the rest. Bocas town stands on stilts over the sea in Caribbean clapboard, left over from the banana companies that ran the province from the 1890s. The local English creole, Guari-Guari, is still spoken by families whose grandparents came from Jamaica and Barbados to cut fruit.",
+        "de": "Ein Archipel, in dem die Straßen am Wasser enden und Wassertaxis den Rest erledigen. Bocas town steht auf Pfählen über dem Meer, in karibischer Holzbauweise, übrig von den Bananenfirmen, die die Provinz ab den 1890ern beherrschten. Das englische Kreol Guari-Guari sprechen bis heute Familien, deren Großeltern aus Jamaika und Barbados zum Fruchtschneiden kamen."
+      },
       "lat": 9.3403,
       "lng": -82.242,
-      "emoji": "🐬"
+      "emoji": "🛶",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bocas_del_Toro_Panama.jpg/960px-Bocas_del_Toro_Panama.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bocas_del_Toro_Panama.jpg",
+        "author": "Dronepicr",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 539,
+        "alt": {
+          "en": "An aerial view of a low wooden town on a flat island, sailing boats moored in shallow water",
+          "de": "Luftbild einer niedrigen Holzstadt auf einer flachen Insel, Segelboote im flachen Wasser"
+        }
+      }
+    },
+    {
+      "name": "Volcán Barú",
+      "description": {
+        "en": "At 3,475 metres this is the highest ground in Panama, and on a clear morning both oceans are visible from the summit at once — there are few places on earth where that works. The slopes below grow Geisha coffee, an Ethiopian variety that was nearly abandoned until a Boquete farm entered it in a competition in 2004; it now fetches more per kilo than most wine.",
+        "de": "Mit 3.475 Metern ist das der höchste Punkt Panamas, und an einem klaren Morgen sieht man vom Gipfel beide Ozeane gleichzeitig — dafür gibt es weltweit wenige Orte. An den Hängen darunter wächst Geisha-Kaffee, eine äthiopische Sorte, die fast aufgegeben war, bis eine Farm bei Boquete sie 2004 in einen Wettbewerb schickte; heute bringt sie pro Kilo mehr als die meisten Weine."
+      },
+      "lat": 8.808,
+      "lng": -82.543,
+      "emoji": "☕",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Our_Volcan_Baru.jpg/960px-Our_Volcan_Baru.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Our_Volcan_Baru.jpg",
+        "author": "FranHogan",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 587,
+        "alt": {
+          "en": "A broad forested mountain under a blue sky, seen over rough grass and dense green scrub",
+          "de": "Ein breiter bewaldeter Berg unter blauem Himmel, gesehen über hohem Gras und dichtem Grün"
+        }
+      }
     },
     {
       "name": "Parque Nacional Coiba",
-      "description": { "en": "A former penal colony turned UNESCO marine park — dive with whale sharks and hammerheads in Pacific waters barely touched by humans.", "de": "Eine ehemalige Sträflingsinsel, heute UNESCO-Meerespark — tauche mit Walhaien und Hammerhaien in einem Pazifik, den kaum ein Mensch berührt hat." },
+      "description": {
+        "en": "A penal colony from 1919 until 2004, and feared enough that almost nobody went near it — which is why most of the island's forest has never been cut and the reef offshore is one of the largest in the eastern Pacific. Hammerheads school off the Granito de Oro islet. The howler monkeys here belong to a form found on Coiba and nowhere else, and the cell blocks are going back to the trees.",
+        "de": "Von 1919 bis 2004 Strafkolonie und so gefürchtet, dass ihr fast niemand nahekam — deshalb wurde der Wald der Insel größtenteils nie gerodet, und das Riff davor ist eines der größten im Ostpazifik. Vor dem Inselchen Granito de Oro ziehen Hammerhaie in Schulen. Die Brüllaffen hier gehören einer Form an, die es nur auf Coiba gibt, und die Zellenblöcke holen sich die Bäume zurück."
+      },
       "lat": 7.47,
       "lng": -81.76,
-      "emoji": "🦈"
+      "emoji": "🦈",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Coiba_National_Park%2C_Panama_%28View_from_Isla_Coiba%29_%288371374375%29.jpg/960px-Coiba_National_Park%2C_Panama_%28View_from_Isla_Coiba%29_%288371374375%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Coiba_National_Park,_Panama_(View_from_Isla_Coiba)_(8371374375).jpg",
+        "author": "Alex Proimos from Sydney, Australia",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Deep blue open water with two forested islets on the horizon under heavy cloud",
+          "de": "Tiefblaues offenes Wasser mit zwei bewaldeten Inselchen am Horizont unter schwerer Wolke"
+        }
+      }
+    },
+    {
+      "name": "El Valle de Antón",
+      "description": {
+        "en": "A town of seven thousand people living inside the crater of a volcano that last blew about 56,000 years ago; the caldera is six kilometres wide and its rim is the ridge on every horizon. The golden frog printed on Panamanian lottery tickets came from these streams and has not been seen wild since 2009. Up Cerro Cara Iguana there is a stand of trees with square trunks.",
+        "de": "Ein Ort mit siebentausend Einwohnern, der im Krater eines Vulkans liegt, der vor etwa 56.000 Jahren zuletzt ausbrach; die Caldera ist sechs Kilometer breit, und ihr Rand ist der Grat an jedem Horizont. Der Goldfrosch von den panamaischen Lotterielosen stammt aus diesen Bächen und wurde seit 2009 nicht mehr wild gesehen. Am Cerro Cara Iguana steht eine Gruppe Bäume mit quadratischen Stämmen."
+      },
+      "lat": 8.6,
+      "lng": -80.13,
+      "emoji": "🐸",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Atardecer_en_El_Valle_de_Ant%C3%B3n.jpg/960px-Atardecer_en_El_Valle_de_Ant%C3%B3n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Atardecer_en_El_Valle_de_Ant%C3%B3n.jpg",
+        "author": "Randy Navarro B.",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 641,
+        "alt": {
+          "en": "Late sun on a green meadow with a spreading tree and a jagged ridge line behind it",
+          "de": "Späte Sonne auf einer grünen Wiese mit ausladendem Baum und gezacktem Bergkamm dahinter"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el sancocho de gallina",
+      "description": {
+        "en": "Yard hen simmered with yam and a fistful of culantro — the long saw-toothed leaf, not the cilantro sprig — until the broth thickens with starch and goes yellow. White rice comes in its own bowl. It is what Panama serves at four in the morning after a party, and again at the wake.",
+        "de": "Hofhuhn mit Yamswurzel und einer Handvoll Culantro gekocht — dem langen, gesägten Blatt, nicht dem Korianderzweig —, bis die Brühe von der Stärke dick und gelb wird. Weißer Reis kommt in einer eigenen Schale dazu. Das serviert Panama um vier Uhr morgens nach einer Feier und später bei der Totenwache."
+      }
+    },
+    {
+      "name": "el ceviche",
+      "description": {
+        "en": "Corvina or shrimp cut small and left in lime with red onion, celery and a sliver of ají chombo, then handed over in a foam cup with a plastic fork and a sleeve of saltines. The Mercado de Mariscos in the capital sells it by the cup all day; three dollars is lunch.",
+        "de": "Corvina oder Garnelen klein geschnitten und mit roter Zwiebel, Sellerie und einem Splitter Ají chombo in Limette gezogen, dann im Styroporbecher überreicht, mit Plastikgabel und einer Rolle Salzcracker. Der Mercado de Mariscos der Hauptstadt verkauft ihn becherweise; drei Dollar sind ein Mittagessen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Ceviche_de_camar%C3%B3n.jpg/500px-Ceviche_de_camar%C3%B3n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ceviche_de_camar%C3%B3n.jpg",
+        "author": "Wotancito",
+        "license": "CC BY-SA 4.0",
+        "width": 500,
+        "height": 667,
+        "alt": {
+          "en": "A white foam cup heaped with shrimp ceviche standing on a café table",
+          "de": "Ein weißer Styroporbecher voll Garnelen-Ceviche auf einem Cafétisch"
+        }
+      }
+    },
+    {
+      "name": "el pescado frito con patacones",
+      "description": {
+        "en": "A whole fish fried hard enough that the fins go too, with patacones alongside: green plantain cut thick, fried, squashed flat, fried a second time and salted. On the Caribbean coast the rice served with it is cooked in coconut milk until it turns faintly sweet.",
+        "de": "Ein ganzer Fisch, so scharf frittiert, dass auch die Flossen mitgehen, dazu Patacones: grüne Kochbanane, dick geschnitten, frittiert, flach gedrückt, ein zweites Mal frittiert und gesalzen. An der Karibikküste wird der Reis dazu in Kokosmilch gekocht, bis er leicht süß schmeckt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Arroz_con_coco%2C_pescado_frito_y_patacones.jpg/960px-Arroz_con_coco%2C_pescado_frito_y_patacones.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Arroz_con_coco,_pescado_frito_y_patacones.jpg",
+        "author": "ProtoplasmaKid",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A whole fried fish with lime and flattened plantain rounds, a plate of rice beside it",
+          "de": "Ein ganzer frittierter Fisch mit Limette und platt gedrückten Kochbananenscheiben, daneben ein Teller Reis"
+        }
+      }
+    },
+    {
+      "name": "la tortilla panameña",
+      "description": {
+        "en": "Not the Mexican kind at all: a thick disc of coarsely ground boiled corn, fried until the outside blisters while the middle stays soft as polenta. Breakfast, with a slab of white cheese laid on while it is still hot. Its rival at the same table is the hojaldra, a sheet of fried dough.",
+        "de": "Mit der mexikanischen hat sie nichts zu tun: eine dicke Scheibe aus grob gemahlenem Mais, frittiert, bis außen Blasen aufwerfen und innen alles weich bleibt wie Polenta. Frühstück, mit einer Scheibe weißem Käse darauf, solange sie heiß ist. Ihre Rivalin am selben Tisch ist die Hojaldra, ein Fladen frittierter Teig."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tortilla_paname%C3%B1a.jpg/960px-Tortilla_paname%C3%B1a.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tortilla_paname%C3%B1a.jpg",
+        "author": "Panama1519",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 624,
+        "alt": {
+          "en": "A single thick pale-yellow corn cake on a white plate on a wooden table",
+          "de": "Ein einzelner dicker hellgelber Maisfladen auf einem weißen Teller auf Holztisch"
+        }
+      }
+    },
+    {
+      "name": "la chicheme",
+      "description": {
+        "en": "Cracked maize boiled soft, then loosened with milk, sweetened and spiced with cinnamon and vanilla, drunk cold and thick enough that you half chew it. La Chorrera on the western highway has sold it from the roadside for generations, which is why the buses stop there.",
+        "de": "Aufgebrochener Mais weich gekocht, dann mit Milch aufgelockert, gesüßt und mit Zimt und Vanille gewürzt, kalt getrunken und so dick, dass man ihn halb kaut. La Chorrera an der Westautobahn verkauft ihn seit Generationen am Straßenrand — deshalb halten dort die Busse."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Carnaval de Las Tablas",
+      "when": {
+        "en": "the four days before Ash Wednesday",
+        "de": "die vier Tage vor Aschermittwoch"
+      },
+      "description": {
+        "en": "Las Tablas splits in two for four days. Calle Arriba and Calle Abajo each crown a queen, build floats against each other and field a tuna — a band whose job is to sing verses insulting the rival street. Mornings are culecos: water tankers hose the crowd while it dances. Families pick a side and keep it for life.",
+        "de": "Las Tablas teilt sich vier Tage lang in zwei Hälften. Calle Arriba und Calle Abajo krönen je eine Königin, bauen Wagen gegeneinander und stellen eine Tuna, deren Aufgabe Spottverse auf die Gegenstraße sind. Vormittags Culecos: Tankwagen spritzen die tanzende Menge nass. Familien wählen eine Seite und bleiben dabei."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Las_Tablas_Carnaval_Sunday_Night_10.jpg/960px-Las_Tablas_Carnaval_Sunday_Night_10.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Las_Tablas_Carnaval_Sunday_Night_10.jpg",
+        "author": "Carnaval.com Studios",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 960,
+        "alt": {
+          "en": "A carnival queen in a rhinestone costume and crown holding a sceptre under stage lights",
+          "de": "Eine Karnevalskönigin in Strasskostüm und Krone hält ein Zepter im Bühnenlicht"
+        }
+      }
+    },
+    {
+      "name": "Corpus Christi en La Villa de Los Santos",
+      "when": {
+        "en": "sixty days after Easter",
+        "de": "sechzig Tage nach Ostern"
+      },
+      "description": {
+        "en": "For a fortnight La Villa de Los Santos fills with masked devils in red and black stripes, papier-mâché horns and mirrors for eyes. They dance through the streets and lose, every time, to the Archangel Michael in front of the church. The masks are made in the town, by families who make nothing else.",
+        "de": "Zwei Wochen lang füllt sich La Villa de Los Santos mit maskierten Teufeln in Rot-Schwarz, mit Hörnern aus Pappmaché und Spiegeln als Augen. Sie tanzen durch die Straßen und verlieren, jedes Mal, vor der Kirche gegen den Erzengel Michael. Die Masken entstehen im Ort, bei Familien, die nichts anderes machen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/DANZA_DE_LOS_DIABLICOS_SUCIOS.jpg/960px-DANZA_DE_LOS_DIABLICOS_SUCIOS.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:DANZA_DE_LOS_DIABLICOS_SUCIOS.jpg",
+        "author": "Paul Peterson",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Two dancers in red-and-black striped suits wearing horned devil masks with orange manes",
+          "de": "Zwei Tänzer in rot-schwarz gestreiften Anzügen mit gehörnten Teufelsmasken und orangen Mähnen"
+        }
+      }
+    },
+    {
+      "name": "Desfile de las Mil Polleras",
+      "when": {
+        "en": "second Saturday in January",
+        "de": "zweiter Samstag im Januar"
+      },
+      "description": {
+        "en": "Thousands of women walk Las Tablas in the pollera de gala: skirt and blouse hand-embroidered over a year or more, worn with tembleques, headpieces of wired pearls that shiver with every step, and the gold chains that used to be the family savings. A good one costs as much as a car and gets inherited.",
+        "de": "Tausende Frauen ziehen in der Pollera de gala durch Las Tablas: Rock und Bluse, über ein Jahr von Hand bestickt, dazu Tembleques, Kopfschmuck aus Perlen auf Draht, der bei jedem Schritt zittert, und die Goldketten, einst die Ersparnisse der Familie. Eine gute kostet so viel wie ein Auto und wird vererbt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Empollerada_paname%C3%B1a.jpg/960px-Empollerada_paname%C3%B1a.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Empollerada_paname%C3%B1a.jpg",
+        "author": "Ayaita",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A woman in an embroidered white pollera and a tall pearl headpiece smiling in a parade",
+          "de": "Eine Frau in bestickter weißer Pollera und hohem Perlenkopfschmuck lächelt in einem Umzug"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "Buenas",
+      "text": {
+        "en": "Walking into a shop, a waiting room or a minibus, you say 'buenas' to whoever is already there. Skipping it is the one thing that reliably marks a visitor as rude.",
+        "de": "Wer einen Laden, ein Wartezimmer oder einen Kleinbus betritt, sagt 'buenas' zu allen, die schon da sind. Das wegzulassen ist das Einzige, was Besucher zuverlässig unhöflich wirken lässt."
+      }
+    },
+    {
+      "title": "Tú, no vos",
+      "text": {
+        "en": "Panama uses tú where Nicaragua and Costa Rica use vos, and keeps usted for elders, officials and anyone being asked a favour. Vos will simply sound foreign here.",
+        "de": "Panama sagt tú, wo Nicaragua und Costa Rica vos sagen, und hält usted für Ältere, Amtspersonen und jeden, den man um etwas bittet. Vos klingt hier schlicht ausländisch."
+      }
+    },
+    {
+      "title": "El balboa",
+      "text": {
+        "en": "Prices are quoted in balboas and paid in US dollars: the balboa is pegged one to one and exists only as coins. A quarter is 'un cuara', lifted straight from the English.",
+        "de": "Preise stehen in Balboas und werden in US-Dollar bezahlt: Der Balboa ist eins zu eins gebunden und existiert nur als Münze. Ein Vierteldollar heißt 'un cuara', direkt aus dem Englischen."
+      }
+    },
+    {
+      "title": "La hora panameña",
+      "text": {
+        "en": "A party called for eight begins around half past nine and nobody has been rude. Work is the exception: treat 'a las ocho en punto' as literal and everything else as a suggestion.",
+        "de": "Eine Feier für acht Uhr beginnt gegen halb zehn, und niemand war unhöflich. Die Arbeit ist die Ausnahme: 'a las ocho en punto' wörtlich nehmen, alles andere als Vorschlag."
+      }
+    },
+    {
+      "title": "Las molas",
+      "text": {
+        "en": "In Guna Yala the woman who sewed the mola sets its price and it is not haggled down. Photographing her carries a small fee she will name, and asking first is expected.",
+        "de": "In Guna Yala setzt die Frau, die die Mola genäht hat, den Preis fest, und der wird nicht heruntergehandelt. Für ein Foto von ihr nennt sie eine kleine Gebühr, und vorher fragen gehört dazu."
+      }
     }
   ]
 }

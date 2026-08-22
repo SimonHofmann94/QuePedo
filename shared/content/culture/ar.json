@@ -1,13 +1,32 @@
 {
   "id": "ar",
   "flag": "🇦🇷",
-  "name": { "en": "Argentina", "de": "Argentinien" },
+  "name": {
+    "en": "Argentina",
+    "de": "Argentinien"
+  },
   "nameEs": "Argentina",
   "capital": "Buenos Aires",
   "population": "46 M",
+  "tagline": {
+    "en": "Spanish spoken with an Italian accent, using 'vos' where the rest of the world uses 'tú'.",
+    "de": "Spanisch mit italienischem Akzent, mit 'vos' dort, wo der Rest der Welt 'tú' benutzt."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Perito_Moreno_Glacier_2023.jpg/1920px-Perito_Moreno_Glacier_2023.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_2023.jpg",
+    "author": "Fernando",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 823,
+    "alt": {
+      "en": "The wide ice front of the Perito Moreno glacier between mountains under a blue sky",
+      "de": "Die breite Eisfront des Perito-Moreno-Gletschers zwischen Bergen unter blauem Himmel"
+    }
+  },
   "intro": {
-    "en": "Argentina speaks Spanish with an Italian soul: millions of immigrants left behind big hand gestures, a singsong intonation and words like 'laburar'. Argentinians say 'vos' instead of 'tú' ('vos tenés'), pronounce 'll' and 'y' as 'sh' ('cashe' for calle) and sip mate all day like it's a national duty. This is the home of tango, Messi and the loudest football stadiums on Earth.",
-    "de": "Argentinien spricht Spanisch mit italienischer Seele: Millionen Einwanderer hinterließen große Gesten, eine singende Satzmelodie und Wörter wie 'laburar'. Argentinier sagen 'vos' statt 'tú' ('vos tenés'), sprechen 'll' und 'y' wie 'sch' ('Casche' statt calle) und schlürfen den ganzen Tag Mate, als wäre es Bürgerpflicht. Hier sind Tango, Messi und die lautesten Fußballstadien der Welt zu Hause."
+    "en": "Argentine Spanish carries an Italian accent, because half the country's ancestors arrived from Italy between 1880 and 1930: big hand gestures, a rising sing-song sentence melody, and words like 'laburar' straight from 'lavorare'. Argentinians use 'vos' instead of 'tú' (vos tenés, vos sos) and turn 'll' and 'y' into a 'sh' — calle comes out as 'cashe'. Tango was invented in the port bars and brothels of Buenos Aires before it became respectable, and the mate gourd goes round the office, the beach and the football terrace all day long.",
+    "de": "Argentinisches Spanisch trägt einen italienischen Akzent, weil die Vorfahren des halben Landes zwischen 1880 und 1930 aus Italien kamen: große Gesten, eine steigende, singende Satzmelodie und Wörter wie 'laburar', direkt von 'lavorare'. Argentinier sagen 'vos' statt 'tú' (vos tenés, vos sos) und machen aus 'll' und 'y' ein 'sch' — aus calle wird 'casche'. Der Tango entstand in den Hafenkneipen und Bordellen von Buenos Aires, bevor er gesellschaftsfähig wurde, und die Mate-Kalebasse geht den ganzen Tag durchs Büro, über den Strand und die Fußballtribüne."
   },
   "funFact": {
     "en": "Argentina has more psychologists per capita than any other country — around 220 per 100,000 people, many of them clustered in Buenos Aires' 'Villa Freud' district. Therapy is a perfectly normal dinner-table topic.",
@@ -16,90 +35,526 @@
   "slang": [
     {
       "term": "che",
-      "meaning": { "en": "hey / mate — the little word that gave Che Guevara his nickname", "de": "hey / Alter — das Wörtchen, das Che Guevara seinen Spitznamen gab" },
+      "meaning": {
+        "en": "hey / mate — the little word that gave Che Guevara his nickname",
+        "de": "hey / Alter — das Wörtchen, das Che Guevara seinen Spitznamen gab"
+      },
       "example": "Che, ¿me pasás la yerba?"
     },
     {
       "term": "boludo / boluda",
-      "meaning": { "en": "dude — or idiot; insult and term of endearment, tone decides", "de": "Alter — oder Idiot; Beleidigung und Kosewort zugleich, der Ton entscheidet" },
+      "meaning": {
+        "en": "dude — or idiot; insult and term of endearment, tone decides",
+        "de": "Alter — oder Idiot; Beleidigung und Kosewort zugleich, der Ton entscheidet"
+      },
       "example": "¡Che, boludo, llegás tarde otra vez!"
     },
     {
       "term": "quilombo",
-      "meaning": { "en": "mess, chaos, total disaster", "de": "Chaos, Durcheinander, das reinste Tohuwabohu" },
+      "meaning": {
+        "en": "mess, chaos, total disaster",
+        "de": "Chaos, Durcheinander, das reinste Tohuwabohu"
+      },
       "example": "El tránsito hoy es un quilombo."
     },
     {
       "term": "copado",
-      "meaning": { "en": "cool, great (people or things)", "de": "cool, super (für Menschen wie Dinge)" },
+      "meaning": {
+        "en": "cool, great (people or things)",
+        "de": "cool, super (für Menschen wie Dinge)"
+      },
       "example": "Tu amiga es re copada."
     },
     {
       "term": "laburar",
-      "meaning": { "en": "to work — straight from Italian 'lavorare'", "de": "arbeiten — direkt vom italienischen 'lavorare'" },
+      "meaning": {
+        "en": "to work — straight from Italian 'lavorare'",
+        "de": "arbeiten — direkt vom italienischen 'lavorare'"
+      },
       "example": "Mañana laburo desde las siete."
     },
     {
       "term": "mina",
-      "meaning": { "en": "girl, woman — classic lunfardo, the slang of old Buenos Aires", "de": "Mädchen, Frau — klassisches Lunfardo, der Slang des alten Buenos Aires" },
+      "meaning": {
+        "en": "girl, woman — classic lunfardo, the slang of old Buenos Aires",
+        "de": "Mädchen, Frau — klassisches Lunfardo, der Slang des alten Buenos Aires"
+      },
       "example": "La mina del bar canta tango los viernes."
     },
     {
       "term": "posta",
-      "meaning": { "en": "for real, no kidding — the Argentine seal of truth", "de": "echt jetzt, ohne Witz — das argentinische Wahrheitssiegel" },
+      "meaning": {
+        "en": "for real, no kidding — the Argentine seal of truth",
+        "de": "echt jetzt, ohne Witz — das argentinische Wahrheitssiegel"
+      },
       "example": "Posta, es la mejor pizza de Buenos Aires."
     },
     {
       "term": "re",
-      "meaning": { "en": "super, totally — glue it onto almost anything", "de": "mega, total — lässt sich an fast alles kleben" },
+      "meaning": {
+        "en": "super, totally — glue it onto almost anything",
+        "de": "mega, total — lässt sich an fast alles kleben"
+      },
       "example": "Estoy re cansado, che."
     }
   ],
   "vocabulary": [
-    { "es": "el colectivo", "translation": { "en": "city bus", "de": "Stadtbus" }, "note": { "en": "elsewhere: el autobús / el camión (Mexico)", "de": "anderswo: el autobús / el camión (Mexiko)" } },
-    { "es": "la frutilla", "translation": { "en": "strawberry", "de": "Erdbeere" }, "note": { "en": "elsewhere: la fresa", "de": "anderswo: la fresa" } },
-    { "es": "la palta", "translation": { "en": "avocado", "de": "Avocado" }, "note": { "en": "Spain & Mexico: el aguacate", "de": "Spanien & Mexiko: el aguacate" } },
-    { "es": "el subte", "translation": { "en": "subway (Buenos Aires metro)", "de": "U-Bahn (die Metro von Buenos Aires)" }, "note": { "en": "short for 'subterráneo' — elsewhere: el metro", "de": "kurz für 'subterráneo' — anderswo: el metro" } },
-    { "es": "la remera", "translation": { "en": "t-shirt", "de": "T-Shirt" }, "note": { "en": "elsewhere: la camiseta / la playera (Mexico)", "de": "anderswo: la camiseta / la playera (Mexiko)" } },
-    { "es": "la birome", "translation": { "en": "ballpoint pen", "de": "Kugelschreiber" }, "note": { "en": "named after László Bíró, who patented it in Buenos Aires — elsewhere: el bolígrafo", "de": "benannt nach László Bíró, der ihn in Buenos Aires patentierte — anderswo: el bolígrafo" } },
-    { "es": "el pibe / la piba", "translation": { "en": "kid, young person", "de": "Kind, junger Mensch" }, "note": { "en": "elsewhere: el chico — Maradona was 'el pibe de oro'", "de": "anderswo: el chico — Maradona war 'el pibe de oro'" } },
-    { "es": "el choclo", "translation": { "en": "corn on the cob", "de": "Maiskolben" }, "note": { "en": "from Quechua — in Mexico: el elote", "de": "aus dem Quechua — in Mexiko: el elote" } }
+    {
+      "es": "el colectivo",
+      "translation": {
+        "en": "city bus",
+        "de": "Stadtbus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús / el camión (Mexico)",
+        "de": "anderswo: el autobús / el camión (Mexiko)"
+      }
+    },
+    {
+      "es": "la frutilla",
+      "translation": {
+        "en": "strawberry",
+        "de": "Erdbeere"
+      },
+      "note": {
+        "en": "elsewhere: la fresa",
+        "de": "anderswo: la fresa"
+      }
+    },
+    {
+      "es": "la palta",
+      "translation": {
+        "en": "avocado",
+        "de": "Avocado"
+      },
+      "note": {
+        "en": "Spain & Mexico: el aguacate",
+        "de": "Spanien & Mexiko: el aguacate"
+      }
+    },
+    {
+      "es": "el subte",
+      "translation": {
+        "en": "subway (Buenos Aires metro)",
+        "de": "U-Bahn (die Metro von Buenos Aires)"
+      },
+      "note": {
+        "en": "short for 'subterráneo' — elsewhere: el metro",
+        "de": "kurz für 'subterráneo' — anderswo: el metro"
+      }
+    },
+    {
+      "es": "la remera",
+      "translation": {
+        "en": "t-shirt",
+        "de": "T-Shirt"
+      },
+      "note": {
+        "en": "elsewhere: la camiseta / la playera (Mexico)",
+        "de": "anderswo: la camiseta / la playera (Mexiko)"
+      }
+    },
+    {
+      "es": "la birome",
+      "translation": {
+        "en": "ballpoint pen",
+        "de": "Kugelschreiber"
+      },
+      "note": {
+        "en": "named after László Bíró, who patented it in Buenos Aires — elsewhere: el bolígrafo",
+        "de": "benannt nach László Bíró, der ihn in Buenos Aires patentierte — anderswo: el bolígrafo"
+      }
+    },
+    {
+      "es": "el pibe / la piba",
+      "translation": {
+        "en": "kid, young person",
+        "de": "Kind, junger Mensch"
+      },
+      "note": {
+        "en": "elsewhere: el chico — Maradona was 'el pibe de oro'",
+        "de": "anderswo: el chico — Maradona war 'el pibe de oro'"
+      }
+    },
+    {
+      "es": "el choclo",
+      "translation": {
+        "en": "corn on the cob",
+        "de": "Maiskolben"
+      },
+      "note": {
+        "en": "from Quechua — in Mexico: el elote",
+        "de": "aus dem Quechua — in Mexiko: el elote"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Cataratas del Iguazú",
-      "description": { "en": "275 waterfalls thundering through rainforest — stand on the walkway over the Garganta del Diablo and feel the spray from 80 m below.", "de": "275 Wasserfälle donnern durch den Regenwald — steh auf dem Steg über der Garganta del Diablo und spür die Gischt aus 80 m Tiefe." },
+      "description": {
+        "en": "275 separate falls spread over 2.7 kilometres of the Iguazú river, more than twice the width of Niagara. At the Garganta del Diablo the whole flow drops into a horseshoe 80 metres deep, and the spray comes back up hard enough to soak the walkway. Eleanor Roosevelt is said to have looked at it and murmured 'poor Niagara'.",
+        "de": "275 einzelne Fälle auf 2,7 Kilometern Breite am Río Iguazú, mehr als doppelt so breit wie Niagara. An der Garganta del Diablo stürzt der gesamte Fluss in ein 80 Meter tiefes Hufeisen, und die Gischt steigt so kräftig zurück, dass sie den Steg durchnässt. Eleanor Roosevelt soll beim Anblick 'poor Niagara' gemurmelt haben."
+      },
       "lat": -25.6953,
       "lng": -54.4367,
-      "emoji": "💦"
+      "emoji": "💦",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg/960px-Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_Foz_de_Igua%C3%A7u_26_Nov_2005.jpg",
+        "author": "Mariordo (Mario Roberto Durán Ortiz)",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 592,
+        "alt": {
+          "en": "Aerial view of the Iguazú falls spread in a curve through dense green forest",
+          "de": "Luftaufnahme der Iguazú-Fälle, die sich im Bogen durch dichten grünen Wald ziehen"
+        }
+      }
     },
     {
       "name": "Glaciar Perito Moreno",
-      "description": { "en": "A 60-m wall of blue ice in Patagonia that groans and calves house-sized chunks into the lake — one of the few glaciers still advancing.", "de": "Eine 60 m hohe Wand aus blauem Eis in Patagonien, die ächzt und hausgroße Brocken in den See kalbt — einer der wenigen Gletscher, die noch wachsen." },
+      "description": {
+        "en": "A five-kilometre ice front standing 60 metres above Lago Argentino, and one of the very few glaciers on the planet that is not retreating. Every few years it advances far enough to dam an arm of the lake; the water piles up behind it until the ice bridge collapses, and people camp out for days waiting to watch.",
+        "de": "Eine fünf Kilometer breite Eisfront, 60 Meter über dem Lago Argentino, und einer der ganz wenigen Gletscher der Erde, die nicht zurückweichen. Alle paar Jahre schiebt er sich so weit vor, dass er einen Seearm abriegelt; das Wasser staut sich dahinter, bis die Eisbrücke einstürzt — dafür campieren Leute tagelang."
+      },
       "lat": -50.4667,
       "lng": -73.05,
-      "emoji": "🧊"
+      "emoji": "🧊",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%22Grandeur%22_-_The_Perito_Moreno_Glacier_%28Argentina%29_%288095666402%29.jpg/960px-%22Grandeur%22_-_The_Perito_Moreno_Glacier_%28Argentina%29_%288095666402%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:%22Grandeur%22_-_The_Perito_Moreno_Glacier_(Argentina)_(8095666402).jpg",
+        "author": "Jorge Láscar from Australia",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Two small figures on a rock outcrop facing the blue ice front of a glacier",
+          "de": "Zwei kleine Gestalten auf einem Felsvorsprung vor der blauen Eisfront eines Gletschers"
+        }
+      }
     },
     {
       "name": "Caminito, La Boca",
-      "description": { "en": "Buenos Aires' most photographed street: corrugated-iron houses painted in leftover ship paint, tango dancers on every corner.", "de": "Die meistfotografierte Straße von Buenos Aires: Wellblechhäuser, bemalt mit übrig gebliebener Schiffsfarbe, Tango-Tänzer an jeder Ecke." },
+      "description": {
+        "en": "A former rail siding in the dockworkers' barrio, where Genoese immigrants sheeted their houses in corrugated iron and painted them with whatever was left in the shipyard paint pots — which is why no two walls match. The painter Benito Quinquela Martín pushed to have the lane turned into an open-air street museum in 1959.",
+        "de": "Ein ehemaliges Abstellgleis im Hafenarbeiterviertel, wo genuesische Einwanderer ihre Häuser mit Wellblech verkleideten und mit dem bemalten, was in den Farbtöpfen der Werft übrig blieb — deshalb gleicht keine Wand der anderen. Der Maler Benito Quinquela Martín setzte 1959 durch, dass die Gasse ein Freiluft-Straßenmuseum wurde."
+      },
       "lat": -34.6389,
       "lng": -58.3631,
-      "emoji": "🎨"
+      "emoji": "🎨",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Caminito_-_Entrada.jpg/960px-Caminito_-_Entrada.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Caminito_-_Entrada.jpg",
+        "author": "Hernán Piñera",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 543,
+        "alt": {
+          "en": "A corner house in La Boca sheeted in corrugated iron and painted green and yellow",
+          "de": "Ein Eckhaus in La Boca, mit Wellblech verkleidet und grün und gelb gestrichen"
+        }
+      }
     },
     {
       "name": "El Obelisco",
-      "description": { "en": "The 67-m needle on Avenida 9 de Julio — one of the widest avenues in the world — where every Argentine football victory is celebrated.", "de": "Die 67-m-Nadel auf der Avenida 9 de Julio — einer der breitesten Straßen der Welt — hier wird jeder argentinische Fußballsieg gefeiert." },
+      "description": {
+        "en": "A 67-metre concrete needle put up in four weeks in 1936 on the Avenida 9 de Julio, which is sixteen lanes across. The city council voted to demolish it three years later and the mayor vetoed the decision. Every time Argentina wins something, this is the roundabout the whole country drives to.",
+        "de": "Eine 67 Meter hohe Betonnadel, 1936 in vier Wochen an der sechzehnspurigen Avenida 9 de Julio errichtet. Drei Jahre später beschloss der Stadtrat den Abriss, der Bürgermeister legte sein Veto ein. Immer wenn Argentinien etwas gewinnt, fährt das ganze Land zu diesem Kreisverkehr."
+      },
       "lat": -34.6037,
       "lng": -58.3816,
-      "emoji": "🗼"
+      "emoji": "🗼",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Buenos_Aires_%2820234294752%29.jpg/960px-Buenos_Aires_%2820234294752%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Buenos_Aires_(20234294752).jpg",
+        "author": "Rodrigo Paredes from Ciudad Autónoma de Buenos Aires, Argentina",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 1440,
+        "alt": {
+          "en": "The white obelisk lit at night in the middle of a wide multi-lane avenue",
+          "de": "Der weiße Obelisk nachts beleuchtet inmitten einer breiten mehrspurigen Allee"
+        }
+      }
+    },
+    {
+      "name": "Cementerio de la Recoleta",
+      "description": {
+        "en": "Nearly 4,700 vaults packed along narrow streets of tombs in the middle of the city, some of them family crypts with staircases down to coffins stacked six deep. Eva Perón lies here under two steel plates three storeys down, after her embalmed body spent sixteen years hidden in Italy under a false name.",
+        "de": "Fast 4.700 Grüfte drängen sich entlang enger Gräberstraßen mitten in der Stadt, manche davon Familienkrypten mit Treppen hinab zu sechsfach gestapelten Särgen. Eva Perón liegt hier unter zwei Stahlplatten drei Stockwerke tief — nachdem ihr einbalsamierter Leichnam sechzehn Jahre lang unter falschem Namen in Italien versteckt war."
+      },
+      "lat": -34.5881,
+      "lng": -58.3931,
+      "emoji": "⚰️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/La_Recoleta_Cemetery_%2841054043562%29.jpg/960px-La_Recoleta_Cemetery_%2841054043562%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Recoleta_Cemetery_(41054043562).jpg",
+        "author": "Deensel",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 1200,
+        "alt": {
+          "en": "Aerial view of a dense grid of mausoleums surrounded by city blocks at dusk",
+          "de": "Luftaufnahme eines dichten Rasters aus Grabkapellen, ringsum Stadtblöcke, in der Dämmerung"
+        }
+      }
     },
     {
       "name": "Cerro de los Siete Colores",
-      "description": { "en": "The 'Hill of Seven Colors' above the village of Purmamarca in the Quebrada de Humahuaca — mineral layers painted in red, ochre, green and violet.", "de": "Der 'Berg der sieben Farben' über dem Dorf Purmamarca in der Quebrada de Humahuaca — Mineralschichten in Rot, Ocker, Grün und Violett." },
+      "description": {
+        "en": "The ridge above Purmamarca in the Quebrada de Humahuaca, where marine and river sediments laid down over 600 million years were tipped on end by the rising Andes, so the layers now read as vertical bands of red, ochre, green and violet. The Inca road ran up this valley, and Quechua is still spoken in it.",
+        "de": "Der Kamm über Purmamarca in der Quebrada de Humahuaca: Meeres- und Flusssedimente aus 600 Millionen Jahren wurden von den aufsteigenden Anden hochkant gestellt, sodass die Schichten heute als senkrechte Bänder in Rot, Ocker, Grün und Violett lesbar sind. Der Inkaweg führte durch dieses Tal, und Quechua wird hier bis heute gesprochen."
+      },
       "lat": -23.745,
       "lng": -65.5,
-      "emoji": "🌈"
+      "emoji": "🌈",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cerro_de_los_siete_colores.jpg/960px-Cerro_de_los_siete_colores.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cerro_de_los_siete_colores.jpg",
+        "author": "Augusto Sarita",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A low adobe village below a hill striped in red, ochre and green rock",
+          "de": "Ein flaches Adobe-Dorf unter einem Hügel mit roten, ockerfarbenen und grünen Streifen"
+        }
+      }
+    },
+    {
+      "name": "Los viñedos de Mendoza",
+      "description": {
+        "en": "Vineyards on the dry side of the Andes at 900 to 1,500 metres, watered through canals the Huarpe dug before the Spanish arrived, and planted mostly with Malbec — a grape that nearly died out in France and became Argentina's calling card. At the end of the road west stands Aconcagua, 6,961 metres, the highest peak outside Asia.",
+        "de": "Weinberge auf der trockenen Andenseite in 900 bis 1.500 Metern Höhe, bewässert durch Kanäle, welche die Huarpe vor den Spaniern anlegten, und überwiegend mit Malbec bepflanzt — einer Rebe, die in Frankreich fast ausstarb und zu Argentiniens Aushängeschild wurde. Am Ende der Straße nach Westen steht der Aconcagua, 6.961 Meter, der höchste Gipfel außerhalb Asiens."
+      },
+      "lat": -32.8897,
+      "lng": -68.8444,
+      "emoji": "🍷",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bodega_chakana_nieve_y_camino.jpg/960px-Bodega_chakana_nieve_y_camino.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bodega_chakana_nieve_y_camino.jpg",
+        "author": "Juan Pelizzatti",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 643,
+        "alt": {
+          "en": "A dirt track between rows of vines running toward a snow-covered Andean range",
+          "de": "Ein Feldweg zwischen Rebzeilen führt auf eine schneebedeckte Andenkette zu"
+        }
+      }
+    },
+    {
+      "name": "Península Valdés",
+      "description": {
+        "en": "A hammer-shaped peninsula on the Atlantic where southern right whales come to calve between June and December, close enough in that they can be watched from the cliffs. Off Punta Norte, orcas run themselves deliberately aground to take sea lion pups off the shingle, then wriggle backwards into the water.",
+        "de": "Eine hammerförmige Halbinsel am Atlantik, wo Südkaper zwischen Juni und Dezember kalben — so nah am Ufer, dass man sie von den Klippen aus beobachten kann. Vor Punta Norte laufen Orcas absichtlich auf den Kies auf, um Seelöwenjunge zu greifen, und winden sich danach rückwärts ins Wasser."
+      },
+      "lat": -42.5,
+      "lng": -64.0,
+      "emoji": "🐋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Southern_Right_Whale_-_Golfo_Nuevo.jpg/960px-Southern_Right_Whale_-_Golfo_Nuevo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Southern_Right_Whale_-_Golfo_Nuevo.jpg",
+        "author": "Naturedata",
+        "license": "CC0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A whale's tail raised above the water against a low orange sun",
+          "de": "Eine Walfluke hebt sich über dem Wasser gegen die tief stehende orangene Sonne"
+        }
+      }
+    },
+    {
+      "name": "Ushuaia",
+      "description": {
+        "en": "The southernmost city of any size on Earth, pressed between the Beagle Channel and a wall of mountains, with Antarctica on the airport departures board. Argentina ran it as a penal colony until 1947, and the prisoners built the town and its railway. In December the sun does not set until after ten.",
+        "de": "Die südlichste nennenswerte Stadt der Erde, zwischen Beagle-Kanal und einer Bergwand eingeklemmt, mit der Antarktis auf der Abflugtafel. Bis 1947 betrieb Argentinien sie als Strafkolonie, und die Häftlinge bauten den Ort und seine Eisenbahn. Im Dezember geht die Sonne erst nach zehn unter."
+      },
+      "lat": -54.8072,
+      "lng": -68.3081,
+      "emoji": "🐧",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ushuaia_aerial_panorama.jpg/960px-Ushuaia_aerial_panorama.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Ushuaia_aerial_panorama.jpg",
+        "author": "Deensel",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 520,
+        "alt": {
+          "en": "Aerial view of a small city at dusk between a bay and dark mountains",
+          "de": "Luftaufnahme einer kleinen Stadt in der Dämmerung zwischen Bucht und dunklen Bergen"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el asado",
+      "description": {
+        "en": "Not a barbecue: the fire burns off to one side, embers are shovelled under the grill, and the meat cooks slowly for two hours or more while everyone stands around it with wine. The asador is one named person and nobody else touches the grill. Chorizo and offal come first, ribs last.",
+        "de": "Kein Grillfest: Das Feuer brennt seitlich, die Glut wird unter den Rost geschaufelt, und das Fleisch gart zwei Stunden oder länger, während alle mit Wein danebenstehen. Der Asador ist eine bestimmte Person, sonst rührt niemand den Rost an. Chorizo und Innereien zuerst, Rippen zuletzt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Asado_tradicional_argentino%2C_le%C3%B1a%2C_brasas.jpg/960px-Asado_tradicional_argentino%2C_le%C3%B1a%2C_brasas.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Asado_tradicional_argentino,_le%C3%B1a,_brasas.jpg",
+        "author": "Maxd2",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 721,
+        "alt": {
+          "en": "Meat on an iron grill beside an open wood fire in a brick hearth",
+          "de": "Fleisch auf einem Eisenrost neben einem offenen Holzfeuer im Backsteinkamin"
+        }
+      }
+    },
+    {
+      "name": "las empanadas salteñas",
+      "description": {
+        "en": "Baked in a clay oven, filled with hand-cut beef rather than mince, plus potato, spring onion and a spoonful of stock that turns liquid inside — which is why the first bite is taken standing and leaning forward. Every province claims its own fold; Salta's has thirteen pleats.",
+        "de": "Im Lehmofen gebacken, gefüllt mit handgeschnittenem Rindfleisch statt Hack, dazu Kartoffel, Frühlingszwiebel und ein Löffel Brühe, die drinnen flüssig wird — deshalb nimmt man den ersten Bissen im Stehen und vorgebeugt. Jede Provinz beansprucht ihre eigene Faltung; die von Salta hat dreizehn Kniffe."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Empanadas_salte%C3%B1as_1.jpg/960px-Empanadas_salte%C3%B1as_1.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Empanadas_salte%C3%B1as_1.jpg",
+        "author": "Gonzalo Rivero",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A cardboard box packed with baked empanadas, their crusts blistered brown",
+          "de": "Ein Pappkarton voller gebackener Empanadas mit braun geblasenen Krusten"
+        }
+      }
+    },
+    {
+      "name": "el mate",
+      "description": {
+        "en": "Yerba leaves packed into a gourd, hot water poured down one side, drunk through a metal straw and passed round a circle in a fixed order — one gourd, one straw, everybody. Saying 'gracias' when you hand it back means you have had enough, so it is not a word to use early.",
+        "de": "Yerba-Blätter in einer Kalebasse, heißes Wasser an einer Seite aufgegossen, durch ein Metallröhrchen getrunken und in fester Reihenfolge herumgereicht — eine Kalebasse, ein Röhrchen, alle. 'Gracias' beim Zurückgeben heißt, dass du genug hast — also besser nicht zu früh sagen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mates_2.jpg/960px-Mates_2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mates_2.jpg",
+        "author": "Esceptic0",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Several carved and painted mate gourds with metal straws standing on a table",
+          "de": "Mehrere geschnitzte und bemalte Mate-Kalebassen mit Metallröhrchen auf einem Tisch"
+        }
+      }
+    },
+    {
+      "name": "la milanesa a la napolitana",
+      "description": {
+        "en": "A breaded veal or beef cutlet under ham, tomato sauce and melted cheese, invented in a Buenos Aires restaurant called Nápoli and nothing to do with Naples. It arrives the size of the plate, usually with chips underneath, and is the default order of every student in the country.",
+        "de": "Ein paniertes Kalbs- oder Rindsschnitzel unter Schinken, Tomatensauce und geschmolzenem Käse, erfunden in einem Lokal in Buenos Aires namens Nápoli — mit Neapel hat es nichts zu tun. Es kommt tellergroß, meist mit Pommes darunter, und ist die Standardbestellung jedes Studenten im Land."
+      }
+    },
+    {
+      "name": "el dulce de leche",
+      "description": {
+        "en": "Milk and sugar cooked down for hours until the sugars brown and it thickens into a spreadable caramel. Argentines eat it on toast, inside alfajores, stirred through ice cream and straight out of the jar with a spoon. The country gets through roughly three kilos a head every year.",
+        "de": "Milch und Zucker stundenlang eingekocht, bis der Zucker bräunt und die Masse zu streichfähigem Karamell wird. Argentinier essen es auf Toast, in Alfajores, ins Eis gerührt und mit dem Löffel direkt aus dem Glas. Das Land verbraucht rund drei Kilo pro Kopf und Jahr."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Fiesta Nacional de la Vendimia",
+      "when": {
+        "en": "the first weekend of March",
+        "de": "das erste März-Wochenende"
+      },
+      "description": {
+        "en": "Mendoza's grape harvest closes with a night show in a hillside amphitheatre for 30,000 people: a cast of hundreds, fireworks, and a queen elected by the eighteen wine departments who then throws fruit into the audience. In the morning the first bunches are blessed with water.",
+        "de": "Mendozas Weinlese endet mit einer Nachtshow im Amphitheater am Hang für 30.000 Menschen: Hunderte Mitwirkende, Feuerwerk und eine von den achtzehn Weinbezirken gewählte Königin, die anschließend Obst ins Publikum wirft. Am Morgen werden die ersten Trauben mit Wasser gesegnet."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/VendimiaMendoza.jpg/960px-VendimiaMendoza.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:VendimiaMendoza.jpg",
+        "author": "Javinaselli",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "A night stage show with fireworks in a hillside amphitheatre packed with people",
+          "de": "Eine nächtliche Bühnenshow mit Feuerwerk in einem vollen Amphitheater am Hang"
+        }
+      }
+    },
+    {
+      "name": "Carnaval en la Quebrada de Humahuaca",
+      "when": {
+        "en": "the nine days before Lent",
+        "de": "die neun Tage vor der Fastenzeit"
+      },
+      "description": {
+        "en": "The carnival opens by digging a small horned devil doll out of the ground, exactly where it was buried at the end of last year's, and closes by burying it again. In between, brass bands play through Tilcara and Humahuaca and everyone ends up covered in flour and paper streamers.",
+        "de": "Der Karneval beginnt damit, dass eine kleine gehörnte Teufelspuppe ausgegraben wird, genau dort, wo sie am Ende des letzten vergraben wurde, und endet damit, dass sie wieder vergraben wird. Dazwischen spielen Blaskapellen durch Tilcara und Humahuaca, und alle enden voller Mehl und Papierschlangen."
+      }
+    },
+    {
+      "name": "Mundial de Tango",
+      "when": {
+        "en": "two weeks in August",
+        "de": "zwei Wochen im August"
+      },
+      "description": {
+        "en": "Buenos Aires runs a world championship in two categories: tango de pista, danced in an embrace that never opens, and tango escenario, which allows lifts. Around 700 couples enter, many of them from Japan and Russia, and the finals fill the Luna Park arena.",
+        "de": "Buenos Aires richtet eine Weltmeisterschaft in zwei Kategorien aus: Tango de Pista, getanzt in einer Umarmung, die sich nie öffnet, und Tango Escenario, wo Hebungen erlaubt sind. Rund 700 Paare treten an, viele aus Japan und Russland, und das Finale füllt die Luna-Park-Arena."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Tango_in_La_Boca._Buenos_Aires%2C_Argentina_%2826106827166%29.jpg/960px-Tango_in_La_Boca._Buenos_Aires%2C_Argentina_%2826106827166%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tango_in_La_Boca._Buenos_Aires,_Argentina_(26106827166).jpg",
+        "author": "Juan Antonio Segal from Madrid, Spain",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A couple dancing tango cheek to cheek in a close embrace outdoors",
+          "de": "Ein Paar tanzt Tango Wange an Wange in enger Umarmung im Freien"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El voseo",
+      "text": {
+        "en": "Argentina uses vos, not tú: vos tenés, vos sos, vos querés, with the stress on the last syllable. Tú is understood everywhere but marks you at once as someone who learned Spanish elsewhere.",
+        "de": "Argentinien benutzt vos, nicht tú: vos tenés, vos sos, vos querés, mit Betonung auf der letzten Silbe. Tú versteht man überall, weist dich aber sofort als Lerner von anderswo aus."
+      }
+    },
+    {
+      "title": "La ronda de mate",
+      "text": {
+        "en": "One person pours for everyone and drinks the first one. Do not stir with the bombilla, do not wipe it, and hand the gourd back to the pourer rather than on to the next person.",
+        "de": "Eine Person gießt für alle auf und trinkt den ersten. Rühr nicht mit der Bombilla, wisch sie nicht ab, und gib die Kalebasse an den Aufgießer zurück, nicht weiter an den Nächsten."
+      }
+    },
+    {
+      "title": "Un beso",
+      "text": {
+        "en": "One kiss on the right cheek, and men do it with men too — Argentina is the country in Latin America where that is most ordinary, at work and between strangers being introduced.",
+        "de": "Ein Kuss auf die rechte Wange, und Männer tun das auch untereinander — Argentinien ist das Land Lateinamerikas, wo das am selbstverständlichsten ist, im Büro wie beim Vorstellen."
+      }
+    },
+    {
+      "title": "La hora argentina",
+      "text": {
+        "en": "An invitation for nine means arriving between half past nine and ten. Turning up on the hour at a private dinner catches the host in the shower; at a restaurant booking, it does not.",
+        "de": "Eine Einladung für neun heißt ankommen zwischen halb zehn und zehn. Wer pünktlich zum privaten Abendessen erscheint, erwischt den Gastgeber unter der Dusche; bei einer Restaurantreservierung nicht."
+      }
+    },
+    {
+      "title": "El fútbol",
+      "text": {
+        "en": "Asking which club somebody supports is a normal opening question, roughly like asking about their job. Boca and River are not interchangeable, and joking about the wrong one lands badly.",
+        "de": "Die Frage nach dem eigenen Verein ist ein normaler Gesprächseinstieg, ungefähr wie die Frage nach dem Beruf. Boca und River sind nicht austauschbar, und Witze über den falschen kommen schlecht an."
+      }
     }
   ]
 }

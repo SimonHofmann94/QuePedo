@@ -1,13 +1,32 @@
 {
   "id": "es",
   "flag": "🇪🇸",
-  "name": { "en": "Spain", "de": "Spanien" },
+  "name": {
+    "en": "Spain",
+    "de": "Spanien"
+  },
   "nameEs": "España",
   "capital": "Madrid",
   "population": "48 M",
+  "tagline": {
+    "en": "The 'th' sound, the pronoun 'vosotros', and four other official languages in one country.",
+    "de": "Der 'th'-Laut, das Pronomen 'vosotros' und vier weitere Amtssprachen in einem einzigen Land."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/1920px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
+    "author": "Jebulon",
+    "license": "CC0",
+    "width": 1920,
+    "height": 1278,
+    "alt": {
+      "en": "The Alhambra's towers and palaces on a wooded ridge in warm dawn light, mountains behind",
+      "de": "Die Türme und Paläste der Alhambra auf einem bewaldeten Kamm im warmen Morgenlicht, dahinter Berge"
+    }
+  },
   "intro": {
-    "en": "Spain is where Spanish was born — and where it sounds noticeably different from Latin America. Spaniards use 'vosotros' for 'you all', pronounce 'z' and soft 'c' like an English 'th' (gracias → 'grathias'), and fire off sentences at machine-gun speed. Add dinner at 10 pm, a bar on every corner and legendary nightlife, and you get a country that treats life as something to be enjoyed loudly.",
-    "de": "Spanien ist das Mutterland des Spanischen — und klingt doch ganz anders als Lateinamerika. Spanier sagen 'vosotros' für 'ihr', sprechen 'z' und weiches 'c' wie ein englisches 'th' (gracias → 'grathias') und reden in Maschinengewehr-Tempo. Dazu Abendessen um 22 Uhr, eine Bar an jeder Ecke und legendäres Nachtleben — ein Land, das das Leben laut und in vollen Zügen genießt."
+    "en": "Spain is where Spanish was born, and where it still sounds least like everywhere else: 'vosotros' for 'you all', a 'th' for z and soft c (gracias becomes 'grathias'), and a delivery fast enough to alarm learners. It is also not the only language here — Catalan, Galician and Basque are co-official, and Basque is related to nothing else on Earth. Dinner starts at ten, lunch is the big meal, and 'la sobremesa', the hour of talking at the table after the plates are empty, has its own noun because it is a real institution.",
+    "de": "Spanien ist die Wiege des Spanischen — und dort klingt es am wenigsten wie überall sonst: 'vosotros' für 'ihr', ein 'th' für z und weiches c (aus gracias wird 'grathias') und ein Tempo, das Lernende erschreckt. Es ist auch nicht die einzige Sprache hier: Katalanisch, Galicisch und Baskisch sind mitamtlich, und Baskisch ist mit keiner anderen Sprache der Erde verwandt. Abendessen gibt es um zehn, das Mittagessen ist die Hauptmahlzeit, und 'la sobremesa', die Stunde des Redens am Tisch nach dem letzten Teller, hat ein eigenes Wort, weil sie eine echte Institution ist."
   },
   "funFact": {
     "en": "Spain runs on the 'wrong' time zone: in 1940 Franco moved the clocks to Berlin time — geographically Spain belongs in the same zone as London. That's one reason Spaniards eat dinner so famously late.",
@@ -16,90 +35,564 @@
   "slang": [
     {
       "term": "vale",
-      "meaning": { "en": "okay, alright — you'll hear it roughly every ten seconds", "de": "okay, alles klar — hörst du ungefähr alle zehn Sekunden" },
+      "meaning": {
+        "en": "okay, alright — you'll hear it roughly every ten seconds",
+        "de": "okay, alles klar — hörst du ungefähr alle zehn Sekunden"
+      },
       "example": "Vale, vale, nos vemos a las ocho."
     },
     {
       "term": "tío / tía",
-      "meaning": { "en": "dude / girl (literally 'uncle/aunt') — the Spanish 'güey'", "de": "Alter / Süße (wörtlich 'Onkel/Tante') — das spanische 'güey'" },
+      "meaning": {
+        "en": "dude / girl (literally 'uncle/aunt') — the Spanish 'güey'",
+        "de": "Alter / Süße (wörtlich 'Onkel/Tante') — das spanische 'güey'"
+      },
       "example": "¡Tío, no te vas a creer lo que me ha pasado!"
     },
     {
       "term": "guay",
-      "meaning": { "en": "cool, great", "de": "cool, super" },
+      "meaning": {
+        "en": "cool, great — the peninsular answer to 'chido' and 'copado'",
+        "de": "cool, super — das iberische Gegenstück zu 'chido' und 'copado'"
+      },
       "example": "¡Qué guay tu chaqueta nueva!"
     },
     {
       "term": "flipar",
-      "meaning": { "en": "to freak out, to be blown away", "de": "ausflippen, völlig aus dem Häuschen sein" },
+      "meaning": {
+        "en": "to freak out, to be blown away",
+        "de": "ausflippen, völlig aus dem Häuschen sein"
+      },
       "example": "Estoy flipando con esta serie, tío."
     },
     {
       "term": "currar",
-      "meaning": { "en": "to work (informal) — 'el curro' is the job", "de": "arbeiten, malochen — 'el curro' ist der Job" },
+      "meaning": {
+        "en": "to work (informal) — 'el curro' is the job",
+        "de": "arbeiten, malochen — 'el curro' ist der Job"
+      },
       "example": "Mañana no puedo, tengo que currar."
     },
     {
       "term": "molar",
-      "meaning": { "en": "to be cool, to rock — 'me mola' = I dig it", "de": "cool sein, rocken — 'me mola' = das feiert mich an" },
+      "meaning": {
+        "en": "to be cool, to rock — 'me mola' = I dig it",
+        "de": "cool sein, rocken — 'me mola' = das feiert mich an"
+      },
       "example": "Me mola mucho este bar."
     },
     {
       "term": "ser la leche",
-      "meaning": { "en": "to be amazing (literally 'to be the milk')", "de": "der Hammer sein (wörtlich 'die Milch sein')" },
+      "meaning": {
+        "en": "to be amazing (literally 'to be the milk')",
+        "de": "der Hammer sein (wörtlich 'die Milch sein')"
+      },
       "example": "Este concierto es la leche."
     },
     {
       "term": "majo / maja",
-      "meaning": { "en": "nice, likeable — the standard compliment for people", "de": "nett, sympathisch — das Standard-Kompliment für Menschen" },
+      "meaning": {
+        "en": "nice, likeable — the standard compliment for people",
+        "de": "nett, sympathisch — das Standard-Kompliment für Menschen"
+      },
       "example": "La nueva profe es muy maja."
+    },
+    {
+      "term": "¡Hostia!",
+      "meaning": {
+        "en": "Bloody hell! / Wow! — originally the communion wafer, and still mildly blasphemous",
+        "de": "Verdammt! / Wow! — ursprünglich die Hostie und bis heute leicht blasphemisch"
+      },
+      "example": "¡Hostia, qué susto me has dado!"
+    },
+    {
+      "term": "de puta madre",
+      "meaning": {
+        "en": "brilliant, top-notch — crude in form, completely positive in use",
+        "de": "spitze, erste Sahne — derb in der Form, durchweg positiv gemeint"
+      },
+      "example": "La cena estuvo de puta madre."
     }
   ],
   "vocabulary": [
-    { "es": "el coche", "translation": { "en": "car", "de": "Auto" }, "note": { "en": "Latin America: el carro / el auto", "de": "Lateinamerika: el carro / el auto" } },
-    { "es": "el ordenador", "translation": { "en": "computer", "de": "Computer" }, "note": { "en": "Latin America: la computadora", "de": "Lateinamerika: la computadora" } },
-    { "es": "el móvil", "translation": { "en": "mobile phone", "de": "Handy" }, "note": { "en": "Latin America: el celular", "de": "Lateinamerika: el celular" } },
-    { "es": "el zumo", "translation": { "en": "juice", "de": "Saft" }, "note": { "en": "Latin America: el jugo", "de": "Lateinamerika: el jugo" } },
-    { "es": "las gafas", "translation": { "en": "glasses", "de": "Brille" }, "note": { "en": "Latin America usually: los lentes / los anteojos", "de": "Lateinamerika meist: los lentes / los anteojos" } },
-    { "es": "el piso", "translation": { "en": "flat, apartment", "de": "Wohnung" }, "note": { "en": "in Latin America 'piso' just means floor — there it's el departamento", "de": "in Lateinamerika heißt 'piso' nur Fußboden — dort sagt man el departamento" } },
-    { "es": "conducir", "translation": { "en": "to drive", "de": "Auto fahren" }, "note": { "en": "Latin America: manejar", "de": "Lateinamerika: manejar" } },
-    { "es": "la patata", "translation": { "en": "potato", "de": "Kartoffel" }, "note": { "en": "Latin America: la papa — the original Quechua word", "de": "Lateinamerika: la papa — das ursprüngliche Quechua-Wort" } }
+    {
+      "es": "el coche",
+      "translation": {
+        "en": "car",
+        "de": "Auto"
+      },
+      "note": {
+        "en": "Latin America: el carro / el auto",
+        "de": "Lateinamerika: el carro / el auto"
+      }
+    },
+    {
+      "es": "el ordenador",
+      "translation": {
+        "en": "computer",
+        "de": "Computer"
+      },
+      "note": {
+        "en": "Latin America: la computadora",
+        "de": "Lateinamerika: la computadora"
+      }
+    },
+    {
+      "es": "el móvil",
+      "translation": {
+        "en": "mobile phone",
+        "de": "Handy"
+      },
+      "note": {
+        "en": "Latin America: el celular",
+        "de": "Lateinamerika: el celular"
+      }
+    },
+    {
+      "es": "el zumo",
+      "translation": {
+        "en": "juice",
+        "de": "Saft"
+      },
+      "note": {
+        "en": "Latin America: el jugo",
+        "de": "Lateinamerika: el jugo"
+      }
+    },
+    {
+      "es": "las gafas",
+      "translation": {
+        "en": "glasses",
+        "de": "Brille"
+      },
+      "note": {
+        "en": "Latin America usually: los lentes / los anteojos",
+        "de": "Lateinamerika meist: los lentes / los anteojos"
+      }
+    },
+    {
+      "es": "el piso",
+      "translation": {
+        "en": "flat, apartment",
+        "de": "Wohnung"
+      },
+      "note": {
+        "en": "in Latin America 'piso' just means floor — there it's el departamento",
+        "de": "in Lateinamerika heißt 'piso' nur Fußboden — dort sagt man el departamento"
+      }
+    },
+    {
+      "es": "conducir",
+      "translation": {
+        "en": "to drive",
+        "de": "Auto fahren"
+      },
+      "note": {
+        "en": "Latin America: manejar",
+        "de": "Lateinamerika: manejar"
+      }
+    },
+    {
+      "es": "la patata",
+      "translation": {
+        "en": "potato",
+        "de": "Kartoffel"
+      },
+      "note": {
+        "en": "Latin America: la papa — the original Quechua word",
+        "de": "Lateinamerika: la papa — das ursprüngliche Quechua-Wort"
+      }
+    },
+    {
+      "es": "la nevera",
+      "translation": {
+        "en": "fridge",
+        "de": "Kühlschrank"
+      },
+      "note": {
+        "en": "Latin America: el refrigerador / la heladera",
+        "de": "Lateinamerika: el refrigerador / la heladera"
+      }
+    },
+    {
+      "es": "el bocadillo",
+      "translation": {
+        "en": "baguette sandwich",
+        "de": "Baguette-Sandwich"
+      },
+      "note": {
+        "en": "Latin America: el sándwich — in Mexico a 'bocadillo' is a sweet",
+        "de": "Lateinamerika: el sándwich — in Mexiko ist ein 'bocadillo' eine Süßigkeit"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Sagrada Família",
-      "description": { "en": "Gaudí's unfinished basilica in Barcelona — under construction since 1882, its towers rise like dripping sandcastles.", "de": "Gaudís unvollendete Basilika in Barcelona — seit 1882 im Bau, ihre Türme ragen auf wie tropfende Sandburgen." },
+      "description": {
+        "en": "Gaudí left drawings and plaster models rather than finished plans, and anarchists burned most of them in 1936 — everything since has been reconstruction and argument. The columns branch like trees because he worked out the load paths with hanging chains and mirrors instead of calculus. Construction passed the 140-year mark in 2022.",
+        "de": "Gaudí hinterließ Zeichnungen und Gipsmodelle statt fertiger Pläne, und Anarchisten verbrannten 1936 die meisten davon — alles seither ist Rekonstruktion und Streit. Die Säulen verzweigen sich wie Bäume, weil er die Lastwege mit hängenden Ketten und Spiegeln ermittelte statt mit Analysis. 2022 überschritt der Bau die 140-Jahre-Marke."
+      },
       "lat": 41.4036,
       "lng": 2.1744,
-      "emoji": "⛪"
-    },
-    {
-      "name": "La Alhambra",
-      "description": { "en": "Moorish palace city above Granada — ceilings of carved stucco so fine they look like frozen lace.", "de": "Maurische Palaststadt über Granada — Stuckdecken, so fein geschnitzt, dass sie wie gefrorene Spitze wirken." },
-      "lat": 37.1761,
-      "lng": -3.5881,
-      "emoji": "🕌"
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Barcelona_-_Carrer_de_Proven%C3%A7a_-_View_SE_on_Tower_of_the_Virgin_%28under_construction%29%2C_Tower_of_Jesus_Christ_%28under_construction%29_%26_%27Apostle%27-Towers_of_La_Sagrada_Fam%C3%ADlia.jpg/960px-thumbnail.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Carrer_de_Proven%C3%A7a_-_View_SE_on_Tower_of_the_Virgin_(under_construction),_Tower_of_Jesus_Christ_(under_construction)_%26_%27Apostle%27-Towers_of_La_Sagrada_Fam%C3%ADlia.jpg",
+        "author": "Txllxt TxllxT",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Looking up at the spires and construction cranes of the Sagrada Família against a dark sky",
+          "de": "Blick hinauf zu den Türmen und Baukränen der Sagrada Família vor dunklem Himmel"
+        }
+      }
     },
     {
       "name": "Museo del Prado",
-      "description": { "en": "Madrid's art cathedral — stand in front of Velázquez's Las Meninas and let the painting stare back at you.", "de": "Madrids Kunst-Kathedrale — stell dich vor Velázquez' Las Meninas und lass das Gemälde zurückstarren." },
+      "description": {
+        "en": "Velázquez painted himself into Las Meninas at the easel; the king and queen appear only as a reflection in the mirror at the back, so the viewer stands where they stand. Two rooms away hang Goya's Black Paintings, which he put straight onto the walls of his own house and never meant anyone to see. Entry is free for the last two hours of the day.",
+        "de": "Velázquez malte sich in Las Meninas selbst an die Staffelei; König und Königin erscheinen nur als Spiegelung hinten im Raum, der Betrachter steht also an ihrer Stelle. Zwei Säle weiter hängen Goyas Schwarze Bilder, die er direkt auf die Wände seines eigenen Hauses brachte und die niemand sehen sollte. Die letzten zwei Stunden des Tages ist der Eintritt frei."
+      },
       "lat": 40.4138,
       "lng": -3.6921,
-      "emoji": "🖼️"
+      "emoji": "🖼️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/960px-Museo_del_Prado_2016_%2825185969599%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_2016_(25185969599).jpg",
+        "author": "Emilio J. Rodríguez Posada",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 717,
+        "alt": {
+          "en": "The columned neoclassical front of the Prado in Madrid with a bronze statue before it",
+          "de": "Die neoklassizistische Säulenfront des Prado in Madrid, davor eine Bronzestatue"
+        }
+      }
+    },
+    {
+      "name": "La Alhambra",
+      "description": {
+        "en": "A Nasrid palace complex whose walls are covered in carved Arabic: poems by court poets in praise of the very rooms they are written in. The Court of the Lions rests on 124 columns, and its fountain hangs off a water system that still runs on gravity down from the Sierra Nevada. Boabdil handed over the keys in 1492 and, so the story goes, wept on the way out.",
+        "de": "Ein nasridischer Palastkomplex, dessen Wände mit gemeißeltem Arabisch bedeckt sind: Gedichte von Hofdichtern zum Lob genau der Räume, in denen sie stehen. Der Löwenhof ruht auf 124 Säulen, sein Brunnen hängt an einer Wasserleitung, die bis heute per Schwerkraft aus der Sierra Nevada gespeist wird. 1492 übergab Boabdil die Schlüssel und weinte, so heißt es, beim Hinausgehen."
+      },
+      "lat": 37.1761,
+      "lng": -3.5881,
+      "emoji": "🏰",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Alhambra_L%C3%B6wenhof_mit_L%C3%B6wenbrunnen_2014.jpg/960px-Alhambra_L%C3%B6wenhof_mit_L%C3%B6wenbrunnen_2014.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Alhambra_L%C3%B6wenhof_mit_L%C3%B6wenbrunnen_2014.jpg",
+        "author": "Tuxyso",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 634,
+        "alt": {
+          "en": "The arcaded Court of the Lions in the Alhambra, slender columns around a stone fountain",
+          "de": "Der Löwenhof der Alhambra mit Arkaden, schlanke Säulen um einen Steinbrunnen"
+        }
+      }
+    },
+    {
+      "name": "Mezquita-Catedral de Córdoba",
+      "description": {
+        "en": "856 columns of jasper and granite carry double horseshoe arches banded in red brick and white stone, salvaged from Roman and Visigothic buildings, so no two of them match exactly. In the 1520s the cathedral chapter dropped a full Renaissance church into the middle of it. Charles V, who had approved the plan, saw the result and said they had destroyed something unique.",
+        "de": "856 Säulen aus Jaspis und Granit tragen doppelte Hufeisenbögen aus rotem Ziegel und weißem Stein, geborgen aus römischen und westgotischen Bauten — keine zwei gleichen einander genau. In den 1520ern setzte das Domkapitel eine ganze Renaissancekirche mitten hinein. Karl V., der den Plan genehmigt hatte, sah das Ergebnis und sagte, sie hätten etwas Einzigartiges zerstört."
+      },
+      "lat": 37.8792,
+      "lng": -4.7797,
+      "emoji": "🕌",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Mezquita_cordoba_arcos_flotantes.jpg/960px-Mezquita_cordoba_arcos_flotantes.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mezquita_cordoba_arcos_flotantes.jpg",
+        "author": "Alvaro.vinuela.carnicero",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Rows of red and white striped double arches on columns inside the Mezquita of Córdoba",
+          "de": "Reihen rot-weiß gestreifter Doppelbögen auf Säulen im Inneren der Mezquita von Córdoba"
+        }
+      }
     },
     {
       "name": "Plaza de España, Sevilla",
-      "description": { "en": "A half-moon of tiled alcoves, one for every Spanish province — so cinematic it doubled as a palace in Star Wars.", "de": "Ein Halbmond aus Kachel-Nischen, eine für jede spanische Provinz — so filmreif, dass sie in Star Wars als Palast diente." },
+      "description": {
+        "en": "Built for the 1929 Ibero-American Exposition as a half-kilometre brick crescent, with a tiled bench for each of Spain's 48 provinces at the time — Spaniards find their own and photograph it. A canal with rowing boats runs the whole length. George Lucas used it as the city of Theed on Naboo, and David Lean got there first.",
+        "de": "Gebaut für die Iberoamerikanische Ausstellung 1929 als halbkilometerlanger Backsteinbogen, mit einer gekachelten Bank für jede der damals 48 spanischen Provinzen — Spanier suchen ihre eigene und fotografieren sie. Ein Kanal mit Ruderbooten zieht sich die ganze Länge entlang. George Lucas nutzte sie als Stadt Theed auf Naboo, David Lean war früher da."
+      },
       "lat": 37.3772,
       "lng": -5.9869,
-      "emoji": "💃"
+      "emoji": "💃",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Plaza_de_Espa%C3%B1a_%28Sevilla%29_-_01.jpg/960px-Plaza_de_Espa%C3%B1a_%28Sevilla%29_-_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Plaza_de_Espa%C3%B1a_(Sevilla)_-_01.jpg",
+        "author": "Carlos Delgado",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The curved brick arcade of Sevilla's Plaza de España along its canal, fountain playing",
+          "de": "Die geschwungene Backsteinarkade der Plaza de España in Sevilla am Kanal, mit Springbrunnen"
+        }
+      }
     },
     {
       "name": "Santiago de Compostela",
-      "description": { "en": "The end of the Camino — pilgrims have walked here for 1,000 years to watch the giant Botafumeiro censer swing through the cathedral.", "de": "Das Ziel des Jakobswegs — seit 1.000 Jahren pilgern Menschen hierher, um den riesigen Botafumeiro durch die Kathedrale schwingen zu sehen." },
+      "description": {
+        "en": "The end point of the Camino, where pilgrims who arrive on foot still queue for a certificate written in Latin. The Botafumeiro, a 62-kilo silver censer, takes eight men on ropes to swing it across the transept at about 68 km/h; it was originally there to cover the smell of the pilgrims. Rain falls here on roughly 150 days a year.",
+        "de": "Der Endpunkt des Camino, wo zu Fuß angekommene Pilger noch immer für eine Urkunde auf Latein anstehen. Das Botafumeiro, ein 62 Kilo schweres Silberweihrauchfass, braucht acht Männer an Seilen, um mit rund 68 km/h durchs Querschiff zu schwingen; ursprünglich sollte es den Geruch der Pilger übertönen. An etwa 150 Tagen im Jahr regnet es hier."
+      },
       "lat": 42.8806,
-      "lng": -8.5449,
-      "emoji": "🥾"
+      "lng": -8.5444,
+      "emoji": "🥾",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Vista_de_la_Plaza_del_Obradoiro_de_Santiago_de_Compostela_%28Espa%C3%B1a%29.JPG/960px-Vista_de_la_Plaza_del_Obradoiro_de_Santiago_de_Compostela_%28Espa%C3%B1a%29.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Vista_de_la_Plaza_del_Obradoiro_de_Santiago_de_Compostela_(Espa%C3%B1a).JPG",
+        "author": "Lancastermerrin88",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The baroque twin-towered west front of Santiago cathedral above its wide stone staircase",
+          "de": "Die barocke Doppelturmfassade der Kathedrale von Santiago über ihrer breiten Steintreppe"
+        }
+      }
+    },
+    {
+      "name": "Museo Guggenheim Bilbao",
+      "description": {
+        "en": "Gehry's titanium shell went up in 1997 over a stretch of derelict shipyard, and within three years visitor numbers had risen enough that urban planners now use 'the Bilbao effect' as a technical term. Jeff Koons's twelve-metre Puppy sits at the entrance under a coat of live flowers and is replanted twice a year.",
+        "de": "Gehrys Titanhülle entstand 1997 über einem brachliegenden Werftgelände, und binnen drei Jahren stiegen die Besucherzahlen so stark, dass Stadtplaner heute vom 'Bilbao-Effekt' als Fachbegriff sprechen. Am Eingang sitzt Jeff Koons' zwölf Meter hoher Puppy unter einem Mantel aus lebenden Blumen und wird zweimal im Jahr neu bepflanzt."
+      },
+      "lat": 43.2686,
+      "lng": -2.9339,
+      "emoji": "🐟",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg/960px-Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Museo_Guggenheim,_Bilbao_(31273245344).jpg",
+        "author": "Naotake Murayama",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The curved titanium panels of the Guggenheim Bilbao beside the river, a tower behind",
+          "de": "Die geschwungenen Titanflächen des Guggenheim Bilbao am Fluss, dahinter ein Hochhaus"
+        }
+      }
+    },
+    {
+      "name": "Toledo",
+      "description": {
+        "en": "A granite outcrop inside a loop of the Tagus, held in turn by Romans, Visigoths and Muslims, and for two centuries the one place in Europe where Arabic, Hebrew and Latin scholarship were translated side by side. Two medieval synagogues survive, one of them built by Muslim craftsmen for a Jewish congregation under a Christian king.",
+        "de": "Ein Granitfelsen in einer Schleife des Tajo, nacheinander von Römern, Westgoten und Muslimen gehalten und zwei Jahrhunderte lang der einzige Ort Europas, an dem arabische, hebräische und lateinische Gelehrsamkeit nebeneinander übersetzt wurde. Zwei mittelalterliche Synagogen sind erhalten, eine von muslimischen Handwerkern für eine jüdische Gemeinde unter christlichem König gebaut."
+      },
+      "lat": 39.8567,
+      "lng": -4.0244,
+      "emoji": "⚔️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toledo_%2837737041515%29.jpg/960px-Toledo_%2837737041515%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Toledo_(37737041515).jpg",
+        "author": "Dmitry Dzhus from London",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The stone old town of Toledo packed onto a hill above a bend of the Tagus river",
+          "de": "Die steinerne Altstadt von Toledo drängt sich auf einem Hügel über einer Tajo-Schleife"
+        }
+      }
+    },
+    {
+      "name": "El Teide",
+      "description": {
+        "en": "Spain's highest point at 3,715 metres, on an island 1,750 kilometres from Madrid and 300 from Africa. The crater floor around it is a plain of yellow and red lava that has stood in for Mars in more than one film. The observatory on the neighbouring ridge studies the sun, because the trade-wind cloud sits below the summit and the sky above almost never closes.",
+        "de": "Mit 3.715 Metern der höchste Punkt Spaniens, auf einer Insel 1.750 Kilometer von Madrid und 300 von Afrika entfernt. Der Kraterboden ringsum ist eine Ebene aus gelber und roter Lava, die in mehr als einem Film den Mars gespielt hat. Das Observatorium auf dem Nachbarkamm erforscht die Sonne, weil die Passatwolke unter dem Gipfel liegt und der Himmel darüber fast nie zugeht."
+      },
+      "lat": 28.2731,
+      "lng": -16.6394,
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/El_Teide_Mount.jpg/960px-El_Teide_Mount.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Teide_Mount.jpg",
+        "author": "Ireneusz Jerzy Borysiewicz",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 603,
+        "alt": {
+          "en": "The bare reddish cone of Mount Teide streaked with pale rock under a blue sky",
+          "de": "Der kahle rötliche Kegel des Teide, durchzogen von hellem Gestein, unter blauem Himmel"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la tortilla de patatas",
+      "description": {
+        "en": "Potatoes cooked slowly in a lot of olive oil, folded into beaten egg, set in a pan and flipped onto a plate. Whether onion belongs in it is a genuine national argument with two named camps, 'concebollistas' and 'sincebollistas'. The middle is meant to run a little.",
+        "de": "Kartoffeln, langsam in viel Olivenöl gegart, unter verquirltes Ei gehoben, in der Pfanne gestockt und auf einen Teller gestürzt. Ob Zwiebel hineingehört, ist ein echter Landesstreit mit zwei Lagern: 'concebollistas' und 'sincebollistas'. Die Mitte soll ein wenig laufen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Tortilla_de_Patatas_%28Corte_transversal%29.jpg/960px-Tortilla_de_Patatas_%28Corte_transversal%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Tortilla_de_Patatas_(Corte_transversal).jpg",
+        "author": "Tamorlan",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A thick potato omelette on a plate, cut open to show a soft runny centre",
+          "de": "Eine dicke Kartoffeltortilla auf dem Teller, aufgeschnitten mit weichem, flüssigem Kern"
+        }
+      }
+    },
+    {
+      "name": "el jamón ibérico de bellota",
+      "description": {
+        "en": "Ham from black Iberian pigs turned out into oak pasture for the last months of their lives to eat nothing but acorns, then salted and hung for three to four years. It is cut by hand into near-transparent sheets and served at room temperature, never cold and never in a sandwich.",
+        "de": "Schinken von schwarzen iberischen Schweinen, die die letzten Monate ihres Lebens auf Eichenweiden verbringen und nur Eicheln fressen, danach gesalzen und drei bis vier Jahre gereift. Er wird von Hand in fast durchsichtige Blätter geschnitten und zimmerwarm serviert, nie kalt und nie im Sandwich."
+      }
+    },
+    {
+      "name": "la paella valenciana",
+      "description": {
+        "en": "The Valencian original holds rabbit, chicken, flat green beans and garrofó beans — no chorizo, and seafood only in the coastal version. It cooks uncovered over orange wood until the bottom layer, the socarrat, caramelises and sticks to the pan, which is the part people fight over.",
+        "de": "Das valencianische Original enthält Kaninchen, Huhn, breite grüne Bohnen und Garrofó-Bohnen — keine Chorizo, Meeresfrüchte nur in der Küstenversion. Sie gart offen über Orangenholz, bis die unterste Schicht, der Socarrat, karamellisiert und ansetzt — der Teil, um den gestritten wird."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Cocci%C3%B3n_de_una_paella_en_Torrente.jpg/960px-Cocci%C3%B3n_de_una_paella_en_Torrente.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cocci%C3%B3n_de_una_paella_en_Torrente.jpg",
+        "author": "Jo sóc de torrent",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A wide flat pan of paella bubbling over an open wood fire on the ground",
+          "de": "Eine breite flache Paella-Pfanne brodelt über einem offenen Holzfeuer am Boden"
+        }
+      }
+    },
+    {
+      "name": "el pulpo a feira",
+      "description": {
+        "en": "Octopus dunked three times in boiling water so the skin stays on, then cut with scissors onto a wooden plate and dressed with coarse salt, olive oil and pimentón. In Galicia the person who cooks it is a 'pulpeira', and the good ones travel from village fair to village fair.",
+        "de": "Oktopus, dreimal in kochendes Wasser getaucht, damit die Haut hält, dann mit der Schere auf einen Holzteller geschnitten und mit grobem Salz, Olivenöl und Pimentón angemacht. In Galicien heißt, wer ihn zubereitet, 'pulpeira', und die guten ziehen von Dorffest zu Dorffest."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Polbo.Octopus.Pulpo.Galicia.jpg/960px-Polbo.Octopus.Pulpo.Galicia.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Polbo.Octopus.Pulpo.Galicia.jpg",
+        "author": "Luis Miguel Bugallo Sánchez (http://commons.wikimedia.org/wiki/User:Lmbuga)",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "An oval plate piled with sliced octopus dusted red with paprika",
+          "de": "Ein ovaler Teller voller Oktopusscheiben, rot bestäubt mit Paprikapulver"
+        }
+      }
+    },
+    {
+      "name": "la caña",
+      "description": {
+        "en": "A small draught beer, about 200 ml, ordered that size because it stays cold to the last sip — four small ones beat one large warm one. In Granada and parts of Andalusia a free tapa arrives with every round, and the bar picks it, not you.",
+        "de": "Ein kleines Fassbier, etwa 200 ml, in dieser Größe bestellt, weil es bis zum letzten Schluck kalt bleibt — vier kleine schlagen ein großes warmes. In Granada und Teilen Andalusiens kommt zu jeder Runde eine Gratis-Tapa, und die Bar sucht sie aus, nicht du."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "San Fermín",
+      "when": {
+        "en": "6–14 July",
+        "de": "6.–14. Juli"
+      },
+      "description": {
+        "en": "At eight every morning a rocket goes up and six fighting bulls run 875 metres of barricaded street to the ring with several hundred people ahead of them. It is over in a little more than two minutes. Everyone wears white with a red neckerchief that goes on at noon on the 6th and comes off at midnight on the 14th.",
+        "de": "Jeden Morgen um acht steigt eine Rakete auf, und sechs Kampfstiere laufen 875 Meter abgesperrte Straße bis zur Arena, mehrere hundert Menschen vor sich. Nach gut zwei Minuten ist es vorbei. Alle tragen Weiß mit rotem Halstuch, das am 6. mittags umgelegt und am 14. um Mitternacht abgenommen wird."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Running_of_the_Bulls_on_Estafeta_Street.jpg/960px-Running_of_the_Bulls_on_Estafeta_Street.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Running_of_the_Bulls_on_Estafeta_Street.jpg",
+        "author": "Atkins525",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Runners in white and red crowding a narrow street ahead of a group of bulls",
+          "de": "Läufer in Weiß und Rot drängen sich in einer engen Gasse vor einer Gruppe Stiere"
+        }
+      }
+    },
+    {
+      "name": "Las Fallas",
+      "when": {
+        "en": "15–19 March",
+        "de": "15.–19. März"
+      },
+      "description": {
+        "en": "Neighbourhood committees spend the year building satirical figures up to twenty metres high, install them in the streets of Valencia, and burn every one of them on the night of the 19th. One figure a year is voted out of the fire and kept in a museum. The daytime fireworks are judged on noise, not light.",
+        "de": "Nachbarschaftskomitees bauen das ganze Jahr satirische Figuren von bis zu zwanzig Metern Höhe, stellen sie in Valencias Straßen auf und verbrennen in der Nacht des 19. jede einzelne. Eine Figur pro Jahr wird aus dem Feuer gewählt und im Museum aufbewahrt. Das Tagesfeuerwerk wird nach Lärm bewertet, nicht nach Licht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Fallas_at_night_-_Flickr_-_keith_ellwood.jpg/960px-Fallas_at_night_-_Flickr_-_keith_ellwood.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fallas_at_night_-_Flickr_-_keith_ellwood.jpg",
+        "author": "keith ellwood from Valencia Spain, Spain",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Giant papier-mâché figures standing at night in front of a lit facade in Valencia",
+          "de": "Riesige Pappmaché-Figuren stehen nachts vor einer beleuchteten Fassade in Valencia"
+        }
+      }
+    },
+    {
+      "name": "Semana Santa",
+      "when": {
+        "en": "the week before Easter",
+        "de": "die Woche vor Ostern"
+      },
+      "description": {
+        "en": "Brotherhoods carry heavy wooden floats of Christ and the Virgin through the streets on the shoulders of men walking hidden underneath, at about one step a second. Hooded penitents go in front in pointed capirotes. In Seville a saeta — an unaccompanied flamenco lament sung from a balcony — stops the whole procession.",
+        "de": "Bruderschaften tragen schwere Holzfiguren von Christus und der Jungfrau durch die Straßen, geschultert von Männern, die verborgen darunter gehen, etwa ein Schritt pro Sekunde. Vermummte Büßer laufen in spitzen Capirotes voran. In Sevilla hält eine Saeta — eine unbegleitete Flamenco-Klage vom Balkon — den ganzen Zug an."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "Vosotros",
+      "text": {
+        "en": "Spain uses vosotros for a group of friends and keeps ustedes for formality; Latin America dropped vosotros entirely. Using ustedes with your mates in Madrid sounds like a courtroom.",
+        "de": "Spanien benutzt vosotros für eine Gruppe von Freunden und hält ustedes für Förmliches bereit; Lateinamerika hat vosotros ganz aufgegeben. Ustedes unter Freunden in Madrid klingt wie im Gericht."
+      }
+    },
+    {
+      "title": "Dos besos",
+      "text": {
+        "en": "Two kisses, right cheek first, on arriving and on leaving — women with everyone, men with women. Men shake hands with men. It happens at introductions too, not only with people you already know.",
+        "de": "Zwei Küsse, erst rechte Wange, beim Kommen und beim Gehen — Frauen mit allen, Männer mit Frauen. Männer geben Männern die Hand. Das gilt auch beim Vorstellen, nicht nur unter Bekannten."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Tipping is small and optional: coins left on the bar, or a restaurant bill rounded up. Ten per cent counts as generous here, and fifteen reads as a foreigner who has not asked.",
+        "de": "Trinkgeld ist klein und freiwillig: Münzen auf der Theke oder eine aufgerundete Restaurantrechnung. Zehn Prozent gelten hier als großzügig, fünfzehn wirken wie ein Ausländer, der nicht gefragt hat."
+      }
+    },
+    {
+      "title": "El horario",
+      "text": {
+        "en": "Lunch runs from two to four and is the main meal of the day; dinner starts at nine or ten. Turning up to eat at seven means eating alone, and most kitchens will not be open yet.",
+        "de": "Das Mittagessen läuft von zwei bis vier und ist die Hauptmahlzeit; das Abendessen beginnt um neun oder zehn. Wer um sieben essen will, isst allein — die meisten Küchen haben noch zu."
+      }
+    },
+    {
+      "title": "El volumen",
+      "text": {
+        "en": "A Spanish bar at full volume is not an argument. Interrupting is participation rather than rudeness, and politely waiting for a gap in the conversation can mean waiting all night.",
+        "de": "Eine spanische Bar in voller Lautstärke ist kein Streit. Dazwischenreden ist Teilnahme, nicht Unhöflichkeit, und höflich auf eine Gesprächspause zu warten kann heißen, den ganzen Abend zu warten."
+      }
     }
   ]
 }

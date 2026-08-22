@@ -1,13 +1,32 @@
 {
   "id": "do",
   "flag": "🇩🇴",
-  "name": { "en": "Dominican Republic", "de": "Dominikanische Republik" },
+  "name": {
+    "en": "Dominican Republic",
+    "de": "Dominikanische Republik"
+  },
   "nameEs": "República Dominicana",
   "capital": "Santo Domingo",
   "population": "11 M",
+  "tagline": {
+    "en": "One island shared with Haiti, the first European city in the Americas, and merengue.",
+    "de": "Eine Insel, geteilt mit Haiti, die erste europäische Stadt Amerikas — und der Merengue."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dominikanische_Republik_Santo_Domingo_Basilica_Catedral_Menor_de_Santa_Maria_02.jpg/1920px-Dominikanische_Republik_Santo_Domingo_Basilica_Catedral_Menor_de_Santa_Maria_02.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Dominikanische_Republik_Santo_Domingo_Basilica_Catedral_Menor_de_Santa_Maria_02.jpg",
+    "author": "Georg Karl Ell",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1080,
+    "alt": {
+      "en": "The pale stone facade of Santo Domingo's cathedral above a square of trees",
+      "de": "Die helle Steinfassade der Kathedrale von Santo Domingo über einem baumbestandenen Platz"
+    }
+  },
   "intro": {
-    "en": "The Dominican Republic speaks what may be the fastest Spanish in the Caribbean: final -s sounds evaporate, whole syllables get swallowed, and '¿qué es lo que es?' compresses into a snappy '¿qué lo qué?'. This is the birthplace of merengue and bachata — both on UNESCO's cultural heritage list — and home to the oldest European city in the Americas. Dominicans turn conversation into a sport: loud, warm, and always ready for a round of 'chercha' (good-natured banter).",
-    "de": "In der Dominikanischen Republik spricht man das vielleicht schnellste Spanisch der Karibik: End-s verdunsten, ganze Silben werden verschluckt, und aus '¿qué es lo que es?' wird ein knackiges '¿qué lo qué?'. Hier wurden Merengue und Bachata geboren — beide UNESCO-Kulturerbe — und hier steht die älteste europäische Stadt Amerikas. Dominikaner machen aus Unterhaltung einen Sport: laut, herzlich und immer bereit für eine Runde 'chercha' (gutmütige Frotzelei)."
+    "en": "The Dominican Republic speaks what may be the fastest Spanish in the Caribbean: final -s evaporates, whole syllables get swallowed, and '¿qué es lo que es?' compresses into a snappy '¿qué lo qué?'. In the Cibao valley an r or l at the end of a syllable turns into an i, so 'puerta' comes out 'puetta' — and which way it goes tells you the town. This is the birthplace of merengue and bachata, both on UNESCO's heritage list, and of more Major League baseball players than any country outside the United States. Its frontier with Haiti is the only land border in the Americas where Spanish meets a French creole.",
+    "de": "In der Dominikanischen Republik spricht man das vielleicht schnellste Spanisch der Karibik: End-s verdunsten, ganze Silben werden verschluckt, und aus '¿qué es lo que es?' wird ein knackiges '¿qué lo qué?'. Im Cibao-Tal wird ein r oder l am Silbenende zu einem i, aus 'puerta' also 'puetta' — und welche Variante fällt, verrät den Ort. Hier wurden Merengue und Bachata geboren, beide UNESCO-Kulturerbe, und hier kommen mehr Major-League-Baseballspieler her als aus jedem Land außer den USA. Die Grenze zu Haiti ist die einzige Landgrenze Amerikas, an der Spanisch auf ein französisches Kreol trifft."
   },
   "funFact": {
     "en": "The Dominican flag is the only national flag in the world with a Bible on it — open, as tradition has it, to John 8:32: 'And the truth shall set you free.'",
@@ -16,89 +35,525 @@
   "slang": [
     {
       "term": "¿Qué lo qué?",
-      "meaning": { "en": "What's up? — compressed from '¿qué es lo que es?'", "de": "Was geht? — zusammengeschrumpft aus '¿qué es lo que es?'" },
+      "meaning": {
+        "en": "What's up? — compressed from '¿qué es lo que es?'",
+        "de": "Was geht? — zusammengeschrumpft aus '¿qué es lo que es?'"
+      },
       "example": "¿Qué lo qué, manito? ¡Cuánto tiempo!"
     },
     {
       "term": "un chin",
-      "meaning": { "en": "a little bit — one of the few surviving Taíno words", "de": "ein bisschen — eines der wenigen überlebenden Taíno-Wörter" },
+      "meaning": {
+        "en": "a little bit — one of the few surviving Taíno words",
+        "de": "ein bisschen — eines der wenigen überlebenden Taíno-Wörter"
+      },
       "example": "Dame un chin de café, por favor."
     },
     {
       "term": "jevi",
-      "meaning": { "en": "cool, nice — from English 'heavy', flipped into a compliment", "de": "cool, super — vom englischen 'heavy', umgedreht zum Kompliment" },
+      "meaning": {
+        "en": "cool, nice — from English 'heavy', flipped into a compliment",
+        "de": "cool, super — vom englischen 'heavy', umgedreht zum Kompliment"
+      },
       "example": "La playa estaba bien jevi ayer."
     },
     {
       "term": "el tíguere",
-      "meaning": { "en": "streetwise guy, smooth operator — a whole Dominican archetype", "de": "gewiefter Typ, Schlitzohr — ein ganzer dominikanischer Archetyp" },
+      "meaning": {
+        "en": "streetwise guy, smooth operator — a whole Dominican archetype",
+        "de": "gewiefter Typ, Schlitzohr — ein ganzer dominikanischer Archetyp"
+      },
       "example": "Ese tíguere sabe moverse en la capital."
     },
     {
       "term": "dique",
-      "meaning": { "en": "supposedly, 'yeah right' — flags that you don't quite believe it", "de": "angeblich, 'ja klar' — signalisiert, dass du es nicht so recht glaubst" },
+      "meaning": {
+        "en": "supposedly, 'yeah right' — flags that you don't quite believe it",
+        "de": "angeblich, 'ja klar' — signalisiert, dass du es nicht so recht glaubst"
+      },
       "example": "Dique va a llegar temprano... como siempre."
     },
     {
       "term": "la chercha",
-      "meaning": { "en": "loud banter and laughter with friends", "de": "lautes Gefrotzel und Gelächter mit Freunden" },
+      "meaning": {
+        "en": "loud banter and laughter with friends",
+        "de": "lautes Gefrotzel und Gelächter mit Freunden"
+      },
       "example": "Anoche la chercha en el colmado duró hasta tarde."
     },
     {
       "term": "ta' to'",
-      "meaning": { "en": "all good, it's settled — short for 'está todo'", "de": "alles klar, passt — kurz für 'está todo'" },
+      "meaning": {
+        "en": "all good, it's settled — short for 'está todo'",
+        "de": "alles klar, passt — kurz für 'está todo'"
+      },
       "example": "—¿Nos vemos a las ocho? —Ta' to'."
     },
     {
       "term": "la vaina",
-      "meaning": { "en": "thing, stuff — as universal here as in Venezuela", "de": "Ding, Zeug — hier so universell wie in Venezuela" },
+      "meaning": {
+        "en": "thing, stuff — as universal here as in Venezuela",
+        "de": "Ding, Zeug — hier so universell wie in Venezuela"
+      },
       "example": "¿Dónde pusiste esa vaina que te di?"
     }
   ],
   "vocabulary": [
-    { "es": "la guagua", "translation": { "en": "bus", "de": "Bus" }, "note": { "en": "elsewhere: el autobús — the Caribbean standard", "de": "anderswo: el autobús — der Karibik-Standard" } },
-    { "es": "el concho", "translation": { "en": "shared taxi or moto-taxi on a fixed route", "de": "Sammeltaxi oder Mototaxi auf fester Route" }, "note": { "en": "elsewhere: el taxi colectivo", "de": "anderswo: el taxi colectivo" } },
-    { "es": "el colmado", "translation": { "en": "corner store that sells everything — and doubles as the neighborhood hangout", "de": "Eckladen, der alles verkauft — und nebenbei Treffpunkt des Viertels ist" }, "note": { "en": "elsewhere: la tienda / el ultramarinos", "de": "anderswo: la tienda / el ultramarinos" } },
-    { "es": "la funda", "translation": { "en": "plastic bag", "de": "Plastiktüte" }, "note": { "en": "elsewhere: la bolsa", "de": "anderswo: la bolsa" } },
-    { "es": "las habichuelas", "translation": { "en": "beans — the heart of the daily 'bandera dominicana' lunch", "de": "Bohnen — das Herz des täglichen Mittagessens 'bandera dominicana'" }, "note": { "en": "elsewhere: los frijoles", "de": "anderswo: los frijoles" } },
-    { "es": "el mangú", "translation": { "en": "mashed green plantains — the national breakfast", "de": "Püree aus grünen Kochbananen — das Nationalfrühstück" }, "note": { "en": "with 'los tres golpes': fried cheese, salami and eggs", "de": "mit 'los tres golpes': gebratener Käse, Salami und Ei" } },
-    { "es": "ahorita", "translation": { "en": "in a while, later", "de": "nachher, später" }, "note": { "en": "the opposite of Mexico, where 'ahorita' means (more or less) right now", "de": "das Gegenteil von Mexiko, wo 'ahorita' (mehr oder weniger) sofort heißt" } }
+    {
+      "es": "la guagua",
+      "translation": {
+        "en": "bus",
+        "de": "Bus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús — the Caribbean standard",
+        "de": "anderswo: el autobús — der Karibik-Standard"
+      }
+    },
+    {
+      "es": "el concho",
+      "translation": {
+        "en": "shared taxi or moto-taxi on a fixed route",
+        "de": "Sammeltaxi oder Mototaxi auf fester Route"
+      },
+      "note": {
+        "en": "elsewhere: el taxi colectivo",
+        "de": "anderswo: el taxi colectivo"
+      }
+    },
+    {
+      "es": "el colmado",
+      "translation": {
+        "en": "corner store that sells everything — and doubles as the neighborhood hangout",
+        "de": "Eckladen, der alles verkauft — und nebenbei Treffpunkt des Viertels ist"
+      },
+      "note": {
+        "en": "elsewhere: la tienda / el ultramarinos",
+        "de": "anderswo: la tienda / el ultramarinos"
+      }
+    },
+    {
+      "es": "la funda",
+      "translation": {
+        "en": "plastic bag",
+        "de": "Plastiktüte"
+      },
+      "note": {
+        "en": "elsewhere: la bolsa",
+        "de": "anderswo: la bolsa"
+      }
+    },
+    {
+      "es": "las habichuelas",
+      "translation": {
+        "en": "beans — the heart of the daily 'bandera dominicana' lunch",
+        "de": "Bohnen — das Herz des täglichen Mittagessens 'bandera dominicana'"
+      },
+      "note": {
+        "en": "elsewhere: los frijoles",
+        "de": "anderswo: los frijoles"
+      }
+    },
+    {
+      "es": "el mangú",
+      "translation": {
+        "en": "mashed green plantains — the national breakfast",
+        "de": "Püree aus grünen Kochbananen — das Nationalfrühstück"
+      },
+      "note": {
+        "en": "with 'los tres golpes': fried cheese, salami and eggs",
+        "de": "mit 'los tres golpes': gebratener Käse, Salami und Ei"
+      }
+    },
+    {
+      "es": "ahorita",
+      "translation": {
+        "en": "in a while, later",
+        "de": "nachher, später"
+      },
+      "note": {
+        "en": "the opposite of Mexico, where 'ahorita' means (more or less) right now",
+        "de": "das Gegenteil von Mexiko, wo 'ahorita' (mehr oder weniger) sofort heißt"
+      }
+    },
+    {
+      "es": "el zafacón",
+      "translation": {
+        "en": "rubbish bin",
+        "de": "Mülleimer"
+      },
+      "note": {
+        "en": "said to come from English 'safety can'; elsewhere: el bote de basura",
+        "de": "soll vom englischen 'safety can' kommen; anderswo: el bote de basura"
+      }
+    },
+    {
+      "es": "el guineo",
+      "translation": {
+        "en": "banana — the sweet kind, as opposed to el plátano for cooking",
+        "de": "Banane — die süße Sorte, im Gegensatz zum Koch-Plátano"
+      },
+      "note": {
+        "en": "elsewhere: el banano / la banana",
+        "de": "anderswo: el banano / la banana"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Zona Colonial, Santo Domingo",
-      "description": { "en": "The first European city in the Americas (1498) — home to the New World's first cathedral, first university and first paved street.", "de": "Die erste europäische Stadt Amerikas (1498) — mit der ersten Kathedrale, der ersten Universität und der ersten gepflasterten Straße der Neuen Welt." },
+      "description": {
+        "en": "Founded in 1498, the first permanent European city in the Americas, and it still has the first cathedral, the first university and the first paved street — Calle Las Damas, named for the women of the viceroy's court who walked it in the evenings. The Alcázar de Colón was built for Diego Colón, Columbus's son, and put up without a single nail.",
+        "de": "1498 gegründet, die erste dauerhafte europäische Stadt Amerikas, und sie hat noch immer die erste Kathedrale, die erste Universität und die erste gepflasterte Straße — die Calle Las Damas, benannt nach den Hofdamen des Vizekönigs, die dort abends spazierten. Der Alcázar de Colón entstand für Diego Colón, den Sohn des Kolumbus, und kam ohne einen einzigen Nagel aus."
+      },
       "lat": 18.4734,
       "lng": -69.8849,
-      "emoji": "🏰"
+      "emoji": "🏰",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Alc%C3%A1zar_de_Col%C3%B3n_CCSD_RD_11_2017_6554.jpg/960px-Alc%C3%A1zar_de_Col%C3%B3n_CCSD_RD_11_2017_6554.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Alc%C3%A1zar_de_Col%C3%B3n_CCSD_RD_11_2017_6554.jpg",
+        "author": "Mariordo (Mario Roberto Durán Ortiz)",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The two-storey stone arcades of the Alcázar de Colón across an empty plaza",
+          "de": "Die zweigeschossigen Steinarkaden des Alcázar de Colón über einem leeren Platz"
+        }
+      }
     },
     {
       "name": "Pico Duarte",
-      "description": { "en": "The Caribbean's highest peak at 3,098 m — it can drop below freezing up there at night while the beaches simmer at 30 °C.", "de": "Der höchste Gipfel der Karibik mit 3.098 m — nachts kann es dort oben frieren, während die Strände bei 30 °C brutzeln." },
-      "lat": 19.0233,
-      "lng": -70.9978,
-      "emoji": "⛰️"
+      "description": {
+        "en": "At 3,098 m the highest point in the Caribbean, and cold enough at the top for frost most winter nights while the beaches sit at 30 °C. The walk up from La Ciénaga is 23 km each way through Hispaniolan pine, and mules carry the food. There is no summit view half the time; the cloud arrives before noon.",
+        "de": "Mit 3.098 m der höchste Punkt der Karibik, oben in Winternächten meist frostig, während die Strände bei 30 °C liegen. Der Aufstieg von La Ciénaga misst 23 km pro Richtung durch Hispaniola-Kiefern, das Essen tragen Maultiere. Die halbe Zeit gibt es oben keine Aussicht; die Wolke kommt vor Mittag."
+      },
+      "lat": 19.0331,
+      "lng": -71.0053,
+      "emoji": "⛰️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pinus_occidentalis_on_Pico_Duarte.jpg/960px-Pinus_occidentalis_on_Pico_Duarte.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pinus_occidentalis_on_Pico_Duarte.jpg",
+        "author": "jvg19",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 576,
+        "alt": {
+          "en": "Scattered pines on a bare ridge with more ridges receding into haze",
+          "de": "Vereinzelte Kiefern auf einem kahlen Grat, dahinter weitere Kämme im Dunst"
+        }
+      }
     },
     {
       "name": "Bahía de Samaná",
-      "description": { "en": "Every January to March some 2,000 humpback whales gather here to mate and calve — one of the world's great whale-watching bays.", "de": "Jedes Jahr von Januar bis März versammeln sich hier rund 2.000 Buckelwale zur Paarung und Geburt — eine der großen Walbeobachtungs-Buchten der Welt." },
-      "lat": 19.2056,
-      "lng": -69.3323,
-      "emoji": "🐋"
+      "description": {
+        "en": "Between January and March around 2,000 humpback whales come into this bay to mate and calve in water shallow enough that the males' song carries through a boat hull. They eat nothing for the whole stay. The Dominican Republic created its humpback sanctuary in 1986, before whale-watching was worth anything here.",
+        "de": "Zwischen Januar und März kommen rund 2.000 Buckelwale in diese Bucht, um sich zu paaren und zu kalben, in Wasser so flach, dass der Gesang der Bullen durch den Bootsrumpf dringt. Während der ganzen Zeit fressen sie nichts. Das Land richtete sein Buckelwal-Schutzgebiet 1986 ein, lange bevor Walbeobachtung hier etwas einbrachte."
+      },
+      "lat": 19.1667,
+      "lng": -69.4167,
+      "emoji": "🐋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Humbak.jpg/960px-Humbak.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Humbak.jpg",
+        "author": "Lachu",
+        "license": "CC BY 2.5",
+        "width": 960,
+        "height": 643,
+        "alt": {
+          "en": "A humpback whale breaching clear of the water, spray falling around it",
+          "de": "Ein Buckelwal springt frei aus dem Wasser, ringsum fällt die Gischt"
+        }
+      }
     },
     {
-      "name": "Playa Bávaro, Punta Cana",
-      "description": { "en": "Fifty kilometers of coconut-lined white sand along the east coast — the postcard every other Caribbean beach gets judged against.", "de": "Fünfzig Kilometer kokosgesäumter weißer Sand an der Ostküste — die Postkarte, an der jeder andere Karibikstrand gemessen wird." },
-      "lat": 18.582,
-      "lng": -68.4055,
-      "emoji": "🏖️"
+      "name": "Playa Bávaro",
+      "description": {
+        "en": "Fifty kilometres of coconut palm and white sand on the east coast, protected by a reef that keeps the water flat and turquoise for a couple of hundred metres out. Almost all of it is hotel frontage — Punta Cana's airport handles more passengers than the capital's — but the beach itself is public by law, all the way along.",
+        "de": "Fünfzig Kilometer Kokospalmen und weißer Sand an der Ostküste, geschützt von einem Riff, das das Wasser ein paar hundert Meter weit flach und türkis hält. Fast alles davon ist Hotelfront — der Flughafen von Punta Cana fertigt mehr Passagiere ab als der der Hauptstadt —, doch der Strand selbst ist per Gesetz auf ganzer Länge öffentlich."
+      },
+      "lat": 18.6828,
+      "lng": -68.4034,
+      "emoji": "🏖️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Caribbean_Sunset%2C_Bavaro%2C_Dominican_Republic_%2814702746147%29.jpg/960px-Caribbean_Sunset%2C_Bavaro%2C_Dominican_Republic_%2814702746147%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Caribbean_Sunset,_Bavaro,_Dominican_Republic_(14702746147).jpg",
+        "author": "Joe deSousa",
+        "license": "CC0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Palm trunks silhouetted against an orange sunset over calm sea at Bávaro",
+          "de": "Palmenstämme als Silhouetten vor orangefarbenem Sonnenuntergang über ruhiger See"
+        }
+      }
     },
     {
       "name": "Lago Enriquillo",
-      "description": { "en": "A hypersaline lake about 40 m below sea level — the Caribbean's lowest point, ringed by cacti and patrolled by American crocodiles.", "de": "Ein hypersaliner See rund 40 m unter dem Meeresspiegel — der tiefste Punkt der Karibik, von Kakteen umringt und von Spitzkrokodilen patrouilliert." },
-      "lat": 18.47,
-      "lng": -71.65,
-      "emoji": "🦎"
+      "description": {
+        "en": "A hypersaline lake 40 m below sea level, the lowest point in the Caribbean and the leftover of a strait that once cut Hispaniola in two. American crocodiles breed on its shore and rhinoceros iguanas walk the tracks. The lake doubled in area between 2004 and 2013 for reasons still argued over, drowning farms and a road.",
+        "de": "Ein hypersaliner See 40 m unter dem Meeresspiegel, der tiefste Punkt der Karibik und Überrest einer Meerenge, die Hispaniola einst zerteilte. An seinem Ufer brüten Spitzkrokodile, auf den Wegen laufen Nashornleguane. Zwischen 2004 und 2013 verdoppelte der See seine Fläche — warum, ist bis heute strittig — und ersäufte Felder und eine Straße."
+      },
+      "lat": 18.4856,
+      "lng": -71.6153,
+      "emoji": "🦎",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lago_Enriquillo.jpg/960px-Lago_Enriquillo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_Enriquillo.jpg",
+        "author": "Juan Alberto Silver",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A wide pale lake below dry scrub-covered hills seen from a rock ledge",
+          "de": "Ein weiter blasser See unter trockenen, buschbedeckten Hügeln, von einem Felssims aus"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional Los Haitises",
+      "description": {
+        "en": "Limestone hummocks called mogotes stand out of the mangroves in rows, and the sea caves cut into them hold Taíno pictographs — bats, whales, faces, and in one cave a drawing of a European ship. The park is reached only by boat from Sabana de la Mar or Samaná. Frigatebirds and brown pelicans nest on the outer rocks.",
+        "de": "Kalksteinbuckel, Mogotes genannt, stehen reihenweise aus den Mangroven, und die Meereshöhlen darin tragen Taíno-Piktogramme — Fledermäuse, Wale, Gesichter, in einer Höhle die Zeichnung eines europäischen Schiffs. Der Park ist nur per Boot von Sabana de la Mar oder Samaná erreichbar. Auf den äußeren Felsen brüten Fregattvögel und Braunpelikane."
+      },
+      "lat": 19.0439,
+      "lng": -69.5929,
+      "emoji": "🦅",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Los_Haitises_-_r%C3%ADo.JPG/960px-Los_Haitises_-_r%C3%ADo.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Los_Haitises_-_r%C3%ADo.JPG",
+        "author": "Starus",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A green river winding between mangrove banks below forested limestone hills",
+          "de": "Ein grüner Fluss windet sich zwischen Mangrovenufern unter bewaldeten Kalkhügeln"
+        }
+      }
+    },
+    {
+      "name": "Puerto Plata",
+      "description": {
+        "en": "The Fortaleza San Felipe has guarded the harbour since 1577 and later held Juan Pablo Duarte, the man on the banknotes, as a prisoner. A cable car climbs Pico Isabel de Torres to a cloud forest and a smaller copy of Rio's Christ. The amber sold in town comes from mines in the hills behind, and some pieces have insects in them.",
+        "de": "Die Fortaleza San Felipe bewacht den Hafen seit 1577 und hielt später Juan Pablo Duarte gefangen, den Mann auf den Geldscheinen. Eine Seilbahn führt auf den Pico Isabel de Torres zu Nebelwald und einer kleineren Kopie des Christus von Rio. Der Bernstein aus den Läden stammt aus Minen in den Bergen dahinter, manche Stücke mit Insekten darin."
+      },
+      "lat": 19.7958,
+      "lng": -70.6944,
+      "emoji": "🏯",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/FortalezaPOP.jpg/960px-FortalezaPOP.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:FortalezaPOP.jpg",
+        "author": "SantiKbrera",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A low stone fort on a headland with the sea breaking on rocks beside it",
+          "de": "Ein niedriges Steinfort auf einer Landzunge, daneben bricht die See an Felsen"
+        }
+      }
+    },
+    {
+      "name": "Bahía de las Águilas",
+      "description": {
+        "en": "Eight kilometres of empty sand inside Jaragua National Park, with no hotel, no bar and no road to the beach itself — a fisherman runs the last stretch by boat from Las Cuevas. Building there has been fought over in court for two decades and the beach has stayed empty. Sea turtles nest along it.",
+        "de": "Acht Kilometer leerer Sand im Nationalpark Jaragua, ohne Hotel, ohne Bar und ohne Straße bis zum Strand — das letzte Stück fährt ein Fischer per Boot von Las Cuevas. Über Bebauung wird seit zwei Jahrzehnten prozessiert, und der Strand ist leer geblieben. Meeresschildkröten legen dort ihre Eier."
+      },
+      "lat": 17.8621,
+      "lng": -71.6456,
+      "emoji": "🐢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bahia_de_las_Aguilas_beach.jpg/960px-Bahia_de_las_Aguilas_beach.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahia_de_las_Aguilas_beach.jpg",
+        "author": "jordina_collellcortacans (Flickr)",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "An empty curve of pale sand and clear shallow water backed by dry hills",
+          "de": "Eine leere Bucht aus hellem Sand und klarem flachem Wasser vor trockenen Hügeln"
+        }
+      }
+    },
+    {
+      "name": "Altos de Chavón",
+      "description": {
+        "en": "A sixteenth-century Mediterranean village above the río Chavón that was designed in 1976 by a Paramount set designer and built by Dominican stonemasons out of coral rock. The 5,000-seat amphitheatre was opened by Frank Sinatra in 1982. Nothing here is old and everyone knows it, which is somehow not the point.",
+        "de": "Ein Mittelmeerdorf des 16. Jahrhunderts über dem Río Chavón, 1976 von einem Paramount-Filmarchitekten entworfen und von dominikanischen Steinmetzen aus Korallenstein gebaut. Das Amphitheater für 5.000 Zuschauer eröffnete Frank Sinatra 1982. Nichts hier ist alt, alle wissen es, und irgendwie ist das nicht der Punkt."
+      },
+      "lat": 18.4215,
+      "lng": -68.8899,
+      "emoji": "🎭",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Amphitheater_in_Altos_de_Chav%C3%B3n%2C_La_Romana%2C_Dominican_Republic.jpg/960px-Amphitheater_in_Altos_de_Chav%C3%B3n%2C_La_Romana%2C_Dominican_Republic.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Amphitheater_in_Altos_de_Chav%C3%B3n,_La_Romana,_Dominican_Republic.jpg",
+        "author": "Mstyslav Chernov",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 483,
+        "alt": {
+          "en": "A stone amphitheatre with curved tiers of seating and a green valley behind",
+          "de": "Ein steinernes Amphitheater mit gebogenen Sitzreihen, dahinter ein grünes Tal"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la bandera dominicana",
+      "description": {
+        "en": "White rice, stewed red beans and a piece of braised chicken or beef, with fried plantain and a shred of cabbage salad on the side — the flag, and lunch, on almost every plate in the country between noon and two. The beans go over the rice, not beside it, and the argument about that is real.",
+        "de": "Weißer Reis, geschmorte rote Bohnen und ein Stück geschmortes Huhn oder Rind, dazu gebratene Kochbanane und etwas Krautsalat — die Flagge und zugleich das Mittagessen auf fast jedem Teller des Landes zwischen zwölf und zwei. Die Bohnen kommen über den Reis, nicht daneben, und darüber wird wirklich gestritten."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/BanderaDominicana01.jpg/960px-BanderaDominicana01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:BanderaDominicana01.jpg",
+        "author": "Asalas03",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 497,
+        "alt": {
+          "en": "A plate of white rice and stewed meat under pickled red onion, a cup of beans behind it",
+          "de": "Ein Teller weißer Reis und Schmorfleisch unter roten Zwiebelringen, dahinter ein Becher Bohnen"
+        }
+      }
+    },
+    {
+      "name": "el sancocho de siete carnes",
+      "description": {
+        "en": "Seven meats in one pot — chicken, beef, pork, goat, smoked ribs, sausage, whatever else — with yuca, yautía, plantain and pumpkin cooked down until the broth thickens on its own. It is made for a crowd, takes most of a day, and is what appears after a funeral or when the power has been out since Tuesday.",
+        "de": "Sieben Fleischsorten in einem Topf — Huhn, Rind, Schwein, Ziege, geräucherte Rippen, Wurst und was sonst da ist — mit Yuca, Yautía, Kochbanane und Kürbis, bis die Brühe von selbst bindet. Gekocht wird für viele, es dauert fast einen Tag, und es kommt nach einer Beerdigung oder wenn seit Dienstag der Strom weg ist."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sancocho_Dominicano.jpg/960px-Sancocho_Dominicano.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Sancocho_Dominicano.jpg",
+        "author": "LittleT889",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A bowl of dark brown-green stew with chunks of meat, beside a small plate of white rice",
+          "de": "Eine Schale dunkelbraungrüner Eintopf mit Fleischstücken, daneben ein Tellerchen weißer Reis"
+        }
+      }
+    },
+    {
+      "name": "el mangú con los tres golpes",
+      "description": {
+        "en": "Green plantains boiled and mashed with the cooking water and a little oil until smooth, then buried under pickled red onion. The three hits are the sides: fried salami, fried cheese and fried egg. Breakfast, and the reason Dominicans abroad ship themselves plantains.",
+        "de": "Grüne Kochbananen, gekocht und mit dem Kochwasser und etwas Öl glatt gestampft, dann unter eingelegten roten Zwiebeln begraben. Die drei Schläge sind die Beilagen: gebratene Salami, gebratener Käse, Spiegelei. Frühstück — und der Grund, warum Dominikaner im Ausland sich Kochbananen schicken lassen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Mangu.jpg/960px-Mangu.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mangu.jpg",
+        "author": "Danimsosa",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 1280,
+        "alt": {
+          "en": "A plate of mashed plantain with onion rings, two fried eggs, fried cheese and red salami",
+          "de": "Ein Teller Kochbananenpüree mit Zwiebelringen, zwei Spiegeleiern, gebratenem Käse und roter Salami"
+        }
+      }
+    },
+    {
+      "name": "el chimi",
+      "description": {
+        "en": "A pork or beef patty pressed flat on a griddle, loaded into a soft pan de agua with cabbage, tomato and a pink sauce of mayonnaise, ketchup and orange juice. Sold only from a truck, only after dark, and eaten standing next to it. The name comes from chimichurri, which is not on it.",
+        "de": "Ein Schweine- oder Rindfleischpatty, flach auf die Platte gedrückt, in ein weiches Pan de Agua geladen, mit Kraut, Tomate und rosa Sauce aus Mayo, Ketchup und Orangensaft. Verkauft nur vom Wagen, nur nach Einbruch der Dunkelheit, im Stehen daneben gegessen. Der Name kommt von Chimichurri, das nicht drauf ist."
+      }
+    },
+    {
+      "name": "la mamajuana",
+      "description": {
+        "en": "A bottle packed with tree bark, roots and dried leaves, filled with rum, red wine and honey and left to steep for days. The first fill is poured away; the same sticks are refilled for years. Taíno healers used the bark infusion, the alcohol came with the Spanish, and every family swears its recipe cures something.",
+        "de": "Eine Flasche voller Baumrinde, Wurzeln und getrockneter Blätter, aufgefüllt mit Rum, Rotwein und Honig, tagelang ziehend. Die erste Füllung wird weggeschüttet; dieselben Hölzer gießt man jahrelang neu auf. Taíno-Heiler nutzten den Rindenaufguss, den Alkohol brachten die Spanier, und jede Familie schwört auf ihr Rezept."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mamajuana_Rep%C3%BAblica_Dominicana.JPG/960px-Mamajuana_Rep%C3%BAblica_Dominicana.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mamajuana_Rep%C3%BAblica_Dominicana.JPG",
+        "author": "Wikimedia Commons user 1997",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 1280,
+        "alt": {
+          "en": "A labelled glass bottle packed with dry bark and wood chips, straw poking from the neck",
+          "de": "Eine etikettierte Glasflasche voller trockener Rinde und Holzspäne, Stroh ragt aus dem Hals"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Carnaval de La Vega",
+      "when": {
+        "en": "every Sunday in February",
+        "de": "jeden Sonntag im Februar"
+      },
+      "description": {
+        "en": "Diablos cojuelos in horned masks with mirrors and bared teeth take the streets of La Vega every Sunday of February, swinging a vejiga — an inflated, dried cow bladder — at the backsides of anyone who gets close. It stings. The masks are made by workshops that hand designs down within one family.",
+        "de": "Diablos Cojuelos in gehörnten Masken mit Spiegeln und gefletschten Zähnen übernehmen jeden Februarsonntag La Vegas Straßen und schwingen eine Vejiga — eine aufgeblasene, getrocknete Kuhblase — gegen das Hinterteil aller, die zu nah kommen. Das brennt. Die Masken bauen Werkstätten, deren Entwürfe in der Familie bleiben."
+      }
+    },
+    {
+      "name": "Día de la Altagracia",
+      "when": {
+        "en": "21 January",
+        "de": "21. Januar"
+      },
+      "description": {
+        "en": "Hundreds of thousands walk to the basilica at Higüey for the country's patron Virgin, some of them the last stretch on their knees. The 1971 basilica is a bare concrete parabola over 70 m high with no saints on the walls, which caused an argument at the time and still does.",
+        "de": "Hunderttausende gehen zur Basilika von Higüey für die Landespatronin, manche das letzte Stück auf Knien. Der Bau von 1971 ist eine nackte Betonparabel von über 70 m Höhe, ganz ohne Heilige an den Wänden — damals ein Streitfall und heute immer noch."
+      }
+    },
+    {
+      "name": "Festival del Merengue",
+      "when": {
+        "en": "late July into August",
+        "de": "Ende Juli bis in den August"
+      },
+      "description": {
+        "en": "The Malecón in Santo Domingo shuts to traffic and turns into a stage for a fortnight, with güira, tambora and accordion running until the small hours. Merengue went onto UNESCO's intangible heritage list in 2016 and bachata followed in 2019 — the two of them came off the same rural dance floors.",
+        "de": "Der Malecón von Santo Domingo wird für zwei Wochen für Autos gesperrt und zur Bühne, mit Güira, Tambora und Akkordeon bis in die frühen Morgenstunden. Merengue kam 2016 auf die UNESCO-Liste des immateriellen Erbes, Bachata 2019 — beide stammen von denselben Dorftanzböden."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the cheek between women and between a woman and a man, from the first meeting. Men shake hands or bump fists. Walking past people eating without a 'buen provecho' is odd.",
+        "de": "Ein Wangenkuss zwischen Frauen und zwischen Frau und Mann, schon beim ersten Treffen. Männer geben die Hand oder die Faust. An Essenden vorbeizugehen, ohne 'buen provecho' zu sagen, wirkt seltsam."
+      }
+    },
+    {
+      "title": "Mi amor",
+      "text": {
+        "en": "Strangers will call you mi amor, mi vida, mi reina — the woman at the bakery, the man fixing the tyre. It is not flirting, it is the register, and answering coldly is what reads as strange.",
+        "de": "Fremde nennen dich mi amor, mi vida, mi reina — die Frau in der Bäckerei, der Mann am Reifen. Das ist keine Anmache, sondern die Tonlage, und kühl zu antworten ist das, was seltsam wirkt."
+      }
+    },
+    {
+      "title": "La apariencia",
+      "text": {
+        "en": "Dominicans dress up to leave the house, including to go to the corner shop. Beach clothes worn into a restaurant or an office read as disrespect to the people in it, not as being relaxed.",
+        "de": "Dominikaner ziehen sich zum Rausgehen an, auch für den Eckladen. Strandkleidung im Restaurant oder Büro gilt nicht als locker, sondern als respektlos gegenüber den Leuten dort."
+      }
+    },
+    {
+      "title": "Señalar con la boca",
+      "text": {
+        "en": "Directions come with a pursed-lip point and a lift of the chin rather than a finger. Watch the mouth, not the hands, or the answer to '¿dónde está?' will make no sense at all.",
+        "de": "Wegbeschreibungen kommen mit gespitzten Lippen und einem Heben des Kinns statt mit dem Finger. Achte auf den Mund, nicht auf die Hände, sonst ergibt die Antwort auf '¿dónde está?' keinen Sinn."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Restaurant bills already carry a 10 % service charge plus 18 % tax, and a little cash on top is normal. In a colmado nobody tips, and offering it is faintly insulting.",
+        "de": "Restaurantrechnungen enthalten bereits 10 % Bedienung plus 18 % Steuer, ein kleiner Schein obendrauf ist üblich. Im Colmado gibt niemand Trinkgeld, und es anzubieten wirkt leicht beleidigend."
+      }
     }
   ]
 }

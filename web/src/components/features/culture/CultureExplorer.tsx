@@ -4,8 +4,10 @@ import { useState } from "react"
 import dynamic from "next/dynamic"
 import Link from "next/link"
 import { X } from "lucide-react"
+import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import type { FlatImage } from "@/components/features/culture/CultureImage"
 
 const WorldMap = dynamic(
   () => import("@/components/features/culture/WorldMap").then((m) => m.WorldMap),
@@ -20,8 +22,20 @@ export interface CultureCard {
   nameEs: string
   capital: string
   population: string
-  /** First slang entry, shown as teaser. */
+  /** v2 countries only — the card becomes photo-led when this is present. */
+  hero: FlatImage | null
+  tagline: string | null
+  /** First slang entry. Only shown on countries without a photo yet. */
   teaser: { term: string; meaning: string } | null
+}
+
+/**
+ * Wikimedia thumbnails are addressable by width, and 250/500 are on the
+ * allowlist — so a card can ask for a small file instead of making the image
+ * optimizer pull the 1920px hero for a thumbnail.
+ */
+function atWidth(url: string, w: 250 | 500): string {
+  return url.replace(/\/\d+px-/, `/${w}px-`)
 }
 
 export function CultureExplorer({ countries }: { countries: CultureCard[] }) {
@@ -51,6 +65,17 @@ export function CultureExplorer({ countries }: { countries: CultureCard[] }) {
               >
                 <X className="h-4 w-4" />
               </button>
+              {selected.hero ? (
+                <div className="relative mb-2.5 aspect-[3/2] w-full overflow-hidden rounded-[10px] bg-masa-100">
+                  <Image
+                    src={atWidth(selected.hero.url, 250)}
+                    alt={selected.hero.alt}
+                    fill
+                    sizes="280px"
+                    className="object-cover"
+                  />
+                </div>
+              ) : null}
               <div className="font-display text-xl font-bold leading-tight text-ink-800">
                 {selected.flag} {selected.name}
               </div>
@@ -65,7 +90,9 @@ export function CultureExplorer({ countries }: { countries: CultureCard[] }) {
                   👥 {selected.population}
                 </Badge>
               </div>
-              {selected.teaser ? (
+              {selected.tagline ? (
+                <div className="mt-2 line-clamp-3 text-xs text-ink-500">{selected.tagline}</div>
+              ) : selected.teaser ? (
                 <div className="mt-2 text-xs text-ink-500">
                   «{selected.teaser.term}» — {selected.teaser.meaning}
                 </div>
@@ -92,22 +119,45 @@ export function CultureExplorer({ countries }: { countries: CultureCard[] }) {
           <Link
             key={c.id}
             href={`/culture/${c.id}`}
-            className="rounded-[16px] border border-ink-100 bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
+            className="reveal group overflow-hidden rounded-[16px] border border-ink-100 bg-white shadow-sm transition-[transform,box-shadow] hover:-translate-y-0.5 hover:shadow-[0_5px_0_0_var(--cielo-300)]"
           >
-            <div className="text-[32px]">{c.flag}</div>
-            <div className="mt-1.5 font-display text-sm font-bold text-ink-700">
-              {c.name}
-            </div>
-            {c.teaser ? (
-              <>
-                <div className="mt-2 font-display text-lg font-bold tracking-tight text-ink-800">
-                  «{c.teaser.term}»
+            {c.hero ? (
+              <div className="relative aspect-[3/2] w-full overflow-hidden bg-masa-100">
+                <Image
+                  src={atWidth(c.hero.url, 500)}
+                  alt={c.hero.alt}
+                  fill
+                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-ink-900/70 to-transparent"
+                  aria-hidden
+                />
+                <div className="absolute inset-x-0 bottom-0 flex items-baseline gap-2 p-3.5">
+                  <span className="text-[22px] leading-none">{c.flag}</span>
+                  <span className="font-marker text-[19px] leading-none text-white">{c.name}</span>
                 </div>
-                <div className="mt-0.5 line-clamp-2 text-xs text-ink-500">
-                  {c.teaser.meaning}
-                </div>
-              </>
+              </div>
             ) : null}
+            <div className="p-4">
+              {c.hero ? null : (
+                <>
+                  <div className="text-[32px]">{c.flag}</div>
+                  <div className="mt-1.5 font-display text-sm font-bold text-ink-700">{c.name}</div>
+                </>
+              )}
+              {c.tagline ? (
+                <div className="line-clamp-2 text-[13px] leading-snug text-ink-500">{c.tagline}</div>
+              ) : c.teaser ? (
+                <>
+                  <div className="mt-2 font-display text-lg font-bold tracking-tight text-ink-800">
+                    «{c.teaser.term}»
+                  </div>
+                  <div className="mt-0.5 line-clamp-2 text-xs text-ink-500">{c.teaser.meaning}</div>
+                </>
+              ) : null}
+            </div>
           </Link>
         ))}
       </div>

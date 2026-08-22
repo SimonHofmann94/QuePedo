@@ -1,13 +1,32 @@
 {
   "id": "cr",
   "flag": "🇨🇷",
-  "name": { "en": "Costa Rica", "de": "Costa Rica" },
+  "name": {
+    "en": "Costa Rica",
+    "de": "Costa Rica"
+  },
   "nameEs": "Costa Rica",
   "capital": "San José",
   "population": "5 M",
+  "tagline": {
+    "en": "Five per cent of the planet's known species, and one word — pura vida — that answers every question.",
+    "de": "Fünf Prozent aller bekannten Arten des Planeten und ein Wort — pura vida —, das auf jede Frage passt."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Arenal_Volcano_02.jpg/1920px-Arenal_Volcano_02.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Arenal_Volcano_02.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC0",
+    "width": 1920,
+    "height": 1280,
+    "alt": {
+      "en": "The forested cone of Arenal volcano with white cloud gathering along its right flank",
+      "de": "Der bewaldete Kegel des Vulkans Arenal, an der rechten Flanke sammelt sich weiße Wolke"
+    }
+  },
   "intro": {
-    "en": "In Costa Rica, 'pura vida' isn't a phrase — it's the national operating system: hello, goodbye, thank you and a whole life philosophy in two words. Ticos soften everything with diminutives (un momentico, un cafecito) and famously prefer 'usted' and 'vos' over 'tú', even between friends. The country protects around a quarter of its territory in national parks and squeezes roughly 5% of the planet's biodiversity into a land smaller than Bavaria. Spanish here sounds gentle, melodic and relentlessly polite — just like the people.",
-    "de": "In Costa Rica ist 'pura vida' keine Floskel, sondern das Betriebssystem des Landes: Begrüßung, Abschied, Dankeschön und Lebensphilosophie in zwei Wörtern. Ticos verniedlichen alles mit Diminutiven (un momentico, un cafecito) und sagen lieber 'usted' und 'vos' als 'tú' — sogar unter Freunden. Rund ein Viertel des Landes steht unter Naturschutz, und auf einer Fläche kleiner als Bayern drängeln sich etwa 5 % der weltweiten Artenvielfalt. Das Spanisch hier klingt sanft, melodisch und unerschütterlich höflich — genau wie die Menschen."
+    "en": "'Pura vida' does the work of hello, goodbye, thanks and 'I'm fine', and Costa Ricans reach for it about as often as English reaches for 'okay'. They are called ticos after the diminutive they prefer: where most of Latin America says momentito, they say momentico, and coffee is always un cafecito. Usted carries almost every conversation here — between friends, to small children, to the dog — while tú is rare enough to sound imported and vos fills the gap between friends. The other giveaway is the rr, which many ticos push so far back in the mouth that it lands closer to an English r than a Spanish trill. A quarter of the country sits under some form of protection, and roughly five per cent of all species known to science live inside it.",
+    "de": "'Pura vida' erledigt Hallo, Tschüss, Danke und 'mir geht's gut', und Costa-Ricaner greifen ungefähr so oft danach wie das Englische nach 'okay'. Ticos heißen sie nach der Verkleinerungsform, die sie bevorzugen: Wo der Rest Lateinamerikas momentito sagt, sagen sie momentico, und Kaffee ist immer un cafecito. Usted trägt hier fast jedes Gespräch — unter Freunden, zu kleinen Kindern, zum Hund —, während tú so selten ist, dass es importiert klingt, und vos die Lücke unter Freunden füllt. Das zweite Erkennungszeichen ist das rr, das viele Ticos so weit hinten im Mund bilden, dass es eher englisch klingt als gerollt spanisch. Ein Viertel des Landes steht unter Schutz, und darin leben etwa fünf Prozent aller bekannten Arten."
   },
   "funFact": {
     "en": "Costa Rica abolished its army on 1 December 1948 and poured the money into schools and health care instead — today the country regularly runs on more than 98% renewable electricity.",
@@ -16,90 +35,579 @@
   "slang": [
     {
       "term": "¡Pura vida!",
-      "meaning": { "en": "hello, goodbye, thanks, 'all good' — the all-purpose tico phrase and a philosophy of life", "de": "Hallo, Tschüss, Danke, 'alles bestens' — die Allzweck-Floskel der Ticos und eine Lebensphilosophie" },
+      "meaning": {
+        "en": "hello, goodbye, thanks, 'all good' — the all-purpose tico phrase and a philosophy of life",
+        "de": "Hallo, Tschüss, Danke, 'alles bestens' — die Allzweck-Floskel der Ticos und eine Lebensphilosophie"
+      },
       "example": "—¿Cómo estás? —¡Pura vida, mae!"
     },
     {
       "term": "mae",
-      "meaning": { "en": "dude, mate — the Costa Rican 'güey', dropped into every second sentence", "de": "Alter, Kumpel — das costa-ricanische 'güey', landet in jedem zweiten Satz" },
+      "meaning": {
+        "en": "dude, mate — the Costa Rican 'güey', dropped into every second sentence",
+        "de": "Alter, Kumpel — das costa-ricanische 'güey', landet in jedem zweiten Satz"
+      },
       "example": "Mae, ¿vamos a la playa este finde?"
     },
     {
       "term": "tuanis",
-      "meaning": { "en": "cool, nice, all good", "de": "cool, entspannt, alles gut" },
+      "meaning": {
+        "en": "cool, all good — from the old Malespín cipher, in which 'bueno' scrambles into 'tuani'",
+        "de": "cool, alles gut — aus dem alten Malespín-Code, in dem 'bueno' zu 'tuani' verdreht wird"
+      },
       "example": "El concierto estuvo tuanis, mae."
     },
     {
-      "term": "chunche",
-      "meaning": { "en": "thingamajig — any object whose name escapes you", "de": "Dingsbums — jedes Objekt, dessen Name dir gerade nicht einfällt" },
-      "example": "Pasame ese chunche que está en la mesa."
+      "term": "buena nota",
+      "meaning": {
+        "en": "a decent person, or 'that's kind of you' — the tico compliment for character, not looks",
+        "de": "ein anständiger Mensch, oder 'nett von dir' — das Tico-Lob für Charakter, nicht für Aussehen"
+      },
+      "example": "Gracias por la ayuda, ¡qué buena nota sos!"
     },
     {
       "term": "¡Qué chiva!",
-      "meaning": { "en": "How cool! (literally 'what a goat')", "de": "Wie cool! (wörtlich 'was für eine Ziege')" },
+      "meaning": {
+        "en": "How cool! (literally 'what a goat')",
+        "de": "Wie cool! (wörtlich 'was für eine Ziege')"
+      },
       "example": "¡Qué chiva tu bici nueva!"
     },
     {
       "term": "diay",
-      "meaning": { "en": "well… / so… — the untranslatable tico filler that starts half of all answers", "de": "tja… / na ja… — der unübersetzbare Tico-Füller, mit dem die Hälfte aller Antworten beginnt" },
+      "meaning": {
+        "en": "well… / so… — the untranslatable tico filler that starts half of all answers",
+        "de": "tja… / na ja… — der unübersetzbare Tico-Füller, mit dem die Hälfte aller Antworten beginnt"
+      },
       "example": "Diay, ¿qué le vamos a hacer?"
     },
     {
       "term": "brete",
-      "meaning": { "en": "work, job", "de": "Arbeit, Job" },
+      "meaning": {
+        "en": "work, the job — the thing you have to be at by seven tomorrow morning",
+        "de": "Arbeit, der Job — das, wo du morgen früh um sieben sein musst"
+      },
       "example": "Mañana tengo brete desde las siete."
     },
     {
+      "term": "¡Qué torta!",
+      "meaning": {
+        "en": "what a mess / what a blunder — said about a mistake you now have to fix",
+        "de": "was für ein Schlamassel / was für ein Bock — über einen Fehler, den man jetzt ausbaden muss"
+      },
+      "example": "Borré el archivo. ¡Qué torta!"
+    },
+    {
       "term": "agüevado",
-      "meaning": { "en": "bored, bummed out, down", "de": "gelangweilt, niedergeschlagen, mies drauf" },
+      "meaning": {
+        "en": "bored, bummed out, down",
+        "de": "gelangweilt, niedergeschlagen, mies drauf"
+      },
       "example": "Estoy agüevado, no hay nada que hacer."
     }
   ],
   "vocabulary": [
-    { "es": "la soda", "translation": { "en": "small, cheap local eatery", "de": "kleines, günstiges Lokal" }, "note": { "en": "elsewhere 'soda' is a fizzy drink — here it's where you eat a casado for a few colones", "de": "anderswo ist 'soda' ein Sprudelgetränk — hier isst du dort für ein paar Colones deinen Casado" } },
-    { "es": "el casado", "translation": { "en": "the classic lunch plate: rice, beans, plantain, salad and meat", "de": "der klassische Mittagsteller: Reis, Bohnen, Kochbanane, Salat und Fleisch" }, "note": { "en": "literally 'married man' — everything on one plate, like marriage", "de": "wörtlich 'verheirateter Mann' — alles auf einem Teller, wie in der Ehe" } },
-    { "es": "el zaguate", "translation": { "en": "street dog, mutt", "de": "Straßenhund, Promenadenmischung" }, "note": { "en": "from Nahuatl — elsewhere: perro callejero", "de": "aus dem Nahuatl — anderswo: perro callejero" } },
-    { "es": "la goma", "translation": { "en": "hangover", "de": "Kater" }, "note": { "en": "elsewhere: la resaca", "de": "anderswo: la resaca" } },
-    { "es": "el chante", "translation": { "en": "house, home, your place", "de": "Haus, Bude, Zuhause" }, "note": { "en": "elsewhere: la casa", "de": "anderswo: la casa" } },
-    { "es": "la pulpería", "translation": { "en": "corner store, mini-market", "de": "Tante-Emma-Laden an der Ecke" }, "note": { "en": "elsewhere: la tienda de abarrotes", "de": "anderswo: la tienda de abarrotes" } },
-    { "es": "el güila / la güila", "translation": { "en": "kid, child", "de": "Kind, Gör" }, "note": { "en": "harmless in Costa Rica — in Mexico it's a serious insult, so watch where you use it", "de": "in Costa Rica harmlos — in Mexiko eine heftige Beleidigung, also Vorsicht, wo du es benutzt" } },
-    { "es": "la birra", "translation": { "en": "beer (casual)", "de": "Bier (locker gesagt)" }, "note": { "en": "elsewhere: la cerveza — usually an ice-cold Imperial here", "de": "anderswo: la cerveza — hier meistens ein eiskaltes Imperial" } }
+    {
+      "es": "la soda",
+      "translation": {
+        "en": "small, cheap local eatery",
+        "de": "kleines, günstiges Lokal"
+      },
+      "note": {
+        "en": "elsewhere 'soda' is a fizzy drink — here it's where you eat a casado for a few colones",
+        "de": "anderswo ist 'soda' ein Sprudelgetränk — hier isst du dort für ein paar Colones deinen Casado"
+      }
+    },
+    {
+      "es": "el casado",
+      "translation": {
+        "en": "the classic lunch plate: rice, beans, plantain, salad and meat",
+        "de": "der klassische Mittagsteller: Reis, Bohnen, Kochbanane, Salat und Fleisch"
+      },
+      "note": {
+        "en": "literally 'married man' — everything on one plate, like marriage",
+        "de": "wörtlich 'verheirateter Mann' — alles auf einem Teller, wie in der Ehe"
+      }
+    },
+    {
+      "es": "el zaguate",
+      "translation": {
+        "en": "street dog, mutt",
+        "de": "Straßenhund, Promenadenmischung"
+      },
+      "note": {
+        "en": "from Nahuatl — elsewhere: perro callejero",
+        "de": "aus dem Nahuatl — anderswo: perro callejero"
+      }
+    },
+    {
+      "es": "la goma",
+      "translation": {
+        "en": "hangover",
+        "de": "Kater"
+      },
+      "note": {
+        "en": "elsewhere: la resaca",
+        "de": "anderswo: la resaca"
+      }
+    },
+    {
+      "es": "el chante",
+      "translation": {
+        "en": "house, home, your place",
+        "de": "Haus, Bude, Zuhause"
+      },
+      "note": {
+        "en": "elsewhere: la casa",
+        "de": "anderswo: la casa"
+      }
+    },
+    {
+      "es": "la pulpería",
+      "translation": {
+        "en": "corner store, mini-market",
+        "de": "Tante-Emma-Laden an der Ecke"
+      },
+      "note": {
+        "en": "elsewhere: la tienda de abarrotes",
+        "de": "anderswo: la tienda de abarrotes"
+      }
+    },
+    {
+      "es": "el güila / la güila",
+      "translation": {
+        "en": "kid, child",
+        "de": "Kind, Gör"
+      },
+      "note": {
+        "en": "harmless in Costa Rica — in Mexico it's a serious insult, so watch where you use it",
+        "de": "in Costa Rica harmlos — in Mexiko eine heftige Beleidigung, also Vorsicht, wo du es benutzt"
+      }
+    },
+    {
+      "es": "la birra",
+      "translation": {
+        "en": "beer (casual)",
+        "de": "Bier (locker gesagt)"
+      },
+      "note": {
+        "en": "elsewhere: la cerveza — usually an ice-cold Imperial here",
+        "de": "anderswo: la cerveza — hier meistens ein eiskaltes Imperial"
+      }
+    },
+    {
+      "es": "la vara",
+      "translation": {
+        "en": "the thing, the matter, the point",
+        "de": "die Sache, das Ding, der Punkt"
+      },
+      "note": {
+        "en": "'la vara es que…' opens roughly every second explanation in the country",
+        "de": "'la vara es que…' eröffnet ungefähr jede zweite Erklärung im Land"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Volcán Arenal",
-      "description": { "en": "A picture-perfect volcanic cone that erupted almost daily until 2010 — now you soak in hot springs heated by its magma at its feet.", "de": "Ein bilderbuchperfekter Vulkankegel, der bis 2010 fast täglich Feuer spuckte — heute badest du an seinem Fuß in Thermalquellen, die sein Magma heizt." },
+      "description": {
+        "en": "Arenal passed for an overgrown hill until 29 July 1968, when it tore open its western flank and buried two villages. It then erupted almost daily for forty-two years and went quiet in 2010. The lava has stopped, but the rock underneath still heats the Tabacón river, which is why the hotels below sit in water at bath temperature. The town at its foot is called La Fortuna.",
+        "de": "Arenal galt als bewachsener Hügel, bis er am 29. Juli 1968 seine Westflanke aufriss und zwei Dörfer begrub. Danach brach er zweiundvierzig Jahre lang fast täglich aus und wurde 2010 still. Die Lava ist weg, doch das Gestein darunter heizt weiter den Fluss Tabacón, weshalb die Hotels darunter in badewarmem Wasser liegen. Der Ort an seinem Fuß heißt La Fortuna."
+      },
       "lat": 10.463,
       "lng": -84.7033,
-      "emoji": "🌋"
+      "emoji": "🌋",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Costa_rica_arenal_fortuna_2001_12.jpg/960px-Costa_rica_arenal_fortuna_2001_12.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Costa_rica_arenal_fortuna_2001_12.jpg",
+        "author": "Matthias Prinke (User:Mprinke)",
+        "license": "CC BY-SA 2.5",
+        "width": 960,
+        "height": 615,
+        "alt": {
+          "en": "A white church with a bell tower on a green lawn, the pointed Arenal cone behind it",
+          "de": "Eine weiße Kirche mit Glockenturm auf grünem Rasen, dahinter der spitze Arenal-Kegel"
+        }
+      }
     },
     {
       "name": "Monteverde",
-      "description": { "en": "Cloud forest at 1,400 m where you cross hanging bridges through the canopy hunting for a glimpse of the resplendent quetzal.", "de": "Nebelwald auf 1.400 m, wo du über Hängebrücken durch die Baumkronen läufst — immer auf der Suche nach dem prächtigen Quetzal." },
+      "description": {
+        "en": "Quakers from Alabama settled this ridge in 1951 after refusing the American draft, started a dairy, and fenced off the forest above their pastures to protect the water supply. That fence became the reserve. Cloud sits inside the canopy at 1,400 metres, quetzals nest in wild avocado trees, and the golden toad that lived on this ridge and nowhere else was last seen in 1989.",
+        "de": "Quäker aus Alabama siedelten 1951 auf diesem Bergrücken, nachdem sie den US-Wehrdienst verweigert hatten, gründeten eine Käserei und zäunten den Wald über ihren Weiden ab, um das Wasser zu schützen. Aus dem Zaun wurde das Reservat. Auf 1.400 Metern hängt die Wolke im Kronendach, Quetzale nisten in wilden Avocadobäumen, und die Goldkröte, die nur hier lebte, wurde 1989 zuletzt gesehen."
+      },
       "lat": 10.3,
       "lng": -84.79,
-      "emoji": "☁️"
+      "emoji": "☁️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Monteverde_Reserve_Costa_Rica_02.jpg/960px-Monteverde_Reserve_Costa_Rica_02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Monteverde_Reserve_Costa_Rica_02.jpg",
+        "author": "Cephas",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A narrow earth path running between moss-covered trunks in dense green forest",
+          "de": "Ein schmaler Erdpfad zwischen moosbewachsenen Stämmen in dichtem grünem Wald"
+        }
+      }
     },
     {
       "name": "Parque Nacional Manuel Antonio",
-      "description": { "en": "Rainforest meets white beaches — and cheeky white-faced capuchin monkeys who will absolutely try to steal your lunch.", "de": "Regenwald trifft weiße Strände — und freche Kapuzineraffen, die ganz sicher versuchen, dir dein Mittagessen zu klauen." },
+      "description": {
+        "en": "The country's smallest national park and its most visited: about twenty square kilometres of forest that runs straight down onto four white beaches. The mono tití, a squirrel monkey found only along this coast and in western Panama, crosses overhead in troops of twenty or more. The white-faced capuchins on the sand have worked out exactly what a backpack zip sounds like.",
+        "de": "Der kleinste Nationalpark des Landes und der meistbesuchte: rund zwanzig Quadratkilometer Wald, der direkt auf vier weiße Strände hinunterläuft. Der Mono tití, ein Totenkopfäffchen, das es nur an dieser Küste und im Westen Panamas gibt, zieht in Trupps von zwanzig und mehr über die Köpfe hinweg. Die Kapuzineraffen am Strand wissen genau, wie ein Rucksackreißverschluss klingt."
+      },
       "lat": 9.39,
       "lng": -84.14,
-      "emoji": "🐒"
+      "emoji": "🐒",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Parque_Nacional_Manuel_Antonio_02.jpg/960px-Parque_Nacional_Manuel_Antonio_02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Manuel_Antonio_02.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "width": 960,
+        "height": 603,
+        "alt": {
+          "en": "A curve of pale sand between forested rocks, with a few people at the water's edge",
+          "de": "Eine Bucht aus hellem Sand zwischen bewaldeten Felsen, am Wasser ein paar Menschen"
+        }
+      }
     },
     {
       "name": "Tortuguero",
-      "description": { "en": "A car-free maze of jungle canals on the Caribbean coast — from July to October, green sea turtles haul themselves ashore to nest.", "de": "Ein autofreies Labyrinth aus Dschungelkanälen an der Karibikküste — von Juli bis Oktober robben hier Grüne Meeresschildkröten zur Eiablage an Land." },
+      "description": {
+        "en": "No road reaches Tortuguero. You come down the canals by boat or land a small plane on the strip between the sea and the lagoon. Green turtles haul out here from July to October in the largest nesting aggregation in the western Caribbean, and researchers have been tagging them on this beach since the 1950s, which makes it the longest-running sea-turtle study anywhere.",
+        "de": "Keine Straße führt nach Tortuguero. Man kommt über die Kanäle mit dem Boot oder landet mit einer kleinen Maschine auf der Piste zwischen Meer und Lagune. Von Juli bis Oktober kriechen hier Grüne Meeresschildkröten an Land, die größte Eiablage-Ansammlung der westlichen Karibik, und seit den 1950er Jahren markieren Forscher sie an diesem Strand — die längste Schildkrötenstudie der Welt."
+      },
       "lat": 10.5417,
       "lng": -83.502,
-      "emoji": "🐢"
+      "emoji": "🐢",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/A_Tortuguero_canal_-_Flickr_-_S._Rae.jpg/960px-A_Tortuguero_canal_-_Flickr_-_S._Rae.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:A_Tortuguero_canal_-_Flickr_-_S._Rae.jpg",
+        "author": "S. Rae from Scotland, UK",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A brown waterway seen from a boat, with a solid wall of palms and jungle on the far bank",
+          "de": "Ein brauner Wasserlauf vom Boot aus, am anderen Ufer eine geschlossene Wand aus Palmen und Dschungel"
+        }
+      }
     },
     {
       "name": "Teatro Nacional, San José",
-      "description": { "en": "San José's marble-and-gold theatre from 1897 — the coffee barons taxed their own exports to pay for it.", "de": "San Josés Theater aus Marmor und Gold von 1897 — die Kaffeebarone besteuerten ihre eigenen Exporte, um es zu bezahlen." },
+      "description": {
+        "en": "Coffee growers taxed their own exports to pay for it, after — so the story goes — a touring European soprano skipped the country for want of a stage. It opened in 1897 with Faust, in Carrara marble and gold leaf. The foyer ceiling shows an allegory of coffee and bananas painted in Milan by Aleardo Villa, who had never watched either being picked; it was printed on the five-colón note for decades.",
+        "de": "Kaffeepflanzer besteuerten ihre eigenen Exporte, um es zu bezahlen, nachdem — so die Erzählung — eine europäische Sopranistin das Land mangels Bühne ausgelassen hatte. 1897 eröffnete es mit Faust, in Carrara-Marmor und Blattgold. Die Foyerdecke zeigt eine Allegorie auf Kaffee und Banane, in Mailand gemalt von Aleardo Villa, der beides nie hatte ernten sehen; jahrzehntelang war sie auf dem Fünf-Colón-Schein."
+      },
       "lat": 9.9333,
       "lng": -84.0776,
-      "emoji": "🎭"
+      "emoji": "🎭",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Interior_of_Teatro_Nacional_-_Downtown_San_Jose_-_Costa_Rica_-_03_%288479436339%29.jpg/960px-Interior_of_Teatro_Nacional_-_Downtown_San_Jose_-_Costa_Rica_-_03_%288479436339%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Interior_of_Teatro_Nacional_-_Downtown_San_Jose_-_Costa_Rica_-_03_(8479436339).jpg",
+        "author": "Adam Jones from Kelowna, BC, Canada",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A gilded foyer with a chandelier, painted ceiling and a round velvet bench in the middle",
+          "de": "Ein vergoldetes Foyer mit Kronleuchter, bemalter Decke und einer runden Samtbank in der Mitte"
+        }
+      }
+    },
+    {
+      "name": "Río Celeste",
+      "description": {
+        "en": "Two clear rivers meet at a spot called los Teñideros, and everything downstream of the junction runs opaque turquoise. Chemists at the University of Costa Rica settled the question in 2013: aluminium silicate particles carried by one river swell at the confluence to around 570 nanometres, the exact size that scatters blue light back at the eye. Scoop a glassful and it is colourless.",
+        "de": "Zwei klare Flüsse treffen an einer Stelle namens los Teñideros zusammen, und alles unterhalb der Mündung fließt undurchsichtig türkis. Chemiker der Universität von Costa Rica klärten das 2013: Aluminiumsilikat-Partikel aus dem einen Fluss quellen am Zusammenfluss auf etwa 570 Nanometer auf — genau die Größe, die blaues Licht zurückwirft. Schöpft man ein Glas, ist es farblos."
+      },
+      "lat": 10.7167,
+      "lng": -84.9986,
+      "emoji": "💙",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rio_celeste_Costa_Rica.jpg/960px-Rio_celeste_Costa_Rica.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Rio_celeste_Costa_Rica.jpg",
+        "author": "MongeNajera",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "An opaque turquoise pool in a river, framed by leaves and forest on both banks",
+          "de": "Ein undurchsichtig türkiser Flusskessel, an beiden Ufern von Blattwerk und Wald gerahmt"
+        }
+      }
+    },
+    {
+      "name": "Esferas de piedra del Diquís",
+      "description": {
+        "en": "Hundreds of stone balls, cut from gabbro between roughly AD 300 and 1500 and ground to within a few centimetres of a true sphere. The largest is 2.5 metres across and weighs more than fifteen tonnes. Banana-company crews clearing the delta in the 1930s dynamited some of them open, certain there was gold inside; there was not. Only a handful still stand where they were set.",
+        "de": "Hunderte Steinkugeln, zwischen etwa 300 und 1500 n. Chr. aus Gabbro geschlagen und bis auf wenige Zentimeter zur echten Kugel geschliffen. Die größte misst 2,5 Meter und wiegt über fünfzehn Tonnen. Arbeiter der Bananenfirmen sprengten in den 1930ern beim Roden des Deltas einige auf, überzeugt, es sei Gold darin; es war keines. Nur eine Handvoll steht noch dort, wo sie aufgestellt wurde."
+      },
+      "lat": 8.9333,
+      "lng": -83.4833,
+      "emoji": "⚪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Diquis_Stone_Spheres_in_situ_Finca_6_CR_12_2020.jpg/960px-Diquis_Stone_Spheres_in_situ_Finca_6_CR_12_2020.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Diquis_Stone_Spheres_in_situ_Finca_6_CR_12_2020.jpg",
+        "author": "Diego Padilla Durán y Mariordo (Mario Roberto Durán Ortiz)",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A line of dark grey stone spheres of different sizes standing on bare earth under trees",
+          "de": "Eine Reihe dunkelgrauer Steinkugeln verschiedener Größe auf blanker Erde unter Bäumen"
+        }
+      }
+    },
+    {
+      "name": "Basílica de los Ángeles, Cartago",
+      "description": {
+        "en": "The basilica stands over the rock where in 1635 a girl called Juana Pereira picked up a black stone figure of the Virgin about twenty centimetres tall. She carried it home twice; twice it was back on the rock by morning, so the church was built around the spot. Pilgrims still queue in the crypt to fill bottles from the spring that runs underneath it.",
+        "de": "Die Basilika steht über dem Felsen, auf dem 1635 ein Mädchen namens Juana Pereira eine etwa zwanzig Zentimeter große schwarze Marienfigur aufhob. Zweimal nahm sie sie mit nach Hause, zweimal lag sie am Morgen wieder auf dem Felsen — also baute man die Kirche um die Stelle. Pilger stehen bis heute in der Krypta an, um Flaschen an der Quelle darunter zu füllen."
+      },
+      "lat": 9.8642,
+      "lng": -83.9169,
+      "emoji": "⛪",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Basilica_of_Our_Lady_of_the_Angels%2C_Cartago_01.jpg/960px-Basilica_of_Our_Lady_of_the_Angels%2C_Cartago_01.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Basilica_of_Our_Lady_of_the_Angels,_Cartago_01.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A white church with a gold dome and pale grey towers behind an open paved forecourt",
+          "de": "Eine weiße Kirche mit goldener Kuppel und hellgrauen Türmen hinter einem gepflasterten Vorplatz"
+        }
+      }
+    },
+    {
+      "name": "Parque Nacional Corcovado",
+      "description": {
+        "en": "The Osa Peninsula holds the last large block of Pacific lowland rainforest in Central America, and biologists put about 2.5 per cent of the world's species inside it. Baird's tapirs walk the beach at dawn, scarlet macaws work the almond trees, and one of the country's few jaguar populations is somewhere behind them. Reaching the Sirena station means timing the walk to the tide table.",
+        "de": "Die Halbinsel Osa trägt den letzten großen Block pazifischen Tieflandregenwaldes Zentralamerikas, und Biologen verorten darin etwa 2,5 Prozent aller Arten der Welt. Mittelamerikanische Tapire laufen im Morgengrauen den Strand ab, Hellrote Aras arbeiten die Mandelbäume ab, und irgendwo dahinter lebt eine der letzten Jaguarpopulationen des Landes. Zur Station Sirena geht man nach Tidenkalender."
+      },
+      "lat": 8.5417,
+      "lng": -83.5906,
+      "emoji": "🐆",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Corcovado_National_Park%2C_Costa_RIca_02.jpg/960px-Corcovado_National_Park%2C_Costa_RIca_02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Corcovado_National_Park,_Costa_RIca_02.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "width": 960,
+        "height": 587,
+        "alt": {
+          "en": "Bleached driftwood trunks lying on dark sand, with unbroken forest along the shore behind",
+          "de": "Ausgebleichte Treibholzstämme auf dunklem Sand, dahinter geschlossener Wald am Ufer"
+        }
+      }
+    },
+    {
+      "name": "Puerto Viejo de Talamanca",
+      "description": {
+        "en": "The Caribbean side speaks Limonese Creole — locally Mekatelyu, worn down from 'make I tell you' — alongside Spanish, and cooks in coconut milk rather than the Central Valley's plainer rice and beans. Calypso singers such as Walter Ferguson of Cahuita wrote their songs here in English. Offshore, a shallow reef throws up the Salsa Brava, the heaviest wave in the country.",
+        "de": "Die Karibikseite spricht neben Spanisch das Limón-Kreol — vor Ort Mekatelyu, abgeschliffen aus 'make I tell you' — und kocht mit Kokosmilch statt mit dem schlichteren Reis und Bohnen des Zentraltals. Calypso-Sänger wie Walter Ferguson aus Cahuita schrieben ihre Lieder hier auf Englisch. Draußen wirft ein flaches Riff die Salsa Brava auf, die schwerste Welle des Landes."
+      },
+      "lat": 9.6561,
+      "lng": -82.7547,
+      "emoji": "🌴",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Costa_Rica_-_Puerto_Viejo_de_Talamanca_%2853996236712%29.jpg/960px-Costa_Rica_-_Puerto_Viejo_de_Talamanca_%2853996236712%29.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Costa_Rica_-_Puerto_Viejo_de_Talamanca_(53996236712).jpg",
+        "author": "Jan Helebrant",
+        "license": "CC0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Low morning sun cutting through big buttressed trees on a leaf-covered coastal path",
+          "de": "Tiefe Morgensonne fällt zwischen große Brettwurzelbäume auf einen laubbedeckten Küstenpfad"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el gallo pinto",
+      "description": {
+        "en": "Yesterday's rice fried up with black beans, coriander and sweet pepper, and — this is the part Nicaraguans dispute — a long splash of Salsa Lizano, a tamarind-and-vegetable brown sauce bottled in San José since 1920. Breakfast, with natilla, fried plantain and an egg.",
+        "de": "Der Reis von gestern mit schwarzen Bohnen, Koriander und Paprika gebraten und — das ist der Teil, den Nicaraguaner bestreiten — einem langen Schuss Salsa Lizano, einer braunen Tamarinden-Gemüse-Sauce, die seit 1920 in San José abgefüllt wird. Frühstück, mit Natilla, Kochbanane und Ei."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/CRI_07_2018_0120.jpg/960px-CRI_07_2018_0120.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:CRI_07_2018_0120.jpg",
+        "author": "Mariordo (Mario Roberto Durán Ortiz)",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A plate of speckled rice and beans with a fried egg and avocado, black coffee alongside",
+          "de": "Ein Teller gesprenkelter Reis mit Bohnen, Spiegelei und Avocado, daneben schwarzer Kaffee"
+        }
+      }
+    },
+    {
+      "name": "el chifrijo",
+      "description": {
+        "en": "Rice and beans at the bottom, pork crackling and pico de gallo on top, tortilla chips round the rim, eaten standing at a bar. Miguel Ángel Cordero built it in his place in Tibás in the 1990s and named it by welding chicharrón to frijoles; he later registered the name and the country argued about it for years.",
+        "de": "Unten Reis und Bohnen, darauf Schweinekrusten und Pico de Gallo, am Rand Tortillachips, im Stehen an der Bar gegessen. Miguel Ángel Cordero baute das in den 1990ern in seinem Lokal in Tibás zusammen und schweißte den Namen aus chicharrón und frijoles; später ließ er ihn schützen, und das Land stritt jahrelang darüber."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Chifrijo.jpg/960px-Chifrijo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Chifrijo.jpg",
+        "author": "Roberto Rodríguez",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A clay bowl of beans topped with chopped tomato and onion, tortilla chips stuck round the edge",
+          "de": "Eine Tonschale Bohnen mit gehackter Tomate und Zwiebel, ringsum steckende Tortillachips"
+        }
+      }
+    },
+    {
+      "name": "la olla de carne",
+      "description": {
+        "en": "Beef shin boiled for hours with whatever roots the market had that morning — cassava, chayote, ayote squash, corn on the cob, plantain, tiquisque. The broth arrives in its own cup with a plate of rice to tip into it. Sunday food: the pot is too big for a weeknight and everyone knows it.",
+        "de": "Rinderhaxe, stundenlang gekocht mit den Wurzeln, die der Markt am Morgen hergab — Maniok, Chayote, Ayote-Kürbis, Maiskolben, Kochbanane, Tiquisque. Die Brühe kommt im eigenen Becher, dazu ein Teller Reis zum Hineinkippen. Sonntagsessen: Der Topf ist zu groß für einen Werktag, und das weiß jeder."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Olla_de_carne.jpg/960px-Olla_de_carne.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Olla_de_carne.jpg",
+        "author": "Rodtico21",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A deep plate of boiled beef with large chunks of cassava and yellow squash in broth",
+          "de": "Ein tiefer Teller gekochtes Rindfleisch mit großen Stücken Maniok und gelbem Kürbis in Brühe"
+        }
+      }
+    },
+    {
+      "name": "el patí",
+      "description": {
+        "en": "A folded pastry turnover from Limón, filled with beef cooked down with chile panameño and thyme, brought over by the Jamaican workers who built the Atlantic railway. Vendors carry them along the beach road in covered baskets, still warm. Nothing on the Pacific side tastes like it.",
+        "de": "Eine gefaltete Teigtasche aus Limón, gefüllt mit Rindfleisch, das mit Chile panameño und Thymian eingekocht wurde — mitgebracht von den jamaikanischen Arbeitern, die die Atlantikbahn bauten. Verkäufer tragen sie noch warm in abgedeckten Körben die Strandstraße entlang. Auf der Pazifikseite schmeckt nichts so."
+      }
+    },
+    {
+      "name": "el café chorreado",
+      "description": {
+        "en": "Coffee poured through a cloth sock hung in a wooden stand, the chorreador, which takes about four minutes and gives a cleaner cup than paper. What goes into it is always arabica: planting robusta was illegal in Costa Rica from 1989 until the ban was partly lifted in 2018.",
+        "de": "Kaffee, durch einen Stoffsack in einem Holzgestell gegossen, den Chorreador — etwa vier Minuten Arbeit und eine klarere Tasse als mit Papier. Hinein kommt immer Arabica: Robusta anzubauen war in Costa Rica von 1989 an verboten, bis das Verbot 2018 teilweise fiel."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Romería a la Virgen de los Ángeles",
+      "when": {
+        "en": "2 August",
+        "de": "2. August"
+      },
+      "description": {
+        "en": "In the days before 2 August, well over a million people walk the 22 km from San José up to Cartago — on the hard shoulder, mostly at night, usually in rain. Some cross the last stretch of the basilica forecourt on their knees. The road closes to traffic and the Red Cross pitches tents along it.",
+        "de": "In den Tagen vor dem 2. August laufen weit über eine Million Menschen die 22 km von San José hinauf nach Cartago — auf dem Standstreifen, meist nachts, meist im Regen. Manche legen das letzte Stück über den Vorplatz der Basilika auf Knien zurück. Die Straße wird gesperrt, das Rote Kreuz stellt Zelte daneben."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Romer%C3%ADa_2011.jpg/960px-Romer%C3%ADa_2011.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Romer%C3%ADa_2011.jpg",
+        "author": "ArquiWHAT",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A crowd with umbrellas filling the square in front of the white basilica at Cartago",
+          "de": "Eine Menschenmenge mit Schirmen füllt den Platz vor der weißen Basilika von Cartago"
+        }
+      }
+    },
+    {
+      "name": "Fiestas de Zapote",
+      "when": {
+        "en": "25 December to early January",
+        "de": "25. Dezember bis Anfang Januar"
+      },
+      "description": {
+        "en": "From Christmas Day the ring at Zapote in San José fills with several hundred volunteers who have signed up to be chased by a bull. Nothing is killed — the bull walks out; the improvisados generally leave faster than they came in. It goes out live on national television every night of the run.",
+        "de": "Ab dem ersten Weihnachtstag füllt sich die Arena von Zapote in San José mit mehreren hundert Freiwilligen, die sich freiwillig von einem Stier jagen lassen. Getötet wird nichts — der Stier geht hinaus; die Improvisados verlassen die Arena meist schneller als sie hineinkamen. Jeden Abend läuft das live im Fernsehen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Toros_a_la_tica._Zapote._Costa_Rica_1.jpg/960px-Toros_a_la_tica._Zapote._Costa_Rica_1.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Toros_a_la_tica._Zapote._Costa_Rica_1.jpg",
+        "author": "Rodtico21",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 540,
+        "alt": {
+          "en": "Dozens of people scattered across a bullring watching a single dark bull near the barrier",
+          "de": "Dutzende Menschen verteilt in einer Stierkampfarena beobachten einen dunklen Stier an der Bande"
+        }
+      }
+    },
+    {
+      "name": "Día del Boyero",
+      "when": {
+        "en": "second Sunday in March",
+        "de": "zweiter Sonntag im März"
+      },
+      "description": {
+        "en": "Escazú fills with painted oxcarts and the teams that pull them. The carreta patterns — mandalas of orange, blue and white, one design per workshop — went onto the UNESCO list in 2005, and older drivers insist each cart's iron-shod wheels once rang a note the neighbours could name from a distance.",
+        "de": "Escazú füllt sich mit bemalten Ochsenkarren und ihren Gespannen. Die Carreta-Muster — Mandalas in Orange, Blau und Weiß, eines pro Werkstatt — kamen 2005 auf die UNESCO-Liste, und ältere Fuhrleute bestehen darauf, dass die eisenbeschlagenen Räder jedes Karrens einen Ton hatten, den die Nachbarn von weitem erkannten."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Costa_Rica_Sarchi_ox_drawn_cart.jpg/960px-Costa_Rica_Sarchi_ox_drawn_cart.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Costa_Rica_Sarchi_ox_drawn_cart.jpg",
+        "author": "The LEAF Project",
+        "license": "CC0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A close view of an oxcart wheel painted with a symmetrical pattern in red, blue and yellow",
+          "de": "Nahaufnahme eines Ochsenkarrenrades mit symmetrischem Muster in Rot, Blau und Gelb"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El usted",
+      "text": {
+        "en": "Ticos use usted with nearly everyone: old friends, small children, the dog. Tú can sound stiff or foreign here, and vos is what turns up between friends when usted feels too formal.",
+        "de": "Ticos benutzen usted bei fast jedem: alten Freunden, kleinen Kindern, dem Hund. Tú kann hier steif oder ausländisch klingen, und unter Freunden steht vos, wenn usted zu förmlich wirkt."
+      }
+    },
+    {
+      "title": "Con mucho gusto",
+      "text": {
+        "en": "Say gracias and the answer comes back 'con mucho gusto', not 'de nada'. It also stands in for 'no problem' at a counter, so expect to hear it a dozen times a day.",
+        "de": "Sagt man gracias, kommt 'con mucho gusto' zurück, nicht 'de nada'. Es ersetzt am Tresen auch das 'kein Problem', man hört es also ein Dutzend Mal am Tag."
+      }
+    },
+    {
+      "title": "Cien metros, una cuadra",
+      "text": {
+        "en": "Directions come in metres that mean blocks: '200 metros sur' is two blocks south, not a measured distance. San José still gives them from a Coca-Cola bottling plant taken down in the 1980s.",
+        "de": "Wegbeschreibungen kommen in Metern, die Blocks meinen: '200 metros sur' sind zwei Blocks südlich, keine Strecke. San José orientiert bis heute an einer längst abgerissenen Coca-Cola-Abfüllanlage."
+      }
+    },
+    {
+      "title": "Los diminutivos",
+      "text": {
+        "en": "Almost everything shrinks — un momentico, un cafecito, ahorita, un ratito. The ending softens the sentence rather than the thing, and leaving it off can come across as curt.",
+        "de": "Fast alles wird verkleinert — un momentico, un cafecito, ahorita, un ratito. Die Endung mildert den Satz, nicht die Sache, und wer sie weglässt, kann schroff wirken."
+      }
+    },
+    {
+      "title": "Quedar bien",
+      "text": {
+        "en": "A flat no is avoided. 'Tal vez', 'vamos a ver' and a slow 'sí, claro' usually mean no; ask once more, politely, and you will get the real answer.",
+        "de": "Ein klares Nein wird vermieden. 'Tal vez', 'vamos a ver' und ein gedehntes 'sí, claro' heißen meist nein; freundlich noch einmal nachfragen, dann kommt die echte Antwort."
+      }
     }
   ]
 }

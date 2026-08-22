@@ -14,6 +14,8 @@ export default async function CulturePage() {
     nameEs: c.nameEs,
     capital: c.capital,
     population: c.population,
+    hero: c.heroImage ? { ...c.heroImage, alt: ct(c.heroImage.alt, locale) } : null,
+    tagline: c.tagline ? ct(c.tagline, locale) : null,
     teaser: c.slang[0]
       ? { term: c.slang[0].term, meaning: ct(c.slang[0].meaning, locale) }
       : null,

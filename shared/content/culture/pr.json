@@ -1,104 +1,583 @@
 {
   "id": "pr",
   "flag": "🇵🇷",
-  "name": { "en": "Puerto Rico", "de": "Puerto Rico" },
+  "name": {
+    "en": "Puerto Rico",
+    "de": "Puerto Rico"
+  },
   "nameEs": "Puerto Rico",
   "capital": "San Juan",
   "population": "3.2 M",
+  "tagline": {
+    "en": "US citizens since 1917, on an island where the federal court runs in English and everything else in Spanish.",
+    "de": "Seit 1917 US-Bürger, auf einer Insel, deren Bundesgericht auf Englisch tagt und alles andere auf Spanisch."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/El_Morro_-_Walls_1.jpg/1920px-El_Morro_-_Walls_1.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Morro_-_Walls_1.jpg",
+    "author": "P. Hughes",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1143,
+    "alt": {
+      "en": "The walls of El Morro on a green headland above the Atlantic, a sentry box at the far point",
+      "de": "Die Mauern von El Morro auf einer grünen Landzunge über dem Atlantik, an der Spitze ein Wachtürmchen"
+    }
+  },
   "intro": {
-    "en": "Puerto Rico lives in two languages at once: as a US territory, its Spanish slides in and out of English mid-sentence — you 'janguear' (hang out) with your 'corillo' and pay with 'chavos'. This small island gave the world reggaetón, from Daddy Yankee to Bad Bunny, who raps proudly in Puerto Rican slang. Boricuas — the islanders' own name for themselves, from the Taíno 'Borikén' — speak Caribbean Spanish at full speed, with the 'r' often melting into an 'l': 'puelto' instead of 'puerto'.",
-    "de": "Puerto Rico lebt in zwei Sprachen gleichzeitig: Als US-Territorium gleitet sein Spanisch mitten im Satz ins Englische — man geht mit dem 'corillo' zum 'janguear' (abhängen) und zahlt mit 'chavos'. Diese kleine Insel hat der Welt den Reggaetón geschenkt, von Daddy Yankee bis Bad Bunny, der stolz in puerto-ricanischem Slang rappt. Boricuas — so nennen sich die Insulaner selbst, nach dem Taíno-Namen 'Borikén' — sprechen karibisches Spanisch in vollem Tempo, wobei das 'r' gern zum 'l' schmilzt: 'puelto' statt 'puerto'."
+    "en": "Puerto Rican Spanish runs at Caribbean speed and drops what it does not need: the final 's' goes ('¿cómo etá?'), and an 'r' at the end of a syllable often turns into an 'l', so 'Puerto Rico' comes out 'Puelto Rico'. English sits right beside it — you 'janguear' with your 'corillo' and pay with 'chavos' — because the island has been a US territory since 1898 and its people US citizens since 1917. Boricuas, they call themselves, from Borikén, the Taíno name for the island; Taíno words like hamaca, huracán and barbacoa went from here into every language you speak. Underneath it all is bomba and plena, drummed in Loíza long before reggaetón carried the accent worldwide.",
+    "de": "Das puerto-ricanische Spanisch läuft im karibischen Tempo und lässt weg, was es nicht braucht: Das End-'s' verschwindet ('¿cómo etá?'), und ein 'r' am Silbenende wird oft zum 'l' — aus 'Puerto Rico' wird 'Puelto Rico'. Englisch steht direkt daneben: Man geht mit dem 'corillo' 'janguear' und zahlt mit 'chavos', denn die Insel ist seit 1898 US-Territorium und ihre Bewohner sind seit 1917 US-Bürger. Boricuas nennen sie sich, nach Borikén, dem Taíno-Namen der Insel; Taíno-Wörter wie hamaca, huracán und barbacoa gingen von hier in jede Sprache, die du sprichst. Darunter liegen Bomba und Plena, in Loíza getrommelt, lange bevor der Reggaetón den Akzent in die Welt trug."
   },
   "funFact": {
-    "en": "Puerto Ricans have been US citizens since 1917 — yet islanders still can't vote in presidential elections and have no voting member of Congress.",
-    "de": "Puerto-Ricaner sind seit 1917 US-Staatsbürger — trotzdem dürfen die Insulaner bis heute nicht bei Präsidentschaftswahlen abstimmen und haben kein stimmberechtigtes Mitglied im Kongress."
+    "en": "Puerto Rico fields its own Olympic team even though its athletes are US citizens — Mónica Puig won the island's first gold in tennis in 2016, and the anthem played in Rio was 'La Borinqueña'.",
+    "de": "Puerto Rico schickt eine eigene Olympiamannschaft, obwohl seine Sportler US-Bürger sind — Mónica Puig holte 2016 im Tennis das erste Gold der Insel, und in Rio erklang 'La Borinqueña'."
   },
   "slang": [
     {
       "term": "boricua",
-      "meaning": { "en": "Puerto Rican — a proud self-designation from the Taíno name 'Borikén'", "de": "Puerto-Ricaner(in) — stolze Selbstbezeichnung nach dem Taíno-Namen 'Borikén'" },
+      "meaning": {
+        "en": "Puerto Rican — a proud self-designation from the Taíno name 'Borikén'",
+        "de": "Puerto-Ricaner(in) — stolze Selbstbezeichnung nach dem Taíno-Namen 'Borikén'"
+      },
       "example": "¡Yo soy boricua, pa' que tú lo sepas!"
     },
     {
       "term": "¡Wepa!",
-      "meaning": { "en": "Yay! / Let's go! — pure bottled Puerto Rican joy", "de": "Jaaa! / Los geht's! — pure puerto-ricanische Lebensfreude in einem Wort" },
+      "meaning": {
+        "en": "Yay! / Let's go! — pure bottled Puerto Rican joy",
+        "de": "Jaaa! / Los geht's! — pure puerto-ricanische Lebensfreude in einem Wort"
+      },
       "example": "¡Wepa! ¡Ganamos el partido!"
     },
     {
       "term": "janguear",
-      "meaning": { "en": "to hang out — Spanglish, straight from English 'to hang'", "de": "abhängen — Spanglish, direkt vom englischen 'to hang'" },
+      "meaning": {
+        "en": "to hang out — Spanglish, straight from English 'to hang'",
+        "de": "abhängen — Spanglish, direkt vom englischen 'to hang'"
+      },
       "example": "Vamos a janguear en la playa este fin de semana."
     },
     {
       "term": "los chavos",
-      "meaning": { "en": "money", "de": "Geld, Kohle" },
+      "meaning": {
+        "en": "money, cash — from the old copper coin 'ochavo'",
+        "de": "Geld, Kohle — von der alten Kupfermünze 'ochavo'"
+      },
       "example": "No tengo chavos hasta el viernes."
     },
     {
       "term": "el corillo",
-      "meaning": { "en": "your crew, your circle of friends", "de": "deine Clique, dein Freundeskreis" },
+      "meaning": {
+        "en": "your crew, your circle of friends",
+        "de": "deine Clique, dein Freundeskreis"
+      },
       "example": "Salí con el corillo a La Placita."
     },
     {
       "term": "al garete",
-      "meaning": { "en": "chaotic, out of control — originally a nautical term for drifting rudderless", "de": "chaotisch, außer Kontrolle — ursprünglich ein Seemannsausdruck für steuerloses Treiben" },
+      "meaning": {
+        "en": "chaotic, out of control — originally a nautical term for drifting rudderless",
+        "de": "chaotisch, außer Kontrolle — ursprünglich ein Seemannsausdruck für steuerloses Treiben"
+      },
       "example": "Sin plan y sin mapa, andamos al garete."
     },
     {
       "term": "brutal",
-      "meaning": { "en": "awesome, amazing — a big compliment, not a complaint", "de": "der Hammer, großartig — ein dickes Kompliment, keine Beschwerde" },
+      "meaning": {
+        "en": "awesome, amazing — a big compliment, not a complaint",
+        "de": "der Hammer, großartig — ein dickes Kompliment, keine Beschwerde"
+      },
       "example": "El concierto de anoche estuvo brutal."
     },
     {
       "term": "bregar",
-      "meaning": { "en": "to deal with it, to hustle through — practically a Puerto Rican philosophy of life", "de": "sich durchschlagen, mit etwas klarkommen — praktisch eine puerto-ricanische Lebensphilosophie" },
+      "meaning": {
+        "en": "to deal with it, to hustle through — practically a Puerto Rican philosophy of life",
+        "de": "sich durchschlagen, mit etwas klarkommen — praktisch eine puerto-ricanische Lebensphilosophie"
+      },
       "example": "Hay que bregar con lo que hay."
     }
   ],
   "vocabulary": [
-    { "es": "la china", "translation": { "en": "orange (the fruit)", "de": "Orange (die Frucht)" }, "note": { "en": "elsewhere: la naranja — 'jugo de china' confuses every newcomer", "de": "anderswo: la naranja — 'jugo de china' verwirrt jeden Neuankömmling" } },
-    { "es": "la guagua", "translation": { "en": "bus — but also an SUV or pickup", "de": "Bus — aber auch SUV oder Pickup" }, "note": { "en": "elsewhere: el autobús", "de": "anderswo: el autobús" } },
-    { "es": "el zafacón", "translation": { "en": "trash can", "de": "Mülleimer" }, "note": { "en": "elsewhere: el basurero / la papelera", "de": "anderswo: el basurero / la papelera" } },
-    { "es": "el mahón", "translation": { "en": "jeans", "de": "Jeans" }, "note": { "en": "elsewhere: los vaqueros / los jeans", "de": "anderswo: los vaqueros / los jeans" } },
-    { "es": "el chinchorro", "translation": { "en": "cheap roadside eatery or bar", "de": "einfache Straßenkneipe oder Imbiss am Straßenrand" }, "note": { "en": "'chinchorreo' is the beloved sport of hopping from one to the next", "de": "'chinchorreo' ist der beliebte Sport, von einem zum nächsten zu ziehen" } },
-    { "es": "la piragua", "translation": { "en": "shaved-ice cone with fruit syrup, sold from street carts", "de": "geschabtes Eis mit Fruchtsirup, verkauft an Straßenwagen" }, "note": { "en": "elsewhere a 'piragua' is a canoe", "de": "anderswo ist eine 'piragua' ein Kanu" } },
-    { "es": "el mofongo", "translation": { "en": "mashed fried plantains with garlic and pork crackling — the island's signature dish", "de": "gestampfte frittierte Kochbananen mit Knoblauch und Schweinekrusten — das Signature-Gericht der Insel" }, "note": { "en": "order it 'relleno' — stuffed with shrimp or chicken", "de": "bestell ihn 'relleno' — gefüllt mit Garnelen oder Hähnchen" } }
+    {
+      "es": "la china",
+      "translation": {
+        "en": "orange (the fruit)",
+        "de": "Orange (die Frucht)"
+      },
+      "note": {
+        "en": "elsewhere: la naranja — 'jugo de china' confuses every newcomer",
+        "de": "anderswo: la naranja — 'jugo de china' verwirrt jeden Neuankömmling"
+      }
+    },
+    {
+      "es": "la guagua",
+      "translation": {
+        "en": "bus — but also an SUV or pickup",
+        "de": "Bus — aber auch SUV oder Pickup"
+      },
+      "note": {
+        "en": "elsewhere: el autobús",
+        "de": "anderswo: el autobús"
+      }
+    },
+    {
+      "es": "el zafacón",
+      "translation": {
+        "en": "trash can",
+        "de": "Mülleimer"
+      },
+      "note": {
+        "en": "elsewhere: el basurero / la papelera",
+        "de": "anderswo: el basurero / la papelera"
+      }
+    },
+    {
+      "es": "el mahón",
+      "translation": {
+        "en": "jeans",
+        "de": "Jeans"
+      },
+      "note": {
+        "en": "elsewhere: los vaqueros / los jeans",
+        "de": "anderswo: los vaqueros / los jeans"
+      }
+    },
+    {
+      "es": "el chinchorro",
+      "translation": {
+        "en": "cheap roadside eatery or bar",
+        "de": "einfache Straßenkneipe oder Imbiss am Straßenrand"
+      },
+      "note": {
+        "en": "'chinchorreo' is the beloved sport of hopping from one to the next",
+        "de": "'chinchorreo' ist der beliebte Sport, von einem zum nächsten zu ziehen"
+      }
+    },
+    {
+      "es": "la piragua",
+      "translation": {
+        "en": "shaved-ice cone with fruit syrup, sold from street carts",
+        "de": "geschabtes Eis mit Fruchtsirup, verkauft an Straßenwagen"
+      },
+      "note": {
+        "en": "elsewhere a 'piragua' is a canoe",
+        "de": "anderswo ist eine 'piragua' ein Kanu"
+      }
+    },
+    {
+      "es": "el guineo",
+      "translation": {
+        "en": "banana (the sweet, ripe one)",
+        "de": "Banane (die süße, reife)"
+      },
+      "note": {
+        "en": "here 'plátano' means only the green cooking plantain",
+        "de": "hier bezeichnet 'plátano' nur die grüne Kochbanane"
+      }
+    },
+    {
+      "es": "las habichuelas",
+      "translation": {
+        "en": "beans",
+        "de": "Bohnen"
+      },
+      "note": {
+        "en": "elsewhere: los frijoles, los porotos — in Spain habichuelas are green beans",
+        "de": "anderswo: los frijoles, los porotos — in Spanien sind habichuelas grüne Bohnen"
+      }
+    },
+    {
+      "es": "el limber",
+      "translation": {
+        "en": "frozen fruit or coconut ice sold in a plastic cup from a neighbour's freezer",
+        "de": "gefrorenes Frucht- oder Kokoseis, im Plastikbecher aus dem Gefrierschrank der Nachbarn"
+      },
+      "note": {
+        "en": "said to be named after Charles Lindbergh, who visited the island in 1928",
+        "de": "angeblich nach Charles Lindbergh benannt, der 1928 die Insel besuchte"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Castillo San Felipe del Morro",
-      "description": { "en": "Six levels of Spanish fortress guarding San Juan Bay since 1539 — its huge lawn is now the city's favorite kite-flying spot.", "de": "Sechs Ebenen spanischer Festung bewachen die Bucht von San Juan seit 1539 — die riesige Rasenfläche davor ist heute der liebste Drachensteig-Platz der Stadt." },
+      "description": {
+        "en": "Spain began this headland fort in 1539 and kept building until about 1790, ending with six levels and walls up to five metres thick. Its round sentry boxes, the garitas, are the silhouette Puerto Rico stamps on everything from licence plates to souvenir keyrings. The green esplanade in front was a US Army golf course before the park service cleared it; now it is where San Juan flies kites.",
+        "de": "Spanien begann dieses Kap-Fort 1539 und baute bis etwa 1790 weiter — am Ende sechs Ebenen und Mauern von bis zu fünf Metern Dicke. Seine runden Wachtürmchen, die Garitas, sind die Silhouette, die Puerto Rico auf alles stempelt, von Nummernschildern bis zu Schlüsselanhängern. Die grüne Esplanade davor war ein Golfplatz der US-Armee, bevor die Parkverwaltung sie räumte; heute steigen dort die Drachen von San Juan."
+      },
       "lat": 18.4711,
       "lng": -66.124,
-      "emoji": "🏰"
-    },
-    {
-      "name": "El Yunque",
-      "description": { "en": "The only tropical rainforest in the US National Forest system — at night thousands of tiny coquí frogs sing the island's unofficial anthem.", "de": "Der einzige tropische Regenwald im US-Nationalforstsystem — nachts singen Tausende winziger Coquí-Frösche die inoffizielle Hymne der Insel." },
-      "lat": 18.2951,
-      "lng": -65.791,
-      "emoji": "🐸"
-    },
-    {
-      "name": "Bahía Mosquito, Vieques",
-      "description": { "en": "The brightest bioluminescent bay on Earth, Guinness-certified — every paddle stroke sets off swirls of glowing blue plankton.", "de": "Die hellste Biolumineszenz-Bucht der Erde, mit Guinness-Zertifikat — jeder Paddelschlag entfacht Wirbel aus blau leuchtendem Plankton." },
-      "lat": 18.0956,
-      "lng": -65.4438,
-      "emoji": "✨"
-    },
-    {
-      "name": "Playa Flamenco, Culebra",
-      "description": { "en": "A horseshoe of powder-white sand regularly ranked among the world's best beaches — complete with a rusting, graffiti-covered US Navy tank.", "de": "Ein Hufeisen aus puderweißem Sand, regelmäßig unter den besten Stränden der Welt gelistet — inklusive eines rostenden, graffitibedeckten US-Navy-Panzers." },
-      "lat": 18.3311,
-      "lng": -65.3172,
-      "emoji": "🏖️"
+      "emoji": "🏰",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/USA-2016-Puerto_Rico-San_Juan-Castillo_San_Felipe_del_Morro_10.jpg/960px-USA-2016-Puerto_Rico-San_Juan-Castillo_San_Felipe_del_Morro_10.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:USA-2016-Puerto_Rico-San_Juan-Castillo_San_Felipe_del_Morro_10.jpg",
+        "author": "Godot13",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A domed stone sentry box at the end of a weathered fort wall, the sea visible beyond it",
+          "de": "Ein steinernes Wachtürmchen mit Kuppel am Ende einer verwitterten Festungsmauer, dahinter das Meer"
+        }
+      }
     },
     {
       "name": "La Placita de Santurce",
-      "description": { "en": "A produce market by day that turns into San Juan's biggest open-air salsa party by night, Thursday through Saturday.", "de": "Tagsüber ein Obst- und Gemüsemarkt, nachts San Juans größte Open-Air-Salsa-Party — von Donnerstag bis Samstag." },
-      "lat": 18.4515,
-      "lng": -66.0672,
-      "emoji": "💃"
+      "description": {
+        "en": "A produce market from 1910 where the stallholders sell plantains and root vegetables until mid-afternoon, and from Thursday the surrounding streets turn into an open-air bar with salsa coming out of every doorway. The dancing spills into the square itself, and the fruit stalls open again at six the next morning around the empty cups.",
+        "de": "Ein Markt von 1910, auf dem die Händler bis in den frühen Nachmittag Kochbananen und Wurzelgemüse verkaufen; ab Donnerstag werden die Straßen ringsum zur Freiluftbar, aus jeder Tür kommt Salsa. Getanzt wird bis auf den Platz hinaus, und um sechs Uhr früh öffnen die Obststände wieder zwischen den leeren Bechern."
+      },
+      "lat": 18.4501,
+      "lng": -66.0692,
+      "emoji": "💃",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/La_Placita_de_Santurce%2C_San_Juan%2C_Puerto_Rico.jpg/960px-La_Placita_de_Santurce%2C_San_Juan%2C_Puerto_Rico.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Placita_de_Santurce,_San_Juan,_Puerto_Rico.jpg",
+        "author": "Šarūnas Burdulis",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 669,
+        "alt": {
+          "en": "The open doorway of a market hall with fruit crates and bunches of bananas inside",
+          "de": "Der offene Eingang einer Markthalle mit Obstkisten und Bananenstauden im Inneren"
+        }
+      }
+    },
+    {
+      "name": "El Yunque",
+      "description": {
+        "en": "The only tropical rainforest in the US forest system takes about 4,000 mm of rain a year, and at dusk the whole of it starts up with coquís — thumbnail-sized tree frogs whose two-note call, 'co-quí', is the island's unofficial anthem. Most of the seventeen coquí species live nowhere else. Hurricane María stripped the canopy bare in 2017; it grew back.",
+        "de": "Der einzige tropische Regenwald im US-Forstsystem bekommt rund 4.000 mm Regen im Jahr, und in der Dämmerung setzt überall der Coquí ein — daumennagelgroße Laubfrösche, deren Zweitonruf 'co-quí' die inoffizielle Hymne der Insel ist. Die meisten der siebzehn Coquí-Arten leben nirgends sonst. Hurrikan María riss 2017 das Kronendach kahl; es ist nachgewachsen."
+      },
+      "lat": 18.2951,
+      "lng": -65.791,
+      "emoji": "🐸",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/El_Yunque_Forest%2C_Puerto_Rico_02.jpg/960px-El_Yunque_Forest%2C_Puerto_Rico_02.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Yunque_Forest,_Puerto_Rico_02.jpg",
+        "author": "EF5",
+        "license": "CC0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A narrow gravel path running between dense ferns and palms in the rainforest",
+          "de": "Ein schmaler Kiesweg zwischen dichten Farnen und Palmen im Regenwald"
+        }
+      }
+    },
+    {
+      "name": "Bahía Mosquito, Vieques",
+      "description": {
+        "en": "Hundreds of thousands of single-celled dinoflagellates in every litre of water, each one flashing when something disturbs it — a paddle blade, a fish, your hand. Guinness lists it as the brightest bioluminescent bay in the world. Swimming has been banned since 2007 to keep sunscreen out of the water, so you go by clear kayak on a moonless night.",
+        "de": "Hunderttausende einzelliger Dinoflagellaten in jedem Liter Wasser, und jeder blitzt auf, wenn ihn etwas stört — ein Paddelblatt, ein Fisch, deine Hand. Guinness führt sie als hellste Biolumineszenz-Bucht der Welt. Schwimmen ist seit 2007 verboten, damit kein Sonnenschutzmittel ins Wasser gerät; man fährt im durchsichtigen Kajak, in mondloser Nacht."
+      },
+      "lat": 18.0956,
+      "lng": -65.4438,
+      "emoji": "✨",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mosquito_bay%2C_Bioluminescent_bay%2C_Vieques_-_panoramio.jpg/960px-Mosquito_bay%2C_Bioluminescent_bay%2C_Vieques_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mosquito_bay,_Bioluminescent_bay,_Vieques_-_panoramio.jpg",
+        "author": "Edgar Torres",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 636,
+        "alt": {
+          "en": "A star-filled night sky above the dark silhouettes of mangrove branches at the water's edge",
+          "de": "Ein sternenvoller Nachthimmel über den dunklen Umrissen von Mangrovenzweigen am Wasser"
+        }
+      }
+    },
+    {
+      "name": "Playa Flamenco, Culebra",
+      "description": {
+        "en": "A kilometre and a half of white sand that turns up on best-beach lists every year, with a US military tank rusting in the surf at the western end. The navy used Culebra as a bombing range until 1975, when residents occupied the target zone and forced it out. Somebody repaints the tank every few years.",
+        "de": "Anderthalb Kilometer weißer Sand, jedes Jahr auf irgendeiner Bestenliste, und am Westende rostet ein US-Militärpanzer in der Brandung. Die Marine nutzte Culebra bis 1975 als Bombenübungsgebiet, bis Bewohner die Zielzone besetzten und sie vertrieben. Alle paar Jahre streicht jemand den Panzer neu an."
+      },
+      "lat": 18.3311,
+      "lng": -65.3172,
+      "emoji": "🏖️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/US_military_tank_on_Flamenco_Beach%2C_Culebra%2C_Puerto_Rico.jpg/960px-US_military_tank_on_Flamenco_Beach%2C_Culebra%2C_Puerto_Rico.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:US_military_tank_on_Flamenco_Beach,_Culebra,_Puerto_Rico.jpg",
+        "author": "Carolyn Sugg",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A graffiti-covered tank half-buried in wet sand at the edge of a turquoise sea",
+          "de": "Ein mit Graffiti bedeckter Panzer, halb im nassen Sand am Rand eines türkisen Meeres"
+        }
+      }
+    },
+    {
+      "name": "Ponce",
+      "description": {
+        "en": "The southern city calls itself 'la Perla del Sur' and behaves like a separate country: its own accent, its own carnival, and on the main square a fire station from 1882 painted in red and black stripes. The Museo de Arte holds Frederic Leighton's 'Flaming June', bought in London in 1963 for about £2,000, when Victorian painting was unfashionable.",
+        "de": "Die Stadt im Süden nennt sich 'la Perla del Sur' und benimmt sich wie ein eigenes Land: eigener Akzent, eigener Karneval und am Hauptplatz eine Feuerwache von 1882 in roten und schwarzen Streifen. Im Museo de Arte hängt Frederic Leightons 'Flaming June', 1963 in London für rund 2.000 Pfund gekauft, als viktorianische Malerei aus der Mode war."
+      },
+      "lat": 18.0111,
+      "lng": -66.6141,
+      "emoji": "🚒",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Parque_de_Bombas_-_Ponce_Puerto_Rico.jpg/960px-Parque_de_Bombas_-_Ponce_Puerto_Rico.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Parque_de_Bombas_-_Ponce_Puerto_Rico.jpg",
+        "author": "Ian Poellet",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 635,
+        "alt": {
+          "en": "A two-storey wooden building painted in red and black stripes on a sunny square",
+          "de": "Ein zweistöckiges Holzgebäude in roten und schwarzen Streifen an einem sonnigen Platz"
+        }
+      }
+    },
+    {
+      "name": "Observatorio de Arecibo",
+      "description": {
+        "en": "For 57 years the 305-metre dish sat in a sinkhole in the karst hills, listening. It sent the 1974 Arecibo message towards a star cluster 25,000 light years away, and the first planets ever found outside our solar system were found here. On 1 December 2020 the support cables let go and the 900-tonne instrument platform fell into the bowl.",
+        "de": "57 Jahre lang lag die 305-Meter-Schüssel in einer Doline der Karsthügel und hörte zu. Von hier ging 1974 die Arecibo-Botschaft an einen Sternhaufen in 25.000 Lichtjahren Entfernung, und hier wurden die ersten Planeten außerhalb unseres Sonnensystems entdeckt. Am 1. Dezember 2020 rissen die Halteseile, und die 900 Tonnen schwere Plattform stürzte in die Schüssel."
+      },
+      "lat": 18.3442,
+      "lng": -66.7528,
+      "emoji": "📡",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Arecibo_Radio_Telescope_Arecibo_Observatory.jpg/960px-Arecibo_Radio_Telescope_Arecibo_Observatory.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Arecibo_Radio_Telescope_Arecibo_Observatory.jpg",
+        "author": "EgorovaSvetlana",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "The receiver platform hanging on cables above the huge dish set among green hills",
+          "de": "Die an Seilen hängende Empfängerplattform über der riesigen Schüssel zwischen grünen Hügeln"
+        }
+      }
+    },
+    {
+      "name": "Faro Los Morrillos, Cabo Rojo",
+      "description": {
+        "en": "The 1882 lighthouse stands on limestone cliffs at the island's south-west corner, above a turquoise cove called Playa Sucia — dirty beach, named for the seaweed that washes in, not for the sand. Behind it lie the Cabo Rojo salt flats, worked since the 1500s, pink from the brine organisms and full of migrating shorebirds.",
+        "de": "Der Leuchtturm von 1882 steht auf Kalksteinklippen an der Südwestecke der Insel, über einer türkisen Bucht namens Playa Sucia — 'schmutziger Strand', benannt nach dem angeschwemmten Seetang, nicht nach dem Sand. Dahinter liegen die Salinen von Cabo Rojo, seit dem 16. Jahrhundert bewirtschaftet, rosa von den Salzorganismen und voller Zugvögel."
+      },
+      "lat": 17.9349,
+      "lng": -67.1926,
+      "emoji": "🌊",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Playa_Sucia_and_lighthouse%2C_Cabo_Rojo%2C_PR_-_panoramio.jpg/960px-Playa_Sucia_and_lighthouse%2C_Cabo_Rojo%2C_PR_-_panoramio.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Playa_Sucia_and_lighthouse,_Cabo_Rojo,_PR_-_panoramio.jpg",
+        "author": "Edgar Torres",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A headland with a small lighthouse above a turquoise bay, dry scrub in the foreground",
+          "de": "Eine Landzunge mit kleinem Leuchtturm über einer türkisen Bucht, davor trockenes Buschwerk"
+        }
+      }
+    },
+    {
+      "name": "Guavate, Cayey",
+      "description": {
+        "en": "Route 184 climbs into the mountains and for a few kilometres becomes the Ruta del Lechón: a line of open-sided lechoneras with whole pigs turning over charcoal since six in the morning. You point at the part of the pig you want and it is chopped onto a tray with rice and gandules. On Sundays the queue and the salsa both start early.",
+        "de": "Die Straße 184 steigt in die Berge und wird für ein paar Kilometer zur Ruta del Lechón: eine Reihe offener Lechoneras, in denen sich seit sechs Uhr morgens ganze Schweine über Holzkohle drehen. Man zeigt auf das Stück, das man will, und es wird auf ein Tablett gehackt, dazu Reis mit Gandules. Sonntags fangen Schlange und Salsa früh an."
+      },
+      "lat": 18.125,
+      "lng": -66.105,
+      "emoji": "🐖",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Flickr_-_ggallice_-_Lechon.jpg/960px-Flickr_-_ggallice_-_Lechon.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Flickr_-_ggallice_-_Lechon.jpg",
+        "author": "Geoff Gallice from Gainesville, FL, USA",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A whole roast pig on a spit under a shed roof, its skin browned and blistered",
+          "de": "Ein ganzes Spanferkel am Spieß unter einem Hallendach, die Haut braun und blasig"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "el mofongo",
+      "description": {
+        "en": "Green plantain fried, then pounded in a wooden pilón with garlic, olive oil and pork crackling until it holds together as a dense, savoury dome. It arrives as a bowl with shrimp or stewed chicken poured into the middle. The pounding is the point — the texture goes wrong in a food processor.",
+        "de": "Grüne Kochbanane wird frittiert und dann im hölzernen Pilón mit Knoblauch, Olivenöl und Schweinekrusten zu einer dichten, herzhaften Kuppel gestampft. Sie kommt als Schale, in deren Mitte Garnelen oder geschmortes Hähnchen gefüllt werden. Das Stampfen ist entscheidend — im Mixer wird die Textur falsch."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mofongo_from_a_bar_and_restaurant_in_San_Juan%2C_Puerto_Rico.jpg/960px-Mofongo_from_a_bar_and_restaurant_in_San_Juan%2C_Puerto_Rico.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Mofongo_from_a_bar_and_restaurant_in_San_Juan,_Puerto_Rico.jpg",
+        "author": "The Eloquent Peasant",
+        "license": "CC0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A dome of mashed plantain in the middle of a plate ringed with shrimp, lettuce and tomato",
+          "de": "Eine Kuppel aus gestampfter Kochbanane in der Tellermitte, umringt von Garnelen, Salat und Tomate"
+        }
+      }
+    },
+    {
+      "name": "el arroz con gandules",
+      "description": {
+        "en": "The island's national plate: medium-grain rice cooked with pigeon peas, cubes of salt pork and a spoonful of sofrito — the green paste of culantro, ají dulce, garlic and onion that starts almost every Puerto Rican pot. The crust that sticks to the bottom, the pegao, is the part people fight over.",
+        "de": "Das Nationalgericht der Insel: mittelkörniger Reis mit Straucherbsen, Würfeln von Pökelfleisch und einem Löffel Sofrito — der grünen Paste aus Culantro, Ají dulce, Knoblauch und Zwiebel, mit der fast jeder puerto-ricanische Topf beginnt. Um die Kruste am Boden, den Pegao, wird gestritten."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Arroz_con_gandules.jpg/960px-Arroz_con_gandules.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Arroz_con_gandules.jpg",
+        "author": "Jose Kevo from Springfield, Missouri, EEUU",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Yellow rice cooked with green pigeon peas and olives in a heavy pot",
+          "de": "Gelber Reis mit grünen Straucherbsen und Oliven in einem schweren Topf"
+        }
+      }
+    },
+    {
+      "name": "las alcapurrias",
+      "description": {
+        "en": "A fritter of grated green banana and yautía wrapped around seasoned beef and deep-fried until the outside is almost black. The kiosks along the beach road at Luquillo sell them straight out of open fryers, next to bacalaítos — flat cod fritters the size of a plate.",
+        "de": "Ein Krapfen aus geriebener grüner Banane und Yautía, um gewürztes Rindfleisch gewickelt und frittiert, bis die Außenseite fast schwarz ist. Die Kioske an der Strandstraße von Luquillo verkaufen sie direkt aus offenen Fritteusen, daneben Bacalaítos — flache Stockfischküchlein in Tellergröße."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Alcapurrias_y_Bacala%C3%ADtos.jpg/960px-Alcapurrias_y_Bacala%C3%ADtos.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Alcapurrias_y_Bacala%C3%ADtos.jpg",
+        "author": "David Trawin",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "Dark fried fritters draining on a rack above a black pan of oil outdoors",
+          "de": "Dunkle frittierte Krapfen tropfen auf einem Rost über einer schwarzen Ölpfanne im Freien"
+        }
+      }
+    },
+    {
+      "name": "el lechón asado",
+      "description": {
+        "en": "A whole pig rubbed with salt, garlic and oregano and turned over charcoal for six to eight hours, until the skin — the cuerito — snaps like glass. It is the centre of Christmas Eve and of any Sunday in the mountains, sold by weight and eaten with the fingers.",
+        "de": "Ein ganzes Schwein, eingerieben mit Salz, Knoblauch und Oregano und sechs bis acht Stunden über Holzkohle gedreht, bis die Haut — das Cuerito — wie Glas splittert. Es ist die Mitte des Heiligabends und jedes Sonntags in den Bergen, nach Gewicht verkauft und mit den Fingern gegessen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Los_Pinos_lechon_en_Guavate%2C_Cayey%2C_Puerto_Rico.jpg/960px-Los_Pinos_lechon_en_Guavate%2C_Cayey%2C_Puerto_Rico.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Los_Pinos_lechon_en_Guavate,_Cayey,_Puerto_Rico.jpg",
+        "author": "Krista",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Slices of roast pork with pieces of crackling in a white foam takeaway box",
+          "de": "Scheiben Schweinebraten mit Stücken von Kruste in einer weißen Styroporbox"
+        }
+      }
+    },
+    {
+      "name": "el coquito",
+      "description": {
+        "en": "The Christmas drink: coconut milk, cream of coconut, condensed milk, cinnamon, clove and a good deal of white rum, shaken and chilled in recycled bottles. Every family swears its recipe is the correct one, and from late November people hand it out by the litre.",
+        "de": "Das Weihnachtsgetränk: Kokosmilch, Kokoscreme, Kondensmilch, Zimt, Nelke und reichlich weißer Rum, geschüttelt und in wiederverwendeten Flaschen kaltgestellt. Jede Familie schwört, ihr Rezept sei das richtige, und ab Ende November wird literweise verschenkt."
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Las Navidades",
+      "when": {
+        "en": "mid-November to mid-January",
+        "de": "Mitte November bis Mitte Januar"
+      },
+      "description": {
+        "en": "The longest Christmas anywhere: decorations go up in November and the season ends only with the Octavitas, eight days after Three Kings' Day. Its engine is the parranda — friends turn up at a house near midnight with cuatro, güiro and maracas, sing until they are fed, then take the household on to the next house.",
+        "de": "Das längste Weihnachten überhaupt: Ab November hängt der Schmuck, die Saison endet erst mit den Octavitas, acht Tage nach dem Dreikönigstag. Motor ist die Parranda — Freunde stehen gegen Mitternacht mit Cuatro, Güiro und Maracas vor der Tür, singen, bis sie bewirtet werden, und ziehen mit dem Haushalt weiter."
+      }
+    },
+    {
+      "name": "Fiestas de la Calle San Sebastián",
+      "when": {
+        "en": "the third weekend of January",
+        "de": "das dritte Januarwochenende"
+      },
+      "description": {
+        "en": "Four days that close Old San Juan's blue cobbled streets to traffic and end the Christmas season. Cabezudos — giant papier-mâché heads caricaturing politicians and neighbours — lead the processions, bomba and plena groups set up on the corners, and the artisans' stalls run the length of Calle San Sebastián.",
+        "de": "Vier Tage, an denen die blauen Kopfsteingassen von Alt-San-Juan autofrei sind und die Weihnachtszeit endet. Cabezudos — riesige Pappmaché-Köpfe, die Politiker und Nachbarn karikieren — führen die Umzüge an, Bomba- und Plena-Gruppen spielen an den Ecken, und die Handwerksstände säumen die ganze Calle San Sebastián."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Fiestas_de_la_Calle_San_Sebasti%C3%A1n%2C_San_Juan%2C_Puerto_Rico.jpg/960px-Fiestas_de_la_Calle_San_Sebasti%C3%A1n%2C_San_Juan%2C_Puerto_Rico.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Fiestas_de_la_Calle_San_Sebasti%C3%A1n,_San_Juan,_Puerto_Rico.jpg",
+        "author": "David Trawin",
+        "license": "CC BY-SA 2.0",
+        "width": 960,
+        "height": 638,
+        "alt": {
+          "en": "A dense night-time crowd filling a street between old buildings during the festival",
+          "de": "Eine dichte Menschenmenge füllt nachts eine Straße zwischen alten Gebäuden beim Fest"
+        }
+      }
+    },
+    {
+      "name": "Fiestas de Santiago Apóstol, Loíza",
+      "when": {
+        "en": "the last week of July",
+        "de": "die letzte Juliwoche"
+      },
+      "description": {
+        "en": "Loíza, the town with the deepest African roots on the island, carries three statues of St James through the streets for a week. The vejigantes walk alongside in horned coconut masks and bat-winged suits, swiping at people with an inflated cow bladder — the vejiga their name comes from.",
+        "de": "Loíza, die Stadt mit den tiefsten afrikanischen Wurzeln der Insel, trägt eine Woche lang drei Santiago-Figuren durch die Straßen. Daneben laufen Vejigantes in gehörnten Kokosnussmasken und Fledermausanzügen und schlagen nach den Leuten mit einer aufgeblasenen Kuhblase — der Vejiga, von der ihr Name kommt."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cabezas_de_vejigantes.jpg/960px-Cabezas_de_vejigantes.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cabezas_de_vejigantes.jpg",
+        "author": "Oscar Rohena",
+        "license": "CC BY 2.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Brightly painted horned masks with long snouts lying on a pale stone floor",
+          "de": "Bunt bemalte gehörnte Masken mit langen Schnauzen liegen auf hellem Steinboden"
+        }
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "La bendición",
+      "text": {
+        "en": "Children and adults greet parents, grandparents and older relatives with 'bendición' instead of hello; the answer is 'que Dios te bendiga'. Leaving it out in your own family reads as rude.",
+        "de": "Kinder wie Erwachsene begrüßen Eltern, Großeltern und ältere Verwandte mit 'bendición' statt mit Hallo; die Antwort lautet 'que Dios te bendiga'. In der Familie wegzulassen wirkt unhöflich."
+      }
+    },
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the cheek between women and between a woman and a man, even on first meeting; men shake hands or half-hug. A wave from across the room does not count as arriving.",
+        "de": "Ein Wangenkuss zwischen Frauen und zwischen Frau und Mann, auch beim ersten Treffen; Männer geben die Hand oder umarmen sich halb. Von der anderen Seite des Raums zu winken gilt nicht als Ankommen."
+      }
+    },
+    {
+      "title": "El espanglish",
+      "text": {
+        "en": "Switching between Spanish and English mid-sentence is not sloppiness, it is the local register. Correcting someone's 'parquear' or 'lonchar' marks you as an outsider faster than any accent.",
+        "de": "Mitten im Satz zwischen Spanisch und Englisch zu wechseln ist keine Schlamperei, sondern die hiesige Sprachebene. Wer 'parquear' oder 'lonchar' korrigiert, outet sich schneller als jeder Akzent."
+      }
+    },
+    {
+      "title": "El estatus",
+      "text": {
+        "en": "Statehood, independence or the current arrangement is a real argument inside real families. Asking what someone thinks is fine; assuming you know what an islander wants is not.",
+        "de": "Ob US-Bundesstaat, Unabhängigkeit oder der heutige Status: Darüber wird in echten Familien echt gestritten. Zu fragen, was jemand denkt, ist in Ordnung; anzunehmen, du wüsstest es, nicht."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Tipping follows the US rule, not the Caribbean one: 15 to 20 per cent in restaurants, a dollar or two a bag for a porter. Servers are paid the lower tipped wage, so the tip is not an extra.",
+        "de": "Beim Trinkgeld gilt die US-Regel, nicht die karibische: 15 bis 20 Prozent im Restaurant, ein bis zwei Dollar pro Gepäckstück. Servicekräfte bekommen weniger Lohn, das Trinkgeld ist kein Extra."
+      }
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import type { CultureCountry } from "@chingon/shared"
+import type { CultureCountry, CultureImage, LocalizedText } from "@chingon/shared"
 import { adminSaveCultureCountry } from "@/actions/admin"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -87,6 +87,89 @@ function RowCard({
   )
 }
 
+function NumField({
+  label,
+  value,
+  onChange,
+}: {
+  label: string
+  value: number
+  onChange: (v: number) => void
+}) {
+  return (
+    <div>
+      <label className={labelCls}>{label}</label>
+      <Input
+        type="number"
+        step="1"
+        value={value}
+        onChange={(e) => onChange(e.target.value === "" ? 0 : Number(e.target.value))}
+      />
+    </div>
+  )
+}
+
+const EMPTY_IMAGE: CultureImage = {
+  url: "",
+  sourcePage: "",
+  author: "",
+  license: "",
+  width: 0,
+  height: 0,
+  alt: { en: "", de: "" },
+}
+
+/**
+ * Compact editor for one Commons photo. Admins fix typos and swap a URL here —
+ * they do not source photos here, so this stays a flat form with no preview.
+ * Blank the URL to remove the photo (see normalize()).
+ */
+function ImageFields({
+  label,
+  value,
+  onChange,
+}: {
+  label: string
+  value: CultureImage | undefined
+  onChange: (img: CultureImage) => void
+}) {
+  const img = value ?? EMPTY_IMAGE
+  const set = (patch: Partial<CultureImage>) => onChange({ ...img, ...patch })
+  return (
+    <div className="rounded-[12px] border border-cielo-200 bg-cielo-50/60 p-3">
+      <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[1.5px] text-cielo-700">
+        {label} — vacía la URL para quitar la foto
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2">
+        <div className="sm:col-span-2">
+          <Field label="URL (upload.wikimedia.org)" value={img.url} onChange={(v) => set({ url: v })} />
+        </div>
+        <div className="sm:col-span-2">
+          <Field
+            label="Página Commons"
+            value={img.sourcePage}
+            onChange={(v) => set({ sourcePage: v })}
+          />
+        </div>
+        <Field label="Autor" value={img.author} onChange={(v) => set({ author: v })} />
+        <Field label="Licencia" value={img.license} onChange={(v) => set({ license: v })} />
+        <NumField label="Ancho (px)" value={img.width} onChange={(v) => set({ width: v })} />
+        <NumField label="Alto (px)" value={img.height} onChange={(v) => set({ height: v })} />
+        <Field
+          label="Alt (EN)"
+          value={img.alt.en}
+          onChange={(v) => set({ alt: { ...img.alt, en: v } })}
+        />
+        <Field
+          label="Alt (DE)"
+          value={img.alt.de}
+          onChange={(v) => set({ alt: { ...img.alt, de: v } })}
+        />
+      </div>
+    </div>
+  )
+}
+
 function updateAt<T>(arr: T[], i: number, fn: (t: T) => T): T[] {
   return arr.map((x, j) => (j === i ? fn(x) : x))
 }
@@ -95,15 +178,35 @@ function removeAt<T>(arr: T[], i: number): T[] {
   return arr.filter((_, j) => j !== i)
 }
 
+/** An image the admin blanked out is no image — otherwise zod's .url()/.min(1)
+ *  rules reject the whole save with a cryptic path. */
+function cleanImage(img: CultureImage | undefined): CultureImage | undefined {
+  return img && img.url.trim() ? img : undefined
+}
+
+function cleanText(t: LocalizedText | undefined): LocalizedText | undefined {
+  return t && (t.en.trim() || t.de.trim()) ? t : undefined
+}
+
 /** Drop empty optional fields so zod's "if present, non-empty" rules pass. */
 function normalize(c: CultureCountry): CultureCountry {
   return {
     ...c,
+    tagline: cleanText(c.tagline),
+    heroImage: cleanImage(c.heroImage),
     slang: c.slang.map((s) => ({ ...s, example: s.example?.trim() ? s.example : undefined })),
     vocabulary: c.vocabulary.map((v) => ({
       ...v,
       note: v.note && (v.note.en.trim() || v.note.de.trim()) ? v.note : undefined,
     })),
+    sights: c.sights.map((s) => ({ ...s, image: cleanImage(s.image) })),
+    food: c.food?.length
+      ? c.food.map((d) => ({ ...d, image: cleanImage(d.image) }))
+      : undefined,
+    festivals: c.festivals?.length
+      ? c.festivals.map((f) => ({ ...f, image: cleanImage(f.image) }))
+      : undefined,
+    etiquette: c.etiquette?.length ? c.etiquette : undefined,
   }
 }
 
@@ -189,6 +292,33 @@ export function CultureEditor({
                 label="Población"
                 value={c.population}
                 onChange={(v) => setC({ ...c, population: v })}
+              />
+            </div>
+          </Section>
+
+          {/* Cover — hero photo + tagline */}
+          <Section title="Portada">
+            <div className="grid gap-4 md:grid-cols-2">
+              <Area
+                label="Lema / tagline (EN)"
+                value={c.tagline?.en ?? ""}
+                onChange={(v) =>
+                  setC({ ...c, tagline: { en: v, de: c.tagline?.de ?? "" } })
+                }
+              />
+              <Area
+                label="Lema / tagline (DE)"
+                value={c.tagline?.de ?? ""}
+                onChange={(v) =>
+                  setC({ ...c, tagline: { en: c.tagline?.en ?? "", de: v } })
+                }
+              />
+            </div>
+            <div className="mt-4">
+              <ImageFields
+                label="Foto de portada"
+                value={c.heroImage}
+                onChange={(img) => setC({ ...c, heroImage: img })}
               />
             </div>
           </Section>
@@ -461,6 +591,15 @@ export function CultureEditor({
                         }
                       />
                     </div>
+                    <div className="sm:col-span-2 lg:col-span-4">
+                      <ImageFields
+                        label="Foto"
+                        value={s.image}
+                        onChange={(img) =>
+                          setC({ ...c, sights: updateAt(c.sights, i, (x) => ({ ...x, image: img })) })
+                        }
+                      />
+                    </div>
                   </div>
                 </RowCard>
               ))}
@@ -480,6 +619,256 @@ export function CultureEditor({
               }
             >
               + Añadir lugar
+            </Button>
+          </Section>
+
+          {/* Food */}
+          <Section title="Comida">
+            <div className="space-y-3">
+              {(c.food ?? []).map((d, i) => (
+                <RowCard
+                  key={i}
+                  removable
+                  onRemove={() => setC({ ...c, food: removeAt(c.food ?? [], i) })}
+                >
+                  <div className="grid gap-3 pr-8 sm:grid-cols-2">
+                    <div className="sm:col-span-2">
+                      <Field
+                        label="Plato"
+                        value={d.name}
+                        onChange={(v) =>
+                          setC({ ...c, food: updateAt(c.food ?? [], i, (x) => ({ ...x, name: v })) })
+                        }
+                      />
+                    </div>
+                    <Area
+                      label="Descripción (EN)"
+                      value={d.description.en}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          food: updateAt(c.food ?? [], i, (x) => ({
+                            ...x,
+                            description: { ...x.description, en: v },
+                          })),
+                        })
+                      }
+                    />
+                    <Area
+                      label="Descripción (DE)"
+                      value={d.description.de}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          food: updateAt(c.food ?? [], i, (x) => ({
+                            ...x,
+                            description: { ...x.description, de: v },
+                          })),
+                        })
+                      }
+                    />
+                    <div className="sm:col-span-2">
+                      <ImageFields
+                        label="Foto"
+                        value={d.image}
+                        onChange={(img) =>
+                          setC({ ...c, food: updateAt(c.food ?? [], i, (x) => ({ ...x, image: img })) })
+                        }
+                      />
+                    </div>
+                  </div>
+                </RowCard>
+              ))}
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              className="mt-3"
+              onClick={() =>
+                setC({
+                  ...c,
+                  food: [...(c.food ?? []), { name: "", description: { en: "", de: "" } }],
+                })
+              }
+            >
+              + Añadir plato
+            </Button>
+          </Section>
+
+          {/* Festivals */}
+          <Section title="Fiestas">
+            <div className="space-y-3">
+              {(c.festivals ?? []).map((f, i) => (
+                <RowCard
+                  key={i}
+                  removable
+                  onRemove={() => setC({ ...c, festivals: removeAt(c.festivals ?? [], i) })}
+                >
+                  <div className="grid gap-3 pr-8 sm:grid-cols-2">
+                    <Field
+                      label="Fiesta"
+                      value={f.name}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          festivals: updateAt(c.festivals ?? [], i, (x) => ({ ...x, name: v })),
+                        })
+                      }
+                    />
+                    <div />
+                    <Field
+                      label="Cuándo (EN)"
+                      value={f.when.en}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          festivals: updateAt(c.festivals ?? [], i, (x) => ({
+                            ...x,
+                            when: { ...x.when, en: v },
+                          })),
+                        })
+                      }
+                    />
+                    <Field
+                      label="Cuándo (DE)"
+                      value={f.when.de}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          festivals: updateAt(c.festivals ?? [], i, (x) => ({
+                            ...x,
+                            when: { ...x.when, de: v },
+                          })),
+                        })
+                      }
+                    />
+                    <Area
+                      label="Descripción (EN)"
+                      value={f.description.en}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          festivals: updateAt(c.festivals ?? [], i, (x) => ({
+                            ...x,
+                            description: { ...x.description, en: v },
+                          })),
+                        })
+                      }
+                    />
+                    <Area
+                      label="Descripción (DE)"
+                      value={f.description.de}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          festivals: updateAt(c.festivals ?? [], i, (x) => ({
+                            ...x,
+                            description: { ...x.description, de: v },
+                          })),
+                        })
+                      }
+                    />
+                    <div className="sm:col-span-2">
+                      <ImageFields
+                        label="Foto"
+                        value={f.image}
+                        onChange={(img) =>
+                          setC({
+                            ...c,
+                            festivals: updateAt(c.festivals ?? [], i, (x) => ({ ...x, image: img })),
+                          })
+                        }
+                      />
+                    </div>
+                  </div>
+                </RowCard>
+              ))}
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              className="mt-3"
+              onClick={() =>
+                setC({
+                  ...c,
+                  festivals: [
+                    ...(c.festivals ?? []),
+                    { name: "", when: { en: "", de: "" }, description: { en: "", de: "" } },
+                  ],
+                })
+              }
+            >
+              + Añadir fiesta
+            </Button>
+          </Section>
+
+          {/* Etiquette */}
+          <Section title="Buenas maneras">
+            <div className="space-y-3">
+              {(c.etiquette ?? []).map((e, i) => (
+                <RowCard
+                  key={i}
+                  removable
+                  onRemove={() => setC({ ...c, etiquette: removeAt(c.etiquette ?? [], i) })}
+                >
+                  <div className="grid gap-3 pr-8 sm:grid-cols-2">
+                    <div className="sm:col-span-2">
+                      <Field
+                        label="Título"
+                        value={e.title}
+                        onChange={(v) =>
+                          setC({
+                            ...c,
+                            etiquette: updateAt(c.etiquette ?? [], i, (x) => ({ ...x, title: v })),
+                          })
+                        }
+                      />
+                    </div>
+                    <Area
+                      label="Texto (EN)"
+                      value={e.text.en}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          etiquette: updateAt(c.etiquette ?? [], i, (x) => ({
+                            ...x,
+                            text: { ...x.text, en: v },
+                          })),
+                        })
+                      }
+                    />
+                    <Area
+                      label="Texto (DE)"
+                      value={e.text.de}
+                      onChange={(v) =>
+                        setC({
+                          ...c,
+                          etiquette: updateAt(c.etiquette ?? [], i, (x) => ({
+                            ...x,
+                            text: { ...x.text, de: v },
+                          })),
+                        })
+                      }
+                    />
+                  </div>
+                </RowCard>
+              ))}
+            </div>
+            <Button
+              variant="outline"
+              size="sm"
+              className="mt-3"
+              onClick={() =>
+                setC({
+                  ...c,
+                  etiquette: [
+                    ...(c.etiquette ?? []),
+                    { title: "", text: { en: "", de: "" } },
+                  ],
+                })
+              }
+            >
+              + Añadir costumbre
             </Button>
           </Section>
         </div>

@@ -1,13 +1,32 @@
 {
   "id": "ve",
   "flag": "🇻🇪",
-  "name": { "en": "Venezuela", "de": "Venezuela" },
+  "name": {
+    "en": "Venezuela",
+    "de": "Venezuela"
+  },
   "nameEs": "Venezuela",
   "capital": "Caracas",
   "population": "28 M",
+  "tagline": {
+    "en": "The world's tallest waterfall, the world's most lightning, and everything said in the diminutive.",
+    "de": "Der höchste Wasserfall der Welt, die meisten Blitze der Welt — und alles im Diminutiv gesagt."
+  },
+  "heroImage": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monte_Roraima_e_Kukenan_Tepui_ao_amanhecer.jpg/1920px-Monte_Roraima_e_Kukenan_Tepui_ao_amanhecer.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Monte_Roraima_e_Kukenan_Tepui_ao_amanhecer.jpg",
+    "author": "Ney Teixeira de Freitas Guimarães Filho",
+    "license": "CC BY-SA 4.0",
+    "width": 1920,
+    "height": 1280,
+    "alt": {
+      "en": "Orange tents on open savanna at dawn with the flat silhouette of Roraima behind",
+      "de": "Orangefarbene Zelte in offener Savanne im Morgengrauen, dahinter Roraimas flache Silhouette"
+    }
+  },
   "intro": {
-    "en": "Venezuela speaks a warm Caribbean Spanish that makes everything small and dear: you don't drink a coffee, you drink a 'cafecito' — and even 'now' softens into 'ahorita'. Everyone is 'chamo' or 'pana', and 'chévere' makes everything cool — nowhere is the word used more lovingly than here. It's a country of superlatives: the world's tallest waterfall, the Caribbean's longest coastline, and the arepa, a corn pocket Venezuelans will defend against Colombia to their last breath.",
-    "de": "Venezuela spricht ein warmes karibisches Spanisch, das alles klein und liebenswert macht: Man trinkt keinen Kaffee, sondern ein 'cafecito' — und selbst 'jetzt' wird sanft zu 'ahorita'. Jeder ist 'chamo' oder 'pana', und 'chévere' macht alles cool — nirgends wird das Wort liebevoller benutzt als hier. Ein Land der Superlative: der höchste Wasserfall der Welt, die längste Karibikküste und die Arepa, ein Maisfladen, den Venezolaner bis zum letzten Atemzug gegen Kolumbien verteidigen."
+    "en": "Venezuelan Spanish softens everything: nobody drinks a café, they drink a cafecito, and 'ahora' turns into 'ahorita', which here means shortly rather than right now. It sounds Caribbean — the final -s breathes away, the diminutive is everywhere — and the vocabulary is its own: everyone is chamo or pana, anything good is chévere, and 'vaina' will stand in for whatever noun you have lost. Two things worth knowing beyond the arepa: the joropo, played on harp, four-string cuatro and maracas, is the national music, and El Sistema has put an instrument into the hands of hundreds of thousands of Venezuelan children since 1975.",
+    "de": "Venezolanisches Spanisch macht alles weicher: Niemand trinkt einen café, sondern ein cafecito, und aus 'ahora' wird 'ahorita' — was hier gleich heißt statt sofort. Es klingt karibisch — das End-s haucht sich weg, der Diminutiv steht überall — und der Wortschatz gehört ihm allein: Jeder ist chamo oder pana, alles Gute ist chévere, und 'vaina' ersetzt jedes Substantiv, das einem gerade abhandenkommt. Zwei Dinge lohnen sich jenseits der Arepa: Der Joropo, gespielt auf Harfe, viersaitigem Cuatro und Maracas, ist die Nationalmusik, und El Sistema hat seit 1975 Hunderttausenden venezolanischen Kindern ein Instrument in die Hand gegeben."
   },
   "funFact": {
     "en": "Angel Falls is named after US pilot Jimmie Angel, who crash-landed his plane on top of the tepui in 1937 while hunting for gold — the aircraft sat up there for 33 years before being airlifted out.",
@@ -16,90 +35,595 @@
   "slang": [
     {
       "term": "chamo / chama",
-      "meaning": { "en": "dude, kid — the Venezuelan 'güey', used in every second sentence", "de": "Alter, Junge/Mädel — das venezolanische 'güey', in jedem zweiten Satz zu hören" },
+      "meaning": {
+        "en": "dude, kid — the Venezuelan 'güey', used in every second sentence",
+        "de": "Alter, Junge/Mädel — das venezolanische 'güey', in jedem zweiten Satz zu hören"
+      },
       "example": "¡Chamo, tienes que ver esto!"
     },
     {
       "term": "chévere",
-      "meaning": { "en": "cool, great — the Caribbean's favorite word, nowhere more at home than in Venezuela", "de": "cool, super — das Lieblingswort der Karibik, nirgends mehr zu Hause als in Venezuela" },
+      "meaning": {
+        "en": "cool, great — the Caribbean's favorite word, nowhere more at home than here",
+        "de": "cool, super — das Lieblingswort der Karibik, nirgends mehr zu Hause als hier"
+      },
       "example": "La fiesta de anoche estuvo chévere."
     },
     {
       "term": "pana",
-      "meaning": { "en": "close friend, buddy — 'ser pana' means being genuinely kind", "de": "enger Freund, Kumpel — 'ser pana' heißt auch, ehrlich nett zu sein" },
+      "meaning": {
+        "en": "close friend, buddy — 'ser pana' means being genuinely kind",
+        "de": "enger Freund, Kumpel — 'ser pana' heißt auch, ehrlich nett zu sein"
+      },
       "example": "Él es mi pana desde el colegio."
     },
     {
       "term": "burda",
-      "meaning": { "en": "very, a lot — 'burda de bueno' means really good", "de": "sehr, total — 'burda de bueno' heißt richtig gut" },
+      "meaning": {
+        "en": "very, a lot — 'burda de bueno' means really good",
+        "de": "sehr, total — 'burda de bueno' heißt richtig gut"
+      },
       "example": "Esa película está burda de buena."
     },
     {
       "term": "vaina",
-      "meaning": { "en": "thing, stuff — the Swiss army knife of Venezuelan Spanish", "de": "Ding, Zeug — das Schweizer Taschenmesser des venezolanischen Spanisch" },
+      "meaning": {
+        "en": "thing, stuff — the Swiss army knife of Venezuelan Spanish",
+        "de": "Ding, Zeug — das Schweizer Taschenmesser des venezolanischen Spanisch"
+      },
       "example": "Pásame esa vaina que está en la mesa."
     },
     {
+      "term": "arrecho",
+      "meaning": {
+        "en": "furious — or fantastic, depending entirely on how it is said",
+        "de": "stinksauer — oder großartig, je nachdem, wie es gesagt wird"
+      },
+      "example": "Ese concierto estuvo arrecho, chamo."
+    },
+    {
       "term": "¡Épale!",
-      "meaning": { "en": "Hey! / Hi there! — the friendly attention-grabber", "de": "Hey! / Na du! — der freundliche Aufmerksamkeits-Wecker" },
+      "meaning": {
+        "en": "Hey! / Hi there! — the friendly attention-grabber",
+        "de": "Hey! / Na du! — der freundliche Aufmerksamkeits-Wecker"
+      },
       "example": "¡Épale chamo! ¿Cómo estás?"
     },
     {
+      "term": "la cuaima",
+      "meaning": {
+        "en": "a fiercely jealous girlfriend — the word also names a pit viper",
+        "de": "eine extrem eifersüchtige Freundin — das Wort meint auch eine Lanzenotter"
+      },
+      "example": "No sale con nosotros, su novia es una cuaima."
+    },
+    {
       "term": "sifrino / sifrina",
-      "meaning": { "en": "posh, preppy, stuck-up", "de": "schickimicki, versnobt" },
+      "meaning": {
+        "en": "posh, preppy, stuck-up",
+        "de": "schickimicki, versnobt"
+      },
       "example": "Esa zona de Caracas es de gente sifrina."
     },
     {
       "term": "¡Qué ladilla!",
-      "meaning": { "en": "What a drag! — literally 'what a crab louse'", "de": "Wie nervig! — wörtlich 'was für eine Filzlaus'" },
+      "meaning": {
+        "en": "What a drag! — literally 'what a crab louse'",
+        "de": "Wie nervig! — wörtlich 'was für eine Filzlaus'"
+      },
       "example": "¡Qué ladilla este tráfico, chamo!"
     }
   ],
   "vocabulary": [
-    { "es": "la arepa", "translation": { "en": "grilled corn pocket, stuffed with almost anything — Venezuela's daily bread", "de": "gegrillte Maistasche, mit fast allem gefüllt — Venezuelas tägliches Brot" }, "note": { "en": "Colombia makes them flatter and often unfilled — don't say that too loudly in Caracas", "de": "in Kolumbien sind sie flacher und oft ungefüllt — sag das in Caracas lieber nicht zu laut" } },
-    { "es": "el cambur", "translation": { "en": "banana", "de": "Banane" }, "note": { "en": "elsewhere: el plátano / la banana", "de": "anderswo: el plátano / la banana" } },
-    { "es": "las caraotas", "translation": { "en": "black beans, part of the national dish 'pabellón criollo'", "de": "schwarze Bohnen, Teil des Nationalgerichts 'pabellón criollo'" }, "note": { "en": "elsewhere: los frijoles", "de": "anderswo: los frijoles" } },
-    { "es": "la franela", "translation": { "en": "t-shirt", "de": "T-Shirt" }, "note": { "en": "elsewhere: la camiseta", "de": "anderswo: la camiseta" } },
-    { "es": "las cotufas", "translation": { "en": "popcorn", "de": "Popcorn" }, "note": { "en": "elsewhere: las palomitas — allegedly from English 'corn to fry'", "de": "anderswo: las palomitas — angeblich vom englischen 'corn to fry'" } },
-    { "es": "la lechosa", "translation": { "en": "papaya", "de": "Papaya" }, "note": { "en": "elsewhere: la papaya", "de": "anderswo: la papaya" } },
-    { "es": "los tequeños", "translation": { "en": "deep-fried cheese sticks — the star of every Venezuelan party", "de": "frittierte Käsestangen — der Star jeder venezolanischen Party" }, "note": { "en": "named after the town of Los Teques", "de": "benannt nach der Stadt Los Teques" } },
-    { "es": "la camionetica", "translation": { "en": "small city bus", "de": "kleiner Stadtbus" }, "note": { "en": "elsewhere: el autobús — literally 'little truck'", "de": "anderswo: el autobús — wörtlich 'Lastwägelchen'" } }
+    {
+      "es": "la arepa",
+      "translation": {
+        "en": "grilled corn pocket, stuffed with almost anything — Venezuela's daily bread",
+        "de": "gegrillte Maistasche, mit fast allem gefüllt — Venezuelas tägliches Brot"
+      },
+      "note": {
+        "en": "Colombia makes them flatter and often unfilled — don't say that too loudly in Caracas",
+        "de": "in Kolumbien sind sie flacher und oft ungefüllt — sag das in Caracas lieber nicht zu laut"
+      }
+    },
+    {
+      "es": "el cambur",
+      "translation": {
+        "en": "banana",
+        "de": "Banane"
+      },
+      "note": {
+        "en": "elsewhere: el plátano / la banana — 'el plátano' here is the big cooking one",
+        "de": "anderswo: el plátano / la banana — 'el plátano' ist hier die große Kochbanane"
+      }
+    },
+    {
+      "es": "las caraotas",
+      "translation": {
+        "en": "black beans, part of the national dish 'pabellón criollo'",
+        "de": "schwarze Bohnen, Teil des Nationalgerichts 'pabellón criollo'"
+      },
+      "note": {
+        "en": "elsewhere: los frijoles / las judías negras",
+        "de": "anderswo: los frijoles / las judías negras"
+      }
+    },
+    {
+      "es": "la franela",
+      "translation": {
+        "en": "t-shirt",
+        "de": "T-Shirt"
+      },
+      "note": {
+        "en": "elsewhere: la camiseta — in Spain 'franela' is flannel cloth",
+        "de": "anderswo: la camiseta — in Spanien ist 'franela' der Flanellstoff"
+      }
+    },
+    {
+      "es": "las cotufas",
+      "translation": {
+        "en": "popcorn",
+        "de": "Popcorn"
+      },
+      "note": {
+        "en": "elsewhere: las palomitas — allegedly from English 'corn to fry'",
+        "de": "anderswo: las palomitas — angeblich vom englischen 'corn to fry'"
+      }
+    },
+    {
+      "es": "la lechosa",
+      "translation": {
+        "en": "papaya",
+        "de": "Papaya"
+      },
+      "note": {
+        "en": "elsewhere: la papaya — named for the white sap in the unripe fruit",
+        "de": "anderswo: la papaya — benannt nach dem weißen Saft der unreifen Frucht"
+      }
+    },
+    {
+      "es": "los tequeños",
+      "translation": {
+        "en": "deep-fried cheese sticks — the star of every Venezuelan party",
+        "de": "frittierte Käsestangen — der Star jeder venezolanischen Party"
+      },
+      "note": {
+        "en": "named after the town of Los Teques",
+        "de": "benannt nach der Stadt Los Teques"
+      }
+    },
+    {
+      "es": "el coroto",
+      "translation": {
+        "en": "thing, object, whatsit",
+        "de": "Ding, Sache, Dingsbums"
+      },
+      "note": {
+        "en": "'recoger los corotos' = to pack up your things and leave",
+        "de": "'recoger los corotos' = seine Sachen packen und gehen"
+      }
+    },
+    {
+      "es": "el guachimán",
+      "translation": {
+        "en": "security guard, watchman",
+        "de": "Wachmann, Sicherheitsmann"
+      },
+      "note": {
+        "en": "straight out of English 'watchman' — a Caribbean loanword",
+        "de": "direkt aus dem englischen 'watchman' — ein karibisches Lehnwort"
+      }
+    },
+    {
+      "es": "la camionetica",
+      "translation": {
+        "en": "small city bus",
+        "de": "kleiner Stadtbus"
+      },
+      "note": {
+        "en": "elsewhere: el autobús — literally 'little truck'",
+        "de": "anderswo: el autobús — wörtlich 'Lastwägelchen'"
+      }
+    }
   ],
   "sights": [
     {
       "name": "Salto Ángel",
-      "description": { "en": "The world's tallest waterfall — 979 m of water free-falling off Auyán-tepui, so high that much of it turns to mist before ever hitting the ground.", "de": "Der höchste Wasserfall der Welt — 979 m Wasser im freien Fall vom Auyán-Tepui, so hoch, dass ein Großteil zu Nebel wird, bevor er je den Boden erreicht." },
+      "description": {
+        "en": "979 metres of free fall off the lip of Auyán-tepui, far enough that most of the water is blown to mist before it lands and gathers back into a river below. It runs hardest from June to December, when the plane can reach Canaima and the river is deep enough for the three-hour boat. The Pemón call it Kerepakupai Merú.",
+        "de": "979 Meter freier Fall über die Kante des Auyán-Tepui, weit genug, dass der Großteil des Wassers zu Nebel zerstäubt, bevor er unten wieder zum Fluss zusammenkommt. Am stärksten fällt er von Juni bis Dezember, wenn das Flugzeug Canaima erreicht und der Fluss tief genug für die dreistündige Bootsfahrt ist. Die Pemón nennen ihn Kerepakupai Merú."
+      },
       "lat": 5.9701,
       "lng": -62.5362,
-      "emoji": "💦"
+      "emoji": "💦",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Kerepakupai_Ven%C3%A1_II.JPG/960px-Kerepakupai_Ven%C3%A1_II.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kerepakupai_Ven%C3%A1_II.JPG",
+        "author": "Sinfinitu",
+        "license": "CC BY 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "The pale cliff wall of Auyán-tepui with a thin waterfall streak, jungle in front",
+          "de": "Die helle Felswand des Auyán-Tepui mit einem dünnen Wasserfallstreifen, davor Dschungel"
+        }
+      }
     },
     {
       "name": "Monte Roraima",
-      "description": { "en": "A flat-topped tepui at the triple border with Brazil and Guyana — its otherworldly plateau inspired Arthur Conan Doyle's 'The Lost World'.", "de": "Ein Tafelberg am Dreiländereck mit Brasilien und Guyana — sein außerirdisch wirkendes Plateau inspirierte Arthur Conan Doyles 'Die vergessene Welt'." },
+      "description": {
+        "en": "A sandstone table 31 square kilometres across with 400 metres of vertical wall under it, standing where Venezuela, Brazil and Guyana meet. The top is bare black rock, quartz gravel and shallow pools, with carnivorous plants that grow nowhere else on Earth. Conan Doyle set 'The Lost World' up there in 1912 without ever going near it.",
+        "de": "Ein Sandsteintafelberg von 31 Quadratkilometern mit 400 Metern senkrechter Wand darunter, dort, wo Venezuela, Brasilien und Guyana zusammentreffen. Oben liegen nackter schwarzer Fels, Quarzkies und flache Tümpel, dazu fleischfressende Pflanzen, die es sonst nirgends gibt. Conan Doyle siedelte 1912 'Die vergessene Welt' dort an, ohne je in der Nähe gewesen zu sein."
+      },
       "lat": 5.1433,
       "lng": -60.7625,
-      "emoji": "⛰️"
+      "emoji": "⛰️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Monte_Roraima_e_Kukenan_Tepui_com_sol_radiante.jpg/960px-Monte_Roraima_e_Kukenan_Tepui_com_sol_radiante.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Monte_Roraima_e_Kukenan_Tepui_com_sol_radiante.jpg",
+        "author": "Ney Teixeira de Freitas Guimarães Filho",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Two flat-topped tepuis standing above open savanna in bright morning sun",
+          "de": "Zwei Tafelberge über offener Savanne im hellen Morgenlicht"
+        }
+      }
     },
     {
       "name": "Los Roques",
-      "description": { "en": "An archipelago of some 350 islets and cays with water so clear that anchored boats seem to hover in mid-air.", "de": "Ein Archipel aus rund 350 Inselchen und Riffen mit so klarem Wasser, dass ankernde Boote in der Luft zu schweben scheinen." },
+      "description": {
+        "en": "Around 350 islands and cays on a coral platform 150 km off Caracas, most of them a strip of sand a metre above the water. Only Gran Roque is inhabited, by roughly 1,500 people, and it has no paved roads — the streets are sand. Fishing is restricted by law to hand lines, which is why the queen conch is still there.",
+        "de": "Rund 350 Inseln und Riffe auf einer Korallenplattform 150 km vor Caracas, die meisten ein Sandstreifen einen Meter über dem Wasser. Bewohnt ist nur Gran Roque, von etwa 1.500 Menschen, und asphaltierte Straßen gibt es nicht — die Wege sind aus Sand. Gefischt werden darf per Gesetz nur mit Handleine, deshalb gibt es die Fechterschnecke noch."
+      },
       "lat": 11.9506,
       "lng": -66.6772,
-      "emoji": "🏝️"
+      "emoji": "🏝️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Azules.jpg/960px-Azules.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Azules.jpg",
+        "author": "Rjsb142014",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Shallow turquoise water running flat to a low sandy island on the horizon",
+          "de": "Flaches türkisfarbenes Wasser bis zu einer niedrigen Sandinsel am Horizont"
+        }
+      }
     },
     {
       "name": "Relámpago del Catatumbo",
-      "description": { "en": "Where the Catatumbo river meets Lake Maracaibo, lightning flashes up to 260 nights a year — a natural lighthouse sailors have navigated by for centuries.", "de": "Wo der Catatumbo in den Maracaibo-See mündet, blitzt es bis zu 260 Nächte im Jahr — ein natürlicher Leuchtturm, nach dem Seefahrer seit Jahrhunderten navigieren." },
+      "description": {
+        "en": "Where the Catatumbo empties into Lake Maracaibo, warm air off the water meets cold air coming down off the Andes, and thunderstorms build on up to 260 nights a year and fire for nine hours at a stretch. Sailors steered by the glow for centuries, and Francis Drake's night raid on Maracaibo in 1595 was given away by it.",
+        "de": "Wo der Catatumbo in den Maracaibo-See mündet, trifft warme Luft vom Wasser auf kalte Luft aus den Anden, und an bis zu 260 Nächten im Jahr bauen sich Gewitter auf, die neun Stunden am Stück feuern. Seefahrer navigierten jahrhundertelang nach dem Schein, und Francis Drakes Nachtangriff auf Maracaibo 1595 wurde davon verraten."
+      },
       "lat": 9.34,
       "lng": -71.73,
-      "emoji": "⚡"
+      "emoji": "⚡",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Relampago_del_catatumbo_observado_desde_bachaquero-2.jpg/960px-Relampago_del_catatumbo_observado_desde_bachaquero-2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Relampago_del_catatumbo_observado_desde_bachaquero-2.jpg",
+        "author": "Ruzhugo27",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Forked lightning over the dark water of Lake Maracaibo at night",
+          "de": "Verästelte Blitze über dem dunklen Wasser des Maracaibo-Sees bei Nacht"
+        }
+      }
     },
     {
       "name": "Teleférico de Mérida",
-      "description": { "en": "The world's highest and longest cable car — 12.5 km from Mérida up to Pico Espejo at 4,765 m in the Venezuelan Andes.", "de": "Die höchste und längste Seilbahn der Welt — 12,5 km von Mérida hinauf zum Pico Espejo auf 4.765 m in den venezolanischen Anden." },
+      "description": {
+        "en": "Four stages and 12.5 km from Mérida at 1,640 m up to Pico Espejo at 4,765 m, the highest and longest cable car anywhere. It climbs through cloud forest, then páramo where frailejón plants put on about a centimetre a year, then bare rock and air thin enough to slow you down. Built in 1958 and rebuilt in 2016.",
+        "de": "Vier Abschnitte und 12,5 km von Mérida auf 1.640 m hinauf zum Pico Espejo auf 4.765 m — die höchste und längste Seilbahn überhaupt. Sie steigt durch Nebelwald, dann Páramo, wo Frailejón-Pflanzen rund einen Zentimeter im Jahr zulegen, dann kahler Fels und Luft, die dünn genug ist, um auszubremsen. 1958 gebaut, 2016 erneuert."
+      },
       "lat": 8.5897,
       "lng": -71.1445,
-      "emoji": "🚠"
+      "emoji": "🚠",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Teleferico_Barinitas%2C_Merida%2C_Estado_Merida.jpg/960px-Teleferico_Barinitas%2C_Merida%2C_Estado_Merida.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Teleferico_Barinitas,_Merida,_Estado_Merida.jpg",
+        "author": "Cesar Pérez",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A yellow cable car arriving at a stone-walled station on a green mountainside",
+          "de": "Eine gelbe Seilbahnkabine erreicht eine Station mit Bruchsteinmauer am grünen Berghang"
+        }
+      }
+    },
+    {
+      "name": "Caracas",
+      "description": {
+        "en": "Wedged into a valley by the Ávila, a 2,700 m green wall that hides the coast from the city entirely. Carlos Raúl Villanueva laid out the university campus in the 1950s with murals by Léger and a set of Calder shapes hung in the concert hall for the acoustics. The barrios climb the opposite slopes in red brick, one storey added per generation.",
+        "de": "Eingekeilt in ein Tal vom Ávila, einer 2.700 m hohen grünen Wand, die der Stadt die Küste vollständig verdeckt. Carlos Raúl Villanueva legte in den 1950ern den Universitätscampus an, mit Wandbildern von Léger und Calder-Formen, die der Akustik wegen im Konzertsaal hängen. Die Barrios klettern in rotem Ziegel die Gegenhänge hinauf, pro Generation ein Stockwerk mehr."
+      },
+      "lat": 10.4806,
+      "lng": -66.9036,
+      "emoji": "🏙️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Caracas_skyline_and_Avila_mountain_from_my_penthouse.JPG/960px-Caracas_skyline_and_Avila_mountain_from_my_penthouse.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Caracas_skyline_and_Avila_mountain_from_my_penthouse.JPG",
+        "author": "Flauta",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "Caracas apartment towers with the ridge of the Ávila under low cloud behind them",
+          "de": "Wohntürme von Caracas, dahinter der Kamm des Ávila unter tiefen Wolken"
+        }
+      }
+    },
+    {
+      "name": "Médanos de Coro",
+      "description": {
+        "en": "Dunes up to forty metres high on the isthmus that ties the Paraguaná peninsula to the mainland, kept walking by a trade wind that does not let up. They cross the road and a crew clears it again. Coro itself, ten minutes away, is the oldest colonial town still standing in Venezuela, built in mud brick from 1527.",
+        "de": "Bis zu vierzig Meter hohe Dünen auf der Landenge, die die Halbinsel Paraguaná mit dem Festland verbindet, in Bewegung gehalten von einem Passat, der nicht nachlässt. Sie wandern über die Straße, und eine Kolonne räumt sie wieder frei. Coro selbst, zehn Minuten entfernt, ist die älteste noch stehende Kolonialstadt Venezuelas, ab 1527 aus Lehmziegeln gebaut."
+      },
+      "lat": 11.4667,
+      "lng": -69.6667,
+      "emoji": "🏜️",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dunas_de_los_Medanos_de_Coro%2C_Falc%C3%B3n_Venezuela.jpg/960px-Dunas_de_los_Medanos_de_Coro%2C_Falc%C3%B3n_Venezuela.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunas_de_los_Medanos_de_Coro,_Falc%C3%B3n_Venezuela.jpg",
+        "author": "Raphael.Bracca",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 719,
+        "alt": {
+          "en": "Wind-rippled sand dunes running to the horizon at the Médanos de Coro",
+          "de": "Vom Wind gerippelte Sanddünen bis zum Horizont in den Médanos de Coro"
+        }
+      }
+    },
+    {
+      "name": "Colonia Tovar",
+      "description": {
+        "en": "In 1843 about 380 people from the Kaiserstuhl in Baden sailed over and were set down at 1,800 m in the coastal range. They married among themselves for a century, and Alemán coloniero, an Alemannic dialect, was still the first language of the village into the 1940s. The houses are half-timbered, the bakeries sell Strudel, and Caracas is two hours away.",
+        "de": "1843 segelten rund 380 Menschen vom Kaiserstuhl in Baden herüber und wurden auf 1.800 m in der Küstenkordillere abgesetzt. Ein Jahrhundert lang heirateten sie untereinander, und Alemán coloniero, ein alemannischer Dialekt, war bis in die 1940er die erste Sprache des Dorfes. Die Häuser sind Fachwerk, die Bäckereien verkaufen Strudel, und Caracas ist zwei Stunden entfernt."
+      },
+      "lat": 10.4056,
+      "lng": -67.29,
+      "emoji": "🏡",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Calles_de_la_Colonia_Tovar.jpg/960px-Calles_de_la_Colonia_Tovar.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Calles_de_la_Colonia_Tovar.jpg",
+        "author": "Rjcastillo",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 602,
+        "alt": {
+          "en": "A sloping street in Colonia Tovar with half-timbered buildings and palm trees",
+          "de": "Eine abschüssige Straße in Colonia Tovar mit Fachwerkbauten und Palmen"
+        }
+      }
+    },
+    {
+      "name": "Los Llanos",
+      "description": {
+        "en": "Flat grassland the size of Britain that floods to the horizon from May and dries to cracked clay by February. As the water goes the wildlife concentrates: capybara in the hundreds, caiman stacked along the last channels, scarlet ibis, anacondas. Cattle ranches called hatos work it on horseback, and the songs the llaneros sing there are the joropo.",
+        "de": "Flaches Grasland von der Größe Großbritanniens, das ab Mai bis zum Horizont überflutet und bis Februar zu rissigem Lehm trocknet. Mit dem Wasser konzentriert sich das Leben: Wasserschweine zu Hunderten, Kaimane an den letzten Kanälen, Scharlachsichler, Anakondas. Rinderhöfe, hatos genannt, bewirtschaften es zu Pferd, und die Lieder der Llaneros sind der Joropo."
+      },
+      "lat": 7.8939,
+      "lng": -67.4711,
+      "emoji": "🦜",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Hato_El_Cedral_Llanos_de_Venezuela_2015-02-05_11.33.14.jpg/960px-Hato_El_Cedral_Llanos_de_Venezuela_2015-02-05_11.33.14.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hato_El_Cedral_Llanos_de_Venezuela_2015-02-05_11.33.14.jpg",
+        "author": "Josefito123",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 720,
+        "alt": {
+          "en": "A channel of still water edged with floating plants crossing flat green grassland",
+          "de": "Ein stiller Wasserlauf mit Schwimmpflanzen am Rand quert flaches grünes Grasland"
+        }
+      }
+    }
+  ],
+  "food": [
+    {
+      "name": "la arepa",
+      "description": {
+        "en": "A disc of ground maize dough cooked on a griddle until a crust forms, then split like a pocket and filled. The reina pepiada — chicken, avocado, mayonnaise — was named in 1955 for a Caracas beauty queen. Areperas open at six in the morning and again at midnight, and both shifts are busy.",
+        "de": "Eine Scheibe aus Maisteig, auf der Platte gebacken, bis sich eine Kruste bildet, dann wie eine Tasche aufgeschnitten und gefüllt. Die reina pepiada — Huhn, Avocado, Mayonnaise — wurde 1955 nach einer Schönheitskönigin aus Caracas benannt. Areperas öffnen um sechs Uhr früh und noch einmal um Mitternacht."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Arepa-reina-pepiada-arepasdelgringo.jpg/960px-Arepa-reina-pepiada-arepasdelgringo.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Arepa-reina-pepiada-arepasdelgringo.jpg",
+        "author": "Mitdralla",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "A split arepa filled with avocado and chicken salad, half an avocado beside it",
+          "de": "Eine aufgeschnittene Arepa mit Avocado-Hühner-Salat gefüllt, daneben eine halbe Avocado"
+        }
+      }
+    },
+    {
+      "name": "el pabellón criollo",
+      "description": {
+        "en": "Four things on one plate and never stirred together: shredded beef in tomato, black caraotas, white rice, fried sweet plantain. A fried egg on top makes it 'a caballo'. The story that the four parts stand for the peoples of Venezuela is popular and almost certainly invented after the fact.",
+        "de": "Vier Dinge auf einem Teller, nie untereinandergerührt: zerzupftes Rindfleisch in Tomate, schwarze Caraotas, weißer Reis, gebratene süße Kochbanane. Ein Spiegelei obendrauf macht daraus 'a caballo'. Die Geschichte, die vier Teile stünden für die Völker Venezuelas, ist beliebt und fast sicher nachträglich erfunden."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pabell%C3%B3n_Criollo_de_Venezuela.jpg/960px-Pabell%C3%B3n_Criollo_de_Venezuela.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Pabell%C3%B3n_Criollo_de_Venezuela.jpg",
+        "author": "Acvarivs",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 643,
+        "alt": {
+          "en": "A plate with shredded beef, black beans, white rice and fried plantain kept apart",
+          "de": "Ein Teller mit zerzupftem Rindfleisch, schwarzen Bohnen, weißem Reis und Kochbanane getrennt"
+        }
+      }
+    },
+    {
+      "name": "la hallaca",
+      "description": {
+        "en": "Maize dough coloured with annatto, wrapped around a stew of beef, pork, chicken, olives, capers and raisins, tied up in plantain leaves and boiled. It is made once a year on an assembly line of aunts, and every family is certain its own recipe is the correct one.",
+        "de": "Maisteig, mit Annatto gefärbt, um einen Schmortopf aus Rind, Schwein, Huhn, Oliven, Kapern und Rosinen gelegt, in Bananenblätter gebunden und gekocht. Gemacht wird sie einmal im Jahr am Fließband der Tanten, und jede Familie ist sicher, dass ihr Rezept das richtige ist."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg/960px-Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Hallacas_con_pan_de_jamon,_plato_Venezuelano.jpg",
+        "author": "Wilfredor",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 670,
+        "alt": {
+          "en": "A parcel tied up in plantain leaves on a plate, with slices of rolled ham bread around it",
+          "de": "Ein in Bananenblätter gebundenes Päckchen auf einem Teller, ringsum Scheiben Schinkenbrot"
+        }
+      }
+    },
+    {
+      "name": "la cachapa",
+      "description": {
+        "en": "A thick pancake of fresh sweet corn, ground and cooked on a griddle, folded over a slab of queso de mano — a soft white cheese pulled by hand that squeaks against your teeth. Sweet against salty, eaten with the fingers, sold from stands on the way out of every city.",
+        "de": "Ein dicker Pfannkuchen aus frischem Zuckermais, gemahlen und auf der Platte gebacken, um eine Scheibe queso de mano geklappt — einen weichen weißen Käse, von Hand gezogen, der zwischen den Zähnen quietscht. Süß gegen salzig, mit den Fingern gegessen, an Ständen jeder Ausfallstraße verkauft."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cachapas_con_queso_de_mano.JPG/960px-Cachapas_con_queso_de_mano.JPG",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Cachapas_con_queso_de_mano.JPG",
+        "author": "Patricia Vegas",
+        "license": "CC BY-SA 3.0",
+        "width": 960,
+        "height": 640,
+        "alt": {
+          "en": "Yellow corn pancakes cooking on a large flat griddle, white cheese laid on some",
+          "de": "Gelbe Maispfannkuchen garen auf einer großen Grillplatte, auf einigen liegt weißer Käse"
+        }
+      }
+    },
+    {
+      "name": "el papelón con limón",
+      "description": {
+        "en": "Unrefined cane sugar in a hard block, shaved into water with lime juice and drunk cold over ice. It is what a Venezuelan household makes instead of buying a soft drink, and what building crews drink at eleven in the morning. Warm, with milk, it counts as a cure for a cold.",
+        "de": "Unraffinierter Rohrzucker als harter Block, ins Wasser geraspelt, dazu Limettensaft, kalt auf Eis getrunken. Genau das macht ein venezolanischer Haushalt, statt Limonade zu kaufen, und Bautrupps trinken es um elf Uhr vormittags. Warm mit Milch gilt es als Mittel gegen Erkältung."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Papel%C3%B3n_con_lim%C3%B3n_2.jpg/960px-Papel%C3%B3n_con_lim%C3%B3n_2.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Papel%C3%B3n_con_lim%C3%B3n_2.jpg",
+        "author": "Muago",
+        "license": "CC0",
+        "width": 960,
+        "height": 1280,
+        "alt": {
+          "en": "A plastic cup of reddish-brown iced drink with lime slices and a straw",
+          "de": "Ein Plastikbecher mit rotbraunem Eisgetränk, Limettenscheiben und Strohhalm"
+        }
+      }
+    }
+  ],
+  "festivals": [
+    {
+      "name": "Diablos Danzantes de Yare",
+      "when": {
+        "en": "Corpus Christi, in May or June",
+        "de": "Fronleichnam, im Mai oder Juni"
+      },
+      "description": {
+        "en": "Men in red from head to foot and horned papier-mâché masks dance backwards through San Francisco de Yare towards the church, then kneel at the door: evil submitting to the sacrament. The brotherhoods have run it since the 1700s, membership passes from father to son, and many dance to keep a promise.",
+        "de": "Männer, von Kopf bis Fuß in Rot und mit gehörnten Pappmaché-Masken, tanzen rückwärts durch San Francisco de Yare zur Kirche und knien am Portal: das Böse beugt sich dem Sakrament. Die Bruderschaften tragen das seit dem 18. Jahrhundert, die Mitgliedschaft geht vom Vater auf den Sohn, viele tanzen für ein Versprechen."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dancing_Devils_of_Yare_Mask_from_Venezuela.jpg/960px-Dancing_Devils_of_Yare_Mask_from_Venezuela.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Dancing_Devils_of_Yare_Mask_from_Venezuela.jpg",
+        "author": "Wilfredor",
+        "license": "CC0",
+        "width": 960,
+        "height": 752,
+        "alt": {
+          "en": "A horned papier-mâché devil mask with a wide red grin, on a white background",
+          "de": "Eine gehörnte Teufelsmaske aus Pappmaché mit breitem rotem Grinsen vor weißem Grund"
+        }
+      }
+    },
+    {
+      "name": "La Divina Pastora",
+      "when": {
+        "en": "14 January",
+        "de": "14. Januar"
+      },
+      "description": {
+        "en": "The image leaves its village church in Santa Rosa and is carried the seven kilometres into Barquisimeto on foot, in front of a crowd counted in the millions. It has made the walk every January since 1856, when a priest asked it to end a cholera epidemic and the epidemic ended.",
+        "de": "Das Bildnis verlässt seine Dorfkirche in Santa Rosa und wird die sieben Kilometer nach Barquisimeto zu Fuß getragen, vor einer Menge, die in Millionen gezählt wird. Diesen Weg geht es jeden Januar seit 1856, als ein Priester es um das Ende einer Choleraepidemie bat — und die Epidemie endete."
+      },
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/La_Divina_Pastora_en_la_procesi%C3%B3n.jpg/960px-La_Divina_Pastora_en_la_procesi%C3%B3n.jpg",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Divina_Pastora_en_la_procesi%C3%B3n.jpg",
+        "author": "Rodolfo pimentel",
+        "license": "CC BY-SA 4.0",
+        "width": 960,
+        "height": 655,
+        "alt": {
+          "en": "A dense crowd filling a street with a flower-covered image carried above their heads",
+          "de": "Eine dichte Menge füllt eine Straße, über den Köpfen ein blumengeschmücktes Bildnis"
+        }
+      }
+    },
+    {
+      "name": "Carnaval de El Callao",
+      "when": {
+        "en": "the four days before Ash Wednesday",
+        "de": "die vier Tage vor Aschermittwoch"
+      },
+      "description": {
+        "en": "A gold-mining town in the far east where calypso is sung in Spanish, brought over by Antillean workers from Trinidad in the 1800s. The madamas lead it: women in bright checked dresses and headwraps, dancing the memory of the Caribbean grandmothers who founded half the town.",
+        "de": "Eine Goldgräberstadt im äußersten Osten, in der Calypso auf Spanisch gesungen wird — hergebracht von antillischen Arbeitern aus Trinidad im 19. Jahrhundert. Angeführt wird er von den Madamas: Frauen in bunt karierten Kleidern und Kopftüchern, die das Andenken der karibischen Großmütter tanzen."
+      }
+    }
+  ],
+  "etiquette": [
+    {
+      "title": "El saludo",
+      "text": {
+        "en": "One kiss on the cheek for a woman, a handshake or a hug between men, and it happens every single time you meet — including twice on the same day.",
+        "de": "Ein Wangenkuss für eine Frau, unter Männern Handschlag oder Umarmung, und zwar bei jeder Begegnung — auch zweimal am selben Tag."
+      }
+    },
+    {
+      "title": "Ahorita",
+      "text": {
+        "en": "In Venezuela 'ahorita' means shortly, not now, which is the opposite of the Mexican use. A 'ya voy' called from the next room can mean anything up to twenty minutes.",
+        "de": "In Venezuela heißt 'ahorita' gleich, nicht jetzt — das Gegenteil des mexikanischen Gebrauchs. Ein 'ya voy' aus dem Nebenzimmer kann bis zu zwanzig Minuten bedeuten."
+      }
+    },
+    {
+      "title": "Dame la cola",
+      "text": {
+        "en": "'Cola' is both a queue and a lift in the car. Asking a colleague for 'la cola' home is completely normal and is not the imposition it sounds like in English.",
+        "de": "'Cola' heißt Warteschlange und Mitfahrgelegenheit zugleich. Einen Kollegen um 'la cola' nach Hause zu bitten, ist völlig normal und nicht die Zumutung, nach der es klingt."
+      }
+    },
+    {
+      "title": "El tú",
+      "text": {
+        "en": "Almost everyone gets 'tú', including your boss's boss. 'Usted' is kept for the elderly and for officials, and too much of it reads as deliberately keeping distance.",
+        "de": "Fast jeder bekommt 'tú', auch der Chef des Chefs. 'Usted' bleibt Älteren und Behörden vorbehalten, und zu viel davon liest sich als bewusstes Abstandhalten."
+      }
+    },
+    {
+      "title": "La propina",
+      "text": {
+        "en": "Restaurants add 10 % as 'servicio' and it does not always reach the waiter, so a little cash left on the table on top of it is the normal courtesy.",
+        "de": "Restaurants schlagen 10 % als 'servicio' auf, die nicht immer beim Kellner ankommen — etwas Bargeld zusätzlich auf dem Tisch ist deshalb die übliche Höflichkeit."
+      }
+    },
+    {
+      "title": "La arepa",
+      "text": {
+        "en": "The arepa is claimed by Venezuela and Colombia alike and the argument is not a joke. Calling it Colombian in Caracas will cost you the rest of the conversation.",
+        "de": "Die Arepa beanspruchen Venezuela und Kolumbien gleichermaßen, und der Streit ist kein Scherz. Wer sie in Caracas kolumbianisch nennt, hat den Rest des Gesprächs verloren."
+      }
     }
   ]
 }
