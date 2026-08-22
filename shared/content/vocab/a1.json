@@ -21,26 +21,15 @@
     {
       "es": "ella",
       "de": "sie",
-      "en": [
-        "she",
-        "her"
-      ],
+      "en": "she",
       "pos": "pron",
       "rank": 2,
       "example": "Ella es médica."
     },
     {
       "es": "la",
-      "de": [
-        "die",
-        "ihn",
-        "sie"
-      ],
-      "en": [
-        "the",
-        "her",
-        "it"
-      ],
+      "de": "die",
+      "en": "the",
       "pos": "art",
       "rank": 2
     },
@@ -53,14 +42,8 @@
     },
     {
       "es": "el",
-      "de": [
-        "der",
-        "ihn"
-      ],
-      "en": [
-        "the",
-        "him"
-      ],
+      "de": "der",
+      "en": "the",
       "pos": "art",
       "rank": 4
     },
@@ -74,12 +57,12 @@
     {
       "es": "haber",
       "de": [
-        "haben",
+        "haben (Hilfsverb)",
         "es gibt"
       ],
       "en": [
-        "to have",
-        "there to be"
+        "to have (aux.)",
+        "there is/are"
       ],
       "pos": "v",
       "rank": 4
@@ -94,8 +77,14 @@
     },
     {
       "es": "no",
-      "de": "nicht",
-      "en": "not",
+      "de": [
+        "nicht",
+        "nein"
+      ],
+      "en": [
+        "not",
+        "no"
+      ],
       "pos": "adv",
       "rank": 6,
       "example": "No, gracias."
@@ -124,39 +113,23 @@
     },
     {
       "es": "él",
-      "de": [
-        "er",
-        "ihn",
-        "ihm"
-      ],
-      "en": [
-        "he",
-        "him"
-      ],
+      "de": "er",
+      "en": "he",
       "pos": "pron",
       "rank": 9,
       "example": "Él trabaja aquí."
     },
     {
       "es": "ellos",
-      "de": [
-        "sie",
-        "ihnen"
-      ],
-      "en": [
-        "they",
-        "them"
-      ],
+      "de": "sie",
+      "en": "they",
       "pos": "pron",
       "rank": 9,
       "example": "Ellos son hermanos."
     },
     {
       "es": "estar",
-      "de": [
-        "sein",
-        "sich befinden"
-      ],
+      "de": "sein (Zustand, Ort)",
       "en": "to be",
       "pos": "v",
       "rank": 10,
@@ -165,46 +138,28 @@
     {
       "es": "un",
       "de": "ein",
-      "en": [
-        "a",
-        "an"
-      ],
+      "en": "a",
       "pos": "art",
       "rank": 11
     },
     {
       "es": "una",
       "de": "eine",
-      "en": [
-        "a",
-        "an"
-      ],
+      "en": "a",
       "pos": "art",
       "rank": 11
     },
     {
       "es": "uno",
-      "de": [
-        "eins",
-        "man"
-      ],
-      "en": [
-        "one",
-        "someone"
-      ],
+      "de": "eins",
+      "en": "one",
       "pos": "num",
       "rank": 11
     },
     {
       "es": "bien",
-      "de": [
-        "gut",
-        "wohl"
-      ],
-      "en": [
-        "well",
-        "good"
-      ],
+      "de": "gut",
+      "en": "well",
       "pos": "adv",
       "rank": 11
     },
@@ -226,7 +181,7 @@
       "en": [
         "for",
         "by",
-        "through"
+        "because of"
       ],
       "pos": "prep",
       "rank": 14
@@ -267,15 +222,8 @@
     },
     {
       "es": "así",
-      "de": [
-        "so",
-        "auf diese Weise"
-      ],
-      "en": [
-        "so",
-        "thus",
-        "like this"
-      ],
+      "de": "so",
+      "en": "so",
       "pos": "adv",
       "rank": 22
     },
@@ -295,10 +243,13 @@
     },
     {
       "es": "poder",
-      "de": "können",
+      "de": [
+        "können",
+        "dürfen"
+      ],
       "en": [
         "to be able to",
-        "can"
+        "to may"
       ],
       "pos": "v",
       "rank": 24,
@@ -306,14 +257,8 @@
     },
     {
       "es": "vez",
-      "de": [
-        "das Mal",
-        "die Gelegenheit"
-      ],
-      "en": [
-        "time",
-        "occasion"
-      ],
+      "de": "das Mal",
+      "en": "time (occasion)",
       "pos": "n",
       "rank": 24
     },
@@ -325,17 +270,14 @@
       ],
       "en": [
         "for",
-        "to"
+        "in order to"
       ],
       "pos": "prep",
       "rank": 25
     },
     {
       "es": "decir",
-      "de": [
-        "sagen",
-        "erzählen"
-      ],
+      "de": "sagen",
       "en": [
         "to say",
         "to tell"
@@ -359,7 +301,7 @@
       ],
       "en": [
         "only",
-        "just"
+        "alone"
       ],
       "pos": "adv",
       "rank": 29
@@ -376,19 +318,18 @@
       "es": "sentir",
       "de": [
         "fühlen",
-        "spüren",
-        "empfinden"
+        "bedauern"
       ],
-      "en": "to feel",
+      "en": [
+        "to feel",
+        "to be sorry"
+      ],
       "pos": "v",
       "rank": 30
     },
     {
       "es": "pero",
-      "de": [
-        "aber",
-        "sondern"
-      ],
+      "de": "aber",
       "en": "but",
       "pos": "conj",
       "rank": 31
@@ -419,19 +360,19 @@
       "es": "saber",
       "de": [
         "wissen",
-        "kennen"
+        "können"
       ],
-      "en": "to know",
+      "en": [
+        "to know",
+        "to know how to"
+      ],
       "pos": "v",
       "rank": 38,
       "example": "No sé."
     },
     {
       "es": "cosa",
-      "de": [
-        "das Ding",
-        "die Sache"
-      ],
+      "de": "das Ding",
       "en": "thing",
       "pos": "n",
       "rank": 38
@@ -446,24 +387,17 @@
     },
     {
       "es": "señor",
-      "de": [
-        "der Herr",
-        "der Mann"
-      ],
+      "de": "der Herr",
       "en": [
-        "gentleman",
         "sir",
-        "lord"
+        "gentleman"
       ],
       "pos": "n",
       "rank": 41
     },
     {
       "es": "mirar",
-      "de": [
-        "schauen",
-        "ansehen"
-      ],
+      "de": "schauen",
       "en": [
         "to look",
         "to watch"
@@ -473,7 +407,10 @@
     },
     {
       "es": "mucho",
-      "de": "viel",
+      "de": [
+        "viel",
+        "sehr"
+      ],
       "en": [
         "much",
         "a lot"
@@ -485,8 +422,8 @@
     {
       "es": "mismo",
       "de": [
-        "selbst",
-        "gleich"
+        "derselbe",
+        "selbst"
       ],
       "en": [
         "same",
@@ -530,27 +467,19 @@
       "es": "entonces",
       "de": [
         "dann",
-        "damals"
+        "also"
       ],
       "en": [
         "then",
-        "at that time"
+        "so"
       ],
       "pos": "adv",
       "rank": 51
     },
     {
       "es": "volver",
-      "de": [
-        "zurückkehren",
-        "wiederkommen",
-        "wiederholen"
-      ],
-      "en": [
-        "to return",
-        "to come back",
-        "to turn"
-      ],
+      "de": "zurückkehren",
+      "en": "to return",
       "pos": "v",
       "rank": 53
     },
@@ -579,14 +508,8 @@
     },
     {
       "es": "mejor",
-      "de": [
-        "besser",
-        "am besten"
-      ],
-      "en": [
-        "better",
-        "best"
-      ],
+      "de": "besser",
+      "en": "better",
       "pos": "adj",
       "rank": 57
     },
@@ -594,21 +517,15 @@
       "es": "primero",
       "de": [
         "erste",
-        "erstens"
+        "zuerst"
       ],
-      "en": [
-        "first",
-        "firstly"
-      ],
+      "en": "first",
       "pos": "adj",
       "rank": 58
     },
     {
       "es": "hablar",
-      "de": [
-        "sprechen",
-        "reden"
-      ],
+      "de": "sprechen",
       "en": [
         "to speak",
         "to talk"
@@ -644,8 +561,7 @@
       "es": "tomar",
       "de": [
         "nehmen",
-        "trinken",
-        "einnehmen"
+        "trinken"
       ],
       "en": [
         "to take",
@@ -657,7 +573,7 @@
     {
       "es": "usted",
       "de": "Sie",
-      "en": "you",
+      "en": "you (formal)",
       "pos": "pron",
       "rank": 65,
       "example": "¿Cómo está usted?"
@@ -671,15 +587,8 @@
     },
     {
       "es": "chico",
-      "de": [
-        "der Junge",
-        "der Knabe",
-        "der kleine Mann"
-      ],
-      "en": [
-        "boy",
-        "kid"
-      ],
+      "de": "der Junge",
+      "en": "boy",
       "pos": "n",
       "rank": 67
     },
@@ -687,23 +596,16 @@
       "es": "poner",
       "de": [
         "stellen",
-        "legen",
-        "ziehen"
+        "legen"
       ],
-      "en": [
-        "to put",
-        "to place"
-      ],
+      "en": "to put",
       "pos": "v",
       "rank": 68
     },
     {
       "es": "oír",
       "de": "hören",
-      "en": [
-        "to hear",
-        "to listen"
-      ],
+      "en": "to hear",
       "pos": "v",
       "rank": 69
     },
@@ -733,10 +635,7 @@
     },
     {
       "es": "favor",
-      "de": [
-        "der Gefallen",
-        "die Gunst"
-      ],
+      "de": "der Gefallen",
       "en": "favor",
       "pos": "n",
       "rank": 74
@@ -744,10 +643,7 @@
     {
       "es": "menos",
       "de": "weniger",
-      "en": [
-        "less",
-        "fewer"
-      ],
+      "en": "less",
       "pos": "adv",
       "rank": 75,
       "example": "Menos azúcar."
@@ -755,8 +651,8 @@
     {
       "es": "gustar",
       "de": [
-        "mögen",
-        "gefallen"
+        "gefallen",
+        "mögen"
       ],
       "en": "to like",
       "pos": "v",
@@ -766,7 +662,6 @@
       "es": "seguir",
       "de": [
         "folgen",
-        "weitergehen",
         "weitermachen"
       ],
       "en": [
@@ -800,10 +695,7 @@
         "der Mann",
         "der Mensch"
       ],
-      "en": [
-        "man",
-        "human"
-      ],
+      "en": "man",
       "pos": "n",
       "gender": "m",
       "rank": 80,
@@ -819,10 +711,7 @@
     },
     {
       "es": "ahora",
-      "de": [
-        "jetzt",
-        "nun"
-      ],
+      "de": "jetzt",
       "en": "now",
       "pos": "adv",
       "rank": 80,
@@ -830,48 +719,29 @@
     },
     {
       "es": "papá",
-      "de": [
-        "der Papa",
-        "der Vater"
-      ],
-      "en": [
-        "dad",
-        "father"
-      ],
+      "de": "der Papa",
+      "en": "dad",
       "pos": "n",
       "rank": 81
     },
     {
       "es": "poco",
-      "de": [
-        "wenig",
-        "ein bisschen"
-      ],
-      "en": [
-        "little",
-        "a little"
-      ],
+      "de": "wenig",
+      "en": "little",
       "pos": "adv",
       "rank": 85,
       "example": "Un poco más."
     },
     {
       "es": "ahí",
-      "de": [
-        "da",
-        "dort"
-      ],
+      "de": "da",
       "en": "there",
       "pos": "adv",
       "rank": 85
     },
     {
       "es": "parte",
-      "de": [
-        "der Teil",
-        "die Partie",
-        "die Rolle"
-      ],
+      "de": "der Teil",
       "en": "part",
       "pos": "n",
       "rank": 89
@@ -880,8 +750,7 @@
       "es": "salir",
       "de": [
         "hinausgehen",
-        "ausgehen",
-        "verlassen"
+        "ausgehen"
       ],
       "en": [
         "to go out",
@@ -915,49 +784,35 @@
     },
     {
       "es": "mi",
-      "de": "das Mi",
-      "en": "mi",
+      "de": "mein",
+      "en": "my",
       "pos": "n",
       "rank": 90
     },
     {
       "es": "acuerdo",
-      "de": [
-        "die Vereinbarung",
-        "das Abkommen",
-        "die Einigung"
-      ],
+      "de": "die Vereinbarung",
       "en": "agreement",
       "pos": "n",
       "rank": 91
     },
     {
       "es": "momento",
-      "de": [
-        "der Moment",
-        "der Augenblick"
-      ],
+      "de": "der Moment",
       "en": "moment",
       "pos": "n",
       "rank": 93
     },
     {
       "es": "matar",
-      "de": [
-        "töten",
-        "umbringen"
-      ],
+      "de": "töten",
       "en": "to kill",
       "pos": "v",
       "rank": 94
     },
     {
       "es": "pensar",
-      "de": [
-        "denken",
-        "nachdenken",
-        "glauben"
-      ],
+      "de": "denken",
       "en": "to think",
       "pos": "v",
       "rank": 95,
@@ -980,26 +835,17 @@
     },
     {
       "es": "seguro",
-      "de": [
-        "sicher",
-        "versichert",
-        "geglückt"
-      ],
+      "de": "sicher",
       "en": [
         "safe",
-        "sure",
-        "insured"
+        "sure"
       ],
       "pos": "adj",
       "rank": 95
     },
     {
       "es": "gente",
-      "de": [
-        "die Leute",
-        "die Menschen",
-        "das Volk"
-      ],
+      "de": "die Leute",
       "en": "people",
       "pos": "n",
       "rank": 97
@@ -1023,21 +869,14 @@
     },
     {
       "es": "lugar",
-      "de": [
-        "der Ort",
-        "der Platz",
-        "die Stelle"
-      ],
+      "de": "der Ort",
       "en": "place",
       "pos": "n",
       "rank": 102
     },
     {
       "es": "persona",
-      "de": [
-        "die Person",
-        "der Mensch"
-      ],
+      "de": "die Person",
       "en": "person",
       "pos": "n",
       "rank": 105
@@ -1050,8 +889,7 @@
       ],
       "en": [
         "guy",
-        "type",
-        "kind"
+        "type"
       ],
       "pos": "n",
       "rank": 106
@@ -1060,8 +898,7 @@
       "es": "claro",
       "de": [
         "klar",
-        "hell",
-        "verständlich"
+        "hell"
       ],
       "en": [
         "clear",
@@ -1072,10 +909,7 @@
     },
     {
       "es": "entender",
-      "de": [
-        "verstehen",
-        "begreifen"
-      ],
+      "de": "verstehen",
       "en": "to understand",
       "pos": "v",
       "rank": 108
@@ -1099,14 +933,8 @@
     },
     {
       "es": "grande",
-      "de": [
-        "groß",
-        "toll"
-      ],
-      "en": [
-        "big",
-        "great"
-      ],
+      "de": "groß",
+      "en": "big",
       "pos": "adj",
       "rank": 110,
       "example": "Una casa grande."
@@ -1120,29 +948,15 @@
     },
     {
       "es": "fuera",
-      "de": [
-        "außen",
-        "draußen",
-        "weg"
-      ],
-      "en": [
-        "outside",
-        "away"
-      ],
+      "de": "draußen",
+      "en": "outside",
       "pos": "adv",
       "rank": 110
     },
     {
       "es": "acabar",
-      "de": [
-        "beenden",
-        "gerade (fertig sein)"
-      ],
-      "en": [
-        "to finish",
-        "to end",
-        "to have just (done something)"
-      ],
+      "de": "beenden",
+      "en": "to finish",
       "pos": "v",
       "rank": 111
     },
@@ -1150,12 +964,10 @@
       "es": "tratar",
       "de": [
         "behandeln",
-        "handeln",
         "versuchen"
       ],
       "en": [
         "to treat",
-        "to deal with",
         "to try"
       ],
       "pos": "v",
@@ -1164,10 +976,7 @@
     {
       "es": "último",
       "de": "letzte",
-      "en": [
-        "last",
-        "latest"
-      ],
+      "en": "last",
       "pos": "adj",
       "rank": 114
     },
@@ -1181,14 +990,12 @@
     {
       "es": "valer",
       "de": [
-        "kosten",
         "wert sein",
-        "taugen"
+        "kosten"
       ],
       "en": [
-        "to cost",
         "to be worth",
-        "to be valid"
+        "to cost"
       ],
       "pos": "v",
       "rank": 121
@@ -1202,51 +1009,29 @@
     },
     {
       "es": "tanto",
-      "de": [
-        "so viel",
-        "so sehr"
-      ],
-      "en": [
-        "so much",
-        "so many",
-        "so"
-      ],
+      "de": "so viel",
+      "en": "so much",
       "pos": "adv",
       "rank": 126
     },
     {
       "es": "caso",
-      "de": [
-        "der Fall",
-        "der Anlass"
-      ],
-      "en": [
-        "case",
-        "instance"
-      ],
+      "de": "der Fall",
+      "en": "case",
       "pos": "n",
       "rank": 127
     },
     {
       "es": "nombre",
-      "de": [
-        "der Name",
-        "der Vorname"
-      ],
+      "de": "der Name",
       "en": "name",
       "pos": "n",
       "rank": 128
     },
     {
       "es": "entrar",
-      "de": [
-        "eintreten",
-        "hereinkommen"
-      ],
-      "en": [
-        "to enter",
-        "to go in"
-      ],
+      "de": "eintreten",
+      "en": "to enter",
       "pos": "v",
       "rank": 130,
       "example": "Entra, por favor."
@@ -1261,10 +1046,7 @@
     {
       "es": "pequeño",
       "de": "klein",
-      "en": [
-        "small",
-        "little"
-      ],
+      "en": "small",
       "pos": "adj",
       "rank": 130,
       "example": "Un perro pequeño."
@@ -1284,7 +1066,6 @@
         "die Art und Weise"
       ],
       "en": [
-        "form",
         "shape",
         "way"
       ],
@@ -1294,13 +1075,12 @@
     {
       "es": "conseguir",
       "de": [
-        "erreichen",
-        "bekommen"
+        "bekommen",
+        "erreichen"
       ],
       "en": [
         "to get",
-        "to achieve",
-        "to obtain"
+        "to achieve"
       ],
       "pos": "v",
       "rank": 132
@@ -1309,12 +1089,10 @@
       "es": "pedir",
       "de": [
         "bitten",
-        "bestellen",
-        "fragen"
+        "bestellen"
       ],
       "en": [
         "to ask for",
-        "to request",
         "to order"
       ],
       "pos": "v",
@@ -1323,19 +1101,13 @@
     {
       "es": "intentar",
       "de": "versuchen",
-      "en": [
-        "to try",
-        "to attempt"
-      ],
+      "en": "to try",
       "pos": "v",
       "rank": 134
     },
     {
       "es": "traer",
-      "de": [
-        "bringen",
-        "mitbringen"
-      ],
+      "de": "bringen",
       "en": "to bring",
       "pos": "v",
       "rank": 135
@@ -1355,14 +1127,10 @@
     },
     {
       "es": "aún",
-      "de": [
-        "noch",
-        "sogar"
-      ],
+      "de": "noch",
       "en": [
         "still",
-        "yet",
-        "even"
+        "yet"
       ],
       "pos": "adv",
       "rank": 138
@@ -1370,24 +1138,19 @@
     {
       "es": "cuenta",
       "de": [
-        "das Konto",
         "die Rechnung",
-        "die Erzählung"
+        "das Konto"
       ],
       "en": [
-        "account",
         "bill",
-        "story"
+        "account"
       ],
       "pos": "n",
       "rank": 139
     },
     {
       "es": "trabajo",
-      "de": [
-        "die Arbeit",
-        "der Job"
-      ],
+      "de": "die Arbeit",
       "en": [
         "work",
         "job"
@@ -1400,13 +1163,10 @@
     {
       "es": "razón",
       "de": [
-        "die Vernunft",
-        "der Grund"
+        "der Grund",
+        "die Vernunft"
       ],
-      "en": [
-        "reason",
-        "right"
-      ],
+      "en": "reason",
       "pos": "n",
       "rank": 140
     },
@@ -1418,7 +1178,6 @@
       ],
       "en": [
         "only",
-        "sole",
         "unique"
       ],
       "pos": "adj",
@@ -1426,25 +1185,14 @@
     },
     {
       "es": "suponer",
-      "de": [
-        "vermuten",
-        "voraussetzen",
-        "bedeuten"
-      ],
-      "en": [
-        "to suppose",
-        "to assume",
-        "to imply"
-      ],
+      "de": "vermuten",
+      "en": "to suppose",
       "pos": "v",
       "rank": 146
     },
     {
       "es": "muerto",
-      "de": [
-        "tot",
-        "gestorben"
-      ],
+      "de": "tot",
       "en": "dead",
       "pos": "adj",
       "rank": 147
@@ -1457,7 +1205,7 @@
       ],
       "en": [
         "hour",
-        "time"
+        "time (of day)"
       ],
       "pos": "n",
       "gender": "f",
@@ -1475,12 +1223,10 @@
       "es": "cierto",
       "de": [
         "sicher",
-        "gewiss",
-        "bestimmt"
+        "wahr"
       ],
       "en": [
         "certain",
-        "sure",
         "true"
       ],
       "pos": "adj",
@@ -1504,17 +1250,14 @@
       ],
       "en": [
         "to change",
-        "to alter"
+        "to exchange"
       ],
       "pos": "v",
       "rank": 154
     },
     {
       "es": "usar",
-      "de": [
-        "benutzen",
-        "verwenden"
-      ],
+      "de": "benutzen",
       "en": "to use",
       "pos": "v",
       "rank": 156
@@ -1548,57 +1291,32 @@
     },
     {
       "es": "sacar",
-      "de": [
-        "herausnehmen",
-        "holen",
-        "entfernen"
-      ],
-      "en": [
-        "to take out",
-        "to remove",
-        "to get"
-      ],
+      "de": "herausnehmen",
+      "en": "to take out",
       "pos": "v",
       "rank": 160
     },
     {
       "es": "mantener",
-      "de": [
-        "halten",
-        "aufrechterhalten",
-        "unterhalten"
-      ],
+      "de": "halten",
       "en": [
-        "to maintain",
         "to keep",
-        "to support"
+        "to maintain"
       ],
       "pos": "v",
       "rank": 161
     },
     {
       "es": "realmente",
-      "de": [
-        "wirklich",
-        "tatsächlich"
-      ],
-      "en": [
-        "really",
-        "actually"
-      ],
+      "de": "wirklich",
+      "en": "really",
       "pos": "adv",
       "rank": 162
     },
     {
       "es": "serio",
-      "de": [
-        "ernst",
-        "schwerwiegend"
-      ],
-      "en": [
-        "serious",
-        "grave"
-      ],
+      "de": "ernst",
+      "en": "serious",
       "pos": "adj",
       "rank": 163
     },
@@ -1625,23 +1343,14 @@
     {
       "es": "mierda",
       "de": "die Scheiße",
-      "en": [
-        "shit",
-        "crap"
-      ],
+      "en": "shit",
       "pos": "n",
       "rank": 167
     },
     {
       "es": "propio",
-      "de": [
-        "eigen",
-        "besitzend"
-      ],
-      "en": [
-        "own",
-        "proper"
-      ],
+      "de": "eigen",
+      "en": "own",
       "pos": "adj",
       "rank": 169
     },
@@ -1670,68 +1379,36 @@
     },
     {
       "es": "lado",
-      "de": [
-        "die Seite",
-        "die Hälfte"
-      ],
-      "en": [
-        "side",
-        "page"
-      ],
+      "de": "die Seite",
+      "en": "side",
       "pos": "n",
       "rank": 172
     },
     {
       "es": "junto",
-      "de": [
-        "zusammen",
-        "nahe"
-      ],
-      "en": [
-        "close",
-        "together"
-      ],
+      "de": "zusammen",
+      "en": "together",
       "pos": "adj",
       "rank": 173
     },
     {
       "es": "manera",
-      "de": [
-        "die Art und Weise",
-        "die Methode"
-      ],
-      "en": [
-        "way",
-        "manner"
-      ],
+      "de": "die Art und Weise",
+      "en": "way",
       "pos": "n",
       "rank": 174
     },
     {
       "es": "cabeza",
-      "de": [
-        "der Kopf",
-        "der Leiter"
-      ],
-      "en": [
-        "head",
-        "leader"
-      ],
+      "de": "der Kopf",
+      "en": "head",
       "pos": "n",
       "rank": 175
     },
     {
       "es": "punto",
-      "de": [
-        "der Punkt",
-        "die Spitze (Ziel)",
-        "der Stand (Spielstand)"
-      ],
-      "en": [
-        "point",
-        "dot",
-        "period"
-      ],
+      "de": "der Punkt",
+      "en": "point",
       "pos": "n",
       "rank": 176
     },
@@ -1739,34 +1416,32 @@
       "es": "mayor",
       "de": [
         "größer",
-        "älter",
-        "der Haupt-"
+        "älter"
       ],
       "en": [
-        "greater",
-        "older",
-        "main"
+        "bigger",
+        "older"
       ],
       "pos": "adj",
       "rank": 177
     },
     {
       "es": "casi",
-      "de": [
-        "fast",
-        "beinahe"
-      ],
-      "en": [
-        "almost",
-        "nearly"
-      ],
+      "de": "fast",
+      "en": "almost",
       "pos": "adv",
       "rank": 179
     },
     {
       "es": "noche",
-      "de": "die Nacht",
-      "en": "night",
+      "de": [
+        "die Nacht",
+        "der Abend"
+      ],
+      "en": [
+        "night",
+        "evening"
+      ],
       "pos": "n",
       "gender": "f",
       "rank": 180,
@@ -1776,13 +1451,11 @@
       "es": "malo",
       "de": [
         "schlecht",
-        "böse",
-        "krank"
+        "böse"
       ],
       "en": [
         "bad",
-        "evil",
-        "poor"
+        "evil"
       ],
       "pos": "adj",
       "rank": 180,
@@ -1806,12 +1479,9 @@
       "es": "preocupar",
       "de": [
         "beunruhigen",
-        "sich Sorgen machen"
+        "sich sorgen"
       ],
-      "en": [
-        "to worry",
-        "to trouble"
-      ],
+      "en": "to worry",
       "pos": "v",
       "rank": 185
     },
@@ -1830,14 +1500,8 @@
     },
     {
       "es": "puerta",
-      "de": [
-        "die Tür",
-        "das Tor"
-      ],
-      "en": [
-        "door",
-        "gate"
-      ],
+      "de": "die Tür",
+      "en": "door",
       "pos": "n",
       "rank": 189
     },
@@ -1850,23 +1514,14 @@
     },
     {
       "es": "palabra",
-      "de": [
-        "das Wort",
-        "das Versprechen"
-      ],
-      "en": [
-        "word",
-        "promise"
-      ],
+      "de": "das Wort",
+      "en": "word",
       "pos": "n",
       "rank": 190
     },
     {
       "es": "ojo",
-      "de": [
-        "das Auge",
-        "die Öse"
-      ],
+      "de": "das Auge",
       "en": "eye",
       "pos": "n",
       "rank": 191
@@ -1875,59 +1530,45 @@
       "es": "medio",
       "de": [
         "die Mitte",
-        "das Mittel",
-        "der Halb-"
+        "das Mittel"
       ],
       "en": [
         "middle",
-        "means",
-        "half"
+        "means"
       ],
       "pos": "n",
       "rank": 193
     },
     {
       "es": "dentro",
-      "de": [
-        "drinnen",
-        "innen"
-      ],
-      "en": [
-        "inside",
-        "within"
-      ],
+      "de": "drinnen",
+      "en": "inside",
       "pos": "adv",
       "rank": 194
     },
     {
       "es": "jugar",
-      "de": [
-        "spielen",
-        "mitspielen"
-      ],
+      "de": "spielen",
       "en": "to play",
       "pos": "v",
       "rank": 196
     },
     {
       "es": "llamado",
-      "de": [
-        "genannt",
-        "sogenannt"
-      ],
-      "en": [
-        "called",
-        "named"
-      ],
+      "de": "genannt",
+      "en": "called",
       "pos": "adj",
       "rank": 197
     },
     {
       "es": "loco",
-      "de": "der Verrückte",
+      "de": [
+        "der Verrückte",
+        "verrückt"
+      ],
       "en": [
         "madman",
-        "crazy person"
+        "crazy"
       ],
       "pos": "n",
       "rank": 198
@@ -1936,13 +1577,11 @@
       "es": "ocurrir",
       "de": [
         "geschehen",
-        "passieren",
         "einfallen"
       ],
       "en": [
-        "to occur",
         "to happen",
-        "to come to mind"
+        "to occur to"
       ],
       "pos": "v",
       "rank": 199
@@ -1973,38 +1612,29 @@
     },
     {
       "es": "mañana",
-      "de": "morgen",
-      "en": "tomorrow",
+      "de": [
+        "morgen",
+        "der Morgen"
+      ],
+      "en": [
+        "tomorrow",
+        "morning"
+      ],
       "pos": "adv",
       "rank": 200,
       "example": "Hasta mañana."
     },
     {
       "es": "fin",
-      "de": [
-        "das Ende",
-        "das Ziel",
-        "der Zweck"
-      ],
-      "en": [
-        "end",
-        "purpose",
-        "goal"
-      ],
+      "de": "das Ende",
+      "en": "end",
       "pos": "n",
       "rank": 201
     },
     {
       "es": "camino",
-      "de": [
-        "der Weg",
-        "die Straße"
-      ],
-      "en": [
-        "path",
-        "way",
-        "road"
-      ],
+      "de": "der Weg",
+      "en": "path",
       "pos": "n",
       "rank": 203
     },
@@ -2017,28 +1647,15 @@
     },
     {
       "es": "permitir",
-      "de": [
-        "erlauben",
-        "zulassen"
-      ],
-      "en": [
-        "to permit",
-        "to allow"
-      ],
+      "de": "erlauben",
+      "en": "to permit",
       "pos": "v",
       "rank": 205
     },
     {
       "es": "recibir",
-      "de": [
-        "erhalten",
-        "empfangen",
-        "bekommen"
-      ],
-      "en": [
-        "to receive",
-        "to get"
-      ],
+      "de": "erhalten",
+      "en": "to receive",
       "pos": "v",
       "rank": 206
     },
@@ -2052,12 +1669,12 @@
     {
       "es": "suceder",
       "de": [
-        "nachfolgen",
-        "geschehen"
+        "geschehen",
+        "nachfolgen"
       ],
       "en": [
         "to happen",
-        "to succeed"
+        "to succeed (follow)"
       ],
       "pos": "v",
       "rank": 210
@@ -2078,40 +1695,28 @@
     },
     {
       "es": "general",
-      "de": [
-        "allgemein",
-        "der General"
-      ],
+      "de": "allgemein",
       "en": "general",
       "pos": "adj",
       "rank": 213
     },
     {
       "es": "realidad",
-      "de": [
-        "die Realität",
-        "die Wirklichkeit"
-      ],
+      "de": "die Realität",
       "en": "reality",
       "pos": "n",
       "rank": 215
     },
     {
       "es": "caer",
-      "de": [
-        "fallen",
-        "stürzen"
-      ],
+      "de": "fallen",
       "en": "to fall",
       "pos": "v",
       "rank": 216
     },
     {
       "es": "enviar",
-      "de": [
-        "senden",
-        "schicken"
-      ],
+      "de": "senden",
       "en": "to send",
       "pos": "v",
       "rank": 218
@@ -2119,8 +1724,8 @@
     {
       "es": "acercar",
       "de": [
-        "annähern",
-        "heranbringen"
+        "näher bringen",
+        "sich nähern"
       ],
       "en": [
         "to bring closer",
@@ -2161,14 +1766,8 @@
     },
     {
       "es": "viejo",
-      "de": [
-        "alt",
-        "ehemalig"
-      ],
-      "en": [
-        "old",
-        "former"
-      ],
+      "de": "alt",
+      "en": "old",
       "pos": "adj",
       "rank": 220,
       "example": "Un libro viejo."
@@ -2177,7 +1776,6 @@
       "es": "equipo",
       "de": [
         "die Mannschaft",
-        "das Team",
         "die Ausrüstung"
       ],
       "en": [
@@ -2189,85 +1787,50 @@
     },
     {
       "es": "ayuda",
-      "de": [
-        "die Hilfe",
-        "die Unterstützung"
-      ],
-      "en": [
-        "help",
-        "aid"
-      ],
+      "de": "die Hilfe",
+      "en": "help",
       "pos": "n",
       "rank": 221
     },
     {
       "es": "cuerpo",
-      "de": [
-        "der Körper",
-        "der Rumpf"
-      ],
+      "de": "der Körper",
       "en": "body",
       "pos": "n",
       "rank": 222
     },
     {
       "es": "jefe",
-      "de": [
-        "der Chef",
-        "der Leiter",
-        "der Häuptling"
-      ],
-      "en": [
-        "boss",
-        "chief",
-        "leader"
-      ],
+      "de": "der Chef",
+      "en": "boss",
       "pos": "n",
       "rank": 223
     },
     {
       "es": "presidente",
-      "de": [
-        "der Präsident",
-        "der Vorsitzende"
-      ],
-      "en": [
-        "president",
-        "chairman"
-      ],
+      "de": "der Präsident",
+      "en": "president",
       "pos": "n",
       "rank": 224
     },
     {
       "es": "mover",
-      "de": [
-        "bewegen",
-        "umziehen"
-      ],
+      "de": "bewegen",
       "en": "to move",
       "pos": "v",
       "rank": 225
     },
     {
       "es": "gobierno",
-      "de": [
-        "die Regierung",
-        "die Führung"
-      ],
-      "en": [
-        "government",
-        "rule"
-      ],
+      "de": "die Regierung",
+      "en": "government",
       "pos": "n",
       "rank": 228
     },
     {
       "es": "quizá",
       "de": "vielleicht",
-      "en": [
-        "perhaps",
-        "maybe"
-      ],
+      "en": "perhaps",
       "pos": "adv",
       "rank": 229
     },
@@ -2277,20 +1840,14 @@
         "studieren",
         "lernen"
       ],
-      "en": [
-        "study",
-        "learn"
-      ],
+      "en": "to study",
       "pos": "v",
       "rank": 230,
       "example": "Estudio español."
     },
     {
       "es": "nunca",
-      "de": [
-        "niemals",
-        "nie"
-      ],
+      "de": "niemals",
       "en": "never",
       "pos": "adv",
       "rank": 230,
@@ -2298,27 +1855,18 @@
     },
     {
       "es": "comenzar",
-      "de": [
-        "beginnen",
-        "anfangen"
-      ],
+      "de": "beginnen",
       "en": [
-        "begin",
-        "start"
+        "to begin",
+        "to start"
       ],
       "pos": "v",
       "rank": 230
     },
     {
       "es": "joven",
-      "de": [
-        "jung",
-        "jugendlich"
-      ],
-      "en": [
-        "young",
-        "youthful"
-      ],
+      "de": "jung",
+      "en": "young",
       "pos": "adj",
       "rank": 231
     },
@@ -2326,13 +1874,13 @@
       "es": "tierra",
       "de": [
         "die Erde",
-        "das Land",
-        "der Boden"
+        "der Boden",
+        "das Land"
       ],
       "en": [
         "earth",
-        "land",
-        "soil"
+        "ground",
+        "land"
       ],
       "pos": "n",
       "rank": 233
@@ -2349,10 +1897,7 @@
     },
     {
       "es": "final",
-      "de": [
-        "das Ende",
-        "das Finale"
-      ],
+      "de": "das Ende",
       "en": [
         "end",
         "final"
@@ -2362,34 +1907,22 @@
     },
     {
       "es": "regresar",
-      "de": [
-        "zurückkehren",
-        "zurückkommen"
-      ],
-      "en": [
-        "return",
-        "go back"
-      ],
+      "de": "zurückkehren",
+      "en": "to return",
       "pos": "v",
       "rank": 238
     },
     {
       "es": "grupo",
-      "de": [
-        "die Gruppe",
-        "der Konzern"
-      ],
-      "en": [
-        "group",
-        "corporation"
-      ],
+      "de": "die Gruppe",
+      "en": "group",
       "pos": "n",
       "rank": 239
     },
     {
       "es": "escribir",
       "de": "schreiben",
-      "en": "write",
+      "en": "to write",
       "pos": "v",
       "rank": 240,
       "example": "Escribe un mensaje."
@@ -2405,10 +1938,7 @@
     },
     {
       "es": "niña",
-      "de": [
-        "das Mädchen",
-        "das Kind"
-      ],
+      "de": "das Mädchen",
       "en": "girl",
       "pos": "n",
       "gender": "f",
@@ -2433,7 +1963,7 @@
       "es": "cariño",
       "de": [
         "die Zuneigung",
-        "der Schatz (Liebling)"
+        "der Schatz (Kosename)"
       ],
       "en": [
         "affection",
@@ -2444,15 +1974,8 @@
     },
     {
       "es": "además",
-      "de": [
-        "außerdem",
-        "zudem"
-      ],
-      "en": [
-        "furthermore",
-        "besides",
-        "additionally"
-      ],
+      "de": "außerdem",
+      "en": "furthermore",
       "pos": "adv",
       "rank": 242
     },
@@ -2465,15 +1988,10 @@
     },
     {
       "es": "echar",
-      "de": [
-        "werfen",
-        "hinauswerfen",
-        "giessen"
-      ],
+      "de": "werfen",
       "en": [
-        "throw",
-        "cast",
-        "pour"
+        "to throw",
+        "to throw out"
       ],
       "pos": "v",
       "rank": 244
@@ -2483,7 +2001,7 @@
       "de": [
         "die Klasse",
         "der Unterricht",
-        "die Sorte"
+        "die Art"
       ],
       "en": [
         "class",
@@ -2496,23 +2014,14 @@
     {
       "es": "arma",
       "de": "die Waffe",
-      "en": [
-        "weapon",
-        "gun"
-      ],
+      "en": "weapon",
       "pos": "n",
       "rank": 246
     },
     {
       "es": "pronto",
-      "de": [
-        "bald",
-        "früh"
-      ],
-      "en": [
-        "soon",
-        "early"
-      ],
+      "de": "bald",
+      "en": "soon",
       "pos": "adv",
       "rank": 248
     },
@@ -2520,13 +2029,11 @@
       "es": "convertir",
       "de": [
         "verwandeln",
-        "bekehren",
-        "umrechnen"
+        "werden"
       ],
       "en": [
-        "convert",
-        "turn",
-        "transform"
+        "to convert",
+        "to turn into"
       ],
       "pos": "v",
       "rank": 249
@@ -2534,7 +2041,7 @@
     {
       "es": "beber",
       "de": "trinken",
-      "en": "drink",
+      "en": "to drink",
       "pos": "v",
       "rank": 250,
       "example": "Bebo agua."
@@ -2550,14 +2057,8 @@
     },
     {
       "es": "cara",
-      "de": [
-        "das Gesicht",
-        "die Seite"
-      ],
-      "en": [
-        "face",
-        "side"
-      ],
+      "de": "das Gesicht",
+      "en": "face",
       "pos": "n",
       "rank": 251
     },
@@ -2565,13 +2066,11 @@
       "es": "genial",
       "de": [
         "genial",
-        "toll",
-        "großartig"
+        "toll"
       ],
       "en": [
         "brilliant",
-        "great",
-        "awesome"
+        "great"
       ],
       "pos": "adj",
       "rank": 252
@@ -2580,52 +2079,33 @@
       "es": "tocar",
       "de": [
         "berühren",
-        "spielen (Instrument)",
-        "an der Reihe sein"
+        "spielen (Instrument)"
       ],
       "en": [
-        "touch",
-        "play (instrument)",
-        "be one's turn"
+        "to touch",
+        "to play (an instrument)"
       ],
       "pos": "v",
       "rank": 253
     },
     {
       "es": "largo",
-      "de": [
-        "lang",
-        "lange"
-      ],
+      "de": "lang",
       "en": "long",
       "pos": "adj",
       "rank": 254
     },
     {
       "es": "juego",
-      "de": [
-        "das Spiel",
-        "der Wildbestand"
-      ],
-      "en": [
-        "game",
-        "play"
-      ],
+      "de": "das Spiel",
+      "en": "game",
       "pos": "n",
       "rank": 255
     },
     {
       "es": "meter",
-      "de": [
-        "stecken",
-        "hineinlegen",
-        "schieben"
-      ],
-      "en": [
-        "put in",
-        "insert",
-        "place"
-      ],
+      "de": "stecken",
+      "en": "to put in",
       "pos": "v",
       "rank": 257
     },
@@ -2633,26 +2113,19 @@
       "es": "igual",
       "de": [
         "gleich",
-        "derselbe"
+        "egal"
       ],
       "en": [
         "equal",
-        "same"
+        "all the same"
       ],
       "pos": "adj",
       "rank": 258
     },
     {
       "es": "incluso",
-      "de": [
-        "sogar",
-        "selbst",
-        "einschließlich"
-      ],
-      "en": [
-        "even",
-        "including"
-      ],
+      "de": "sogar",
+      "en": "even",
       "pos": "adv",
       "rank": 259
     },
@@ -2666,27 +2139,15 @@
     },
     {
       "es": "doctor",
-      "de": [
-        "der Arzt",
-        "der Doktor"
-      ],
-      "en": [
-        "doctor",
-        "physician"
-      ],
+      "de": "der Arzt",
+      "en": "doctor",
       "pos": "n",
       "rank": 260
     },
     {
       "es": "corazón",
-      "de": [
-        "das Herz",
-        "der Kern"
-      ],
-      "en": [
-        "heart",
-        "core"
-      ],
+      "de": "das Herz",
+      "en": "heart",
       "pos": "n",
       "rank": 261
     },
@@ -2694,13 +2155,11 @@
       "es": "detener",
       "de": [
         "anhalten",
-        "festnehmen",
-        "aufhalten"
+        "verhaften"
       ],
       "en": [
-        "stop",
-        "detain",
-        "arrest"
+        "to stop",
+        "to arrest"
       ],
       "pos": "v",
       "rank": 262
@@ -2709,8 +2168,7 @@
       "es": "siquiera",
       "de": [
         "auch nur",
-        "wenigstens",
-        "selbst"
+        "wenigstens"
       ],
       "en": [
         "even",
@@ -2721,70 +2179,45 @@
     },
     {
       "es": "decidir",
-      "de": [
-        "entscheiden",
-        "beschließen"
-      ],
-      "en": "decide",
+      "de": "entscheiden",
+      "en": "to decide",
       "pos": "v",
       "rank": 265
     },
     {
       "es": "suerte",
-      "de": [
-        "das Glück",
-        "der Zufall"
-      ],
-      "en": [
-        "luck",
-        "fortune",
-        "chance"
-      ],
+      "de": "das Glück",
+      "en": "luck",
       "pos": "n",
       "rank": 266
     },
     {
       "es": "correr",
-      "de": [
-        "laufen",
-        "rennen"
-      ],
-      "en": "run",
+      "de": "laufen",
+      "en": "to run",
       "pos": "v",
       "rank": 269
     },
     {
       "es": "funcionar",
-      "de": [
-        "funktionieren",
-        "klappen"
-      ],
+      "de": "funktionieren",
       "en": [
-        "work",
-        "function"
+        "to work",
+        "to function"
       ],
       "pos": "v",
       "rank": 270
     },
     {
       "es": "vivo",
-      "de": [
-        "lebendig",
-        "lebendig (Farbe)"
-      ],
-      "en": [
-        "alive",
-        "vivid"
-      ],
+      "de": "lebendig",
+      "en": "alive",
       "pos": "adj",
       "rank": 271
     },
     {
       "es": "luz",
-      "de": [
-        "das Licht",
-        "die Leuchte"
-      ],
+      "de": "das Licht",
       "en": "light",
       "pos": "n",
       "rank": 272
@@ -2792,10 +2225,7 @@
     {
       "es": "quizás",
       "de": "vielleicht",
-      "en": [
-        "perhaps",
-        "maybe"
-      ],
+      "en": "perhaps",
       "pos": "adv",
       "rank": 273
     },
@@ -2803,57 +2233,33 @@
       "es": "justo",
       "de": [
         "gerecht",
-        "genau",
-        "gerade"
+        "genau"
       ],
       "en": [
         "fair",
-        "just",
-        "exact"
+        "right"
       ],
       "pos": "adj",
       "rank": 274
     },
     {
       "es": "miedo",
-      "de": [
-        "die Angst",
-        "die Furcht"
-      ],
-      "en": [
-        "fear",
-        "scare"
-      ],
+      "de": "die Angst",
+      "en": "fear",
       "pos": "n",
       "rank": 275
     },
     {
       "es": "modo",
-      "de": [
-        "die Art und Weise",
-        "die Mode",
-        "der Modus"
-      ],
-      "en": [
-        "way",
-        "manner",
-        "mode"
-      ],
+      "de": "die Art und Weise",
+      "en": "way",
       "pos": "n",
       "rank": 276
     },
     {
       "es": "relación",
-      "de": [
-        "die Beziehung",
-        "das Verhältnis",
-        "der Bezug"
-      ],
-      "en": [
-        "relationship",
-        "relation",
-        "connection"
-      ],
+      "de": "die Beziehung",
+      "en": "relationship",
       "pos": "n",
       "rank": 277
     },
@@ -2861,13 +2267,11 @@
       "es": "cambio",
       "de": [
         "die Veränderung",
-        "der Wechselkurs",
-        "der Gang (Auto)"
+        "das Wechselgeld"
       ],
       "en": [
         "change",
-        "exchange rate",
-        "gear"
+        "exchange"
       ],
       "pos": "n",
       "rank": 278
@@ -2882,7 +2286,7 @@
     {
       "es": "leer",
       "de": "lesen",
-      "en": "read",
+      "en": "to read",
       "pos": "v",
       "rank": 280,
       "example": "Leo un libro."
@@ -2913,10 +2317,7 @@
     },
     {
       "es": "derecho",
-      "de": [
-        "das Recht",
-        "das Jura (Studium)"
-      ],
+      "de": "das Recht",
       "en": [
         "right",
         "law"
@@ -2928,13 +2329,11 @@
       "es": "presentar",
       "de": [
         "vorstellen",
-        "einreichen",
         "präsentieren"
       ],
       "en": [
-        "to present",
         "to introduce",
-        "to submit"
+        "to present"
       ],
       "pos": "v",
       "rank": 281
@@ -2949,7 +2348,7 @@
     {
       "es": "suficiente",
       "de": "ausreichend",
-      "en": "sufficient",
+      "en": "enough",
       "pos": "adj",
       "rank": 283
     },
@@ -2957,20 +2356,18 @@
       "es": "prueba",
       "de": [
         "der Beweis",
-        "die Prüfung",
         "der Test"
       ],
       "en": [
         "proof",
-        "test",
-        "trial"
+        "test"
       ],
       "pos": "n",
       "rank": 284
     },
     {
       "es": "próximo",
-      "de": "nächst",
+      "de": "nächste",
       "en": "next",
       "pos": "adj",
       "rank": 285
@@ -2999,13 +2396,11 @@
       "es": "sentido",
       "de": [
         "der Sinn",
-        "die Richtung",
-        "die Bedeutung"
+        "die Richtung"
       ],
       "en": [
         "sense",
-        "direction",
-        "meaning"
+        "direction"
       ],
       "pos": "n",
       "rank": 288
@@ -3014,13 +2409,11 @@
       "es": "orden",
       "de": [
         "die Ordnung",
-        "der Befehl",
-        "der Orden (Organisation)"
+        "der Befehl"
       ],
       "en": [
         "order",
-        "command",
-        "religious order"
+        "command"
       ],
       "pos": "n",
       "rank": 289
@@ -3050,14 +2443,12 @@
     {
       "es": "vuelta",
       "de": [
-        "die Drehung",
-        "die Rückkehr",
-        "das Wechselgeld"
+        "die Runde",
+        "die Rückkehr"
       ],
       "en": [
         "turn",
-        "return",
-        "change"
+        "return"
       ],
       "pos": "n",
       "rank": 292
@@ -3084,25 +2475,16 @@
     },
     {
       "es": "subir",
-      "de": [
-        "hinaufgehen",
-        "hochladen",
-        "steigen"
-      ],
-      "en": [
-        "to go up",
-        "to upload",
-        "to rise"
-      ],
+      "de": "hinaufgehen",
+      "en": "to go up",
       "pos": "v",
       "rank": 295
     },
     {
       "es": "servir",
       "de": [
-        "servieren",
         "dienen",
-        "nützen"
+        "servieren"
       ],
       "en": [
         "to serve",
@@ -3122,25 +2504,19 @@
       "es": "sentar",
       "de": [
         "setzen",
-        "passen (stehen)"
+        "sich setzen"
       ],
       "en": [
         "to seat",
-        "to suit"
+        "to sit down"
       ],
       "pos": "v",
       "rank": 299
     },
     {
       "es": "salvar",
-      "de": [
-        "retten",
-        "überwinden"
-      ],
-      "en": [
-        "to save",
-        "to overcome"
-      ],
+      "de": "retten",
+      "en": "to save",
       "pos": "v",
       "rank": 300
     },
@@ -3166,10 +2542,7 @@
     },
     {
       "es": "levantar",
-      "de": [
-        "heben",
-        "aufstehen"
-      ],
+      "de": "heben",
       "en": [
         "to lift",
         "to raise"
@@ -3179,14 +2552,8 @@
     },
     {
       "es": "adelante",
-      "de": [
-        "vorwärts",
-        "herein"
-      ],
-      "en": [
-        "forward",
-        "come in"
-      ],
+      "de": "vorwärts",
+      "en": "forward",
       "pos": "adv",
       "rank": 307
     },
@@ -3199,10 +2566,7 @@
     },
     {
       "es": "considerar",
-      "de": [
-        "betrachten",
-        "erwägen"
-      ],
+      "de": "betrachten",
       "en": "to consider",
       "pos": "v",
       "rank": 309
@@ -3218,48 +2582,31 @@
     },
     {
       "es": "paso",
-      "de": [
-        "der Schritt",
-        "der Pass",
-        "der Durchgang"
-      ],
-      "en": [
-        "step",
-        "pass",
-        "passage"
-      ],
+      "de": "der Schritt",
+      "en": "step",
       "pos": "n",
       "rank": 310
     },
     {
       "es": "asegurar",
-      "de": [
-        "versichern",
-        "sicherstellen"
-      ],
+      "de": "versichern",
       "en": [
         "to assure",
-        "to insure"
+        "to ensure"
       ],
       "pos": "v",
       "rank": 311
     },
     {
       "es": "aceptar",
-      "de": [
-        "akzeptieren",
-        "annehmen"
-      ],
+      "de": "akzeptieren",
       "en": "to accept",
       "pos": "v",
       "rank": 312
     },
     {
       "es": "quitar",
-      "de": [
-        "entfernen",
-        "wegnehmen"
-      ],
+      "de": "entfernen",
       "en": [
         "to remove",
         "to take away"
@@ -3294,8 +2641,8 @@
         "die Pflege"
       ],
       "en": [
-        "care",
-        "caution"
+        "caution",
+        "care"
       ],
       "pos": "n",
       "rank": 317
@@ -3331,7 +2678,7 @@
       ],
       "en": [
         "match",
-        "party"
+        "party (political)"
       ],
       "pos": "n",
       "rank": 320
@@ -3354,7 +2701,7 @@
       "es": "coger",
       "de": [
         "nehmen",
-        "fangen"
+        "greifen"
       ],
       "en": [
         "to take",
@@ -3379,14 +2726,8 @@
     },
     {
       "es": "pie",
-      "de": [
-        "der Fuß",
-        "das Standbein"
-      ],
-      "en": [
-        "foot",
-        "base"
-      ],
+      "de": "der Fuß",
+      "en": "foot",
       "pos": "n",
       "rank": 327
     },
@@ -3412,10 +2753,7 @@
     },
     {
       "es": "oportunidad",
-      "de": [
-        "die Gelegenheit",
-        "die Chance"
-      ],
+      "de": "die Gelegenheit",
       "en": [
         "opportunity",
         "chance"
@@ -3425,14 +2763,8 @@
     },
     {
       "es": "muchacho",
-      "de": [
-        "der Junge",
-        "der Bursche"
-      ],
-      "en": [
-        "boy",
-        "lad"
-      ],
+      "de": "der Junge",
+      "en": "boy",
       "pos": "n",
       "rank": 333
     },
@@ -3451,23 +2783,14 @@
     },
     {
       "es": "situación",
-      "de": [
-        "die Situation",
-        "die Lage"
-      ],
-      "en": [
-        "situation",
-        "position"
-      ],
+      "de": "die Situation",
+      "en": "situation",
       "pos": "n",
       "rank": 335
     },
     {
       "es": "política",
-      "de": [
-        "die Politik",
-        "die Richtlinie"
-      ],
+      "de": "die Politik",
       "en": [
         "politics",
         "policy"
@@ -3485,7 +2808,7 @@
     {
       "es": "vender",
       "de": "verkaufen",
-      "en": "sell",
+      "en": "to sell",
       "pos": "v",
       "rank": 338
     },
@@ -3498,22 +2821,16 @@
     },
     {
       "es": "blanco",
-      "de": [
-        "weiß",
-        "das Ziel"
-      ],
-      "en": [
-        "white",
-        "target"
-      ],
+      "de": "weiß",
+      "en": "white",
       "pos": "adj",
       "rank": 340
     },
     {
       "es": "extraño",
       "de": [
-        "fremd",
-        "seltsam"
+        "seltsam",
+        "fremd"
       ],
       "en": [
         "strange",
@@ -3524,49 +2841,28 @@
     },
     {
       "es": "perdonar",
-      "de": [
-        "vergeben",
-        "verzeihen"
-      ],
-      "en": [
-        "forgive",
-        "excuse"
-      ],
+      "de": "vergeben",
+      "en": "to forgive",
       "pos": "v",
       "rank": 342
     },
     {
       "es": "arriba",
-      "de": [
-        "oben",
-        "hinauf"
-      ],
-      "en": [
-        "above",
-        "up"
-      ],
+      "de": "oben",
+      "en": "above",
       "pos": "adv",
       "rank": 343
     },
     {
       "es": "aparecer",
-      "de": [
-        "erscheinen",
-        "auftauchen"
-      ],
-      "en": [
-        "appear",
-        "show up"
-      ],
+      "de": "erscheinen",
+      "en": "to appear",
       "pos": "v",
       "rank": 344
     },
     {
       "es": "servicio",
-      "de": [
-        "der Dienst",
-        "der Service"
-      ],
+      "de": "der Dienst",
       "en": "service",
       "pos": "n",
       "rank": 345
@@ -3574,7 +2870,7 @@
     {
       "es": "novio",
       "de": [
-        "der Freund",
+        "der Freund (Partner)",
         "der Bräutigam"
       ],
       "en": [
@@ -3586,10 +2882,7 @@
     },
     {
       "es": "especial",
-      "de": [
-        "speziell",
-        "besonders"
-      ],
+      "de": "speziell",
       "en": "special",
       "pos": "adj",
       "rank": 348
@@ -3597,7 +2890,7 @@
     {
       "es": "casar",
       "de": "heiraten",
-      "en": "marry",
+      "en": "to marry",
       "pos": "v",
       "rank": 349
     },
@@ -3613,10 +2906,7 @@
     {
       "es": "amiga",
       "de": "die Freundin",
-      "en": [
-        "friend",
-        "girlfriend"
-      ],
+      "en": "friend",
       "pos": "n",
       "gender": "f",
       "rank": 350,
@@ -3631,10 +2921,7 @@
     },
     {
       "es": "bonito",
-      "de": [
-        "hübsch",
-        "schön"
-      ],
+      "de": "hübsch",
       "en": [
         "pretty",
         "nice"
@@ -3647,12 +2934,11 @@
       "es": "puesto",
       "de": [
         "der Platz",
-        "der Stand"
+        "der Posten"
       ],
       "en": [
         "position",
-        "stalling",
-        "job"
+        "post"
       ],
       "pos": "n",
       "rank": 350
@@ -3673,10 +2959,7 @@
     },
     {
       "es": "duro",
-      "de": [
-        "hart",
-        "schwierig"
-      ],
+      "de": "hart",
       "en": [
         "hard",
         "tough"
@@ -3686,10 +2969,7 @@
     },
     {
       "es": "nacional",
-      "de": [
-        "national",
-        "staatsangehörig"
-      ],
+      "de": "national",
       "en": "national",
       "pos": "adj",
       "rank": 354
@@ -3698,7 +2978,7 @@
       "es": "recuerdo",
       "de": [
         "die Erinnerung",
-        "das Andenken"
+        "das Souvenir"
       ],
       "en": [
         "memory",
@@ -3709,48 +2989,35 @@
     },
     {
       "es": "lograr",
-      "de": [
-        "erreichen",
-        "schaffen"
-      ],
+      "de": "erreichen",
       "en": [
-        "achieve",
-        "manage"
+        "to achieve",
+        "to manage"
       ],
       "pos": "v",
       "rank": 356
     },
     {
       "es": "robar",
-      "de": [
-        "stehlen",
-        "rauben"
-      ],
+      "de": "stehlen",
       "en": [
-        "steal",
-        "rob"
+        "to steal",
+        "to rob"
       ],
       "pos": "v",
       "rank": 357
     },
     {
       "es": "seguridad",
-      "de": [
-        "die Sicherheit",
-        "die Gewissheit"
-      ],
-      "en": [
-        "security",
-        "safety",
-        "certainty"
-      ],
+      "de": "die Sicherheit",
+      "en": "security",
       "pos": "n",
       "rank": 358
     },
     {
       "es": "prometer",
       "de": "versprechen",
-      "en": "promise",
+      "en": "to promise",
       "pos": "v",
       "rank": 359
     },
@@ -3765,14 +3032,8 @@
     },
     {
       "es": "negro",
-      "de": [
-        "schwarz",
-        "düster"
-      ],
-      "en": [
-        "black",
-        "dark"
-      ],
+      "de": "schwarz",
+      "en": "black",
       "pos": "adj",
       "rank": 360
     },
@@ -3780,11 +3041,11 @@
       "es": "enseñar",
       "de": [
         "unterrichten",
-        "lehren"
+        "zeigen"
       ],
       "en": [
-        "teach",
-        "show"
+        "to teach",
+        "to show"
       ],
       "pos": "v",
       "rank": 360
@@ -3793,10 +3054,12 @@
       "es": "obra",
       "de": [
         "das Werk",
+        "das Theaterstück",
         "die Baustelle"
       ],
       "en": [
         "work",
+        "play",
         "construction site"
       ],
       "pos": "n",
@@ -3805,33 +3068,21 @@
     {
       "es": "descubrir",
       "de": "entdecken",
-      "en": "discover",
+      "en": "to discover",
       "pos": "v",
       "rank": 362
     },
     {
       "es": "andar",
-      "de": [
-        "gehen",
-        "laufen"
-      ],
-      "en": [
-        "walk",
-        "go"
-      ],
+      "de": "gehen",
+      "en": "to walk",
       "pos": "v",
       "rank": 363
     },
     {
       "es": "cuanto",
-      "de": [
-        "wie viel",
-        "so viel"
-      ],
-      "en": [
-        "how much",
-        "as much as"
-      ],
+      "de": "wie viel",
+      "en": "how much",
       "pos": "adv",
       "rank": 366
     },
@@ -3853,25 +3104,19 @@
       "es": "sonar",
       "de": [
         "klingen",
-        "läuten"
+        "klingeln"
       ],
       "en": [
-        "sound",
-        "ring"
+        "to sound",
+        "to ring"
       ],
       "pos": "v",
       "rank": 369
     },
     {
       "es": "referir",
-      "de": [
-        "beziehen",
-        "erwähnen"
-      ],
-      "en": [
-        "refer",
-        "relate"
-      ],
+      "de": "sich beziehen auf",
+      "en": "to refer to",
       "pos": "v",
       "rank": 370
     },
@@ -3884,26 +3129,17 @@
     },
     {
       "es": "centro",
-      "de": [
-        "das Zentrum",
-        "die Mitte"
-      ],
-      "en": [
-        "center",
-        "middle"
-      ],
+      "de": "das Zentrum",
+      "en": "center",
       "pos": "n",
       "rank": 372
     },
     {
       "es": "asunto",
-      "de": [
-        "die Angelegenheit",
-        "das Thema"
-      ],
+      "de": "die Angelegenheit",
       "en": [
         "matter",
-        "issue"
+        "affair"
       ],
       "pos": "n",
       "rank": 373
@@ -3912,70 +3148,46 @@
       "es": "encantar",
       "de": [
         "begeistern",
-        "verzaubern"
+        "sehr gefallen"
       ],
       "en": [
-        "delight",
-        "love"
+        "to delight",
+        "to love"
       ],
       "pos": "v",
       "rank": 374
     },
     {
       "es": "embargo",
-      "de": [
-        "die Beschlagnahme",
-        "das Hindernis"
-      ],
-      "en": [
-        "embargo",
-        "hindrance"
-      ],
+      "de": "die Beschlagnahme",
+      "en": "embargo",
       "pos": "n",
       "rank": 375
     },
     {
       "es": "imaginar",
-      "de": [
-        "sich vorstellen",
-        "erdenken"
-      ],
-      "en": [
-        "to imagine",
-        "to picture"
-      ],
+      "de": "sich vorstellen",
+      "en": "to imagine",
       "pos": "v",
       "rank": 376
     },
     {
       "es": "información",
-      "de": [
-        "die Information",
-        "die Auskunft"
-      ],
+      "de": "die Information",
       "en": "information",
       "pos": "n",
       "rank": 377
     },
     {
       "es": "habitación",
-      "de": [
-        "das Zimmer",
-        "das Schlafzimmer"
-      ],
-      "en": [
-        "room",
-        "bedroom"
-      ],
+      "de": "das Zimmer",
+      "en": "room",
       "pos": "n",
       "rank": 378
     },
     {
       "es": "aprender",
-      "de": [
-        "lernen",
-        "erlernen"
-      ],
+      "de": "lernen",
       "en": "to learn",
       "pos": "v",
       "rank": 379
@@ -3993,7 +3205,7 @@
       "es": "comida",
       "de": [
         "das Essen",
-        "die Speise"
+        "das Mittagessen"
       ],
       "en": [
         "food",
@@ -4008,13 +3220,11 @@
       "es": "falta",
       "de": [
         "der Mangel",
-        "das Vergehen",
-        "der Fehler"
+        "das Foul"
       ],
       "en": [
         "lack",
-        "fault",
-        "mistake"
+        "foul"
       ],
       "pos": "n",
       "rank": 380
@@ -4022,38 +3232,27 @@
     {
       "es": "cielo",
       "de": "der Himmel",
-      "en": [
-        "sky",
-        "heaven"
-      ],
+      "en": "sky",
       "pos": "n",
       "rank": 381
     },
     {
       "es": "realizar",
       "de": [
-        "verwirklichen",
         "durchführen",
-        "machen"
+        "verwirklichen"
       ],
       "en": [
-        "to realize",
-        "to fulfill",
-        "to carry out"
+        "to carry out",
+        "to achieve"
       ],
       "pos": "v",
       "rank": 383
     },
     {
       "es": "negocio",
-      "de": [
-        "das Geschäft",
-        "das Unternehmen"
-      ],
-      "en": [
-        "business",
-        "deal"
-      ],
+      "de": "das Geschäft",
+      "en": "business",
       "pos": "n",
       "rank": 384
     },
@@ -4078,104 +3277,63 @@
       ],
       "en": [
         "behind",
-        "back",
-        "ago"
+        "back"
       ],
       "pos": "adv",
       "rank": 386
     },
     {
       "es": "social",
-      "de": [
-        "sozial",
-        "gesellschaftlich"
-      ],
+      "de": "sozial",
       "en": "social",
       "pos": "adj",
       "rank": 387
     },
     {
       "es": "capitán",
-      "de": [
-        "der Kapitän",
-        "der Hauptmann"
-      ],
+      "de": "der Kapitän",
       "en": "captain",
       "pos": "n",
       "rank": 388
     },
     {
       "es": "bebé",
-      "de": [
-        "das Baby",
-        "der Säugling"
-      ],
+      "de": "das Baby",
       "en": "baby",
       "pos": "n",
       "rank": 390
     },
     {
       "es": "libre",
-      "de": [
-        "frei",
-        "ledig",
-        "kostenlos"
-      ],
-      "en": [
-        "free",
-        "vacant",
-        "single"
-      ],
+      "de": "frei",
+      "en": "free",
       "pos": "adj",
       "rank": 391
     },
     {
       "es": "voz",
-      "de": [
-        "die Stimme",
-        "das Geräusch"
-      ],
-      "en": [
-        "voice",
-        "vote"
-      ],
+      "de": "die Stimme",
+      "en": "voice",
       "pos": "n",
       "rank": 392
     },
     {
       "es": "foto",
-      "de": [
-        "das Foto",
-        "das Bild"
-      ],
-      "en": [
-        "photo",
-        "picture"
-      ],
+      "de": "das Foto",
+      "en": "photo",
       "pos": "n",
       "rank": 393
     },
     {
       "es": "abajo",
-      "de": [
-        "unten",
-        "unter",
-        "abwärts"
-      ],
-      "en": [
-        "down",
-        "below",
-        "downstairs"
-      ],
+      "de": "unten",
+      "en": "down",
       "pos": "adv",
       "rank": 394
     },
     {
       "es": "par",
-      "de": [
-        "das Paar",
-        "der Gleiche"
-      ],
+      "de": "das Paar",
       "en": [
         "pair",
         "couple"
@@ -4185,49 +3343,30 @@
     },
     {
       "es": "paz",
-      "de": [
-        "der Friede",
-        "die Ruhe"
-      ],
+      "de": "der Frieden",
       "en": "peace",
       "pos": "n",
       "rank": 396
     },
     {
       "es": "confiar",
-      "de": [
-        "vertrauen",
-        "anvertrauen"
-      ],
-      "en": [
-        "to trust",
-        "to confide"
-      ],
+      "de": "vertrauen",
+      "en": "to trust",
       "pos": "v",
       "rank": 397
     },
     {
       "es": "callar",
-      "de": [
-        "schweigen",
-        "verschweigen"
-      ],
-      "en": [
-        "to be silent",
-        "to hush"
-      ],
+      "de": "schweigen",
+      "en": "to be silent",
       "pos": "v",
       "rank": 398
     },
     {
       "es": "culpa",
-      "de": [
-        "die Schuld",
-        "die Mitschuld"
-      ],
+      "de": "die Schuld",
       "en": [
         "blame",
-        "guilt",
         "fault"
       ],
       "pos": "n",
@@ -4244,76 +3383,49 @@
     },
     {
       "es": "ofrecer",
-      "de": [
-        "anbieten",
-        "bieten",
-        "anerbieten"
-      ],
+      "de": "anbieten",
       "en": "to offer",
       "pos": "v",
       "rank": 401
     },
     {
       "es": "noticia",
-      "de": [
-        "die Nachricht",
-        "die Neuigkeit"
-      ],
-      "en": [
-        "news",
-        "report"
-      ],
+      "de": "die Nachricht",
+      "en": "news",
       "pos": "n",
       "rank": 402
     },
     {
       "es": "bajar",
       "de": [
-        "senken",
-        "herabsteigen",
-        "steigen"
+        "hinuntergehen",
+        "senken"
       ],
       "en": [
         "to go down",
-        "to lower",
-        "to descend"
+        "to lower"
       ],
       "pos": "v",
       "rank": 403
     },
     {
       "es": "desear",
-      "de": [
-        "wünschen",
-        "begehren"
-      ],
-      "en": [
-        "to desire",
-        "to wish"
-      ],
+      "de": "wünschen",
+      "en": "to desire",
       "pos": "v",
       "rank": 404
     },
     {
       "es": "diablo",
-      "de": [
-        "der Teufel",
-        "der Satan"
-      ],
+      "de": "der Teufel",
       "en": "devil",
       "pos": "n",
       "rank": 406
     },
     {
       "es": "resto",
-      "de": [
-        "der Rest",
-        "das Übrige"
-      ],
-      "en": [
-        "rest",
-        "remainder"
-      ],
+      "de": "der Rest",
+      "en": "rest",
       "pos": "n",
       "rank": 407
     },
@@ -4321,7 +3433,7 @@
       "es": "siguiente",
       "de": [
         "folgend",
-        "nächster"
+        "nächste"
       ],
       "en": [
         "following",
@@ -4333,14 +3445,10 @@
     {
       "es": "cuidar",
       "de": [
-        "pflegen",
-        "behüten",
-        "sich kümmern"
+        "sich kümmern um",
+        "pflegen"
       ],
-      "en": [
-        "to take care of",
-        "to look after"
-      ],
+      "en": "to take care of",
       "pos": "v",
       "rank": 409
     },
@@ -4355,51 +3463,38 @@
       "es": "carta",
       "de": [
         "der Brief",
-        "die Karte"
+        "die Speisekarte",
+        "die Spielkarte"
       ],
       "en": [
         "letter",
-        "card",
-        "menu"
+        "menu",
+        "playing card"
       ],
       "pos": "n",
       "rank": 411
     },
     {
       "es": "preparar",
-      "de": [
-        "vorbereiten",
-        "zubereiten"
-      ],
+      "de": "vorbereiten",
       "en": "to prepare",
       "pos": "v",
       "rank": 412
     },
     {
       "es": "don",
-      "de": [
-        "die Gabe",
-        "das Talent",
-        "die Begabung"
-      ],
+      "de": "die Gabe",
       "en": [
         "gift",
-        "talent",
-        "natural ability"
+        "talent"
       ],
       "pos": "n",
       "rank": 413
     },
     {
       "es": "correcto",
-      "de": [
-        "richtig",
-        "korrekt"
-      ],
-      "en": [
-        "correct",
-        "right"
-      ],
+      "de": "richtig",
+      "en": "correct",
       "pos": "adj",
       "rank": 414
     },
@@ -4418,15 +3513,10 @@
     },
     {
       "es": "sitio",
-      "de": [
-        "der Ort",
-        "die Stelle",
-        "die Website"
-      ],
+      "de": "der Ort",
       "en": [
-        "site",
         "place",
-        "website"
+        "site"
       ],
       "pos": "n",
       "rank": 417
@@ -4435,23 +3525,18 @@
       "es": "campo",
       "de": [
         "das Feld",
-        "der Acker",
-        "das Gebiet"
+        "das Land (nicht Stadt)"
       ],
       "en": [
         "field",
-        "countryside",
-        "pitch"
+        "countryside"
       ],
       "pos": "n",
       "rank": 418
     },
     {
       "es": "elegir",
-      "de": [
-        "wählen",
-        "auswählen"
-      ],
+      "de": "wählen",
       "en": [
         "to choose",
         "to elect"
@@ -4470,14 +3555,8 @@
     },
     {
       "es": "exactamente",
-      "de": [
-        "genau",
-        "exakt"
-      ],
-      "en": [
-        "exactly",
-        "precisely"
-      ],
+      "de": "genau",
+      "en": "exactly",
       "pos": "adv",
       "rank": 420
     },
@@ -4485,27 +3564,16 @@
       "es": "parar",
       "de": [
         "anhalten",
-        "aufhören",
-        "stehenbleiben"
+        "aufhören"
       ],
-      "en": [
-        "to stop",
-        "to halt"
-      ],
+      "en": "to stop",
       "pos": "v",
       "rank": 421
     },
     {
       "es": "unido",
-      "de": [
-        "vereint",
-        "verbunden",
-        "gemeinsam"
-      ],
-      "en": [
-        "united",
-        "joint"
-      ],
+      "de": "vereint",
+      "en": "united",
       "pos": "adj",
       "rank": 422
     },
@@ -4518,14 +3586,8 @@
     },
     {
       "es": "hermoso",
-      "de": [
-        "schön",
-        "herrlich"
-      ],
-      "en": [
-        "beautiful",
-        "lovely"
-      ],
+      "de": "schön",
+      "en": "beautiful",
       "pos": "adj",
       "rank": 424
     },
@@ -4538,22 +3600,15 @@
     },
     {
       "es": "romper",
-      "de": [
-        "zerbrechen",
-        "kaputtmachen",
-        "brechen"
-      ],
-      "en": [
-        "to break",
-        "to tear"
-      ],
+      "de": "zerbrechen",
+      "en": "to break",
       "pos": "v",
       "rank": 426
     },
     {
       "es": "invitar",
       "de": "einladen",
-      "en": "invite",
+      "en": "to invite",
       "pos": "v",
       "rank": 427
     },
@@ -4574,14 +3629,17 @@
     {
       "es": "obtener",
       "de": "erhalten",
-      "en": "obtain",
+      "en": [
+        "to obtain",
+        "to get"
+      ],
       "pos": "v",
       "rank": 430
     },
     {
       "es": "molestar",
       "de": "stören",
-      "en": "bother",
+      "en": "to bother",
       "pos": "v",
       "rank": 431
     },
@@ -4609,7 +3667,7 @@
     {
       "es": "utilizar",
       "de": "benutzen",
-      "en": "use",
+      "en": "to use",
       "pos": "v",
       "rank": 435
     },
@@ -4630,12 +3688,12 @@
     {
       "es": "demonio",
       "de": [
-        "der Teufel",
-        "der Dämon"
+        "der Dämon",
+        "der Teufel"
       ],
       "en": [
-        "devil",
-        "demon"
+        "demon",
+        "devil"
       ],
       "pos": "n",
       "rank": 438
@@ -4667,29 +3725,26 @@
         "ziehen"
       ],
       "en": [
-        "throw",
-        "pull"
+        "to throw",
+        "to pull"
       ],
       "pos": "v",
       "rank": 441
     },
     {
       "es": "despertar",
-      "de": "wecken",
-      "en": "wake up",
+      "de": [
+        "wecken",
+        "aufwachen"
+      ],
+      "en": "to wake up",
       "pos": "v",
       "rank": 442
     },
     {
       "es": "resultar",
-      "de": [
-        "sich herausstellen",
-        "resultieren"
-      ],
-      "en": [
-        "turn out",
-        "result"
-      ],
+      "de": "sich herausstellen",
+      "en": "to turn out",
       "pos": "v",
       "rank": 443
     },
@@ -4717,7 +3772,7 @@
     {
       "es": "continuar",
       "de": "weitermachen",
-      "en": "continue",
+      "en": "to continue",
       "pos": "v",
       "rank": 447
     },
@@ -4729,7 +3784,7 @@
       ],
       "en": [
         "action",
-        "share"
+        "share (stock)"
       ],
       "pos": "n",
       "rank": 449
@@ -4751,15 +3806,24 @@
     },
     {
       "es": "línea",
-      "de": "die Linie",
+      "de": [
+        "die Linie",
+        "die Zeile"
+      ],
       "en": "line",
       "pos": "n",
       "rank": 450
     },
     {
       "es": "agente",
-      "de": "der Agent",
-      "en": "agent",
+      "de": [
+        "der Agent",
+        "der Beamte"
+      ],
+      "en": [
+        "agent",
+        "officer"
+      ],
       "pos": "n",
       "rank": 451
     },
@@ -4792,13 +3856,10 @@
     },
     {
       "es": "arreglar",
-      "de": [
-        "reparieren",
-        "ordnen"
-      ],
+      "de": "reparieren",
       "en": [
-        "fix",
-        "arrange"
+        "to fix",
+        "to arrange"
       ],
       "pos": "v",
       "rank": 456
@@ -4840,7 +3901,10 @@
     {
       "es": "empresa",
       "de": "das Unternehmen",
-      "en": "company",
+      "en": [
+        "company",
+        "business"
+      ],
       "pos": "n",
       "rank": 460
     },
@@ -4851,7 +3915,7 @@
         "der Regisseur"
       ],
       "en": [
-        "director (manager)",
+        "manager",
         "director (film)"
       ],
       "pos": "n",
@@ -4859,21 +3923,15 @@
     },
     {
       "es": "través",
-      "de": [
-        "die Schräge",
-        "das Unglück"
-      ],
-      "en": [
-        "bias",
-        "misfortune"
-      ],
+      "de": "durch (a través de)",
+      "en": "through (a través de)",
       "pos": "n",
       "rank": 463
     },
     {
       "es": "producir",
       "de": "produzieren",
-      "en": "produce",
+      "en": "to produce",
       "pos": "v",
       "rank": 464
     },
@@ -4886,8 +3944,14 @@
     },
     {
       "es": "amo",
-      "de": "der Herr",
-      "en": "master",
+      "de": [
+        "der Herr",
+        "der Besitzer"
+      ],
+      "en": [
+        "master",
+        "owner"
+      ],
       "pos": "n",
       "rank": 466
     },
@@ -4913,8 +3977,14 @@
     },
     {
       "es": "idiota",
-      "de": "idiotisch",
-      "en": "idiotic",
+      "de": [
+        "idiotisch",
+        "der Idiot"
+      ],
+      "en": [
+        "idiotic",
+        "idiot"
+      ],
       "pos": "adj",
       "rank": 469
     },
@@ -4943,14 +4013,14 @@
     {
       "es": "pesar",
       "de": "wiegen",
-      "en": "weigh",
+      "en": "to weigh",
       "pos": "v",
       "rank": 471
     },
     {
       "es": "bastar",
       "de": "genügen",
-      "en": "suffice",
+      "en": "to be enough",
       "pos": "v",
       "rank": 473
     },
@@ -4984,27 +4054,15 @@
     },
     {
       "es": "fuego",
-      "de": [
-        "das Feuer",
-        "der Brand"
-      ],
-      "en": [
-        "fire",
-        "blaze"
-      ],
+      "de": "das Feuer",
+      "en": "fire",
       "pos": "n",
       "rank": 478
     },
     {
       "es": "tema",
-      "de": [
-        "das Thema",
-        "das Lied"
-      ],
-      "en": [
-        "topic",
-        "theme"
-      ],
+      "de": "das Thema",
+      "en": "topic",
       "pos": "n",
       "rank": 479
     },
@@ -5023,10 +4081,7 @@
         "das Niveau",
         "die Ebene"
       ],
-      "en": [
-        "level",
-        "standard"
-      ],
+      "en": "level",
       "pos": "n",
       "rank": 481
     },
@@ -5034,11 +4089,11 @@
       "es": "evitar",
       "de": [
         "vermeiden",
-        "abwenden"
+        "verhindern"
       ],
       "en": [
-        "avoid",
-        "prevent"
+        "to avoid",
+        "to prevent"
       ],
       "pos": "v",
       "rank": 482
@@ -5047,11 +4102,12 @@
       "es": "estudio",
       "de": [
         "die Studie",
-        "das Arbeitszimmer"
+        "das Studium",
+        "das Studio"
       ],
       "en": [
         "study",
-        "den"
+        "studio"
       ],
       "pos": "n",
       "rank": 483
@@ -5059,39 +4115,24 @@
     {
       "es": "mensaje",
       "de": [
-        "die Botschaft",
-        "die Nachricht"
+        "die Nachricht",
+        "die Botschaft"
       ],
-      "en": [
-        "message",
-        "dispatch"
-      ],
+      "en": "message",
       "pos": "n",
       "rank": 485
     },
     {
       "es": "resultado",
-      "de": [
-        "das Ergebnis",
-        "das Resultat"
-      ],
-      "en": [
-        "result",
-        "outcome"
-      ],
+      "de": "das Ergebnis",
+      "en": "result",
       "pos": "n",
       "rank": 486
     },
     {
       "es": "error",
-      "de": [
-        "der Fehler",
-        "der Irrtum"
-      ],
-      "en": [
-        "error",
-        "mistake"
-      ],
+      "de": "der Fehler",
+      "en": "error",
       "pos": "n",
       "rank": 487
     },
@@ -5104,10 +4145,7 @@
     },
     {
       "es": "maldito",
-      "de": [
-        "verflucht",
-        "verdammt"
-      ],
+      "de": "verdammt",
       "en": [
         "damn",
         "cursed"
@@ -5130,11 +4168,8 @@
     },
     {
       "es": "soler",
-      "de": "pflegen",
-      "en": [
-        "tend to",
-        "be accustomed to"
-      ],
+      "de": "gewöhnlich tun",
+      "en": "to usually do",
       "pos": "v",
       "rank": 492
     },
@@ -5145,8 +4180,8 @@
         "anerkennen"
       ],
       "en": [
-        "recognize",
-        "acknowledge"
+        "to recognize",
+        "to admit"
       ],
       "pos": "v",
       "rank": 493
@@ -5160,14 +4195,8 @@
     },
     {
       "es": "atención",
-      "de": [
-        "die Aufmerksamkeit",
-        "die Achtung"
-      ],
-      "en": [
-        "attention",
-        "care"
-      ],
+      "de": "die Aufmerksamkeit",
+      "en": "attention",
       "pos": "n",
       "rank": 495
     },
@@ -5188,7 +4217,7 @@
       "es": "vista",
       "de": [
         "die Sicht",
-        "der Blick"
+        "die Aussicht"
       ],
       "en": [
         "sight",
@@ -5199,53 +4228,29 @@
     },
     {
       "es": "escapar",
-      "de": [
-        "fliehen",
-        "entkommen"
-      ],
-      "en": [
-        "escape",
-        "flee"
-      ],
+      "de": "fliehen",
+      "en": "to escape",
       "pos": "v",
       "rank": 498
     },
     {
       "es": "cumplir",
-      "de": [
-        "erfüllen",
-        "einhalten"
-      ],
-      "en": [
-        "fulfill",
-        "accomplish"
-      ],
+      "de": "erfüllen",
+      "en": "to fulfill",
       "pos": "v",
       "rank": 499
     },
     {
       "es": "edad",
-      "de": [
-        "das Alter",
-        "das Zeitalter"
-      ],
-      "en": [
-        "age",
-        "era"
-      ],
+      "de": "das Alter",
+      "en": "age",
       "pos": "n",
       "rank": 500
     },
     {
       "es": "comprender",
-      "de": [
-        "verstehen",
-        "begreifen"
-      ],
-      "en": [
-        "understand",
-        "comprehend"
-      ],
+      "de": "verstehen",
+      "en": "to understand",
       "pos": "v",
       "rank": 502
     },
@@ -5256,22 +4261,16 @@
         "befehlen"
       ],
       "en": [
-        "send",
-        "order"
+        "to send",
+        "to order"
       ],
       "pos": "v",
       "rank": 503
     },
     {
       "es": "abogado",
-      "de": [
-        "der Anwalt",
-        "der Rechtsanwalt"
-      ],
-      "en": [
-        "lawyer",
-        "attorney"
-      ],
+      "de": "der Anwalt",
+      "en": "lawyer",
       "pos": "n",
       "rank": 504
     },
@@ -5291,26 +4290,20 @@
     {
       "es": "partir",
       "de": [
-        "teilen",
-        "aufbrechen"
+        "abreisen",
+        "teilen"
       ],
       "en": [
-        "leave",
-        "split"
+        "to leave",
+        "to divide"
       ],
       "pos": "v",
       "rank": 506
     },
     {
       "es": "temer",
-      "de": [
-        "fürchten",
-        "befürchten"
-      ],
-      "en": [
-        "fear",
-        "dread"
-      ],
+      "de": "fürchten",
+      "en": "to fear",
       "pos": "v",
       "rank": 507
     },
@@ -5321,22 +4314,16 @@
         "sich freuen"
       ],
       "en": [
-        "gladden",
-        "cheer up"
+        "to gladden",
+        "to be glad"
       ],
       "pos": "v",
       "rank": 508
     },
     {
       "es": "estúpido",
-      "de": [
-        "dumm",
-        "blöd"
-      ],
-      "en": [
-        "stupid",
-        "dumb"
-      ],
+      "de": "dumm",
+      "en": "stupid",
       "pos": "adj",
       "rank": 509
     },
@@ -5348,8 +4335,7 @@
       ],
       "en": [
         "bottom",
-        "background",
-        "fund"
+        "background"
       ],
       "pos": "n",
       "rank": 510
@@ -5357,10 +4343,7 @@
     {
       "es": "llorar",
       "de": "weinen",
-      "en": [
-        "cry",
-        "weep"
-      ],
+      "en": "to cry",
       "pos": "v",
       "rank": 511
     },
@@ -5373,10 +4356,7 @@
     },
     {
       "es": "lindo",
-      "de": [
-        "hübsch",
-        "schön"
-      ],
+      "de": "hübsch",
       "en": [
         "pretty",
         "cute"
@@ -5387,12 +4367,12 @@
     {
       "es": "compañía",
       "de": [
-        "die Gesellschaft",
-        "die Begleitung"
+        "die Firma",
+        "die Gesellschaft"
       ],
       "en": [
         "company",
-        "society"
+        "companionship"
       ],
       "pos": "n",
       "rank": 515
@@ -5400,10 +4380,7 @@
     {
       "es": "tranquilar",
       "de": "beruhigen",
-      "en": [
-        "calm",
-        "soothe"
-      ],
+      "en": "to calm",
       "pos": "v",
       "rank": 516
     },
@@ -5414,8 +4391,8 @@
         "schauspielern"
       ],
       "en": [
-        "act",
-        "behave"
+        "to act",
+        "to perform"
       ],
       "pos": "v",
       "rank": 517
@@ -5437,10 +4414,7 @@
     },
     {
       "es": "sábado",
-      "de": [
-        "der Samstag",
-        "der Sonnabend"
-      ],
+      "de": "der Samstag",
       "en": "Saturday",
       "pos": "n",
       "gender": "m",
@@ -5497,10 +4471,7 @@
     {
       "es": "gracias",
       "de": "danke",
-      "en": [
-        "thank you",
-        "thanks"
-      ],
+      "en": "thank you",
       "pos": "interj",
       "rank": 700,
       "example": "Muchas gracias."
@@ -5516,23 +4487,16 @@
     {
       "es": "hola",
       "de": "hallo",
-      "en": [
-        "hello",
-        "hi"
-      ],
+      "en": "hello",
       "pos": "interj",
       "rank": 800,
       "example": "¡Hola, María!"
     },
     {
       "es": "perdón",
-      "de": [
-        "Entschuldigung",
-        "Verzeihung"
-      ],
+      "de": "Entschuldigung",
       "en": [
         "sorry",
-        "pardon",
         "excuse me"
       ],
       "pos": "interj",
@@ -5543,12 +4507,9 @@
       "es": "adiós",
       "de": [
         "Tschüss",
-        "Auf Wiedersehen"
+        "auf Wiedersehen"
       ],
-      "en": [
-        "goodbye",
-        "bye"
-      ],
+      "en": "goodbye",
       "pos": "interj",
       "rank": 900,
       "example": "¡Adiós!"
