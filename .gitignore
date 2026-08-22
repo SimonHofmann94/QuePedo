@@ -61,3 +61,9 @@ node_modules/
 
 # Brainstorming visual companion sessions
 .superpowers/
+
+# Per-chapter translation cache (scripts/translate-grammar.ts) — regenerable
+scripts/.cache/
+
+# Playwright MCP screenshots/snapshots — local debugging artifacts
+.playwright-mcp/

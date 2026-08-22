@@ -24,7 +24,7 @@ export const grammarC1: GrammarLevel = {
                 [
                   'Ojala + present subj.',
                   'I hope (possible)',
-                  'Ojala llueva manana. -- I hope it rains tomorrow.',
+                  'Ojala llueva mañana. -- I hope it rains tomorrow.',
                 ],
                 [
                   'Ojala + imperfect subj.',
@@ -52,9 +52,9 @@ export const grammarC1: GrammarLevel = {
                   'Quien lo hubiera sabido! -- If only I had known!',
                 ],
                 [
-                  'Asi + present subj.',
+                  'Así + present subj.',
                   'I hope (colloquial curse)',
-                  'Asi le vaya mal! -- I hope it goes badly for him!',
+                  'Así le vaya mal! -- I hope it goes badly for him!',
                 ],
               ],
             },
@@ -70,7 +70,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'I wish I could go back to those times.',
                 },
                 {
-                  es: 'Que tengas un buen dia!',
+                  es: 'Que tengas un buen día!',
                   en: 'Have a good day!',
                 },
                 {
@@ -101,7 +101,7 @@ export const grammarC1: GrammarLevel = {
               type: 'rules',
               items: [
                 'Subjunctive (doubt, low certainty): Es posible que... / Es probable que... / Puede que... / Es dudoso que...',
-                '"Es posible que venga manana." -- It\'s possible he\'ll come tomorrow.',
+                '"Es posible que venga mañana." -- It\'s possible he\'ll come tomorrow.',
                 '"Puede que llueva esta tarde." -- It might rain this afternoon.',
               ],
             },
@@ -109,7 +109,7 @@ export const grammarC1: GrammarLevel = {
               type: 'rules',
               items: [
                 'Negated certainty triggers subjunctive',
-                '"No es cierto que sea asi." -- It\'s not true that it\'s like that.',
+                '"No es cierto que sea así." -- It\'s not true that it\'s like that.',
                 '"No esta claro que vayan a ganar." -- It\'s not clear they\'re going to win.',
               ],
             },
@@ -163,7 +163,7 @@ export const grammarC1: GrammarLevel = {
                 [
                   'si bien',
                   'while, even though',
-                  'Si bien es dificil, no es imposible.',
+                  'Si bien es difícil, no es imposible.',
                 ],
                 [
                   'a sabiendas de que',
@@ -220,14 +220,14 @@ export const grammarC1: GrammarLevel = {
                   'Espera hasta que llegue.',
                 ],
                 [
-                  'despues de que',
-                  'Despues de que termino, se fue.',
-                  'Despues de que termine, iremos.',
+                  'después de que',
+                  'Después de que termino, se fue.',
+                  'Después de que termine, iremos.',
                 ],
                 [
                   'mientras',
-                  'Mientras estudiaba, escuchaba musica.',
-                  'Mientras vivas aqui, respeta las normas.',
+                  'Mientras estudiaba, escuchaba música.',
+                  'Mientras vivas aquí, respeta las normas.',
                 ],
                 [
                   'antes de que',
@@ -268,7 +268,7 @@ export const grammarC1: GrammarLevel = {
                   'Es justo que + subj.',
                   'Es justo que reciban un premio.',
                 ],
-                ['Es ridiculo que + subj.', 'Es ridiculo que piense asi.'],
+                ['Es ridiculo que + subj.', 'Es ridiculo que piense así.'],
                 [
                   'Es una pena que + subj.',
                   'Es una pena que no puedas venir.',
@@ -478,14 +478,14 @@ export const grammarC1: GrammarLevel = {
               items: [
                 'Passive se (pasiva refleja): The thing acted upon is the grammatical subject; the verb agrees with it',
                 '"Se venden pisos." -- Apartments are sold. (pisos = subject, plural verb)',
-                '"Se habla espanol." -- Spanish is spoken. (espanol = subject, singular verb)',
+                '"Se habla español." -- Spanish is spoken. (español = subject, singular verb)',
               ],
             },
             {
               type: 'rules',
               items: [
                 'Impersonal se: No grammatical subject; verb is always 3rd person singular',
-                '"Se trabaja mucho aqui." -- People work a lot here.',
+                '"Se trabaja mucho aquí." -- People work a lot here.',
                 '"Se vive bien en Espana." -- One lives well in Spain.',
                 'When the object is a person, use "a" + singular verb: "Se busco a los responsables." -- The responsible parties were sought.',
               ],
@@ -511,7 +511,7 @@ export const grammarC1: GrammarLevel = {
                 [
                   'ser + participle',
                   'The action itself (who/what caused it)',
-                  'La ventana fue rota por el nino. -- The window was broken by the boy.',
+                  'La ventana fue rota por el niño. -- The window was broken by the boy.',
                 ],
                 [
                   'estar + participle',
@@ -532,7 +532,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'The report was finished yesterday by the team. (action)',
                 },
                 {
-                  es: 'Las luces estan encendidas.',
+                  es: 'Las luces están encendidas.',
                   en: 'The lights are on. (state)',
                 },
                 {
@@ -613,7 +613,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'In 1492, Columbus arrives in America.',
                 },
                 {
-                  es: 'Estaba en casa tranquilo y, de repente, suena el telefono y me dice que...',
+                  es: 'Estaba en casa tranquilo y, de repente, suena el teléfono y me dice que...',
                   en: 'I was at home relaxing and suddenly the phone rings and he tells me that...',
                 },
               ],
@@ -637,11 +637,11 @@ export const grammarC1: GrammarLevel = {
                   en: 'Where can Juan be? (I wonder)',
                 },
                 {
-                  es: 'Seran las ocho.',
+                  es: 'Serán las ocho.',
                   en: 'It must be about eight.',
                 },
                 {
-                  es: 'Tendra unos cuarenta anos.',
+                  es: 'Tendra unos cuarenta años.',
                   en: 'He must be about forty.',
                 },
                 {
@@ -669,7 +669,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'It must have been about three when we arrived.',
                 },
                 {
-                  es: 'Tendria unos veinte anos cuando se caso.',
+                  es: 'Tendria unos veinte años cuando se caso.',
                   en: 'She must have been about twenty when she got married.',
                 },
                 {
@@ -846,7 +846,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'He passed the exam, which made us very happy.',
                 },
                 {
-                  es: 'No contesto al telefono, lo cual me preocupo.',
+                  es: 'No contesto al teléfono, lo cual me preocupo.',
                   en: "She didn't answer the phone, which worried me.",
                 },
                 {
@@ -878,7 +878,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'The company whose offices we visited is in crisis.',
                 },
                 {
-                  es: 'Los paises cuyos gobiernos invirtieron en educacion prosperaron.',
+                  es: 'Los paises cuyos gobiernos invirtieron en educación prosperaron.',
                   en: 'The countries whose governments invested in education prospered.',
                 },
               ],
@@ -917,7 +917,7 @@ export const grammarC1: GrammarLevel = {
                 [
                   'haber de + inf.',
                   'mild obligation / expectation (literary)',
-                  'Has de saber que no fue facil.',
+                  'Has de saber que no fue fácil.',
                 ],
                 [
                   'haber que + inf.',
@@ -1066,7 +1066,7 @@ export const grammarC1: GrammarLevel = {
                 [
                   'llevar + participle',
                   'accumulated total (participle agrees)',
-                  'Llevo leidos tres capitulos.',
+                  'Llevo leídos tres capitulos.',
                 ],
                 [
                   'dejar + participle',
@@ -1134,7 +1134,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'How pretty you look today! (noticeable change)',
                 },
                 {
-                  es: 'El nino esta muy alto.',
+                  es: 'El niño esta muy alto.',
                   en: 'The boy is really tall (now). (perceived growth)',
                 },
                 {
@@ -1142,7 +1142,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'This soup is very salty. (tasting it now, subjective)',
                 },
                 {
-                  es: 'La habitacion esta muy pequena con todos estos muebles.',
+                  es: 'La habitación esta muy pequeña con todos estos muebles.',
                   en: 'The room feels very small with all this furniture. (subjective impression)',
                 },
               ],
@@ -1166,7 +1166,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'The meeting is in room 3.',
                 },
                 {
-                  es: 'La fiesta sera en mi casa.',
+                  es: 'La fiesta será en mi casa.',
                   en: 'The party will be at my house.',
                 },
                 {
@@ -1205,7 +1205,7 @@ export const grammarC1: GrammarLevel = {
                   'estar + participle',
                   'resulting state',
                   'agrees with subject',
-                  'El libro esta escrito en espanol.',
+                  'El libro esta escrito en español.',
                 ],
                 [
                   'tener + participle',
@@ -1240,8 +1240,8 @@ export const grammarC1: GrammarLevel = {
             {
               type: 'rules',
               items: [
-                'En cuanto a... / En lo que se refiere a... / Con respecto a... / En relacion con...',
-                '"En cuanto a la economia, la situacion ha mejorado." -- Regarding the economy, the situation has improved.',
+                'En cuanto a... / En lo que se refiere a... / Con respecto a... / En relación con...',
+                '"En cuanto a la economia, la situación ha mejorado." -- Regarding the economy, the situation has improved.',
               ],
             },
             {
@@ -1251,7 +1251,7 @@ export const grammarC1: GrammarLevel = {
             {
               type: 'rules',
               items: [
-                'Ademas / Asimismo / Por otra parte / Es mas / Incluso / No solo... sino tambien',
+                'Además / Asimismo / Por otra parte / Es mas / Incluso / No solo... sino también',
                 '"Es mas, el informe demuestra que los resultados son positivos." -- What\'s more, the report shows the results are positive.',
               ],
             },
@@ -1273,8 +1273,8 @@ export const grammarC1: GrammarLevel = {
             {
               type: 'rules',
               items: [
-                'Por lo tanto / Por consiguiente / En consecuencia / De ahi que (+ subjunctive) / Asi pues',
-                '"De ahi que muchos jovenes emigren." -- Hence many young people emigrate. (subjunctive)',
+                'Por lo tanto / Por consiguiente / En consecuencia / De ahí que (+ subjunctive) / Así pues',
+                '"De ahí que muchos jovenes emigren." -- Hence many young people emigrate. (subjunctive)',
               ],
             },
             {
@@ -1295,7 +1295,7 @@ export const grammarC1: GrammarLevel = {
             {
               type: 'rules',
               items: [
-                'En resumen / En conclusion / En definitiva / Para terminar / En pocas palabras / Al fin y al cabo',
+                'En resumen / En conclusión / En definitiva / Para terminar / En pocas palabras / Al fin y al cabo',
                 '"Al fin y al cabo, lo importante es que estamos juntos." -- At the end of the day, the important thing is we\'re together.',
               ],
             },
@@ -1303,22 +1303,22 @@ export const grammarC1: GrammarLevel = {
         },
         {
           id: '8.2',
-          title: 'De ahi que + Subjunctive',
+          title: 'De ahí que + Subjunctive',
           blocks: [
             {
               type: 'text',
               content:
-                '"De ahi que" introduces a consequence and always takes the subjunctive.',
+                '"De ahí que" introduces a consequence and always takes the subjunctive.',
             },
             {
               type: 'examples',
               examples: [
                 {
-                  es: 'No estudio lo suficiente; de ahi que suspendiera.',
+                  es: 'No estudio lo suficiente; de ahí que suspendiera.',
                   en: "He didn't study enough; hence he failed.",
                 },
                 {
-                  es: 'La situacion es complicada; de ahi que necesitemos mas tiempo.',
+                  es: 'La situación es complicada; de ahí que necesitemos mas tiempo.',
                   en: 'The situation is complicated; hence we need more time.',
                 },
               ],
@@ -1396,15 +1396,15 @@ export const grammarC1: GrammarLevel = {
               type: 'rules',
               items: [
                 'Indicative (reporting information): decir, afirmar, declarar, confesar, reconocer, admitir + que + indicative',
-                '"Dice que viene manana." -- He says he\'s coming tomorrow.',
-                '"Reconocio que se habia equivocado." -- He admitted he had made a mistake.',
+                '"Dice que viene mañana." -- He says he\'s coming tomorrow.',
+                '"Reconocio que se había equivocado." -- He admitted he had made a mistake.',
               ],
             },
             {
               type: 'rules',
               items: [
                 'Subjunctive (exerting influence/command): decir, pedir, ordenar, rogar, exigir, suplicar + que + subjunctive',
-                '"Dice que vengas manana." -- He says (for you) to come tomorrow.',
+                '"Dice que vengas mañana." -- He says (for you) to come tomorrow.',
                 '"Le pidio que se callara." -- He asked him to be quiet.',
               ],
             },
@@ -1552,7 +1552,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'It was they who decided.',
                 },
                 {
-                  es: 'Es aqui donde todo empezo.',
+                  es: 'Es aquí donde todo empezo.',
                   en: "It's here where everything started.",
                 },
               ],
@@ -1622,7 +1622,7 @@ export const grammarC1: GrammarLevel = {
                 ],
                 [
                   'Impersonal se',
-                  'Se vive bien aqui.',
+                  'Se vive bien aquí.',
                   'One lives well here.',
                 ],
                 [
@@ -1672,7 +1672,7 @@ export const grammarC1: GrammarLevel = {
                   en: 'I forgot the keys. (lit: The keys forgot themselves on me.)',
                 },
                 {
-                  es: 'Se le rompio el telefono.',
+                  es: 'Se le rompio el teléfono.',
                   en: 'His phone broke. (involuntary)',
                 },
                 {
@@ -1759,7 +1759,7 @@ export const grammarC1: GrammarLevel = {
                 [
                   'Greetings',
                   'Hola! Que tal?',
-                  'Buenos dias. Como esta usted?',
+                  'Buenos días. Como esta usted?',
                 ],
                 [
                   'Requests',

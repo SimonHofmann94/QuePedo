@@ -1049,8 +1049,8 @@ export const grammarC2: GrammarLevel = {
             {
               type: 'examples',
               examples: [
-                { es: 'Incorrect: "Creo de que es verdad." → Correct: "Creo que es verdad."', en: 'Removing the incorrect "de"' },
-                { es: 'Incorrect: "Pienso de que tiene razón." → Correct: "Pienso que tiene razón."', en: 'Removing the incorrect "de"' },
+                { es: 'Incorrecto: "Creo de que es verdad." → Correcto: "Creo que es verdad."', en: 'Removing the incorrect "de"' },
+                { es: 'Incorrecto: "Pienso de que tiene razón." → Correcto: "Pienso que tiene razón."', en: 'Removing the incorrect "de"' },
               ],
             },
             {
@@ -1060,8 +1060,8 @@ export const grammarC2: GrammarLevel = {
             {
               type: 'examples',
               examples: [
-                { es: 'Incorrect: "Me alegro que estés bien." → Correct: "Me alegro de que estés bien."', en: 'Adding the required "de"' },
-                { es: 'Incorrect: "Estoy seguro que vendrá." → Correct: "Estoy seguro de que vendrá."', en: 'Adding the required "de"' },
+                { es: 'Incorrecto: "Me alegro que estés bien." → Correcto: "Me alegro de que estés bien."', en: 'Adding the required "de"' },
+                { es: 'Incorrecto: "Estoy seguro que vendrá." → Correcto: "Estoy seguro de que vendrá."', en: 'Adding the required "de"' },
               ],
             },
             {

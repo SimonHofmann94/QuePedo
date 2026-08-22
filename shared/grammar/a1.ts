@@ -22,7 +22,7 @@ export const grammarA1: GrammarLevel = {
                 '"h" is always silent: "hola" is pronounced "ola"',
                 '"ll" and "y" sound similar (like English "y")',
                 '"j" and "g" (before e/i) sound like a strong English "h"',
-                'Stress falls on the second-to-last syllable by default; accents override this',
+                'Words ending in a vowel, -n or -s are stressed on the second-to-last syllable; all others on the last. Accents override this',
               ],
             },
             {
@@ -45,7 +45,8 @@ export const grammarA1: GrammarLevel = {
             {
               type: 'rules',
               items: [
-                'Words ending in a vowel, -n, or -s are stressed on the second-to-last syllable',
+                'Words ending in a vowel, -n, or -s are stressed on the second-to-last syllable: casa, hablan, lunes',
+                'Words ending in any other consonant are stressed on the LAST syllable: hablar, ciudad, español',
                 'Written accents on question/exclamation words: qué, cómo, dónde, cuándo, quién, cuánto',
                 'Accent marks distinguish: tú (you) vs. tu (your), él (he) vs. el (the), sí (yes) vs. si (if)',
               ],

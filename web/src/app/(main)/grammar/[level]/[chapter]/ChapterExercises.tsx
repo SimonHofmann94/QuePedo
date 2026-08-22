@@ -297,7 +297,10 @@ function MultipleChoice({
     <div>
       <p className="font-display text-xl font-bold text-ink-800">{q.prompt}</p>
       <div className="mt-4 grid gap-2.5">
-        {q.options.map((opt) => {
+        {/* Dedupe: some baked exercises offer the same option twice (ser and ir
+            share every Indefinido form), which rendered two identical buttons
+            that selected together — selection compares by value, not index. */}
+        {[...new Set(q.options)].map((opt) => {
           const isSelected = selected === opt
           const isCorrect = disabled && opt === q.correctAnswer
           const isWrongPick = disabled && isSelected && opt !== q.correctAnswer

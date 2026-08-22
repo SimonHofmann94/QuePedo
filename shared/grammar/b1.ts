@@ -1660,7 +1660,7 @@ export const grammarB1: GrammarLevel = {
                 { es: 'Es el estudiante menos trabajador de la clase.', en: 'He is the least hard-working student in the class.' },
                 { es: 'La comida estaba riquísima.', en: 'The food was extremely delicious.' },
                 { es: 'Estoy cansadísimo.', en: 'I am extremely tired.' },
-                { es: 'Es facilísimo.', en: 'It\'s extremely easy.' },
+                { es: 'Es fácilísimo.', en: 'It\'s extremely easy.' },
               ],
             },
           ],

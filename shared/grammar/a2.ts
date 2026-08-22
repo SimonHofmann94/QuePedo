@@ -878,8 +878,8 @@ export const grammarA2: GrammarLevel = {
               rows: [
                 ['bueno (good)', 'mejor (better)'],
                 ['malo (bad)', 'peor (worse)'],
-                ['grande (old)', 'mayor (older)'],
-                ['pequeño (young)', 'menor (younger)'],
+                ['grande (big)', 'mayor (older/bigger)'],
+                ['pequeño (small)', 'menor (younger/smaller)'],
               ],
             },
             {

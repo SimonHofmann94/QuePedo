@@ -322,7 +322,7 @@ export const grammarB2: GrammarLevel = {
             {
               type: 'rules',
               items: [
-                'The nosotros form always carries a written accent on the vowel before the ending: hablaramos, comieramos',
+                'The nosotros form always carries a written accent on the vowel before the ending: habláramos, comiéramos',
                 'All irregular preterite stems carry over: tener (tuvieron) becomes tuviera, ser/ir (fueron) becomes fuera, etc.',
               ],
             },
@@ -536,7 +536,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'He has asked you to have finished before three. (present perfect + present perfect subj.)',
                 },
                 {
-                  es: 'Habia pedido que hubieras terminado antes.',
+                  es: 'Había pedido que hubieras terminado antes.',
                   en: 'He had asked you to have finished before. (pluperfect + pluperfect subj.)',
                 },
                 {
@@ -949,10 +949,10 @@ export const grammarB2: GrammarLevel = {
               type: 'table',
               headers: ['Tense', 'Example'],
               rows: [
-                ['Present', 'El libro es leido por miles de personas. — The book is read by thousands of people.'],
+                ['Present', 'El libro es leído por miles de personas. — The book is read by thousands of people.'],
                 ['Preterite', 'El contrato fue firmado ayer. — The contract was signed yesterday.'],
                 ['Imperfect', 'La ley era aplicada estrictamente. — The law was applied strictly.'],
-                ['Future', 'El proyecto sera presentado mañana. — The project will be presented tomorrow.'],
+                ['Future', 'El proyecto será presentado mañana. — The project will be presented tomorrow.'],
                 ['Conditional', 'El informe seria enviado pronto. — The report would be sent soon.'],
                 ['Present perfect', 'El problema ha sido resuelto. — The problem has been solved.'],
               ],
@@ -969,7 +969,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'The building was built by famous architects.',
                 },
                 {
-                  es: 'La decision fue tomada por unanimidad.',
+                  es: 'La decisión fue tomada por unanimidad.',
                   en: 'The decision was made unanimously.',
                 },
               ],
@@ -1010,7 +1010,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'Apartments are for sale. (plural)',
                 },
                 {
-                  es: 'Se habla español aqui.',
+                  es: 'Se habla español aquí.',
                   en: 'Spanish is spoken here.',
                 },
                 {
@@ -1018,7 +1018,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'Rooms are rented.',
                 },
                 {
-                  es: 'Aqui se fabrican coches.',
+                  es: 'Aquí se fabrican coches.',
                   en: 'Cars are manufactured here.',
                 },
                 {
@@ -1062,7 +1062,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'One must respect the rules.',
                 },
                 {
-                  es: '¿Se puede fumar aqui?',
+                  es: '¿Se puede fumar aquí?',
                   en: 'Can one smoke here?',
                 },
                 {
@@ -1080,7 +1080,7 @@ export const grammarB2: GrammarLevel = {
               headers: ['Construction', 'Key test', 'Example'],
               rows: [
                 ['Passive se', 'Verb agrees with noun (sing/plur); noun is the grammatical subject', 'Se venden pisos. (plural agreement)'],
-                ['Impersonal se', 'Verb always singular; no specific noun subject', 'Se vive bien aqui. (always singular)'],
+                ['Impersonal se', 'Verb always singular; no specific noun subject', 'Se vive bien aquí. (always singular)'],
               ],
             },
           ],
@@ -1297,7 +1297,7 @@ export const grammarB2: GrammarLevel = {
                   en: "As soon as I arrive, I'll let you know.",
                 },
                 {
-                  es: 'Tan pronto como termine, sal de alli.',
+                  es: 'Tan pronto como termine, sal de allí.',
                   en: 'As soon as you finish, get out of there.',
                 },
               ],
@@ -1322,7 +1322,7 @@ export const grammarB2: GrammarLevel = {
               type: 'table',
               headers: ['Two different subjects (subjunctive)', 'Same subject (infinitive)'],
               rows: [
-                ['Lo hago para que tú aprendas.', 'Lo hago para aprender yo tambien.'],
+                ['Lo hago para que tú aprendas.', 'Lo hago para aprender yo también.'],
                 ['Salio sin que nadie lo viera.', 'Salio sin decir nada.'],
                 ['Llama antes de que cierren.', 'Llama antes de dormir.'],
                 ['Estudia a fin de que apruebes.', 'Estudia a fin de aprobar.'],
@@ -1387,8 +1387,8 @@ export const grammarB2: GrammarLevel = {
               headers: ['Original tense (direct speech)', 'Reported tense (indirect speech)'],
               rows: [
                 ['Present indicative (habla)', 'Imperfect (hablaba)'],
-                ['Preterite (hablo)', 'Pluperfect (habia hablado)'],
-                ['Present perfect (ha hablado)', 'Pluperfect (habia hablado)'],
+                ['Preterite (hablo)', 'Pluperfect (había hablado)'],
+                ['Present perfect (ha hablado)', 'Pluperfect (había hablado)'],
                 ['Imperfect (hablaba)', 'Imperfect (hablaba) — no change'],
                 ['Future (hablara)', 'Conditional (hablaria)'],
                 ['Conditional (hablaria)', 'Conditional (hablaria) — no change'],
@@ -1408,11 +1408,11 @@ export const grammarB2: GrammarLevel = {
                   en: 'He said he would arrive late.',
                 },
                 {
-                  es: '"He perdido las llaves." -> Dijo que habia perdido las llaves.',
+                  es: '"He perdido las llaves." -> Dijo que había perdido las llaves.',
                   en: 'She said she had lost the keys.',
                 },
                 {
-                  es: '"Ven aqui." -> Le dijo que fuera alli.',
+                  es: '"Ven aquí." -> Le dijo que fuera allí.',
                   en: 'He told him to go there.',
                 },
                 {
@@ -1457,10 +1457,10 @@ export const grammarB2: GrammarLevel = {
                 ['tú', 'yo / el / ella (context-dependent)'],
                 ['mi/mis', 'su/sus'],
                 ['tu/tus', 'mi/mis or su/sus'],
-                ['aqui / aca', 'alli / alla'],
-                ['hoy', 'ese dia / aquel dia'],
-                ['ayer', 'el dia anterior'],
-                ['mañana', 'al dia siguiente'],
+                ['aquí / aca', 'allí / alla'],
+                ['hoy', 'ese día / aquel día'],
+                ['ayer', 'el día anterior'],
+                ['mañana', 'al día siguiente'],
                 ['ahora', 'entonces / en ese momento'],
                 ['esta semana', 'esa semana'],
                 ['este (demonstrative)', 'ese / aquel'],
@@ -1471,11 +1471,11 @@ export const grammarB2: GrammarLevel = {
               type: 'examples',
               examples: [
                 {
-                  es: '"Hoy estoy muy ocupado." -> Dijo que ese dia estaba muy ocupado.',
+                  es: '"Hoy estoy muy ocupado." -> Dijo que ese día estaba muy ocupado.',
                   en: 'He said that day he was very busy.',
                 },
                 {
-                  es: '"Ven aqui mañana." -> Me dijo que fuera alli al dia siguiente.',
+                  es: '"Ven aquí mañana." -> Me dijo que fuera allí al día siguiente.',
                   en: 'He told me to go there the next day.',
                 },
                 {
@@ -1503,15 +1503,15 @@ export const grammarB2: GrammarLevel = {
               type: 'examples',
               examples: [
                 {
-                  es: '"¿Tienes trabajo?" -> Pregunto si tenia trabajo.',
+                  es: '"¿Tienes trabajo?" -> Pregunto si tenía trabajo.',
                   en: 'She asked if I had work.',
                 },
                 {
-                  es: '"¿Vienes mañana?" -> Pregunto si vendria al dia siguiente.',
+                  es: '"¿Vienes mañana?" -> Pregunto si vendria al día siguiente.',
                   en: 'He asked if I would come the next day.',
                 },
                 {
-                  es: '"¿Has terminado?" -> Pregunto si habia terminado.',
+                  es: '"¿Has terminado?" -> Pregunto si había terminado.',
                   en: 'She asked if I had finished.',
                 },
               ],
@@ -1536,7 +1536,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'He asked what I was doing.',
                 },
                 {
-                  es: '"¿Por que no viniste?" -> Pregunto por que no habia ido.',
+                  es: '"¿Por que no viniste?" -> Pregunto por que no había ido.',
                   en: "She asked why I hadn't gone.",
                 },
               ],
@@ -1567,7 +1567,7 @@ export const grammarB2: GrammarLevel = {
               rows: [
                 ['que', 'Most common; refers to people and things', 'El libro que lei era excelente.'],
                 ['quien / quienes', 'Refers to people, especially after prepositions', 'La persona con quien hable es medico.'],
-                ['el que / la que / los que / las que', 'People and things, after prepositions; also for emphasis', 'Aqui esta el que te recomende.'],
+                ['el que / la que / los que / las que', 'People and things, after prepositions; also for emphasis', 'Aquí esta el que te recomende.'],
                 ['lo que', 'Abstract ideas, situations, entire clauses', 'Lo que dijiste me sorprendio.'],
                 ['lo cual', 'Same as lo que but more formal; used after comma', 'Llego tarde, lo cual me molesto.'],
                 ['cuyo / cuya / cuyos / cuyas', 'Possessive relative (whose)', 'El autor cuyos libros me gustan.'],
@@ -1619,7 +1619,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'The company whose directors resigned is in crisis.',
                 },
                 {
-                  es: 'La mujer cuyo hijo estudia aqui es profesora.',
+                  es: 'La mujer cuyo hijo estudia aquí es profesora.',
                   en: 'The woman whose son studies here is a teacher. (hijo = masc. sing.)',
                 },
               ],
@@ -1663,7 +1663,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'He did everything he could.',
                 },
                 {
-                  es: 'Cancelaron el concierto, lo cual fue una decepcion.',
+                  es: 'Cancelaron el concierto, lo cual fue una decepción.',
                   en: 'They cancelled the concert, which was a disappointment.',
                 },
               ],
@@ -1851,7 +1851,7 @@ export const grammarB2: GrammarLevel = {
                   en: 'The movie is boring.',
                 },
                 {
-                  es: 'Los estudiantes estan aburridos.',
+                  es: 'Los estudiantes están aburridos.',
                   en: 'The students are bored.',
                 },
                 {
@@ -2002,7 +2002,7 @@ export const grammarB2: GrammarLevel = {
                 ['llevar + time + gerundio', 'Duration of ongoing action (how long)', 'Llevo tres horas trabajando. — I\'ve been working for three hours.'],
                 ['andar + gerundio', 'Aimless, scattered, or habitual ongoing action', 'Anda buscando trabajo. — He\'s going around looking for work.'],
                 ['venir + gerundio', 'Ongoing action developing over time from past to present', 'Viene diciendo eso desde hace años. — He\'s been saying that for years.'],
-                ['ir + gerundio', 'Gradual progressive action', 'La situacion va mejorando. — The situation is gradually improving.'],
+                ['ir + gerundio', 'Gradual progressive action', 'La situación va mejorando. — The situation is gradually improving.'],
               ],
             },
             {
@@ -2073,7 +2073,7 @@ export const grammarB2: GrammarLevel = {
               type: 'rules',
               items: [
                 'Spanish NEVER uses a gerund after a preposition',
-                'Where English says "without saying," Spanish says "sin decir"; where English says "after eating," Spanish says "despues de comer"',
+                'Where English says "without saying," Spanish says "sin decir"; where English says "after eating," Spanish says "después de comer"',
               ],
             },
             {
@@ -2082,13 +2082,13 @@ export const grammarB2: GrammarLevel = {
               rows: [
                 ['al + infinitive', 'Upon / when (simultaneous)', 'Al llegar, lo vio. — Upon arriving, he saw it.'],
                 ['antes de + infinitive', 'Before', 'Antes de salir, apaga la luz. — Before leaving, turn off the light.'],
-                ['despues de + infinitive', 'After', 'Despues de comer, salimos. — After eating, we left.'],
+                ['después de + infinitive', 'After', 'Después de comer, salimos. — After eating, we left.'],
                 ['sin + infinitive', 'Without', 'Salio sin decir nada. — He left without saying anything.'],
                 ['para + infinitive', 'In order to', 'Estudio para aprender. — I study in order to learn.'],
-                ['por + infinitive', 'Because of / for (cause)', 'Le multaron por conducir rapido. — He was fined for driving fast.'],
+                ['por + infinitive', 'Because of / for (cause)', 'Le multaron por conducir rápido. — He was fined for driving fast.'],
                 ['a pesar de + infinitive', 'Despite', 'A pesar de estar cansado, siguio. — Despite being tired, he continued.'],
                 ['en lugar de / en vez de + infinitive', 'Instead of', 'En lugar de quejarse, actua. — Instead of complaining, act.'],
-                ['ademas de + infinitive', 'In addition to', 'Ademas de hablar español, habla frances. — In addition to speaking Spanish, she speaks French.'],
+                ['además de + infinitive', 'In addition to', 'Además de hablar español, habla francés. — In addition to speaking Spanish, she speaks French.'],
               ],
             },
             {
@@ -2127,7 +2127,7 @@ export const grammarB2: GrammarLevel = {
               type: 'table',
               headers: ['Suffix', 'Meaning', 'Examples'],
               rows: [
-                ['-cion / -sion', 'Action / result', 'traduccion, presentacion, decision, comprension'],
+                ['-cion / -sion', 'Action / result', 'traducción, presentación, decisión, comprensión'],
                 ['-miento / -mento', 'Process / result', 'conocimiento, entretenimiento, descubrimiento'],
                 ['-aje', 'Collective / process', 'aprendizaje, paisaje, montaje, aterrizaje'],
                 ['-ura', 'Quality / state', 'lectura, escritura, apertura'],
@@ -2196,8 +2196,8 @@ export const grammarB2: GrammarLevel = {
               type: 'table',
               headers: ['Connector', 'Meaning', 'Register'],
               rows: [
-                ['ademas', 'furthermore, besides', 'neutral'],
-                ['tambien', 'also', 'neutral'],
+                ['además', 'furthermore, besides', 'neutral'],
+                ['también', 'also', 'neutral'],
                 ['asimismo', 'likewise, also', 'formal'],
                 ['incluso', 'even', 'neutral'],
                 ['por otra parte', 'on the other hand', 'formal'],
@@ -2249,9 +2249,9 @@ export const grammarB2: GrammarLevel = {
               rows: [
                 ['por eso', "that's why", 'neutral'],
                 ['por lo tanto', 'therefore', 'formal'],
-                ['asi que', 'so', 'neutral'],
+                ['así que', 'so', 'neutral'],
                 ['en consecuencia', 'consequently', 'formal'],
-                ['de ahi que (+ subjunctive)', 'hence, which is why', 'formal'],
+                ['de ahí que (+ subjunctive)', 'hence, which is why', 'formal'],
                 ['por consiguiente', 'consequently', 'formal'],
               ],
             },
@@ -2264,9 +2264,9 @@ export const grammarB2: GrammarLevel = {
               headers: ['Connector', 'Meaning'],
               rows: [
                 ['en primer lugar / primero', 'firstly'],
-                ['en segundo lugar / despues', 'secondly / then'],
-                ['a continuacion', 'next, below'],
-                ['por ultimo / finalmente', 'finally'],
+                ['en segundo lugar / después', 'secondly / then'],
+                ['a continuación', 'next, below'],
+                ['por último / finalmente', 'finally'],
                 ['antes de nada / ante todo', 'first of all'],
               ],
             },
@@ -2309,8 +2309,8 @@ export const grammarB2: GrammarLevel = {
               type: 'table',
               headers: ['Connector', 'Meaning', 'Note'],
               rows: [
-                ['aunque + indicative', 'although (fact)', 'Lo hizo aunque era dificil.'],
-                ['aunque + subjunctive', 'even if (uncertain)', 'Lo hare aunque sea dificil.'],
+                ['aunque + indicative', 'although (fact)', 'Lo hizo aunque era difícil.'],
+                ['aunque + subjunctive', 'even if (uncertain)', 'Lo hare aunque sea difícil.'],
                 ['a pesar de que', 'despite the fact that', 'neutral'],
                 ['si bien', 'even though, while', 'formal'],
                 ['por mas que (+ subjunctive)', 'no matter how much', 'Por mas que lo intente, no puedo.'],
