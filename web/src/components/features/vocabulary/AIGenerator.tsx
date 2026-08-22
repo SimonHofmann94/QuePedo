@@ -8,17 +8,9 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { CheckIcon, SparkleIcon, XIcon } from "@/components/ui/icons"
-import { getDisplayTranslation } from "@chingon/shared"
+import { getTranslationMeanings } from "@chingon/shared"
+import type { GeneratedVocabularyWord } from "@/types/schemas"
 import { useLocale } from "next-intl"
-
-interface GeneratedWord {
-  term: string
-  translations: Record<string, string>
-  context_sentence?: string
-  difficulty_rating: number
-  tags: string[]
-  synonyms: string[]
-}
 
 export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
   const locale = useLocale()
@@ -26,7 +18,7 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
   const [count, setCount] = useState(5)
   const [isLoading, setIsLoading] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
-  const [generatedWords, setGeneratedWords] = useState<GeneratedWord[]>([])
+  const [generatedWords, setGeneratedVocabularyWords] = useState<GeneratedVocabularyWord[]>([])
   const [savedStatus, setSavedStatus] = useState<Record<number, "saved" | "error" | null>>({})
 
   const handleGenerate = async (e: React.FormEvent) => {
@@ -41,7 +33,7 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
     setSavedStatus({})
     try {
       const words = await generateVocabulary(prompt, count)
-      setGeneratedWords(words)
+      setGeneratedVocabularyWords(words)
     } catch (e) {
       console.error(e)
       alert("¡Ay, no! No se pudo generar el vocabulario.")
@@ -50,7 +42,7 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
     }
   }
 
-  const handleSaveWord = async (word: GeneratedWord, index: number) => {
+  const handleSaveWord = async (word: GeneratedVocabularyWord, index: number) => {
     const result = await addVocabulary(word, "ai_generated", prompt)
     setSavedStatus((p) => ({ ...p, [index]: result.error ? "error" : "saved" }))
     return result
@@ -63,7 +55,7 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
     }
     setIsSaving(false)
     if (generatedWords.every((_, i) => savedStatus[i] === "saved")) {
-      setGeneratedWords([])
+      setGeneratedVocabularyWords([])
       setPrompt("")
       setSavedStatus({})
       onSuccess?.()
@@ -71,7 +63,7 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
   }
 
   const handleReset = () => {
-    setGeneratedWords([])
+    setGeneratedVocabularyWords([])
     setSavedStatus({})
   }
 
@@ -136,7 +128,9 @@ export function AIGenerator({ onSuccess }: { onSuccess?: () => void }) {
                   <div className="font-display text-lg font-bold tracking-tight text-ink-800">
                     {word.term}
                   </div>
-                  <div className="text-sm text-ink-500">{getDisplayTranslation(word.translations, locale)}</div>
+                  <div className="text-sm text-ink-500">
+                    {getTranslationMeanings(word.translations, locale).join(" · ")}
+                  </div>
                   {word.context_sentence && (
                     <div className="mt-1 text-xs italic text-ink-400">
                       {word.context_sentence}

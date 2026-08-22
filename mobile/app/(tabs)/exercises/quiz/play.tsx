@@ -9,7 +9,7 @@ import { getUserVocabulary } from '@/services/vocabulary'
 // SRS: integrated by Agent E. Records SM-2 reviews on each answer; sources
 // words from `getDueWords` when settings.reviewMode is true.
 import { recordReview, getDueWords } from '@/services/srs'
-import { getDisplayTranslation, checkAnswer, type QuizSettings, type QuizResult, type UserVocabulary, AnalyticsEvent, createTracker } from '@chingon/shared'
+import { getDisplayTranslation, getTranslationMeanings, checkAnswer, type QuizSettings, type QuizResult, type UserVocabulary, AnalyticsEvent, createTracker } from '@chingon/shared'
 import { posthog } from '@/lib/posthog'
 import { useTranslation } from 'react-i18next'
 
@@ -102,7 +102,12 @@ export default function QuizPlayScreen() {
     if (!userAnswer.trim()) return
 
     const correctAnswer = getCorrectAnswer()
-    const correct = checkAnswer(userAnswer, correctAnswer)
+    // Grade against every meaning, display only the primary one.
+    const accepted =
+      settings?.quizType === 'term_to_translation'
+        ? getTranslationMeanings(word.translations, i18n.language)
+        : correctAnswer
+    const correct = checkAnswer(userAnswer, accepted)
 
     setIsCorrect(correct)
     setShowResult(true)

@@ -9,8 +9,29 @@ import b2 from './b2.json'
 import c1 from './c1.json'
 import c2 from './c2.json'
 import type { VocabList, VocabWord } from './types'
+import { toMeanings, type Translations } from '../../utils/quiz'
 
 export type { VocabList, VocabWord }
+
+/**
+ * Curated list words carry flat `de`/`en` fields; the rest of the app speaks the
+ * locale-keyed `translations` record. One conversion, so display, grading and
+ * "add to my notebook" can't drift apart.
+ */
+export function vocabWordTranslations(w: VocabWord): Translations {
+  const translations: Translations = { de: w.de }
+  if (w.en) translations.en = w.en
+  return translations
+}
+
+/**
+ * Meanings to SHOW for a curated list word, in the reader's language.
+ * These lists only ever hold German and English, so `es` resolves to English —
+ * unlike the generic de→en fallback, which would hand a Spanish UI German text.
+ */
+export function vocabListMeanings(w: VocabWord, locale?: string): string[] {
+  return toMeanings(locale === 'de' ? w.de : (w.en ?? w.de))
+}
 
 export const vocabLists: Record<string, VocabList> = {
   a1: a1 as VocabList,

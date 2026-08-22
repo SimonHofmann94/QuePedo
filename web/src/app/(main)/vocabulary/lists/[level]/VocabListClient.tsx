@@ -6,8 +6,9 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Segment } from "@/components/ui/segment"
 import { PlusIcon, SearchIcon } from "@/components/ui/icons"
+import { useLocale } from "next-intl"
 import { addVocabulary } from "@/actions/vocabulary"
-import type { VocabWord } from "@chingon/shared"
+import { vocabListMeanings, vocabWordTranslations, type VocabWord } from "@chingon/shared"
 
 type ColorFamily = "chili" | "jade" | "cielo" | "jacaranda" | "maiz" | "rosa" | "ink"
 
@@ -20,6 +21,7 @@ interface Props {
 }
 
 export function VocabListClient({ words, posLabel, posColor }: Props) {
+  const locale = useLocale()
   const [search, setSearch] = useState("")
   const [filter, setFilter] = useState<Filter>("all")
   const [adding, setAdding] = useState<Set<string>>(new Set())
@@ -33,23 +35,20 @@ export function VocabListClient({ words, posLabel, posColor }: Props) {
       if (filter === "adj" && w.pos !== "adj") return false
       if (filter === "other" && ["v", "n", "adj"].includes(w.pos)) return false
       if (!s) return true
-      return (
-        w.es.toLowerCase().includes(s) ||
-        w.de.toLowerCase().includes(s) ||
-        (w.en?.toLowerCase().includes(s) ?? false)
-      )
+      if (w.es.toLowerCase().includes(s)) return true
+      return Object.values(vocabWordTranslations(w))
+        .flat()
+        .some((m) => m.toLowerCase().includes(s))
     })
   }, [words, search, filter])
 
   const handleAdd = async (w: VocabWord) => {
     if (adding.has(w.es) || added.has(w.es)) return
     setAdding((prev) => new Set(prev).add(w.es))
-    const translations: Record<string, string> = { de: w.de }
-    if (w.en) translations.en = w.en
     const result = await addVocabulary(
       {
         term: w.es,
-        translations,
+        translations: vocabWordTranslations(w),
         context_sentence: w.example,
         difficulty_rating: 1,
         tags: [w.pos],
@@ -104,7 +103,7 @@ export function VocabListClient({ words, posLabel, posColor }: Props) {
           <thead className="border-b border-ink-100 bg-masa-50 text-left">
             <tr className="font-mono text-[11px] font-bold uppercase tracking-wider text-ink-500">
               <th className="px-4 py-3">Español</th>
-              <th className="px-4 py-3">Alemán</th>
+              <th className="px-4 py-3">{locale === "de" ? "Alemán" : "Inglés"}</th>
               <th className="hidden px-4 py-3 md:table-cell">Tipo</th>
               <th className="hidden px-4 py-3 md:table-cell">Ejemplo</th>
               <th className="px-4 py-3 text-right">Añadir</th>
@@ -121,11 +120,10 @@ export function VocabListClient({ words, posLabel, posColor }: Props) {
                       {w.gender === "f" ? "la " : w.gender === "m" ? "el " : ""}
                       {w.es}
                     </div>
-                    {w.en && (
-                      <div className="font-mono text-[10px] text-ink-400">{w.en}</div>
-                    )}
                   </td>
-                  <td className="px-4 py-3 text-sm text-ink-600">{w.de}</td>
+                  <td className="px-4 py-3 text-sm text-ink-600">
+                    {vocabListMeanings(w, locale).join(" · ")}
+                  </td>
                   <td className="hidden px-4 py-3 md:table-cell">
                     <Badge color={posColor[w.pos] ?? "ink"} variant="soft" size="sm">
                       {posLabel[w.pos] ?? w.pos}

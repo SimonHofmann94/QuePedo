@@ -1,72 +1,62 @@
 'use server'
 
 import { GoogleGenerativeAI } from "@google/generative-ai"
+import { getLocale } from "next-intl/server"
+import { z } from "zod"
+import { generatedVocabularySchema, type GeneratedVocabularyWord } from "@/types/schemas"
+import { createClient } from "@/utils/supabase/server"
+import {
+    MODEL,
+    MAX_COUNT,
+    MAX_PROMPT_WORDS,
+    RESPONSE_SCHEMA,
+    buildPrompt,
+} from "@/lib/vocabPrompt"
 
-export async function generateVocabulary(userPrompt: string, count: number = 5) {
+export async function generateVocabulary(userPrompt: string, count: number = 5): Promise<GeneratedVocabularyWord[]> {
+    // This action spends money. Anonymous callers used to be able to drive the
+    // Gemini bill straight from the landing page.
+    const supabase = await createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) throw new Error("Not authenticated")
+
+    const trimmed = userPrompt.trim()
+    if (!trimmed) throw new Error("Prompt is required")
+    if (trimmed.split(/\s+/).length > MAX_PROMPT_WORDS) {
+        throw new Error(`Prompt must be at most ${MAX_PROMPT_WORDS} words`)
+    }
+    const wordCount = Math.min(Math.max(Math.trunc(count) || 5, 1), MAX_COUNT)
+
     const apiKey = process.env.GEMINI_API_KEY
-
     if (!apiKey) {
         console.error("GEMINI_API_KEY is not set in environment")
         throw new Error("API key not configured")
     }
 
+    const locale = await getLocale()
+
     try {
-        // Initialize client inside function to ensure env is loaded
         const genAI = new GoogleGenerativeAI(apiKey)
-        const model = genAI.getGenerativeModel({ model: "gemini-3-flash-preview" })
+        const model = genAI.getGenerativeModel({
+            model: MODEL,
+            generationConfig: {
+                responseMimeType: "application/json",
+                responseSchema: RESPONSE_SCHEMA,
+            },
+        })
 
-        const prompt = `
-        Analyze the language of the user request: "${userPrompt}".
-        Generate ${count} Spanish vocabulary words based on the request.
+        const result = await model.generateContent(buildPrompt(trimmed, wordCount, locale))
+        const parsed = z
+            .array(generatedVocabularySchema)
+            .safeParse(JSON.parse((await result.response).text()))
 
-        IMPORTANT: Detect the language of the user's request (e.g., German, English, French).
-        Use the ISO 639-1 language code (de, en, fr, etc.) for the translations object.
-
-        Return ONLY a JSON array with objects containing:
-        - term (Spanish word/phrase)
-        - translations (Object with language codes as keys, e.g., {"de": "Die Katze", "en": "The cat"})
-          Always include the detected language. Include English too if the request wasn't in English.
-        - context_sentence (A simple Spanish sentence using the word)
-        - difficulty_rating (1-5 integer based on complexity)
-        - tags (Array of strings relevant to the word, in English)
-        - synonyms (Array of Spanish synonyms, empty array if none)
-
-        Example format for a German request:
-        [
-          {
-            "term": "el gato",
-            "translations": {"de": "die Katze", "en": "the cat"},
-            "context_sentence": "El gato duerme en el sofá.",
-            "difficulty_rating": 1,
-            "tags": ["animals", "pets", "nouns"],
-            "synonyms": ["minino"]
-          }
-        ]
-
-        Example format for an English request:
-        [
-          {
-            "term": "el gato",
-            "translations": {"en": "the cat"},
-            "context_sentence": "El gato duerme en el sofá.",
-            "difficulty_rating": 1,
-            "tags": ["animals", "pets", "nouns"],
-            "synonyms": ["minino"]
-          }
-        ]
-        `
-
-        const result = await model.generateContent(prompt)
-        const response = await result.response
-        const text = response.text()
-
-        // Clean up markdown code blocks if present
-        const jsonStr = text.replace(/```json\n?|\n?```/g, "").trim()
-
-        return JSON.parse(jsonStr)
+        if (!parsed.success) {
+            console.error("Gemini returned an unexpected shape:", parsed.error.issues)
+            throw new Error("The model returned malformed vocabulary")
+        }
+        return parsed.data
     } catch (error) {
         console.error("Error generating vocabulary:", error)
-        // Provide more detailed error info
         if (error instanceof Error) {
             throw new Error(`Failed to generate vocabulary: ${error.message}`)
         }

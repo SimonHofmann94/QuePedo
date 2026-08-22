@@ -7,6 +7,8 @@ export {
     type MasterVocabulary,
     vocabularySchema,
     type Vocabulary,
+    generatedVocabularySchema,
+    type GeneratedVocabularyWord,
     aiGeneratorSchema,
     type AIGeneratorInput,
     userProfileSchema,

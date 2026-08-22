@@ -15,7 +15,13 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { initPostHog } from "@/lib/posthog"
-import { AnalyticsEvent, createTracker, getDisplayTranslation } from "@chingon/shared"
+import {
+  AnalyticsEvent,
+  checkAnswer,
+  createTracker,
+  getDisplayTranslation,
+  getTranslationMeanings,
+} from "@chingon/shared"
 import { useLocale } from "next-intl"
 
 import "swiper/css"
@@ -36,23 +42,6 @@ interface QuizResult {
   correct: boolean
   userAnswer: string
   correctAnswer: string
-}
-
-function normalizeAnswer(a: string) {
-  return a
-    .toLowerCase()
-    .trim()
-    .replace(/^(el|la|los|las|un|una|unos|unas|der|die|das|ein|eine)\s+/i, "")
-    .replace(/[.,!?¿¡'"]/g, "")
-    .trim()
-}
-
-function checkAnswer(user: string, correct: string): boolean {
-  const u = normalizeAnswer(user)
-  const c = normalizeAnswer(correct)
-  if (u === c) return true
-  if (c.includes(u) && u.length > 3) return true
-  return false
 }
 
 export default function QuizPlayPage() {
@@ -138,11 +127,21 @@ export default function QuizPlayPage() {
     return settings?.quizType === "term_to_translation" ? getDisplayTranslation(w.translations, locale) : w.term
   }
 
+  // Grading accepts ANY meaning — "Sitzbank" is as right as "Bank" for `el banco`.
+  // Display still shows the primary one, so the answer card stays short.
+  const getAcceptedAnswers = (): string | string[] => {
+    const w = getCurrentWord()
+    if (!w) return ""
+    return settings?.quizType === "term_to_translation"
+      ? getTranslationMeanings(w.translations, locale)
+      : w.term
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!userAnswer.trim()) return
     const word = getCurrentWord()
-    const correct = checkAnswer(userAnswer, getCorrectAnswer())
+    const correct = checkAnswer(userAnswer, getAcceptedAnswers())
     setIsCorrect(correct)
     setShowResult(true)
     setResults((p) => [

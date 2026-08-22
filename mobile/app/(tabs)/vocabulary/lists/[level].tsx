@@ -15,7 +15,13 @@ import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { addVocabulary } from '@/services/vocabulary'
-import { getVocabList, type VocabWord } from '@chingon/shared'
+import {
+  getVocabList,
+  vocabListMeanings,
+  vocabWordTranslations,
+  type VocabWord,
+} from '@chingon/shared'
+import { useTranslation } from 'react-i18next'
 import { colors, fontFamily, surface, LEVEL_COLOR, ColorFamily } from '@/constants/theme'
 
 const LEVEL_FAMILY: Record<string, Exclude<ColorFamily, 'ink' | 'masa'>> = {
@@ -53,6 +59,7 @@ const POS_COLOR: Record<string, ColorFamily> = {
 const FREE_LEVELS = new Set(['a1', 'a2'])
 
 export default function VocabListLevelScreen() {
+  const { i18n } = useTranslation()
   const router = useRouter()
   const { level } = useLocalSearchParams<{ level: string }>()
   const { isPremium, presentPaywall, canAddVocabulary, refreshSubscription } = useSubscription()
@@ -74,8 +81,9 @@ export default function VocabListLevelScreen() {
     return list.words.filter(
       (w) =>
         w.es.toLowerCase().includes(s) ||
-        w.de.toLowerCase().includes(s) ||
-        (w.en?.toLowerCase().includes(s) ?? false),
+        Object.values(vocabWordTranslations(w))
+          .flat()
+          .some((m) => m.toLowerCase().includes(s)),
     )
   }, [list, search])
 
@@ -89,13 +97,10 @@ export default function VocabListLevelScreen() {
       }
 
       setAdding((prev) => new Set(prev).add(w.es))
-      const translations: Record<string, string> = { de: w.de }
-      if (w.en) translations.en = w.en
-
       const result = await addVocabulary(
         {
           term: w.es,
-          translations,
+          translations: vocabWordTranslations(w),
           context_sentence: w.example,
           difficulty_rating: 1,
           tags: [w.pos],
@@ -208,8 +213,9 @@ export default function VocabListLevelScreen() {
             {article}
             {item.es}
           </Text>
-          <Text style={styles.wordTranslation}>{item.de}</Text>
-          {item.en && <Text style={styles.wordEnglish}>{item.en}</Text>}
+          <Text style={styles.wordTranslation}>
+            {vocabListMeanings(item, i18n.language).join(' · ')}
+          </Text>
           {item.example && (
             <Text style={styles.wordExample} numberOfLines={2}>
               {item.example}
@@ -331,7 +337,6 @@ const styles = StyleSheet.create({
     letterSpacing: -0.3,
   },
   wordTranslation: { fontFamily: fontFamily.body, fontSize: 14, color: colors.ink[600], marginTop: 2 },
-  wordEnglish: { fontFamily: fontFamily.mono, fontSize: 11, color: colors.ink[400], marginTop: 1 },
   wordExample: {
     fontFamily: fontFamily.body, fontStyle: 'italic',
     fontSize: 12, color: colors.ink[500], marginTop: 6,

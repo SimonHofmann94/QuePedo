@@ -29,7 +29,7 @@ import {
   deleteMultipleVocabulary,
 } from "@/actions/vocabulary"
 import { UserVocabulary } from "@/types/schemas"
-import { getDisplayTranslation } from "@chingon/shared"
+import { getDisplayTranslation, translationsMatch } from "@chingon/shared"
 import { useLocale } from "next-intl"
 
 const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"] as const
@@ -63,13 +63,6 @@ function pickTagColor(tag?: string): ColorFamily {
 function levelFromDifficulty(d: number): Level {
   // Map 1–5 to A1–C2
   return (["A1", "A2", "B1", "B2", "C1"][Math.max(0, Math.min(4, d - 1))] as Level)
-}
-
-function translationsMatch(translations: Record<string, string>, search: string): boolean {
-  if (!translations || typeof translations !== "object") return false
-  return Object.values(translations).some((t) =>
-    t.toLowerCase().includes(search.toLowerCase()),
-  )
 }
 
 type Filter = "all" | "new" | "review" | "mastered"

@@ -1,5 +1,6 @@
 import type { VocabWord } from '../content/vocab/types'
-import { getDisplayTranslation, normalizeAnswer } from '../utils/quiz'
+import { vocabWordTranslations } from '../content/vocab'
+import { getDisplayTranslation, normalizeAnswer, type Translations } from '../utils/quiz'
 import type { SessionWord } from './types'
 
 // ── Inputs ───────────────────────────────────────────────────────────────
@@ -8,7 +9,7 @@ import type { SessionWord } from './types'
 export interface UserWordInput {
   id: string
   term: string
-  translations: Record<string, string>
+  translations: Translations
   progress?: {
     box_level?: number
     next_review_at?: string | null
@@ -43,9 +44,7 @@ function fromUserWord(w: UserWordInput, locale: string | undefined, now: Date): 
 }
 
 function fromCurated(w: VocabWord, locale: string | undefined): SessionWord | null {
-  const translations: Record<string, string> = { de: w.de }
-  if (w.en) translations.en = w.en
-  const display = getDisplayTranslation(translations, locale)
+  const display = getDisplayTranslation(vocabWordTranslations(w), locale)
   if (!w.es?.trim() || !display) return null
   return { id: `curated:${w.es}`, es: w.es.trim(), display, pos: w.pos, srsWeight: 1 }
 }

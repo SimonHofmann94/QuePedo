@@ -1,10 +1,14 @@
 import { z } from "zod"
 
+// A translation is one meaning, or several distinct ones (`el banco` = bank/bench).
+// The union keeps every pre-existing single-string row valid — no migration.
+export const translationValueSchema = z.union([z.string(), z.array(z.string())])
+
 // User vocabulary schema (personal words)
 export const userVocabularySchema = z.object({
     id: z.string().uuid().optional(),
     term: z.string().min(1, "Term is required"),
-    translations: z.record(z.string()).default({}), // { "de": "...", "en": "..." }
+    translations: z.record(translationValueSchema).default({}), // { "de": ["Bank", "Sitzbank"], "en": "bank" }
     context_sentence: z.string().optional(),
     difficulty_rating: z.number().min(1).max(5).default(1),
     tags: z.array(z.string()).default([]),
@@ -25,9 +29,9 @@ export type UserVocabulary = z.infer<typeof userVocabularySchema> & {
 export const masterVocabularySchema = z.object({
     id: z.string().uuid().optional(),
     term: z.string().min(1, "Term is required"),
-    translations: z.record(z.string()).default({}),
+    translations: z.record(translationValueSchema).default({}),
     context_sentence: z.string().optional(),
-    context_translations: z.record(z.string()).optional(),
+    context_translations: z.record(translationValueSchema).optional(),
     part_of_speech: z.enum(["noun", "verb", "adjective", "adverb", "phrase", "preposition", "conjunction", "pronoun", "interjection"]).optional(),
     level: z.enum(["A1", "A2", "B1", "B2", "C1", "C2"]),
     category: z.string().optional(),
@@ -48,6 +52,26 @@ export type MasterVocabulary = z.infer<typeof masterVocabularySchema> & {
 // Backwards compatibility alias
 export const vocabularySchema = userVocabularySchema
 export type Vocabulary = UserVocabulary
+
+// One AI-generated vocabulary word. Every language carries a LIST of meanings so
+// distinct senses survive (`el banco` = Bank / Sitzbank); `es` is a short Spanish
+// definition rather than the word itself.
+const meaningsSchema = z.array(z.string().min(1)).min(1).max(4)
+
+export const generatedVocabularySchema = z.object({
+    term: z.string().min(1),
+    translations: z.object({
+        de: meaningsSchema,
+        en: meaningsSchema,
+        es: meaningsSchema,
+    }),
+    context_sentence: z.string().optional(),
+    difficulty_rating: z.number().int().min(1).max(5).catch(1),
+    tags: z.array(z.string()).default([]),
+    synonyms: z.array(z.string()).default([]),
+})
+
+export type GeneratedVocabularyWord = z.infer<typeof generatedVocabularySchema>
 
 export const aiGeneratorSchema = z.object({
     topic: z.string().min(1, "Topic is required"),

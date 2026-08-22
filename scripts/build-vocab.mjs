@@ -17,6 +17,13 @@
  *     entries are NEVER removed — dedup only filters NEW candidates.
  *   - Each level grows toward LEVEL_TARGETS[level] (early-stop when reached).
  *
+ * --enrich mode:
+ *   Leaves the word set alone and re-translates EXISTING entries so words with
+ *   several distinct senses carry a list instead of one string ("el banco" ->
+ *   de: ["die Bank (Geldinstitut)", "die Sitzbank"]). Single-sense words stay
+ *   plain strings, which keeps the diff readable. Already-enriched entries
+ *   (arrays) are skipped, so a failed run resumes where it stopped.
+ *
  * Source: https://github.com/doozan/spanish_data (CC-BY-4.0)
  */
 
@@ -140,11 +147,12 @@ async function loadExistingVocab() {
 
 // Models to try in order — fall back if one is overloaded.
 // flash-lite first: simple translation needs no reasoning, it's cheaper,
-// and typically far less rate-limited than the flagship 2.5-flash.
-// Verified Apr 2026: 2.0-flash and 1.5-flash are deprecated → removed.
+// and typically far less rate-limited than the flagship.
+// Verified Aug 2026: the whole 2.5 family now 404s for new API keys
+// ("no longer available to new users") → moved to 3.5.
 const MODELS = [
-  'gemini-2.5-flash-lite',
-  'gemini-2.5-flash',
+  'gemini-3.5-flash-lite',
+  'gemini-3.5-flash',
   'gemini-3-flash-preview',
 ]
 
@@ -312,6 +320,164 @@ async function buildLevel(level, planned, perLevelExisting, dryRun, apiKey) {
   console.log(`✓ Wrote ${file} (${existing.length} words total)`)
 }
 
+/**
+ * Re-translate existing entries with multiple meanings where the lemma warrants
+ * it. Returns entries in input order with `de`/`en` replaced.
+ */
+async function enrichBatch(batch, apiKey) {
+  const items = batch.map((w) => `${w.es} (${w.pos})`).join('\n')
+  const prompt = `You are a Spanish-German-English lexicographer. For each Spanish lemma, list its distinct meanings.
+Return STRICT JSON: an array of objects with keys "de" (array of German translations) and "en" (array of English translations).
+Keep order identical to input, one object per input line.
+
+Rules:
+- List SEVERAL meanings only when the lemma has genuinely DISTINCT senses:
+  "banco" -> de: ["die Bank (Geldinstitut)", "die Sitzbank"], en: ["bank", "bench"]
+  "tiempo" -> de: ["die Zeit", "das Wetter"], en: ["time", "weather"]
+- List exactly ONE meaning when the lemma has one sense. Do NOT pad with near-synonyms:
+  "casa" -> de: ["das Haus"], en: ["house"]  (NOT "das Heim", "die Wohnung")
+- Maximum 3 meanings per language, most common first.
+- German nouns include the article (der/die/das). Add a short parenthetical only
+  when two senses would otherwise read the same.
+- List senses of THE EXACT FORM GIVEN ONLY. Never merge in a different lemma that
+  merely looks or sounds similar — "el" (the article) is NOT "él" (he), and neither
+  of them is "lo" (him/it). Getting this wrong on function words is the most common
+  failure here.
+- Function words usually have ONE meaning per grammatical role. Only split when the
+  roles are genuinely different words in German ("haber" -> ["haben", "es gibt"],
+  "ir" -> ["gehen", "fahren"]), not to enumerate every context a preposition can appear in.
+
+Input (one lemma per line, format "spanish (pos)"):
+${items}
+
+Return ONLY the JSON array, no markdown, no explanation.`
+
+  let lastErr
+  for (const model of MODELS) {
+    const delays = [2000, 5000, 12000, 30000]
+    for (let attempt = 0; attempt <= delays.length; attempt++) {
+      try {
+        const data = await callGemini(prompt, apiKey, model)
+        const raw = data.candidates?.[0]?.content?.parts?.[0]?.text ?? '[]'
+        const parsed = JSON.parse(raw)
+        if (!Array.isArray(parsed) || parsed.length !== batch.length) {
+          throw new Error(`Bad shape: expected ${batch.length}, got ${parsed?.length}`)
+        }
+        return batch.map((w, i) => {
+          const de = collapse(parsed[i]?.de, w.de)
+          const en = collapse(parsed[i]?.en, w.en)
+          return { ...w, de, ...(en ? { en } : {}) }
+        })
+      } catch (e) {
+        lastErr = e
+        if (!e.status || !RETRYABLE.has(e.status)) break
+        if (attempt === delays.length) break
+        const wait = delays[attempt]
+        process.stdout.write(` [${model} ${e.status} retry in ${wait / 1000}s]`)
+        await new Promise((r) => setTimeout(r, wait))
+      }
+    }
+    process.stdout.write(` [${model} failed → next]`)
+  }
+  throw lastErr ?? new Error('All models exhausted')
+}
+
+/**
+ * A single meaning stays a plain string; several become an array. Keeps the JSON
+ * diff to the words that actually gained a sense. Falls back to the previous
+ * value if the model returned nothing usable.
+ */
+function collapse(value, fallback) {
+  const list = (Array.isArray(value) ? value : [value])
+    .filter((m) => typeof m === 'string' && m.trim())
+    .map((m) => m.trim())
+    .slice(0, 3)
+  if (list.length === 0) return fallback
+  return list.length === 1 ? list[0] : list
+}
+
+/** Already enriched = at least one field is a list. */
+function isEnriched(w) {
+  return Array.isArray(w.de) || Array.isArray(w.en)
+}
+
+/** Collapse a level back to single meanings so --redo can re-enrich it. */
+function resetWord(w) {
+  const first = (v) => (Array.isArray(v) ? v[0] : v)
+  const out = { ...w, de: first(w.de) }
+  if (w.en !== undefined) out.en = first(w.en)
+  return out
+}
+
+async function enrichLevel(level, dryRun, apiKey, redo = false) {
+  const file = path.join(VOCAB_DIR, `${level}.json`)
+  let list
+  try {
+    list = JSON.parse(await fs.readFile(file, 'utf8'))
+  } catch {
+    console.log(`  ⚠ ${file} missing or unreadable — skipping`)
+    return
+  }
+  let words = Array.isArray(list?.words) ? list.words : []
+  // --redo: collapse existing arrays so every word is re-translated with the
+  // current prompt. Use after a prompt fix; otherwise enrichment is append-only.
+  if (redo) words = words.map(resetWord)
+  const todo = words.filter((w) => !isEnriched(w))
+
+  console.log(`\n=== ${level.toUpperCase()} (enrich) ===`)
+  console.log(`  words:      ${words.length}`)
+  console.log(`  already:    ${words.length - todo.length}`)
+  console.log(`  to enrich:  ${todo.length} (batches of 50 → ${Math.ceil(todo.length / 50)})`)
+
+  if (todo.length === 0) return
+  if (dryRun) {
+    console.log(`  Sample: ${todo.slice(0, 8).map((w) => w.es).join(', ')}${todo.length > 8 ? ' …' : ''}`)
+    return
+  }
+  if (!apiKey) {
+    console.log('  ⚠ No GEMINI_API_KEY — skipping')
+    return
+  }
+
+  const byTerm = new Map(words.map((w, i) => [i, w]))
+  const indexOfWord = new Map(words.map((w, i) => [w, i]))
+  const BATCH = 50
+  const totalBatches = Math.ceil(todo.length / BATCH)
+
+  const flush = async () => {
+    const merged = [...byTerm.values()]
+    await fs.writeFile(
+      file,
+      JSON.stringify(
+        { ...list, generatedAt: new Date().toISOString().split('T')[0], wordCount: merged.length, words: merged },
+        null,
+        2,
+      ),
+    )
+  }
+
+  let multi = 0
+  for (let i = 0; i < todo.length; i += BATCH) {
+    const batch = todo.slice(i, i + BATCH)
+    process.stdout.write(`  Batch ${i / BATCH + 1}/${totalBatches} (${batch.length} words)…`)
+    try {
+      const enriched = await enrichBatch(batch, apiKey)
+      enriched.forEach((w, j) => {
+        byTerm.set(indexOfWord.get(batch[j]), w)
+        if (Array.isArray(w.de)) multi++
+      })
+      process.stdout.write(' ✓\n')
+      await flush() // save every batch so a crash resumes cleanly
+    } catch (e) {
+      process.stdout.write(` ✗ ${e.message}\n  (Skipping this batch — re-run to retry.)\n`)
+    }
+    await new Promise((r) => setTimeout(r, 500))
+  }
+
+  await flush()
+  console.log(`✓ Wrote ${file} (${multi} words gained a second meaning)`)
+}
+
 function parseLevelArgs(args) {
   // Accept --levels=a1,a2 OR positional `a1 a2 b1`.
   const flag = args.find((a) => a.startsWith('--levels='))
@@ -328,12 +494,28 @@ function parseLevelArgs(args) {
 async function main() {
   const args = process.argv.slice(2)
   const dryRun = args.includes('--dry-run')
+  const enrich = args.includes('--enrich')
+  const redo = args.includes('--redo')
   const requested = parseLevelArgs(args)
   const levels = requested.length > 0 ? requested : Object.keys(BUCKETS)
 
   const apiKey = process.env.GEMINI_API_KEY
   if (!apiKey && !dryRun) {
     console.warn('⚠ GEMINI_API_KEY not set. Use --dry-run to preview without translation.')
+  }
+
+  // Enrichment never touches the frequency corpus — it only re-translates what
+  // is already in the level files.
+  if (enrich) {
+    for (const level of levels) {
+      if (!BUCKETS[level]) {
+        console.warn(`Unknown level: ${level}`)
+        continue
+      }
+      await enrichLevel(level, dryRun, apiKey, redo)
+    }
+    console.log('\n✓ Done.')
+    return
   }
 
   const csvText = await fetchFreq()

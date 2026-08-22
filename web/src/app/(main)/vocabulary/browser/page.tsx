@@ -13,7 +13,7 @@ import {
   deleteMultipleVocabulary,
 } from "@/actions/vocabulary"
 import { UserVocabulary } from "@/types/schemas"
-import { getDisplayTranslation } from "@chingon/shared"
+import { getDisplayTranslation, translationsMatch } from "@chingon/shared"
 import { useLocale } from "next-intl"
 
 type Level = "A1" | "A2" | "B1" | "B2" | "C1" | "C2"
@@ -29,13 +29,6 @@ const LEVEL_COLOR = {
 
 function levelFromDifficulty(d: number): Level {
   return (["A1", "A2", "B1", "B2", "C1"][Math.max(0, Math.min(4, d - 1))] as Level)
-}
-
-function translationsMatch(translations: Record<string, string>, search: string): boolean {
-  if (!translations || typeof translations !== "object") return false
-  return Object.values(translations).some((t) =>
-    t.toLowerCase().includes(search.toLowerCase()),
-  )
 }
 
 export default function VocabularyBrowserPage() {
