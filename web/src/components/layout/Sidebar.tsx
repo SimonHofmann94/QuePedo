@@ -3,14 +3,14 @@
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { useTranslations } from "next-intl"
-import { LogOut } from "lucide-react"
+import { LogOut, ShieldCheck } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { navigationItems } from "@/lib/navigation"
 import { createClient } from "@/utils/supabase/client"
 import { Logo } from "@/components/ui/logo"
 import { Avatar } from "@/components/ui/avatar"
 
-export function Sidebar() {
+export function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
     const pathname = usePathname()
     const router = useRouter()
     const supabase = createClient()
@@ -46,6 +46,21 @@ export function Sidebar() {
                         </Link>
                     )
                 })}
+                {/* Admin panel — was an unlinked URL until now. Server-gated on the page itself. */}
+                {isAdmin && (
+                    <Link
+                        href="/admin"
+                        className={cn(
+                            "mt-2 flex items-center gap-3 rounded-[12px] border-2 border-dashed px-3.5 py-3 font-body text-sm font-semibold transition-all",
+                            pathname.startsWith("/admin")
+                                ? "border-jacaranda-500 bg-jacaranda-50 text-jacaranda-700"
+                                : "border-ink-200 text-ink-500 hover:border-jacaranda-300 hover:bg-jacaranda-50 hover:text-jacaranda-700",
+                        )}
+                    >
+                        <ShieldCheck className="h-5 w-5" />
+                        Admin
+                    </Link>
+                )}
             </nav>
 
             {/* Streak footer */}

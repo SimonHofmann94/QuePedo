@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
-import { createClient, type SupabaseClient } from "@supabase/supabase-js"
+import type { SupabaseClient } from "@supabase/supabase-js"
+import { createServiceRoleClient } from "@/utils/supabase/admin"
 import { timingSafeEqual } from "node:crypto"
 import { RC_ENTITLEMENT_ID } from "@chingon/shared"
 
@@ -238,15 +239,9 @@ async function setTier(
 }
 
 function getServiceRoleClient() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const serviceRole = process.env.SUPABASE_SERVICE_ROLE_KEY
-  if (!url || !serviceRole) {
-    console.error("[rc-webhook] missing supabase env")
-    return null
-  }
-  return createClient(url, serviceRole, {
-    auth: { persistSession: false, autoRefreshToken: false },
-  })
+  const client = createServiceRoleClient()
+  if (!client) console.error("[rc-webhook] missing supabase env")
+  return client
 }
 
 function safeEqual(a: string, b: string): boolean {

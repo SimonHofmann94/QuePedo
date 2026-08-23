@@ -1,6 +1,7 @@
 "use server"
 
 import { createClient } from "@/utils/supabase/server"
+import { createServiceRoleClient } from "@/utils/supabase/admin"
 import {
   cultureCountrySchema,
   getCultureCountry,
@@ -16,6 +17,19 @@ export type AdminUser = {
   subscription_tier: string
   taco_balance: number
   is_admin: boolean
+  created_at: string
+  /** From auth.users — non-null and in the future means banned. */
+  banned_until: string | null
+  last_sign_in_at: string | null
+}
+
+export type AdminAuditEntry = {
+  id: string
+  admin_email: string
+  action: string
+  target_user_id: string
+  target_email: string
+  detail: Record<string, unknown> | null
   created_at: string
 }
 
@@ -36,12 +50,12 @@ export async function isCallerAdmin(): Promise<boolean> {
   return data === true
 }
 
-export async function adminListUsers(search?: string): Promise<AdminUser[]> {
+export async function adminListUsers(search?: string, offset = 0): Promise<AdminUser[]> {
   const supabase = await createClient()
   const { data, error } = await supabase.rpc("admin_list_users", {
     p_search: search?.trim() || null,
     p_limit: 50,
-    p_offset: 0,
+    p_offset: Math.max(0, offset),
   })
   if (error) {
     console.error("[admin] list users error:", error)
@@ -52,6 +66,8 @@ export async function adminListUsers(search?: string): Promise<AdminUser[]> {
 
 export async function adminUpdateUser(update: {
   userId: string
+  /** For the audit row only — never used for authorization. */
+  targetEmail?: string
   tier?: "free" | "premium"
   tacoBalance?: number
   isAdmin?: boolean
@@ -72,7 +88,152 @@ export async function adminUpdateUser(update: {
       : "No se pudo actualizar el usuario"
     return { success: false, error: msg }
   }
+  if (data === true) {
+    // Best-effort audit — an audit failure must never roll back the edit.
+    const targetEmail = update.targetEmail ?? "?"
+    if (update.tier !== undefined) void audit("update_tier", update.userId, targetEmail, { tier: update.tier })
+    if (update.tacoBalance !== undefined) void audit("update_tacos", update.userId, targetEmail, { tacos: update.tacoBalance })
+    if (update.isAdmin !== undefined) void audit(update.isAdmin ? "grant_admin" : "revoke_admin", update.userId, targetEmail)
+  }
   return { success: data === true }
+}
+
+async function audit(
+  action: string,
+  targetUserId: string,
+  targetEmail: string,
+  detail?: Record<string, unknown>,
+) {
+  const supabase = await createClient()
+  const { error } = await supabase.rpc("admin_log_action", {
+    p_action: action,
+    p_target_user_id: targetUserId,
+    p_target_email: targetEmail,
+    p_detail: detail ?? null,
+  })
+  if (error) console.error("[admin] audit log error:", error)
+}
+
+// ── Ban / delete ─────────────────────────────────────────────────────────
+// These touch auth.users, which no RPC running as the API role can reach, so
+// they go through the service-role client. Authorization happens HERE, before
+// the privileged client is ever created: admin check, then a refusal to act
+// on the caller's own account — the DB can't protect you from yourself on
+// these operations, so the action does.
+
+type AdminActionResult = { success: boolean; error?: string }
+
+async function requireAdminActingOnOther(targetUserId: string): Promise<
+  { ok: true; callerId: string } | { ok: false; error: string }
+> {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) return { ok: false, error: "No has iniciado sesión" }
+  if (!(await isCallerAdmin())) return { ok: false, error: "Solo admins" }
+  if (user.id === targetUserId) return { ok: false, error: "No puedes hacer esto con tu propia cuenta" }
+  return { ok: true, callerId: user.id }
+}
+
+/**
+ * Ban (or unban) an auth user. A ban makes Supabase refuse new sign-ins and
+ * token refresh. An already-issued access token stays valid until its JWT
+ * expires, so an open tab can survive up to the token TTL — the UI says so.
+ */
+export async function adminBanUser(input: {
+  userId: string
+  ban: boolean
+}): Promise<AdminActionResult> {
+  const gate = await requireAdminActingOnOther(input.userId)
+  if (!gate.ok) return { success: false, error: gate.error }
+
+  const admin = createServiceRoleClient()
+  if (!admin) {
+    console.error("[admin] SUPABASE_SERVICE_ROLE_KEY not set — cannot ban")
+    return { success: false, error: "Falta SUPABASE_SERVICE_ROLE_KEY en el servidor" }
+  }
+
+  const { data: target, error: lookupError } = await admin.auth.admin.getUserById(input.userId)
+  if (lookupError || !target.user) return { success: false, error: "Usuario no encontrado" }
+
+  // Never let an admin ban another admin from the panel — demote first.
+  const { data: profile } = await admin
+    .from("user_profiles")
+    .select("is_admin")
+    .eq("id", input.userId)
+    .maybeSingle()
+  if (input.ban && profile?.is_admin) {
+    return { success: false, error: "Quita el admin antes de bloquear esta cuenta" }
+  }
+
+  // 100 years is Supabase's own documented "permanent" ban; "none" lifts it.
+  const { error } = await admin.auth.admin.updateUserById(input.userId, {
+    ban_duration: input.ban ? "876000h" : "none",
+  })
+  if (error) {
+    console.error("[admin] ban error:", error)
+    return { success: false, error: input.ban ? "No se pudo bloquear" : "No se pudo desbloquear" }
+  }
+
+  await audit(input.ban ? "ban" : "unban", input.userId, target.user.email ?? "?")
+  return { success: true }
+}
+
+/**
+ * Permanently delete an auth user. Cascades through user_profiles and every
+ * user-owned table via ON DELETE CASCADE. Irreversible — the caller must
+ * re-type the account's email, which is checked server-side against the
+ * real address, not the one the form happened to display.
+ */
+export async function adminDeleteUser(input: {
+  userId: string
+  confirmEmail: string
+}): Promise<AdminActionResult> {
+  const gate = await requireAdminActingOnOther(input.userId)
+  if (!gate.ok) return { success: false, error: gate.error }
+
+  const admin = createServiceRoleClient()
+  if (!admin) {
+    console.error("[admin] SUPABASE_SERVICE_ROLE_KEY not set — cannot delete")
+    return { success: false, error: "Falta SUPABASE_SERVICE_ROLE_KEY en el servidor" }
+  }
+
+  const { data: target, error: lookupError } = await admin.auth.admin.getUserById(input.userId)
+  if (lookupError || !target.user) return { success: false, error: "Usuario no encontrado" }
+
+  const realEmail = target.user.email?.trim().toLowerCase() ?? ""
+  if (!realEmail || input.confirmEmail.trim().toLowerCase() !== realEmail) {
+    return { success: false, error: "El email no coincide" }
+  }
+
+  const { data: profile } = await admin
+    .from("user_profiles")
+    .select("is_admin")
+    .eq("id", input.userId)
+    .maybeSingle()
+  if (profile?.is_admin) {
+    return { success: false, error: "Quita el admin antes de eliminar esta cuenta" }
+  }
+
+  // Log BEFORE deleting: the audit row has no FK on the target precisely so
+  // it survives, but the email lookup above won't be possible afterwards.
+  await audit("delete", input.userId, realEmail)
+
+  const { error } = await admin.auth.admin.deleteUser(input.userId)
+  if (error) {
+    console.error("[admin] delete error:", error)
+    return { success: false, error: "No se pudo eliminar la cuenta" }
+  }
+  return { success: true }
+}
+
+export async function adminListAudit(limit = 50): Promise<AdminAuditEntry[]> {
+  const supabase = await createClient()
+  const { data, error } = await supabase.rpc("admin_list_audit", { p_limit: limit })
+  if (error) {
+    console.error("[admin] audit list error:", error)
+    return []
+  }
+  return (data ?? []) as AdminAuditEntry[]
 }
 
 export async function adminStats(): Promise<AdminStats | null> {

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { redirect } from "next/navigation"
 import { isCallerAdmin, adminListUsers, adminStats } from "@/actions/admin"
+import { createClient } from "@/utils/supabase/server"
 import { AdminUsersTable } from "./AdminUsersTable"
 
 // Admin dashboard v1 — users + subscriptions. Server-side gated; every RPC
@@ -10,7 +11,12 @@ export default async function AdminPage() {
   const admin = await isCallerAdmin()
   if (!admin) redirect("/dashboard")
 
-  const [stats, users] = await Promise.all([adminStats(), adminListUsers()])
+  const supabase = await createClient()
+  const [stats, users, { data: { user } }] = await Promise.all([
+    adminStats(),
+    adminListUsers(),
+    supabase.auth.getUser(),
+  ])
 
   const kpis = [
     { label: "Usuarios", value: stats?.total_users ?? "—", color: "cielo" },
@@ -71,7 +77,7 @@ export default async function AdminPage() {
           </span>
         </Link>
 
-        <AdminUsersTable initialUsers={users} />
+        <AdminUsersTable initialUsers={users} callerId={user?.id ?? ""} />
       </div>
     </div>
   )
