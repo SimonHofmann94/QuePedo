@@ -25,9 +25,18 @@ const LEVEL_COLOR: Record<CEFRLevel, string> = {
 export function VocabPicker({
   value,
   onChange,
+  hideMine = false,
+  levels = LEVELS,
+  freeLevels = FREE_GAME_LEVELS,
 }: {
   value: GameVocabSource
   onChange: (s: GameVocabSource) => void
+  /** Grammar games: notebook words carry no gender and no sentences. */
+  hideMine?: boolean
+  /** Which CEFR chips to show (a game may only have content for some). */
+  levels?: readonly CEFRLevel[]
+  /** Which of those are free — grammar games free their own floor level. */
+  freeLevels?: ReadonlySet<CEFRLevel>
 }) {
   const { isPremium } = useSubscription()
   const [premiumNudge, setPremiumNudge] = useState(false)
@@ -46,22 +55,24 @@ export function VocabPicker({
   return (
     <div className="mt-5">
       <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-[2px] text-ink-400">
-        ¿Con qué palabras juegas?
+        {hideMine ? "¿Qué nivel?" : "¿Con qué palabras juegas?"}
       </div>
       <div className="flex flex-wrap justify-center gap-1.5">
-        <button
-          type="button"
-          onClick={() => pick({ kind: "mine" }, false)}
-          className={`rounded-full border-2 px-3.5 py-1.5 font-display text-xs font-extrabold transition-all ${
-            mineActive
-              ? "border-ink-700 bg-ink-700 text-white"
-              : "border-ink-200 bg-white text-ink-500"
-          }`}
-        >
-          📓 Mi cuaderno
-        </button>
-        {LEVELS.map((level) => {
-          const locked = !isPremium && !FREE_GAME_LEVELS.has(level)
+        {!hideMine && (
+          <button
+            type="button"
+            onClick={() => pick({ kind: "mine" }, false)}
+            className={`rounded-full border-2 px-3.5 py-1.5 font-display text-xs font-extrabold transition-all ${
+              mineActive
+                ? "border-ink-700 bg-ink-700 text-white"
+                : "border-ink-200 bg-white text-ink-500"
+            }`}
+          >
+            📓 Mi cuaderno
+          </button>
+        )}
+        {levels.map((level) => {
+          const locked = !isPremium && !freeLevels.has(level)
           const active = value.kind === "curated" && value.level === level
           const color = LEVEL_COLOR[level]
           return (
@@ -86,7 +97,7 @@ export function VocabPicker({
       </div>
       {premiumNudge && (
         <p className="mt-2 text-center text-xs text-ink-500">
-          Los niveles B1–C2 son Premium.{" "}
+          Los niveles superiores son Premium.{" "}
           <Link href="/pricing" className="font-bold text-chili-500 underline">
             Hazte Premium
           </Link>

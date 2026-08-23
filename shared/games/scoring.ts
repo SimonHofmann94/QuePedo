@@ -47,6 +47,14 @@ export function maxAchievableScore(gameId: GameId, correct: number): number {
       // All matches + every row and column bonus (4 + 4).
       return correct * c.pointsPerMatch + 8 * c.lineBonus
     }
+    case 'el_o_la':
+    case 'ser_estar':
+    case 'pasado':
+    case 'subjuntivo': {
+      // Every answer at max combo. No speed or lives factor by design.
+      const c = GAME_CONFIG[gameId]
+      return correct * c.pointsPerCorrect * c.comboCap
+    }
     case 'construye': {
       const c = GAME_CONFIG.construye
       // Longest plausible Spanish word ≈ 30 letters, all no-hint.

@@ -53,10 +53,13 @@ export function ResultCard({
   outcome,
   onRetrySubmit,
   onPlayAgain,
+  recap,
 }: {
   outcome: SubmitGameOutcome
   onRetrySubmit?: () => void
   onPlayAgain: () => void
+  /** Slot under the score — grammar games list the items the player missed. */
+  recap?: React.ReactNode
 }) {
   // New personal best gets a real moment: papel picado + fanfare. The burst
   // is driven directly by the prop (stateless); only the sound is an effect.
@@ -94,6 +97,8 @@ export function ResultCard({
           )}
         </div>
       )}
+
+      {recap}
 
       <div className="mt-7 flex justify-center gap-3">
         <Button

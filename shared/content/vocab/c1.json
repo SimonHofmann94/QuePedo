@@ -31,14 +31,16 @@
       "de": "die Fliege",
       "en": "fly",
       "pos": "n",
-      "rank": 3204
+      "rank": 3204,
+      "gender": "f"
     },
     {
       "es": "cuñado",
       "de": "der Schwager",
       "en": "brother-in-law",
       "pos": "n",
-      "rank": 3205
+      "rank": 3205,
+      "gender": "m"
     },
     {
       "es": "pasaje",
@@ -53,14 +55,16 @@
         "passageway"
       ],
       "pos": "n",
-      "rank": 3206
+      "rank": 3206,
+      "gender": "m"
     },
     {
       "es": "récord",
       "de": "der Rekord",
       "en": "record",
       "pos": "n",
-      "rank": 3207
+      "rank": 3207,
+      "gender": "m"
     },
     {
       "es": "severo",
@@ -74,35 +78,40 @@
       "de": "der Reisende",
       "en": "traveler",
       "pos": "n",
-      "rank": 3209
+      "rank": 3209,
+      "gender": "m"
     },
     {
       "es": "aprobación",
       "de": "die Zustimmung",
       "en": "approval",
       "pos": "n",
-      "rank": 3210
+      "rank": 3210,
+      "gender": "f"
     },
     {
       "es": "satisfacción",
       "de": "die Zufriedenheit",
       "en": "satisfaction",
       "pos": "n",
-      "rank": 3211
+      "rank": 3211,
+      "gender": "f"
     },
     {
       "es": "delegado",
       "de": "der Delegierte",
       "en": "delegate",
       "pos": "n",
-      "rank": 3212
+      "rank": 3212,
+      "gender": "m"
     },
     {
       "es": "suceso",
       "de": "der Vorfall",
       "en": "incident",
       "pos": "n",
-      "rank": 3213
+      "rank": 3213,
+      "gender": "m"
     },
     {
       "es": "oculto",
@@ -116,7 +125,8 @@
       "de": "die Essenz",
       "en": "essence",
       "pos": "n",
-      "rank": 3215
+      "rank": 3215,
+      "gender": "f"
     },
     {
       "es": "figurar",
@@ -136,7 +146,8 @@
       "de": "die Armut",
       "en": "poverty",
       "pos": "n",
-      "rank": 3217
+      "rank": 3217,
+      "gender": "f"
     },
     {
       "es": "aspirar",
@@ -163,14 +174,16 @@
       "de": "die Möbel",
       "en": "furniture",
       "pos": "n",
-      "rank": 3220
+      "rank": 3220,
+      "gender": "m"
     },
     {
       "es": "estatua",
       "de": "die Statue",
       "en": "statue",
       "pos": "n",
-      "rank": 3221
+      "rank": 3221,
+      "gender": "f"
     },
     {
       "es": "apartado",
@@ -185,7 +198,8 @@
         "remote"
       ],
       "pos": "n",
-      "rank": 3222
+      "rank": 3222,
+      "gender": "m"
     },
     {
       "es": "desviar",
@@ -205,7 +219,8 @@
       "de": "die Geburt",
       "en": "childbirth",
       "pos": "n",
-      "rank": 3224
+      "rank": 3224,
+      "gender": "m"
     },
     {
       "es": "vegetal",
@@ -225,7 +240,8 @@
       "de": "die Ente",
       "en": "duck",
       "pos": "n",
-      "rank": 3226
+      "rank": 3226,
+      "gender": "m"
     },
     {
       "es": "variar",
@@ -239,28 +255,32 @@
       "de": "der Zentimeter",
       "en": "centimeter",
       "pos": "n",
-      "rank": 3228
+      "rank": 3228,
+      "gender": "m"
     },
     {
       "es": "garaje",
       "de": "die Garage",
       "en": "garage",
       "pos": "n",
-      "rank": 3229
+      "rank": 3229,
+      "gender": "m"
     },
     {
       "es": "ceniza",
       "de": "die Asche",
       "en": "ash",
       "pos": "n",
-      "rank": 3230
+      "rank": 3230,
+      "gender": "f"
     },
     {
       "es": "barrera",
       "de": "die Barriere",
       "en": "barrier",
       "pos": "n",
-      "rank": 3231
+      "rank": 3231,
+      "gender": "f"
     },
     {
       "es": "coraje",
@@ -273,14 +293,16 @@
         "anger"
       ],
       "pos": "n",
-      "rank": 3232
+      "rank": 3232,
+      "gender": "m"
     },
     {
       "es": "heredero",
       "de": "der Erbe",
       "en": "heir",
       "pos": "n",
-      "rank": 3233
+      "rank": 3233,
+      "gender": "m"
     },
     {
       "es": "diseñado",
@@ -294,14 +316,16 @@
       "de": "die Genehmigung",
       "en": "authorization",
       "pos": "n",
-      "rank": 3235
+      "rank": 3235,
+      "gender": "f"
     },
     {
       "es": "cualidad",
       "de": "die Eigenschaft",
       "en": "quality",
       "pos": "n",
-      "rank": 3236
+      "rank": 3236,
+      "gender": "f"
     },
     {
       "es": "financiar",
@@ -315,7 +339,8 @@
       "de": "der Gipfel",
       "en": "summit",
       "pos": "n",
-      "rank": 3238
+      "rank": 3238,
+      "gender": "f"
     },
     {
       "es": "vaquero",
@@ -328,7 +353,8 @@
         "jeans"
       ],
       "pos": "n",
-      "rank": 3239
+      "rank": 3239,
+      "gender": "m"
     },
     {
       "es": "agotado",
@@ -361,14 +387,16 @@
       "de": "das Protein",
       "en": "protein",
       "pos": "n",
-      "rank": 3242
+      "rank": 3242,
+      "gender": "f"
     },
     {
       "es": "mantequilla",
       "de": "die Butter",
       "en": "butter",
       "pos": "n",
-      "rank": 3243
+      "rank": 3243,
+      "gender": "f"
     },
     {
       "es": "constantemente",
@@ -402,7 +430,8 @@
       "de": "die Kosten",
       "en": "cost",
       "pos": "n",
-      "rank": 3247
+      "rank": 3247,
+      "gender": "m"
     },
     {
       "es": "agudo",
@@ -430,7 +459,8 @@
         "stop"
       ],
       "pos": "n",
-      "rank": 3249
+      "rank": 3249,
+      "gender": "f"
     },
     {
       "es": "precisar",
@@ -450,28 +480,32 @@
       "de": "die Versorgung",
       "en": "supply",
       "pos": "n",
-      "rank": 3251
+      "rank": 3251,
+      "gender": "m"
     },
     {
       "es": "cojón",
       "de": "der Hoden",
       "en": "testicle",
       "pos": "n",
-      "rank": 3252
+      "rank": 3252,
+      "gender": "m"
     },
     {
       "es": "angustia",
       "de": "die Angst",
       "en": "anguish",
       "pos": "n",
-      "rank": 3253
+      "rank": 3253,
+      "gender": "f"
     },
     {
       "es": "intensidad",
       "de": "die Intensität",
       "en": "intensity",
       "pos": "n",
-      "rank": 3254
+      "rank": 3254,
+      "gender": "f"
     },
     {
       "es": "localidad",
@@ -484,14 +518,16 @@
         "seat (venue)"
       ],
       "pos": "n",
-      "rank": 3255
+      "rank": 3255,
+      "gender": "f"
     },
     {
       "es": "acento",
       "de": "der Akzent",
       "en": "accent",
       "pos": "n",
-      "rank": 3256
+      "rank": 3256,
+      "gender": "m"
     },
     {
       "es": "extranjero",
@@ -526,21 +562,24 @@
       "de": "der Herbst",
       "en": "autumn",
       "pos": "n",
-      "rank": 3259
+      "rank": 3259,
+      "gender": "m"
     },
     {
       "es": "fotógrafo",
       "de": "der Fotograf",
       "en": "photographer",
       "pos": "n",
-      "rank": 3260
+      "rank": 3260,
+      "gender": "m"
     },
     {
       "es": "vecindario",
       "de": "die Nachbarschaft",
       "en": "neighborhood",
       "pos": "n",
-      "rank": 3261
+      "rank": 3261,
+      "gender": "m"
     },
     {
       "es": "penetrar",
@@ -554,14 +593,16 @@
       "de": "die Aggression",
       "en": "aggression",
       "pos": "n",
-      "rank": 3263
+      "rank": 3263,
+      "gender": "f"
     },
     {
       "es": "entusiasmo",
       "de": "der Enthusiasmus",
       "en": "enthusiasm",
       "pos": "n",
-      "rank": 3264
+      "rank": 3264,
+      "gender": "m"
     },
     {
       "es": "estricto",
@@ -588,7 +629,8 @@
         "resignation"
       ],
       "pos": "n",
-      "rank": 3267
+      "rank": 3267,
+      "gender": "f"
     },
     {
       "es": "hervir",
@@ -609,21 +651,24 @@
       "de": "das Aids",
       "en": "AIDS",
       "pos": "n",
-      "rank": 3270
+      "rank": 3270,
+      "gender": "f"
     },
     {
       "es": "hada",
       "de": "die Fee",
       "en": "fairy",
       "pos": "n",
-      "rank": 3271
+      "rank": 3271,
+      "gender": "f"
     },
     {
       "es": "callejón",
       "de": "die Gasse",
       "en": "alley",
       "pos": "n",
-      "rank": 3272
+      "rank": 3272,
+      "gender": "m"
     },
     {
       "es": "mero",
@@ -650,7 +695,8 @@
       "de": "der Mythos",
       "en": "myth",
       "pos": "n",
-      "rank": 3275
+      "rank": 3275,
+      "gender": "m"
     },
     {
       "es": "comedor",
@@ -663,14 +709,16 @@
         "canteen"
       ],
       "pos": "n",
-      "rank": 3276
+      "rank": 3276,
+      "gender": "m"
     },
     {
       "es": "misil",
       "de": "die Rakete",
       "en": "missile",
       "pos": "n",
-      "rank": 3277
+      "rank": 3277,
+      "gender": "m"
     },
     {
       "es": "teórico",
@@ -699,14 +747,16 @@
       "de": "der Psychiater",
       "en": "psychiatrist",
       "pos": "n",
-      "rank": 3280
+      "rank": 3280,
+      "gender": "f"
     },
     {
       "es": "importe",
       "de": "der Betrag",
       "en": "amount",
       "pos": "n",
-      "rank": 3281
+      "rank": 3281,
+      "gender": "m"
     },
     {
       "es": "envuelto",
@@ -720,14 +770,16 @@
       "de": "die Integration",
       "en": "integration",
       "pos": "n",
-      "rank": 3283
+      "rank": 3283,
+      "gender": "f"
     },
     {
       "es": "equipaje",
       "de": "das Gepäck",
       "en": "luggage",
       "pos": "n",
-      "rank": 3284
+      "rank": 3284,
+      "gender": "m"
     },
     {
       "es": "excesivo",
@@ -741,14 +793,16 @@
       "de": "das Handbuch",
       "en": "manual",
       "pos": "n",
-      "rank": 3286
+      "rank": 3286,
+      "gender": "m"
     },
     {
       "es": "trastorno",
       "de": "die Störung",
       "en": "disorder",
       "pos": "n",
-      "rank": 3287
+      "rank": 3287,
+      "gender": "m"
     },
     {
       "es": "inesperado",
@@ -762,14 +816,16 @@
       "de": "der Käfig",
       "en": "cage",
       "pos": "n",
-      "rank": 3289
+      "rank": 3289,
+      "gender": "f"
     },
     {
       "es": "encuesta",
       "de": "die Umfrage",
       "en": "survey",
       "pos": "n",
-      "rank": 3290
+      "rank": 3290,
+      "gender": "f"
     },
     {
       "es": "fascinante",
@@ -790,42 +846,48 @@
       "de": "die Galaxie",
       "en": "galaxy",
       "pos": "n",
-      "rank": 3293
+      "rank": 3293,
+      "gender": "f"
     },
     {
       "es": "diamantes",
       "de": "die Diamanten",
       "en": "diamonds",
       "pos": "n",
-      "rank": 3294
+      "rank": 3294,
+      "gender": "m"
     },
     {
       "es": "etcétera",
       "de": "usw. (und so weiter)",
       "en": "etcetera",
       "pos": "n",
-      "rank": 3295
+      "rank": 3295,
+      "gender": "f"
     },
     {
       "es": "misa",
       "de": "die Messe (Gottesdienst)",
       "en": "mass",
       "pos": "n",
-      "rank": 3296
+      "rank": 3296,
+      "gender": "f"
     },
     {
       "es": "pagaré",
       "de": "der Schuldschein",
       "en": "promissory note",
       "pos": "n",
-      "rank": 3297
+      "rank": 3297,
+      "gender": "m"
     },
     {
       "es": "azar",
       "de": "der Zufall",
       "en": "chance",
       "pos": "n",
-      "rank": 3298
+      "rank": 3298,
+      "gender": "m"
     },
     {
       "es": "emborrachar",
@@ -853,14 +915,16 @@
         "bond"
       ],
       "pos": "n",
-      "rank": 3300
+      "rank": 3300,
+      "gender": "m"
     },
     {
       "es": "ubicación",
       "de": "der Standort",
       "en": "location",
       "pos": "n",
-      "rank": 3301
+      "rank": 3301,
+      "gender": "f"
     },
     {
       "es": "forzado",
@@ -880,21 +944,24 @@
         "stable"
       ],
       "pos": "n",
-      "rank": 3303
+      "rank": 3303,
+      "gender": "f"
     },
     {
       "es": "hígado",
       "de": "die Leber",
       "en": "liver",
       "pos": "n",
-      "rank": 3304
+      "rank": 3304,
+      "gender": "m"
     },
     {
       "es": "pandilla",
       "de": "die Bande",
       "en": "gang",
       "pos": "n",
-      "rank": 3305
+      "rank": 3305,
+      "gender": "f"
     },
     {
       "es": "limón",
@@ -907,14 +974,16 @@
         "lime"
       ],
       "pos": "n",
-      "rank": 3306
+      "rank": 3306,
+      "gender": "m"
     },
     {
       "es": "catalán",
       "de": "katalanisch",
       "en": "Catalan",
       "pos": "n",
-      "rank": 3307
+      "rank": 3307,
+      "gender": "m"
     },
     {
       "es": "acoger",
@@ -928,7 +997,8 @@
       "de": "der Architekt",
       "en": "architect",
       "pos": "n",
-      "rank": 3309
+      "rank": 3309,
+      "gender": "m"
     },
     {
       "es": "trágico",
@@ -942,7 +1012,8 @@
       "de": "der Betrug",
       "en": "deception",
       "pos": "n",
-      "rank": 3311
+      "rank": 3311,
+      "gender": "m"
     },
     {
       "es": "interferir",
@@ -962,7 +1033,8 @@
       "de": "das Elend",
       "en": "misery",
       "pos": "n",
-      "rank": 3313
+      "rank": 3313,
+      "gender": "f"
     },
     {
       "es": "automático",
@@ -976,21 +1048,24 @@
       "de": "die Vereinbarung",
       "en": "agreement",
       "pos": "n",
-      "rank": 3315
+      "rank": 3315,
+      "gender": "m"
     },
     {
       "es": "rechazo",
       "de": "die Ablehnung",
       "en": "rejection",
       "pos": "n",
-      "rank": 3316
+      "rank": 3316,
+      "gender": "m"
     },
     {
       "es": "radiación",
       "de": "die Strahlung",
       "en": "radiation",
       "pos": "n",
-      "rank": 3317
+      "rank": 3317,
+      "gender": "f"
     },
     {
       "es": "ubicar",
@@ -1052,35 +1127,40 @@
         "crate"
       ],
       "pos": "n",
-      "rank": 3323
+      "rank": 3323,
+      "gender": "m"
     },
     {
       "es": "matemáticas",
       "de": "die Mathematik",
       "en": "mathematics",
       "pos": "n",
-      "rank": 3324
+      "rank": 3324,
+      "gender": "f"
     },
     {
       "es": "turismo",
       "de": "der Tourismus",
       "en": "tourism",
       "pos": "n",
-      "rank": 3325
+      "rank": 3325,
+      "gender": "m"
     },
     {
       "es": "porquería",
       "de": "der Mist",
       "en": "crap",
       "pos": "n",
-      "rank": 3326
+      "rank": 3326,
+      "gender": "f"
     },
     {
       "es": "modificación",
       "de": "die Änderung",
       "en": "modification",
       "pos": "n",
-      "rank": 3327
+      "rank": 3327,
+      "gender": "f"
     },
     {
       "es": "renovar",
@@ -1113,14 +1193,16 @@
       "de": "der Segen",
       "en": "blessing",
       "pos": "n",
-      "rank": 3330
+      "rank": 3330,
+      "gender": "f"
     },
     {
       "es": "latino",
       "de": "der Latino",
       "en": "Latino",
       "pos": "n",
-      "rank": 3331
+      "rank": 3331,
+      "gender": "m"
     },
     {
       "es": "depositar",
@@ -1140,7 +1222,8 @@
       "de": "der Fahrer",
       "en": "driver",
       "pos": "n",
-      "rank": 3333
+      "rank": 3333,
+      "gender": "m"
     },
     {
       "es": "espiar",
@@ -1180,7 +1263,8 @@
         "scarf"
       ],
       "pos": "n",
-      "rank": 3337
+      "rank": 3337,
+      "gender": "m"
     },
     {
       "es": "divorciar",
@@ -1227,7 +1311,8 @@
       "de": "die Decke",
       "en": "blanket",
       "pos": "n",
-      "rank": 3342
+      "rank": 3342,
+      "gender": "f"
     },
     {
       "es": "quinta",
@@ -1240,14 +1325,16 @@
         "fifth"
       ],
       "pos": "n",
-      "rank": 3343
+      "rank": 3343,
+      "gender": "f"
     },
     {
       "es": "guardián",
       "de": "der Wächter",
       "en": "guardian",
       "pos": "n",
-      "rank": 3344
+      "rank": 3344,
+      "gender": "m"
     },
     {
       "es": "fortaleza",
@@ -1260,7 +1347,8 @@
         "strength"
       ],
       "pos": "n",
-      "rank": 3345
+      "rank": 3345,
+      "gender": "f"
     },
     {
       "es": "reservar",
@@ -1280,42 +1368,48 @@
       "de": "die Ziege",
       "en": "goat",
       "pos": "n",
-      "rank": 3347
+      "rank": 3347,
+      "gender": "f"
     },
     {
       "es": "coartada",
       "de": "das Alibi",
       "en": "alibi",
       "pos": "n",
-      "rank": 3348
+      "rank": 3348,
+      "gender": "f"
     },
     {
       "es": "facilidad",
       "de": "die Leichtigkeit",
       "en": "ease",
       "pos": "n",
-      "rank": 3349
+      "rank": 3349,
+      "gender": "f"
     },
     {
       "es": "multa",
       "de": "die Geldstrafe",
       "en": "fine",
       "pos": "n",
-      "rank": 3350
+      "rank": 3350,
+      "gender": "f"
     },
     {
       "es": "balón",
       "de": "der Ball",
       "en": "ball",
       "pos": "n",
-      "rank": 3351
+      "rank": 3351,
+      "gender": "m"
     },
     {
       "es": "inmunidad",
       "de": "die Immunität",
       "en": "immunity",
       "pos": "n",
-      "rank": 3352
+      "rank": 3352,
+      "gender": "f"
     },
     {
       "es": "particularmente",
@@ -1335,7 +1429,8 @@
         "hollow"
       ],
       "pos": "n",
-      "rank": 3354
+      "rank": 3354,
+      "gender": "m"
     },
     {
       "es": "elaborar",
@@ -1382,7 +1477,8 @@
       "de": "die Ware",
       "en": "merchandise",
       "pos": "n",
-      "rank": 3359
+      "rank": 3359,
+      "gender": "f"
     },
     {
       "es": "emisión",
@@ -1397,21 +1493,24 @@
         "issue"
       ],
       "pos": "n",
-      "rank": 3360
+      "rank": 3360,
+      "gender": "f"
     },
     {
       "es": "chaval",
       "de": "der Junge",
       "en": "lad",
       "pos": "n",
-      "rank": 3361
+      "rank": 3361,
+      "gender": "m"
     },
     {
       "es": "cuero",
       "de": "das Leder",
       "en": "leather",
       "pos": "n",
-      "rank": 3362
+      "rank": 3362,
+      "gender": "m"
     },
     {
       "es": "ponerle",
@@ -1431,7 +1530,8 @@
       "de": "der Schädel",
       "en": "skull",
       "pos": "n",
-      "rank": 3364
+      "rank": 3364,
+      "gender": "m"
     },
     {
       "es": "cálido",
@@ -1458,7 +1558,8 @@
       "de": "die Abstimmung",
       "en": "vote",
       "pos": "n",
-      "rank": 3367
+      "rank": 3367,
+      "gender": "f"
     },
     {
       "es": "aproximar",
@@ -1492,7 +1593,8 @@
       "de": "der Stadtrat",
       "en": "councilor",
       "pos": "n",
-      "rank": 3371
+      "rank": 3371,
+      "gender": "m"
     },
     {
       "es": "rural",
@@ -1506,7 +1608,8 @@
       "de": "das Verhältnis",
       "en": "proportion",
       "pos": "n",
-      "rank": 3373
+      "rank": 3373,
+      "gender": "f"
     },
     {
       "es": "ambiental",
@@ -1541,7 +1644,8 @@
         "phone booth"
       ],
       "pos": "n",
-      "rank": 3376
+      "rank": 3376,
+      "gender": "f"
     },
     {
       "es": "caramelo",
@@ -1554,14 +1658,16 @@
         "caramel"
       ],
       "pos": "n",
-      "rank": 3377
+      "rank": 3377,
+      "gender": "m"
     },
     {
       "es": "maya",
       "de": "der Maya",
       "en": "Maya",
       "pos": "n",
-      "rank": 3378
+      "rank": 3378,
+      "gender": "f"
     },
     {
       "es": "orientar",
@@ -1588,7 +1694,8 @@
       "de": "der Idiot",
       "en": "jerk",
       "pos": "n",
-      "rank": 3381
+      "rank": 3381,
+      "gender": "mf"
     },
     {
       "es": "silencioso",
@@ -1609,7 +1716,8 @@
       "de": "das Syndrom",
       "en": "syndrome",
       "pos": "n",
-      "rank": 3384
+      "rank": 3384,
+      "gender": "m"
     },
     {
       "es": "puño",
@@ -1622,14 +1730,16 @@
         "cuff"
       ],
       "pos": "n",
-      "rank": 3385
+      "rank": 3385,
+      "gender": "m"
     },
     {
       "es": "romance",
       "de": "die Romanze",
       "en": "romance",
       "pos": "n",
-      "rank": 3386
+      "rank": 3386,
+      "gender": "m"
     },
     {
       "es": "desafiar",
@@ -1675,7 +1785,8 @@
       "de": "das Kokain",
       "en": "cocaine",
       "pos": "n",
-      "rank": 3390
+      "rank": 3390,
+      "gender": "f"
     },
     {
       "es": "legítimo",
@@ -1695,7 +1806,8 @@
         "ranch"
       ],
       "pos": "n",
-      "rank": 3392
+      "rank": 3392,
+      "gender": "f"
     },
     {
       "es": "formular",
@@ -1723,14 +1835,16 @@
       "de": "das Schaf",
       "en": "sheep",
       "pos": "n",
-      "rank": 3396
+      "rank": 3396,
+      "gender": "f"
     },
     {
       "es": "cómplice",
       "de": "der Komplize",
       "en": "accomplice",
       "pos": "n",
-      "rank": 3397
+      "rank": 3397,
+      "gender": "mf"
     },
     {
       "es": "tranquilo",
@@ -1750,14 +1864,16 @@
         "marine"
       ],
       "pos": "n",
-      "rank": 3399
+      "rank": 3399,
+      "gender": "m"
     },
     {
       "es": "hechizo",
       "de": "der Zauber",
       "en": "spell",
       "pos": "n",
-      "rank": 3400
+      "rank": 3400,
+      "gender": "m"
     },
     {
       "es": "choque",
@@ -1770,7 +1886,8 @@
         "shock"
       ],
       "pos": "n",
-      "rank": 3401
+      "rank": 3401,
+      "gender": "m"
     },
     {
       "es": "heredar",
@@ -1796,7 +1913,8 @@
         "consignment"
       ],
       "pos": "n",
-      "rank": 3403
+      "rank": 3403,
+      "gender": "m"
     },
     {
       "es": "subrayar",
@@ -1823,7 +1941,8 @@
       "de": "der Terrorismus",
       "en": "terrorism",
       "pos": "n",
-      "rank": 3406
+      "rank": 3406,
+      "gender": "m"
     },
     {
       "es": "herencia",
@@ -1836,7 +1955,8 @@
         "heredity"
       ],
       "pos": "n",
-      "rank": 3407
+      "rank": 3407,
+      "gender": "f"
     },
     {
       "es": "lana",
@@ -1849,7 +1969,8 @@
         "cash (Mex.)"
       ],
       "pos": "n",
-      "rank": 3408
+      "rank": 3408,
+      "gender": "f"
     },
     {
       "es": "mojado",
@@ -1896,7 +2017,8 @@
         "slope"
       ],
       "pos": "n",
-      "rank": 3413
+      "rank": 3413,
+      "gender": "f"
     },
     {
       "es": "transferencia",
@@ -1909,7 +2031,8 @@
         "transfer"
       ],
       "pos": "n",
-      "rank": 3414
+      "rank": 3414,
+      "gender": "f"
     },
     {
       "es": "africano",
@@ -1923,7 +2046,8 @@
       "de": "das Casino",
       "en": "casino",
       "pos": "n",
-      "rank": 3416
+      "rank": 3416,
+      "gender": "m"
     },
     {
       "es": "crudo",
@@ -1959,14 +2083,16 @@
       "de": "das Wohlergehen",
       "en": "well-being",
       "pos": "n",
-      "rank": 3420
+      "rank": 3420,
+      "gender": "m"
     },
     {
       "es": "novato",
       "de": "der Anfänger",
       "en": "rookie",
       "pos": "n",
-      "rank": 3421
+      "rank": 3421,
+      "gender": "m"
     },
     {
       "es": "secar",
@@ -1980,7 +2106,8 @@
       "de": "der Stress",
       "en": "stress",
       "pos": "n",
-      "rank": 3423
+      "rank": 3423,
+      "gender": "m"
     },
     {
       "es": "pa",
@@ -1993,7 +2120,8 @@
         "dad"
       ],
       "pos": "n",
-      "rank": 3424
+      "rank": 3424,
+      "gender": "f"
     },
     {
       "es": "diseñar",
@@ -2007,7 +2135,8 @@
       "de": "die Landwirtschaft",
       "en": "agriculture",
       "pos": "n",
-      "rank": 3426
+      "rank": 3426,
+      "gender": "f"
     },
     {
       "es": "araña",
@@ -2020,14 +2149,16 @@
         "chandelier"
       ],
       "pos": "n",
-      "rank": 3427
+      "rank": 3427,
+      "gender": "f"
     },
     {
       "es": "supervivencia",
       "de": "das Überleben",
       "en": "survival",
       "pos": "n",
-      "rank": 3428
+      "rank": 3428,
+      "gender": "f"
     },
     {
       "es": "alcohólico",
@@ -2047,7 +2178,8 @@
       "de": "der Thron",
       "en": "throne",
       "pos": "n",
-      "rank": 3430
+      "rank": 3430,
+      "gender": "m"
     },
     {
       "es": "originar",
@@ -2067,7 +2199,8 @@
         "petition"
       ],
       "pos": "n",
-      "rank": 3432
+      "rank": 3432,
+      "gender": "f"
     },
     {
       "es": "eje",
@@ -2077,7 +2210,8 @@
         "axle"
       ],
       "pos": "n",
-      "rank": 3433
+      "rank": 3433,
+      "gender": "m"
     },
     {
       "es": "enano",
@@ -2090,7 +2224,8 @@
         "tiny"
       ],
       "pos": "n",
-      "rank": 3434
+      "rank": 3434,
+      "gender": "m"
     },
     {
       "es": "raya",
@@ -2105,14 +2240,16 @@
         "ray (fish)"
       ],
       "pos": "n",
-      "rank": 3435
+      "rank": 3435,
+      "gender": "f"
     },
     {
       "es": "desorden",
       "de": "die Unordnung",
       "en": "mess",
       "pos": "n",
-      "rank": 3436
+      "rank": 3436,
+      "gender": "m"
     },
     {
       "es": "clavar",
@@ -2145,35 +2282,40 @@
       "de": "das Verdienst",
       "en": "merit",
       "pos": "n",
-      "rank": 3439
+      "rank": 3439,
+      "gender": "m"
     },
     {
       "es": "tumor",
       "de": "der Tumor",
       "en": "tumor",
       "pos": "n",
-      "rank": 3440
+      "rank": 3440,
+      "gender": "m"
     },
     {
       "es": "consumidor",
       "de": "der Verbraucher",
       "en": "consumer",
       "pos": "n",
-      "rank": 3441
+      "rank": 3441,
+      "gender": "m"
     },
     {
       "es": "elefante",
       "de": "der Elefant",
       "en": "elephant",
       "pos": "n",
-      "rank": 3442
+      "rank": 3442,
+      "gender": "m"
     },
     {
       "es": "cruce",
       "de": "die Kreuzung",
       "en": "crossroads",
       "pos": "n",
-      "rank": 3443
+      "rank": 3443,
+      "gender": "m"
     },
     {
       "es": "decepcionar",
@@ -2221,14 +2363,16 @@
         "corporate body"
       ],
       "pos": "n",
-      "rank": 3449
+      "rank": 3449,
+      "gender": "f"
     },
     {
       "es": "estadística",
       "de": "die Statistik",
       "en": "statistics",
       "pos": "n",
-      "rank": 3450
+      "rank": 3450,
+      "gender": "f"
     },
     {
       "es": "orientación",
@@ -2243,7 +2387,8 @@
         "guidance"
       ],
       "pos": "n",
-      "rank": 3451
+      "rank": 3451,
+      "gender": "f"
     },
     {
       "es": "amoroso",
@@ -2257,7 +2402,8 @@
       "de": "die Lampe",
       "en": "lamp",
       "pos": "n",
-      "rank": 3453
+      "rank": 3453,
+      "gender": "f"
     },
     {
       "es": "productivo",
@@ -2271,28 +2417,32 @@
       "de": "das Loch",
       "en": "hole",
       "pos": "n",
-      "rank": 3455
+      "rank": 3455,
+      "gender": "m"
     },
     {
       "es": "bicho",
       "de": "das Insekt",
       "en": "bug",
       "pos": "n",
-      "rank": 3456
+      "rank": 3456,
+      "gender": "m"
     },
     {
       "es": "cueva",
       "de": "die Höhle",
       "en": "cave",
       "pos": "n",
-      "rank": 3457
+      "rank": 3457,
+      "gender": "f"
     },
     {
       "es": "marinero",
       "de": "der Seemann",
       "en": "sailor",
       "pos": "n",
-      "rank": 3458
+      "rank": 3458,
+      "gender": "m"
     },
     {
       "es": "inglés",
@@ -2339,7 +2489,8 @@
         "vintage"
       ],
       "pos": "n",
-      "rank": 3463
+      "rank": 3463,
+      "gender": "f"
     },
     {
       "es": "absorber",
@@ -2373,7 +2524,8 @@
       "de": "die Autonomie",
       "en": "autonomy",
       "pos": "n",
-      "rank": 3467
+      "rank": 3467,
+      "gender": "f"
     },
     {
       "es": "fiar",
@@ -2393,7 +2545,8 @@
       "de": "die Narbe",
       "en": "scar",
       "pos": "n",
-      "rank": 3469
+      "rank": 3469,
+      "gender": "f"
     },
     {
       "es": "rabia",
@@ -2406,7 +2559,8 @@
         "rabies"
       ],
       "pos": "n",
-      "rank": 3470
+      "rank": 3470,
+      "gender": "f"
     },
     {
       "es": "francamente",
@@ -2426,14 +2580,16 @@
         "surety"
       ],
       "pos": "n",
-      "rank": 3472
+      "rank": 3472,
+      "gender": "f"
     },
     {
       "es": "ética",
       "de": "die Ethik",
       "en": "ethics",
       "pos": "n",
-      "rank": 3473
+      "rank": 3473,
+      "gender": "f"
     },
     {
       "es": "corporal",
@@ -2455,7 +2611,8 @@
         "polo shirt"
       ],
       "pos": "n",
-      "rank": 3475
+      "rank": 3475,
+      "gender": "m"
     },
     {
       "es": "primitivo",
@@ -2475,7 +2632,8 @@
       "de": "das Mikrofon",
       "en": "microphone",
       "pos": "n",
-      "rank": 3477
+      "rank": 3477,
+      "gender": "m"
     },
     {
       "es": "descargar",
@@ -2495,7 +2653,8 @@
       "de": "das Menü",
       "en": "menu",
       "pos": "n",
-      "rank": 3479
+      "rank": 3479,
+      "gender": "m"
     },
     {
       "es": "enfriar",
@@ -2522,7 +2681,8 @@
         "bruise"
       ],
       "pos": "n",
-      "rank": 3482
+      "rank": 3482,
+      "gender": "m"
     },
     {
       "es": "bono",
@@ -2537,14 +2697,16 @@
         "bonus"
       ],
       "pos": "n",
-      "rank": 3483
+      "rank": 3483,
+      "gender": "m"
     },
     {
       "es": "preso",
       "de": "gefangen",
       "en": "imprisoned",
       "pos": "n",
-      "rank": 3484
+      "rank": 3484,
+      "gender": "m"
     },
     {
       "es": "reventar",
@@ -2564,7 +2726,8 @@
       "de": "das Make-up",
       "en": "makeup",
       "pos": "n",
-      "rank": 3486
+      "rank": 3486,
+      "gender": "m"
     },
     {
       "es": "ruptura",
@@ -2577,14 +2740,16 @@
         "breakup"
       ],
       "pos": "n",
-      "rank": 3487
+      "rank": 3487,
+      "gender": "f"
     },
     {
       "es": "solidaridad",
       "de": "die Solidarität",
       "en": "solidarity",
       "pos": "n",
-      "rank": 3488
+      "rank": 3488,
+      "gender": "f"
     },
     {
       "es": "combinar",
@@ -2624,7 +2789,8 @@
       "de": "der Horizont",
       "en": "horizon",
       "pos": "n",
-      "rank": 3492
+      "rank": 3492,
+      "gender": "m"
     },
     {
       "es": "idéntico",
@@ -2645,7 +2811,8 @@
       "de": "das Testament",
       "en": "will",
       "pos": "n",
-      "rank": 3495
+      "rank": 3495,
+      "gender": "m"
     },
     {
       "es": "fastidiar",
@@ -2672,7 +2839,8 @@
       "de": "der Baron",
       "en": "baron",
       "pos": "n",
-      "rank": 3498
+      "rank": 3498,
+      "gender": "m"
     },
     {
       "es": "cruzado",
@@ -2699,21 +2867,24 @@
       "de": "das Kabinett",
       "en": "cabinet",
       "pos": "n",
-      "rank": 3501
+      "rank": 3501,
+      "gender": "m"
     },
     {
       "es": "marqués",
       "de": "der Marquis",
       "en": "marquis",
       "pos": "n",
-      "rank": 3502
+      "rank": 3502,
+      "gender": "m"
     },
     {
       "es": "utilización",
       "de": "die Nutzung",
       "en": "use",
       "pos": "n",
-      "rank": 3503
+      "rank": 3503,
+      "gender": "f"
     },
     {
       "es": "ascenso",
@@ -2726,7 +2897,8 @@
         "promotion"
       ],
       "pos": "n",
-      "rank": 3504
+      "rank": 3504,
+      "gender": "m"
     },
     {
       "es": "decisivo",
@@ -2753,14 +2925,16 @@
       "de": "die Ehrung",
       "en": "tribute",
       "pos": "n",
-      "rank": 3507
+      "rank": 3507,
+      "gender": "m"
     },
     {
       "es": "alivio",
       "de": "die Erleichterung",
       "en": "relief",
       "pos": "n",
-      "rank": 3508
+      "rank": 3508,
+      "gender": "m"
     },
     {
       "es": "especializado",
@@ -2794,7 +2968,8 @@
         "grief"
       ],
       "pos": "n",
-      "rank": 3512
+      "rank": 3512,
+      "gender": "m"
     },
     {
       "es": "bendito",
@@ -2808,21 +2983,24 @@
       "de": "das Parfüm",
       "en": "perfume",
       "pos": "n",
-      "rank": 3514
+      "rank": 3514,
+      "gender": "m"
     },
     {
       "es": "hermanito",
       "de": "der kleine Bruder",
       "en": "little brother",
       "pos": "n",
-      "rank": 3515
+      "rank": 3515,
+      "gender": "m"
     },
     {
       "es": "enhorabuena",
       "de": "Glückwunsch!",
       "en": "congratulations",
       "pos": "n",
-      "rank": 3516
+      "rank": 3516,
+      "gender": "f"
     },
     {
       "es": "paralelo",
@@ -2836,14 +3014,16 @@
       "de": "die Zuneigung",
       "en": "affection",
       "pos": "n",
-      "rank": 3518
+      "rank": 3518,
+      "gender": "m"
     },
     {
       "es": "certeza",
       "de": "die Gewissheit",
       "en": "certainty",
       "pos": "n",
-      "rank": 3519
+      "rank": 3519,
+      "gender": "f"
     },
     {
       "es": "fallecer",
@@ -2864,14 +3044,16 @@
       "de": "die Autobahn",
       "en": "highway",
       "pos": "n",
-      "rank": 3522
+      "rank": 3522,
+      "gender": "mf"
     },
     {
       "es": "comparación",
       "de": "der Vergleich",
       "en": "comparison",
       "pos": "n",
-      "rank": 3523
+      "rank": 3523,
+      "gender": "f"
     },
     {
       "es": "reverendo",
@@ -2891,7 +3073,8 @@
       "de": "die Angst",
       "en": "anxiety",
       "pos": "n",
-      "rank": 3525
+      "rank": 3525,
+      "gender": "f"
     },
     {
       "es": "entretener",
@@ -2911,7 +3094,8 @@
       "de": "die Forderung",
       "en": "demand",
       "pos": "n",
-      "rank": 3527
+      "rank": 3527,
+      "gender": "f"
     },
     {
       "es": "testificar",
@@ -2925,7 +3109,8 @@
       "de": "der Ehrgeiz",
       "en": "ambition",
       "pos": "n",
-      "rank": 3529
+      "rank": 3529,
+      "gender": "f"
     },
     {
       "es": "pudrir",
@@ -2959,14 +3144,16 @@
         "fashion show"
       ],
       "pos": "n",
-      "rank": 3533
+      "rank": 3533,
+      "gender": "m"
     },
     {
       "es": "fragmento",
       "de": "das Fragment",
       "en": "fragment",
       "pos": "n",
-      "rank": 3534
+      "rank": 3534,
+      "gender": "m"
     },
     {
       "es": "inscribir",
@@ -2992,14 +3179,16 @@
         "flyer"
       ],
       "pos": "n",
-      "rank": 3536
+      "rank": 3536,
+      "gender": "m"
     },
     {
       "es": "eco",
       "de": "das Echo",
       "en": "echo",
       "pos": "n",
-      "rank": 3537
+      "rank": 3537,
+      "gender": "m"
     },
     {
       "es": "desconocer",
@@ -3013,7 +3202,8 @@
       "de": "die Faser",
       "en": "fiber",
       "pos": "n",
-      "rank": 3539
+      "rank": 3539,
+      "gender": "f"
     },
     {
       "es": "hondo",
@@ -3027,7 +3217,8 @@
       "de": "der Parkplatz",
       "en": "parking lot",
       "pos": "n",
-      "rank": 3541
+      "rank": 3541,
+      "gender": "m"
     },
     {
       "es": "pila",
@@ -3042,14 +3233,16 @@
         "basin"
       ],
       "pos": "n",
-      "rank": 3542
+      "rank": 3542,
+      "gender": "f"
     },
     {
       "es": "hipótesis",
       "de": "die Hypothese",
       "en": "hypothesis",
       "pos": "n",
-      "rank": 3543
+      "rank": 3543,
+      "gender": "f"
     },
     {
       "es": "convención",
@@ -3062,7 +3255,8 @@
         "conference"
       ],
       "pos": "n",
-      "rank": 3544
+      "rank": 3544,
+      "gender": "f"
     },
     {
       "es": "exitoso",
@@ -3082,14 +3276,16 @@
         "link"
       ],
       "pos": "n",
-      "rank": 3546
+      "rank": 3546,
+      "gender": "m"
     },
     {
       "es": "maniobra",
       "de": "das Manöver",
       "en": "maneuver",
       "pos": "n",
-      "rank": 3547
+      "rank": 3547,
+      "gender": "f"
     },
     {
       "es": "vecino",
@@ -3143,7 +3339,8 @@
       "de": "der Admiral",
       "en": "admiral",
       "pos": "n",
-      "rank": 3553
+      "rank": 3553,
+      "gender": "mf"
     },
     {
       "es": "optar",
@@ -3170,14 +3367,16 @@
         "elaboration"
       ],
       "pos": "n",
-      "rank": 3556
+      "rank": 3556,
+      "gender": "f"
     },
     {
       "es": "tranquilidad",
       "de": "die Ruhe",
       "en": "calm",
       "pos": "n",
-      "rank": 3557
+      "rank": 3557,
+      "gender": "f"
     },
     {
       "es": "procedente",
@@ -3216,7 +3415,8 @@
         "autonomous"
       ],
       "pos": "n",
-      "rank": 3560
+      "rank": 3560,
+      "gender": "m"
     },
     {
       "es": "ultimar",
@@ -3257,7 +3457,8 @@
         "servant"
       ],
       "pos": "n",
-      "rank": 3565
+      "rank": 3565,
+      "gender": "m"
     },
     {
       "es": "intercambiar",
@@ -3271,7 +3472,8 @@
       "de": "die Weisheit",
       "en": "wisdom",
       "pos": "n",
-      "rank": 3567
+      "rank": 3567,
+      "gender": "f"
     },
     {
       "es": "transcurrir",
@@ -3285,14 +3487,16 @@
       "de": "das Laken",
       "en": "sheet",
       "pos": "n",
-      "rank": 3569
+      "rank": 3569,
+      "gender": "f"
     },
     {
       "es": "vitamina",
       "de": "das Vitamin",
       "en": "vitamin",
       "pos": "n",
-      "rank": 3570
+      "rank": 3570,
+      "gender": "f"
     },
     {
       "es": "brasileño",
@@ -3306,7 +3510,8 @@
       "de": "die Ernährung",
       "en": "nutrition",
       "pos": "n",
-      "rank": 3572
+      "rank": 3572,
+      "gender": "f"
     },
     {
       "es": "historial",
@@ -3319,14 +3524,16 @@
         "record"
       ],
       "pos": "n",
-      "rank": 3573
+      "rank": 3573,
+      "gender": "m"
     },
     {
       "es": "enfrentamiento",
       "de": "die Konfrontation",
       "en": "clash",
       "pos": "n",
-      "rank": 3574
+      "rank": 3574,
+      "gender": "m"
     },
     {
       "es": "fusión",
@@ -3339,7 +3546,8 @@
         "fusion"
       ],
       "pos": "n",
-      "rank": 3575
+      "rank": 3575,
+      "gender": "f"
     },
     {
       "es": "tesis",
@@ -3352,7 +3560,8 @@
         "dissertation"
       ],
       "pos": "n",
-      "rank": 3576
+      "rank": 3576,
+      "gender": "f"
     },
     {
       "es": "previamente",
@@ -3379,7 +3588,8 @@
       "de": "die Fiktion",
       "en": "fiction",
       "pos": "n",
-      "rank": 3579
+      "rank": 3579,
+      "gender": "f"
     },
     {
       "es": "imitar",
@@ -3419,7 +3629,8 @@
         "tapa (snack)"
       ],
       "pos": "n",
-      "rank": 3583
+      "rank": 3583,
+      "gender": "f"
     },
     {
       "es": "enfoque",
@@ -3432,7 +3643,8 @@
         "focus"
       ],
       "pos": "n",
-      "rank": 3584
+      "rank": 3584,
+      "gender": "m"
     },
     {
       "es": "agitar",
@@ -3452,7 +3664,8 @@
       "de": "der Händler",
       "en": "merchant",
       "pos": "n",
-      "rank": 3586
+      "rank": 3586,
+      "gender": "mf"
     },
     {
       "es": "cuota",
@@ -3467,21 +3680,24 @@
         "installment"
       ],
       "pos": "n",
-      "rank": 3587
+      "rank": 3587,
+      "gender": "f"
     },
     {
       "es": "partícula",
       "de": "das Teilchen",
       "en": "particle",
       "pos": "n",
-      "rank": 3588
+      "rank": 3588,
+      "gender": "f"
     },
     {
       "es": "duración",
       "de": "die Dauer",
       "en": "duration",
       "pos": "n",
-      "rank": 3589
+      "rank": 3589,
+      "gender": "f"
     },
     {
       "es": "rendimiento",
@@ -3494,7 +3710,8 @@
         "yield"
       ],
       "pos": "n",
-      "rank": 3590
+      "rank": 3590,
+      "gender": "m"
     },
     {
       "es": "mascota",
@@ -3507,7 +3724,8 @@
         "mascot"
       ],
       "pos": "n",
-      "rank": 3591
+      "rank": 3591,
+      "gender": "f"
     },
     {
       "es": "redacción",
@@ -3522,7 +3740,8 @@
         "wording"
       ],
       "pos": "n",
-      "rank": 3592
+      "rank": 3592,
+      "gender": "f"
     },
     {
       "es": "tenis",
@@ -3535,14 +3754,16 @@
         "sneakers (LatAm)"
       ],
       "pos": "n",
-      "rank": 3593
+      "rank": 3593,
+      "gender": "m"
     },
     {
       "es": "gemelo",
       "de": "Zwillings-",
       "en": "twin",
       "pos": "n",
-      "rank": 3594
+      "rank": 3594,
+      "gender": "m"
     },
     {
       "es": "clasificación",
@@ -3555,7 +3776,8 @@
         "standings"
       ],
       "pos": "n",
-      "rank": 3595
+      "rank": 3595,
+      "gender": "f"
     },
     {
       "es": "triunfar",
@@ -3649,7 +3871,8 @@
         "branch office"
       ],
       "pos": "n",
-      "rank": 3605
+      "rank": 3605,
+      "gender": "f"
     },
     {
       "es": "espantoso",
@@ -3663,14 +3886,16 @@
       "de": "der Vorschlag",
       "en": "suggestion",
       "pos": "n",
-      "rank": 3607
+      "rank": 3607,
+      "gender": "f"
     },
     {
       "es": "zombi",
       "de": "der Zombie",
       "en": "zombie",
       "pos": "n",
-      "rank": 3608
+      "rank": 3608,
+      "gender": "mf"
     },
     {
       "es": "homosexual",
@@ -3698,28 +3923,32 @@
       "de": "die Invasion",
       "en": "invasion",
       "pos": "n",
-      "rank": 3612
+      "rank": 3612,
+      "gender": "f"
     },
     {
       "es": "conspiración",
       "de": "die Verschwörung",
       "en": "conspiracy",
       "pos": "n",
-      "rank": 3613
+      "rank": 3613,
+      "gender": "f"
     },
     {
       "es": "resumen",
       "de": "die Zusammenfassung",
       "en": "summary",
       "pos": "n",
-      "rank": 3614
+      "rank": 3614,
+      "gender": "m"
     },
     {
       "es": "hembra",
       "de": "das Weibchen",
       "en": "female",
       "pos": "n",
-      "rank": 3615
+      "rank": 3615,
+      "gender": "f"
     },
     {
       "es": "ajuste",
@@ -3732,7 +3961,8 @@
         "setting"
       ],
       "pos": "n",
-      "rank": 3616
+      "rank": 3616,
+      "gender": "m"
     },
     {
       "es": "caray",
@@ -3760,7 +3990,8 @@
       "de": "der Übergang",
       "en": "transition",
       "pos": "n",
-      "rank": 3620
+      "rank": 3620,
+      "gender": "f"
     },
     {
       "es": "celebrado",
@@ -3793,7 +4024,8 @@
         "clay"
       ],
       "pos": "n",
-      "rank": 3623
+      "rank": 3623,
+      "gender": "m"
     },
     {
       "es": "abusar",
@@ -3839,21 +4071,24 @@
         "worship"
       ],
       "pos": "n",
-      "rank": 3627
+      "rank": 3627,
+      "gender": "m"
     },
     {
       "es": "celos",
       "de": "die Eifersucht",
       "en": "jealousy",
       "pos": "n",
-      "rank": 3628
+      "rank": 3628,
+      "gender": "m"
     },
     {
       "es": "certificado",
       "de": "das Zertifikat",
       "en": "certificate",
       "pos": "n",
-      "rank": 3629
+      "rank": 3629,
+      "gender": "m"
     },
     {
       "es": "aferrar",
@@ -3873,21 +4108,24 @@
       "de": "die Wahrnehmung",
       "en": "perception",
       "pos": "n",
-      "rank": 3631
+      "rank": 3631,
+      "gender": "f"
     },
     {
       "es": "comprensión",
       "de": "das Verständnis",
       "en": "understanding",
       "pos": "n",
-      "rank": 3632
+      "rank": 3632,
+      "gender": "f"
     },
     {
       "es": "totalidad",
       "de": "die Gesamtheit",
       "en": "entirety",
       "pos": "n",
-      "rank": 3633
+      "rank": 3633,
+      "gender": "f"
     },
     {
       "es": "diario",
@@ -3909,7 +4147,8 @@
       "de": "das Verhör",
       "en": "interrogation",
       "pos": "n",
-      "rank": 3635
+      "rank": 3635,
+      "gender": "m"
     },
     {
       "es": "modesto",
@@ -3923,7 +4162,8 @@
       "de": "der Pfeil",
       "en": "arrow",
       "pos": "n",
-      "rank": 3637
+      "rank": 3637,
+      "gender": "f"
     },
     {
       "es": "aprobado",
@@ -3943,7 +4183,8 @@
       "de": "die Trennung",
       "en": "separation",
       "pos": "n",
-      "rank": 3639
+      "rank": 3639,
+      "gender": "f"
     },
     {
       "es": "dependencia",
@@ -3956,14 +4197,16 @@
         "department"
       ],
       "pos": "n",
-      "rank": 3640
+      "rank": 3640,
+      "gender": "f"
     },
     {
       "es": "sensibilidad",
       "de": "die Empfindlichkeit",
       "en": "sensitivity",
       "pos": "n",
-      "rank": 3641
+      "rank": 3641,
+      "gender": "f"
     },
     {
       "es": "etiqueta",
@@ -3976,7 +4219,8 @@
         "etiquette"
       ],
       "pos": "n",
-      "rank": 3642
+      "rank": 3642,
+      "gender": "f"
     },
     {
       "es": "bruto",
@@ -3996,14 +4240,16 @@
       "de": "die Pille",
       "en": "pill",
       "pos": "n",
-      "rank": 3644
+      "rank": 3644,
+      "gender": "f"
     },
     {
       "es": "verso",
       "de": "der Vers",
       "en": "verse",
       "pos": "n",
-      "rank": 3645
+      "rank": 3645,
+      "gender": "m"
     },
     {
       "es": "exhibir",
@@ -4017,7 +4263,8 @@
       "de": "die Bremse",
       "en": "brake",
       "pos": "n",
-      "rank": 3647
+      "rank": 3647,
+      "gender": "m"
     },
     {
       "es": "atropellar",
@@ -4063,28 +4310,32 @@
         "disturbance"
       ],
       "pos": "n",
-      "rank": 3651
+      "rank": 3651,
+      "gender": "f"
     },
     {
       "es": "salchicha",
       "de": "das Würstchen",
       "en": "sausage",
       "pos": "n",
-      "rank": 3652
+      "rank": 3652,
+      "gender": "f"
     },
     {
       "es": "vapor",
       "de": "der Dampf",
       "en": "steam",
       "pos": "n",
-      "rank": 3653
+      "rank": 3653,
+      "gender": "m"
     },
     {
       "es": "retirada",
       "de": "der Rückzug",
       "en": "withdrawal",
       "pos": "n",
-      "rank": 3654
+      "rank": 3654,
+      "gender": "f"
     },
     {
       "es": "estimado",
@@ -4104,14 +4355,16 @@
       "de": "der Export",
       "en": "export",
       "pos": "n",
-      "rank": 3656
+      "rank": 3656,
+      "gender": "f"
     },
     {
       "es": "flujo",
       "de": "der Fluss (Strömung)",
       "en": "flow",
       "pos": "n",
-      "rank": 3657
+      "rank": 3657,
+      "gender": "m"
     },
     {
       "es": "concreto",
@@ -4131,14 +4384,16 @@
       "de": "die Seide",
       "en": "silk",
       "pos": "n",
-      "rank": 3659
+      "rank": 3659,
+      "gender": "f"
     },
     {
       "es": "seguidor",
       "de": "der Anhänger",
       "en": "follower",
       "pos": "n",
-      "rank": 3660
+      "rank": 3660,
+      "gender": "m"
     },
     {
       "es": "normar",
@@ -4152,7 +4407,8 @@
       "de": "das Waschen",
       "en": "washing",
       "pos": "n",
-      "rank": 3662
+      "rank": 3662,
+      "gender": "m"
     },
     {
       "es": "pálido",
@@ -4172,21 +4428,24 @@
         "torso"
       ],
       "pos": "n",
-      "rank": 3664
+      "rank": 3664,
+      "gender": "m"
     },
     {
       "es": "consuelo",
       "de": "der Trost",
       "en": "comfort",
       "pos": "n",
-      "rank": 3665
+      "rank": 3665,
+      "gender": "m"
     },
     {
       "es": "lápiz",
       "de": "der Bleistift",
       "en": "pencil",
       "pos": "n",
-      "rank": 3666
+      "rank": 3666,
+      "gender": "m"
     },
     {
       "es": "tropezar",
@@ -4226,7 +4485,8 @@
       "de": "das Café",
       "en": "café",
       "pos": "n",
-      "rank": 3670
+      "rank": 3670,
+      "gender": "f"
     },
     {
       "es": "manifiesto",
@@ -4239,14 +4499,16 @@
         "evident"
       ],
       "pos": "n",
-      "rank": 3671
+      "rank": 3671,
+      "gender": "m"
     },
     {
       "es": "mineral",
       "de": "das Mineral",
       "en": "mineral",
       "pos": "n",
-      "rank": 3672
+      "rank": 3672,
+      "gender": "m"
     },
     {
       "es": "descenso",
@@ -4259,7 +4521,8 @@
         "decline"
       ],
       "pos": "n",
-      "rank": 3673
+      "rank": 3673,
+      "gender": "m"
     },
     {
       "es": "prever",
@@ -4299,7 +4562,8 @@
       "de": "das Kissen",
       "en": "pillow",
       "pos": "n",
-      "rank": 3677
+      "rank": 3677,
+      "gender": "f"
     },
     {
       "es": "traficante",
@@ -4312,7 +4576,8 @@
         "dealer"
       ],
       "pos": "n",
-      "rank": 3678
+      "rank": 3678,
+      "gender": "mf"
     },
     {
       "es": "paralizar",
@@ -4346,7 +4611,8 @@
       "de": "der Betreiber",
       "en": "operator",
       "pos": "n",
-      "rank": 3682
+      "rank": 3682,
+      "gender": "m"
     },
     {
       "es": "autorizar",
@@ -4367,7 +4633,8 @@
       "de": "das Mehl",
       "en": "flour",
       "pos": "n",
-      "rank": 3685
+      "rank": 3685,
+      "gender": "f"
     },
     {
       "es": "circulación",
@@ -4382,14 +4649,16 @@
         "print run"
       ],
       "pos": "n",
-      "rank": 3686
+      "rank": 3686,
+      "gender": "f"
     },
     {
       "es": "cohete",
       "de": "die Rakete",
       "en": "rocket",
       "pos": "n",
-      "rank": 3687
+      "rank": 3687,
+      "gender": "m"
     },
     {
       "es": "deseado",
@@ -4403,14 +4672,16 @@
       "de": "das Album",
       "en": "album",
       "pos": "n",
-      "rank": 3689
+      "rank": 3689,
+      "gender": "m"
     },
     {
       "es": "recomendación",
       "de": "die Empfehlung",
       "en": "recommendation",
       "pos": "n",
-      "rank": 3690
+      "rank": 3690,
+      "gender": "f"
     },
     {
       "es": "guay",
@@ -4431,7 +4702,8 @@
       "de": "die Spezialität",
       "en": "specialty",
       "pos": "n",
-      "rank": 3693
+      "rank": 3693,
+      "gender": "f"
     },
     {
       "es": "patrimonio",
@@ -4444,7 +4716,8 @@
         "assets"
       ],
       "pos": "n",
-      "rank": 3694
+      "rank": 3694,
+      "gender": "m"
     },
     {
       "es": "espléndido",
@@ -4470,7 +4743,8 @@
         "doorman"
       ],
       "pos": "n",
-      "rank": 3696
+      "rank": 3696,
+      "gender": "m"
     },
     {
       "es": "agrícola",
@@ -4484,14 +4758,16 @@
       "de": "vergeblich",
       "en": "vain",
       "pos": "n",
-      "rank": 3698
+      "rank": 3698,
+      "gender": "m"
     },
     {
       "es": "afirmación",
       "de": "die Behauptung",
       "en": "statement",
       "pos": "n",
-      "rank": 3699
+      "rank": 3699,
+      "gender": "f"
     },
     {
       "es": "turístico",
@@ -4532,7 +4808,8 @@
       "de": "der Boom",
       "en": "boom",
       "pos": "n",
-      "rank": 3704
+      "rank": 3704,
+      "gender": "m"
     },
     {
       "es": "talla",
@@ -4545,7 +4822,8 @@
         "carving"
       ],
       "pos": "n",
-      "rank": 3705
+      "rank": 3705,
+      "gender": "f"
     },
     {
       "es": "cobertura",
@@ -4560,7 +4838,8 @@
         "news coverage"
       ],
       "pos": "n",
-      "rank": 3706
+      "rank": 3706,
+      "gender": "f"
     },
     {
       "es": "discreto",
@@ -4597,14 +4876,16 @@
         "charcoal"
       ],
       "pos": "n",
-      "rank": 3710
+      "rank": 3710,
+      "gender": "m"
     },
     {
       "es": "aprendizaje",
       "de": "das Lernen",
       "en": "learning",
       "pos": "n",
-      "rank": 3711
+      "rank": 3711,
+      "gender": "m"
     },
     {
       "es": "retirado",
@@ -4630,7 +4911,8 @@
         "timbre"
       ],
       "pos": "n",
-      "rank": 3713
+      "rank": 3713,
+      "gender": "m"
     },
     {
       "es": "desprender",
@@ -4650,21 +4932,24 @@
       "de": "das Stipendium",
       "en": "scholarship",
       "pos": "n",
-      "rank": 3715
+      "rank": 3715,
+      "gender": "f"
     },
     {
       "es": "mejilla",
       "de": "die Wange",
       "en": "cheek",
       "pos": "n",
-      "rank": 3716
+      "rank": 3716,
+      "gender": "f"
     },
     {
       "es": "crónica",
       "de": "die Chronik",
       "en": "chronicle",
       "pos": "n",
-      "rank": 3717
+      "rank": 3717,
+      "gender": "f"
     },
     {
       "es": "coca",
@@ -4677,7 +4962,8 @@
         "coke"
       ],
       "pos": "n",
-      "rank": 3718
+      "rank": 3718,
+      "gender": "f"
     },
     {
       "es": "justamente",
@@ -4697,7 +4983,8 @@
       "de": "der Bauch",
       "en": "belly",
       "pos": "n",
-      "rank": 3720
+      "rank": 3720,
+      "gender": "m"
     },
     {
       "es": "ocupación",
@@ -4710,42 +4997,48 @@
         "job"
       ],
       "pos": "n",
-      "rank": 3721
+      "rank": 3721,
+      "gender": "f"
     },
     {
       "es": "precisión",
       "de": "die Präzision",
       "en": "precision",
       "pos": "n",
-      "rank": 3722
+      "rank": 3722,
+      "gender": "f"
     },
     {
       "es": "participante",
       "de": "der Teilnehmer",
       "en": "participant",
       "pos": "n",
-      "rank": 3723
+      "rank": 3723,
+      "gender": "mf"
     },
     {
       "es": "arquitectura",
       "de": "die Architektur",
       "en": "architecture",
       "pos": "n",
-      "rank": 3724
+      "rank": 3724,
+      "gender": "f"
     },
     {
       "es": "competición",
       "de": "der Wettbewerb",
       "en": "competition",
       "pos": "n",
-      "rank": 3725
+      "rank": 3725,
+      "gender": "f"
     },
     {
       "es": "calendario",
       "de": "der Kalender",
       "en": "calendar",
       "pos": "n",
-      "rank": 3726
+      "rank": 3726,
+      "gender": "m"
     },
     {
       "es": "afeitar",
@@ -4765,21 +5058,24 @@
         "cigarette"
       ],
       "pos": "n",
-      "rank": 3728
+      "rank": 3728,
+      "gender": "m"
     },
     {
       "es": "trauma",
       "de": "das Trauma",
       "en": "trauma",
       "pos": "n",
-      "rank": 3729
+      "rank": 3729,
+      "gender": "m"
     },
     {
       "es": "brigada",
       "de": "die Brigade",
       "en": "brigade",
       "pos": "n",
-      "rank": 3730
+      "rank": 3730,
+      "gender": "f"
     },
     {
       "es": "algun",
@@ -4802,7 +5098,8 @@
         "license"
       ],
       "pos": "n",
-      "rank": 3732
+      "rank": 3732,
+      "gender": "f"
     },
     {
       "es": "honrado",
@@ -4816,14 +5113,16 @@
       "de": "der Dokumentarfilm",
       "en": "documentary",
       "pos": "n",
-      "rank": 3734
+      "rank": 3734,
+      "gender": "m"
     },
     {
       "es": "fiscalía",
       "de": "die Staatsanwaltschaft",
       "en": "prosecutor's office",
       "pos": "n",
-      "rank": 3735
+      "rank": 3735,
+      "gender": "f"
     },
     {
       "es": "lesbiano",
@@ -4837,28 +5136,32 @@
       "de": "die Rehabilitation",
       "en": "rehabilitation",
       "pos": "n",
-      "rank": 3737
+      "rank": 3737,
+      "gender": "f"
     },
     {
       "es": "vena",
       "de": "die Vene",
       "en": "vein",
       "pos": "n",
-      "rank": 3738
+      "rank": 3738,
+      "gender": "f"
     },
     {
       "es": "abeja",
       "de": "die Biene",
       "en": "bee",
       "pos": "n",
-      "rank": 3739
+      "rank": 3739,
+      "gender": "f"
     },
     {
       "es": "conquista",
       "de": "die Eroberung",
       "en": "conquest",
       "pos": "n",
-      "rank": 3740
+      "rank": 3740,
+      "gender": "mf"
     },
     {
       "es": "marica",
@@ -4868,7 +5171,8 @@
         "faggot"
       ],
       "pos": "n",
-      "rank": 3741
+      "rank": 3741,
+      "gender": "f"
     },
     {
       "es": "astuto",
@@ -4895,7 +5199,8 @@
       "de": "der Knoblauch",
       "en": "garlic",
       "pos": "n",
-      "rank": 3744
+      "rank": 3744,
+      "gender": "m"
     },
     {
       "es": "proyección",
@@ -4908,14 +5213,16 @@
         "screening"
       ],
       "pos": "n",
-      "rank": 3745
+      "rank": 3745,
+      "gender": "f"
     },
     {
       "es": "cuerno",
       "de": "das Horn",
       "en": "horn",
       "pos": "n",
-      "rank": 3746
+      "rank": 3746,
+      "gender": "m"
     },
     {
       "es": "evidentemente",
@@ -4929,7 +5236,8 @@
       "de": "das Kätzchen",
       "en": "kitten",
       "pos": "n",
-      "rank": 3748
+      "rank": 3748,
+      "gender": "m"
     },
     {
       "es": "asignar",
@@ -4950,7 +5258,8 @@
       "de": "die Niere",
       "en": "kidney",
       "pos": "n",
-      "rank": 3751
+      "rank": 3751,
+      "gender": "m"
     },
     {
       "es": "graduar",
@@ -4984,14 +5293,16 @@
       "de": "die Diktatur",
       "en": "dictatorship",
       "pos": "n",
-      "rank": 3755
+      "rank": 3755,
+      "gender": "f"
     },
     {
       "es": "marihuana",
       "de": "das Marihuana",
       "en": "marijuana",
       "pos": "n",
-      "rank": 3756
+      "rank": 3756,
+      "gender": "f"
     },
     {
       "es": "freír",
@@ -5018,7 +5329,8 @@
       "de": "der Nebel",
       "en": "fog",
       "pos": "n",
-      "rank": 3759
+      "rank": 3759,
+      "gender": "f"
     },
     {
       "es": "soporte",
@@ -5031,7 +5343,8 @@
         "support"
       ],
       "pos": "n",
-      "rank": 3760
+      "rank": 3760,
+      "gender": "m"
     },
     {
       "es": "detestar",
@@ -5045,7 +5358,8 @@
       "de": "die Massage",
       "en": "massage",
       "pos": "n",
-      "rank": 3762
+      "rank": 3762,
+      "gender": "m"
     },
     {
       "es": "vaciar",
@@ -5094,7 +5408,8 @@
       "de": "die Geographie",
       "en": "geography",
       "pos": "n",
-      "rank": 3769
+      "rank": 3769,
+      "gender": "f"
     },
     {
       "es": "anular",
@@ -5121,7 +5436,8 @@
       "de": "der Bote",
       "en": "messenger",
       "pos": "n",
-      "rank": 3772
+      "rank": 3772,
+      "gender": "m"
     },
     {
       "es": "madrileño",
@@ -5135,7 +5451,8 @@
       "de": "die Schießerei",
       "en": "shootout",
       "pos": "n",
-      "rank": 3774
+      "rank": 3774,
+      "gender": "m"
     },
     {
       "es": "estirar",
@@ -5156,7 +5473,8 @@
       "de": "das Mitgefühl",
       "en": "compassion",
       "pos": "n",
-      "rank": 3777
+      "rank": 3777,
+      "gender": "f"
     },
     {
       "es": "boy",
@@ -5170,14 +5488,16 @@
       "de": "die Autopsie",
       "en": "autopsy",
       "pos": "n",
-      "rank": 3779
+      "rank": 3779,
+      "gender": "f"
     },
     {
       "es": "estabilidad",
       "de": "die Stabilität",
       "en": "stability",
       "pos": "n",
-      "rank": 3780
+      "rank": 3780,
+      "gender": "f"
     },
     {
       "es": "liar",
@@ -5224,14 +5544,16 @@
       "de": "der Käufer",
       "en": "buyer",
       "pos": "n",
-      "rank": 3785
+      "rank": 3785,
+      "gender": "m"
     },
     {
       "es": "bigote",
       "de": "der Schnurrbart",
       "en": "moustache",
       "pos": "n",
-      "rank": 3786
+      "rank": 3786,
+      "gender": "m"
     },
     {
       "es": "respectivo",
@@ -5245,7 +5567,8 @@
       "de": "die Munition",
       "en": "ammunition",
       "pos": "n",
-      "rank": 3788
+      "rank": 3788,
+      "gender": "f"
     },
     {
       "es": "explotación",
@@ -5258,42 +5581,48 @@
         "operation"
       ],
       "pos": "n",
-      "rank": 3789
+      "rank": 3789,
+      "gender": "f"
     },
     {
       "es": "táctica",
       "de": "die Taktik",
       "en": "tactic",
       "pos": "n",
-      "rank": 3790
+      "rank": 3790,
+      "gender": "f"
     },
     {
       "es": "reglamento",
       "de": "die Verordnung",
       "en": "regulations",
       "pos": "n",
-      "rank": 3791
+      "rank": 3791,
+      "gender": "m"
     },
     {
       "es": "bahía",
       "de": "die Bucht",
       "en": "bay",
       "pos": "n",
-      "rank": 3792
+      "rank": 3792,
+      "gender": "f"
     },
     {
       "es": "observador",
       "de": "der Beobachter",
       "en": "observer",
       "pos": "n",
-      "rank": 3793
+      "rank": 3793,
+      "gender": "m"
     },
     {
       "es": "domicilio",
       "de": "der Wohnsitz",
       "en": "residence",
       "pos": "n",
-      "rank": 3794
+      "rank": 3794,
+      "gender": "m"
     },
     {
       "es": "ficha",
@@ -5306,7 +5635,8 @@
         "token"
       ],
       "pos": "n",
-      "rank": 3795
+      "rank": 3795,
+      "gender": "f"
     },
     {
       "es": "séptimo",
@@ -5340,14 +5670,16 @@
       "de": "das Statut",
       "en": "statute",
       "pos": "n",
-      "rank": 3799
+      "rank": 3799,
+      "gender": "m"
     },
     {
       "es": "mafia",
       "de": "die Mafia",
       "en": "mafia",
       "pos": "n",
-      "rank": 3800
+      "rank": 3800,
+      "gender": "f"
     },
     {
       "es": "proclamar",
@@ -5374,7 +5706,8 @@
       "de": "das Hündchen",
       "en": "little dog",
       "pos": "n",
-      "rank": 3803
+      "rank": 3803,
+      "gender": "m"
     },
     {
       "es": "licor",
@@ -5387,7 +5720,8 @@
         "liquor"
       ],
       "pos": "n",
-      "rank": 3804
+      "rank": 3804,
+      "gender": "m"
     },
     {
       "es": "válido",
@@ -5455,7 +5789,8 @@
         "appeal"
       ],
       "pos": "n",
-      "rank": 3812
+      "rank": 3812,
+      "gender": "f"
     },
     {
       "es": "ideológico",
@@ -5469,7 +5804,8 @@
       "de": "die Vorsicht",
       "en": "caution",
       "pos": "n",
-      "rank": 3814
+      "rank": 3814,
+      "gender": "f"
     },
     {
       "es": "energético",
@@ -5496,7 +5832,8 @@
       "de": "die Ewigkeit",
       "en": "eternity",
       "pos": "n",
-      "rank": 3817
+      "rank": 3817,
+      "gender": "f"
     },
     {
       "es": "montado",
@@ -5549,7 +5886,8 @@
       "de": "die Schildkröte",
       "en": "turtle",
       "pos": "n",
-      "rank": 3822
+      "rank": 3822,
+      "gender": "f"
     },
     {
       "es": "portal",
@@ -5562,7 +5900,8 @@
         "entrance hall"
       ],
       "pos": "n",
-      "rank": 3823
+      "rank": 3823,
+      "gender": "m"
     },
     {
       "es": "mediado",
@@ -5593,7 +5932,8 @@
       "de": "das Defizit",
       "en": "deficit",
       "pos": "n",
-      "rank": 3827
+      "rank": 3827,
+      "gender": "m"
     },
     {
       "es": "am",
@@ -5617,7 +5957,8 @@
         "fare"
       ],
       "pos": "n",
-      "rank": 3830
+      "rank": 3830,
+      "gender": "f"
     },
     {
       "es": "antigüedad",
@@ -5632,21 +5973,24 @@
         "seniority"
       ],
       "pos": "n",
-      "rank": 3831
+      "rank": 3831,
+      "gender": "f"
     },
     {
       "es": "objeción",
       "de": "der Einwand",
       "en": "objection",
       "pos": "n",
-      "rank": 3832
+      "rank": 3832,
+      "gender": "f"
     },
     {
       "es": "furgoneta",
       "de": "der Lieferwagen",
       "en": "van",
       "pos": "n",
-      "rank": 3833
+      "rank": 3833,
+      "gender": "f"
     },
     {
       "es": "magistrado",
@@ -5656,7 +6000,8 @@
         "magistrate"
       ],
       "pos": "n",
-      "rank": 3834
+      "rank": 3834,
+      "gender": "m"
     },
     {
       "es": "realista",
@@ -5676,7 +6021,8 @@
         "best man"
       ],
       "pos": "n",
-      "rank": 3836
+      "rank": 3836,
+      "gender": "m"
     },
     {
       "es": "terminal",
@@ -5720,7 +6066,8 @@
         "cube"
       ],
       "pos": "n",
-      "rank": 3841
+      "rank": 3841,
+      "gender": "m"
     },
     {
       "es": "perjudicar",
@@ -5740,7 +6087,8 @@
         "government department"
       ],
       "pos": "n",
-      "rank": 3843
+      "rank": 3843,
+      "gender": "f"
     },
     {
       "es": "goma",
@@ -5753,7 +6101,8 @@
         "eraser"
       ],
       "pos": "n",
-      "rank": 3844
+      "rank": 3844,
+      "gender": "f"
     },
     {
       "es": "directivo",
@@ -5773,7 +6122,8 @@
         "handle"
       ],
       "pos": "n",
-      "rank": 3846
+      "rank": 3846,
+      "gender": "m"
     },
     {
       "es": "pervertido",
@@ -5787,14 +6137,16 @@
       "de": "der Nachteil",
       "en": "drawback",
       "pos": "n",
-      "rank": 3848
+      "rank": 3848,
+      "gender": "m"
     },
     {
       "es": "refugiado",
       "de": "der Flüchtling",
       "en": "refugee",
       "pos": "n",
-      "rank": 3849
+      "rank": 3849,
+      "gender": "m"
     },
     {
       "es": "monetario",
@@ -5821,7 +6173,8 @@
         "license plate"
       ],
       "pos": "n",
-      "rank": 3852
+      "rank": 3852,
+      "gender": "f"
     },
     {
       "es": "enlace",
@@ -5834,7 +6187,8 @@
         "connection"
       ],
       "pos": "n",
-      "rank": 3853
+      "rank": 3853,
+      "gender": "m"
     },
     {
       "es": "suspendido",
@@ -5854,14 +6208,16 @@
       "de": "die Expansion",
       "en": "expansion",
       "pos": "n",
-      "rank": 3855
+      "rank": 3855,
+      "gender": "f"
     },
     {
       "es": "águila",
       "de": "der Adler",
       "en": "eagle",
       "pos": "n",
-      "rank": 3856
+      "rank": 3856,
+      "gender": "f"
     },
     {
       "es": "ingenuo",
@@ -5875,7 +6231,8 @@
       "de": "das U-Boot",
       "en": "submarine",
       "pos": "n",
-      "rank": 3858
+      "rank": 3858,
+      "gender": "m"
     },
     {
       "es": "vulnerable",
@@ -5889,14 +6246,16 @@
       "de": "die Hüfte",
       "en": "hip",
       "pos": "n",
-      "rank": 3860
+      "rank": 3860,
+      "gender": "f"
     },
     {
       "es": "brillo",
       "de": "der Glanz",
       "en": "shine",
       "pos": "n",
-      "rank": 3861
+      "rank": 3861,
+      "gender": "m"
     },
     {
       "es": "utilidad",
@@ -5909,7 +6268,8 @@
         "profit"
       ],
       "pos": "n",
-      "rank": 3862
+      "rank": 3862,
+      "gender": "f"
     },
     {
       "es": "acostado",
@@ -5936,7 +6296,8 @@
         "bench"
       ],
       "pos": "n",
-      "rank": 3865
+      "rank": 3865,
+      "gender": "f"
     },
     {
       "es": "complicar",
@@ -5950,7 +6311,8 @@
       "de": "die Rippe",
       "en": "rib",
       "pos": "n",
-      "rank": 3867
+      "rank": 3867,
+      "gender": "f"
     },
     {
       "es": "inusual",
@@ -5964,7 +6326,8 @@
       "de": "die Wirksamkeit",
       "en": "effectiveness",
       "pos": "n",
-      "rank": 3869
+      "rank": 3869,
+      "gender": "f"
     },
     {
       "es": "postal",
@@ -5984,7 +6347,8 @@
         "manga"
       ],
       "pos": "n",
-      "rank": 3871
+      "rank": 3871,
+      "gender": "f"
     },
     {
       "es": "remitir",
@@ -6017,7 +6381,8 @@
       "de": "die Verbrennung",
       "en": "burning",
       "pos": "n",
-      "rank": 3874
+      "rank": 3874,
+      "gender": "f"
     },
     {
       "es": "supuestamente",
@@ -6038,21 +6403,24 @@
       "de": "das Nest",
       "en": "nest",
       "pos": "n",
-      "rank": 3877
+      "rank": 3877,
+      "gender": "m"
     },
     {
       "es": "susto",
       "de": "der Schreck",
       "en": "fright",
       "pos": "n",
-      "rank": 3878
+      "rank": 3878,
+      "gender": "m"
     },
     {
       "es": "ídolo",
       "de": "das Idol",
       "en": "idol",
       "pos": "n",
-      "rank": 3879
+      "rank": 3879,
+      "gender": "m"
     },
     {
       "es": "provincial",
@@ -6066,14 +6434,16 @@
       "de": "die Rolle",
       "en": "role",
       "pos": "n",
-      "rank": 3881
+      "rank": 3881,
+      "gender": "m"
     },
     {
       "es": "luchador",
       "de": "der Kämpfer",
       "en": "fighter",
       "pos": "n",
-      "rank": 3882
+      "rank": 3882,
+      "gender": "m"
     },
     {
       "es": "infectado",
@@ -6087,7 +6457,8 @@
       "de": "der Veteran",
       "en": "veteran",
       "pos": "n",
-      "rank": 3884
+      "rank": 3884,
+      "gender": "m"
     },
     {
       "es": "cultivar",
@@ -6114,7 +6485,8 @@
       "de": "der Gründer",
       "en": "founder",
       "pos": "n",
-      "rank": 3887
+      "rank": 3887,
+      "gender": "m"
     },
     {
       "es": "lateral",
@@ -6128,14 +6500,16 @@
       "de": "die Blockade",
       "en": "blockade",
       "pos": "n",
-      "rank": 3889
+      "rank": 3889,
+      "gender": "m"
     },
     {
       "es": "variación",
       "de": "die Variation",
       "en": "variation",
       "pos": "n",
-      "rank": 3890
+      "rank": 3890,
+      "gender": "f"
     },
     {
       "es": "audición",
@@ -6148,14 +6522,16 @@
         "hearing"
       ],
       "pos": "n",
-      "rank": 3891
+      "rank": 3891,
+      "gender": "f"
     },
     {
       "es": "recta",
       "de": "die Gerade",
       "en": "straight line",
       "pos": "n",
-      "rank": 3892
+      "rank": 3892,
+      "gender": "f"
     },
     {
       "es": "fundamentalmente",
@@ -6169,7 +6545,8 @@
       "de": "die Umlaufbahn",
       "en": "orbit",
       "pos": "n",
-      "rank": 3894
+      "rank": 3894,
+      "gender": "f"
     },
     {
       "es": "programación",
@@ -6182,7 +6559,8 @@
         "schedule"
       ],
       "pos": "n",
-      "rank": 3895
+      "rank": 3895,
+      "gender": "f"
     },
     {
       "es": "setenta",
@@ -6196,7 +6574,8 @@
       "de": "das Geschwader",
       "en": "squadron",
       "pos": "n",
-      "rank": 3897
+      "rank": 3897,
+      "gender": "m"
     },
     {
       "es": "amenazado",
@@ -6224,7 +6603,8 @@
       "de": "die Inspektion",
       "en": "inspection",
       "pos": "n",
-      "rank": 3901
+      "rank": 3901,
+      "gender": "f"
     },
     {
       "es": "prometido",
@@ -6251,7 +6631,8 @@
       "de": "der Franc (Währung)",
       "en": "franc",
       "pos": "n",
-      "rank": 3904
+      "rank": 3904,
+      "gender": "m"
     },
     {
       "es": "sentimental",
@@ -6279,21 +6660,24 @@
       "de": "der Präzedenzfall",
       "en": "precedent",
       "pos": "n",
-      "rank": 3908
+      "rank": 3908,
+      "gender": "m"
     },
     {
       "es": "bondad",
       "de": "die Güte",
       "en": "kindness",
       "pos": "n",
-      "rank": 3909
+      "rank": 3909,
+      "gender": "f"
     },
     {
       "es": "psicología",
       "de": "die Psychologie",
       "en": "psychology",
       "pos": "n",
-      "rank": 3910
+      "rank": 3910,
+      "gender": "f"
     },
     {
       "es": "trayectoria",
@@ -6306,7 +6690,8 @@
         "career"
       ],
       "pos": "n",
-      "rank": 3911
+      "rank": 3911,
+      "gender": "f"
     },
     {
       "es": "encubierto",
@@ -6333,7 +6718,8 @@
         "realm"
       ],
       "pos": "n",
-      "rank": 3914
+      "rank": 3914,
+      "gender": "f"
     },
     {
       "es": "cómico",
@@ -6377,56 +6763,64 @@
       "de": "die Injektion",
       "en": "injection",
       "pos": "n",
-      "rank": 3919
+      "rank": 3919,
+      "gender": "f"
     },
     {
       "es": "demócrata",
       "de": "der Demokrat",
       "en": "democrat",
       "pos": "n",
-      "rank": 3920
+      "rank": 3920,
+      "gender": "f"
     },
     {
       "es": "adicto",
       "de": "der Süchtige",
       "en": "addict",
       "pos": "n",
-      "rank": 3921
+      "rank": 3921,
+      "gender": "m"
     },
     {
       "es": "musulmán",
       "de": "der Muslim",
       "en": "Muslim",
       "pos": "n",
-      "rank": 3922
+      "rank": 3922,
+      "gender": "m"
     },
     {
       "es": "ancho",
       "de": "die Breite",
       "en": "width",
       "pos": "n",
-      "rank": 3923
+      "rank": 3923,
+      "gender": "m"
     },
     {
       "es": "inspiración",
       "de": "die Inspiration",
       "en": "inspiration",
       "pos": "n",
-      "rank": 3924
+      "rank": 3924,
+      "gender": "f"
     },
     {
       "es": "verdura",
       "de": "das Gemüse",
       "en": "vegetable",
       "pos": "n",
-      "rank": 3925
+      "rank": 3925,
+      "gender": "f"
     },
     {
       "es": "barril",
       "de": "das Fass",
       "en": "barrel",
       "pos": "n",
-      "rank": 3926
+      "rank": 3926,
+      "gender": "m"
     },
     {
       "es": "reflexionar",
@@ -6456,28 +6850,32 @@
       "de": "die Hinfahrt",
       "en": "outward journey",
       "pos": "n",
-      "rank": 3929
+      "rank": 3929,
+      "gender": "f"
     },
     {
       "es": "apetito",
       "de": "der Appetit",
       "en": "appetite",
       "pos": "n",
-      "rank": 3930
+      "rank": 3930,
+      "gender": "m"
     },
     {
       "es": "castellano",
       "de": "das Kastilische (Spanisch)",
       "en": "Castilian (Spanish)",
       "pos": "n",
-      "rank": 3931
+      "rank": 3931,
+      "gender": "m"
     },
     {
       "es": "administrador",
       "de": "der Administrator",
       "en": "administrator",
       "pos": "n",
-      "rank": 3932
+      "rank": 3932,
+      "gender": "m"
     },
     {
       "es": "residir",
@@ -6497,7 +6895,8 @@
       "de": "der Ziegelstein",
       "en": "brick",
       "pos": "n",
-      "rank": 3934
+      "rank": 3934,
+      "gender": "m"
     },
     {
       "es": "peruano",
@@ -6524,7 +6923,8 @@
         "kite"
       ],
       "pos": "n",
-      "rank": 3937
+      "rank": 3937,
+      "gender": "m"
     },
     {
       "es": "ochenta",
@@ -6552,7 +6952,8 @@
       "de": "der Balkon",
       "en": "balcony",
       "pos": "n",
-      "rank": 3941
+      "rank": 3941,
+      "gender": "m"
     },
     {
       "es": "estelar",
@@ -6585,7 +6986,8 @@
         "alcohol content"
       ],
       "pos": "n",
-      "rank": 3944
+      "rank": 3944,
+      "gender": "f"
     },
     {
       "es": "práctico",
@@ -6606,7 +7008,8 @@
       "de": "die Verfolgung",
       "en": "pursuit",
       "pos": "n",
-      "rank": 3947
+      "rank": 3947,
+      "gender": "f"
     },
     {
       "es": "complejo",
@@ -6633,7 +7036,8 @@
       "de": "die Korrektur",
       "en": "correction",
       "pos": "n",
-      "rank": 3950
+      "rank": 3950,
+      "gender": "f"
     },
     {
       "es": "alojar",
@@ -6647,28 +7051,32 @@
       "de": "der Eid",
       "en": "oath",
       "pos": "n",
-      "rank": 3952
+      "rank": 3952,
+      "gender": "m"
     },
     {
       "es": "buque",
       "de": "das Schiff",
       "en": "ship",
       "pos": "n",
-      "rank": 3953
+      "rank": 3953,
+      "gender": "m"
     },
     {
       "es": "tobillo",
       "de": "der Knöchel",
       "en": "ankle",
       "pos": "n",
-      "rank": 3954
+      "rank": 3954,
+      "gender": "m"
     },
     {
       "es": "admirador",
       "de": "der Bewunderer",
       "en": "admirer",
       "pos": "n",
-      "rank": 3955
+      "rank": 3955,
+      "gender": "m"
     },
     {
       "es": "cachorro",
@@ -6678,14 +7086,16 @@
         "cub"
       ],
       "pos": "n",
-      "rank": 3956
+      "rank": 3956,
+      "gender": "m"
     },
     {
       "es": "ballena",
       "de": "der Wal",
       "en": "whale",
       "pos": "n",
-      "rank": 3957
+      "rank": 3957,
+      "gender": "f"
     },
     {
       "es": "respaldar",
@@ -6708,7 +7118,8 @@
         "incentive"
       ],
       "pos": "n",
-      "rank": 3959
+      "rank": 3959,
+      "gender": "m"
     },
     {
       "es": "comparado",
@@ -6722,21 +7133,24 @@
       "de": "die Kontroverse",
       "en": "controversy",
       "pos": "n",
-      "rank": 3961
+      "rank": 3961,
+      "gender": "f"
     },
     {
       "es": "cucharada",
       "de": "der Esslöffel (voll)",
       "en": "spoonful",
       "pos": "n",
-      "rank": 3962
+      "rank": 3962,
+      "gender": "f"
     },
     {
       "es": "requisito",
       "de": "die Anforderung",
       "en": "requirement",
       "pos": "n",
-      "rank": 3963
+      "rank": 3963,
+      "gender": "m"
     },
     {
       "es": "sirena",
@@ -6749,7 +7163,8 @@
         "mermaid"
       ],
       "pos": "n",
-      "rank": 3964
+      "rank": 3964,
+      "gender": "f"
     },
     {
       "es": "picar",
@@ -6785,7 +7200,8 @@
       "de": "das Oberste Gericht",
       "en": "supreme court",
       "pos": "n",
-      "rank": 3968
+      "rank": 3968,
+      "gender": "f"
     },
     {
       "es": "restante",
@@ -6799,7 +7215,8 @@
       "de": "die Gleichheit",
       "en": "equality",
       "pos": "n",
-      "rank": 3970
+      "rank": 3970,
+      "gender": "f"
     },
     {
       "es": "estratégico",
@@ -6820,7 +7237,8 @@
       "de": "das Motel",
       "en": "motel",
       "pos": "n",
-      "rank": 3973
+      "rank": 3973,
+      "gender": "m"
     },
     {
       "es": "respaldo",
@@ -6833,14 +7251,16 @@
         "backrest"
       ],
       "pos": "n",
-      "rank": 3974
+      "rank": 3974,
+      "gender": "m"
     },
     {
       "es": "gramo",
       "de": "das Gramm",
       "en": "gram",
       "pos": "n",
-      "rank": 3975
+      "rank": 3975,
+      "gender": "m"
     },
     {
       "es": "apretado",
@@ -6854,7 +7274,8 @@
       "de": "die Waise",
       "en": "orphan",
       "pos": "n",
-      "rank": 3977
+      "rank": 3977,
+      "gender": "m"
     },
     {
       "es": "predecir",
@@ -6868,14 +7289,16 @@
       "de": "der Sarg",
       "en": "coffin",
       "pos": "n",
-      "rank": 3979
+      "rank": 3979,
+      "gender": "m"
     },
     {
       "es": "ferrocarril",
       "de": "die Eisenbahn",
       "en": "railway",
       "pos": "n",
-      "rank": 3980
+      "rank": 3980,
+      "gender": "m"
     },
     {
       "es": "atascado",
@@ -6895,14 +7318,16 @@
       "de": "die Blutung",
       "en": "hemorrhage",
       "pos": "n",
-      "rank": 3982
+      "rank": 3982,
+      "gender": "f"
     },
     {
       "es": "introducción",
       "de": "die Einführung",
       "en": "introduction",
       "pos": "n",
-      "rank": 3983
+      "rank": 3983,
+      "gender": "f"
     },
     {
       "es": "metálico",
@@ -6916,7 +7341,8 @@
       "de": "die Überzeugung",
       "en": "conviction",
       "pos": "n",
-      "rank": 3985
+      "rank": 3985,
+      "gender": "f"
     },
     {
       "es": "tránsito",
@@ -6929,21 +7355,24 @@
         "transit"
       ],
       "pos": "n",
-      "rank": 3986
+      "rank": 3986,
+      "gender": "m"
     },
     {
       "es": "mariposa",
       "de": "der Schmetterling",
       "en": "butterfly",
       "pos": "n",
-      "rank": 3987
+      "rank": 3987,
+      "gender": "f"
     },
     {
       "es": "nudo",
       "de": "der Knoten",
       "en": "knot",
       "pos": "n",
-      "rank": 3988
+      "rank": 3988,
+      "gender": "m"
     },
     {
       "es": "clavo",
@@ -6956,7 +7385,8 @@
         "clove"
       ],
       "pos": "n",
-      "rank": 3989
+      "rank": 3989,
+      "gender": "m"
     },
     {
       "es": "incendiar",
@@ -6970,14 +7400,16 @@
       "de": "die Billion",
       "en": "trillion",
       "pos": "n",
-      "rank": 3991
+      "rank": 3991,
+      "gender": "m"
     },
     {
       "es": "siesta",
       "de": "die Siesta",
       "en": "nap",
       "pos": "n",
-      "rank": 3992
+      "rank": 3992,
+      "gender": "f"
     },
     {
       "es": "sanguíneo",
@@ -6997,7 +7429,8 @@
         "idiot"
       ],
       "pos": "n",
-      "rank": 3994
+      "rank": 3994,
+      "gender": "m"
     },
     {
       "es": "reparto",
@@ -7012,21 +7445,24 @@
         "delivery"
       ],
       "pos": "n",
-      "rank": 3995
+      "rank": 3995,
+      "gender": "m"
     },
     {
       "es": "infraestructura",
       "de": "die Infrastruktur",
       "en": "infrastructure",
       "pos": "n",
-      "rank": 3996
+      "rank": 3996,
+      "gender": "f"
     },
     {
       "es": "obsesión",
       "de": "die Besessenheit",
       "en": "obsession",
       "pos": "n",
-      "rank": 3997
+      "rank": 3997,
+      "gender": "f"
     },
     {
       "es": "mandato",
@@ -7039,7 +7475,8 @@
         "term of office"
       ],
       "pos": "n",
-      "rank": 3998
+      "rank": 3998,
+      "gender": "m"
     },
     {
       "es": "mojar",
@@ -7056,7 +7493,8 @@
       "de": "die Einschränkung",
       "en": "limitation",
       "pos": "n",
-      "rank": 4000
+      "rank": 4000,
+      "gender": "f"
     },
     {
       "es": "aplicado",
@@ -7082,21 +7520,24 @@
         "papers"
       ],
       "pos": "n",
-      "rank": 4002
+      "rank": 4002,
+      "gender": "f"
     },
     {
       "es": "atleta",
       "de": "der Athlet",
       "en": "athlete",
       "pos": "n",
-      "rank": 4003
+      "rank": 4003,
+      "gender": "mf"
     },
     {
       "es": "captura",
       "de": "die Festnahme",
       "en": "capture",
       "pos": "n",
-      "rank": 4004
+      "rank": 4004,
+      "gender": "f"
     },
     {
       "es": "fluir",
@@ -7117,7 +7558,8 @@
       "de": "der Gerichtsvollzieher",
       "en": "bailiff",
       "pos": "n",
-      "rank": 4007
+      "rank": 4007,
+      "gender": "m"
     },
     {
       "es": "repasar",
@@ -7131,7 +7573,8 @@
       "de": "das Prestige",
       "en": "prestige",
       "pos": "n",
-      "rank": 4009
+      "rank": 4009,
+      "gender": "m"
     },
     {
       "es": "estrangular",
@@ -7164,7 +7607,8 @@
         "set-up"
       ],
       "pos": "n",
-      "rank": 4012
+      "rank": 4012,
+      "gender": "m"
     },
     {
       "es": "frágil",
@@ -7185,7 +7629,8 @@
       "de": "die Perle",
       "en": "pearl",
       "pos": "n",
-      "rank": 4015
+      "rank": 4015,
+      "gender": "f"
     },
     {
       "es": "balance",
@@ -7195,14 +7640,16 @@
         "assessment"
       ],
       "pos": "n",
-      "rank": 4016
+      "rank": 4016,
+      "gender": "m"
     },
     {
       "es": "emisora",
       "de": "der Sender",
       "en": "radio station",
       "pos": "n",
-      "rank": 4017
+      "rank": 4017,
+      "gender": "f"
     },
     {
       "es": "descuidar",
@@ -7216,7 +7663,8 @@
       "de": "der Frosch",
       "en": "frog",
       "pos": "n",
-      "rank": 4019
+      "rank": 4019,
+      "gender": "f"
     },
     {
       "es": "difunto",
@@ -7237,14 +7685,16 @@
       "de": "der Rucksack",
       "en": "backpack",
       "pos": "n",
-      "rank": 4022
+      "rank": 4022,
+      "gender": "f"
     },
     {
       "es": "tentación",
       "de": "die Versuchung",
       "en": "temptation",
       "pos": "n",
-      "rank": 4023
+      "rank": 4023,
+      "gender": "f"
     },
     {
       "es": "aterrorizar",
@@ -7265,7 +7715,8 @@
       "de": "der Diener",
       "en": "servant",
       "pos": "n",
-      "rank": 4026
+      "rank": 4026,
+      "gender": "m"
     },
     {
       "es": "ligeramente",
@@ -7279,14 +7730,16 @@
       "de": "der Schwanz (vulg.)",
       "en": "dick",
       "pos": "n",
-      "rank": 4028
+      "rank": 4028,
+      "gender": "f"
     },
     {
       "es": "green",
       "de": "das Grün (Golf)",
       "en": "green (golf)",
       "pos": "n",
-      "rank": 4029
+      "rank": 4029,
+      "gender": "m"
     },
     {
       "es": "apuro",
@@ -7299,7 +7752,8 @@
         "hurry"
       ],
       "pos": "n",
-      "rank": 4030
+      "rank": 4030,
+      "gender": "m"
     },
     {
       "es": "considerable",
@@ -7313,14 +7767,16 @@
       "de": "die Chance",
       "en": "chance",
       "pos": "n",
-      "rank": 4032
+      "rank": 4032,
+      "gender": "m"
     },
     {
       "es": "suegro",
       "de": "der Schwiegervater",
       "en": "father-in-law",
       "pos": "n",
-      "rank": 4033
+      "rank": 4033,
+      "gender": "m"
     },
     {
       "es": "aborto",
@@ -7333,21 +7789,24 @@
         "miscarriage"
       ],
       "pos": "n",
-      "rank": 4034
+      "rank": 4034,
+      "gender": "m"
     },
     {
       "es": "matón",
       "de": "der Schläger (Rowdy)",
       "en": "thug",
       "pos": "n",
-      "rank": 4035
+      "rank": 4035,
+      "gender": "m"
     },
     {
       "es": "perfección",
       "de": "die Perfektion",
       "en": "perfection",
       "pos": "n",
-      "rank": 4036
+      "rank": 4036,
+      "gender": "f"
     },
     {
       "es": "seleccionar",
@@ -7361,7 +7820,8 @@
       "de": "der Komponist",
       "en": "composer",
       "pos": "n",
-      "rank": 4038
+      "rank": 4038,
+      "gender": "m"
     },
     {
       "es": "equivalente",
@@ -7383,7 +7843,8 @@
         "jerk"
       ],
       "pos": "n",
-      "rank": 4040
+      "rank": 4040,
+      "gender": "m"
     },
     {
       "es": "bodega",
@@ -7398,14 +7859,16 @@
         "grocery store"
       ],
       "pos": "n",
-      "rank": 4041
+      "rank": 4041,
+      "gender": "f"
     },
     {
       "es": "colaborador",
       "de": "der Mitarbeiter",
       "en": "collaborator",
       "pos": "n",
-      "rank": 4042
+      "rank": 4042,
+      "gender": "m"
     },
     {
       "es": "susurrar",
@@ -7447,28 +7910,32 @@
       "de": "das Dreifache",
       "en": "triple",
       "pos": "n",
-      "rank": 4048
+      "rank": 4048,
+      "gender": "m"
     },
     {
       "es": "pescador",
       "de": "der Fischer",
       "en": "fisherman",
       "pos": "n",
-      "rank": 4049
+      "rank": 4049,
+      "gender": "m"
     },
     {
       "es": "coalición",
       "de": "die Koalition",
       "en": "coalition",
       "pos": "n",
-      "rank": 4050
+      "rank": 4050,
+      "gender": "f"
     },
     {
       "es": "anfitrión",
       "de": "der Gastgeber",
       "en": "host",
       "pos": "n",
-      "rank": 4051
+      "rank": 4051,
+      "gender": "m"
     },
     {
       "es": "algodón",
@@ -7481,7 +7948,8 @@
         "cotton wool"
       ],
       "pos": "n",
-      "rank": 4052
+      "rank": 4052,
+      "gender": "m"
     },
     {
       "es": "devorar",
@@ -7501,7 +7969,8 @@
         "fulfillment"
       ],
       "pos": "n",
-      "rank": 4054
+      "rank": 4054,
+      "gender": "m"
     },
     {
       "es": "house",
@@ -7515,7 +7984,8 @@
       "de": "die Schwuchtel",
       "en": "faggot",
       "pos": "n",
-      "rank": 4056
+      "rank": 4056,
+      "gender": "m"
     },
     {
       "es": "nuez",
@@ -7525,28 +7995,32 @@
         "walnut"
       ],
       "pos": "n",
-      "rank": 4057
+      "rank": 4057,
+      "gender": "f"
     },
     {
       "es": "terremoto",
       "de": "das Erdbeben",
       "en": "earthquake",
       "pos": "n",
-      "rank": 4058
+      "rank": 4058,
+      "gender": "m"
     },
     {
       "es": "dinámica",
       "de": "die Dynamik",
       "en": "dynamics",
       "pos": "n",
-      "rank": 4059
+      "rank": 4059,
+      "gender": "f"
     },
     {
       "es": "insulto",
       "de": "die Beleidigung",
       "en": "insult",
       "pos": "n",
-      "rank": 4060
+      "rank": 4060,
+      "gender": "m"
     },
     {
       "es": "suspensión",
@@ -7559,7 +8033,8 @@
         "suspension (car)"
       ],
       "pos": "n",
-      "rank": 4061
+      "rank": 4061,
+      "gender": "f"
     },
     {
       "es": "acosar",
@@ -7573,14 +8048,16 @@
       "de": "die Antenne",
       "en": "antenna",
       "pos": "n",
-      "rank": 4063
+      "rank": 4063,
+      "gender": "f"
     },
     {
       "es": "panorama",
       "de": "das Panorama",
       "en": "panorama",
       "pos": "n",
-      "rank": 4064
+      "rank": 4064,
+      "gender": "m"
     },
     {
       "es": "fortalecer",
@@ -7604,7 +8081,8 @@
         "gypsy"
       ],
       "pos": "n",
-      "rank": 4067
+      "rank": 4067,
+      "gender": "m"
     },
     {
       "es": "acomodar",
@@ -7644,21 +8122,24 @@
         "residue"
       ],
       "pos": "n",
-      "rank": 4071
+      "rank": 4071,
+      "gender": "m"
     },
     {
       "es": "mona",
       "de": "die Äffin",
       "en": "female monkey",
       "pos": "n",
-      "rank": 4072
+      "rank": 4072,
+      "gender": "f"
     },
     {
       "es": "borracha",
       "de": "die Betrunkene",
       "en": "drunk woman",
       "pos": "n",
-      "rank": 4073
+      "rank": 4073,
+      "gender": "f"
     },
     {
       "es": "derrumbar",
@@ -7679,14 +8160,16 @@
       "de": "die Socke",
       "en": "sock",
       "pos": "n",
-      "rank": 4076
+      "rank": 4076,
+      "gender": "m"
     },
     {
       "es": "farmacia",
       "de": "die Apotheke",
       "en": "pharmacy",
       "pos": "n",
-      "rank": 4077
+      "rank": 4077,
+      "gender": "f"
     },
     {
       "es": "arrodillar",
@@ -7706,21 +8189,24 @@
         "nursing home"
       ],
       "pos": "n",
-      "rank": 4079
+      "rank": 4079,
+      "gender": "m"
     },
     {
       "es": "mansión",
       "de": "die Villa",
       "en": "mansion",
       "pos": "n",
-      "rank": 4080
+      "rank": 4080,
+      "gender": "f"
     },
     {
       "es": "inocencia",
       "de": "die Unschuld",
       "en": "innocence",
       "pos": "n",
-      "rank": 4081
+      "rank": 4081,
+      "gender": "f"
     },
     {
       "es": "chimenea",
@@ -7733,7 +8219,8 @@
         "chimney"
       ],
       "pos": "n",
-      "rank": 4082
+      "rank": 4082,
+      "gender": "f"
     },
     {
       "es": "polaco",
@@ -7747,28 +8234,32 @@
       "de": "die Wut",
       "en": "fury",
       "pos": "n",
-      "rank": 4084
+      "rank": 4084,
+      "gender": "f"
     },
     {
       "es": "ingeniería",
       "de": "das Ingenieurwesen",
       "en": "engineering",
       "pos": "n",
-      "rank": 4085
+      "rank": 4085,
+      "gender": "f"
     },
     {
       "es": "orina",
       "de": "der Urin",
       "en": "urine",
       "pos": "n",
-      "rank": 4086
+      "rank": 4086,
+      "gender": "f"
     },
     {
       "es": "fanático",
       "de": "der Fanatiker",
       "en": "fanatic",
       "pos": "n",
-      "rank": 4087
+      "rank": 4087,
+      "gender": "m"
     },
     {
       "es": "iris",
@@ -7781,7 +8272,8 @@
         "iris (flower)"
       ],
       "pos": "n",
-      "rank": 4088
+      "rank": 4088,
+      "gender": "m"
     },
     {
       "es": "cancha",
@@ -7791,7 +8283,8 @@
         "field"
       ],
       "pos": "n",
-      "rank": 4089
+      "rank": 4089,
+      "gender": "f"
     },
     {
       "es": "inyectar",
@@ -7811,7 +8304,8 @@
         "intimacy"
       ],
       "pos": "n",
-      "rank": 4091
+      "rank": 4091,
+      "gender": "f"
     },
     {
       "es": "presumir",
@@ -7831,35 +8325,40 @@
       "de": "die Finanzen",
       "en": "finance",
       "pos": "n",
-      "rank": 4093
+      "rank": 4093,
+      "gender": "f"
     },
     {
       "es": "tercio",
       "de": "das Drittel",
       "en": "third",
       "pos": "n",
-      "rank": 4094
+      "rank": 4094,
+      "gender": "m"
     },
     {
       "es": "clan",
       "de": "der Clan",
       "en": "clan",
       "pos": "n",
-      "rank": 4095
+      "rank": 4095,
+      "gender": "m"
     },
     {
       "es": "bus",
       "de": "der Bus",
       "en": "bus",
       "pos": "n",
-      "rank": 4096
+      "rank": 4096,
+      "gender": "m"
     },
     {
       "es": "shock",
       "de": "der Schock",
       "en": "shock",
       "pos": "n",
-      "rank": 4097
+      "rank": 4097,
+      "gender": "m"
     },
     {
       "es": "portada",
@@ -7869,14 +8368,16 @@
         "cover"
       ],
       "pos": "n",
-      "rank": 4098
+      "rank": 4098,
+      "gender": "f"
     },
     {
       "es": "inflación",
       "de": "die Inflation",
       "en": "inflation",
       "pos": "n",
-      "rank": 4099
+      "rank": 4099,
+      "gender": "f"
     },
     {
       "es": "vestuario",
@@ -7889,7 +8390,8 @@
         "wardrobe"
       ],
       "pos": "n",
-      "rank": 4100
+      "rank": 4100,
+      "gender": "m"
     },
     {
       "es": "vagabundo",
@@ -7899,7 +8401,8 @@
         "vagrant"
       ],
       "pos": "n",
-      "rank": 4101
+      "rank": 4101,
+      "gender": "m"
     },
     {
       "es": "estándar",
@@ -7916,28 +8419,32 @@
         "follow-up"
       ],
       "pos": "n",
-      "rank": 4103
+      "rank": 4103,
+      "gender": "m"
     },
     {
       "es": "sudor",
       "de": "der Schweiß",
       "en": "sweat",
       "pos": "n",
-      "rank": 4104
+      "rank": 4104,
+      "gender": "m"
     },
     {
       "es": "complicación",
       "de": "die Komplikation",
       "en": "complication",
       "pos": "n",
-      "rank": 4105
+      "rank": 4105,
+      "gender": "f"
     },
     {
       "es": "escultura",
       "de": "die Skulptur",
       "en": "sculpture",
       "pos": "n",
-      "rank": 4106
+      "rank": 4106,
+      "gender": "f"
     },
     {
       "es": "repugnante",
@@ -7958,21 +8465,24 @@
       "de": "die Gesetzgebung",
       "en": "legislation",
       "pos": "n",
-      "rank": 4109
+      "rank": 4109,
+      "gender": "f"
     },
     {
       "es": "trofeo",
       "de": "die Trophäe",
       "en": "trophy",
       "pos": "n",
-      "rank": 4110
+      "rank": 4110,
+      "gender": "m"
     },
     {
       "es": "sillón",
       "de": "der Sessel",
       "en": "armchair",
       "pos": "n",
-      "rank": 4111
+      "rank": 4111,
+      "gender": "m"
     },
     {
       "es": "torpe",
@@ -7986,35 +8496,40 @@
       "de": "der Psychopath",
       "en": "psychopath",
       "pos": "n",
-      "rank": 4113
+      "rank": 4113,
+      "gender": "f"
     },
     {
       "es": "determinación",
       "de": "die Entschlossenheit",
       "en": "determination",
       "pos": "n",
-      "rank": 4114
+      "rank": 4114,
+      "gender": "f"
     },
     {
       "es": "granjero",
       "de": "der Bauer (Landwirt)",
       "en": "farmer",
       "pos": "n",
-      "rank": 4115
+      "rank": 4115,
+      "gender": "m"
     },
     {
       "es": "explosivo",
       "de": "explosiv",
       "en": "explosive",
       "pos": "n",
-      "rank": 4116
+      "rank": 4116,
+      "gender": "m"
     },
     {
       "es": "brindis",
       "de": "der Trinkspruch",
       "en": "toast",
       "pos": "n",
-      "rank": 4117
+      "rank": 4117,
+      "gender": "m"
     },
     {
       "es": "ebrio",
@@ -8028,21 +8543,24 @@
       "de": "die Premiere",
       "en": "premiere",
       "pos": "n",
-      "rank": 4119
+      "rank": 4119,
+      "gender": "m"
     },
     {
       "es": "fractura",
       "de": "der Bruch (Knochen)",
       "en": "fracture",
       "pos": "n",
-      "rank": 4120
+      "rank": 4120,
+      "gender": "f"
     },
     {
       "es": "go",
       "de": "das Go (Brettspiel)",
       "en": "go (board game)",
       "pos": "n",
-      "rank": 4121
+      "rank": 4121,
+      "gender": "m"
     },
     {
       "es": "hongo",
@@ -8052,21 +8570,24 @@
         "fungus"
       ],
       "pos": "n",
-      "rank": 4122
+      "rank": 4122,
+      "gender": "m"
     },
     {
       "es": "maletín",
       "de": "der Aktenkoffer",
       "en": "briefcase",
       "pos": "n",
-      "rank": 4123
+      "rank": 4123,
+      "gender": "m"
     },
     {
       "es": "tambor",
       "de": "die Trommel",
       "en": "drum",
       "pos": "n",
-      "rank": 4124
+      "rank": 4124,
+      "gender": "m"
     },
     {
       "es": "publicitario",
@@ -8087,7 +8608,8 @@
       "de": "die Auktion",
       "en": "auction",
       "pos": "n",
-      "rank": 4127
+      "rank": 4127,
+      "gender": "f"
     },
     {
       "es": "traslado",
@@ -8100,7 +8622,8 @@
         "move"
       ],
       "pos": "n",
-      "rank": 4128
+      "rank": 4128,
+      "gender": "m"
     },
     {
       "es": "vergonzoso",
@@ -8117,7 +8640,8 @@
         "clue"
       ],
       "pos": "n",
-      "rank": 4130
+      "rank": 4130,
+      "gender": "m"
     },
     {
       "es": "latir",
@@ -8131,28 +8655,32 @@
       "de": "der Bandit",
       "en": "bandit",
       "pos": "n",
-      "rank": 4132
+      "rank": 4132,
+      "gender": "m"
     },
     {
       "es": "noción",
       "de": "die Vorstellung",
       "en": "notion",
       "pos": "n",
-      "rank": 4133
+      "rank": 4133,
+      "gender": "f"
     },
     {
       "es": "expedición",
       "de": "die Expedition",
       "en": "expedition",
       "pos": "n",
-      "rank": 4134
+      "rank": 4134,
+      "gender": "f"
     },
     {
       "es": "planteamiento",
       "de": "der Ansatz",
       "en": "approach",
       "pos": "n",
-      "rank": 4135
+      "rank": 4135,
+      "gender": "m"
     },
     {
       "es": "racional",
@@ -8196,7 +8724,8 @@
       "de": "der Beschützer",
       "en": "protector",
       "pos": "n",
-      "rank": 4140
+      "rank": 4140,
+      "gender": "m"
     },
     {
       "es": "coco",
@@ -8209,14 +8738,16 @@
         "bogeyman"
       ],
       "pos": "n",
-      "rank": 4141
+      "rank": 4141,
+      "gender": "m"
     },
     {
       "es": "envidia",
       "de": "der Neid",
       "en": "envy",
       "pos": "n",
-      "rank": 4142
+      "rank": 4142,
+      "gender": "f"
     },
     {
       "es": "aterrador",
@@ -8237,14 +8768,16 @@
       "de": "die Feuchtigkeit",
       "en": "humidity",
       "pos": "n",
-      "rank": 4145
+      "rank": 4145,
+      "gender": "f"
     },
     {
       "es": "vodka",
       "de": "der Wodka",
       "en": "vodka",
       "pos": "n",
-      "rank": 4146
+      "rank": 4146,
+      "gender": "f"
     },
     {
       "es": "coser",
@@ -8273,7 +8806,8 @@
         "withdrawal"
       ],
       "pos": "n",
-      "rank": 4149
+      "rank": 4149,
+      "gender": "m"
     },
     {
       "es": "hall",
@@ -8283,7 +8817,8 @@
         "lobby"
       ],
       "pos": "n",
-      "rank": 4150
+      "rank": 4150,
+      "gender": "m"
     },
     {
       "es": "editar",
@@ -8303,28 +8838,32 @@
       "de": "das Telegramm",
       "en": "telegram",
       "pos": "n",
-      "rank": 4152
+      "rank": 4152,
+      "gender": "m"
     },
     {
       "es": "vagina",
       "de": "die Vagina",
       "en": "vagina",
       "pos": "n",
-      "rank": 4153
+      "rank": 4153,
+      "gender": "f"
     },
     {
       "es": "centenar",
       "de": "das Hundert",
       "en": "hundred",
       "pos": "n",
-      "rank": 4154
+      "rank": 4154,
+      "gender": "m"
     },
     {
       "es": "retorno",
       "de": "die Rückkehr",
       "en": "return",
       "pos": "n",
-      "rank": 4155
+      "rank": 4155,
+      "gender": "m"
     },
     {
       "es": "delgado",
@@ -8347,7 +8886,8 @@
         "proof"
       ],
       "pos": "n",
-      "rank": 4157
+      "rank": 4157,
+      "gender": "f"
     },
     {
       "es": "asiático",
@@ -8375,7 +8915,8 @@
       "de": "der Empfänger",
       "en": "receiver",
       "pos": "n",
-      "rank": 4161
+      "rank": 4161,
+      "gender": "m"
     },
     {
       "es": "sanción",
@@ -8385,21 +8926,24 @@
         "penalty"
       ],
       "pos": "n",
-      "rank": 4162
+      "rank": 4162,
+      "gender": "f"
     },
     {
       "es": "catedral",
       "de": "die Kathedrale",
       "en": "cathedral",
       "pos": "n",
-      "rank": 4163
+      "rank": 4163,
+      "gender": "f"
     },
     {
       "es": "monumento",
       "de": "das Denkmal",
       "en": "monument",
       "pos": "n",
-      "rank": 4164
+      "rank": 4164,
+      "gender": "m"
     },
     {
       "es": "regir",
@@ -8419,7 +8963,8 @@
       "de": "der kleine Junge",
       "en": "little boy",
       "pos": "n",
-      "rank": 4166
+      "rank": 4166,
+      "gender": "m"
     },
     {
       "es": "ausente",
@@ -8433,7 +8978,8 @@
       "de": "die Vorahnung",
       "en": "premonition",
       "pos": "n",
-      "rank": 4168
+      "rank": 4168,
+      "gender": "m"
     },
     {
       "es": "drogado",
@@ -8450,7 +8996,8 @@
       "de": "der Einwanderer",
       "en": "immigrant",
       "pos": "n",
-      "rank": 4170
+      "rank": 4170,
+      "gender": "mf"
     },
     {
       "es": "difusión",
@@ -8463,7 +9010,8 @@
         "broadcast"
       ],
       "pos": "n",
-      "rank": 4171
+      "rank": 4171,
+      "gender": "f"
     },
     {
       "es": "honrar",
@@ -8497,7 +9045,8 @@
       "de": "der Türke",
       "en": "Turk",
       "pos": "n",
-      "rank": 4175
+      "rank": 4175,
+      "gender": "m"
     },
     {
       "es": "intacto",
@@ -8511,14 +9060,16 @@
       "de": "die Gala",
       "en": "gala",
       "pos": "n",
-      "rank": 4177
+      "rank": 4177,
+      "gender": "f"
     },
     {
       "es": "bandeja",
       "de": "das Tablett",
       "en": "tray",
       "pos": "n",
-      "rank": 4178
+      "rank": 4178,
+      "gender": "f"
     },
     {
       "es": "superficial",
@@ -8532,7 +9083,8 @@
       "de": "der Cocktail",
       "en": "cocktail",
       "pos": "n",
-      "rank": 4180
+      "rank": 4180,
+      "gender": "m"
     },
     {
       "es": "convencional",
@@ -8560,7 +9112,8 @@
       "de": "das Radar",
       "en": "radar",
       "pos": "n",
-      "rank": 4184
+      "rank": 4184,
+      "gender": "m"
     },
     {
       "es": "podrido",
@@ -8594,7 +9147,8 @@
         "blindfold"
       ],
       "pos": "n",
-      "rank": 4188
+      "rank": 4188,
+      "gender": "f"
     },
     {
       "es": "vulgar",
@@ -8614,7 +9168,8 @@
       "de": "das Anwesen",
       "en": "estate",
       "pos": "n",
-      "rank": 4190
+      "rank": 4190,
+      "gender": "f"
     },
     {
       "es": "respectivamente",
@@ -8628,28 +9183,32 @@
       "de": "die Krankenstation",
       "en": "infirmary",
       "pos": "n",
-      "rank": 4192
+      "rank": 4192,
+      "gender": "f"
     },
     {
       "es": "baloncesto",
       "de": "der Basketball",
       "en": "basketball",
       "pos": "n",
-      "rank": 4193
+      "rank": 4193,
+      "gender": "m"
     },
     {
       "es": "ideología",
       "de": "die Ideologie",
       "en": "ideology",
       "pos": "n",
-      "rank": 4194
+      "rank": 4194,
+      "gender": "f"
     },
     {
       "es": "cortesía",
       "de": "die Höflichkeit",
       "en": "courtesy",
       "pos": "n",
-      "rank": 4195
+      "rank": 4195,
+      "gender": "f"
     },
     {
       "es": "prolongar",
@@ -8677,7 +9236,8 @@
       "de": "das Schloss (Tür)",
       "en": "lock",
       "pos": "n",
-      "rank": 4199
+      "rank": 4199,
+      "gender": "f"
     },
     {
       "es": "conmover",
@@ -8691,7 +9251,8 @@
       "de": "das Forum",
       "en": "forum",
       "pos": "n",
-      "rank": 4201
+      "rank": 4201,
+      "gender": "m"
     },
     {
       "es": "candidatura",
@@ -8704,21 +9265,24 @@
         "application"
       ],
       "pos": "n",
-      "rank": 4202
+      "rank": 4202,
+      "gender": "f"
     },
     {
       "es": "domingo",
       "de": "der Sonntag",
       "en": "Sunday",
       "pos": "n",
-      "rank": 4203
+      "rank": 4203,
+      "gender": "m"
     },
     {
       "es": "puñado",
       "de": "die Handvoll",
       "en": "handful",
       "pos": "n",
-      "rank": 4204
+      "rank": 4204,
+      "gender": "m"
     },
     {
       "es": "ahorcar",
@@ -8732,14 +9296,16 @@
       "de": "der kleine Freund",
       "en": "little friend",
       "pos": "n",
-      "rank": 4206
+      "rank": 4206,
+      "gender": "m"
     },
     {
       "es": "contradicción",
       "de": "der Widerspruch",
       "en": "contradiction",
       "pos": "n",
-      "rank": 4207
+      "rank": 4207,
+      "gender": "f"
     },
     {
       "es": "crucero",
@@ -8754,7 +9320,8 @@
         "crossroads"
       ],
       "pos": "n",
-      "rank": 4208
+      "rank": 4208,
+      "gender": "m"
     },
     {
       "es": "fugitivo",
@@ -8774,14 +9341,16 @@
       "de": "der Hammer",
       "en": "hammer",
       "pos": "n",
-      "rank": 4210
+      "rank": 4210,
+      "gender": "m"
     },
     {
       "es": "ajedrez",
       "de": "das Schach",
       "en": "chess",
       "pos": "n",
-      "rank": 4211
+      "rank": 4211,
+      "gender": "m"
     },
     {
       "es": "contribución",
@@ -8794,35 +9363,40 @@
         "levy"
       ],
       "pos": "n",
-      "rank": 4212
+      "rank": 4212,
+      "gender": "f"
     },
     {
       "es": "sereno",
       "de": "der Nachtwächter",
       "en": "night watchman",
       "pos": "n",
-      "rank": 4213
+      "rank": 4213,
+      "gender": "m"
     },
     {
       "es": "ofensiva",
       "de": "die Offensive",
       "en": "offensive",
       "pos": "n",
-      "rank": 4214
+      "rank": 4214,
+      "gender": "f"
     },
     {
       "es": "circular",
       "de": "das Rundschreiben",
       "en": "circular",
       "pos": "n",
-      "rank": 4215
+      "rank": 4215,
+      "gender": "m"
     },
     {
       "es": "pino",
       "de": "die Kiefer",
       "en": "pine tree",
       "pos": "n",
-      "rank": 4216
+      "rank": 4216,
+      "gender": "m"
     },
     {
       "es": "relativamente",
@@ -8849,7 +9423,8 @@
         "ahead of time"
       ],
       "pos": "n",
-      "rank": 4219
+      "rank": 4219,
+      "gender": "m"
     },
     {
       "es": "altamente",
@@ -8863,7 +9438,8 @@
       "de": "der Abzug (Waffe)",
       "en": "trigger",
       "pos": "n",
-      "rank": 4221
+      "rank": 4221,
+      "gender": "m"
     },
     {
       "es": "decena",
@@ -8876,7 +9452,8 @@
         "ten or so"
       ],
       "pos": "n",
-      "rank": 4222
+      "rank": 4222,
+      "gender": "f"
     },
     {
       "es": "suspirar",
@@ -8890,7 +9467,8 @@
       "de": "der Altar",
       "en": "altar",
       "pos": "n",
-      "rank": 4224
+      "rank": 4224,
+      "gender": "m"
     },
     {
       "es": "salvación",
@@ -8903,7 +9481,8 @@
         "salvation"
       ],
       "pos": "n",
-      "rank": 4225
+      "rank": 4225,
+      "gender": "f"
     },
     {
       "es": "catorce",
@@ -8943,14 +9522,16 @@
       "de": "die Terrasse",
       "en": "terrace",
       "pos": "n",
-      "rank": 4229
+      "rank": 4229,
+      "gender": "f"
     },
     {
       "es": "televisor",
       "de": "der Fernseher",
       "en": "television set",
       "pos": "n",
-      "rank": 4230
+      "rank": 4230,
+      "gender": "m"
     },
     {
       "es": "maldecir",
@@ -9006,14 +9587,16 @@
       "de": "der Krieger",
       "en": "warrior",
       "pos": "n",
-      "rank": 4236
+      "rank": 4236,
+      "gender": "m"
     },
     {
       "es": "tejado",
       "de": "das Dach",
       "en": "roof",
       "pos": "n",
-      "rank": 4237
+      "rank": 4237,
+      "gender": "m"
     },
     {
       "es": "bando",
@@ -9026,21 +9609,24 @@
         "edict"
       ],
       "pos": "n",
-      "rank": 4238
+      "rank": 4238,
+      "gender": "m"
     },
     {
       "es": "jinete",
       "de": "der Reiter",
       "en": "rider",
       "pos": "n",
-      "rank": 4239
+      "rank": 4239,
+      "gender": "mf"
     },
     {
       "es": "vacuna",
       "de": "der Impfstoff",
       "en": "vaccine",
       "pos": "n",
-      "rank": 4240
+      "rank": 4240,
+      "gender": "f"
     },
     {
       "es": "mozo",
@@ -9053,21 +9639,24 @@
         "waiter"
       ],
       "pos": "n",
-      "rank": 4241
+      "rank": 4241,
+      "gender": "m"
     },
     {
       "es": "normalidad",
       "de": "die Normalität",
       "en": "normality",
       "pos": "n",
-      "rank": 4242
+      "rank": 4242,
+      "gender": "f"
     },
     {
       "es": "lance",
       "de": "der Vorfall",
       "en": "incident",
       "pos": "n",
-      "rank": 4243
+      "rank": 4243,
+      "gender": "m"
     },
     {
       "es": "sofisticado",
@@ -9093,14 +9682,16 @@
         "climb"
       ],
       "pos": "n",
-      "rank": 4245
+      "rank": 4245,
+      "gender": "f"
     },
     {
       "es": "burbuja",
       "de": "die Blase",
       "en": "bubble",
       "pos": "n",
-      "rank": 4246
+      "rank": 4246,
+      "gender": "f"
     },
     {
       "es": "seleccionado",
@@ -9114,7 +9705,8 @@
       "de": "das Kloster",
       "en": "convent",
       "pos": "n",
-      "rank": 4248
+      "rank": 4248,
+      "gender": "m"
     },
     {
       "es": "moderado",
@@ -9134,7 +9726,8 @@
         "artefact"
       ],
       "pos": "n",
-      "rank": 4250
+      "rank": 4250,
+      "gender": "m"
     },
     {
       "es": "lastimado",
@@ -9155,7 +9748,8 @@
       "de": "die Lotterie",
       "en": "lottery",
       "pos": "n",
-      "rank": 4253
+      "rank": 4253,
+      "gender": "f"
     },
     {
       "es": "imaginario",
@@ -9169,14 +9763,16 @@
       "de": "die Finanzierung",
       "en": "funding",
       "pos": "n",
-      "rank": 4255
+      "rank": 4255,
+      "gender": "f"
     },
     {
       "es": "cuaderno",
       "de": "das Heft",
       "en": "notebook",
       "pos": "n",
-      "rank": 4256
+      "rank": 4256,
+      "gender": "m"
     },
     {
       "es": "localizado",
@@ -9204,14 +9800,16 @@
       "de": "das Exil",
       "en": "exile",
       "pos": "n",
-      "rank": 4260
+      "rank": 4260,
+      "gender": "m"
     },
     {
       "es": "fundamento",
       "de": "die Grundlage",
       "en": "foundation",
       "pos": "n",
-      "rank": 4261
+      "rank": 4261,
+      "gender": "m"
     },
     {
       "es": "apoderar",
@@ -9231,14 +9829,16 @@
       "de": "der Lahme",
       "en": "lame person",
       "pos": "n",
-      "rank": 4263
+      "rank": 4263,
+      "gender": "m"
     },
     {
       "es": "jabón",
       "de": "die Seife",
       "en": "soap",
       "pos": "n",
-      "rank": 4264
+      "rank": 4264,
+      "gender": "m"
     },
     {
       "es": "sutil",
@@ -9252,7 +9852,8 @@
       "de": "die Kapelle",
       "en": "chapel",
       "pos": "n",
-      "rank": 4266
+      "rank": 4266,
+      "gender": "f"
     },
     {
       "es": "verter",
@@ -9279,14 +9880,16 @@
       "de": "die Erwähnung",
       "en": "mention",
       "pos": "n",
-      "rank": 4269
+      "rank": 4269,
+      "gender": "f"
     },
     {
       "es": "cintura",
       "de": "die Taille",
       "en": "waist",
       "pos": "n",
-      "rank": 4270
+      "rank": 4270,
+      "gender": "f"
     },
     {
       "es": "ampliación",
@@ -9299,7 +9902,8 @@
         "enlargement"
       ],
       "pos": "n",
-      "rank": 4271
+      "rank": 4271,
+      "gender": "f"
     },
     {
       "es": "imperial",
@@ -9326,7 +9930,8 @@
         "spectre"
       ],
       "pos": "n",
-      "rank": 4274
+      "rank": 4274,
+      "gender": "m"
     },
     {
       "es": "optimista",
@@ -9353,7 +9958,8 @@
       "de": "der Psychologe",
       "en": "psychologist",
       "pos": "n",
-      "rank": 4277
+      "rank": 4277,
+      "gender": "m"
     },
     {
       "es": "debilitar",
@@ -9402,14 +10008,16 @@
       "de": "der Idiot",
       "en": "cretin",
       "pos": "n",
-      "rank": 4284
+      "rank": 4284,
+      "gender": "m"
     },
     {
       "es": "rencor",
       "de": "der Groll",
       "en": "grudge",
       "pos": "n",
-      "rank": 4285
+      "rank": 4285,
+      "gender": "m"
     },
     {
       "es": "generalizar",
@@ -9423,7 +10031,8 @@
       "de": "das Missverständnis",
       "en": "misunderstanding",
       "pos": "n",
-      "rank": 4287
+      "rank": 4287,
+      "gender": "m"
     },
     {
       "es": "incorrecto",
@@ -9443,7 +10052,8 @@
       "de": "die Führungskraft",
       "en": "executive",
       "pos": "n",
-      "rank": 4289
+      "rank": 4289,
+      "gender": "m"
     },
     {
       "es": "presenciar",
@@ -9476,21 +10086,24 @@
       "de": "die Melodie",
       "en": "melody",
       "pos": "n",
-      "rank": 4292
+      "rank": 4292,
+      "gender": "f"
     },
     {
       "es": "contaminación",
       "de": "die Verschmutzung",
       "en": "pollution",
       "pos": "n",
-      "rank": 4293
+      "rank": 4293,
+      "gender": "f"
     },
     {
       "es": "burla",
       "de": "der Spott",
       "en": "mockery",
       "pos": "n",
-      "rank": 4294
+      "rank": 4294,
+      "gender": "f"
     },
     {
       "es": "voltear",
@@ -9504,7 +10117,8 @@
       "de": "die Ästhetik",
       "en": "aesthetics",
       "pos": "n",
-      "rank": 4296
+      "rank": 4296,
+      "gender": "f"
     },
     {
       "es": "cría",
@@ -9517,7 +10131,8 @@
         "breeding"
       ],
       "pos": "n",
-      "rank": 4297
+      "rank": 4297,
+      "gender": "f"
     },
     {
       "es": "asociar",
@@ -9531,7 +10146,8 @@
       "de": "die Verzweiflung",
       "en": "despair",
       "pos": "n",
-      "rank": 4299
+      "rank": 4299,
+      "gender": "f"
     },
     {
       "es": "enfocar",
@@ -9557,7 +10173,8 @@
         "cereal"
       ],
       "pos": "n",
-      "rank": 4301
+      "rank": 4301,
+      "gender": "m"
     },
     {
       "es": "lunar",
@@ -9584,7 +10201,8 @@
       "de": "der Gauner",
       "en": "rascal",
       "pos": "n",
-      "rank": 4304
+      "rank": 4304,
+      "gender": "m"
     },
     {
       "es": "bastante",
@@ -9610,7 +10228,8 @@
         "stingy (Mex.)"
       ],
       "pos": "n",
-      "rank": 4306
+      "rank": 4306,
+      "gender": "m"
     },
     {
       "es": "sueco",
@@ -9639,21 +10258,24 @@
       "de": "der Schinken",
       "en": "ham",
       "pos": "n",
-      "rank": 4309
+      "rank": 4309,
+      "gender": "m"
     },
     {
       "es": "estrecho",
       "de": "die Meerenge",
       "en": "strait",
       "pos": "n",
-      "rank": 4310
+      "rank": 4310,
+      "gender": "m"
     },
     {
       "es": "león",
       "de": "der Löwe",
       "en": "lion",
       "pos": "n",
-      "rank": 4311
+      "rank": 4311,
+      "gender": "m"
     },
     {
       "es": "singular",
@@ -9686,14 +10308,16 @@
         "performer"
       ],
       "pos": "n",
-      "rank": 4314
+      "rank": 4314,
+      "gender": "mf"
     },
     {
       "es": "respiro",
       "de": "die Atempause",
       "en": "breather",
       "pos": "n",
-      "rank": 4315
+      "rank": 4315,
+      "gender": "m"
     },
     {
       "es": "descarga",
@@ -9708,14 +10332,16 @@
         "unloading"
       ],
       "pos": "n",
-      "rank": 4316
+      "rank": 4316,
+      "gender": "f"
     },
     {
       "es": "modales",
       "de": "die Manieren",
       "en": "manners",
       "pos": "n",
-      "rank": 4317
+      "rank": 4317,
+      "gender": "m"
     },
     {
       "es": "torta",
@@ -9730,21 +10356,24 @@
         "slap"
       ],
       "pos": "n",
-      "rank": 4318
+      "rank": 4318,
+      "gender": "f"
     },
     {
       "es": "infinito",
       "de": "die Unendlichkeit",
       "en": "infinity",
       "pos": "n",
-      "rank": 4319
+      "rank": 4319,
+      "gender": "m"
     },
     {
       "es": "restricción",
       "de": "die Einschränkung",
       "en": "restriction",
       "pos": "n",
-      "rank": 4320
+      "rank": 4320,
+      "gender": "f"
     },
     {
       "es": "ocasionar",
@@ -9758,21 +10387,24 @@
       "de": "die Portion",
       "en": "portion",
       "pos": "n",
-      "rank": 4322
+      "rank": 4322,
+      "gender": "f"
     },
     {
       "es": "marea",
       "de": "die Gezeiten",
       "en": "tide",
       "pos": "n",
-      "rank": 4323
+      "rank": 4323,
+      "gender": "f"
     },
     {
       "es": "disputa",
       "de": "der Streit",
       "en": "dispute",
       "pos": "n",
-      "rank": 4324
+      "rank": 4324,
+      "gender": "f"
     },
     {
       "es": "convocatoria",
@@ -9785,7 +10417,8 @@
         "convocation"
       ],
       "pos": "n",
-      "rank": 4325
+      "rank": 4325,
+      "gender": "f"
     },
     {
       "es": "envenenar",
@@ -9799,7 +10432,8 @@
       "de": "das Trinkgeld",
       "en": "tip",
       "pos": "n",
-      "rank": 4327
+      "rank": 4327,
+      "gender": "f"
     },
     {
       "es": "sobrepasar",
@@ -9840,7 +10474,8 @@
         "traffic jam"
       ],
       "pos": "n",
-      "rank": 4330
+      "rank": 4330,
+      "gender": "m"
     },
     {
       "es": "trama",
@@ -9853,7 +10488,8 @@
         "scheme"
       ],
       "pos": "n",
-      "rank": 4331
+      "rank": 4331,
+      "gender": "f"
     },
     {
       "es": "teatral",
@@ -9876,21 +10512,24 @@
         "board"
       ],
       "pos": "n",
-      "rank": 4333
+      "rank": 4333,
+      "gender": "m"
     },
     {
       "es": "uva",
       "de": "die Traube",
       "en": "grape",
       "pos": "n",
-      "rank": 4334
+      "rank": 4334,
+      "gender": "f"
     },
     {
       "es": "filósofo",
       "de": "der Philosoph",
       "en": "philosopher",
       "pos": "n",
-      "rank": 4335
+      "rank": 4335,
+      "gender": "m"
     },
     {
       "es": "resaltar",
@@ -9917,7 +10556,8 @@
       "de": "das Tal",
       "en": "valley",
       "pos": "n",
-      "rank": 4338
+      "rank": 4338,
+      "gender": "m"
     },
     {
       "es": "específicamente",
@@ -9931,14 +10571,16 @@
       "de": "die Guerilla",
       "en": "guerrilla",
       "pos": "n",
-      "rank": 4340
+      "rank": 4340,
+      "gender": "f"
     },
     {
       "es": "planificación",
       "de": "die Planung",
       "en": "planning",
       "pos": "n",
-      "rank": 4341
+      "rank": 4341,
+      "gender": "f"
     },
     {
       "es": "chiflado",
@@ -9952,7 +10594,8 @@
       "de": "die Puppe",
       "en": "doll",
       "pos": "n",
-      "rank": 4343
+      "rank": 4343,
+      "gender": "m"
     },
     {
       "es": "gemelo",
@@ -9972,7 +10615,8 @@
         "insulation"
       ],
       "pos": "n",
-      "rank": 4345
+      "rank": 4345,
+      "gender": "m"
     },
     {
       "es": "lamentable",
@@ -10006,7 +10650,8 @@
       "de": "die Koordination",
       "en": "coordination",
       "pos": "n",
-      "rank": 4349
+      "rank": 4349,
+      "gender": "f"
     },
     {
       "es": "descuento",
@@ -10019,7 +10664,8 @@
         "deduction"
       ],
       "pos": "n",
-      "rank": 4350
+      "rank": 4350,
+      "gender": "m"
     },
     {
       "es": "sangriento",
@@ -10047,7 +10693,8 @@
       "de": "die Berufung",
       "en": "vocation",
       "pos": "n",
-      "rank": 4354
+      "rank": 4354,
+      "gender": "f"
     },
     {
       "es": "acertar",
@@ -10067,7 +10714,8 @@
       "de": "der Rasen",
       "en": "lawn",
       "pos": "n",
-      "rank": 4356
+      "rank": 4356,
+      "gender": "m"
     },
     {
       "es": "siniestro",
@@ -10102,28 +10750,32 @@
       "de": "die Taschenlampe",
       "en": "flashlight",
       "pos": "n",
-      "rank": 4361
+      "rank": 4361,
+      "gender": "f"
     },
     {
       "es": "distracción",
       "de": "die Ablenkung",
       "en": "distraction",
       "pos": "n",
-      "rank": 4362
+      "rank": 4362,
+      "gender": "f"
     },
     {
       "es": "nazi",
       "de": "Nazi-",
       "en": "Nazi",
       "pos": "n",
-      "rank": 4363
+      "rank": 4363,
+      "gender": "mf"
     },
     {
       "es": "carbono",
       "de": "der Kohlenstoff",
       "en": "carbon",
       "pos": "n",
-      "rank": 4364
+      "rank": 4364,
+      "gender": "m"
     },
     {
       "es": "adopción",
@@ -10136,7 +10788,8 @@
         "adopting (measures)"
       ],
       "pos": "n",
-      "rank": 4365
+      "rank": 4365,
+      "gender": "f"
     },
     {
       "es": "muslo",
@@ -10149,7 +10802,8 @@
         "drumstick"
       ],
       "pos": "n",
-      "rank": 4366
+      "rank": 4366,
+      "gender": "m"
     },
     {
       "es": "adaptación",
@@ -10162,14 +10816,16 @@
         "screen adaptation"
       ],
       "pos": "n",
-      "rank": 4367
+      "rank": 4367,
+      "gender": "f"
     },
     {
       "es": "rapidez",
       "de": "die Schnelligkeit",
       "en": "speed",
       "pos": "n",
-      "rank": 4368
+      "rank": 4368,
+      "gender": "f"
     },
     {
       "es": "inquietud",
@@ -10182,7 +10838,8 @@
         "concern"
       ],
       "pos": "n",
-      "rank": 4369
+      "rank": 4369,
+      "gender": "f"
     },
     {
       "es": "reparación",
@@ -10195,7 +10852,8 @@
         "reparation"
       ],
       "pos": "n",
-      "rank": 4370
+      "rank": 4370,
+      "gender": "f"
     },
     {
       "es": "marcador",
@@ -10208,42 +10866,48 @@
         "marker"
       ],
       "pos": "n",
-      "rank": 4371
+      "rank": 4371,
+      "gender": "m"
     },
     {
       "es": "vigilante",
       "de": "der Wachmann",
       "en": "watchman",
       "pos": "n",
-      "rank": 4372
+      "rank": 4372,
+      "gender": "mf"
     },
     {
       "es": "pimienta",
       "de": "der Pfeffer",
       "en": "pepper",
       "pos": "n",
-      "rank": 4373
+      "rank": 4373,
+      "gender": "f"
     },
     {
       "es": "alza",
       "de": "die Erhöhung",
       "en": "rise",
       "pos": "n",
-      "rank": 4374
+      "rank": 4374,
+      "gender": "f"
     },
     {
       "es": "arroyo",
       "de": "der Bach",
       "en": "brook",
       "pos": "n",
-      "rank": 4375
+      "rank": 4375,
+      "gender": "m"
     },
     {
       "es": "afueras",
       "de": "der Stadtrand",
       "en": "outskirts",
       "pos": "n",
-      "rank": 4376
+      "rank": 4376,
+      "gender": "f"
     },
     {
       "es": "encarcelar",
@@ -10304,7 +10968,8 @@
         "motion"
       ],
       "pos": "n",
-      "rank": 4383
+      "rank": 4383,
+      "gender": "f"
     },
     {
       "es": "escalar",
@@ -10326,21 +10991,24 @@
       "de": "der Schurke",
       "en": "scoundrel",
       "pos": "n",
-      "rank": 4385
+      "rank": 4385,
+      "gender": "f"
     },
     {
       "es": "dentista",
       "de": "der Zahnarzt",
       "en": "dentist",
       "pos": "n",
-      "rank": 4386
+      "rank": 4386,
+      "gender": "mf"
     },
     {
       "es": "donación",
       "de": "die Spende",
       "en": "donation",
       "pos": "n",
-      "rank": 4387
+      "rank": 4387,
+      "gender": "f"
     },
     {
       "es": "obligatorio",
@@ -10374,7 +11042,8 @@
       "de": "der Korrespondent",
       "en": "correspondent",
       "pos": "n",
-      "rank": 4391
+      "rank": 4391,
+      "gender": "m"
     },
     {
       "es": "distante",
@@ -10402,14 +11071,16 @@
         "keen"
       ],
       "pos": "n",
-      "rank": 4393
+      "rank": 4393,
+      "gender": "m"
     },
     {
       "es": "tinta",
       "de": "die Tinte",
       "en": "ink",
       "pos": "n",
-      "rank": 4394
+      "rank": 4394,
+      "gender": "f"
     },
     {
       "es": "sumamente",
@@ -10423,14 +11094,16 @@
       "de": "die Koordinate",
       "en": "coordinate",
       "pos": "n",
-      "rank": 4396
+      "rank": 4396,
+      "gender": "f"
     },
     {
       "es": "occidente",
       "de": "der Westen",
       "en": "the West",
       "pos": "n",
-      "rank": 4397
+      "rank": 4397,
+      "gender": "m"
     },
     {
       "es": "lentes",
@@ -10443,7 +11116,8 @@
         "lenses"
       ],
       "pos": "n",
-      "rank": 4398
+      "rank": 4398,
+      "gender": "m"
     },
     {
       "es": "foco",
@@ -10458,7 +11132,8 @@
         "spotlight"
       ],
       "pos": "n",
-      "rank": 4399
+      "rank": 4399,
+      "gender": "m"
     },
     {
       "es": "longitud",
@@ -10471,14 +11146,16 @@
         "longitude"
       ],
       "pos": "n",
-      "rank": 4400
+      "rank": 4400,
+      "gender": "f"
     },
     {
       "es": "párrafo",
       "de": "der Absatz",
       "en": "paragraph",
       "pos": "n",
-      "rank": 4401
+      "rank": 4401,
+      "gender": "m"
     },
     {
       "es": "golfo",
@@ -10491,21 +11168,24 @@
         "rascal"
       ],
       "pos": "n",
-      "rank": 4402
+      "rank": 4402,
+      "gender": "m"
     },
     {
       "es": "importación",
       "de": "die Einfuhr",
       "en": "import",
       "pos": "n",
-      "rank": 4403
+      "rank": 4403,
+      "gender": "f"
     },
     {
       "es": "crío",
       "de": "das Kind",
       "en": "kid",
       "pos": "n",
-      "rank": 4404
+      "rank": 4404,
+      "gender": "m"
     },
     {
       "es": "pantano",
@@ -10518,7 +11198,8 @@
         "reservoir"
       ],
       "pos": "n",
-      "rank": 4405
+      "rank": 4405,
+      "gender": "m"
     },
     {
       "es": "conservación",
@@ -10531,7 +11212,8 @@
         "preservation"
       ],
       "pos": "n",
-      "rank": 4406
+      "rank": 4406,
+      "gender": "f"
     },
     {
       "es": "territorial",
@@ -10585,14 +11267,16 @@
         "precision"
       ],
       "pos": "n",
-      "rank": 4412
+      "rank": 4412,
+      "gender": "m"
     },
     {
       "es": "armonía",
       "de": "die Harmonie",
       "en": "harmony",
       "pos": "n",
-      "rank": 4413
+      "rank": 4413,
+      "gender": "f"
     },
     {
       "es": "revivir",
@@ -10646,14 +11330,16 @@
         "pest infestation"
       ],
       "pos": "n",
-      "rank": 4419
+      "rank": 4419,
+      "gender": "f"
     },
     {
       "es": "supermercado",
       "de": "der Supermarkt",
       "en": "supermarket",
       "pos": "n",
-      "rank": 4420
+      "rank": 4420,
+      "gender": "m"
     },
     {
       "es": "inspirado",
@@ -10688,7 +11374,8 @@
       "de": "der Reifen",
       "en": "tyre",
       "pos": "n",
-      "rank": 4425
+      "rank": 4425,
+      "gender": "m"
     },
     {
       "es": "alegar",
@@ -10708,14 +11395,16 @@
       "de": "der Fuchs",
       "en": "fox",
       "pos": "n",
-      "rank": 4427
+      "rank": 4427,
+      "gender": "m"
     },
     {
       "es": "fabricante",
       "de": "der Hersteller",
       "en": "manufacturer",
       "pos": "n",
-      "rank": 4428
+      "rank": 4428,
+      "gender": "mf"
     },
     {
       "es": "consolar",
@@ -10735,7 +11424,8 @@
         "locating"
       ],
       "pos": "n",
-      "rank": 4430
+      "rank": 4430,
+      "gender": "f"
     },
     {
       "es": "florecer",
@@ -10755,7 +11445,8 @@
       "de": "das Aroma",
       "en": "aroma",
       "pos": "n",
-      "rank": 4432
+      "rank": 4432,
+      "gender": "m"
     },
     {
       "es": "hostil",
@@ -10775,7 +11466,8 @@
         "certificate"
       ],
       "pos": "n",
-      "rank": 4434
+      "rank": 4434,
+      "gender": "f"
     },
     {
       "es": "picado",
@@ -10803,7 +11495,8 @@
         "foreign minister (Lat. Am.)"
       ],
       "pos": "n",
-      "rank": 4436
+      "rank": 4436,
+      "gender": "m"
     },
     {
       "es": "laguna",
@@ -10816,7 +11509,8 @@
         "gap"
       ],
       "pos": "n",
-      "rank": 4437
+      "rank": 4437,
+      "gender": "f"
     },
     {
       "es": "resucitar",
@@ -10843,35 +11537,40 @@
       "de": "der Genuss",
       "en": "enjoyment",
       "pos": "n",
-      "rank": 4440
+      "rank": 4440,
+      "gender": "m"
     },
     {
       "es": "pobrecito",
       "de": "der Ärmste",
       "en": "poor thing",
       "pos": "n",
-      "rank": 4441
+      "rank": 4441,
+      "gender": "m"
     },
     {
       "es": "bañera",
       "de": "die Badewanne",
       "en": "bathtub",
       "pos": "n",
-      "rank": 4442
+      "rank": 4442,
+      "gender": "f"
     },
     {
       "es": "reportaje",
       "de": "die Reportage",
       "en": "report",
       "pos": "n",
-      "rank": 4443
+      "rank": 4443,
+      "gender": "m"
     },
     {
       "es": "millonario",
       "de": "der Millionär",
       "en": "millionaire",
       "pos": "n",
-      "rank": 4444
+      "rank": 4444,
+      "gender": "m"
     },
     {
       "es": "caña",
@@ -10886,7 +11585,8 @@
         "fishing rod"
       ],
       "pos": "n",
-      "rank": 4445
+      "rank": 4445,
+      "gender": "f"
     },
     {
       "es": "extendido",
@@ -10906,7 +11606,8 @@
       "de": "der Bankier",
       "en": "banker",
       "pos": "n",
-      "rank": 4447
+      "rank": 4447,
+      "gender": "m"
     },
     {
       "es": "bata",
@@ -10919,14 +11620,16 @@
         "lab coat"
       ],
       "pos": "n",
-      "rank": 4448
+      "rank": 4448,
+      "gender": "f"
     },
     {
       "es": "alba",
       "de": "die Morgendämmerung",
       "en": "dawn",
       "pos": "n",
-      "rank": 4449
+      "rank": 4449,
+      "gender": "f"
     },
     {
       "es": "restar",
@@ -10952,7 +11655,8 @@
         "advertising"
       ],
       "pos": "n",
-      "rank": 4451
+      "rank": 4451,
+      "gender": "f"
     },
     {
       "es": "recto",
@@ -10965,7 +11669,8 @@
         "recto (front of a page)"
       ],
       "pos": "n",
-      "rank": 4452
+      "rank": 4452,
+      "gender": "m"
     },
     {
       "es": "pésimo",
@@ -10986,7 +11691,8 @@
       "de": "die Verringerung",
       "en": "decrease",
       "pos": "n",
-      "rank": 4455
+      "rank": 4455,
+      "gender": "f"
     },
     {
       "es": "redactar",
@@ -11000,7 +11706,8 @@
       "de": "die Wiege",
       "en": "cradle",
       "pos": "n",
-      "rank": 4457
+      "rank": 4457,
+      "gender": "f"
     },
     {
       "es": "físicamente",
@@ -11033,7 +11740,8 @@
         "friendliness"
       ],
       "pos": "n",
-      "rank": 4460
+      "rank": 4460,
+      "gender": "f"
     },
     {
       "es": "recorte",
@@ -11046,7 +11754,8 @@
         "clipping"
       ],
       "pos": "n",
-      "rank": 4461
+      "rank": 4461,
+      "gender": "m"
     },
     {
       "es": "propiciar",
@@ -11093,21 +11802,24 @@
       "de": "die Bosheit",
       "en": "evil",
       "pos": "n",
-      "rank": 4466
+      "rank": 4466,
+      "gender": "f"
     },
     {
       "es": "contenedor",
       "de": "der Container",
       "en": "container",
       "pos": "n",
-      "rank": 4467
+      "rank": 4467,
+      "gender": "m"
     },
     {
       "es": "coordinador",
       "de": "der Koordinator",
       "en": "coordinator",
       "pos": "n",
-      "rank": 4468
+      "rank": 4468,
+      "gender": "m"
     },
     {
       "es": "experimental",
@@ -11135,7 +11847,8 @@
       "de": "der Begleiter",
       "en": "companion",
       "pos": "n",
-      "rank": 4472
+      "rank": 4472,
+      "gender": "mf"
     },
     {
       "es": "embarcar",
@@ -11168,7 +11881,8 @@
         "soirée"
       ],
       "pos": "n",
-      "rank": 4475
+      "rank": 4475,
+      "gender": "f"
     },
     {
       "es": "alrededor",
@@ -11183,14 +11897,16 @@
         "surroundings"
       ],
       "pos": "n",
-      "rank": 4476
+      "rank": 4476,
+      "gender": "m"
     },
     {
       "es": "secuestrador",
       "de": "der Entführer",
       "en": "kidnapper",
       "pos": "n",
-      "rank": 4477
+      "rank": 4477,
+      "gender": "m"
     },
     {
       "es": "arrogante",
@@ -11224,7 +11940,8 @@
       "de": "die Elite",
       "en": "elite",
       "pos": "n",
-      "rank": 4481
+      "rank": 4481,
+      "gender": "f"
     },
     {
       "es": "estrictamente",
@@ -11238,14 +11955,16 @@
       "de": "die Führung",
       "en": "leadership",
       "pos": "n",
-      "rank": 4483
+      "rank": 4483,
+      "gender": "m"
     },
     {
       "es": "sensor",
       "de": "der Sensor",
       "en": "sensor",
       "pos": "n",
-      "rank": 4484
+      "rank": 4484,
+      "gender": "m"
     },
     {
       "es": "tentar",
@@ -11265,7 +11984,8 @@
       "de": "die Medikation",
       "en": "medication",
       "pos": "n",
-      "rank": 4486
+      "rank": 4486,
+      "gender": "f"
     },
     {
       "es": "sustituto",
@@ -11278,7 +11998,8 @@
         "stand-in"
       ],
       "pos": "n",
-      "rank": 4487
+      "rank": 4487,
+      "gender": "m"
     },
     {
       "es": "hallazgo",
@@ -11291,21 +12012,24 @@
         "finding"
       ],
       "pos": "n",
-      "rank": 4488
+      "rank": 4488,
+      "gender": "m"
     },
     {
       "es": "continuidad",
       "de": "die Kontinuität",
       "en": "continuity",
       "pos": "n",
-      "rank": 4489
+      "rank": 4489,
+      "gender": "f"
     },
     {
       "es": "gobernante",
       "de": "der Herrscher",
       "en": "ruler",
       "pos": "n",
-      "rank": 4490
+      "rank": 4490,
+      "gender": "mf"
     },
     {
       "es": "resbalar",
@@ -11326,7 +12050,8 @@
       "de": "der Diamant",
       "en": "diamond",
       "pos": "n",
-      "rank": 4493
+      "rank": 4493,
+      "gender": "m"
     },
     {
       "es": "dotado",
@@ -11346,7 +12071,8 @@
       "de": "der Pfad",
       "en": "path",
       "pos": "n",
-      "rank": 4495
+      "rank": 4495,
+      "gender": "m"
     },
     {
       "es": "consiguiente",
@@ -11360,7 +12086,8 @@
       "de": "der Therapeut",
       "en": "therapist",
       "pos": "n",
-      "rank": 4497
+      "rank": 4497,
+      "gender": "f"
     },
     {
       "es": "repetido",
@@ -11387,14 +12114,16 @@
         "licence plate (Lat. Am.)"
       ],
       "pos": "n",
-      "rank": 4500
+      "rank": 4500,
+      "gender": "f"
     },
     {
       "es": "condón",
       "de": "das Kondom",
       "en": "condom",
       "pos": "n",
-      "rank": 4501
+      "rank": 4501,
+      "gender": "m"
     },
     {
       "es": "andaluz",
@@ -11408,14 +12137,16 @@
       "de": "das Gesundheitswesen",
       "en": "health service",
       "pos": "n",
-      "rank": 4503
+      "rank": 4503,
+      "gender": "f"
     },
     {
       "es": "veredicto",
       "de": "das Urteil (Geschworene)",
       "en": "verdict",
       "pos": "n",
-      "rank": 4504
+      "rank": 4504,
+      "gender": "m"
     },
     {
       "es": "argumentar",
@@ -11429,14 +12160,16 @@
       "de": "die Doktrin",
       "en": "doctrine",
       "pos": "n",
-      "rank": 4506
+      "rank": 4506,
+      "gender": "f"
     },
     {
       "es": "relleno",
       "de": "die Füllung",
       "en": "filling",
       "pos": "n",
-      "rank": 4507
+      "rank": 4507,
+      "gender": "m"
     },
     {
       "es": "militante",
@@ -11449,14 +12182,16 @@
         "activist"
       ],
       "pos": "n",
-      "rank": 4508
+      "rank": 4508,
+      "gender": "mf"
     },
     {
       "es": "gorra",
       "de": "die Kappe",
       "en": "cap",
       "pos": "n",
-      "rank": 4509
+      "rank": 4509,
+      "gender": "f"
     },
     {
       "es": "grueso",
@@ -11469,7 +12204,8 @@
         "thickness"
       ],
       "pos": "n",
-      "rank": 4510
+      "rank": 4510,
+      "gender": "m"
     },
     {
       "es": "eliminación",
@@ -11482,21 +12218,24 @@
         "elimination (sport)"
       ],
       "pos": "n",
-      "rank": 4511
+      "rank": 4511,
+      "gender": "f"
     },
     {
       "es": "hacha",
       "de": "die Axt",
       "en": "axe",
       "pos": "n",
-      "rank": 4512
+      "rank": 4512,
+      "gender": "f"
     },
     {
       "es": "suite",
       "de": "die Suite",
       "en": "suite",
       "pos": "n",
-      "rank": 4513
+      "rank": 4513,
+      "gender": "f"
     },
     {
       "es": "bo",
@@ -11510,14 +12249,16 @@
       "de": "der Campus",
       "en": "campus",
       "pos": "n",
-      "rank": 4515
+      "rank": 4515,
+      "gender": "m"
     },
     {
       "es": "entierro",
       "de": "die Beerdigung",
       "en": "burial",
       "pos": "n",
-      "rank": 4516
+      "rank": 4516,
+      "gender": "m"
     },
     {
       "es": "consentir",
@@ -11537,14 +12278,16 @@
       "de": "die Integrität",
       "en": "integrity",
       "pos": "n",
-      "rank": 4518
+      "rank": 4518,
+      "gender": "f"
     },
     {
       "es": "invento",
       "de": "die Erfindung",
       "en": "invention",
       "pos": "n",
-      "rank": 4519
+      "rank": 4519,
+      "gender": "m"
     },
     {
       "es": "arar",
@@ -11558,14 +12301,16 @@
       "de": "das Kupfer",
       "en": "copper",
       "pos": "n",
-      "rank": 4521
+      "rank": 4521,
+      "gender": "m"
     },
     {
       "es": "tramo",
       "de": "der Abschnitt",
       "en": "stretch",
       "pos": "n",
-      "rank": 4522
+      "rank": 4522,
+      "gender": "m"
     },
     {
       "es": "aparente",
@@ -11591,14 +12336,16 @@
         "role model"
       ],
       "pos": "n",
-      "rank": 4524
+      "rank": 4524,
+      "gender": "m"
     },
     {
       "es": "aterrizaje",
       "de": "die Landung",
       "en": "landing",
       "pos": "n",
-      "rank": 4525
+      "rank": 4525,
+      "gender": "m"
     },
     {
       "es": "inmortal",
@@ -11612,14 +12359,16 @@
       "de": "der Konsens",
       "en": "consensus",
       "pos": "n",
-      "rank": 4527
+      "rank": 4527,
+      "gender": "m"
     },
     {
       "es": "injusticia",
       "de": "die Ungerechtigkeit",
       "en": "injustice",
       "pos": "n",
-      "rank": 4528
+      "rank": 4528,
+      "gender": "f"
     },
     {
       "es": "magnitud",
@@ -11632,7 +12381,8 @@
         "extent"
       ],
       "pos": "n",
-      "rank": 4529
+      "rank": 4529,
+      "gender": "f"
     },
     {
       "es": "educar",
@@ -11658,14 +12408,16 @@
         "venue"
       ],
       "pos": "n",
-      "rank": 4531
+      "rank": 4531,
+      "gender": "m"
     },
     {
       "es": "zanahoria",
       "de": "die Karotte",
       "en": "carrot",
       "pos": "n",
-      "rank": 4532
+      "rank": 4532,
+      "gender": "f"
     },
     {
       "es": "integral",
@@ -11700,28 +12452,32 @@
         "damn!"
       ],
       "pos": "n",
-      "rank": 4535
+      "rank": 4535,
+      "gender": "f"
     },
     {
       "es": "exhibición",
       "de": "die Ausstellung",
       "en": "exhibition",
       "pos": "n",
-      "rank": 4536
+      "rank": 4536,
+      "gender": "f"
     },
     {
       "es": "agradecimiento",
       "de": "der Dank",
       "en": "gratitude",
       "pos": "n",
-      "rank": 4537
+      "rank": 4537,
+      "gender": "m"
     },
     {
       "es": "garra",
       "de": "die Klaue",
       "en": "claw",
       "pos": "n",
-      "rank": 4538
+      "rank": 4538,
+      "gender": "f"
     },
     {
       "es": "caravana",
@@ -11734,7 +12490,8 @@
         "trailer"
       ],
       "pos": "n",
-      "rank": 4539
+      "rank": 4539,
+      "gender": "f"
     },
     {
       "es": "empleado",
@@ -11768,7 +12525,8 @@
       "de": "die Weste",
       "en": "vest",
       "pos": "n",
-      "rank": 4543
+      "rank": 4543,
+      "gender": "m"
     },
     {
       "es": "topar",
@@ -11782,21 +12540,24 @@
       "de": "der Kontrast",
       "en": "contrast",
       "pos": "n",
-      "rank": 4545
+      "rank": 4545,
+      "gender": "m"
     },
     {
       "es": "regulación",
       "de": "die Regulierung",
       "en": "regulation",
       "pos": "n",
-      "rank": 4546
+      "rank": 4546,
+      "gender": "f"
     },
     {
       "es": "decepción",
       "de": "die Enttäuschung",
       "en": "disappointment",
       "pos": "n",
-      "rank": 4547
+      "rank": 4547,
+      "gender": "f"
     },
     {
       "es": "muscular",
@@ -11831,7 +12592,8 @@
       "de": "die Bakterie",
       "en": "bacterium",
       "pos": "n",
-      "rank": 4552
+      "rank": 4552,
+      "gender": "f"
     },
     {
       "es": "preferencia",
@@ -11844,7 +12606,8 @@
         "priority"
       ],
       "pos": "n",
-      "rank": 4553
+      "rank": 4553,
+      "gender": "f"
     },
     {
       "es": "reclutar",
@@ -11858,7 +12621,8 @@
       "de": "das Weinen",
       "en": "crying",
       "pos": "n",
-      "rank": 4555
+      "rank": 4555,
+      "gender": "m"
     },
     {
       "es": "luminoso",
@@ -11878,7 +12642,8 @@
         "disclosure"
       ],
       "pos": "n",
-      "rank": 4557
+      "rank": 4557,
+      "gender": "f"
     },
     {
       "es": "agrupar",
@@ -11952,14 +12717,16 @@
         "Canary Islander"
       ],
       "pos": "n",
-      "rank": 4565
+      "rank": 4565,
+      "gender": "m"
     },
     {
       "es": "legado",
       "de": "das Vermächtnis",
       "en": "legacy",
       "pos": "n",
-      "rank": 4566
+      "rank": 4566,
+      "gender": "m"
     },
     {
       "es": "simular",
@@ -11986,7 +12753,8 @@
       "de": "der Herzinfarkt",
       "en": "heart attack",
       "pos": "n",
-      "rank": 4569
+      "rank": 4569,
+      "gender": "m"
     },
     {
       "es": "tara",
@@ -11999,7 +12767,8 @@
         "defect"
       ],
       "pos": "n",
-      "rank": 4570
+      "rank": 4570,
+      "gender": "f"
     },
     {
       "es": "CD",
@@ -12040,7 +12809,8 @@
       "de": "die Windel",
       "en": "nappy",
       "pos": "n",
-      "rank": 4575
+      "rank": 4575,
+      "gender": "m"
     },
     {
       "es": "clínico",
@@ -12067,7 +12837,8 @@
         "purchase"
       ],
       "pos": "n",
-      "rank": 4578
+      "rank": 4578,
+      "gender": "f"
     },
     {
       "es": "explosivo",
@@ -12081,14 +12852,16 @@
       "de": "das Erfrischungsgetränk",
       "en": "soft drink",
       "pos": "n",
-      "rank": 4580
+      "rank": 4580,
+      "gender": "m"
     },
     {
       "es": "yerno",
       "de": "der Schwiegersohn",
       "en": "son-in-law",
       "pos": "n",
-      "rank": 4581
+      "rank": 4581,
+      "gender": "m"
     },
     {
       "es": "navaja",
@@ -12101,7 +12874,8 @@
         "razor"
       ],
       "pos": "n",
-      "rank": 4582
+      "rank": 4582,
+      "gender": "f"
     },
     {
       "es": "jodidamente",
@@ -12123,7 +12897,8 @@
         "renovation"
       ],
       "pos": "n",
-      "rank": 4584
+      "rank": 4584,
+      "gender": "f"
     },
     {
       "es": "reproducción",
@@ -12138,14 +12913,16 @@
         "copy"
       ],
       "pos": "n",
-      "rank": 4585
+      "rank": 4585,
+      "gender": "f"
     },
     {
       "es": "dinosaurio",
       "de": "der Dinosaurier",
       "en": "dinosaur",
       "pos": "n",
-      "rank": 4586
+      "rank": 4586,
+      "gender": "m"
     },
     {
       "es": "racista",
@@ -12165,7 +12942,8 @@
         "top (peak)"
       ],
       "pos": "n",
-      "rank": 4588
+      "rank": 4588,
+      "gender": "m"
     },
     {
       "es": "inquietar",
@@ -12179,7 +12957,8 @@
       "de": "der Weizen",
       "en": "wheat",
       "pos": "n",
-      "rank": 4590
+      "rank": 4590,
+      "gender": "m"
     },
     {
       "es": "hispano",
@@ -12193,7 +12972,8 @@
       "de": "die Brühe",
       "en": "broth",
       "pos": "n",
-      "rank": 4592
+      "rank": 4592,
+      "gender": "m"
     },
     {
       "es": "vanguardia",
@@ -12206,21 +12986,24 @@
         "vanguard"
       ],
       "pos": "n",
-      "rank": 4593
+      "rank": 4593,
+      "gender": "f"
     },
     {
       "es": "aportación",
       "de": "der Beitrag",
       "en": "contribution",
       "pos": "n",
-      "rank": 4594
+      "rank": 4594,
+      "gender": "f"
     },
     {
       "es": "excursión",
       "de": "der Ausflug",
       "en": "excursion",
       "pos": "n",
-      "rank": 4595
+      "rank": 4595,
+      "gender": "f"
     },
     {
       "es": "síntesis",
@@ -12233,21 +13016,24 @@
         "summary"
       ],
       "pos": "n",
-      "rank": 4596
+      "rank": 4596,
+      "gender": "f"
     },
     {
       "es": "generador",
       "de": "der Generator",
       "en": "generator",
       "pos": "n",
-      "rank": 4597
+      "rank": 4597,
+      "gender": "m"
     },
     {
       "es": "privacidad",
       "de": "die Privatsphäre",
       "en": "privacy",
       "pos": "n",
-      "rank": 4598
+      "rank": 4598,
+      "gender": "f"
     },
     {
       "es": "trámite",
@@ -12260,7 +13046,8 @@
         "procedure"
       ],
       "pos": "n",
-      "rank": 4599
+      "rank": 4599,
+      "gender": "m"
     },
     {
       "es": "flojo",
@@ -12282,7 +13069,8 @@
       "de": "der Betrug",
       "en": "scam",
       "pos": "n",
-      "rank": 4601
+      "rank": 4601,
+      "gender": "f"
     },
     {
       "es": "perseguido",
@@ -12310,28 +13098,32 @@
       "de": "die Ameise",
       "en": "ant",
       "pos": "n",
-      "rank": 4605
+      "rank": 4605,
+      "gender": "f"
     },
     {
       "es": "frasco",
       "de": "das Fläschchen",
       "en": "small bottle",
       "pos": "n",
-      "rank": 4606
+      "rank": 4606,
+      "gender": "m"
     },
     {
       "es": "comisionado",
       "de": "der Beauftragte",
       "en": "commissioner",
       "pos": "n",
-      "rank": 4607
+      "rank": 4607,
+      "gender": "m"
     },
     {
       "es": "metáfora",
       "de": "die Metapher",
       "en": "metaphor",
       "pos": "n",
-      "rank": 4608
+      "rank": 4608,
+      "gender": "f"
     },
     {
       "es": "suministrar",
@@ -12345,14 +13137,16 @@
       "de": "der Vorfahr",
       "en": "ancestor",
       "pos": "n",
-      "rank": 4610
+      "rank": 4610,
+      "gender": "m"
     },
     {
       "es": "quirófano",
       "de": "der Operationssaal",
       "en": "operating theatre",
       "pos": "n",
-      "rank": 4611
+      "rank": 4611,
+      "gender": "m"
     },
     {
       "es": "tumbar",
@@ -12372,7 +13166,8 @@
       "de": "die Modalität",
       "en": "mode",
       "pos": "n",
-      "rank": 4613
+      "rank": 4613,
+      "gender": "f"
     },
     {
       "es": "concernir",
@@ -12386,7 +13181,8 @@
       "de": "die Verachtung",
       "en": "contempt",
       "pos": "n",
-      "rank": 4615
+      "rank": 4615,
+      "gender": "m"
     },
     {
       "es": "regular",
@@ -12415,7 +13211,8 @@
         "incidence"
       ],
       "pos": "n",
-      "rank": 4618
+      "rank": 4618,
+      "gender": "f"
     },
     {
       "es": "calificación",
@@ -12428,14 +13225,16 @@
         "rating"
       ],
       "pos": "n",
-      "rank": 4619
+      "rank": 4619,
+      "gender": "f"
     },
     {
       "es": "chispa",
       "de": "der Funke",
       "en": "spark",
       "pos": "n",
-      "rank": 4620
+      "rank": 4620,
+      "gender": "f"
     },
     {
       "es": "vertical",
@@ -12470,7 +13269,8 @@
       "de": "die Ironie",
       "en": "irony",
       "pos": "n",
-      "rank": 4625
+      "rank": 4625,
+      "gender": "f"
     },
     {
       "es": "proveedor",
@@ -12483,7 +13283,8 @@
         "provider"
       ],
       "pos": "n",
-      "rank": 4626
+      "rank": 4626,
+      "gender": "m"
     },
     {
       "es": "prudente",
@@ -12497,7 +13298,8 @@
       "de": "die Prävention",
       "en": "prevention",
       "pos": "n",
-      "rank": 4628
+      "rank": 4628,
+      "gender": "f"
     },
     {
       "es": "datar",
@@ -12530,21 +13332,24 @@
         "approval"
       ],
       "pos": "n",
-      "rank": 4631
+      "rank": 4631,
+      "gender": "f"
     },
     {
       "es": "diseñador",
       "de": "der Designer",
       "en": "designer",
       "pos": "n",
-      "rank": 4632
+      "rank": 4632,
+      "gender": "m"
     },
     {
       "es": "contraseña",
       "de": "das Passwort",
       "en": "password",
       "pos": "n",
-      "rank": 4633
+      "rank": 4633,
+      "gender": "f"
     },
     {
       "es": "sucesivo",
@@ -12571,7 +13376,8 @@
       "de": "der Schiedsrichter",
       "en": "referee",
       "pos": "n",
-      "rank": 4636
+      "rank": 4636,
+      "gender": "m"
     },
     {
       "es": "prenda",
@@ -12584,14 +13390,16 @@
         "pledge"
       ],
       "pos": "n",
-      "rank": 4637
+      "rank": 4637,
+      "gender": "f"
     },
     {
       "es": "olla",
       "de": "der Topf",
       "en": "pot",
       "pos": "n",
-      "rank": 4638
+      "rank": 4638,
+      "gender": "f"
     },
     {
       "es": "bobo",
@@ -12618,7 +13426,8 @@
         "inauguration"
       ],
       "pos": "n",
-      "rank": 4641
+      "rank": 4641,
+      "gender": "f"
     },
     {
       "es": "infiltrar",
@@ -12645,7 +13454,8 @@
       "de": "der Aktionär",
       "en": "shareholder",
       "pos": "n",
-      "rank": 4644
+      "rank": 4644,
+      "gender": "mf"
     },
     {
       "es": "espontáneo",
@@ -12666,14 +13476,16 @@
       "de": "der Vorgesetzte",
       "en": "supervisor",
       "pos": "n",
-      "rank": 4647
+      "rank": 4647,
+      "gender": "m"
     },
     {
       "es": "formulario",
       "de": "das Formular",
       "en": "form",
       "pos": "n",
-      "rank": 4648
+      "rank": 4648,
+      "gender": "m"
     },
     {
       "es": "preservar",
@@ -12687,21 +13499,24 @@
       "de": "der Vorabend",
       "en": "eve",
       "pos": "n",
-      "rank": 4650
+      "rank": 4650,
+      "gender": "f"
     },
     {
       "es": "analista",
       "de": "der Analyst",
       "en": "analyst",
       "pos": "n",
-      "rank": 4651
+      "rank": 4651,
+      "gender": "mf"
     },
     {
       "es": "trasplante",
       "de": "die Transplantation",
       "en": "transplant",
       "pos": "n",
-      "rank": 4652
+      "rank": 4652,
+      "gender": "m"
     },
     {
       "es": "adjunto",
@@ -12748,14 +13563,16 @@
         "steak"
       ],
       "pos": "n",
-      "rank": 4657
+      "rank": 4657,
+      "gender": "m"
     },
     {
       "es": "semestre",
       "de": "das Semester",
       "en": "semester",
       "pos": "n",
-      "rank": 4658
+      "rank": 4658,
+      "gender": "m"
     },
     {
       "es": "concretar",
@@ -12775,7 +13592,8 @@
       "de": "der Beitrag",
       "en": "contribution",
       "pos": "n",
-      "rank": 4660
+      "rank": 4660,
+      "gender": "m"
     },
     {
       "es": "subestimar",
@@ -12796,7 +13614,8 @@
       "de": "die Rebellion",
       "en": "rebellion",
       "pos": "n",
-      "rank": 4663
+      "rank": 4663,
+      "gender": "m"
     },
     {
       "es": "remontar",
@@ -12818,14 +13637,16 @@
       "de": "der Investor",
       "en": "investor",
       "pos": "n",
-      "rank": 4665
+      "rank": 4665,
+      "gender": "m"
     },
     {
       "es": "congresista",
       "de": "der Kongressabgeordnete",
       "en": "member of congress",
       "pos": "n",
-      "rank": 4666
+      "rank": 4666,
+      "gender": "mf"
     },
     {
       "es": "aceptable",
@@ -12852,7 +13673,8 @@
         "fishbone"
       ],
       "pos": "n",
-      "rank": 4669
+      "rank": 4669,
+      "gender": "f"
     },
     {
       "es": "may.",
@@ -12873,7 +13695,8 @@
       "de": "der Kaltlufttropfen (Unwetterlage)",
       "en": "cut-off low (storm system)",
       "pos": "n",
-      "rank": 4672
+      "rank": 4672,
+      "gender": "f"
     },
     {
       "es": "actualizar",
@@ -12932,7 +13755,8 @@
         "provision"
       ],
       "pos": "n",
-      "rank": 4677
+      "rank": 4677,
+      "gender": "f"
     },
     {
       "es": "vigor",
@@ -12945,7 +13769,8 @@
         "force (legal effect)"
       ],
       "pos": "n",
-      "rank": 4678
+      "rank": 4678,
+      "gender": "m"
     },
     {
       "es": "suavemente",
@@ -12959,7 +13784,8 @@
       "de": "der Lappen",
       "en": "rag",
       "pos": "n",
-      "rank": 4680
+      "rank": 4680,
+      "gender": "m"
     },
     {
       "es": "revolver",
@@ -12979,7 +13805,8 @@
       "de": "das Gitter",
       "en": "grating",
       "pos": "n",
-      "rank": 4682
+      "rank": 4682,
+      "gender": "f"
     },
     {
       "es": "simbólico",
@@ -12999,7 +13826,8 @@
         "provision (accounting)"
       ],
       "pos": "n",
-      "rank": 4684
+      "rank": 4684,
+      "gender": "f"
     },
     {
       "es": "ingenioso",
@@ -13060,7 +13888,8 @@
         "riverbed"
       ],
       "pos": "n",
-      "rank": 4689
+      "rank": 4689,
+      "gender": "m"
     },
     {
       "es": "plomo",
@@ -13073,7 +13902,8 @@
         "bore (annoying person)"
       ],
       "pos": "n",
-      "rank": 4690
+      "rank": 4690,
+      "gender": "m"
     },
     {
       "es": "convincente",
@@ -13087,7 +13917,8 @@
       "de": "der Prophet",
       "en": "prophet",
       "pos": "n",
-      "rank": 4692
+      "rank": 4692,
+      "gender": "f"
     },
     {
       "es": "maligno",
@@ -13101,21 +13932,24 @@
       "de": "die Yacht",
       "en": "yacht",
       "pos": "n",
-      "rank": 4694
+      "rank": 4694,
+      "gender": "m"
     },
     {
       "es": "astronauta",
       "de": "der Astronaut",
       "en": "astronaut",
       "pos": "n",
-      "rank": 4695
+      "rank": 4695,
+      "gender": "f"
     },
     {
       "es": "cruzada",
       "de": "der Kreuzzug",
       "en": "crusade",
       "pos": "n",
-      "rank": 4696
+      "rank": 4696,
+      "gender": "f"
     },
     {
       "es": "insignificante",
@@ -13129,7 +13963,8 @@
       "de": "der Historiker",
       "en": "historian",
       "pos": "n",
-      "rank": 4698
+      "rank": 4698,
+      "gender": "m"
     },
     {
       "es": "retomar",
@@ -13143,7 +13978,8 @@
       "de": "der Spazierstock",
       "en": "walking stick",
       "pos": "n",
-      "rank": 4700
+      "rank": 4700,
+      "gender": "m"
     },
     {
       "es": "menudo",
@@ -13157,21 +13993,24 @@
       "de": "die Grippe",
       "en": "flu",
       "pos": "n",
-      "rank": 4702
+      "rank": 4702,
+      "gender": "f"
     },
     {
       "es": "violín",
       "de": "die Geige",
       "en": "violin",
       "pos": "n",
-      "rank": 4703
+      "rank": 4703,
+      "gender": "m"
     },
     {
       "es": "pijama",
       "de": "der Pyjama",
       "en": "pyjamas",
       "pos": "n",
-      "rank": 4704
+      "rank": 4704,
+      "gender": "m"
     },
     {
       "es": "atrasado",
@@ -13204,21 +14043,24 @@
         "licence"
       ],
       "pos": "n",
-      "rank": 4707
+      "rank": 4707,
+      "gender": "m"
     },
     {
       "es": "tijera",
       "de": "die Schere",
       "en": "scissors",
       "pos": "n",
-      "rank": 4708
+      "rank": 4708,
+      "gender": "f"
     },
     {
       "es": "motivación",
       "de": "die Motivation",
       "en": "motivation",
       "pos": "n",
-      "rank": 4709
+      "rank": 4709,
+      "gender": "f"
     },
     {
       "es": "inscripción",
@@ -13231,7 +14073,8 @@
         "inscription"
       ],
       "pos": "n",
-      "rank": 4710
+      "rank": 4710,
+      "gender": "f"
     },
     {
       "es": "empeño",
@@ -13244,7 +14087,8 @@
         "pawn"
       ],
       "pos": "n",
-      "rank": 4711
+      "rank": 4711,
+      "gender": "m"
     },
     {
       "es": "plenamente",
@@ -13266,14 +14110,16 @@
         "hurdle"
       ],
       "pos": "n",
-      "rank": 4713
+      "rank": 4713,
+      "gender": "f"
     },
     {
       "es": "pulgar",
       "de": "der Daumen",
       "en": "thumb",
       "pos": "n",
-      "rank": 4714
+      "rank": 4714,
+      "gender": "m"
     },
     {
       "es": "invitado",
@@ -13293,7 +14139,8 @@
         "match"
       ],
       "pos": "n",
-      "rank": 4716
+      "rank": 4716,
+      "gender": "f"
     },
     {
       "es": "procesado",
@@ -13320,7 +14167,8 @@
       "de": "der Änderungsantrag",
       "en": "amendment",
       "pos": "n",
-      "rank": 4719
+      "rank": 4719,
+      "gender": "f"
     },
     {
       "es": "santuario",
@@ -13333,7 +14181,8 @@
         "wildlife reserve"
       ],
       "pos": "n",
-      "rank": 4720
+      "rank": 4720,
+      "gender": "m"
     },
     {
       "es": "sujeto",
@@ -13366,14 +14215,16 @@
         "support"
       ],
       "pos": "n",
-      "rank": 4723
+      "rank": 4723,
+      "gender": "m"
     },
     {
       "es": "villano",
       "de": "der Schurke",
       "en": "villain",
       "pos": "n",
-      "rank": 4724
+      "rank": 4724,
+      "gender": "m"
     },
     {
       "es": "auxiliar",
@@ -13401,7 +14252,8 @@
       "de": "der Eindringling",
       "en": "intruder",
       "pos": "n",
-      "rank": 4728
+      "rank": 4728,
+      "gender": "m"
     },
     {
       "es": "irónico",
@@ -13422,7 +14274,8 @@
       "de": "der Revolver",
       "en": "revolver",
       "pos": "n",
-      "rank": 4731
+      "rank": 4731,
+      "gender": "m"
     },
     {
       "es": "viviente",
@@ -13462,7 +14315,8 @@
         "bullying"
       ],
       "pos": "n",
-      "rank": 4735
+      "rank": 4735,
+      "gender": "m"
     },
     {
       "es": "zapatilla",
@@ -13475,7 +14329,8 @@
         "sneaker"
       ],
       "pos": "n",
-      "rank": 4736
+      "rank": 4736,
+      "gender": "f"
     },
     {
       "es": "indicación",
@@ -13488,14 +14343,16 @@
         "instruction"
       ],
       "pos": "n",
-      "rank": 4737
+      "rank": 4737,
+      "gender": "f"
     },
     {
       "es": "mulo",
       "de": "das Maultier",
       "en": "mule",
       "pos": "n",
-      "rank": 4738
+      "rank": 4738,
+      "gender": "m"
     },
     {
       "es": "místico",
@@ -13516,7 +14373,8 @@
       "de": "der Stierkämpfer",
       "en": "bullfighter",
       "pos": "n",
-      "rank": 4741
+      "rank": 4741,
+      "gender": "m"
     },
     {
       "es": "constructor",
@@ -13529,7 +14387,8 @@
         "constructor"
       ],
       "pos": "n",
-      "rank": 4742
+      "rank": 4742,
+      "gender": "m"
     },
     {
       "es": "oscurecer",
@@ -13555,7 +14414,8 @@
         "pupil"
       ],
       "pos": "n",
-      "rank": 4744
+      "rank": 4744,
+      "gender": "m"
     },
     {
       "es": "monitor",
@@ -13568,7 +14428,8 @@
         "instructor"
       ],
       "pos": "n",
-      "rank": 4745
+      "rank": 4745,
+      "gender": "m"
     },
     {
       "es": "interminable",
@@ -13590,7 +14451,8 @@
         "cordon"
       ],
       "pos": "n",
-      "rank": 4747
+      "rank": 4747,
+      "gender": "m"
     },
     {
       "es": "pinchar",
@@ -13616,7 +14478,8 @@
         "inhalation"
       ],
       "pos": "n",
-      "rank": 4749
+      "rank": 4749,
+      "gender": "f"
     },
     {
       "es": "lira",
@@ -13629,21 +14492,24 @@
         "lira (currency)"
       ],
       "pos": "n",
-      "rank": 4750
+      "rank": 4750,
+      "gender": "f"
     },
     {
       "es": "quemadura",
       "de": "die Verbrennung",
       "en": "burn",
       "pos": "n",
-      "rank": 4751
+      "rank": 4751,
+      "gender": "f"
     },
     {
       "es": "empate",
       "de": "das Unentschieden",
       "en": "draw",
       "pos": "n",
-      "rank": 4752
+      "rank": 4752,
+      "gender": "m"
     },
     {
       "es": "paranoico",
@@ -13678,7 +14544,8 @@
       "de": "das Molekül",
       "en": "molecule",
       "pos": "n",
-      "rank": 4757
+      "rank": 4757,
+      "gender": "f"
     },
     {
       "es": "curado",
@@ -13705,7 +14572,8 @@
       "de": "der Beitrag",
       "en": "post",
       "pos": "n",
-      "rank": 4760
+      "rank": 4760,
+      "gender": "m"
     },
     {
       "es": "escondite",
@@ -13718,7 +14586,8 @@
         "hide-and-seek"
       ],
       "pos": "n",
-      "rank": 4761
+      "rank": 4761,
+      "gender": "m"
     },
     {
       "es": "ajustado",
@@ -13744,14 +14613,16 @@
         "gentleness"
       ],
       "pos": "n",
-      "rank": 4763
+      "rank": 4763,
+      "gender": "f"
     },
     {
       "es": "huracán",
       "de": "der Hurrikan",
       "en": "hurricane",
       "pos": "n",
-      "rank": 4764
+      "rank": 4764,
+      "gender": "m"
     },
     {
       "es": "batido",
@@ -13765,7 +14636,8 @@
       "de": "das Stroh",
       "en": "straw",
       "pos": "n",
-      "rank": 4766
+      "rank": 4766,
+      "gender": "f"
     },
     {
       "es": "bombardear",
@@ -13779,7 +14651,8 @@
       "de": "das Laster",
       "en": "vice",
       "pos": "n",
-      "rank": 4768
+      "rank": 4768,
+      "gender": "m"
     },
     {
       "es": "rozar",
@@ -13825,7 +14698,8 @@
       "de": "der Erzähler",
       "en": "narrator",
       "pos": "n",
-      "rank": 4772
+      "rank": 4772,
+      "gender": "m"
     },
     {
       "es": "nazi",
@@ -13846,21 +14720,24 @@
       "de": "der Waggon",
       "en": "carriage",
       "pos": "n",
-      "rank": 4775
+      "rank": 4775,
+      "gender": "m"
     },
     {
       "es": "fluido",
       "de": "die Flüssigkeit",
       "en": "fluid",
       "pos": "n",
-      "rank": 4776
+      "rank": 4776,
+      "gender": "m"
     },
     {
       "es": "fachada",
       "de": "die Fassade",
       "en": "facade",
       "pos": "n",
-      "rank": 4777
+      "rank": 4777,
+      "gender": "f"
     },
     {
       "es": "heleno",
@@ -13896,7 +14773,8 @@
       "de": "die Seite (Zeitung)",
       "en": "page",
       "pos": "n",
-      "rank": 4781
+      "rank": 4781,
+      "gender": "f"
     },
     {
       "es": "respetable",
@@ -13923,21 +14801,24 @@
         "lawyer (Mex.)"
       ],
       "pos": "n",
-      "rank": 4784
+      "rank": 4784,
+      "gender": "m"
     },
     {
       "es": "escopeta",
       "de": "die Schrotflinte",
       "en": "shotgun",
       "pos": "n",
-      "rank": 4785
+      "rank": 4785,
+      "gender": "f"
     },
     {
       "es": "minoría",
       "de": "die Minderheit",
       "en": "minority",
       "pos": "n",
-      "rank": 4786
+      "rank": 4786,
+      "gender": "f"
     },
     {
       "es": "apelar",
@@ -13954,7 +14835,8 @@
       "de": "das Hormon",
       "en": "hormone",
       "pos": "n",
-      "rank": 4788
+      "rank": 4788,
+      "gender": "f"
     },
     {
       "es": "erótico",
@@ -13981,7 +14863,8 @@
         "contraband"
       ],
       "pos": "n",
-      "rank": 4791
+      "rank": 4791,
+      "gender": "m"
     },
     {
       "es": "iluminado",
@@ -14001,14 +14884,16 @@
       "de": "der Rabe",
       "en": "raven",
       "pos": "n",
-      "rank": 4793
+      "rank": 4793,
+      "gender": "m"
     },
     {
       "es": "integrante",
       "de": "das Mitglied",
       "en": "member",
       "pos": "n",
-      "rank": 4794
+      "rank": 4794,
+      "gender": "mf"
     },
     {
       "es": "mensual",
@@ -14022,14 +14907,16 @@
       "de": "die Unterhaltung",
       "en": "entertainment",
       "pos": "n",
-      "rank": 4796
+      "rank": 4796,
+      "gender": "m"
     },
     {
       "es": "guerrillero",
       "de": "der Guerillero",
       "en": "guerrilla",
       "pos": "n",
-      "rank": 4797
+      "rank": 4797,
+      "gender": "m"
     },
     {
       "es": "competitivo",
@@ -14070,14 +14957,16 @@
       "de": "die Zustimmung",
       "en": "consent",
       "pos": "n",
-      "rank": 4802
+      "rank": 4802,
+      "gender": "m"
     },
     {
       "es": "zumo",
       "de": "der Saft",
       "en": "juice",
       "pos": "n",
-      "rank": 4803
+      "rank": 4803,
+      "gender": "m"
     },
     {
       "es": "padrastro",
@@ -14090,7 +14979,8 @@
         "hangnail"
       ],
       "pos": "n",
-      "rank": 4804
+      "rank": 4804,
+      "gender": "m"
     },
     {
       "es": "progresivo",
@@ -14127,7 +15017,8 @@
       ],
       "en": "jurisdiction",
       "pos": "n",
-      "rank": 4808
+      "rank": 4808,
+      "gender": "f"
     },
     {
       "es": "arteria",
@@ -14140,28 +15031,32 @@
         "thoroughfare"
       ],
       "pos": "n",
-      "rank": 4809
+      "rank": 4809,
+      "gender": "f"
     },
     {
       "es": "finalidad",
       "de": "der Zweck",
       "en": "purpose",
       "pos": "n",
-      "rank": 4810
+      "rank": 4810,
+      "gender": "f"
     },
     {
       "es": "recipiente",
       "de": "der Behälter",
       "en": "container",
       "pos": "n",
-      "rank": 4811
+      "rank": 4811,
+      "gender": "m"
     },
     {
       "es": "vestíbulo",
       "de": "die Eingangshalle",
       "en": "lobby",
       "pos": "n",
-      "rank": 4812
+      "rank": 4812,
+      "gender": "m"
     },
     {
       "es": "crucial",
@@ -14175,7 +15070,8 @@
       "de": "der Sozialismus",
       "en": "socialism",
       "pos": "n",
-      "rank": 4814
+      "rank": 4814,
+      "gender": "m"
     },
     {
       "es": "emerger",
@@ -14202,7 +15098,8 @@
       "de": "der Journalismus",
       "en": "journalism",
       "pos": "n",
-      "rank": 4817
+      "rank": 4817,
+      "gender": "m"
     },
     {
       "es": "respiratorio",
@@ -14216,21 +15113,24 @@
       "de": "die Entlassung",
       "en": "dismissal",
       "pos": "n",
-      "rank": 4819
+      "rank": 4819,
+      "gender": "m"
     },
     {
       "es": "valoración",
       "de": "die Bewertung",
       "en": "assessment",
       "pos": "n",
-      "rank": 4820
+      "rank": 4820,
+      "gender": "f"
     },
     {
       "es": "arbusto",
       "de": "der Strauch",
       "en": "shrub",
       "pos": "n",
-      "rank": 4821
+      "rank": 4821,
+      "gender": "m"
     },
     {
       "es": "Halloween",
@@ -14244,7 +15144,8 @@
       "de": "der Spender",
       "en": "donor",
       "pos": "n",
-      "rank": 4823
+      "rank": 4823,
+      "gender": "mf"
     },
     {
       "es": "mixto",
@@ -14298,7 +15199,8 @@
       "de": "die Pyramide",
       "en": "pyramid",
       "pos": "n",
-      "rank": 4829
+      "rank": 4829,
+      "gender": "f"
     },
     {
       "es": "contador",
@@ -14311,7 +15213,8 @@
         "accountant"
       ],
       "pos": "n",
-      "rank": 4830
+      "rank": 4830,
+      "gender": "m"
     },
     {
       "es": "relatar",
@@ -14331,7 +15234,8 @@
         "guts"
       ],
       "pos": "n",
-      "rank": 4832
+      "rank": 4832,
+      "gender": "f"
     },
     {
       "es": "privilegiado",
@@ -14359,7 +15263,8 @@
       "de": "die Vielfalt",
       "en": "diversity",
       "pos": "n",
-      "rank": 4836
+      "rank": 4836,
+      "gender": "f"
     },
     {
       "es": "holandés",
@@ -14372,7 +15277,8 @@
         "Dutch (language)"
       ],
       "pos": "n",
-      "rank": 4837
+      "rank": 4837,
+      "gender": "m"
     },
     {
       "es": "barrer",
@@ -14392,7 +15298,8 @@
         "plane (tool)"
       ],
       "pos": "n",
-      "rank": 4839
+      "rank": 4839,
+      "gender": "m"
     },
     {
       "es": "afición",
@@ -14405,14 +15312,16 @@
         "fans"
       ],
       "pos": "n",
-      "rank": 4840
+      "rank": 4840,
+      "gender": "f"
     },
     {
       "es": "catástrofe",
       "de": "die Katastrophe",
       "en": "catastrophe",
       "pos": "n",
-      "rank": 4841
+      "rank": 4841,
+      "gender": "f"
     },
     {
       "es": "elemental",
@@ -14426,7 +15335,8 @@
       "de": "die Rotznase",
       "en": "brat",
       "pos": "n",
-      "rank": 4843
+      "rank": 4843,
+      "gender": "m"
     },
     {
       "es": "distinción",
@@ -14439,14 +15349,16 @@
         "honour"
       ],
       "pos": "n",
-      "rank": 4844
+      "rank": 4844,
+      "gender": "f"
     },
     {
       "es": "átomo",
       "de": "das Atom",
       "en": "atom",
       "pos": "n",
-      "rank": 4845
+      "rank": 4845,
+      "gender": "m"
     },
     {
       "es": "fotográfico",
@@ -14460,7 +15372,8 @@
       "de": "das Bingo",
       "en": "bingo",
       "pos": "n",
-      "rank": 4847
+      "rank": 4847,
+      "gender": "m"
     },
     {
       "es": "mutuamente",
@@ -14481,7 +15394,8 @@
       "de": "der Bürgersteig",
       "en": "sidewalk",
       "pos": "n",
-      "rank": 4850
+      "rank": 4850,
+      "gender": "f"
     },
     {
       "es": "botín",
@@ -14494,7 +15408,8 @@
         "ankle boot"
       ],
       "pos": "n",
-      "rank": 4851
+      "rank": 4851,
+      "gender": "m"
     },
     {
       "es": "sencillamente",
@@ -14514,7 +15429,8 @@
         "sunflower seed"
       ],
       "pos": "n",
-      "rank": 4853
+      "rank": 4853,
+      "gender": "f"
     },
     {
       "es": "doncella",
@@ -14527,7 +15443,8 @@
         "maid"
       ],
       "pos": "n",
-      "rank": 4854
+      "rank": 4854,
+      "gender": "f"
     },
     {
       "es": "continuamente",
@@ -14555,7 +15472,8 @@
       "de": "der Ritus",
       "en": "rite",
       "pos": "n",
-      "rank": 4858
+      "rank": 4858,
+      "gender": "m"
     },
     {
       "es": "suscribir",
@@ -14582,7 +15500,8 @@
       "de": "der Gegner",
       "en": "opponent",
       "pos": "n",
-      "rank": 4861
+      "rank": 4861,
+      "gender": "m"
     },
     {
       "es": "entusiasmado",
@@ -14596,7 +15515,8 @@
       "de": "die Rüstung",
       "en": "armour",
       "pos": "n",
-      "rank": 4863
+      "rank": 4863,
+      "gender": "f"
     },
     {
       "es": "configurar",
@@ -14616,14 +15536,16 @@
       "de": "die Einwanderung",
       "en": "immigration",
       "pos": "n",
-      "rank": 4865
+      "rank": 4865,
+      "gender": "f"
     },
     {
       "es": "cangrejo",
       "de": "die Krabbe",
       "en": "crab",
       "pos": "n",
-      "rank": 4866
+      "rank": 4866,
+      "gender": "m"
     },
     {
       "es": "robado",
@@ -14656,7 +15578,8 @@
         "bodyguard"
       ],
       "pos": "n",
-      "rank": 4869
+      "rank": 4869,
+      "gender": "f"
     },
     {
       "es": "pacífico",
@@ -14670,7 +15593,8 @@
       "de": "der Bombenangriff",
       "en": "bombing",
       "pos": "n",
-      "rank": 4871
+      "rank": 4871,
+      "gender": "m"
     },
     {
       "es": "manada",
@@ -14683,7 +15607,8 @@
         "pack"
       ],
       "pos": "n",
-      "rank": 4872
+      "rank": 4872,
+      "gender": "f"
     },
     {
       "es": "difícilmente",
@@ -14717,14 +15642,16 @@
       "de": "der Indikator",
       "en": "indicator",
       "pos": "n",
-      "rank": 4876
+      "rank": 4876,
+      "gender": "m"
     },
     {
       "es": "perímetro",
       "de": "der Umfang",
       "en": "perimeter",
       "pos": "n",
-      "rank": 4877
+      "rank": 4877,
+      "gender": "m"
     },
     {
       "es": "trimestre",
@@ -14737,7 +15664,8 @@
         "term"
       ],
       "pos": "n",
-      "rank": 4878
+      "rank": 4878,
+      "gender": "m"
     },
     {
       "es": "prolongado",
@@ -14751,7 +15679,8 @@
       "de": "das Los",
       "en": "lot",
       "pos": "n",
-      "rank": 4880
+      "rank": 4880,
+      "gender": "m"
     },
     {
       "es": "ratificar",
@@ -14765,7 +15694,8 @@
       "de": "der Bankrott",
       "en": "bankruptcy",
       "pos": "n",
-      "rank": 4882
+      "rank": 4882,
+      "gender": "f"
     },
     {
       "es": "desconectar",
@@ -14818,28 +15748,32 @@
       "de": "der Schleier",
       "en": "veil",
       "pos": "n",
-      "rank": 4887
+      "rank": 4887,
+      "gender": "m"
     },
     {
       "es": "volcán",
       "de": "der Vulkan",
       "en": "volcano",
       "pos": "n",
-      "rank": 4888
+      "rank": 4888,
+      "gender": "m"
     },
     {
       "es": "papeleo",
       "de": "der Papierkram",
       "en": "paperwork",
       "pos": "n",
-      "rank": 4889
+      "rank": 4889,
+      "gender": "m"
     },
     {
       "es": "variable",
       "de": "die Variable",
       "en": "variable",
       "pos": "n",
-      "rank": 4890
+      "rank": 4890,
+      "gender": "f"
     },
     {
       "es": "mediana",
@@ -14852,7 +15786,8 @@
         "central reservation"
       ],
       "pos": "n",
-      "rank": 4891
+      "rank": 4891,
+      "gender": "f"
     },
     {
       "es": "recostar",
@@ -14896,7 +15831,8 @@
       ],
       "en": "understanding",
       "pos": "n",
-      "rank": 4896
+      "rank": 4896,
+      "gender": "m"
     },
     {
       "es": "clandestino",
@@ -14966,7 +15902,8 @@
         "examination"
       ],
       "pos": "n",
-      "rank": 4903
+      "rank": 4903,
+      "gender": "f"
     },
     {
       "es": "relajado",
@@ -14980,14 +15917,16 @@
       "de": "das Boxen",
       "en": "boxing",
       "pos": "n",
-      "rank": 4905
+      "rank": 4905,
+      "gender": "m"
     },
     {
       "es": "grandeza",
       "de": "die Größe",
       "en": "greatness",
       "pos": "n",
-      "rank": 4906
+      "rank": 4906,
+      "gender": "f"
     },
     {
       "es": "explorador",
@@ -15000,14 +15939,16 @@
         "scout"
       ],
       "pos": "n",
-      "rank": 4907
+      "rank": 4907,
+      "gender": "m"
     },
     {
       "es": "estatus",
       "de": "der Status",
       "en": "status",
       "pos": "n",
-      "rank": 4908
+      "rank": 4908,
+      "gender": "m"
     },
     {
       "es": "precipitar",
@@ -15021,7 +15962,8 @@
       "de": "der Zoll (Behörde)",
       "en": "customs",
       "pos": "n",
-      "rank": 4910
+      "rank": 4910,
+      "gender": "f"
     },
     {
       "es": "motivar",
@@ -15068,7 +16010,8 @@
         "butter (Arg.)"
       ],
       "pos": "n",
-      "rank": 4915
+      "rank": 4915,
+      "gender": "f"
     },
     {
       "es": "rígido",
@@ -15101,14 +16044,16 @@
       "de": "die Ernennung",
       "en": "appointment",
       "pos": "n",
-      "rank": 4918
+      "rank": 4918,
+      "gender": "m"
     },
     {
       "es": "informática",
       "de": "die Informatik",
       "en": "computer science",
       "pos": "n",
-      "rank": 4919
+      "rank": 4919,
+      "gender": "f"
     },
     {
       "es": "UP",
@@ -15128,7 +16073,8 @@
         "peloton"
       ],
       "pos": "n",
-      "rank": 4921
+      "rank": 4921,
+      "gender": "m"
     },
     {
       "es": "contagiar",
@@ -15183,35 +16129,40 @@
       "de": "das Erbrechen",
       "en": "vomit",
       "pos": "n",
-      "rank": 4928
+      "rank": 4928,
+      "gender": "m"
     },
     {
       "es": "prejuicio",
       "de": "das Vorurteil",
       "en": "prejudice",
       "pos": "n",
-      "rank": 4929
+      "rank": 4929,
+      "gender": "m"
     },
     {
       "es": "banesto",
       "de": "Banesto (spanische Bank)",
       "en": "Banesto (Spanish bank)",
       "pos": "n",
-      "rank": 4930
+      "rank": 4930,
+      "gender": "m"
     },
     {
       "es": "rector",
       "de": "der Rektor",
       "en": "rector",
       "pos": "n",
-      "rank": 4931
+      "rank": 4931,
+      "gender": "m"
     },
     {
       "es": "pronóstico",
       "de": "die Prognose",
       "en": "forecast",
       "pos": "n",
-      "rank": 4932
+      "rank": 4932,
+      "gender": "m"
     },
     {
       "es": "censura",
@@ -15224,7 +16175,8 @@
         "censure"
       ],
       "pos": "n",
-      "rank": 4933
+      "rank": 4933,
+      "gender": "f"
     },
     {
       "es": "articular",
@@ -15277,21 +16229,24 @@
         "granary"
       ],
       "pos": "n",
-      "rank": 4938
+      "rank": 4938,
+      "gender": "m"
     },
     {
       "es": "hectárea",
       "de": "das Hektar",
       "en": "hectare",
       "pos": "n",
-      "rank": 4939
+      "rank": 4939,
+      "gender": "f"
     },
     {
       "es": "monasterio",
       "de": "das Kloster",
       "en": "monastery",
       "pos": "n",
-      "rank": 4940
+      "rank": 4940,
+      "gender": "m"
     },
     {
       "es": "soborno",
@@ -15304,21 +16259,24 @@
         "bribe"
       ],
       "pos": "n",
-      "rank": 4941
+      "rank": 4941,
+      "gender": "m"
     },
     {
       "es": "agricultor",
       "de": "der Landwirt",
       "en": "farmer",
       "pos": "n",
-      "rank": 4942
+      "rank": 4942,
+      "gender": "m"
     },
     {
       "es": "clic",
       "de": "der Klick",
       "en": "click",
       "pos": "n",
-      "rank": 4943
+      "rank": 4943,
+      "gender": "m"
     },
     {
       "es": "reponer",
@@ -15338,14 +16296,16 @@
       "de": "das Bankett",
       "en": "banquet",
       "pos": "n",
-      "rank": 4945
+      "rank": 4945,
+      "gender": "m"
     },
     {
       "es": "esqueleto",
       "de": "das Skelett",
       "en": "skeleton",
       "pos": "n",
-      "rank": 4946
+      "rank": 4946,
+      "gender": "m"
     },
     {
       "es": "ingenio",
@@ -15358,14 +16318,16 @@
         "wit"
       ],
       "pos": "n",
-      "rank": 4947
+      "rank": 4947,
+      "gender": "m"
     },
     {
       "es": "atardecer",
       "de": "die Abenddämmerung",
       "en": "dusk",
       "pos": "n",
-      "rank": 4948
+      "rank": 4948,
+      "gender": "m"
     },
     {
       "es": "filosófico",
@@ -15379,14 +16341,16 @@
       "de": "das Poker",
       "en": "poker",
       "pos": "n",
-      "rank": 4950
+      "rank": 4950,
+      "gender": "m"
     },
     {
       "es": "ignorancia",
       "de": "die Unwissenheit",
       "en": "ignorance",
       "pos": "n",
-      "rank": 4951
+      "rank": 4951,
+      "gender": "f"
     },
     {
       "es": "trepar",
@@ -15407,7 +16371,8 @@
       "de": "die Bequemlichkeit",
       "en": "comfort",
       "pos": "n",
-      "rank": 4954
+      "rank": 4954,
+      "gender": "f"
     },
     {
       "es": "preliminar",
@@ -15421,7 +16386,8 @@
       "de": "das Set",
       "en": "kit",
       "pos": "n",
-      "rank": 4956
+      "rank": 4956,
+      "gender": "m"
     },
     {
       "es": "culminar",
@@ -15447,14 +16413,16 @@
         "hall"
       ],
       "pos": "n",
-      "rank": 4958
+      "rank": 4958,
+      "gender": "m"
     },
     {
       "es": "aspirante",
       "de": "der Anwärter",
       "en": "candidate",
       "pos": "n",
-      "rank": 4959
+      "rank": 4959,
+      "gender": "mf"
     },
     {
       "es": "calmado",
@@ -15474,14 +16442,16 @@
         "stench"
       ],
       "pos": "n",
-      "rank": 4961
+      "rank": 4961,
+      "gender": "f"
     },
     {
       "es": "leña",
       "de": "das Brennholz",
       "en": "firewood",
       "pos": "n",
-      "rank": 4962
+      "rank": 4962,
+      "gender": "f"
     },
     {
       "es": "corrida",
@@ -15494,14 +16464,16 @@
         "run"
       ],
       "pos": "n",
-      "rank": 4963
+      "rank": 4963,
+      "gender": "f"
     },
     {
       "es": "pulgada",
       "de": "der Zoll (Maßeinheit)",
       "en": "inch",
       "pos": "n",
-      "rank": 4964
+      "rank": 4964,
+      "gender": "f"
     },
     {
       "es": "usualmente",
@@ -15550,7 +16522,8 @@
       "de": "die Augenbraue",
       "en": "eyebrow",
       "pos": "n",
-      "rank": 4971
+      "rank": 4971,
+      "gender": "f"
     },
     {
       "es": "civilizado",
@@ -15564,14 +16537,16 @@
       "de": "der Faustschlag",
       "en": "punch",
       "pos": "n",
-      "rank": 4973
+      "rank": 4973,
+      "gender": "m"
     },
     {
       "es": "decoración",
       "de": "die Dekoration",
       "en": "decoration",
       "pos": "n",
-      "rank": 4974
+      "rank": 4974,
+      "gender": "f"
     },
     {
       "es": "pelar",
@@ -15585,7 +16560,8 @@
       "de": "der Laser",
       "en": "laser",
       "pos": "n",
-      "rank": 4976
+      "rank": 4976,
+      "gender": "m"
     },
     {
       "es": "victimar",
@@ -15599,7 +16575,8 @@
       "de": "die Bronze",
       "en": "bronze",
       "pos": "n",
-      "rank": 4978
+      "rank": 4978,
+      "gender": "m"
     },
     {
       "es": "bárbaro",
@@ -15626,7 +16603,8 @@
       "de": "die Matratze",
       "en": "mattress",
       "pos": "n",
-      "rank": 4981
+      "rank": 4981,
+      "gender": "m"
     },
     {
       "es": "lema",
@@ -15639,14 +16617,16 @@
         "slogan"
       ],
       "pos": "n",
-      "rank": 4982
+      "rank": 4982,
+      "gender": "m"
     },
     {
       "es": "desempleo",
       "de": "die Arbeitslosigkeit",
       "en": "unemployment",
       "pos": "n",
-      "rank": 4983
+      "rank": 4983,
+      "gender": "m"
     },
     {
       "es": "VIH",
@@ -15660,14 +16640,16 @@
       "de": "der Schutz",
       "en": "protection",
       "pos": "n",
-      "rank": 4985
+      "rank": 4985,
+      "gender": "m"
     },
     {
       "es": "masacre",
       "de": "das Massaker",
       "en": "massacre",
       "pos": "n",
-      "rank": 4986
+      "rank": 4986,
+      "gender": "f"
     },
     {
       "es": "recobrar",
@@ -15681,7 +16663,8 @@
       "de": "der Organisator",
       "en": "organizer",
       "pos": "n",
-      "rank": 4988
+      "rank": 4988,
+      "gender": "m"
     },
     {
       "es": "chequear",
@@ -15721,7 +16704,8 @@
         "tutor"
       ],
       "pos": "n",
-      "rank": 4992
+      "rank": 4992,
+      "gender": "m"
     },
     {
       "es": "madurar",
@@ -15741,14 +16725,16 @@
       "de": "die Hose",
       "en": "trousers",
       "pos": "n",
-      "rank": 4994
+      "rank": 4994,
+      "gender": "m"
     },
     {
       "es": "informante",
       "de": "der Informant",
       "en": "informant",
       "pos": "n",
-      "rank": 4995
+      "rank": 4995,
+      "gender": "mf"
     },
     {
       "es": "cúpula",
@@ -15761,14 +16747,16 @@
         "leadership"
       ],
       "pos": "n",
-      "rank": 4996
+      "rank": 4996,
+      "gender": "f"
     },
     {
       "es": "hermandad",
       "de": "die Bruderschaft",
       "en": "brotherhood",
       "pos": "n",
-      "rank": 4997
+      "rank": 4997,
+      "gender": "f"
     },
     {
       "es": "iluminación",
@@ -15781,7 +16769,8 @@
         "enlightenment"
       ],
       "pos": "n",
-      "rank": 4998
+      "rank": 4998,
+      "gender": "f"
     },
     {
       "es": "aula",
@@ -15794,14 +16783,16 @@
         "lecture hall"
       ],
       "pos": "n",
-      "rank": 4999
+      "rank": 4999,
+      "gender": "f"
     },
     {
       "es": "billetera",
       "de": "die Brieftasche",
       "en": "wallet",
       "pos": "n",
-      "rank": 5000
+      "rank": 5000,
+      "gender": "f"
     }
   ]
 }

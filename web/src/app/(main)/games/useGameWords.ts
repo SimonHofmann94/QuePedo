@@ -18,22 +18,27 @@ export const FREE_GAME_LEVELS: ReadonlySet<CEFRLevel> = new Set(["A1", "A2"])
 
 const storageKey = (gameId: string) => `chingon_game_vocab:${gameId}`
 
-function readSource(gameId: string): GameVocabSource {
+function readSource(gameId: string, fallback: GameVocabSource): GameVocabSource {
   try {
-    if (typeof window === "undefined") return { kind: "mine" }
+    if (typeof window === "undefined") return fallback
     const raw = window.localStorage.getItem(storageKey(gameId))
-    if (!raw) return { kind: "mine" }
+    if (!raw) return fallback
     const parsed = JSON.parse(raw) as GameVocabSource
     if (parsed.kind === "curated" && getVocabList(parsed.level)) return parsed
-    return { kind: "mine" }
+    if (parsed.kind === "mine") return parsed
+    return fallback
   } catch {
-    return { kind: "mine" }
+    return fallback
   }
 }
 
-/** Per-game vocabulary source, remembered in localStorage. */
-export function useVocabSource(gameId: string) {
-  const [source, setSource] = useState<GameVocabSource>(() => readSource(gameId))
+/**
+ * Per-game vocabulary source, remembered in localStorage. `fallback` is what
+ * a first-time player gets — vocab games default to their notebook, grammar
+ * games to their floor level (they have no notebook mode).
+ */
+export function useVocabSource(gameId: string, fallback: GameVocabSource = { kind: "mine" }) {
+  const [source, setSource] = useState<GameVocabSource>(() => readSource(gameId, fallback))
 
   const update = (next: GameVocabSource) => {
     setSource(next)

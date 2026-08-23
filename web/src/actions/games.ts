@@ -136,7 +136,9 @@ export async function submitGameResult(payload: unknown): Promise<SubmitGameOutc
 export async function getPersonalBests(): Promise<Record<GameId, number | null>> {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  const bests = { chili_rush: null, loteria: null, construye: null } as Record<GameId, number | null>
+  // Derived from GAME_IDS so a new game can never be forgotten here. The old
+  // hand-written literal was `as`-cast, which is why TS never caught a gap.
+  const bests = Object.fromEntries(GAME_IDS.map((id) => [id, null])) as Record<GameId, number | null>
   if (!user) return bests
 
   for (const gameId of GAME_IDS) {
