@@ -1,5 +1,3387 @@
 {
   "game": "pasado",
   "source": "agent-authored, validated by shared/content/decision-items/bank.check.ts",
-  "items": []
+  "items": [
+    {
+      "id": "pasado:A2:001",
+      "prompt": "Ayer ___ tacos al pastor en la taquería de la esquina.",
+      "options": [
+        "comí",
+        "he comido",
+        "comía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Ayer“ nennt einen klar abgeschlossenen Zeitpunkt — darum Indefinido."
+    },
+    {
+      "id": "pasado:A2:002",
+      "prompt": "Anoche ___ a mi abuelita por teléfono.",
+      "options": [
+        "llamé",
+        "he llamado",
+        "llamaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Anoche“ setzt einen festen Zeitpunkt, die Handlung liegt vollständig zurück — Indefinido."
+    },
+    {
+      "id": "pasado:A2:003",
+      "prompt": "La semana pasada ___ al tianguis con mi mamá.",
+      "options": [
+        "fui",
+        "he ido",
+        "iba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„La semana pasada“ verortet die Handlung in einer abgeschlossenen Zeitspanne — Indefinido."
+    },
+    {
+      "id": "pasado:A2:004",
+      "prompt": "Hoy ___ temprano para llegar a la chamba.",
+      "options": [
+        "salí",
+        "he salido",
+        "salía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "In Mexiko steht auch bei „hoy“ das Indefinido: hoy salí, nicht hoy he salido."
+    },
+    {
+      "id": "pasado:A2:005",
+      "prompt": "El sábado pasado mis primos ___ a visitarnos.",
+      "options": [
+        "vinieron",
+        "han venido",
+        "venían"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El sábado pasado“ markiert ein einmaliges, beendetes Ereignis — Indefinido."
+    },
+    {
+      "id": "pasado:A2:006",
+      "prompt": "En 2019 ___ mi primer viaje a Oaxaca.",
+      "options": [
+        "hice",
+        "he hecho",
+        "hacía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "Eine Jahreszahl wie „en 2019“ schließt das Ereignis ab — Indefinido."
+    },
+    {
+      "id": "pasado:A2:007",
+      "prompt": "Esta mañana ___ dos quesadillas en el mercado.",
+      "options": [
+        "compré",
+        "he comprado",
+        "compraba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "Mexikanische Norm: auch „esta mañana“ nimmt das Indefinido — compré, nicht he comprado."
+    },
+    {
+      "id": "pasado:A2:008",
+      "prompt": "Hace dos años ___ a vivir a Monterrey.",
+      "options": [
+        "me mudé",
+        "me he mudado",
+        "me mudaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Hace dos años“ nennt einen konkreten Punkt in der Vergangenheit — Indefinido."
+    },
+    {
+      "id": "pasado:A2:009",
+      "prompt": "Ayer por la tarde ___ toda la tarea de español.",
+      "options": [
+        "terminé",
+        "he terminado",
+        "terminaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Ayer por la tarde“ begrenzt die Handlung klar — Indefinido."
+    },
+    {
+      "id": "pasado:A2:010",
+      "prompt": "¿Alguna vez ___ mole negro de Oaxaca?",
+      "options": [
+        "probaste",
+        "has probado",
+        "probabas"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Alguna vez“ fragt nach einer Erfahrung bis heute — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:011",
+      "prompt": "Nunca ___ a la lucha libre, pero quiero ir un día.",
+      "options": [
+        "fui",
+        "he ido",
+        "iba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Quiero ir un día“ hält die Erfahrung offen — „nunca“ + Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:012",
+      "prompt": "¿___ alguna vez en el metro de CDMX?",
+      "options": [
+        "Viajaste",
+        "Has viajado",
+        "Viajabas"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "Eine Erfahrungsfrage über das ganze Leben („alguna vez“) — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:013",
+      "prompt": "Mi papá nunca ___ en avión, le da miedo.",
+      "options": [
+        "voló",
+        "ha volado",
+        "volaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Le da miedo“ steht im Präsens: die Erfahrung reicht bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:014",
+      "prompt": "Todavía no ___ la tarea, ahorita la hago.",
+      "options": [
+        "hice",
+        "he hecho",
+        "hacía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Todavía no“ heißt: das Ergebnis steht noch aus — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:015",
+      "prompt": "Últimamente ___ muy mal por el calor.",
+      "options": [
+        "dormí",
+        "he dormido",
+        "dormía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Últimamente“ verbindet die letzten Tage mit dem Jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:016",
+      "prompt": "Todavía no ___ a la nueva vecina de la colonia.",
+      "options": [
+        "conocí",
+        "he conocido",
+        "conocía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Todavía no“ lässt es offen: das Kennenlernen kann noch kommen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:017",
+      "prompt": "Últimamente mi hermano ___ mucho en su chamba nueva.",
+      "options": [
+        "trabajó",
+        "ha trabajado",
+        "trabajaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Últimamente“ beschreibt eine Phase, die bis heute andauert — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:018",
+      "prompt": "De niño ___ fútbol en la calle todos los días.",
+      "options": [
+        "jugué",
+        "he jugado",
+        "jugaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„De niño“ + „todos los días“ zeigt eine Gewohnheit — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:019",
+      "prompt": "Cuando vivíamos en Guadalajara, siempre ___ al tianguis los domingos.",
+      "options": [
+        "fuimos",
+        "hemos ido",
+        "íbamos"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Siempre“ + „los domingos“ markiert Wiederholtes — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:020",
+      "prompt": "Mi abuelita nos ___ tamales cada Navidad.",
+      "options": [
+        "preparó",
+        "ha preparado",
+        "preparaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Cada Navidad“ signalisiert eine wiederkehrende Gewohnheit — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:021",
+      "prompt": "La casa de mis abuelos ___ un patio lleno de macetas.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Eine Beschreibung von Ort und Zustand malt den Hintergrund — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:022",
+      "prompt": "Mi maestra de primaria ___ muy paciente con todos.",
+      "options": [
+        "fue",
+        "ha sido",
+        "era"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Charakter einer Person in der Erinnerung — Hintergrundbeschreibung im Imperfecto."
+    },
+    {
+      "id": "pasado:A2:023",
+      "prompt": "En el pueblo las calles ___ de tierra y no había coches.",
+      "options": [
+        "fueron",
+        "han sido",
+        "eran"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "So sah das Dorf damals aus — reine Hintergrundbeschreibung im Imperfecto."
+    },
+    {
+      "id": "pasado:A2:024",
+      "prompt": "Cuando conocí a mi esposa, yo ___ veintitrés años.",
+      "options": [
+        "tuve",
+        "he tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Alter in der Vergangenheit steht im Imperfecto: tenía veintitrés años."
+    },
+    {
+      "id": "pasado:A2:025",
+      "prompt": "___ las ocho de la noche cuando empezó el temblor.",
+      "options": [
+        "Fueron",
+        "Han sido",
+        "Eran"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Uhrzeit in der Vergangenheit: eran las ocho — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:026",
+      "prompt": "El año pasado ___ español en un curso en línea.",
+      "options": [
+        "estudié",
+        "he estudiado",
+        "estudiaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El año pasado“ schließt den Zeitraum ab — Indefinido."
+    },
+    {
+      "id": "pasado:A2:027",
+      "prompt": "Anoche ___ pozole en casa de mi tía.",
+      "options": [
+        "cenamos",
+        "hemos cenado",
+        "cenábamos"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Anoche“ nennt einen begrenzten, beendeten Moment — Indefinido."
+    },
+    {
+      "id": "pasado:A2:028",
+      "prompt": "Hace un rato ___ tu mensaje, perdón por no contestar.",
+      "options": [
+        "leí",
+        "he leído",
+        "leía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Hace un rato“ gilt in Mexiko als abgeschlossen — Indefinido, nicht Perfecto."
+    },
+    {
+      "id": "pasado:A2:029",
+      "prompt": "El lunes ___ mi credencial en el camión.",
+      "options": [
+        "perdí",
+        "he perdido",
+        "perdía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El lunes“ legt den Zeitpunkt fest, der Verlust passierte einmal — Indefinido."
+    },
+    {
+      "id": "pasado:A2:030",
+      "prompt": "Mis papás ___ en 1995 en el Zócalo.",
+      "options": [
+        "se casaron",
+        "se han casado",
+        "se casaban"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "Die Jahreszahl 1995 macht das Ereignis punktuell — Indefinido."
+    },
+    {
+      "id": "pasado:A2:031",
+      "prompt": "Esta tarde ___ al doctor por el dolor de panza.",
+      "options": [
+        "fui",
+        "he ido",
+        "iba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "Auch „esta tarde“ nimmt in Mexiko das Indefinido: fui, nicht he ido."
+    },
+    {
+      "id": "pasado:A2:032",
+      "prompt": "Anoche la película ___ a las diez y media.",
+      "options": [
+        "terminó",
+        "ha terminado",
+        "terminaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Anoche“ + „a las diez y media“: ein genauer Endpunkt — Indefinido."
+    },
+    {
+      "id": "pasado:A2:033",
+      "prompt": "El mes pasado ___ mi trabajo final de la universidad.",
+      "options": [
+        "entregué",
+        "he entregado",
+        "entregaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El mes pasado“ rahmt die Handlung als beendet — Indefinido."
+    },
+    {
+      "id": "pasado:A2:034",
+      "prompt": "¿Alguna vez ___ un temblor fuerte?",
+      "options": [
+        "sentiste",
+        "has sentido",
+        "sentías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Alguna vez“ zielt auf Erfahrung im ganzen Leben — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:035",
+      "prompt": "Nunca ___ tequila, prefiero el agua de jamaica.",
+      "options": [
+        "probé",
+        "he probado",
+        "probaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Prefiero“ steht im Präsens: „nunca“ meint hier das Leben bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:036",
+      "prompt": "¿Cuántas veces ___ a Europa en tu vida?",
+      "options": [
+        "viajaste",
+        "has viajado",
+        "viajabas"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„En tu vida“ spannt den Bogen bis heute — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:037",
+      "prompt": "Mi abuela nunca ___ el mar, pero sueña con conocerlo.",
+      "options": [
+        "vio",
+        "ha visto",
+        "veía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "Sie träumt noch davon — die Erfahrung bleibt offen, darum Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:038",
+      "prompt": "Todavía no ___ mis maletas y el vuelo sale mañana.",
+      "options": [
+        "empaqué",
+        "he empacado",
+        "empacaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Todavía no“ + „el vuelo sale mañana“: das Ergebnis steht noch aus — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:039",
+      "prompt": "Últimamente ___ mucho tráfico en el Periférico.",
+      "options": [
+        "hubo",
+        "ha habido",
+        "había"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Últimamente“ reicht bis in die Gegenwart hinein — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:040",
+      "prompt": "Todavía no ___ el nuevo libro de mi autor favorito.",
+      "options": [
+        "leí",
+        "he leído",
+        "leía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "Mit „todavía no“ bleibt die Tür offen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:041",
+      "prompt": "Últimamente no ___ nada de ejercicio, me siento flojo.",
+      "options": [
+        "hice",
+        "he hecho",
+        "hacía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Últimamente“ + „me siento“ verankert alles im Jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:042",
+      "prompt": "Antes ___ el camión para ir a la escuela, ahora voy en metro.",
+      "options": [
+        "tomé",
+        "he tomado",
+        "tomaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Antes“ im Kontrast zu „ahora“ beschreibt eine frühere Gewohnheit — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:043",
+      "prompt": "Cada verano ___ a Puebla con toda la familia.",
+      "options": [
+        "viajamos",
+        "hemos viajado",
+        "viajábamos"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Cada verano“ steht für Wiederholung Jahr für Jahr — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:044",
+      "prompt": "En la secundaria ___ a las seis de la mañana todos los días.",
+      "options": [
+        "me levanté",
+        "me he levantado",
+        "me levantaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Todos los días“ macht das Aufstehen zur Routine — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:045",
+      "prompt": "Mi papá siempre nos ___ historias de ranchos y caballos.",
+      "options": [
+        "contó",
+        "ha contado",
+        "contaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Siempre“ kennzeichnet die wiederholte Handlung — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:046",
+      "prompt": "El mercado ___ a flores frescas y a pan dulce.",
+      "options": [
+        "olió",
+        "ha olido",
+        "olía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Gerüche und Stimmung malen den Hintergrund — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:047",
+      "prompt": "Mi primer departamento ___ chiquito pero muy acogedor.",
+      "options": [
+        "fue",
+        "ha sido",
+        "era"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Die Beschreibung, wie etwas damals war, steht im Imperfecto."
+    },
+    {
+      "id": "pasado:A2:048",
+      "prompt": "___ mucho calor cuando llegamos a Mérida.",
+      "options": [
+        "Hizo",
+        "Ha hecho",
+        "Hacía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Das Wetter als Hintergrund beim Ankommen steht im Imperfecto."
+    },
+    {
+      "id": "pasado:A2:049",
+      "prompt": "Mi abuelo ___ ochenta años cuando aprendió a usar WhatsApp.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Alter als Rahmen eines Ereignisses — Imperfecto: tenía ochenta años."
+    },
+    {
+      "id": "pasado:A2:050",
+      "prompt": "___ medianoche cuando por fin llegamos a la posada.",
+      "options": [
+        "Fue",
+        "Ha sido",
+        "Era"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Zeitangabe im Rückblick: era medianoche — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:051",
+      "prompt": "El martes ___ mi bici en el taller de la colonia.",
+      "options": [
+        "dejé",
+        "he dejado",
+        "dejaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El martes“ nennt einen konkreten, beendeten Tag — Indefinido."
+    },
+    {
+      "id": "pasado:A2:052",
+      "prompt": "Hace tres días ___ un correo importante a mi jefe.",
+      "options": [
+        "mandé",
+        "he mandado",
+        "mandaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Hace tres días“ liegt klar zurück, die Sache ist erledigt — Indefinido."
+    },
+    {
+      "id": "pasado:A2:053",
+      "prompt": "El fin de semana pasado ___ un partido de los Pumas en el estadio.",
+      "options": [
+        "vimos",
+        "hemos visto",
+        "veíamos"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El fin de semana pasado“ rahmt das Ereignis als beendet — Indefinido."
+    },
+    {
+      "id": "pasado:A2:054",
+      "prompt": "En marzo mi hermana ___ su examen de manejo.",
+      "options": [
+        "aprobó",
+        "ha aprobado",
+        "aprobaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„En marzo“ verortet die Prüfung an einem festen Punkt — Indefinido."
+    },
+    {
+      "id": "pasado:A2:055",
+      "prompt": "Anteayer ___ las llaves dentro del coche.",
+      "options": [
+        "olvidé",
+        "he olvidado",
+        "olvidaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Anteayer“ nennt einen abgeschlossenen Zeitpunkt — Indefinido."
+    },
+    {
+      "id": "pasado:A2:056",
+      "prompt": "La Navidad pasada ___ a mis suegros en Veracruz.",
+      "options": [
+        "visitamos",
+        "hemos visitado",
+        "visitábamos"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„La Navidad pasada“ war einmal und ist vorbei — Indefinido."
+    },
+    {
+      "id": "pasado:A2:057",
+      "prompt": "Hoy ___ dos horas atorado en el tráfico.",
+      "options": [
+        "pasé",
+        "he pasado",
+        "pasaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "Mexikanische Norm: auch bei „hoy“ steht das Indefinido — pasé, nicht he pasado."
+    },
+    {
+      "id": "pasado:A2:058",
+      "prompt": "El viernes ___ la renta del departamento.",
+      "options": [
+        "pagué",
+        "he pagado",
+        "pagaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El viernes“ macht die Zahlung punktuell — Indefinido."
+    },
+    {
+      "id": "pasado:A2:059",
+      "prompt": "¿Alguna vez ___ un partido en el Estadio Azteca?",
+      "options": [
+        "viste",
+        "has visto",
+        "veías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Alguna vez“ fragt nach Erfahrung bis zum heutigen Tag — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:060",
+      "prompt": "Nunca ___ chapulines, pero un día me animo.",
+      "options": [
+        "comí",
+        "he comido",
+        "comía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Un día me animo“ zeigt: die Erfahrung bleibt noch möglich — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:061",
+      "prompt": "Hasta ahora ___ tres estados del país y quiero conocer más.",
+      "options": [
+        "recorrí",
+        "he recorrido",
+        "recorría"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Hasta ahora“ spannt den Bogen bis in die Gegenwart — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:062",
+      "prompt": "¿Cuántas veces ___ tamales tú solo en tu vida?",
+      "options": [
+        "hiciste",
+        "has hecho",
+        "hacías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„En tu vida“ zählt die Erfahrung bis jetzt zusammen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:063",
+      "prompt": "Mi tía nunca ___ de Michoacán y no le interesa viajar.",
+      "options": [
+        "salió",
+        "ha salido",
+        "salía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„No le interesa“ steht im Präsens: „nunca“ gilt bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:064",
+      "prompt": "Todavía no ___ boletos para el concierto y ya casi se agotan.",
+      "options": [
+        "compré",
+        "he comprado",
+        "compraba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Todavía no“ plus „ya casi se agotan“: der Kauf steht noch aus — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:065",
+      "prompt": "Aún no ___ la serie que me recomendaste, no me cuentes nada.",
+      "options": [
+        "empecé",
+        "he empezado",
+        "empezaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Aún no“ plus „no me cuentes nada“: alles bleibt offen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:066",
+      "prompt": "Últimamente ___ mucha chamba y estoy bien cansado.",
+      "options": [
+        "tuve",
+        "he tenido",
+        "tenía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Últimamente“ plus „estoy bien cansado“ verankert die Phase im Jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:067",
+      "prompt": "Todavía no me ___ la quincena, sigo esperando.",
+      "options": [
+        "depositaron",
+        "han depositado",
+        "depositaban"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Sigo esperando“ zeigt: das Ergebnis fehlt bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:068",
+      "prompt": "Cuando era estudiante, ___ en la biblioteca casi todas las tardes.",
+      "options": [
+        "estudié",
+        "he estudiado",
+        "estudiaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Casi todas las tardes“ beschreibt eine Gewohnheit von damals — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:069",
+      "prompt": "Los domingos ___ con toda la familia en casa de mi abuela.",
+      "options": [
+        "comimos",
+        "hemos comido",
+        "comíamos"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Los domingos“ ohne festen Endpunkt steht für Wiederholung — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:070",
+      "prompt": "De chavo ___ las luchas en la tele cada sábado.",
+      "options": [
+        "vi",
+        "he visto",
+        "veía"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„De chavo“ plus „cada sábado“ markiert eine feste Gewohnheit — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:071",
+      "prompt": "El pueblo ___ tranquilo, sin ruido de coches.",
+      "options": [
+        "fue",
+        "ha sido",
+        "era"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Reine Ortsbeschreibung ohne Anfang und Ende — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:072",
+      "prompt": "Mi tío ___ un bigote enorme y siempre traía sombrero.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Aussehen einer Person in der Erinnerung — Hintergrund im Imperfecto."
+    },
+    {
+      "id": "pasado:A2:073",
+      "prompt": "La casa de la esquina ___ pintada de rosa mexicano.",
+      "options": [
+        "estuvo",
+        "ha estado",
+        "estaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "„Pintada de rosa“ beschreibt einen Zustand im Hintergrund — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:074",
+      "prompt": "___ apenas las seis cuando sonó el despertador.",
+      "options": [
+        "Fueron",
+        "Han sido",
+        "Eran"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Uhrzeit im Rückblick: eran apenas las seis — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:075",
+      "prompt": "Cuando salimos del cine, ___ lloviendo bien fuerte.",
+      "options": [
+        "estuvo",
+        "ha estado",
+        "estaba"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Der Regen malt den Hintergrund des Moments — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:076",
+      "prompt": "El domingo ___ un pastel para el cumpleaños de mi hija.",
+      "options": [
+        "horneé",
+        "he horneado",
+        "horneaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El domingo“ nennt den einen, beendeten Anlass — Indefinido."
+    },
+    {
+      "id": "pasado:A2:077",
+      "prompt": "Hace una semana ___ mi celular nuevo.",
+      "options": [
+        "estrené",
+        "he estrenado",
+        "estrenaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Hace una semana“ liegt komplett zurück — Indefinido."
+    },
+    {
+      "id": "pasado:A2:078",
+      "prompt": "El verano pasado ___ a Acapulco con mis compas.",
+      "options": [
+        "fuimos",
+        "hemos ido",
+        "íbamos"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El verano pasado“ ist eine abgeschlossene Zeitspanne — Indefinido."
+    },
+    {
+      "id": "pasado:A2:079",
+      "prompt": "Ayer se me ___ el camión y llegué tarde a la chamba.",
+      "options": [
+        "fue",
+        "ha ido",
+        "iba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Ayer“ plus „llegué tarde“: einmal passiert, fertig — Indefinido."
+    },
+    {
+      "id": "pasado:A2:080",
+      "prompt": "El jueves ___ mi coche al taller por los frenos.",
+      "options": [
+        "llevé",
+        "he llevado",
+        "llevaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„El jueves“ legt den Werkstattbesuch auf einen Punkt fest — Indefinido."
+    },
+    {
+      "id": "pasado:A2:081",
+      "prompt": "En 2022 me ___ de la universidad.",
+      "options": [
+        "gradué",
+        "he graduado",
+        "graduaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "Die Jahreszahl 2022 macht den Abschluss punktuell — Indefinido."
+    },
+    {
+      "id": "pasado:A2:082",
+      "prompt": "El sábado ___ hasta las dos de la mañana en la boda de mi prima.",
+      "options": [
+        "bailamos",
+        "hemos bailado",
+        "bailábamos"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Hasta las dos de la mañana“ begrenzt die Nacht klar — Indefinido."
+    },
+    {
+      "id": "pasado:A2:083",
+      "prompt": "Hace un mes ___ de trabajo y ahora gano mejor.",
+      "options": [
+        "cambié",
+        "he cambiado",
+        "cambiaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "A2",
+      "explanation_de": "„Hace un mes“ setzt den Wechsel auf einen festen Punkt — Indefinido."
+    },
+    {
+      "id": "pasado:A2:084",
+      "prompt": "¿Alguna vez te ___ en un temazcal?",
+      "options": [
+        "metiste",
+        "has metido",
+        "metías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Alguna vez“ fragt: schon mal im Leben passiert? — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:085",
+      "prompt": "Nunca me ___ un tatuaje, pero no lo descarto.",
+      "options": [
+        "hice",
+        "he hecho",
+        "hacía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„No lo descarto“ hält die Möglichkeit offen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:086",
+      "prompt": "¿___ alguna vez en trajinera por Xochimilco?",
+      "options": [
+        "Paseaste",
+        "Has paseado",
+        "Paseabas"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "Erfahrungsfrage mit „alguna vez“ über das ganze Leben — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:087",
+      "prompt": "Hasta la fecha nadie me ___ mejor consejo que mi abuela.",
+      "options": [
+        "dio",
+        "ha dado",
+        "daba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "A2",
+      "explanation_de": "„Hasta la fecha“ reicht bis zum heutigen Tag — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:088",
+      "prompt": "Todavía no ___ qué regalarle a mi mamá y su cumple es el sábado.",
+      "options": [
+        "decidí",
+        "he decidido",
+        "decidía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Todavía no“ heißt: die Entscheidung steht bis jetzt aus — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:089",
+      "prompt": "Aún no ___ todas las cajas de la mudanza.",
+      "options": [
+        "desempacamos",
+        "hemos desempacado",
+        "desempacábamos"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Aún no“ zeigt: das Auspacken dauert bis jetzt an — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:090",
+      "prompt": "Últimamente ___ mucho dinero en puros antojitos.",
+      "options": [
+        "gasté",
+        "he gastado",
+        "gastaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Últimamente“ schließt das Jetzt mit ein — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:091",
+      "prompt": "Todavía no le ___ a mi jefa que me quiero cambiar de área.",
+      "options": [
+        "dije",
+        "he dicho",
+        "decía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„Me quiero cambiar“ steht im Präsens: das Gespräch steht noch aus — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:092",
+      "prompt": "Aún no ___ la lista del súper y la fiesta es mañana.",
+      "options": [
+        "hice",
+        "he hecho",
+        "hacía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "A2",
+      "explanation_de": "„La fiesta es mañana“ und die Liste fehlt bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:A2:093",
+      "prompt": "Antes de tener hijos, ___ al cine cada viernes.",
+      "options": [
+        "fui",
+        "he ido",
+        "iba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Cada viernes“ markiert die alte Gewohnheit — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:094",
+      "prompt": "Cuando no había internet, la gente se ___ cartas.",
+      "options": [
+        "escribió",
+        "ha escrito",
+        "escribía"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Cuando no había internet“ beschreibt Wiederholtes von damals — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:095",
+      "prompt": "Cada quincena mi papá nos ___ al puesto de esquites.",
+      "options": [
+        "llevó",
+        "ha llevado",
+        "llevaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "A2",
+      "explanation_de": "„Cada quincena“ heißt: immer wieder — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:096",
+      "prompt": "Desde la ventana de mi cuarto se ___ el cerro de la ciudad.",
+      "options": [
+        "vio",
+        "ha visto",
+        "veía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "Der Blick aus dem Fenster beschreibt nur die Kulisse — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:097",
+      "prompt": "En esa época la colonia ___ mucho más tranquila.",
+      "options": [
+        "fue",
+        "ha sido",
+        "era"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "A2",
+      "explanation_de": "„En esa época“ leitet eine Beschreibung ohne Endpunkt ein — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:098",
+      "prompt": "Mi hija apenas ___ dos años cuando dijo su primera grosería.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Alter bildet den Rahmen der Anekdote — Imperfecto: tenía dos años."
+    },
+    {
+      "id": "pasado:A2:099",
+      "prompt": "___ un calor tremendo cuando se fue la luz en la colonia.",
+      "options": [
+        "Hizo",
+        "Ha hecho",
+        "Hacía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Das Wetter bildet den Hintergrund, als der Strom ausfiel — Imperfecto."
+    },
+    {
+      "id": "pasado:A2:100",
+      "prompt": "___ casi la una cuando terminó la junta.",
+      "options": [
+        "Fue",
+        "Ha sido",
+        "Era"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "A2",
+      "explanation_de": "Uhrzeit als Rahmen: era casi la una — Imperfecto."
+    },
+    {
+      "id": "pasado:B1:001",
+      "prompt": "Salí de la oficina, ___ el metro en Balderas y llegué a casa justo para la cena.",
+      "options": [
+        "tomé",
+        "he tomado",
+        "tomaba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Salí … y llegué“ erzählen Schritt für Schritt — auch das Einsteigen dazwischen gehört als Glied der Kette ins Indefinido."
+    },
+    {
+      "id": "pasado:B1:002",
+      "prompt": "Primero pedimos las chelas, luego ___ los tacos y al final compartimos un flan.",
+      "options": [
+        "escogimos",
+        "hemos escogido",
+        "escogíamos"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Primero … luego … al final“ reiht abgeschlossene Erzählschritte aneinander — jeder einzelne steht im Indefinido."
+    },
+    {
+      "id": "pasado:B1:003",
+      "prompt": "El mesero nos saludó, nos ___ la carta y regresó a la cocina.",
+      "options": [
+        "trajo",
+        "ha traído",
+        "traía"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "Zwischen „saludó“ und „regresó“ läuft eine Handlungskette ab — das Bringen der Karte reiht sich im Indefinido ein."
+    },
+    {
+      "id": "pasado:B1:004",
+      "prompt": "Estábamos viendo el partido cuando se ___ la luz en toda la colonia.",
+      "options": [
+        "fue",
+        "ha ido",
+        "iba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Estábamos viendo“ liefert den laufenden Hintergrund — der Stromausfall platzt punktuell hinein und steht im Indefinido."
+    },
+    {
+      "id": "pasado:B1:005",
+      "prompt": "Iba caminando por el centro cuando me ___ un señor para pedirme la hora.",
+      "options": [
+        "detuvo",
+        "ha detenido",
+        "detenía"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Iba caminando“ malt den Hintergrund — das Anhalten unterbricht ihn als einmaliges Ereignis im Indefinido."
+    },
+    {
+      "id": "pasado:B1:006",
+      "prompt": "Dormíamos tranquilos cuando ___ la alarma sísmica.",
+      "options": [
+        "sonó",
+        "ha sonado",
+        "sonaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Dormíamos“ beschreibt den laufenden Zustand — der Alarm bricht punktuell herein, darum Indefinido."
+    },
+    {
+      "id": "pasado:B1:007",
+      "prompt": "Me ___ un coyotito en el sillón cuando llegó el cartero con el paquete.",
+      "options": [
+        "eché",
+        "he echado",
+        "echaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "Das Nickerchen war schon im Gange, als der Cartero ankam („llegó“) — die laufende Handlung nimmt das Imperfecto."
+    },
+    {
+      "id": "pasado:B1:008",
+      "prompt": "Cuando empezó a temblar, yo ___ en el segundo piso de la biblioteca.",
+      "options": [
+        "estudié",
+        "he estudiado",
+        "estudiaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Empezó a temblar“ setzt den Einschnitt — was da gerade lief, das Lernen, steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:009",
+      "prompt": "___ la cebolla para la salsa cuando me corté el dedo.",
+      "options": [
+        "Piqué",
+        "He picado",
+        "Picaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Me corté“ unterbricht als punktuelles Ereignis — das Schneiden der Zwiebel lief da noch und steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:010",
+      "prompt": "No ___ del accidente hasta que mi hermana me marcó.",
+      "options": [
+        "supe",
+        "he sabido",
+        "sabía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Hasta que me marcó“ nennt den Moment des Erfahrens — supe heißt „ich erfuhr“, nicht „ich wusste“."
+    },
+    {
+      "id": "pasado:B1:011",
+      "prompt": "En esa posada ___ al que ahora es mi esposo.",
+      "options": [
+        "conocí",
+        "he conocido",
+        "conocía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "Auf einer bestimmten Feier jemanden zum ersten Mal treffen — conocí im Indefinido heißt „kennenlernen“."
+    },
+    {
+      "id": "pasado:B1:012",
+      "prompt": "Yo ___ a tu jefa desde antes de entrar a la empresa.",
+      "options": [
+        "conocí",
+        "he conocido",
+        "conocía"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Desde antes de“ beschreibt ein andauerndes Kennen — conocía im Imperfecto, kein einmaliges Kennenlernen."
+    },
+    {
+      "id": "pasado:B1:013",
+      "prompt": "De estudiante no ___ coche, me movía en camión a todos lados.",
+      "options": [
+        "tuve",
+        "he tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "Besitz als Dauerzustand einer Lebensphase („de estudiante“) — tenía, während tuve „bekam“ hieße."
+    },
+    {
+      "id": "pasado:B1:014",
+      "prompt": "El viernes por fin ___ mi visa americana en la embajada.",
+      "options": [
+        "recogí",
+        "he recogido",
+        "recogía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B1",
+      "explanation_de": "„El viernes“ setzt einen festen, abgeschlossenen Zeitpunkt — einmalige Handlung, Indefinido."
+    },
+    {
+      "id": "pasado:B1:015",
+      "prompt": "Hace tres meses me ___ de departamento, ahora vivo por la Narvarte.",
+      "options": [
+        "cambié",
+        "he cambiado",
+        "cambiaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B1",
+      "explanation_de": "„Hace tres meses“ verortet den Umzug als beendetes Ereignis — Indefinido, auch mit Folgen bis heute."
+    },
+    {
+      "id": "pasado:B1:016",
+      "prompt": "Cuando trabajaba en el turno de noche, ___ hasta el mediodía.",
+      "options": [
+        "dormí",
+        "he dormido",
+        "dormía"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B1",
+      "explanation_de": "Eine Gewohnheit innerhalb einer Lebensphase („cuando trabajaba“) — wiederholtes Schlafen im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:017",
+      "prompt": "Antes mi mamá siempre ___ la fruta en el tianguis de los miércoles.",
+      "options": [
+        "compró",
+        "ha comprado",
+        "compraba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B1",
+      "explanation_de": "„Antes“ plus „siempre“ markiert Wiederholtes ohne Endpunkt — dafür steht das Imperfecto."
+    },
+    {
+      "id": "pasado:B1:018",
+      "prompt": "El día de la mudanza, el departamento nuevo ___ completamente vacío y olía a pintura.",
+      "options": [
+        "estuvo",
+        "ha estado",
+        "estaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "Der leere Raum wird als Kulisse beschrieben, nicht als Ereignis — Beschreibungen laufen im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:019",
+      "prompt": "La fonda de doña Lupe ___ manteles de plástico y sillas que no combinaban.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "Hier wird das Lokal ausgemalt, nichts passiert — solche Zustandsbeschreibungen stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:020",
+      "prompt": "___ un frío tremendo la mañana que salimos a la basílica.",
+      "options": [
+        "Hizo",
+        "Ha hecho",
+        "Hacía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B1",
+      "explanation_de": "Wetter als Rahmen einer Erzählung — hacía frío im Imperfecto, das Losgehen bleibt im Indefinido."
+    },
+    {
+      "id": "pasado:B1:021",
+      "prompt": "¿Alguna vez te ___ a un microbús en plena hora pico?",
+      "options": [
+        "subiste",
+        "has subido",
+        "subías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Alguna vez“ fragt nach einer Erfahrung im bis jetzt offenen Leben — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:022",
+      "prompt": "Nunca ___ el mole rosa, dicen que solo lo hacen en Taxco.",
+      "options": [
+        "probé",
+        "he probado",
+        "probaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Nunca“ spannt den Bogen über das ganze Leben bis jetzt — solche Erfahrungsbilanzen nehmen das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:023",
+      "prompt": "¿Cuántas veces ___ el examen de manejo? A mí ya van tres.",
+      "options": [
+        "reprobaste",
+        "has reprobado",
+        "reprobabas"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„¿Cuántas veces …?“ zieht Bilanz über einen noch offenen Zeitraum — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:024",
+      "prompt": "Ya ___ tres capítulos de la tesis; nomás me faltan dos.",
+      "options": [
+        "escribí",
+        "he escrito",
+        "escribía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Ya“ plus „me faltan dos“ zeigt ein Ergebnis mit offenem Rest — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:025",
+      "prompt": "Últimamente ___ mucha pancita, ya no me cierra el pantalón.",
+      "options": [
+        "eché",
+        "he echado",
+        "echaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Últimamente“ öffnet einen Zeitraum bis in die Gegenwart — das Ergebnis gilt noch, Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:026",
+      "prompt": "Llegué a la terminal, ___ un boleto para Querétaro y me subí al primer camión.",
+      "options": [
+        "compré",
+        "he comprado",
+        "compraba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Llegué … y me subí“ rahmen eine Erzählkette — der Ticketkauf dazwischen steht wie jeder Schritt im Indefinido."
+    },
+    {
+      "id": "pasado:B1:027",
+      "prompt": "La niña se cayó de la bici, ___ tantito y luego siguió jugando como si nada.",
+      "options": [
+        "lloró",
+        "ha llorado",
+        "lloraba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "Hinfallen, weinen, weiterspielen: drei abgeschlossene Schritte nacheinander — alle im Indefinido."
+    },
+    {
+      "id": "pasado:B1:028",
+      "prompt": "Abrí el puesto a las siete, ___ todas las flores antes del mediodía y me fui a comer.",
+      "options": [
+        "vendí",
+        "he vendido",
+        "vendía"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Abrí … y me fui“ erzählen der Reihe nach — der Verkauf dazwischen gehört als beendeter Schritt ins Indefinido."
+    },
+    {
+      "id": "pasado:B1:029",
+      "prompt": "Me estaba bañando cuando ___ el timbre; ni modo de abrir.",
+      "options": [
+        "tocaron",
+        "han tocado",
+        "tocaban"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Me estaba bañando“ liefert den laufenden Hintergrund — das Klingeln fährt punktuell dazwischen, also Indefinido."
+    },
+    {
+      "id": "pasado:B1:030",
+      "prompt": "Platicábamos muy a gusto en el café cuando ___ mi ex por la puerta.",
+      "options": [
+        "entró",
+        "ha entrado",
+        "entraba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Platicábamos“ läuft als Hintergrund — der Auftritt des Ex unterbricht ihn einmalig, darum Indefinido."
+    },
+    {
+      "id": "pasado:B1:031",
+      "prompt": "El niño veía caricaturas cuando de repente se ___ la pantalla.",
+      "options": [
+        "apagó",
+        "ha apagado",
+        "apagaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„De repente“ kündigt den Einschnitt an: das Ausgehen des Bildschirms steht im Indefinido, das Fernsehen bleibt Hintergrund."
+    },
+    {
+      "id": "pasado:B1:032",
+      "prompt": "___ quesadillas en el comal cuando se nos acabó el gas.",
+      "options": [
+        "Hice",
+        "He hecho",
+        "Hacía"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Se nos acabó“ setzt den punktuellen Einschnitt — das Quesadilla-Machen war da noch im Gange, also Imperfecto."
+    },
+    {
+      "id": "pasado:B1:033",
+      "prompt": "Mi papá ___ el coche en la cochera cuando empezó el aguacero.",
+      "options": [
+        "lavó",
+        "ha lavado",
+        "lavaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Empezó el aguacero“ platzt herein — das Autowaschen lief gerade und steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:034",
+      "prompt": "___ hacia Coyoacán cuando nos agarró la marcha en Insurgentes.",
+      "options": [
+        "Fuimos",
+        "Hemos ido",
+        "Íbamos"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Nos agarró“ nennt das plötzliche Ereignis — die laufende Fahrt davor malst du im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:035",
+      "prompt": "Le marqué mil veces a la aseguradora y por fin ayer ___ hablar con una persona real.",
+      "options": [
+        "pude",
+        "he podido",
+        "podía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Por fin ayer“ zeigt den Durchbruch: pude im Indefinido heißt „es gelang mir“, podía wäre nur die Möglichkeit."
+    },
+    {
+      "id": "pasado:B1:036",
+      "prompt": "Le ofrecí un aventón a mi suegra, pero no ___ subirse; se fue en metro.",
+      "options": [
+        "quiso",
+        "ha querido",
+        "quería"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Se fue en metro“ besiegelt die Weigerung: no quiso heißt „sie lehnte ab“, no quería wäre nur Unlust."
+    },
+    {
+      "id": "pasado:B1:037",
+      "prompt": "En ese entonces no ___ ni freír un huevo.",
+      "options": [
+        "supe",
+        "he sabido",
+        "sabía"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„En ese entonces“ beschreibt andauerndes Nicht-Können — sabía; supe wäre der Moment des Erfahrens."
+    },
+    {
+      "id": "pasado:B1:038",
+      "prompt": "El domingo la selección ___ dos a cero y todo el barrio salió a festejar.",
+      "options": [
+        "ganó",
+        "ha ganado",
+        "ganaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B1",
+      "explanation_de": "„El domingo“ nagelt das Spiel als beendetes Einzelereignis fest — Indefinido."
+    },
+    {
+      "id": "pasado:B1:039",
+      "prompt": "En la prepa me ___ de pinta con mis cuates para ir al billar.",
+      "options": [
+        "fui",
+        "he ido",
+        "iba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B1",
+      "explanation_de": "„En la prepa“ öffnet eine Phase mit wiederholtem Schwänzen — Gewohnheiten stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:040",
+      "prompt": "Mi abuelo nos ___ nuestro domingo cada vez que lo visitábamos.",
+      "options": [
+        "dio",
+        "ha dado",
+        "daba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B1",
+      "explanation_de": "„Cada vez que“ markiert Wiederholung ohne Zählung — das Taschengeld-Geben steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:041",
+      "prompt": "El pueblo de mi abuela ___ a leña y a tierra mojada después de la lluvia.",
+      "options": [
+        "olió",
+        "ha olido",
+        "olía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "Der Geruch gehört zur Kulisse der Erinnerung, kein Ereignis — Beschreibung im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:042",
+      "prompt": "La quinceañera ___ un vestido enorme color rosa mexicano que casi no cabía por la puerta.",
+      "options": [
+        "llevó",
+        "ha llevado",
+        "llevaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "Das Kleid wird als Bild der Szene beschrieben, nicht als Handlung — darum Imperfecto."
+    },
+    {
+      "id": "pasado:B1:043",
+      "prompt": "___ casi medianoche cuando el DJ por fin puso las cumbias.",
+      "options": [
+        "Fueron",
+        "Han sido",
+        "Eran"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B1",
+      "explanation_de": "Uhrzeit in der Vergangenheit steht im Imperfecto — „puso“ bleibt als Ereignis im Indefinido."
+    },
+    {
+      "id": "pasado:B1:044",
+      "prompt": "¿Alguna vez ___ la noche entera en un aeropuerto por un vuelo cancelado?",
+      "options": [
+        "pasaste",
+        "has pasado",
+        "pasabas"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Alguna vez“ fragt nach dem Erfahrungskonto bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:045",
+      "prompt": "Jamás ___ una cumbia tan pegajosa como esa; la traigo en la cabeza desde el sábado.",
+      "options": [
+        "oí",
+        "he oído",
+        "oía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Jamás“ zieht Bilanz über das ganze bisherige Leben — dafür steht das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:046",
+      "prompt": "Mi tía nunca ___ de Michoacán; dice que ni falta le hace.",
+      "options": [
+        "salió",
+        "ha salido",
+        "salía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Nunca“ plus „dice“ im Präsens: ihre Lebensbilanz reicht bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:047",
+      "prompt": "¿Alguna vez le ___ un platillo con chapulines a tus invitados?",
+      "options": [
+        "serviste",
+        "has servido",
+        "servías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Alguna vez“ fragt nach einer Erfahrung im offenen Bis-jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:048",
+      "prompt": "Todavía no ___ los resultados del examen y ya me anda de los nervios.",
+      "options": [
+        "publicaron",
+        "han publicado",
+        "publicaban"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Todavía no“ hält das Ergebnis offen und aktuell — genau dafür steht das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:049",
+      "prompt": "Este año ya ___ dos veces al dentista, y eso que le saco la vuelta.",
+      "options": [
+        "fui",
+        "he ido",
+        "iba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Este año“ läuft noch und „ya“ zählt darin Erreichtes — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:050",
+      "prompt": "En lo que va del mes ya se me ___ dos paraguas en el metro.",
+      "options": [
+        "perdieron",
+        "han perdido",
+        "perdían"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„En lo que va del mes“ nennt einen offenen Zeitraum — Bilanz darin nimmt das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:051",
+      "prompt": "El plomero llegó tarde, ___ la fuga en diez minutos y me cobró como si fuera cirugía.",
+      "options": [
+        "arregló",
+        "ha arreglado",
+        "arreglaba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Llegó … y me cobró“ spannen eine Erzählkette auf — die Reparatur dazwischen steht als Schritt im Indefinido."
+    },
+    {
+      "id": "pasado:B1:052",
+      "prompt": "Nos bajamos del camión en el Centro, ___ unas nieves de garrafa y caminamos hasta el Zócalo.",
+      "options": [
+        "probamos",
+        "hemos probado",
+        "probábamos"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Nos bajamos … y caminamos“ erzählen nacheinander — das Eis-Probieren gehört als Kettenglied ins Indefinido."
+    },
+    {
+      "id": "pasado:B1:053",
+      "prompt": "Doña Chela abrió el zaguán, ___ el periódico del suelo y saludó al de la tienda.",
+      "options": [
+        "recogió",
+        "ha recogido",
+        "recogía"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "Drei Handgriffe hintereinander — öffnen, aufheben, grüßen — laufen komplett im Indefinido."
+    },
+    {
+      "id": "pasado:B1:054",
+      "prompt": "Mi hija hacía la tarea en la mesa cuando el gato ___ el florero al suelo.",
+      "options": [
+        "tiró",
+        "ha tirado",
+        "tiraba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Hacía la tarea“ liefert den Hintergrund — der Katzen-Zwischenfall steht als punktuelles Ereignis im Indefinido."
+    },
+    {
+      "id": "pasado:B1:055",
+      "prompt": "Apenas cruzábamos el puente cuando nos ___ la lluvia de lleno.",
+      "options": [
+        "alcanzó",
+        "ha alcanzado",
+        "alcanzaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Cruzábamos“ war noch im Gange — der Regenguss trifft punktuell dazwischen, darum Indefinido."
+    },
+    {
+      "id": "pasado:B1:056",
+      "prompt": "La doctora me explicaba los resultados cuando la ___ una enfermera por una urgencia.",
+      "options": [
+        "interrumpió",
+        "ha interrumpido",
+        "interrumpía"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Me explicaba“ läuft als Hintergrund weiter — der Notfall fährt einmalig dazwischen und steht im Indefinido."
+    },
+    {
+      "id": "pasado:B1:057",
+      "prompt": "Los mariachis ___ «El Rey» cuando se fue la luz del quiosco.",
+      "options": [
+        "tocaron",
+        "han tocado",
+        "tocaban"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Se fue la luz“ nennt den Einschnitt — das Spielen war da mittendrin und nimmt das Imperfecto."
+    },
+    {
+      "id": "pasado:B1:058",
+      "prompt": "¿Qué ___ tú cuando anunciaron el cierre del aeropuerto? Yo seguía formado en el mostrador.",
+      "options": [
+        "hiciste",
+        "has hecho",
+        "hacías"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Anunciaron“ setzt den Moment — gefragt wird nach der da gerade laufenden Handlung, also Imperfecto."
+    },
+    {
+      "id": "pasado:B1:059",
+      "prompt": "Todavía ___ los trastes de la comida cuando llegaron los primeros invitados a la cena.",
+      "options": [
+        "lavé",
+        "he lavado",
+        "lavaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Llegaron“ unterbricht als Ereignis — das Abwaschen war mit „todavía“ noch im Gange, darum Imperfecto."
+    },
+    {
+      "id": "pasado:B1:060",
+      "prompt": "Ayer ___ noticias de mi cuate que se fue a Tijuana; me marcó de la nada.",
+      "options": [
+        "tuve",
+        "he tenido",
+        "tenía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "Tuve noticias heißt „ich bekam Nachricht“ — ein punktuelles Ereignis, kein andauernder Besitz."
+    },
+    {
+      "id": "pasado:B1:061",
+      "prompt": "De niño le ___ miedo a los payasos; ya se me quitó.",
+      "options": [
+        "tuve",
+        "he tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "Angst als Dauerzustand der Kindheit — tenía; tuve wäre ein einmaliger Schreckmoment."
+    },
+    {
+      "id": "pasado:B1:062",
+      "prompt": "Mi abuela ___ hacer mole de memoria, sin receta ni báscula.",
+      "options": [
+        "supo",
+        "ha sabido",
+        "sabía"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "Ein Können, das dauerhaft da war — sabía; supo hieße, sie hätte es in einem Moment erfahren."
+    },
+    {
+      "id": "pasado:B1:063",
+      "prompt": "Cuando vivía en Puebla, ___ ir a pie a la chamba, pero con este tráfico ya ni cómo.",
+      "options": [
+        "pude",
+        "he podido",
+        "podía"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Cuando vivía“ öffnet eine Phase mit andauernder Möglichkeit — podía; pude wäre ein einmaliges Gelingen."
+    },
+    {
+      "id": "pasado:B1:064",
+      "prompt": "En marzo la banda ___ su primer disco en un estudio de Guadalajara.",
+      "options": [
+        "grabó",
+        "ha grabado",
+        "grababa"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B1",
+      "explanation_de": "„En marzo“ steckt einen konkreten, beendeten Zeitpunkt ab — einmalige Aufnahme, Indefinido."
+    },
+    {
+      "id": "pasado:B1:065",
+      "prompt": "Los domingos mi papá ___ chilaquiles para toda la familia.",
+      "options": [
+        "preparó",
+        "ha preparado",
+        "preparaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B1",
+      "explanation_de": "„Los domingos“ ohne konkretes Datum meint jede Woche wieder — Gewohnheit im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:066",
+      "prompt": "La noche de la posada, el cielo se ___ despejado desde la azotea.",
+      "options": [
+        "vio",
+        "ha visto",
+        "veía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "Der klare Himmel bildet die Kulisse jener Nacht — Beschreibungen stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:067",
+      "prompt": "El abuelo de mi novia ___ sombrero hasta dentro de la casa y hablaba recio.",
+      "options": [
+        "usó",
+        "ha usado",
+        "usaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "So wird eine Person gezeichnet, ohne dass etwas passiert — Personenbeschreibung im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:068",
+      "prompt": "Mi hermano ___ apenas quince años cuando ganó su primer torneo de ajedrez.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B1",
+      "explanation_de": "Alter in der Vergangenheit steht im Imperfecto — der Turniersieg bleibt als Ereignis im Indefinido."
+    },
+    {
+      "id": "pasado:B1:069",
+      "prompt": "Mi tío es de las pocas personas que ___ los treinta y dos estados del país.",
+      "options": [
+        "visitó",
+        "ha visitado",
+        "visitaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "Eine Lebensleistung, gezählt bis zum heutigen Tag — dafür steht das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:070",
+      "prompt": "Nadie me ___ nunca por qué cerraron el mercado de la esquina.",
+      "options": [
+        "explicó",
+        "ha explicado",
+        "explicaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Nunca“ hält den Zeitraum bis jetzt offen — die Erfahrungsbilanz nimmt das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:071",
+      "prompt": "¿Cuántos países ___ en tu vida? Yo nomás dos, y uno fue de pasadita.",
+      "options": [
+        "conociste",
+        "has conocido",
+        "conocías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„En tu vida“ zählt Erfahrungen in einem noch offenen Konto — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:072",
+      "prompt": "Varias veces ___ dejar el azúcar, pero siempre vuelvo a caer con el pan de dulce.",
+      "options": [
+        "intenté",
+        "he intentado",
+        "intentaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Varias veces“ plus „siempre vuelvo“ im Präsens: die Serie läuft noch — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:073",
+      "prompt": "Ya ___ la mitad de la colonia con los volantes de la kermés; mañana sigo con lo demás.",
+      "options": [
+        "recorrí",
+        "he recorrido",
+        "recorría"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Ya … mañana sigo“ zeigt eine angefangene, noch offene Aufgabe — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:074",
+      "prompt": "Aún no me ___ del susto del temblor de anoche.",
+      "options": [
+        "repuse",
+        "he repuesto",
+        "reponía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Aún no“ hält den Zustand bis in die Gegenwart offen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:075",
+      "prompt": "Últimamente la renta ___ un chorro por todo el rumbo del metro General Anaya.",
+      "options": [
+        "subió",
+        "ha subido",
+        "subía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Últimamente“ reicht bis heute herauf und das Ergebnis gilt weiter — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:076",
+      "prompt": "El taxista se pasó el alto, le ___ una mordida al policía y siguió tan campante.",
+      "options": [
+        "ofreció",
+        "ha ofrecido",
+        "ofrecía"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Se pasó … y siguió“ bilden eine Erzählkette — das Schmiergeld-Angebot dazwischen steht im Indefinido."
+    },
+    {
+      "id": "pasado:B1:077",
+      "prompt": "Sonó el despertador, me ___ de volada y alcancé el camión de las seis.",
+      "options": [
+        "levanté",
+        "he levantado",
+        "levantaba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "„Sonó … y alcancé“ erzählen Schlag auf Schlag — das Aufstehen reiht sich als Schritt im Indefinido ein."
+    },
+    {
+      "id": "pasado:B1:078",
+      "prompt": "La señora del puesto pesó los jitomates, me ___ el cambio y me regaló un manojo de cilantro.",
+      "options": [
+        "entregó",
+        "ha entregado",
+        "entregaba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B1",
+      "explanation_de": "Wiegen, Wechselgeld geben, Cilantro schenken: aufeinanderfolgende Schritte einer Szene — alles Indefinido."
+    },
+    {
+      "id": "pasado:B1:079",
+      "prompt": "Le echaba crema a mis tacos cuando se me ___ el plato de las manos.",
+      "options": [
+        "cayó",
+        "ha caído",
+        "caía"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Echaba crema“ war der laufende Vorgang — das Runterfallen platzt punktuell hinein, darum Indefinido."
+    },
+    {
+      "id": "pasado:B1:080",
+      "prompt": "Andábamos de compras en el tianguis cuando un chavo le ___ la bolsa a una señora.",
+      "options": [
+        "arrebató",
+        "ha arrebatado",
+        "arrebataba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B1",
+      "explanation_de": "„Andábamos de compras“ malt den Hintergrund — der Taschenraub unterbricht ihn als Blitz-Ereignis im Indefinido."
+    },
+    {
+      "id": "pasado:B1:081",
+      "prompt": "___ con mi jefa por teléfono cuando se cortó la llamada.",
+      "options": [
+        "Hablé",
+        "He hablado",
+        "Hablaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Se cortó“ nennt den Abbruch — das Gespräch war da noch im Gange und steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:082",
+      "prompt": "El bebé por fin ___ cuando el perro se puso a ladrar como loco.",
+      "options": [
+        "durmió",
+        "ha dormido",
+        "dormía"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Se puso a ladrar“ setzt den Einschnitt — der gerade laufende Schlaf davor nimmt das Imperfecto."
+    },
+    {
+      "id": "pasado:B1:083",
+      "prompt": "___ mi turno en la tortillería cuando me di cuenta de que dejé la cartera en la casa.",
+      "options": [
+        "Esperé",
+        "He esperado",
+        "Esperaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B1",
+      "explanation_de": "„Me di cuenta“ markiert den Moment — das Warten lief da noch, also Imperfecto."
+    },
+    {
+      "id": "pasado:B1:084",
+      "prompt": "Los vecinos ___ del embarazo de Lupita hasta el bautizo; nadie les contó antes.",
+      "options": [
+        "supieron",
+        "han sabido",
+        "sabían"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Hasta el bautizo“ nennt den Moment des Erfahrens — supieron heißt „sie erfuhren es“, nicht „sie wussten es“."
+    },
+    {
+      "id": "pasado:B1:085",
+      "prompt": "Con trabajos ___ abrir el frasco de los chiles; casi me quedo sin cena.",
+      "options": [
+        "pude",
+        "he podido",
+        "podía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "„Con trabajos“ erzählt ein einmaliges, mühsames Gelingen — pude; podía wäre bloß die Fähigkeit."
+    },
+    {
+      "id": "pasado:B1:086",
+      "prompt": "Antes de la boda, mi suegra no me ___; ahora hasta me manda tuppers.",
+      "options": [
+        "quiso",
+        "ha querido",
+        "quería"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B1",
+      "explanation_de": "Zuneigung — hier ihr Fehlen — als Dauerzustand: quería; quiso wäre ein einmaliger Entschluss."
+    },
+    {
+      "id": "pasado:B1:087",
+      "prompt": "La película nueva de Guillermo del Toro se ___ el jueves en la Cineteca.",
+      "options": [
+        "estrenó",
+        "ha estrenado",
+        "estrenaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B1",
+      "explanation_de": "„El jueves“ datiert die Premiere als abgeschlossenes Einzelereignis — Indefinido."
+    },
+    {
+      "id": "pasado:B1:088",
+      "prompt": "De recién casados ___ cada mes a visitar a los suegros en Toluca.",
+      "options": [
+        "viajamos",
+        "hemos viajado",
+        "viajábamos"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B1",
+      "explanation_de": "„De recién casados“ plus „cada mes“ beschreibt eine wiederkehrende Routine — Imperfecto."
+    },
+    {
+      "id": "pasado:B1:089",
+      "prompt": "Aquella tarde el malecón de Veracruz ___ lleno de gente y de vendedores de cocadas.",
+      "options": [
+        "estuvo",
+        "ha estado",
+        "estaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B1",
+      "explanation_de": "So wird die Szenerie jener Stunde ausgemalt, ohne Handlung — Kulisse im Imperfecto."
+    },
+    {
+      "id": "pasado:B1:090",
+      "prompt": "___ las tres de la tarde cuando apenas nos sirvieron la comida en la fiesta.",
+      "options": [
+        "Fueron",
+        "Han sido",
+        "Eran"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B1",
+      "explanation_de": "Uhrzeit als Rahmen der Erzählung — eran im Imperfecto; „sirvieron“ bleibt das Ereignis im Indefinido."
+    },
+    {
+      "id": "pasado:B1:091",
+      "prompt": "Mi mamá ___ veintiocho años cuando llegamos a vivir a la capital.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B1",
+      "explanation_de": "Alter in der Vergangenheit steht immer im Imperfecto — der Umzug selbst bleibt im Indefinido."
+    },
+    {
+      "id": "pasado:B1:092",
+      "prompt": "¿Alguna vez se te ___ el camión en las narices?",
+      "options": [
+        "fue",
+        "ha ido",
+        "iba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Alguna vez“ fragt nach dem Bis-jetzt-Konto an Erlebnissen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:093",
+      "prompt": "Mi tío Beto me ___ el mismo chiste como cien veces, y todavía se ríe solito.",
+      "options": [
+        "contó",
+        "ha contado",
+        "contaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Como cien veces“ plus „todavía“ im Präsens: die Serie reicht bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:094",
+      "prompt": "No puedes decir que conoces la CDMX si nunca ___ un chile en nogada en temporada.",
+      "options": [
+        "comiste",
+        "has comido",
+        "comías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Si nunca“ prüft dein bisheriges Erfahrungskonto — dafür steht das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:095",
+      "prompt": "¿Alguna vez te ___ serenata con mariachi por tu cumpleaños?",
+      "options": [
+        "llevaron",
+        "han llevado",
+        "llevaban"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B1",
+      "explanation_de": "„Alguna vez“ öffnet den Erfahrungsraum bis heute — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:096",
+      "prompt": "Ya le ___ tres veces al casero lo de la gotera y nada que viene.",
+      "options": [
+        "dije",
+        "he dicho",
+        "decía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Ya tres veces“ und „nada que viene“: das Problem bleibt offen — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:097",
+      "prompt": "Todavía no les ___ a mis papás que dejé la carrera; ando juntando valor.",
+      "options": [
+        "conté",
+        "he contado",
+        "contaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Todavía no“ hält die Sache in der Schwebe bis jetzt — Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:098",
+      "prompt": "Este mes las tortillas ya ___ dos veces de precio, y apenas vamos a la mitad.",
+      "options": [
+        "subieron",
+        "han subido",
+        "subían"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Apenas vamos a la mitad“ zeigt den noch offenen Monat — Zwischenbilanz im Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:099",
+      "prompt": "En lo que va del semestre ya ___ tres materias; una más y pierdo la beca.",
+      "options": [
+        "reprobé",
+        "he reprobado",
+        "reprobaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„En lo que va del semestre“ spannt einen offenen Zeitraum auf — Bilanz darin im Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B1:100",
+      "prompt": "Aún no se ___ quién se queda con el puesto de la jefa; puro rumor.",
+      "options": [
+        "decidió",
+        "ha decidido",
+        "decidía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B1",
+      "explanation_de": "„Aún no“ lässt das Ergebnis weiter offen — genau dafür steht das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:001",
+      "prompt": "El sexenio pasado el gobierno por fin ___ la ampliación del metro, tras años de retrasos y promesas.",
+      "options": [
+        "inauguró",
+        "ha inaugurado",
+        "inauguraba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B2",
+      "explanation_de": "„El sexenio pasado“ steckt einen abgeschlossenen Zeitraum ab — für so ein punktuelles, beendetes Ereignis brauchst du das Indefinido."
+    },
+    {
+      "id": "pasado:B2:002",
+      "prompt": "¿Alguna vez ___ un temblor fuerte estando hasta arriba de un edificio?",
+      "options": [
+        "sentiste",
+        "has sentido",
+        "sentías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Alguna vez“ fragt nach einer Erfahrung im bis heute offenen Leben — dafür nimmst du das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:003",
+      "prompt": "En aquel entonces mi jefa ___ un puesto de quesadillas frente a la iglesia, y toda la colonia la conocía.",
+      "options": [
+        "atendió",
+        "ha atendido",
+        "atendía"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B2",
+      "explanation_de": "„En aquel entonces“ öffnet eine Lebensphase mit wiederkehrendem Alltag — solche Gewohnheiten malst du im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:004",
+      "prompt": "Llegué al tianguis, escogí los aguacates más maduros y le ___ el precio a la marchanta antes de pagar.",
+      "options": [
+        "regateé",
+        "he regateado",
+        "regateaba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B2",
+      "explanation_de": "„Llegué“, „escogí“ und dann das Feilschen: eine Erzählkette aus aufeinanderfolgenden Schritten bleibt komplett im Indefinido."
+    },
+    {
+      "id": "pasado:B2:005",
+      "prompt": "Últimamente no ___ nada bien; el ruido de la obra de junto no me deja.",
+      "options": [
+        "dormí",
+        "he dormido",
+        "dormía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Últimamente“ spannt einen Zeitraum auf, der bis jetzt reicht — der schlechte Schlaf dauert an, also Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:006",
+      "prompt": "Entramos al mercado de Jamaica de madrugada: ___ a flores frescas por todos lados y apenas se oían las camionetas.",
+      "options": [
+        "olió",
+        "ha olido",
+        "olía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B2",
+      "explanation_de": "Der Duft gehört zur Kulisse der Szene, nicht zur Handlung — Beschreibungen dieser Art stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:007",
+      "prompt": "Mientras el mariachi afinaba la guitarra en plena plaza, ___ a llover con ganas.",
+      "options": [
+        "empezó",
+        "ha empezado",
+        "empezaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B2",
+      "explanation_de": "„Afinaba“ liefert den laufenden Hintergrund — der Regen platzt als neues Ereignis herein und steht darum im Indefinido."
+    },
+    {
+      "id": "pasado:B2:008",
+      "prompt": "En todos mis años de chilango, jamás ___ un diciembre tan frío como éste.",
+      "options": [
+        "viví",
+        "he vivido",
+        "vivía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Como éste“ verankert den Vergleich im Jetzt — die Lebensbilanz mit „jamás“ läuft bis heute und steht im Perfecto."
+    },
+    {
+      "id": "pasado:B2:009",
+      "prompt": "Justo ___ la maleta para el vuelo a Cancún cuando avisaron que cerraban el aeropuerto.",
+      "options": [
+        "hice",
+        "he hecho",
+        "hacía"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B2",
+      "explanation_de": "„Justo“ betont: das Packen lief gerade noch, als die Nachricht kam — die unterbrochene Handlung steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:010",
+      "prompt": "Nadie me había dicho nada del despido; lo ___ hasta que abrí el correo el viernes.",
+      "options": [
+        "supe",
+        "he sabido",
+        "sabía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B2",
+      "explanation_de": "Gemeint ist der Moment des Erfahrens beim Öffnen der Mail — „supe“ bedeutet „ich erfuhr es“, „sabía“ wäre bloßes Wissen."
+    },
+    {
+      "id": "pasado:B2:011",
+      "prompt": "Desde que subieron la gasolina, los precios del tianguis no ___ de trepar.",
+      "options": [
+        "dejaron",
+        "han dejado",
+        "dejaban"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Desde que…“ öffnet einen Zeitraum, der noch andauert — das Steigen hält bis jetzt an, darum Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:012",
+      "prompt": "___ apenas las seis de la mañana cuando los cohetes de la fiesta patronal despertaron al pueblo entero.",
+      "options": [
+        "Fueron",
+        "Han sido",
+        "Eran"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B2",
+      "explanation_de": "Die Uhrzeit liefert nur die Kulisse für das Erwachen — Zeitangaben der Vergangenheit stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:013",
+      "prompt": "Después de veinte años de pagarla, mi abuela por fin ___ la casa de Coyoacán en 2019.",
+      "options": [
+        "vendió",
+        "ha vendido",
+        "vendía"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B2",
+      "explanation_de": "„En 2019“ setzt einen klaren Zeitpunkt, und der Verkauf war einmalig und fertig — also Indefinido."
+    },
+    {
+      "id": "pasado:B2:014",
+      "prompt": "Mi compadre presume mucho de gourmet, pero nunca en su vida ___ un mole de olla como el de mi tía.",
+      "options": [
+        "probó",
+        "ha probado",
+        "probaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Nunca en su vida“ bilanziert sein bis heute laufendes Leben — solche offenen Erfahrungsbilanzen nehmen das Perfecto."
+    },
+    {
+      "id": "pasado:B2:015",
+      "prompt": "Todos en la oficina ya ___ lo del recorte; nomás nadie se atrevía a decirlo en voz alta.",
+      "options": [
+        "supieron",
+        "han sabido",
+        "sabían"
+      ],
+      "correct": 2,
+      "ruleTag": "meaning_change_verb",
+      "level": "B2",
+      "explanation_de": "Gemeint ist ein andauernder Wissenszustand — „sabían“ heißt „sie wussten es längst“, „supieron“ wäre der Augenblick des Erfahrens."
+    },
+    {
+      "id": "pasado:B2:016",
+      "prompt": "Cuando por fin conseguimos mesa en la taquería, mi hermano ___ dos órdenes al pastor sin preguntarle a nadie.",
+      "options": [
+        "pidió",
+        "ha pedido",
+        "pedía"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B2",
+      "explanation_de": "Erst der Tisch, direkt danach die Bestellung: zwei Ereignisse in Folge, beide im Indefinido erzählt."
+    },
+    {
+      "id": "pasado:B2:017",
+      "prompt": "En lo que va del año, la empresa ___ a más de cien personas, y apenas vamos en agosto.",
+      "options": [
+        "contrató",
+        "ha contratado",
+        "contrataba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„En lo que va del año“ zählt innerhalb eines noch offenen Zeitraums — da greift das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:018",
+      "prompt": "Cada quincena, sin falta, mi papá nos ___ al cine y luego por unos churros al centro.",
+      "options": [
+        "llevó",
+        "ha llevado",
+        "llevaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B2",
+      "explanation_de": "„Cada quincena, sin falta“ markiert einen festen Rhythmus — regelmäßig Wiederholtes steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:019",
+      "prompt": "Estábamos platicando de la chamba en la azotea cuando ___ el señor del gas gritando como siempre.",
+      "options": [
+        "llegó",
+        "ha llegado",
+        "llegaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B2",
+      "explanation_de": "„Estábamos platicando“ malt die laufende Szene — das Eintreffen des Gaslieferanten unterbricht sie als punktuelles Ereignis."
+    },
+    {
+      "id": "pasado:B2:020",
+      "prompt": "Hasta la fecha, ningún alumno me ___ una excusa tan creativa como la tuya.",
+      "options": [
+        "dio",
+        "ha dado",
+        "daba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Hasta la fecha“ zieht die Bilanz bis zum heutigen Tag — offener Erfahrungszeitraum, also Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:021",
+      "prompt": "La casa de mis tíos en Mérida ___ un patio enorme con hamacas, de esos que ya no se hacen.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B2",
+      "explanation_de": "Hier beschreibst du, wie das Haus damals beschaffen war — für solche Zustandsbilder nimmst du das Imperfecto."
+    },
+    {
+      "id": "pasado:B2:022",
+      "prompt": "La maquiladora donde trabajaba mi papá ___ hace tres años, y nadie lo vio venir.",
+      "options": [
+        "quebró",
+        "ha quebrado",
+        "quebraba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B2",
+      "explanation_de": "„Hace tres años“ verankert die Pleite an einem konkreten Punkt der Vergangenheit — abgeschlossen, ohne Bezug zum Jetzt."
+    },
+    {
+      "id": "pasado:B2:023",
+      "prompt": "Aún no me ___ el depósito de la quincena, y ya debo la renta.",
+      "options": [
+        "cayó",
+        "ha caído",
+        "caía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Aún no“ hält das Ergebnis offen — die Zahlung steht weiterhin aus, deshalb Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:024",
+      "prompt": "Me ___ tan a gusto unos tacos de canasta en el parque cuando un perro salió de la nada y se llevó uno.",
+      "options": [
+        "comí",
+        "he comido",
+        "comía"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B2",
+      "explanation_de": "Das Essen war mittendrin, als der Hund zuschlug — die gerade laufende, unterbrochene Handlung steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:025",
+      "prompt": "Aquella noche en Garibaldi, los músicos terminaron la canción, la gente aplaudió y el trompetista ___ otra sin descansar.",
+      "options": [
+        "empezó",
+        "ha empezado",
+        "empezaba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B2",
+      "explanation_de": "„Terminaron“, „aplaudió“, und gleich das nächste Stück: die Kette einzelner Erzählschritte läuft im Indefinido weiter."
+    },
+    {
+      "id": "pasado:B2:026",
+      "prompt": "Tras meses de rumores, la banda ___ su separación en plena entrega de premios, y al día siguiente nadie hablaba de otra cosa.",
+      "options": [
+        "anunció",
+        "ha anunciado",
+        "anunciaba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B2",
+      "explanation_de": "Die Ankündigung passiert einmal, an einem konkreten Abend, und war damit erledigt — genau dafür steht das Indefinido."
+    },
+    {
+      "id": "pasado:B2:027",
+      "prompt": "Mira que he viajado por todo el país, pero nunca ___ una ciudad donde se coma tan bien como en Oaxaca.",
+      "options": [
+        "encontré",
+        "he encontrado",
+        "encontraba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Nunca“ zieht Bilanz über ein Leben, das noch weitergeht — diese offene Suche steht im Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:028",
+      "prompt": "Cuando la chamba estaba en el centro, me ___ el metro en Pino Suárez y me echaba dos capítulos de libro por trayecto.",
+      "options": [
+        "tomé",
+        "he tomado",
+        "tomaba"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B2",
+      "explanation_de": "Das war monatelang gelebter Alltag, kein einzelner Vorfall — solche Routinen erzählst du im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:029",
+      "prompt": "El velador oyó un ruido en la bodega, ___ la linterna sin prender la luz y bajó pasito a revisar.",
+      "options": [
+        "agarró",
+        "ha agarrado",
+        "agarraba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B2",
+      "explanation_de": "„Oyó“, dann das Greifen, dann „bajó“: jeder Schritt schiebt die Erzählung voran und bleibt im Indefinido."
+    },
+    {
+      "id": "pasado:B2:030",
+      "prompt": "Ando bien preocupado: mi hermano no me ___ los mensajes desde el lunes y su celular manda directo a buzón.",
+      "options": [
+        "contestó",
+        "ha contestado",
+        "contestaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Desde el lunes“ reicht bis in diesen Moment und das Schweigen hält an — darum Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:031",
+      "prompt": "El café al que íbamos ya cerró; ___ mesas cojas, un gato dormilón en la barra y el mejor pan de muerto del rumbo.",
+      "options": [
+        "hubo",
+        "ha habido",
+        "había"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B2",
+      "explanation_de": "Hier malst du aus, wie der Laden damals aussah — reine Kulisse ohne Handlung, also Imperfecto."
+    },
+    {
+      "id": "pasado:B2:032",
+      "prompt": "Llevábamos media hora esperando el camión bajo el solazo cuando por fin ___ uno con lugares libres.",
+      "options": [
+        "pasó",
+        "ha pasado",
+        "pasaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B2",
+      "explanation_de": "„Llevábamos esperando“ spannt den Hintergrund auf — der Bus platzt als einmaliges Ereignis hinein, im Indefinido."
+    },
+    {
+      "id": "pasado:B2:033",
+      "prompt": "¿Alguna vez te ___ hasta arriba del Ángel de la Independencia? Desde ahí la ciudad parece otra.",
+      "options": [
+        "subiste",
+        "has subido",
+        "subías"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "Gefragt wird nach einer Erfahrung irgendwann im bisherigen Leben — dieser offene Rückblick nimmt das Perfecto."
+    },
+    {
+      "id": "pasado:B2:034",
+      "prompt": "Me ___ una siesta de campeonato en la hamaca cuando el vecino arrancó la podadora del otro lado de la barda.",
+      "options": [
+        "eché",
+        "he echado",
+        "echaba"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B2",
+      "explanation_de": "Die Siesta lief noch, als der Lärm losging — die angefangene, gestörte Handlung steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:035",
+      "prompt": "En esa boda de Cuernavaca ___ al que hoy es mi marido: cruzamos dos palabras junto a la mesa de los postres y ya.",
+      "options": [
+        "conocí",
+        "he conocido",
+        "conocía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B2",
+      "explanation_de": "Gemeint ist das erste Kennenlernen an jenem Abend — „conocí“ heißt „ich lernte ihn kennen“, „conocía“ hieße, du kanntest ihn schon."
+    },
+    {
+      "id": "pasado:B2:036",
+      "prompt": "¿Ya viste la fachada? Los vecinos la ___ poco a poco este mes y nomás les falta el zaguán.",
+      "options": [
+        "pintaron",
+        "han pintado",
+        "pintaban"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "Das Streichen läuft noch — „nomás les falta el zaguán“ — ein offenes Ergebnis, darum Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:037",
+      "prompt": "___ un calor de locos aquella tarde en Mérida, la gente se abanicaba con lo que podía, y aun así la procesión salió puntualita.",
+      "options": [
+        "Hizo",
+        "Ha hecho",
+        "Hacía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B2",
+      "explanation_de": "Hitze und Fächer liefern nur den Rahmen für den Umzug — vergangenes Wetter als Kulisse steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:038",
+      "prompt": "Mi bisabuelo ___ del rancho a la capital durante la Revolución y ya nunca quiso regresar.",
+      "options": [
+        "emigró",
+        "ha emigrado",
+        "emigraba"
+      ],
+      "correct": 0,
+      "ruleTag": "completed_action",
+      "level": "B2",
+      "explanation_de": "Ein einmaliger Umzug mitten in einer abgeschlossenen Epoche — punktuell und fertig, also Indefinido."
+    },
+    {
+      "id": "pasado:B2:039",
+      "prompt": "Mi abuela jamás ___ en avión, y a sus noventa años dice que ya para qué.",
+      "options": [
+        "voló",
+        "ha volado",
+        "volaba"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "Sie lebt noch und ihr „jamás“ gilt bis heute — offene Lebensbilanz, also Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:040",
+      "prompt": "Mis papás cuentan que de recién casados no les alcanzaba para mucho, así que los domingos ___ con tamales y atole del puesto de la esquina.",
+      "options": [
+        "festejaron",
+        "han festejado",
+        "festejaban"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B2",
+      "explanation_de": "„Los domingos“ in jener Lebensphase heißt: das kam immer wieder vor — Wiederholtes steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:041",
+      "prompt": "Apenas cayó el aguinaldo, mi esposa ___ los boletos a Oaxaca, apartó el hotel y avisó a toda la familia.",
+      "options": [
+        "compró",
+        "ha comprado",
+        "compraba"
+      ],
+      "correct": 0,
+      "ruleTag": "sequence_of_events",
+      "level": "B2",
+      "explanation_de": "Kaufen, reservieren, Bescheid geben: eine Kette einzelner Schritte, alle im Indefinido erzählt."
+    },
+    {
+      "id": "pasado:B2:042",
+      "prompt": "Hasta ahorita nadie del banco me ___ lo del cobro doble; puro «estamos revisando su caso».",
+      "options": [
+        "aclaró",
+        "ha aclarado",
+        "aclaraba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Hasta ahorita“ schließt den jetzigen Moment ein — die Erklärung steht weiter aus, also Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:043",
+      "prompt": "Nos abrió la abuela en el patio: ___ un rebozo morado y toda la casa olía a leña y a café de olla.",
+      "options": [
+        "llevó",
+        "ha llevado",
+        "llevaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B2",
+      "explanation_de": "So sah sie in dem Moment aus — Personenbeschreibungen innerhalb einer Szene stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:044",
+      "prompt": "La junta iba de lo más aburrida hasta que el director ___ con la noticia del cierre de la planta de Toluca.",
+      "options": [
+        "salió",
+        "ha salido",
+        "salía"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B2",
+      "explanation_de": "„Iba de lo más aburrida“ beschreibt den laufenden Zustand — die Neuigkeit schlägt als Einzelereignis ein, im Indefinido."
+    },
+    {
+      "id": "pasado:B2:045",
+      "prompt": "Llevo quince años en el taxi y te juro que ___ de todo: políticos, luchadores y hasta una novia fugitiva.",
+      "options": [
+        "vi",
+        "he visto",
+        "veía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Llevo quince años“ heißt: der Zeitraum läuft weiter — Erlebtes bis heute sammelst du im Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:046",
+      "prompt": "Mis tíos le ___ un segundo piso a la casa cuando el banco les congeló el crédito sin previo aviso.",
+      "options": [
+        "construyeron",
+        "han construido",
+        "construían"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B2",
+      "explanation_de": "Der Anbau war mitten im Gange, als der Kredit platzte — die unterbrochene Handlung bleibt im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:047",
+      "prompt": "Le rogamos que se quedara al menos a cenar, pero el ingeniero no ___ y se fue derechito al aeropuerto.",
+      "options": [
+        "quiso",
+        "ha querido",
+        "quería"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B2",
+      "explanation_de": "„No quiso“ bedeutet: er weigerte sich, endgültig — „no quería“ wäre nur fehlende Lust ohne Ergebnis."
+    },
+    {
+      "id": "pasado:B2:048",
+      "prompt": "Con tanta lluvia el río ___ un montón estas últimas semanas; a ver si no se sale como en 2021.",
+      "options": [
+        "creció",
+        "ha crecido",
+        "crecía"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Estas últimas semanas“ reichen bis heute und der Pegel steigt weiter — darum Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:049",
+      "prompt": "___ casi medianoche cuando el camotero pasó chiflando por la calle y despertó al bebé.",
+      "options": [
+        "Fue",
+        "Ha sido",
+        "Era"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B2",
+      "explanation_de": "„Casi medianoche“ beschreibt bloß den Hintergrund der Szene — für Uhrzeiten in der Vergangenheit nimmst du das Imperfecto."
+    },
+    {
+      "id": "pasado:B2:050",
+      "prompt": "Mientras todos discutían el presupuesto a gritos, la contadora ___ la mano y pidió la palabra con una calma que asustaba.",
+      "options": [
+        "levantó",
+        "ha levantado",
+        "levantaba"
+      ],
+      "correct": 0,
+      "ruleTag": "interrupting_action",
+      "level": "B2",
+      "explanation_de": "„Discutían“ liefert den Lärm im Hintergrund — das Handheben schneidet als punktuelle Handlung hinein, im Indefinido."
+    },
+    {
+      "id": "pasado:B2:051",
+      "prompt": "De todos los chiles en nogada que ___ en mi vida, ninguno le llega al que hacía mi suegra en Puebla.",
+      "options": [
+        "comí",
+        "he comido",
+        "comía"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„En mi vida“ plus ein Urteil im Präsens: die Bilanz bleibt offen und wächst noch — also Perfecto."
+    },
+    {
+      "id": "pasado:B2:052",
+      "prompt": "Mi papá ___ el puesto a las seis de la mañana, con frío o sin él, y nosotros lo alcanzábamos saliendo de la escuela.",
+      "options": [
+        "abrió",
+        "ha abierto",
+        "abría"
+      ],
+      "correct": 2,
+      "ruleTag": "habitual_past",
+      "level": "B2",
+      "explanation_de": "Das Aufmachen um sechs war tägliche Gewohnheit, kein Einzelfall — dafür steht das Imperfecto."
+    },
+    {
+      "id": "pasado:B2:053",
+      "prompt": "Después de tres intentos y un pasador doblado, por fin ___ abrir la cerradura oxidada del zaguán.",
+      "options": [
+        "pude",
+        "he podido",
+        "podía"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_verb",
+      "level": "B2",
+      "explanation_de": "„Por fin“ markiert den geglückten Versuch — „pude“ heißt „ich schaffte es“, „podía“ wäre nur die bloße Fähigkeit."
+    },
+    {
+      "id": "pasado:B2:054",
+      "prompt": "No ___ ni un pendiente de la lista, y la junta con los clientes es en una hora.",
+      "options": [
+        "terminé",
+        "he terminado",
+        "terminaba"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "Die Liste steht noch offen und die Uhr tickt im Jetzt — dieses offene Resultat verlangt das Perfecto."
+    },
+    {
+      "id": "pasado:B2:055",
+      "prompt": "Cuando por fin se abrió el telón, el teatro ___ lleno hasta la azotea y en el aire se sentían los nervios del elenco.",
+      "options": [
+        "estuvo",
+        "ha estado",
+        "estaba"
+      ],
+      "correct": 2,
+      "ruleTag": "background_description",
+      "level": "B2",
+      "explanation_de": "Volles Haus und Nervosität sind das Bühnenbild jener Nacht — solche Zustandsschilderungen stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:056",
+      "prompt": "Todavía no ___ el Museo de Antropología completo: cada visita me quedo atorado en la sala mexica.",
+      "options": [
+        "recorrí",
+        "he recorrido",
+        "recorría"
+      ],
+      "correct": 1,
+      "ruleTag": "life_experience",
+      "level": "B2",
+      "explanation_de": "„Todavía no“ lässt die Erfahrung offen — sie kann noch kommen, darum steht das Pretérito Perfecto."
+    },
+    {
+      "id": "pasado:B2:057",
+      "prompt": "El pan apenas ___ en el horno cuando se fue la luz en toda la cuadra, y adiós hornada.",
+      "options": [
+        "subió",
+        "ha subido",
+        "subía"
+      ],
+      "correct": 2,
+      "ruleTag": "ongoing_interrupted",
+      "level": "B2",
+      "explanation_de": "„Apenas“ plus Stromausfall mittendrin: der Teig war noch dabei aufzugehen — das steht im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:058",
+      "prompt": "Desde el temblor, varias familias de la vecindad no ___ a sus departamentos y siguen con parientes.",
+      "options": [
+        "volvieron",
+        "han vuelto",
+        "volvían"
+      ],
+      "correct": 1,
+      "ruleTag": "still_open_result",
+      "level": "B2",
+      "explanation_de": "„Siguen con parientes“ zeigt: die Lage gilt bis heute — das noch offene Ergebnis nimmt das Perfecto."
+    },
+    {
+      "id": "pasado:B2:059",
+      "prompt": "Mi hija apenas ___ tres años cuando se aprendió los colores en náhuatl con su abuela.",
+      "options": [
+        "tuvo",
+        "ha tenido",
+        "tenía"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B2",
+      "explanation_de": "Das Alter beschreibt nur, in welchem Lebensmoment das passierte — Altersangaben der Vergangenheit stehen im Imperfecto."
+    },
+    {
+      "id": "pasado:B2:060",
+      "prompt": "En diciembre ___ tan fuerte en la sierra que amanecíamos con hielo en los vidrios del coche.",
+      "options": [
+        "heló",
+        "ha helado",
+        "helaba"
+      ],
+      "correct": 2,
+      "ruleTag": "age_time_weather",
+      "level": "B2",
+      "explanation_de": "„Amanecíamos“ verrät den wiederkehrenden Rahmen: der Frost gehört zur Winterkulisse und steht im Imperfecto."
+    }
+  ],
+  "generatedAt": "2026-08-23"
 }

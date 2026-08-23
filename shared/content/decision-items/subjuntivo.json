@@ -3,6 +3,1446 @@
   "source": "agent-authored, validated by shared/content/decision-items/bank.check.ts",
   "items": [
     {
+      "id": "subjuntivo:B1:001",
+      "prompt": "Mi mamá quiere que ___ el cuarto antes de la comida.",
+      "options": [
+        "recojo",
+        "recoja"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Quiere que“ richtet den Willen der Mutter auf eine andere Person — darum recoja."
+    },
+    {
+      "id": "subjuntivo:B1:002",
+      "prompt": "Espero que te ___ bien en tu nueva chamba.",
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Espero que“ drückt eine Hoffnung aus, kein Wissen — deshalb vaya."
+    },
+    {
+      "id": "subjuntivo:B1:003",
+      "prompt": "Queremos que nuestros hijos ___ español y náhuatl.",
+      "options": [
+        "aprenden",
+        "aprendan"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Queremos que“ zielt auf den Willen über andere Personen — also aprendan."
+    },
+    {
+      "id": "subjuntivo:B1:004",
+      "prompt": "Me alegra que ___ venir a la posada este año.",
+      "options": [
+        "puedes",
+        "puedas"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Me alegra que“ bewertet das Geschehen gefühlsmäßig — darum puedas."
+    },
+    {
+      "id": "subjuntivo:B1:005",
+      "prompt": "Me da tristeza que mi abuela ___ tan lejos de la colonia.",
+      "options": [
+        "vive",
+        "viva"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Me da tristeza que“ drückt ein Gefühl über den Sachverhalt aus — deshalb viva."
+    },
+    {
+      "id": "subjuntivo:B1:006",
+      "prompt": "A Karla le molesta que su vecino ___ música hasta las tres.",
+      "options": [
+        "pone",
+        "ponga"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Le molesta que“ zeigt Ärger über das Verhalten — nach solchen Gefühlsausdrücken folgt ponga."
+    },
+    {
+      "id": "subjuntivo:B1:007",
+      "prompt": "Es importante que ___ agua antes de correr en Chapultepec.",
+      "options": [
+        "tomas",
+        "tomes"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es importante que“ wertet, statt festzustellen — darum tomes."
+    },
+    {
+      "id": "subjuntivo:B1:008",
+      "prompt": "Es mejor que ___ temprano para alcanzar lugar en el tianguis.",
+      "options": [
+        "salimos",
+        "salgamos"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es mejor que“ gibt eine Empfehlung, keine Tatsache — deshalb salgamos."
+    },
+    {
+      "id": "subjuntivo:B1:009",
+      "prompt": "Te recomiendo que ___ los tacos de canasta de la esquina.",
+      "options": [
+        "pruebas",
+        "pruebes"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Te recomiendo que“ formuliert einen Rat an dich — darauf folgt pruebes."
+    },
+    {
+      "id": "subjuntivo:B1:010",
+      "prompt": "El doctor me pide que ___ el refresco por un tiempo.",
+      "options": [
+        "dejo",
+        "deje"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Me pide que“ trägt eine Bitte an mich heran — deshalb deje."
+    },
+    {
+      "id": "subjuntivo:B1:011",
+      "prompt": "No creo que el camión ___ a tiempo con esta lluvia.",
+      "options": [
+        "llega",
+        "llegue"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„No creo que“ verneint die Gewissheit — darum llegue."
+    },
+    {
+      "id": "subjuntivo:B1:012",
+      "prompt": "Dudo que en esa fonda ___ mole los lunes.",
+      "options": [
+        "hay",
+        "haya"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„Dudo que“ stellt die Aussage infrage — deshalb haya."
+    },
+    {
+      "id": "subjuntivo:B1:013",
+      "prompt": "No es cierto que los chilangos ___ groseros.",
+      "options": [
+        "son",
+        "sean"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„No es cierto que“ bestreitet den Inhalt des Satzes — darauf folgt sean."
+    },
+    {
+      "id": "subjuntivo:B1:014",
+      "prompt": "Ojalá que no ___ en la marcha del sábado.",
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá macht aus dem Satz einen reinen Wunsch — darum llueva, nie llueve."
+    },
+    {
+      "id": "subjuntivo:B1:015",
+      "prompt": "Ojalá ___ boletos todavía para el concierto.",
+      "options": [
+        "quedan",
+        "queden"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá verwandelt die Aussage in Hoffnung — deshalb queden."
+    },
+    {
+      "id": "subjuntivo:B1:016",
+      "prompt": "Creo que Diana ___ en una startup de Monterrey.",
+      "options": [
+        "trabaja",
+        "trabaje"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Creo que“ ohne Verneinung meldet Überzeugung — also der Indikativ trabaja."
+    },
+    {
+      "id": "subjuntivo:B1:017",
+      "prompt": "Es verdad que en la CDMX ___ mucho en verano.",
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es verdad que“ stellt eine Tatsache fest — darum llueve."
+    },
+    {
+      "id": "subjuntivo:B1:018",
+      "prompt": "Estoy seguro de que Luis ___ a la carne asada.",
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Estoy seguro de que“ lässt keinen Zweifel — deshalb viene."
+    },
+    {
+      "id": "subjuntivo:B1:019",
+      "prompt": "Está claro que el equipo ___ refuerzos para el torneo.",
+      "options": [
+        "necesita",
+        "necesite"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Está claro que“ präsentiert den Inhalt als gesichert — also necesita."
+    },
+    {
+      "id": "subjuntivo:B1:020",
+      "prompt": "Pienso que esa película ___ mucho la pena.",
+      "options": [
+        "vale",
+        "valga"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Pienso que“ bejaht eine Meinung mit Gewissheit — darum vale."
+    },
+    {
+      "id": "subjuntivo:B1:021",
+      "prompt": "Es obvio que ___ cansado después del turno de noche.",
+      "options": [
+        "estás",
+        "estés"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es obvio que“ meldet etwas Sichtbares — deshalb estás."
+    },
+    {
+      "id": "subjuntivo:B1:022",
+      "prompt": "Me parece que el mercado ___ los domingos también.",
+      "options": [
+        "abre",
+        "abra"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Me parece que“ ohne Verneinung äußert eine Einschätzung als Fakt — darum abre."
+    },
+    {
+      "id": "subjuntivo:B1:023",
+      "prompt": "Seguro que tu equipo ___ el clásico este fin.",
+      "options": [
+        "gana",
+        "gane"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Seguro que“ verkündet Zuversicht als Tatsache — also gana."
+    },
+    {
+      "id": "subjuntivo:B1:024",
+      "prompt": "Mi jefa dice que el informe ya ___ listo.",
+      "options": [
+        "está",
+        "esté"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dice que“ gibt eine Aussage weiter — berichtete Fakten stehen im Indikativ: está."
+    },
+    {
+      "id": "subjuntivo:B1:025",
+      "prompt": "Sé que ___ mucho trabajo esta semana, pero échale ganas.",
+      "options": [
+        "tienes",
+        "tengas"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Sé que“ meldet sicheres Wissen — darum tienes."
+    },
+    {
+      "id": "subjuntivo:B1:026",
+      "prompt": "Dicen que en Oaxaca se ___ el mejor mezcal.",
+      "options": [
+        "hace",
+        "haga"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dicen que“ überliefert eine bekannte Tatsache — deshalb hace."
+    },
+    {
+      "id": "subjuntivo:B1:027",
+      "prompt": "Me contó que su hermano ___ en Guadalajara desde enero.",
+      "options": [
+        "vive",
+        "viva"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me contó que“ berichtet einen Sachverhalt — der Inhalt steht im Indikativ: vive."
+    },
+    {
+      "id": "subjuntivo:B1:028",
+      "prompt": "El noticiero informa que mañana ___ el precio de la gasolina.",
+      "options": [
+        "sube",
+        "suba"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Informa que“ übermittelt eine Nachricht als Fakt — also sube."
+    },
+    {
+      "id": "subjuntivo:B1:029",
+      "prompt": "Sabemos que la señora del puesto ___ las mejores quesadillas.",
+      "options": [
+        "prepara",
+        "prepare"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Sabemos que“ nennt gesichertes Wissen — deshalb prepara."
+    },
+    {
+      "id": "subjuntivo:B1:030",
+      "prompt": "Mi compa me dijo que la fiesta ___ en casa de Toño.",
+      "options": [
+        "es",
+        "sea"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me dijo que“ leitet eine berichtete Tatsache ein — darum es."
+    },
+    {
+      "id": "subjuntivo:B1:031",
+      "prompt": "Mi papá quiere que ___ la carrera de medicina.",
+      "options": [
+        "sigo",
+        "siga"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Quiere que“ überträgt einen fremden Wunsch auf mich — darum siga."
+    },
+    {
+      "id": "subjuntivo:B1:032",
+      "prompt": "Esperamos que el clima ___ para la boda en la playa.",
+      "options": [
+        "mejora",
+        "mejore"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Esperamos que“ richtet sich auf Erhofftes, nicht auf Fakten — deshalb mejore."
+    },
+    {
+      "id": "subjuntivo:B1:033",
+      "prompt": "Ana quiere que le ___ un recuerdo del tianguis de Coyoacán.",
+      "options": [
+        "traes",
+        "traigas"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Quiere que“ verlangt etwas von dir — darum traigas."
+    },
+    {
+      "id": "subjuntivo:B1:034",
+      "prompt": "Me encanta que en tu casa siempre ___ pozole en septiembre.",
+      "options": [
+        "hay",
+        "haya"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Me encanta que“ feiert den Umstand emotional — deshalb haya."
+    },
+    {
+      "id": "subjuntivo:B1:035",
+      "prompt": "Nos preocupa que el niño no ___ bien por las noches.",
+      "options": [
+        "duerme",
+        "duerma"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Nos preocupa que“ äußert eine Sorge — darauf folgt duerma."
+    },
+    {
+      "id": "subjuntivo:B1:036",
+      "prompt": "Qué pena que te ___ tan pronto de la reunión.",
+      "options": [
+        "vas",
+        "vayas"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Qué pena que“ bedauert das Geschehen — darum vayas."
+    },
+    {
+      "id": "subjuntivo:B1:037",
+      "prompt": "Es necesario que ___ tu credencial para votar.",
+      "options": [
+        "llevas",
+        "lleves"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es necesario que“ formuliert eine Anforderung an dich — deshalb lleves."
+    },
+    {
+      "id": "subjuntivo:B1:038",
+      "prompt": "No es bueno que los niños ___ tanto tiempo frente a la pantalla.",
+      "options": [
+        "pasan",
+        "pasen"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„No es bueno que“ bewertet das Verhalten, statt es zu melden — darum pasen."
+    },
+    {
+      "id": "subjuntivo:B1:039",
+      "prompt": "Te aconsejo que ___ el mole con tortillas hechas a mano.",
+      "options": [
+        "pides",
+        "pidas"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Te aconsejo que“ gibt dir einen Tipp — darauf folgt pidas."
+    },
+    {
+      "id": "subjuntivo:B1:040",
+      "prompt": "La maestra nos sugiere que ___ un poquito cada día.",
+      "options": [
+        "repasamos",
+        "repasemos"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Nos sugiere que“ schlägt etwas vor, statt es festzustellen — deshalb repasemos."
+    },
+    {
+      "id": "subjuntivo:B1:041",
+      "prompt": "No pienso que esa tienda ___ en día festivo.",
+      "options": [
+        "abre",
+        "abra"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„No pienso que“ zieht die Aussage in Zweifel — darum abra."
+    },
+    {
+      "id": "subjuntivo:B1:042",
+      "prompt": "Es dudoso que el vuelo ___ a tiempo con esta neblina.",
+      "options": [
+        "sale",
+        "salga"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„Es dudoso que“ markiert Unsicherheit — deshalb salga."
+    },
+    {
+      "id": "subjuntivo:B1:043",
+      "prompt": "Niegan que el restaurante ___ ingredientes congelados.",
+      "options": [
+        "usa",
+        "use"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„Niegan que“ weist die Behauptung zurück — darum use."
+    },
+    {
+      "id": "subjuntivo:B1:044",
+      "prompt": "Ojalá mi equipo ___ a la final este año.",
+      "options": [
+        "llega",
+        "llegue"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá äußert einen Herzenswunsch — darum llegue."
+    },
+    {
+      "id": "subjuntivo:B1:045",
+      "prompt": "Ojalá que nos ___ la quincena antes del viernes.",
+      "options": [
+        "cae",
+        "caiga"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá hofft auf etwas Kommendes — deshalb caiga."
+    },
+    {
+      "id": "subjuntivo:B1:046",
+      "prompt": "Creo que este año sí ___ a Oaxaca en diciembre.",
+      "options": [
+        "vamos",
+        "vayamos"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Creo que“ bejaht den Plan mit Zuversicht — also vamos."
+    },
+    {
+      "id": "subjuntivo:B1:047",
+      "prompt": "Es cierto que la gasolina ___ más cara que el año pasado.",
+      "options": [
+        "está",
+        "esté"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es cierto que“ bestätigt einen Fakt — darum está."
+    },
+    {
+      "id": "subjuntivo:B1:048",
+      "prompt": "Estoy segura de que mi hija ___ el examen de admisión.",
+      "options": [
+        "pasa",
+        "pase"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Estoy segura de que“ drückt feste Überzeugung aus — deshalb pasa."
+    },
+    {
+      "id": "subjuntivo:B1:049",
+      "prompt": "Es evidente que a Toño le ___ mucho esa muchacha.",
+      "options": [
+        "gusta",
+        "guste"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es evidente que“ zeigt auf etwas Offensichtliches — also gusta."
+    },
+    {
+      "id": "subjuntivo:B1:050",
+      "prompt": "No hay duda de que el chef ___ muy bien su oficio.",
+      "options": [
+        "conoce",
+        "conozca"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„No hay duda de que“ räumt jeden Zweifel aus — darum der Indikativ conoce."
+    },
+    {
+      "id": "subjuntivo:B1:051",
+      "prompt": "Me consta que Paco ___ temprano todos los días a la chamba.",
+      "options": [
+        "llega",
+        "llegue"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Me consta que“ beruft sich auf eigenes Wissen — deshalb llega."
+    },
+    {
+      "id": "subjuntivo:B1:052",
+      "prompt": "Está comprobado que el nopal ___ muchas vitaminas.",
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Está comprobado que“ nennt ein gesichertes Ergebnis — also tiene."
+    },
+    {
+      "id": "subjuntivo:B1:053",
+      "prompt": "El profe dice que el examen ___ veinte preguntas.",
+      "options": [
+        "trae",
+        "traiga"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dice que“ übermittelt eine Information — darum trae."
+    },
+    {
+      "id": "subjuntivo:B1:054",
+      "prompt": "Sé que a tu mamá le ___ las flores de cempasúchil.",
+      "options": [
+        "encantan",
+        "encanten"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Sé que“ stützt sich auf Bekanntes — deshalb encantan."
+    },
+    {
+      "id": "subjuntivo:B1:055",
+      "prompt": "Cuentan que ahí ___ un fantasma por las noches.",
+      "options": [
+        "aparece",
+        "aparezca"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Cuentan que“ gibt eine überlieferte Geschichte als Bericht wieder — also aparece."
+    },
+    {
+      "id": "subjuntivo:B1:056",
+      "prompt": "La app dice que el camión ___ en cinco minutos.",
+      "options": [
+        "pasa",
+        "pase"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dice que“ meldet einen Fakt aus der App — darum pasa."
+    },
+    {
+      "id": "subjuntivo:B1:057",
+      "prompt": "Mi vecina me platicó que ___ un nuevo café en la colonia.",
+      "options": [
+        "abren",
+        "abran"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me platicó que“ leitet Berichtetes ein — deshalb abren."
+    },
+    {
+      "id": "subjuntivo:B1:058",
+      "prompt": "El periódico reporta que la inflación ___ este mes.",
+      "options": [
+        "baja",
+        "baje"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Reporta que“ übermittelt eine Meldung — also baja."
+    },
+    {
+      "id": "subjuntivo:B1:059",
+      "prompt": "Todos saben que en Puebla se ___ muy sabroso.",
+      "options": [
+        "come",
+        "coma"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Todos saben que“ verweist auf Allgemeinwissen — darum come."
+    },
+    {
+      "id": "subjuntivo:B1:060",
+      "prompt": "Me escribió que su vuelo ___ a las diez de la noche.",
+      "options": [
+        "aterriza",
+        "aterrice"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me escribió que“ gibt seine Nachricht weiter — deshalb aterriza."
+    },
+    {
+      "id": "subjuntivo:B1:061",
+      "prompt": "El entrenador espera que ___ media hora antes del partido.",
+      "options": [
+        "llegamos",
+        "lleguemos"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Espera que“ formuliert eine Erwartung an andere — darum lleguemos."
+    },
+    {
+      "id": "subjuntivo:B1:062",
+      "prompt": "Quiero que me ___ la verdad, sin rodeos.",
+      "options": [
+        "dices",
+        "digas"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Quiero que“ setzt meinen Willen über dein Handeln — deshalb digas."
+    },
+    {
+      "id": "subjuntivo:B1:063",
+      "prompt": "Me da gusto que ustedes ___ tan contentos en su nueva casa.",
+      "options": [
+        "están",
+        "estén"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Me da gusto que“ reagiert emotional auf die Lage — darum estén."
+    },
+    {
+      "id": "subjuntivo:B1:064",
+      "prompt": "A mi papá le enoja que la gente ___ basura en la calle.",
+      "options": [
+        "tira",
+        "tire"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Le enoja que“ drückt Wut über das Verhalten aus — deshalb tire."
+    },
+    {
+      "id": "subjuntivo:B1:065",
+      "prompt": "Es raro que el metro ___ vacío a esta hora.",
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es raro que“ stuft das Ereignis als ungewöhnlich ein — darum vaya."
+    },
+    {
+      "id": "subjuntivo:B1:066",
+      "prompt": "Es posible que ___ paro de transporte mañana.",
+      "options": [
+        "hay",
+        "haya"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es posible que“ hält alles in der Schwebe — deshalb haya."
+    },
+    {
+      "id": "subjuntivo:B1:067",
+      "prompt": "No es justo que siempre ___ yo los trastes.",
+      "options": [
+        "lavo",
+        "lave"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„No es justo que“ wertet die Situation, statt sie nur zu melden — darum lave."
+    },
+    {
+      "id": "subjuntivo:B1:068",
+      "prompt": "El dentista recomienda que ___ el cepillo cada tres meses.",
+      "options": [
+        "cambias",
+        "cambies"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Recomienda que“ spricht eine Empfehlung aus — deshalb cambies."
+    },
+    {
+      "id": "subjuntivo:B1:069",
+      "prompt": "Les pido que no ___ ruido después de las once.",
+      "options": [
+        "hacen",
+        "hagan"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Les pido que“ äußert eine Bitte — darum hagan."
+    },
+    {
+      "id": "subjuntivo:B1:070",
+      "prompt": "Mi abuela insiste en que me ___ un suéter, aunque haga calor.",
+      "options": [
+        "pongo",
+        "ponga"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Insiste en que“ drückt beharrliches Drängen aus — deshalb ponga."
+    },
+    {
+      "id": "subjuntivo:B1:071",
+      "prompt": "No estoy segura de que esta talla me ___ bien.",
+      "options": [
+        "queda",
+        "quede"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„No estoy segura de que“ signalisiert Unsicherheit — darum quede."
+    },
+    {
+      "id": "subjuntivo:B1:072",
+      "prompt": "No es verdad que en México siempre ___ calor.",
+      "options": [
+        "hace",
+        "haga"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„No es verdad que“ verneint die Behauptung — deshalb haga."
+    },
+    {
+      "id": "subjuntivo:B1:073",
+      "prompt": "Ojalá que mi jefe me ___ el aumento este mes.",
+      "options": [
+        "da",
+        "dé"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá legt die Hoffnung ins Ungewisse — darum dé."
+    },
+    {
+      "id": "subjuntivo:B1:074",
+      "prompt": "Ojalá ___ lugar cerca del Zócalo.",
+      "options": [
+        "encontramos",
+        "encontremos"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá richtet den Blick wünschend nach vorn — deshalb encontremos."
+    },
+    {
+      "id": "subjuntivo:B1:075",
+      "prompt": "Ojalá que todo ___ bien en tu entrevista de mañana.",
+      "options": [
+        "sale",
+        "salga"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá schickt gute Wünsche voraus — darum salga."
+    },
+    {
+      "id": "subjuntivo:B1:076",
+      "prompt": "Creo que el pozole de tu tía ___ mejor que el del restaurante.",
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Creo que“ äußert eine klare Überzeugung — also sabe."
+    },
+    {
+      "id": "subjuntivo:B1:077",
+      "prompt": "Es verdad que los tamales de la esquina ___ baratos.",
+      "options": [
+        "son",
+        "sean"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es verdad que“ meldet eine Tatsache — darum son."
+    },
+    {
+      "id": "subjuntivo:B1:078",
+      "prompt": "Estoy convencido de que este proyecto ___ éxito.",
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Estoy convencido de que“ trägt volle Gewissheit — deshalb tiene."
+    },
+    {
+      "id": "subjuntivo:B1:079",
+      "prompt": "Es un hecho que la ciudad ___ cada año más grande.",
+      "options": [
+        "crece",
+        "crezca"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es un hecho que“ nennt einen belegten Fakt — also crece."
+    },
+    {
+      "id": "subjuntivo:B1:080",
+      "prompt": "Me parece que ustedes ya se ___ de antes.",
+      "options": [
+        "conocen",
+        "conozcan"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Me parece que“ meldet einen Eindruck als Fakt, solange kein no davorsteht — darum conocen."
+    },
+    {
+      "id": "subjuntivo:B1:081",
+      "prompt": "Está claro que a los niños les ___ las piñatas.",
+      "options": [
+        "encantan",
+        "encanten"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Está claro que“ zeigt Offensichtliches an — deshalb encantan."
+    },
+    {
+      "id": "subjuntivo:B1:082",
+      "prompt": "No cabe duda de que ese mariachi ___ chingón.",
+      "options": [
+        "toca",
+        "toque"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„No cabe duda de que“ schließt jeden Zweifel aus — darum toca."
+    },
+    {
+      "id": "subjuntivo:B1:083",
+      "prompt": "Es obvio que este celular ya no ___ para nada.",
+      "options": [
+        "sirve",
+        "sirva"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es obvio que“ stellt das sichtbare Problem fest — deshalb sirve."
+    },
+    {
+      "id": "subjuntivo:B1:084",
+      "prompt": "Mi hermano dice que el nuevo gimnasio ___ hasta las once.",
+      "options": [
+        "cierra",
+        "cierre"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dice que“ gibt seine Auskunft weiter — darum cierra."
+    },
+    {
+      "id": "subjuntivo:B1:085",
+      "prompt": "Sé que ustedes ___ mucho esfuerzo en este proyecto.",
+      "options": [
+        "ponen",
+        "pongan"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Sé que“ benennt gesichertes Wissen — deshalb ponen."
+    },
+    {
+      "id": "subjuntivo:B1:086",
+      "prompt": "La guía explica que el castillo ___ del siglo dieciocho.",
+      "options": [
+        "data",
+        "date"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Explica que“ vermittelt eine historische Tatsache — also data."
+    },
+    {
+      "id": "subjuntivo:B1:087",
+      "prompt": "Me dijeron que en ese puesto ___ tacos de birria los sábados.",
+      "options": [
+        "venden",
+        "vendan"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me dijeron que“ leitet einen Bericht ein — darum venden."
+    },
+    {
+      "id": "subjuntivo:B1:088",
+      "prompt": "El pronóstico anuncia que el fin de semana ___ sol.",
+      "options": [
+        "hace",
+        "haga"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Anuncia que“ meldet die Vorhersage als Information — deshalb hace."
+    },
+    {
+      "id": "subjuntivo:B1:089",
+      "prompt": "Mi comadre cuenta que su hijo ya ___ solo al kínder.",
+      "options": [
+        "camina",
+        "camine"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Cuenta que“ berichtet aus dem Alltag — darum camina."
+    },
+    {
+      "id": "subjuntivo:B1:090",
+      "prompt": "Leí que este mercado ___ cien años este mes.",
+      "options": [
+        "cumple",
+        "cumpla"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Leí que“ zitiert eine gelesene Angabe — deshalb cumple."
+    },
+    {
+      "id": "subjuntivo:B1:091",
+      "prompt": "Mis papás esperan que ___ la casa más seguido.",
+      "options": [
+        "visitamos",
+        "visitemos"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Esperan que“ verlangt nichts Sicheres, nur Gewünschtes — darum visitemos."
+    },
+    {
+      "id": "subjuntivo:B1:092",
+      "prompt": "El sindicato quiere que la empresa ___ los sueldos.",
+      "options": [
+        "sube",
+        "suba"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B1",
+      "explanation_de": "„Quiere que“ richtet eine Forderung an die Firma — deshalb suba."
+    },
+    {
+      "id": "subjuntivo:B1:093",
+      "prompt": "Me sorprende que todavía no ___ los resultados.",
+      "options": [
+        "salen",
+        "salgan"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Me sorprende que“ reagiert mit Erstaunen auf den Umstand — darum salgan."
+    },
+    {
+      "id": "subjuntivo:B1:094",
+      "prompt": "Estamos orgullosos de que nuestra hija ___ sola su negocio.",
+      "options": [
+        "maneja",
+        "maneje"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B1",
+      "explanation_de": "„Estamos orgullosos de que“ bewertet das gefühlsmäßig — deshalb maneje."
+    },
+    {
+      "id": "subjuntivo:B1:095",
+      "prompt": "Es increíble que ese puesto ___ abierto hasta la madrugada.",
+      "options": [
+        "sigue",
+        "siga"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es increíble que“ wertet das Ganze als erstaunlich — darum siga."
+    },
+    {
+      "id": "subjuntivo:B1:096",
+      "prompt": "Más vale que ___ efectivo, ahí no aceptan tarjeta.",
+      "options": [
+        "traes",
+        "traigas"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Más vale que“ gibt einen dringenden unpersönlichen Hinweis — deshalb traigas."
+    },
+    {
+      "id": "subjuntivo:B1:097",
+      "prompt": "Es urgente que alguien ___ la fuga de agua.",
+      "options": [
+        "arregla",
+        "arregle"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B1",
+      "explanation_de": "„Es urgente que“ fordert Handeln ein, statt es zu beschreiben — darum arregle."
+    },
+    {
+      "id": "subjuntivo:B1:098",
+      "prompt": "Te sugiero que ___ tu lugar con anticipación.",
+      "options": [
+        "reservas",
+        "reserves"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Te sugiero que“ legt dir etwas nahe — deshalb reserves."
+    },
+    {
+      "id": "subjuntivo:B1:099",
+      "prompt": "El guía nos pide que no ___ fotos con flash dentro de la iglesia.",
+      "options": [
+        "sacamos",
+        "saquemos"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Nos pide que“ überbringt eine Bitte — darum saquemos."
+    },
+    {
+      "id": "subjuntivo:B1:100",
+      "prompt": "Le pido a mi hermano que me ___ del aeropuerto.",
+      "options": [
+        "recoge",
+        "recoja"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B1",
+      "explanation_de": "„Le pido que“ formuliert eine Bitte an ihn — darum recoja."
+    },
+    {
+      "id": "subjuntivo:B1:101",
+      "prompt": "No creo que nos ___ tiempo de pasar al súper.",
+      "options": [
+        "da",
+        "dé"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„No creo que“ zweifelt am Ausgang — deshalb dé."
+    },
+    {
+      "id": "subjuntivo:B1:102",
+      "prompt": "Dudo mucho que ese güey ___ a pagar lo que debe.",
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B1",
+      "explanation_de": "„Dudo que“ nimmt der Aussage jede Sicherheit — darum vaya."
+    },
+    {
+      "id": "subjuntivo:B1:103",
+      "prompt": "Ojalá que mis suegros no se ___ toda la semana.",
+      "options": [
+        "quedan",
+        "queden"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá verpackt das als stillen Wunsch — deshalb queden."
+    },
+    {
+      "id": "subjuntivo:B1:104",
+      "prompt": "Ojalá ___ pronto las lluvias, ya hace falta el agua.",
+      "options": [
+        "empiezan",
+        "empiecen"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá bleibt reines Hoffen — darum empiecen."
+    },
+    {
+      "id": "subjuntivo:B1:105",
+      "prompt": "Ojalá que el doctor me ___ buenas noticias.",
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B1",
+      "explanation_de": "Ojalá verschiebt alles ins Erhoffte — deshalb tenga."
+    },
+    {
+      "id": "subjuntivo:B1:106",
+      "prompt": "Creo que los abuelos ___ mañana en el camión de las nueve.",
+      "options": [
+        "llegan",
+        "lleguen"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Creo que“ ohne Verneinung meldet Zuversicht — also llegan."
+    },
+    {
+      "id": "subjuntivo:B1:107",
+      "prompt": "Es verdad que la renta ___ carísima en esta colonia.",
+      "options": [
+        "está",
+        "esté"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es verdad que“ benennt die Lage als Fakt — darum está."
+    },
+    {
+      "id": "subjuntivo:B1:108",
+      "prompt": "Estoy seguro de que el niño ___ solo con la tarea.",
+      "options": [
+        "puede",
+        "pueda"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Estoy seguro de que“ drückt Gewissheit aus — deshalb puede."
+    },
+    {
+      "id": "subjuntivo:B1:109",
+      "prompt": "Es evidente que ustedes ___ mucha práctica en la cocina.",
+      "options": [
+        "tienen",
+        "tengan"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es evidente que“ verweist auf Sichtbares — also tienen."
+    },
+    {
+      "id": "subjuntivo:B1:110",
+      "prompt": "Me consta que en esa oficina ___ hasta tarde todos los días.",
+      "options": [
+        "trabajan",
+        "trabajen"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Me consta que“ spricht aus eigener Beobachtung — darum trabajan."
+    },
+    {
+      "id": "subjuntivo:B1:111",
+      "prompt": "Está claro que el árbitro ___ a favor de los otros.",
+      "options": [
+        "pita",
+        "pite"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Está claro que“ meldet Offensichtliches — deshalb pita."
+    },
+    {
+      "id": "subjuntivo:B1:112",
+      "prompt": "Es indudable que la comida mexicana ___ patrimonio de la humanidad.",
+      "options": [
+        "es",
+        "sea"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B1",
+      "explanation_de": "„Es indudable que“ lässt keinen Raum für Zweifel — darum es."
+    },
+    {
+      "id": "subjuntivo:B1:113",
+      "prompt": "La maestra dice que mi hijo ___ muy bien en matemáticas.",
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dice que“ gibt ihre Einschätzung als Bericht weiter — deshalb va."
+    },
+    {
+      "id": "subjuntivo:B1:114",
+      "prompt": "Sé que la película ___ a las ocho y media.",
+      "options": [
+        "empieza",
+        "empiece"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Sé que“ nennt einen bekannten Fakt — darum empieza."
+    },
+    {
+      "id": "subjuntivo:B1:115",
+      "prompt": "Dicen que esa familia ___ tamales desde los noventa.",
+      "options": [
+        "vende",
+        "venda"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dicen que“ überliefert eine bekannte Geschichte — deshalb vende."
+    },
+    {
+      "id": "subjuntivo:B1:116",
+      "prompt": "Mi cuñado asegura que su carro ___ menos gasolina que el mío.",
+      "options": [
+        "gasta",
+        "gaste"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Asegura que“ präsentiert seine Aussage als Tatsache — also gasta."
+    },
+    {
+      "id": "subjuntivo:B1:117",
+      "prompt": "El mesero comenta que el aguachile ___ bastante picoso.",
+      "options": [
+        "viene",
+        "venga"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Comenta que“ beschreibt das Gericht sachlich — darum viene."
+    },
+    {
+      "id": "subjuntivo:B1:118",
+      "prompt": "Me avisaron que la junta se ___ al jueves.",
+      "options": [
+        "pasa",
+        "pase"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me avisaron que“ übermittelt eine Mitteilung — deshalb pasa."
+    },
+    {
+      "id": "subjuntivo:B1:119",
+      "prompt": "El recibo dice que ___ pagar antes del quince.",
+      "options": [
+        "debemos",
+        "debamos"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Dice que“ zitiert, was auf dem Papier steht — darum debemos."
+    },
+    {
+      "id": "subjuntivo:B1:120",
+      "prompt": "Mi roomie me contó que ___ mudarse a Querétaro.",
+      "options": [
+        "piensa",
+        "piense"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B1",
+      "explanation_de": "„Me contó que“ berichtet ihren Plan — deshalb piensa."
+    },
+    {
       "id": "subjuntivo:B2:001",
       "prompt": "Mi jefa quería que ___ a la oficina el sábado, pero le dije que no.",
       "options": [
