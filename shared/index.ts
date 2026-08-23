@@ -36,6 +36,9 @@ export * from './content/vocab'
 // Culture content (countries, slang, sights) — en/de localized
 export * from './content/culture'
 
+// Item banks + rule taxonomy for the grammar-decision games
+export * from './content/decision-items'
+
 // Utils
 export * from './utils/quiz'
 export * from './utils/translations'

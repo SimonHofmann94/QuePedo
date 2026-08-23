@@ -1,0 +1,3367 @@
+{
+  "game": "ser_estar",
+  "source": "agent-authored, validated by shared/content/decision-items/bank.check.ts",
+  "items": [
+    {
+      "id": "ser_estar:A1:001",
+      "prompt": "Mi mamá ___ doctora en el hospital.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "„Doctora“ nennt den Beruf deiner Mutter — Berufe stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A1:002",
+      "prompt": "El Zócalo ___ en el centro de la ciudad.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "„En el centro de la ciudad“ beschreibt einen Ort — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:A1:003",
+      "prompt": "Yo ___ de Monterrey.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "„De Monterrey“ nennt deine Herkunft — Herkunft drückst du mit ser aus."
+    },
+    {
+      "id": "ser_estar:A1:004",
+      "prompt": "Hoy ___ muy cansado, necesito dormir.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Hoy“ zeigt einen vorübergehenden Zustand: Müdigkeit geht vorbei, also estar."
+    },
+    {
+      "id": "ser_estar:A1:005",
+      "prompt": "Mi hermano ___ muy alto.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Körpergröße ist eine dauerhafte Eigenschaft — deshalb ser."
+    },
+    {
+      "id": "ser_estar:A1:006",
+      "prompt": "Los niños ___ jugando en el parque.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Jugando“ ist ein Gerundio — die Verlaufsform bildest du mit estar."
+    },
+    {
+      "id": "ser_estar:A1:007",
+      "prompt": "Hoy ___ lunes.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Der Wochentag steht mit ser: hoy es lunes."
+    },
+    {
+      "id": "ser_estar:A1:008",
+      "prompt": "Mi papá ___ enojado ahorita.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Ahorita“ markiert einen momentanen Gefühlszustand — Wut geht vorbei, also estar."
+    },
+    {
+      "id": "ser_estar:A1:009",
+      "prompt": "Este rebozo ___ de mi abuela.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De mi abuela“ drückt Besitz aus — Besitz steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:010",
+      "prompt": "Mis llaves ___ en la mochila.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Deine Schlüssel befinden sich an einem Ort — Ortsangaben nehmen estar."
+    },
+    {
+      "id": "ser_estar:A1:011",
+      "prompt": "Yo ___ estudiante de la UNAM.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "„Estudiante“ beschreibt, was du bist — wie ein Beruf, also ser."
+    },
+    {
+      "id": "ser_estar:A1:012",
+      "prompt": "Mi mamá ___ cocinando tamales.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Cocinando“ ist ein Gerundio: gerade Ablaufendes drückst du mit estar aus."
+    },
+    {
+      "id": "ser_estar:A1:013",
+      "prompt": "¿Ustedes ___ mexicanos?",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "„Mexicanos“ ist eine Nationalität — Nationalitäten stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A1:014",
+      "prompt": "Nosotros ___ muy contentos con la casa nueva.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "Freude über etwas Konkretes ist ein Gefühl im Moment — Gefühle nehmen estar."
+    },
+    {
+      "id": "ser_estar:A1:015",
+      "prompt": "Los taxis de la CDMX ___ rosas y blancos.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Die Farbe der Taxis ist ein festes Merkmal — dafür brauchst du ser."
+    },
+    {
+      "id": "ser_estar:A1:016",
+      "prompt": "¿Dónde ___ el baño?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Nach dem Ort von etwas fragst du mit estar: ¿dónde está?"
+    },
+    {
+      "id": "ser_estar:A1:017",
+      "prompt": "___ las tres de la tarde.",
+      "options": [
+        "Son",
+        "Están"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Die Uhrzeit steht immer mit ser: son las tres."
+    },
+    {
+      "id": "ser_estar:A1:018",
+      "prompt": "La maestra ___ enferma esta semana.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Esta semana“ zeigt: Kranksein ist ein vorübergehender Zustand — also estar."
+    },
+    {
+      "id": "ser_estar:A1:019",
+      "prompt": "La mesa ___ de madera.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De madera“ nennt das Material — Material drückst du mit ser aus."
+    },
+    {
+      "id": "ser_estar:A1:020",
+      "prompt": "Nosotros ___ aprendiendo español.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Aprendiendo“ ist ein Gerundio — estar + Gerundio beschreibt den Verlauf."
+    },
+    {
+      "id": "ser_estar:A1:021",
+      "prompt": "Mi maestra ___ de Oaxaca.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "Woher jemand kommt, sagst du mit ser: es de Oaxaca."
+    },
+    {
+      "id": "ser_estar:A1:022",
+      "prompt": "Yo ___ en el metro, llego en veinte minutos.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Du befindest dich gerade in der Metro — dein Aufenthaltsort steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:023",
+      "prompt": "Ana ___ muy simpática.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Freundlichkeit ist hier ein Charakterzug — Charakter beschreibst du mit ser."
+    },
+    {
+      "id": "ser_estar:A1:024",
+      "prompt": "¿Por qué ___ triste hoy?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Hoy“ zeigt: Die Traurigkeit ist ein momentaner Zustand, kein Charakterzug — also estar."
+    },
+    {
+      "id": "ser_estar:A1:025",
+      "prompt": "Mi tío ___ taxista en la Ciudad de México.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "„Taxista“ nennt den Beruf — Berufe stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A1:026",
+      "prompt": "Ella ___ maestra de primaria.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "„Maestra“ ist ein Beruf — dafür nimmst du ser."
+    },
+    {
+      "id": "ser_estar:A1:027",
+      "prompt": "La escuela ___ cerca del tianguis.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Wo die Schule liegt, drückst du mit estar aus."
+    },
+    {
+      "id": "ser_estar:A1:028",
+      "prompt": "El chile habanero ___ muy picante.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Schärfe gehört fest zum Habanero — feste Eigenschaften nehmen ser."
+    },
+    {
+      "id": "ser_estar:A1:029",
+      "prompt": "¿Qué ___ haciendo?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Haciendo“ ist ein Gerundio — nach dem Verlauf fragst du mit estar."
+    },
+    {
+      "id": "ser_estar:A1:030",
+      "prompt": "¿Qué hora ___?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Nach der Uhrzeit fragst du mit ser: ¿qué hora es?"
+    },
+    {
+      "id": "ser_estar:A1:031",
+      "prompt": "Yo ___ un poco nervioso por el examen.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Por el examen“ zeigt momentane Nervosität — Gefühle im Moment nehmen estar."
+    },
+    {
+      "id": "ser_estar:A1:032",
+      "prompt": "Los aretes ___ de plata de Taxco.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De plata“ nennt das Material der Ohrringe — Material steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:033",
+      "prompt": "Nosotros ___ en la playa.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Euer Aufenthaltsort am Strand steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:034",
+      "prompt": "El tequila ___ de Jalisco.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "„De Jalisco“ nennt die Herkunft des Tequilas — Herkunft steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:035",
+      "prompt": "La sopa todavía ___ caliente.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Todavía“ zeigt einen Zustand, der bald vorbei ist — also estar."
+    },
+    {
+      "id": "ser_estar:A1:036",
+      "prompt": "Ellos ___ meseros en una taquería.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "„Meseros“ ist ein Beruf — Berufe drückst du mit ser aus."
+    },
+    {
+      "id": "ser_estar:A1:037",
+      "prompt": "Ellos ___ viendo la tele.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Viendo“ ist ein Gerundio — was gerade läuft, steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:038",
+      "prompt": "La Ciudad de México ___ enorme.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Größe ist ein festes Merkmal der Stadt — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A1:039",
+      "prompt": "El restaurante ___ enfrente del parque.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Die Lage des Restaurants gibst du mit estar an."
+    },
+    {
+      "id": "ser_estar:A1:040",
+      "prompt": "Mi cumpleaños ___ el dos de mayo.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Das Datum deines Geburtstags steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:041",
+      "prompt": "Mis amigos ___ ocupados con la chamba.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "Beschäftigt sein ist ein vorübergehender Zustand — also estar."
+    },
+    {
+      "id": "ser_estar:A1:042",
+      "prompt": "Ese carro rojo ___ de mi papá.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De mi papá“ drückt Besitz aus — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A1:043",
+      "prompt": "¿Tú ___ en casa?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "„En casa“ ist eine Ortsangabe — dein Aufenthaltsort steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:044",
+      "prompt": "¿De dónde ___ tú?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "Nach der Herkunft fragst du mit ser: ¿de dónde eres?"
+    },
+    {
+      "id": "ser_estar:A1:045",
+      "prompt": "Mi hermana ___ estudiando para el examen.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Estudiando“ ist ein Gerundio — die Verlaufsform bildest du mit estar."
+    },
+    {
+      "id": "ser_estar:A1:046",
+      "prompt": "Las jacarandas ___ moradas.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Die lila Farbe gehört fest zur Jacaranda — Farben als Merkmal nehmen ser."
+    },
+    {
+      "id": "ser_estar:A1:047",
+      "prompt": "El café ya ___ frío.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Ya frío“ beschreibt den aktuellen Zustand des Kaffees — also estar."
+    },
+    {
+      "id": "ser_estar:A1:048",
+      "prompt": "Mi papá ___ ingeniero.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "„Ingeniero“ nennt den Beruf — Berufe stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A1:049",
+      "prompt": "Las chelas ___ en el refri.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Die Chelas befinden sich im Kühlschrank — Ortsangaben nehmen estar."
+    },
+    {
+      "id": "ser_estar:A1:050",
+      "prompt": "El perro ___ durmiendo en el sillón.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Durmiendo“ ist ein Gerundio — gerade Ablaufendes steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:051",
+      "prompt": "Nosotros ___ de un pueblo pequeño.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "„De un pueblo“ nennt eure Herkunft — Herkunft drückst du mit ser aus."
+    },
+    {
+      "id": "ser_estar:A1:052",
+      "prompt": "Ella ___ muy preocupada por su hijo.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "Sorge ist ein momentaner Gefühlszustand — Gefühle stehen mit estar."
+    },
+    {
+      "id": "ser_estar:A1:053",
+      "prompt": "Mi perro ___ pequeño y negro.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Größe und Farbe des Hundes sind feste Merkmale — also ser."
+    },
+    {
+      "id": "ser_estar:A1:054",
+      "prompt": "Yo ___ comiendo tacos al pastor.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Comiendo“ ist ein Gerundio — was du gerade tust, steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:055",
+      "prompt": "Ya ___ las nueve de la noche.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Die Uhrzeit steht mit ser — auch mit „ya“ davor."
+    },
+    {
+      "id": "ser_estar:A1:056",
+      "prompt": "Cancún ___ en el sureste de México.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Auch feste geografische Orte stehen mit estar: Cancún está en el sureste."
+    },
+    {
+      "id": "ser_estar:A1:057",
+      "prompt": "Las tortillas ___ de maíz.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De maíz“ nennt das Material der Tortillas — Material steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:058",
+      "prompt": "¿Tú ___ enfermo? Tienes mala cara.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Tienes mala cara“ zeigt: Es geht um einen momentanen Zustand — also estar."
+    },
+    {
+      "id": "ser_estar:A1:059",
+      "prompt": "Yo ___ Diego, mucho gusto.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "Deinen Namen nennst du mit ser: soy Diego."
+    },
+    {
+      "id": "ser_estar:A1:060",
+      "prompt": "El museo ___ junto a la catedral.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Die Lage des Museums gibst du mit estar an."
+    },
+    {
+      "id": "ser_estar:A1:061",
+      "prompt": "Mis abuelos ___ de Michoacán.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "„De Michoacán“ nennt die Herkunft deiner Großeltern — also ser."
+    },
+    {
+      "id": "ser_estar:A1:062",
+      "prompt": "Yo ___ escuchando música mexicana.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Escuchando“ ist ein Gerundio — die Verlaufsform braucht estar."
+    },
+    {
+      "id": "ser_estar:A1:063",
+      "prompt": "El océano Pacífico ___ muy grande.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Die Größe des Ozeans ist ein dauerhaftes Merkmal — dafür ser."
+    },
+    {
+      "id": "ser_estar:A1:064",
+      "prompt": "Nosotros ___ tristes por la noticia.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Por la noticia“ zeigt ein momentanes Gefühl — Trauer im Moment nimmt estar."
+    },
+    {
+      "id": "ser_estar:A1:065",
+      "prompt": "Hoy ___ dos de noviembre.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Das Datum steht mit ser: hoy es dos de noviembre."
+    },
+    {
+      "id": "ser_estar:A1:066",
+      "prompt": "Mi abuela ___ en Guadalajara esta semana.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "„Esta semana“ ändert nichts: Der Aufenthaltsort steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:067",
+      "prompt": "Esta casa ___ de mis tíos.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De mis tíos“ drückt Besitz aus — Besitz steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:068",
+      "prompt": "¿Ustedes ___ trabajando hoy?",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Trabajando“ ist ein Gerundio — dafür brauchst du estar."
+    },
+    {
+      "id": "ser_estar:A1:069",
+      "prompt": "La banda ___ de Sinaloa.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "Woher die Band kommt, drückst du mit ser aus."
+    },
+    {
+      "id": "ser_estar:A1:070",
+      "prompt": "Los niños ___ emocionados por la piñata.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "Aufregung über die Piñata ist ein Gefühl im Moment — also estar."
+    },
+    {
+      "id": "ser_estar:A1:071",
+      "prompt": "¿Ustedes ___ los nuevos vecinos?",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "Mit ser sagst du, wer jemand ist: los nuevos vecinos."
+    },
+    {
+      "id": "ser_estar:A1:072",
+      "prompt": "El mercado de La Merced ___ lejos de aquí.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Wie weit weg der Markt liegt, ist eine Ortsangabe — also estar."
+    },
+    {
+      "id": "ser_estar:A1:073",
+      "prompt": "Tú ___ muy inteligente.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Intelligenz gilt als fester Charakterzug — Charakter nimmt ser."
+    },
+    {
+      "id": "ser_estar:A1:074",
+      "prompt": "Ella ___ hablando por teléfono.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Hablando“ ist ein Gerundio — gerade Laufendes steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:075",
+      "prompt": "¿Qué día ___ hoy?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Nach dem Wochentag fragst du mit ser: ¿qué día es hoy?"
+    },
+    {
+      "id": "ser_estar:A1:076",
+      "prompt": "Hoy mi mamá ___ de buen humor.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„De buen humor“ ist ein momentaner Zustand — Stimmungen stehen mit estar."
+    },
+    {
+      "id": "ser_estar:A1:077",
+      "prompt": "Nosotros ___ los hermanos de Luisa.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "Wer ihr seid — die Brüder von Luisa — sagst du mit ser."
+    },
+    {
+      "id": "ser_estar:A1:078",
+      "prompt": "Tú ___ leyendo un libro muy bueno.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Leyendo“ ist ein Gerundio — die Verlaufsform bildest du mit estar."
+    },
+    {
+      "id": "ser_estar:A1:079",
+      "prompt": "Los elefantes ___ animales muy grandes.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Ein Substantiv wie „animales“ nach dem Verb beschreibt das Wesen — dafür ser."
+    },
+    {
+      "id": "ser_estar:A1:080",
+      "prompt": "¿Ustedes ___ en el camión?",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Ob ihr im Bus sitzt, ist eine Ortsfrage — Orte nehmen estar."
+    },
+    {
+      "id": "ser_estar:A1:081",
+      "prompt": "El sarape ___ de lana.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De lana“ nennt das Material des Sarape — Material steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:082",
+      "prompt": "El bebé ___ llorando otra vez.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Llorando“ ist ein Gerundio — was gerade passiert, steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:083",
+      "prompt": "Tú ___ alemana, ¿verdad?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "Die Nationalität steht mit ser: eres alemana."
+    },
+    {
+      "id": "ser_estar:A1:084",
+      "prompt": "Yo ___ enamorado de esta ciudad.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "Verliebt sein ist ein Gefühlszustand — Gefühle drückst du mit estar aus."
+    },
+    {
+      "id": "ser_estar:A1:085",
+      "prompt": "Mañana ___ quince de septiembre.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Das Datum von morgen steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:086",
+      "prompt": "Mi departamento ___ en la colonia Roma.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Die Lage deiner Wohnung in der Colonia Roma gibst du mit estar an."
+    },
+    {
+      "id": "ser_estar:A1:087",
+      "prompt": "Los mexicanos ___ muy amables.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "Freundlichkeit als typischer Charakterzug steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:088",
+      "prompt": "Nosotros ___ esperando el camión.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Esperando“ ist ein Gerundio — Warten im Verlauf braucht estar."
+    },
+    {
+      "id": "ser_estar:A1:089",
+      "prompt": "¿De quién ___ esta mochila?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "Nach dem Besitzer fragst du mit ser: ¿de quién es?"
+    },
+    {
+      "id": "ser_estar:A1:090",
+      "prompt": "El agua de la alberca ___ muy fría hoy.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Hoy“ zeigt einen aktuellen Zustand des Wassers — also estar."
+    },
+    {
+      "id": "ser_estar:A1:091",
+      "prompt": "¿Tú ___ el amigo de Carlos?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A1",
+      "explanation_de": "Wer jemand ist — el amigo de Carlos — drückst du mit ser aus."
+    },
+    {
+      "id": "ser_estar:A1:092",
+      "prompt": "Monterrey ___ en el norte del país.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Auch Städte haben ihren festen Ort mit estar: Monterrey está en el norte."
+    },
+    {
+      "id": "ser_estar:A1:093",
+      "prompt": "___ la una de la mañana.",
+      "options": [
+        "Es",
+        "Está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A1",
+      "explanation_de": "Bei „la una“ steht die Uhrzeit im Singular — und immer mit ser."
+    },
+    {
+      "id": "ser_estar:A1:094",
+      "prompt": "Mis primos ___ nadando en el mar.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Nadando“ ist ein Gerundio — die Verlaufsform steht mit estar."
+    },
+    {
+      "id": "ser_estar:A1:095",
+      "prompt": "La música de mariachi ___ alegre.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A1",
+      "explanation_de": "„Alegre“ beschreibt hier den festen Charakter der Musik — also ser."
+    },
+    {
+      "id": "ser_estar:A1:096",
+      "prompt": "El baño ___ sucio otra vez.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A1",
+      "explanation_de": "„Otra vez“ zeigt einen aktuellen, veränderlichen Zustand — also estar."
+    },
+    {
+      "id": "ser_estar:A1:097",
+      "prompt": "Los juguetes ___ de los niños.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A1",
+      "explanation_de": "„De los niños“ drückt Besitz aus — Besitz steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:098",
+      "prompt": "La abuela ___ preparando café de olla.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A1",
+      "explanation_de": "„Preparando“ ist ein Gerundio — gerade Ablaufendes nimmt estar."
+    },
+    {
+      "id": "ser_estar:A1:099",
+      "prompt": "Frida y Diego ___ de Coyoacán.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A1",
+      "explanation_de": "„De Coyoacán“ nennt die Herkunft — Herkunft steht mit ser."
+    },
+    {
+      "id": "ser_estar:A1:100",
+      "prompt": "Los niños ___ en la escuela.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A1",
+      "explanation_de": "Wo sich die Kinder befinden, sagst du mit estar."
+    },
+    {
+      "id": "ser_estar:A2:001",
+      "prompt": "Mi tía ___ enfermera en el IMSS.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Enfermera“ nennt ihren Beruf — darum steht hier ser."
+    },
+    {
+      "id": "ser_estar:A2:002",
+      "prompt": "Mis llaves ___ en la mesa de la cocina.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„En la mesa“ sagt, wo die Schlüssel liegen — Ortsangaben von Dingen brauchen estar."
+    },
+    {
+      "id": "ser_estar:A2:003",
+      "prompt": "Don Ramiro ___ taxista en la colonia Roma.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Taxista“ beschreibt, was Don Ramiro beruflich macht — Berufe nehmen ser."
+    },
+    {
+      "id": "ser_estar:A2:004",
+      "prompt": "Cuando llegamos, el mercado ya ___ cerrado.",
+      "options": [
+        "fue",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Cerrado“ ist hier das Ergebnis einer Veränderung — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:A2:005",
+      "prompt": "Mi abuelo ___ maestro en una primaria de Oaxaca.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Maestro“ sagt, was er von Beruf war — Beruf verlangt ser."
+    },
+    {
+      "id": "ser_estar:A2:006",
+      "prompt": "Yo ___ en el metro, ahorita llego.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„En el metro“ verortet den Sprecher — bei Aufenthaltsorten steht estar."
+    },
+    {
+      "id": "ser_estar:A2:007",
+      "prompt": "Mis primos ___ meseros en una taquería.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "Auch „meseros“ als Job nimmt ser — ein Beruf zählt als Wesensmerkmal."
+    },
+    {
+      "id": "ser_estar:A2:008",
+      "prompt": "¿Dónde ___ tú? Ya empezó la película.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„¿Dónde?“ fragt hier nach dem Aufenthaltsort — darauf antwortet estar."
+    },
+    {
+      "id": "ser_estar:A2:009",
+      "prompt": "Frida Kahlo ___ una pintora mexicana.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Pintora“ beschreibt, wer Frida war — Identität steht auch in der Vergangenheit mit ser."
+    },
+    {
+      "id": "ser_estar:A2:010",
+      "prompt": "La farmacia ___ a dos cuadras del mercado.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„A dos cuadras“ beschreibt die Lage der Apotheke — Ortsangaben nehmen estar."
+    },
+    {
+      "id": "ser_estar:A2:011",
+      "prompt": "Mi abuelo ___ campesino toda su vida.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Toda su vida“ fasst seinen Beruf als abgeschlossenes Ganzes — ser, hier im Indefinido."
+    },
+    {
+      "id": "ser_estar:A2:012",
+      "prompt": "Oaxaca ___ al sur del país.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„Al sur del país“ verortet Oaxaca — geografische Lage verlangt estar."
+    },
+    {
+      "id": "ser_estar:A2:013",
+      "prompt": "De joven, mi mamá ___ maestra de primaria.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Maestra“ nennt ihren damaligen Beruf — Berufe stehen mit ser, hier im Imperfecto."
+    },
+    {
+      "id": "ser_estar:A2:014",
+      "prompt": "Ayer ___ todo el día en casa de mi abuela.",
+      "options": [
+        "fui",
+        "estuve"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„En casa de mi abuela“ nennt den Aufenthaltsort — dafür steht estar, hier estuve."
+    },
+    {
+      "id": "ser_estar:A2:015",
+      "prompt": "Tú ___ el hermano de Lupita, ¿verdad?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„El hermano de Lupita“ bestimmt seine Identität — dafür brauchst du ser."
+    },
+    {
+      "id": "ser_estar:A2:016",
+      "prompt": "Mis papás ___ en Cancún la semana pasada.",
+      "options": [
+        "fueron",
+        "estuvieron"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„En Cancún“ sagt, wo sie waren — Aufenthaltsorte nehmen estar, hier estuvieron."
+    },
+    {
+      "id": "ser_estar:A2:017",
+      "prompt": "Nosotros ___ los nuevos vecinos del edificio.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "A2",
+      "explanation_de": "„Los nuevos vecinos“ benennt die Identität der Sprecher — Identität steht mit ser."
+    },
+    {
+      "id": "ser_estar:A2:018",
+      "prompt": "Cuando empezó el temblor, yo ___ en la oficina.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "Der Satz sagt, wo sich jemand beim Beben befand — Aufenthaltsort nimmt estar, hier im Imperfecto."
+    },
+    {
+      "id": "ser_estar:A2:019",
+      "prompt": "Mi comadre ___ de Guadalajara.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "„De Guadalajara“ nennt ihre Herkunft — Herkunft steht mit ser."
+    },
+    {
+      "id": "ser_estar:A2:020",
+      "prompt": "Los tamales ___ en la olla, sírvete.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "Die Tamales befinden sich „en la olla“ — der Ort von Dingen verlangt estar."
+    },
+    {
+      "id": "ser_estar:A2:021",
+      "prompt": "Yo ___ de un pueblito de Oaxaca.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "„De un pueblito de Oaxaca“ sagt, woher jemand stammt — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A2:022",
+      "prompt": "Nosotros ___ afuera del cine, ¿dónde andas?",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„Afuera del cine“ gibt den Standort an — dafür brauchst du estar."
+    },
+    {
+      "id": "ser_estar:A2:023",
+      "prompt": "Estos mangos ___ de Michoacán.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "Die Mangos stammen „de Michoacán“ — Herkunft nimmt ser, auch bei Sachen."
+    },
+    {
+      "id": "ser_estar:A2:024",
+      "prompt": "El sábado ___ en el tianguis con mi má.",
+      "options": [
+        "fui",
+        "estuve"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "„En el tianguis“ nennt den Ort des Aufenthalts — estar, im Indefinido estuve."
+    },
+    {
+      "id": "ser_estar:A2:025",
+      "prompt": "¿Tú ___ de Monterrey o de Saltillo?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "„¿De Monterrey o de Saltillo?“ fragt nach der Herkunft — Herkunft verlangt ser."
+    },
+    {
+      "id": "ser_estar:A2:026",
+      "prompt": "La parada del camión ___ enfrente de la iglesia.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "A2",
+      "explanation_de": "Die Haltestelle liegt „enfrente de la iglesia“ — Lage nimmt estar."
+    },
+    {
+      "id": "ser_estar:A2:027",
+      "prompt": "Mi bisabuela ___ española, de Sevilla.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "„Española“ nennt ihre Nationalität — Herkunft steht mit ser, auch im Imperfecto."
+    },
+    {
+      "id": "ser_estar:A2:028",
+      "prompt": "Hoy ___ muy cansado por la chamba.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Cansado por la chamba“ beschreibt einen momentanen Zustand — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:A2:029",
+      "prompt": "Los músicos de la boda ___ de Veracruz.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "„De Veracruz“ verrät die Herkunft der Musiker — Herkunft nimmt ser."
+    },
+    {
+      "id": "ser_estar:A2:030",
+      "prompt": "Mi mamá ___ enojada porque llegué tarde.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Enojada“ beschreibt ihre momentane Laune — Gefühle brauchen estar."
+    },
+    {
+      "id": "ser_estar:A2:031",
+      "prompt": "Nosotros ___ chilangos, nacimos en la capital.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "„Chilangos“ bezeichnet die Herkunft aus der Hauptstadt — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A2:032",
+      "prompt": "Ayer los niños ___ nerviosos antes del examen.",
+      "options": [
+        "fueron",
+        "estuvieron"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "Die Nervosität hielt nur bis zur Prüfung an — kurze Zustände nehmen estar."
+    },
+    {
+      "id": "ser_estar:A2:033",
+      "prompt": "El tequila ___ de una región de Jalisco.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "A2",
+      "explanation_de": "Der Tequila stammt aus Jalisco — Herkunft verlangt ser, auch bei Produkten."
+    },
+    {
+      "id": "ser_estar:A2:034",
+      "prompt": "Carlos ___ bien nervioso por el examen de mañana.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Nervioso por el examen“ beschreibt einen vorübergehenden Zustand — estar."
+    },
+    {
+      "id": "ser_estar:A2:035",
+      "prompt": "De joven, mi tío ___ el más flaco de la familia.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "„El más flaco de la familia“ beschreibt eine bleibende Eigenschaft — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A2:036",
+      "prompt": "¿Por qué ___ triste, qué te pasó?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Triste“ fragt nach der momentanen Stimmung — Gefühle stehen mit estar."
+    },
+    {
+      "id": "ser_estar:A2:037",
+      "prompt": "La casa de mis abuelos ___ de adobe.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "Das Material eines Hauses steht mit ser."
+    },
+    {
+      "id": "ser_estar:A2:038",
+      "prompt": "Al día siguiente, todos ___ crudos.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Crudos“ (verkatert) beschreibt den Zustand nach der Fiesta — estar, hier estaban."
+    },
+    {
+      "id": "ser_estar:A2:039",
+      "prompt": "Los ojos de mi abuela ___ verdes.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "Die Augenfarbe gehört fest zu ihr — dauerhafte Merkmale verlangen ser."
+    },
+    {
+      "id": "ser_estar:A2:040",
+      "prompt": "Mi abuela ___ muy preocupada porque no llamabas.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Preocupada porque no llamabas“ beschreibt einen vorübergehenden Gemütszustand — estar."
+    },
+    {
+      "id": "ser_estar:A2:041",
+      "prompt": "Karla ___ muy trabajadora.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "„Trabajadora“ beschreibt Karlas Charakter — Charakterzüge stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A2:042",
+      "prompt": "La maestra ___ contenta con nuestros exámenes.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Contenta con nuestros exámenes“ beschreibt ihre aktuelle Freude — estar."
+    },
+    {
+      "id": "ser_estar:A2:043",
+      "prompt": "De niño, mi papá ___ muy tímido.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "„De niño“ beschreibt, wie sein Wesen damals war — Charakter nimmt ser, hier era."
+    },
+    {
+      "id": "ser_estar:A2:044",
+      "prompt": "Nosotros ___ muy a gusto en la playa.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„A gusto en la playa“ beschreibt ein momentanes Wohlgefühl — estar."
+    },
+    {
+      "id": "ser_estar:A2:045",
+      "prompt": "El Nevado de Toluca ___ altísimo.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "Die Höhe des Bergs bleibt, wie sie ist — solche Eigenschaften nehmen ser."
+    },
+    {
+      "id": "ser_estar:A2:046",
+      "prompt": "Ando mal, ___ enfermo desde el viernes.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Enfermo desde el viernes“ beschreibt einen vorübergehenden Zustand — Krankheit nimmt estar."
+    },
+    {
+      "id": "ser_estar:A2:047",
+      "prompt": "Las calles del centro ___ angostas.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "„Angostas“ beschreibt die Straßen dauerhaft — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A2:048",
+      "prompt": "Tú ___ bien contento hoy, ¿qué me ocultas?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Hoy“ zeigt: die gute Laune gilt nur im Moment — Stimmungen brauchen estar."
+    },
+    {
+      "id": "ser_estar:A2:049",
+      "prompt": "Mi primer coche ___ lentísimo.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "„Lentísimo“ war eine feste Eigenschaft des Autos — Eigenschaften nehmen ser, im Imperfecto era."
+    },
+    {
+      "id": "ser_estar:A2:050",
+      "prompt": "Ayer mi jefe ___ de malas todo el día.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„De malas todo el día“ beschreibt eine abgeschlossene Phase schlechter Laune — estar, hier estuvo."
+    },
+    {
+      "id": "ser_estar:A2:051",
+      "prompt": "Tú ___ bien buena onda.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "A2",
+      "explanation_de": "„Buena onda“ beschreibt deinen Charakter — Wesenszüge stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A2:052",
+      "prompt": "De bebé, mi hija ___ enferma cada rato.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "A2",
+      "explanation_de": "„Enferma cada rato“ beschreibt wiederkehrende Zustände — Zustände nehmen estar, hier estaba."
+    },
+    {
+      "id": "ser_estar:A2:053",
+      "prompt": "Ya ___ las tres de la tarde.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Die Uhrzeit „las tres“ steht mit ser — hier son."
+    },
+    {
+      "id": "ser_estar:A2:054",
+      "prompt": "La puerta del patio ___ abierta.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Abierta“ beschreibt das Ergebnis des Öffnens — solche Resultate nehmen estar."
+    },
+    {
+      "id": "ser_estar:A2:055",
+      "prompt": "Hoy ___ lunes y hay tianguis.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Der Wochentag „lunes“ verlangt ser."
+    },
+    {
+      "id": "ser_estar:A2:056",
+      "prompt": "El vaso ___ roto, ten cuidado.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Roto“ zeigt das Ergebnis des Kaputtgehens — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:A2:057",
+      "prompt": "Mañana ___ el quince de septiembre.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Das Datum „el quince de septiembre“ steht mit ser."
+    },
+    {
+      "id": "ser_estar:A2:058",
+      "prompt": "La tiendita ___ cerrada por la hora de la comida.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Cerrada“ beschreibt den Zustand nach dem Schließen — estar."
+    },
+    {
+      "id": "ser_estar:A2:059",
+      "prompt": "¿Qué hora ___? Se me hace tarde.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Die Frage nach der Uhrzeit nimmt immer ser."
+    },
+    {
+      "id": "ser_estar:A2:060",
+      "prompt": "El caldo ya ___ frío, caliéntalo.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Ya frío“ zeigt eine Veränderung: die Suppe kühlte ab — estar."
+    },
+    {
+      "id": "ser_estar:A2:061",
+      "prompt": "Ya ___ las dos de la mañana cuando llegamos del antro.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Uhrzeiten in der Vergangenheit stehen mit ser im Imperfecto — eran."
+    },
+    {
+      "id": "ser_estar:A2:062",
+      "prompt": "Las luces del cuarto ___ apagadas.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Apagadas“ beschreibt das Resultat des Ausschaltens — estar."
+    },
+    {
+      "id": "ser_estar:A2:063",
+      "prompt": "Cuando despertamos, ya ___ mediodía.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "„Mediodía“ als Zeitangabe nimmt ser, in der Vergangenheit era."
+    },
+    {
+      "id": "ser_estar:A2:064",
+      "prompt": "Cuando llegamos, el restaurante ___ cerrado.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Cerrado“ beschreibt den vorgefundenen Zustand — estar, hier estaba."
+    },
+    {
+      "id": "ser_estar:A2:065",
+      "prompt": "Ayer ___ martes trece.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Auch ein vergangenes Datum steht mit ser — ayer fue martes."
+    },
+    {
+      "id": "ser_estar:A2:066",
+      "prompt": "La tele ___ descompuesta desde el sábado.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Descompuesta“ zeigt das Ergebnis eines Defekts — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:A2:067",
+      "prompt": "La boda ___ el sábado pasado a las seis.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "A2",
+      "explanation_de": "Wann ein Ereignis stattfand, sagst du mit ser."
+    },
+    {
+      "id": "ser_estar:A2:068",
+      "prompt": "Los plátanos ya ___ maduros, hay que hacer licuado.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Ya maduros“ markiert das Ergebnis des Reifens — estar."
+    },
+    {
+      "id": "ser_estar:A2:069",
+      "prompt": "Esta chamarra ___ de piel.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De piel“ nennt das Material — Material steht mit ser."
+    },
+    {
+      "id": "ser_estar:A2:070",
+      "prompt": "Mi celular ___ muerto, ¿traes cargador?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Muerto“ beschreibt hier den leeren Akku, also einen eingetretenen Zustand — estar."
+    },
+    {
+      "id": "ser_estar:A2:071",
+      "prompt": "El anillo de mi mamá ___ de plata de Taxco.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De plata“ gibt das Material an — dafür brauchst du ser."
+    },
+    {
+      "id": "ser_estar:A2:072",
+      "prompt": "El boiler ya ___ prendido, métete a bañar.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Prendido“ beschreibt das Resultat des Anschaltens — estar."
+    },
+    {
+      "id": "ser_estar:A2:073",
+      "prompt": "Ese vocho ___ de mi tío.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De mi tío“ drückt Besitz aus — Besitz nimmt ser."
+    },
+    {
+      "id": "ser_estar:A2:074",
+      "prompt": "Cuando abrí la mochila, la torta ya ___ aplastada.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Aplastada“ zeigt das Ergebnis des Zerdrückens — estar, hier estaba."
+    },
+    {
+      "id": "ser_estar:A2:075",
+      "prompt": "Los aretes ___ de oro.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De oro“ beschreibt das Material der Ohrringe — ser."
+    },
+    {
+      "id": "ser_estar:A2:076",
+      "prompt": "Ya ___ lista la cena, siéntense.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "A2",
+      "explanation_de": "„Ya lista“ zeigt: das Kochen endete gerade — dieses Resultat nimmt estar."
+    },
+    {
+      "id": "ser_estar:A2:077",
+      "prompt": "Antes, este rancho ___ de mi familia.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De mi familia“ drückt Besitz aus — Besitz steht mit ser, hier era."
+    },
+    {
+      "id": "ser_estar:A2:078",
+      "prompt": "Los niños ___ jugando canicas en el patio.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Jugando“ zeigt eine gerade laufende Handlung — estar + Gerundio."
+    },
+    {
+      "id": "ser_estar:A2:079",
+      "prompt": "Las canicas ___ de vidrio.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De vidrio“ nennt das Material der Murmeln — ser."
+    },
+    {
+      "id": "ser_estar:A2:080",
+      "prompt": "Mi amá ___ haciendo tamales para la posada.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Haciendo“ beschreibt, was gerade passiert — die Verlaufsform nimmt estar."
+    },
+    {
+      "id": "ser_estar:A2:081",
+      "prompt": "Este sarape ___ de pura lana.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„De pura lana“ gibt das Material an — Material verlangt ser."
+    },
+    {
+      "id": "ser_estar:A2:082",
+      "prompt": "Yo ___ estudiando para el examen de español.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Estudiando“ läuft in diesem Moment — estar + Gerundio."
+    },
+    {
+      "id": "ser_estar:A2:083",
+      "prompt": "La guitarra ___ del mariachi, no la toques.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "A2",
+      "explanation_de": "„Del mariachi“ zeigt, wem die Gitarre gehört — Besitz nimmt ser."
+    },
+    {
+      "id": "ser_estar:A2:084",
+      "prompt": "¿Qué ___ haciendo? Ven a cenar.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "Das Gerundio „haciendo“ fragt nach der laufenden Handlung — estar."
+    },
+    {
+      "id": "ser_estar:A2:085",
+      "prompt": "La boda ___ en una hacienda de Cuernavaca.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Die Hochzeit findet dort statt — Veranstaltungsorte stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A2:086",
+      "prompt": "Nosotros ___ viendo el partido en casa de Beto.",
+      "options": [
+        "somos",
+        "estamos"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Viendo“ beschreibt die gerade laufende Handlung — estar."
+    },
+    {
+      "id": "ser_estar:A2:087",
+      "prompt": "El concierto ___ en el Foro Sol.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Ein Konzert findet statt, es liegt nicht herum — Ereignisse nehmen ser."
+    },
+    {
+      "id": "ser_estar:A2:088",
+      "prompt": "Cuando llamaste, me ___ bañando.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Cuando llamaste“ unterbricht die laufende Handlung — die Verlaufsform nimmt estar."
+    },
+    {
+      "id": "ser_estar:A2:089",
+      "prompt": "El partido ___ en el Estadio Azteca.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Das Spiel als Ereignis nimmt ser — nur der Ort eines Dings nähme estar."
+    },
+    {
+      "id": "ser_estar:A2:090",
+      "prompt": "Ayer a las diez todavía ___ trabajando en la oficina.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Todavía trabajando“ beschreibt eine laufende Handlung in der Vergangenheit — estar."
+    },
+    {
+      "id": "ser_estar:A2:091",
+      "prompt": "La posada de este año ___ en casa de mi tía.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Die Posada findet dort statt — für Veranstaltungsorte steht ser."
+    },
+    {
+      "id": "ser_estar:A2:092",
+      "prompt": "Los albañiles ___ arreglando la banqueta.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Arreglando“ zeigt die Arbeit im Verlauf — estar + Gerundio."
+    },
+    {
+      "id": "ser_estar:A2:093",
+      "prompt": "La fiesta ___ en casa de Lupe, llegó un chorro de gente.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Die Fiesta fand bei Lupe statt — Ereignisse nehmen ser, hier fue."
+    },
+    {
+      "id": "ser_estar:A2:094",
+      "prompt": "Mi hermana ___ hablando por teléfono con su novio.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Hablando“ läuft genau jetzt — die Verlaufsform verlangt estar."
+    },
+    {
+      "id": "ser_estar:A2:095",
+      "prompt": "El examen final ___ en el aula tres.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Das Examen als Termin findet im Raum statt — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:A2:096",
+      "prompt": "Cuando empezó a llover, don Chuy ___ vendiendo elotes.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Vendiendo“ war mitten im Gange, als der Regen begann — estar."
+    },
+    {
+      "id": "ser_estar:A2:097",
+      "prompt": "La reunión de vecinos ___ en el patio del edificio.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Die Versammlung findet dort statt — Veranstaltungen stehen mit ser."
+    },
+    {
+      "id": "ser_estar:A2:098",
+      "prompt": "Mi papá ___ más de una hora esperando el camión.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Más de una hora esperando“ beschreibt eine begrenzte laufende Tätigkeit — estar, hier estuvo."
+    },
+    {
+      "id": "ser_estar:A2:099",
+      "prompt": "El mundial del 86 ___ en México.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "A2",
+      "explanation_de": "Die WM fand in Mexiko statt — Ereignisse nehmen ser, auch im Indefinido."
+    },
+    {
+      "id": "ser_estar:A2:100",
+      "prompt": "El bebé ___ durmiendo, no hagan ruido.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "A2",
+      "explanation_de": "„Durmiendo“ beschreibt den Schlaf im Verlauf — estar + Gerundio."
+    },
+    {
+      "id": "ser_estar:B1:001",
+      "prompt": "Mi cuñado ___ ingeniero en una empresa de Monterrey desde hace años.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "B1",
+      "explanation_de": "„Ingeniero“ nennt den Beruf — Berufe verlangen ser, auch mit ‚desde hace años‘."
+    },
+    {
+      "id": "ser_estar:B1:002",
+      "prompt": "Cuando la conocí, Lupita ya ___ la directora de la primaria de la colonia.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "B1",
+      "explanation_de": "„La directora“ bezeichnet ihre Rolle — Beruf und Funktion stehen mit ser, hier im Imperfecto."
+    },
+    {
+      "id": "ser_estar:B1:003",
+      "prompt": "Su papá ___ taxista en la Ciudad de México toda su vida.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "B1",
+      "explanation_de": "„Taxista“ benennt den Beruf — dafür brauchst du ser, selbst über ein ganzes Leben hinweg."
+    },
+    {
+      "id": "ser_estar:B1:004",
+      "prompt": "No sabía que tu hermana ___ doctora en el IMSS.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "B1",
+      "explanation_de": "„Doctora“ gibt den Beruf an — Berufsangaben nehmen ser."
+    },
+    {
+      "id": "ser_estar:B1:005",
+      "prompt": "El señor que vende elotes en la esquina antes ___ maestro de secundaria.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "identity_profession",
+      "level": "B1",
+      "explanation_de": "„Maestro“ nennt einen früheren Beruf — auch vergangene Berufe stehen mit ser."
+    },
+    {
+      "id": "ser_estar:B1:006",
+      "prompt": "Aunque vive en Guadalajara, mi jefa ___ de Mérida.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "B1",
+      "explanation_de": "„De Mérida“ nennt die Herkunft — sie nimmt ser, egal wo jemand gerade wohnt."
+    },
+    {
+      "id": "ser_estar:B1:007",
+      "prompt": "Los tacos al pastor ___ de origen libanés, ¿sabías?",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "B1",
+      "explanation_de": "„De origen libanés“ verweist auf die Herkunft — dafür steht ser."
+    },
+    {
+      "id": "ser_estar:B1:008",
+      "prompt": "Mis abuelos ___ de un pueblito de Oaxaca, pero se mudaron a la capital.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "B1",
+      "explanation_de": "„De un pueblito de Oaxaca“ markiert die Herkunft — sie verlangt ser, den Wohnort dagegen sagst du mit estar."
+    },
+    {
+      "id": "ser_estar:B1:009",
+      "prompt": "La banda que tocó anoche en la plaza ___ de Sinaloa.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "B1",
+      "explanation_de": "„De Sinaloa“ sagt, woher die Band stammt — Herkunft steht mit ser."
+    },
+    {
+      "id": "ser_estar:B1:010",
+      "prompt": "¿De dónde ___ el mole negro, de Oaxaca o de Puebla?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "origin_nationality",
+      "level": "B1",
+      "explanation_de": "„¿De dónde…?“ fragt nach der Herkunft — darauf antwortet ser."
+    },
+    {
+      "id": "ser_estar:B1:011",
+      "prompt": "El clima de Monterrey ___ muy extremoso, con calorones y friazos.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "B1",
+      "explanation_de": "„Extremoso“ beschreibt den typischen Charakter des Klimas — dauerhafte Eigenschaften nehmen ser."
+    },
+    {
+      "id": "ser_estar:B1:012",
+      "prompt": "Mi suegra ___ una persona muy directa, siempre dice lo que piensa.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "B1",
+      "explanation_de": "„Siempre“ zeigt: Das gehört zu ihrem Wesen — Charaktereigenschaften stehen mit ser."
+    },
+    {
+      "id": "ser_estar:B1:013",
+      "prompt": "Las calles del centro histórico ___ angostas y llenas de historia.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "B1",
+      "explanation_de": "„Angostas“ beschreibt, wie die Straßen nun mal gebaut sind — feste Merkmale verlangen ser."
+    },
+    {
+      "id": "ser_estar:B1:014",
+      "prompt": "De joven, mi tío ___ muy necio, nunca escuchaba consejos.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "B1",
+      "explanation_de": "„Nunca escuchaba“ zeigt eine feste Charaktereigenschaft — dafür steht ser im Imperfecto."
+    },
+    {
+      "id": "ser_estar:B1:015",
+      "prompt": "La camioneta de mi compadre ___ enorme, no cabe en la cochera.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "inherent_characteristic",
+      "level": "B1",
+      "explanation_de": "„Enorme“ nennt eine feste Eigenschaft des Autos — Größe und Form nehmen ser."
+    },
+    {
+      "id": "ser_estar:B1:016",
+      "prompt": "Apúrate, ya ___ las ocho y media y el camión pasa a las nueve.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "B1",
+      "explanation_de": "„Las ocho y media“ nennt die Uhrzeit — Uhrzeiten stehen immer mit ser."
+    },
+    {
+      "id": "ser_estar:B1:017",
+      "prompt": "Ya ___ el quince de septiembre y todo el Zócalo estaba lleno de gente.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "B1",
+      "explanation_de": "„El quince de septiembre“ nennt das Datum — Datumsangaben nehmen ser, hier im Imperfecto."
+    },
+    {
+      "id": "ser_estar:B1:018",
+      "prompt": "¿Qué hora ___ cuando por fin llegaron los tamales?",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "B1",
+      "explanation_de": "„¿Qué hora…?“ fragt nach der Uhrzeit — dafür brauchst du ser."
+    },
+    {
+      "id": "ser_estar:B1:019",
+      "prompt": "Mañana ___ dos de noviembre, hay que poner la ofrenda.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "B1",
+      "explanation_de": "„Dos de noviembre“ nennt ein Datum — Datum und Wochentag verlangen ser."
+    },
+    {
+      "id": "ser_estar:B1:020",
+      "prompt": "Cuando salimos del antro ya ___ las cuatro de la madrugada.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 0,
+      "ruleTag": "time_date",
+      "level": "B1",
+      "explanation_de": "„Las cuatro de la madrugada“ gibt die Uhrzeit an — Zeitangaben stehen mit ser."
+    },
+    {
+      "id": "ser_estar:B1:021",
+      "prompt": "Este rebozo ___ de seda, lo tejieron en Santa María del Río.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "B1",
+      "explanation_de": "„De seda“ nennt das Material — Materialangaben nehmen ser."
+    },
+    {
+      "id": "ser_estar:B1:022",
+      "prompt": "La troca blanca que está afuera ___ de mi carnal.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "B1",
+      "explanation_de": "„De mi carnal“ drückt Besitz aus — wem etwas gehört, sagst du mit ser."
+    },
+    {
+      "id": "ser_estar:B1:023",
+      "prompt": "Los aretes que traía la novia ___ de plata de Taxco.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "B1",
+      "explanation_de": "„De plata“ bezeichnet das Material — dafür steht ser, auch in der Vergangenheit."
+    },
+    {
+      "id": "ser_estar:B1:024",
+      "prompt": "¿De quién ___ estas tortas que dejaron en la mesa?",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "B1",
+      "explanation_de": "„¿De quién…?“ fragt nach dem Besitzer — Besitz verlangt ser."
+    },
+    {
+      "id": "ser_estar:B1:025",
+      "prompt": "El comal de mi abuela ___ de barro, por eso el sabor.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "possession_material",
+      "level": "B1",
+      "explanation_de": "„De barro“ gibt das Material an — Material nimmt immer ser."
+    },
+    {
+      "id": "ser_estar:B1:026",
+      "prompt": "La boda de mi prima ___ en una hacienda cerca de Cuernavaca.",
+      "options": [
+        "será",
+        "estará"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La boda“ bezeichnet ein Ereignis — es findet statt, deshalb ser und nicht estar."
+    },
+    {
+      "id": "ser_estar:B1:027",
+      "prompt": "El concierto de los Tigres del Norte ___ en el Auditorio Nacional.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„El concierto“ bezeichnet ein Ereignis — wo etwas stattfindet, sagst du mit ser."
+    },
+    {
+      "id": "ser_estar:B1:028",
+      "prompt": "La junta con el licenciado ___ en la oficina del tercer piso.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La junta“ bezeichnet ein Treffen, also ein Ereignis — deshalb ser statt estar."
+    },
+    {
+      "id": "ser_estar:B1:029",
+      "prompt": "¿Dónde ___ la posada de la oficina este año?",
+      "options": [
+        "será",
+        "estará"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La posada“ bezeichnet eine Feier — bei Ereignissen fragst du mit ser nach dem Ort."
+    },
+    {
+      "id": "ser_estar:B1:030",
+      "prompt": "El partido de la selección ___ en el Estadio Azteca.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„El partido“ bezeichnet ein Spiel, ein Ereignis — dessen Schauplatz nimmt ser."
+    },
+    {
+      "id": "ser_estar:B1:031",
+      "prompt": "La clase de salsa ___ en el salón grande, no en el patio.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La clase“ bezeichnet einen Termin — für den Ort eines Ereignisses steht ser."
+    },
+    {
+      "id": "ser_estar:B1:032",
+      "prompt": "El examen final ___ en el auditorio de la facultad.",
+      "options": [
+        "será",
+        "estará"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„El examen“ bezeichnet ein Ereignis mit Termin — sein Ort verlangt ser."
+    },
+    {
+      "id": "ser_estar:B1:033",
+      "prompt": "La marcha del orgullo ___ en el Paseo de la Reforma.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La marcha“ bezeichnet ein Ereignis — auch im Indefinido steht sein Ort mit ser."
+    },
+    {
+      "id": "ser_estar:B1:034",
+      "prompt": "La quinceañera de la hija de doña Mari ___ en el salón de la colonia.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La quinceañera“ bezeichnet eine Feier — Feste nehmen ser für den Ort."
+    },
+    {
+      "id": "ser_estar:B1:035",
+      "prompt": "La kermés de la parroquia ___ en el atrio de la iglesia.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "event_location",
+      "level": "B1",
+      "explanation_de": "„La kermés“ bezeichnet ein Fest — ein Ereignis nimmt ser für seinen Ort."
+    },
+    {
+      "id": "ser_estar:B1:036",
+      "prompt": "El Museo de Antropología ___ en Chapultepec, muy cerca del metro.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "B1",
+      "explanation_de": "„El museo“ bezeichnet ein Gebäude, kein Ereignis — wo sich etwas befindet, steht estar."
+    },
+    {
+      "id": "ser_estar:B1:037",
+      "prompt": "Mis papás ___ en Cancún de vacaciones hasta el domingo.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "B1",
+      "explanation_de": "„En Cancún“ nennt den momentanen Aufenthaltsort — für Personen an einem Ort brauchst du estar."
+    },
+    {
+      "id": "ser_estar:B1:038",
+      "prompt": "La farmacia de guardia ___ a dos cuadras del mercado.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "B1",
+      "explanation_de": "„A dos cuadras“ beschreibt die Lage eines Gebäudes — Ortsangaben von Dingen nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:039",
+      "prompt": "Cuando llamaste, todavía ___ en el metro, por eso no contesté.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "B1",
+      "explanation_de": "„En el metro“ nennt meinen Aufenthaltsort in dem Moment — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:B1:040",
+      "prompt": "Los boletos ___ en el cajón de la cocina, no los muevas.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "location",
+      "level": "B1",
+      "explanation_de": "„En el cajón“ sagt, wo die Tickets liegen — der Ort von Dingen verlangt estar."
+    },
+    {
+      "id": "ser_estar:B1:041",
+      "prompt": "Desde que le hablaron de la chamba nueva, Karla ___ muy emocionada.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "B1",
+      "explanation_de": "„Emocionada“ beschreibt ein aktuelles Gefühl — Emotionen nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:042",
+      "prompt": "Después del maratón, todos ___ muertos de cansancio.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "B1",
+      "explanation_de": "„Muertos de cansancio“ beschreibt einen vorübergehenden Zustand nach dem Lauf — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:B1:043",
+      "prompt": "No le hables ahorita al jefe, ___ de malas.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "B1",
+      "explanation_de": "„Ahorita“ zeigt: Die schlechte Laune gilt nur gerade jetzt — Stimmungen nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:044",
+      "prompt": "Mi abuela ___ triste porque nadie la visitó el domingo.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "B1",
+      "explanation_de": "„Triste“ beschreibt hier ein Gefühl mit konkretem Anlass — Gefühle stehen mit estar."
+    },
+    {
+      "id": "ser_estar:B1:045",
+      "prompt": "¿Por qué ___ tan nervioso? Solo es una entrevista.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "temporary_state_emotion",
+      "level": "B1",
+      "explanation_de": "„Nervioso“ beschreibt einen momentanen Zustand vor dem Termin — dafür brauchst du estar."
+    },
+    {
+      "id": "ser_estar:B1:046",
+      "prompt": "No hagas ruido, el bebé ya ___ dormido.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Ya dormido“ nennt das Ergebnis des Einschlafens — solche Zustände nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:047",
+      "prompt": "La leche ___ echada a perder, huele bien feo.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Echada a perder“ beschreibt das Ergebnis des Verderbens — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:B1:048",
+      "prompt": "Ya no salgas, la tienda de la esquina ___ cerrada a esta hora.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Cerrada a esta hora“ beschreibt den aktuellen Zustand des Ladens — Zustände nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:049",
+      "prompt": "El café ya ___ frío de tanto esperarte.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Ya frío“ zeigt eine Veränderung: Vorher war er heiß — das Ergebnis steht mit estar."
+    },
+    {
+      "id": "ser_estar:B1:050",
+      "prompt": "Mi celular ___ descompuesto desde que se me cayó en el camión.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Descompuesto“ nennt den Zustand nach dem Sturz — Ergebnisse einer Veränderung verlangen estar."
+    },
+    {
+      "id": "ser_estar:B1:051",
+      "prompt": "Las tortillas ya ___ duras, mejor hacemos chilaquiles.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Ya duras“ zeigt eine Veränderung der Tortillas — das Resultat drückst du mit estar aus."
+    },
+    {
+      "id": "ser_estar:B1:052",
+      "prompt": "Cuando llegamos, la casa ___ toda regada por la fiesta del día anterior.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Toda regada“ beschreibt den Zustand nach der Party — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:B1:053",
+      "prompt": "El pantalón ya ___ seco, lo dejé todo el día en el sol.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Ya seco“ markiert das Ergebnis des Trocknens — Zustände nach einer Veränderung nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:054",
+      "prompt": "La puerta del baño ___ atorada, no la puedo abrir.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Atorada“ beschreibt den momentanen Zustand der Tür — dafür brauchst du estar."
+    },
+    {
+      "id": "ser_estar:B1:055",
+      "prompt": "Uy, este chile relleno ___ quemado, ni se puede comer.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "result_of_change",
+      "level": "B1",
+      "explanation_de": "„Quemado“ nennt das Ergebnis eines Missgeschicks — solche Resultate stehen mit estar."
+    },
+    {
+      "id": "ser_estar:B1:056",
+      "prompt": "No te oigo bien, ___ pasando por un túnel.",
+      "options": [
+        "soy",
+        "estoy"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "B1",
+      "explanation_de": "„Pasando“ zeigt die Verlaufsform — vor dem Gerundio steht immer estar."
+    },
+    {
+      "id": "ser_estar:B1:057",
+      "prompt": "Los albañiles ___ arreglando la banqueta desde el lunes.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "B1",
+      "explanation_de": "„Arreglando“ verlangt die Verlaufsform — estar + Gerundio beschreibt die laufende Arbeit."
+    },
+    {
+      "id": "ser_estar:B1:058",
+      "prompt": "Cuando llegué, mi mamá ___ haciendo tamales para la posada.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "B1",
+      "explanation_de": "„Haciendo“ zeigt eine laufende Handlung — das Gerundio verbindet sich nur mit estar."
+    },
+    {
+      "id": "ser_estar:B1:059",
+      "prompt": "¿Qué ___ cocinando? Huele riquísimo en toda la casa.",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "B1",
+      "explanation_de": "„Cocinando“ zeigt, was gerade passiert — dafür steht estar + Gerundio."
+    },
+    {
+      "id": "ser_estar:B1:060",
+      "prompt": "Ahorita no puede contestar, ___ manejando rumbo a Toluca.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "progressive",
+      "level": "B1",
+      "explanation_de": "„Manejando“ mit „ahorita“ zeigt eine gerade laufende Handlung — also estar."
+    },
+    {
+      "id": "ser_estar:B1:061",
+      "prompt": "No te preocupes por el examen, tu hijo ___ muy listo y va a salir bien.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Listo“ mit ser bedeutet klug — genau das lobt der Satz, nicht seine Bereitschaft."
+    },
+    {
+      "id": "ser_estar:B1:062",
+      "prompt": "Dicen que el dueño del restaurante ___ muy rico, tiene casas en Polanco y en Miami.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Rico“ mit ser heißt reich — die Häuser zeigen, dass es um Geld geht, nicht um Geschmack."
+    },
+    {
+      "id": "ser_estar:B1:063",
+      "prompt": "No invites a Beto, ___ bien aburrido, nunca quiere hacer nada.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 0,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Aburrido“ mit ser heißt langweilig — „nunca“ zeigt, dass es um seinen Charakter geht."
+    },
+    {
+      "id": "ser_estar:B1:064",
+      "prompt": "¿Ya ___ listos? El camión sale en diez minutos.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Listos“ mit estar heißt bereit — genau das fragt der Satz vor der Abfahrt."
+    },
+    {
+      "id": "ser_estar:B1:065",
+      "prompt": "Prueba el mole, ___ riquísimo, le quedó perfecto a tu tía.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Riquísimo“ mit estar heißt lecker — es geht um den Geschmack von heute, nicht um Geld."
+    },
+    {
+      "id": "ser_estar:B1:066",
+      "prompt": "No te comas ese plátano, todavía ___ verde.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Verde“ mit estar heißt unreif — „todavía“ zeigt, dass sich das noch ändert."
+    },
+    {
+      "id": "ser_estar:B1:067",
+      "prompt": "Los niños ___ aburridos porque lleva dos horas lloviendo.",
+      "options": [
+        "son",
+        "están"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Aburridos“ mit estar heißt gelangweilt — der Regen liefert den momentanen Anlass."
+    },
+    {
+      "id": "ser_estar:B1:068",
+      "prompt": "Mi abuelo ya ___ malo del estómago otra vez, ha de haber sido el pozole.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Malo“ mit estar heißt krank — „del estómago“ zeigt, dass es um Gesundheit geht, nicht um Charakter."
+    },
+    {
+      "id": "ser_estar:B1:069",
+      "prompt": "¿De verdad ___ seguro de que cerraste la puerta con llave?",
+      "options": [
+        "eres",
+        "estás"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Seguro“ mit estar heißt sich sicher sein — mit ser hieße es ungefährlich."
+    },
+    {
+      "id": "ser_estar:B1:070",
+      "prompt": "Pensamos lo peor tras el temblor, pero todos los vecinos ___ vivos.",
+      "options": [
+        "eran",
+        "estaban"
+      ],
+      "correct": 1,
+      "ruleTag": "meaning_change_adjective",
+      "level": "B1",
+      "explanation_de": "„Vivos“ mit estar heißt am Leben — mit ser hieße es aufgeweckt."
+    },
+    {
+      "id": "ser_estar:B1:071",
+      "prompt": "La catedral ___ construida por los españoles en el siglo XVI.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Por los españoles“ nennt den Handelnden — ein Vorgang im Passiv nimmt ser."
+    },
+    {
+      "id": "ser_estar:B1:072",
+      "prompt": "El paquete ___ entregado por el repartidor esta mañana.",
+      "options": [
+        "fue",
+        "estuvo"
+      ],
+      "correct": 0,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Por el repartidor“ zeigt den Vorgang mit Täter — dafür steht ser + Participio."
+    },
+    {
+      "id": "ser_estar:B1:073",
+      "prompt": "Los ladrones ___ detenidos por la policía a las afueras del tianguis.",
+      "options": [
+        "fueron",
+        "estuvieron"
+      ],
+      "correct": 0,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Por la policía“ markiert das Passiv: Hier zählt die Handlung, also ser."
+    },
+    {
+      "id": "ser_estar:B1:074",
+      "prompt": "No podemos entrar, la puerta ___ cerrada con llave.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Cerrada“ beschreibt hier den Zustand der Tür, keinen Vorgang — deshalb estar."
+    },
+    {
+      "id": "ser_estar:B1:075",
+      "prompt": "Ya no te apures, la mesa ___ puesta y los invitados por llegar.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Puesta“ nennt das Resultat des Deckens, nicht die Handlung — dafür steht estar."
+    },
+    {
+      "id": "ser_estar:B1:076",
+      "prompt": "Cuando pasé por ahí, el puente todavía ___ roto por el temblor del año pasado.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Todavía roto“ beschreibt den andauernden Zustand nach dem Beben — also estar."
+    },
+    {
+      "id": "ser_estar:B1:077",
+      "prompt": "Revisa el contrato: ya ___ firmado, nomás falta el sello.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Ya firmado“ betont das fertige Resultat, nicht den Akt des Unterschreibens — deshalb estar."
+    },
+    {
+      "id": "ser_estar:B1:078",
+      "prompt": "El pavo ya ___ relleno, nomás falta meterlo al horno.",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Ya relleno“ nennt den erreichten Zustand des Truthahns — Zustände nach getaner Arbeit nehmen estar."
+    },
+    {
+      "id": "ser_estar:B1:079",
+      "prompt": "La tarea ya ___ terminada, ¿puedo salir a jugar?",
+      "options": [
+        "es",
+        "está"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Ya terminada“ zeigt das Ergebnis, nicht den Vorgang — dafür brauchst du estar."
+    },
+    {
+      "id": "ser_estar:B1:080",
+      "prompt": "Cuando volví del mandado, la mesa ya ___ recogida.",
+      "options": [
+        "era",
+        "estaba"
+      ],
+      "correct": 1,
+      "ruleTag": "passive_vs_resulting_state",
+      "level": "B1",
+      "explanation_de": "„Ya recogida“ beschreibt den vorgefundenen Zustand — das Resultat steht mit estar."
+    }
+  ],
+  "generatedAt": "2026-08-23"
+}

@@ -1,0 +1,1207 @@
+{
+  "game": "subjuntivo",
+  "source": "agent-authored, validated by shared/content/decision-items/bank.check.ts",
+  "items": [
+    {
+      "id": "subjuntivo:B2:001",
+      "prompt": "Mi jefa quería que ___ a la oficina el sábado, pero le dije que no.",
+      "options": [
+        "iba",
+        "fuera"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B2",
+      "explanation_de": "„Quería que“ drückt fremden Willen in der Vergangenheit aus — darum Imperfecto de Subjuntivo: fuera."
+    },
+    {
+      "id": "subjuntivo:B2:002",
+      "prompt": "Esperaba que mis papás me ___ dinero para la renta ese mes.",
+      "options": [
+        "mandaban",
+        "mandaran"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B2",
+      "explanation_de": "„Esperaba que“ richtet eine Hoffnung auf andere Personen — im Vergangenheitsrahmen folgt mandaran."
+    },
+    {
+      "id": "subjuntivo:B2:003",
+      "prompt": "De niña, mi mamá siempre quería que yo ___ el uniforme bien planchado.",
+      "options": [
+        "traía",
+        "trajera"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B2",
+      "explanation_de": "„Quería que“ zeigt den Willen der Mutter über eine andere Person — deshalb trajera, nicht traía."
+    },
+    {
+      "id": "subjuntivo:B2:004",
+      "prompt": "El profe deseaba que todos ___ el examen a la primera.",
+      "options": [
+        "pasaban",
+        "pasaran"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B2",
+      "explanation_de": "„Deseaba que“ löst den Subjuntivo aus — im Vergangenheitskontext heißt das pasaran."
+    },
+    {
+      "id": "subjuntivo:B2:005",
+      "prompt": "Mi abuela esperaba que le ___ nietos antes de cumplir setenta.",
+      "options": [
+        "dábamos",
+        "diéramos"
+      ],
+      "correct": 1,
+      "ruleTag": "wish_will",
+      "level": "B2",
+      "explanation_de": "„Esperaba que“ drückt eine Erwartung an andere aus — darum diéramos im Imperfecto de Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:006",
+      "prompt": "Me alegró mucho que ___ venir a la boda en Oaxaca.",
+      "options": [
+        "podías",
+        "pudieras"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B2",
+      "explanation_de": "„Me alegró que“ bewertet das Ereignis emotional — danach pudieras statt podías."
+    },
+    {
+      "id": "subjuntivo:B2:007",
+      "prompt": "A mi mamá le molestaba que ___ la música tan fuerte en la madrugada.",
+      "options": [
+        "poníamos",
+        "pusiéramos"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B2",
+      "explanation_de": "„Le molestaba que“ drückt ein Gefühl über fremdes Verhalten aus — also pusiéramos."
+    },
+    {
+      "id": "subjuntivo:B2:008",
+      "prompt": "Nos dio tristeza que el tianguis de la colonia ___ para siempre.",
+      "options": [
+        "cerraba",
+        "cerrara"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B2",
+      "explanation_de": "„Nos dio tristeza que“ ist eine Gefühlsreaktion — das Ereignis steht darum als cerrara im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:009",
+      "prompt": "Fue una pena que no ___ tiempo de probar el mole de tu tía.",
+      "options": [
+        "tenías",
+        "tuvieras"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B2",
+      "explanation_de": "„Fue una pena que“ wertet emotional — deshalb tuvieras, nicht tenías."
+    },
+    {
+      "id": "subjuntivo:B2:010",
+      "prompt": "Me dio coraje que el árbitro no ___ el penal tan claro.",
+      "options": [
+        "marcaba",
+        "marcara"
+      ],
+      "correct": 1,
+      "ruleTag": "emotion",
+      "level": "B2",
+      "explanation_de": "„Me dio coraje que“ — typisch mexikanischer Gefühlsausdruck, danach marcara im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:011",
+      "prompt": "Era importante que todos ___ a la junta vecinal.",
+      "options": [
+        "llegaban",
+        "llegaran"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B2",
+      "explanation_de": "„Era importante que“ wertet unpersönlich — im Vergangenheitsrahmen folgt llegaran."
+    },
+    {
+      "id": "subjuntivo:B2:012",
+      "prompt": "Fue necesario que la doctora ___ los estudios otra vez.",
+      "options": [
+        "pedía",
+        "pidiera"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B2",
+      "explanation_de": "„Fue necesario que“ verlangt den Subjuntivo — hier als pidiera."
+    },
+    {
+      "id": "subjuntivo:B2:013",
+      "prompt": "Era mejor que ___ el camión en vez de manejar al centro.",
+      "options": [
+        "tomábamos",
+        "tomáramos"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B2",
+      "explanation_de": "„Era mejor que“ gibt eine unpersönliche Wertung ab — darum tomáramos."
+    },
+    {
+      "id": "subjuntivo:B2:014",
+      "prompt": "Parecía increíble que la fila del trámite ___ hasta la esquina.",
+      "options": [
+        "llegaba",
+        "llegara"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B2",
+      "explanation_de": "„Parecía increíble que“ bewertet, statt festzustellen — deshalb llegara statt llegaba."
+    },
+    {
+      "id": "subjuntivo:B2:015",
+      "prompt": "No era justo que ella ___ toda la chamba sin ayuda.",
+      "options": [
+        "hacía",
+        "hiciera"
+      ],
+      "correct": 1,
+      "ruleTag": "impersonal_expression",
+      "level": "B2",
+      "explanation_de": "„No era justo que“ ist eine Wertung, keine Tatsachenfeststellung — also hiciera."
+    },
+    {
+      "id": "subjuntivo:B2:016",
+      "prompt": "El doctor me recomendó que ___ menos refresco.",
+      "options": [
+        "tomaba",
+        "tomara"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B2",
+      "explanation_de": "„Me recomendó que“ — nach einem Rat steht der Subjuntivo, in der Vergangenheit tomara."
+    },
+    {
+      "id": "subjuntivo:B2:017",
+      "prompt": "Le pedí al taxista que nos ___ por Reforma para evitar el tráfico.",
+      "options": [
+        "llevaba",
+        "llevara"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B2",
+      "explanation_de": "„Le pedí que“ ist eine Bitte an eine andere Person — darum llevara."
+    },
+    {
+      "id": "subjuntivo:B2:018",
+      "prompt": "Mi asesora me sugirió que ___ la tesis antes de diciembre.",
+      "options": [
+        "entregaba",
+        "entregara"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B2",
+      "explanation_de": "„Me sugirió que“ löst als Ratschlag den Subjuntivo aus: entregara."
+    },
+    {
+      "id": "subjuntivo:B2:019",
+      "prompt": "Les rogué que no ___ nada de la sorpresa.",
+      "options": [
+        "decían",
+        "dijeran"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B2",
+      "explanation_de": "„Les rogué que“ ist eine dringende Bitte — danach dijeran, nicht decían."
+    },
+    {
+      "id": "subjuntivo:B2:020",
+      "prompt": "La maestra nos aconsejó que ___ los verbos cada noche.",
+      "options": [
+        "repasábamos",
+        "repasáramos"
+      ],
+      "correct": 1,
+      "ruleTag": "recommendation_request",
+      "level": "B2",
+      "explanation_de": "„Nos aconsejó que“ — ein Ratschlag über fremdes Handeln verlangt repasáramos."
+    },
+    {
+      "id": "subjuntivo:B2:021",
+      "prompt": "No creía que el metro ___ tan lleno a las once de la mañana.",
+      "options": [
+        "estaba",
+        "estuviera"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B2",
+      "explanation_de": "„No creía que“ verneint eine Annahme — das Bezweifelte steht als estuviera im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:022",
+      "prompt": "Dudaba que mi primo ___ pagarme lo que me debía.",
+      "options": [
+        "podía",
+        "pudiera"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B2",
+      "explanation_de": "„Dudaba que“ drückt Zweifel aus — darum pudiera statt podía."
+    },
+    {
+      "id": "subjuntivo:B2:023",
+      "prompt": "El vecino negó que su perro ___ el que se metía al jardín.",
+      "options": [
+        "era",
+        "fuera"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B2",
+      "explanation_de": "„Negó que“ bestreitet den Sachverhalt — deshalb fuera."
+    },
+    {
+      "id": "subjuntivo:B2:024",
+      "prompt": "No pensaba que la boda ___ a costar tanto.",
+      "options": [
+        "iba",
+        "fuera"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B2",
+      "explanation_de": "„No pensaba que“ verneint die Erwartung — also fuera a costar im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:025",
+      "prompt": "Nadie creía que el América ___ el clásico ese año.",
+      "options": [
+        "perdía",
+        "perdiera"
+      ],
+      "correct": 1,
+      "ruleTag": "doubt_denial",
+      "level": "B2",
+      "explanation_de": "„Nadie creía que“ — verneinter Glaube, darum perdiera im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:026",
+      "prompt": "Ojalá ___ más tiempo para ir al gimnasio entre semana.",
+      "options": [
+        "tenía",
+        "tuviera"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B2",
+      "explanation_de": "Nach „ojalá“ steht hier das Imperfecto de Subjuntivo (tuviera), weil der Wunsch gerade unerfüllt bleibt."
+    },
+    {
+      "id": "subjuntivo:B2:027",
+      "prompt": "Ojalá mi depa ___ más cerca del metro.",
+      "options": [
+        "quedaba",
+        "quedara"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B2",
+      "explanation_de": "„Ojalá“ + Imperfecto de Subjuntivo (quedara) markiert einen Wunsch entgegen der Realität."
+    },
+    {
+      "id": "subjuntivo:B2:028",
+      "prompt": "Ojalá ___ menos tráfico en el Periférico a esta hora.",
+      "options": [
+        "había",
+        "hubiera"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B2",
+      "explanation_de": "„Ojalá“ verlangt den Subjuntivo — für den unerfüllten Gegenwartswunsch hubiera."
+    },
+    {
+      "id": "subjuntivo:B2:029",
+      "prompt": "Ojalá mi hermano ___ conseguir chamba pronto.",
+      "options": [
+        "podía",
+        "pudiera"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B2",
+      "explanation_de": "„Ojalá“ leitet einen Wunsch ein — pudiera zeigt, dass er noch nicht Wirklichkeit geworden ist."
+    },
+    {
+      "id": "subjuntivo:B2:030",
+      "prompt": "Ojalá ___ tacos de canasta en esta colonia.",
+      "options": [
+        "vendían",
+        "vendieran"
+      ],
+      "correct": 1,
+      "ruleTag": "ojala",
+      "level": "B2",
+      "explanation_de": "„Ojalá“ + vendieran: ein Wunsch, der der aktuellen Lage widerspricht — darum Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:031",
+      "prompt": "Te presto mi bici para que no ___ tarde a la chamba.",
+      "options": [
+        "llegas",
+        "llegues"
+      ],
+      "correct": 1,
+      "ruleTag": "purpose_clause",
+      "level": "B2",
+      "explanation_de": "„Para que“ leitet den Zweck für eine andere Person ein — darum llegues."
+    },
+    {
+      "id": "subjuntivo:B2:032",
+      "prompt": "Hablé despacio para que mi abuela me ___ bien.",
+      "options": [
+        "entendía",
+        "entendiera"
+      ],
+      "correct": 1,
+      "ruleTag": "purpose_clause",
+      "level": "B2",
+      "explanation_de": "„Para que“ nennt die Absicht hinter dem Sprechen — im Vergangenheitsrahmen entendiera."
+    },
+    {
+      "id": "subjuntivo:B2:033",
+      "prompt": "Dejé la puerta abierta para que el gato ___ salir al patio.",
+      "options": [
+        "podía",
+        "pudiera"
+      ],
+      "correct": 1,
+      "ruleTag": "purpose_clause",
+      "level": "B2",
+      "explanation_de": "„Para que“ + anderes Subjekt (el gato) verlangt den Subjuntivo: pudiera."
+    },
+    {
+      "id": "subjuntivo:B2:034",
+      "prompt": "El gobierno subsidia la tarifa a fin de que más gente ___ el transporte público.",
+      "options": [
+        "usa",
+        "use"
+      ],
+      "correct": 1,
+      "ruleTag": "purpose_clause",
+      "level": "B2",
+      "explanation_de": "„A fin de que“ ist ein reiner Zweck-Auslöser — danach immer use, nie usa."
+    },
+    {
+      "id": "subjuntivo:B2:035",
+      "prompt": "Apunté la dirección para que no se nos ___ el lugar.",
+      "options": [
+        "olvidaba",
+        "olvidara"
+      ],
+      "correct": 1,
+      "ruleTag": "purpose_clause",
+      "level": "B2",
+      "explanation_de": "„Para que no se nos olvidara“ — der beabsichtigte Effekt steht im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:036",
+      "prompt": "Cuando ___ a la casa, te voy a marcar para ponernos de acuerdo.",
+      "options": [
+        "llego",
+        "llegue"
+      ],
+      "correct": 1,
+      "ruleTag": "temporal_future",
+      "level": "B2",
+      "explanation_de": "„Cuando“ + noch nicht eingetretene Handlung („te voy a marcar“) nimmt llegue im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:037",
+      "prompt": "En cuanto me ___ la quincena, te pago lo que te debo, te lo juro.",
+      "options": [
+        "depositan",
+        "depositen"
+      ],
+      "correct": 1,
+      "ruleTag": "temporal_future",
+      "level": "B2",
+      "explanation_de": "„En cuanto“ verweist hier auf einen Zeitpunkt in der Zukunft — darum depositen."
+    },
+    {
+      "id": "subjuntivo:B2:038",
+      "prompt": "No vamos a empezar a comer hasta que ___ todos los invitados.",
+      "options": [
+        "llegan",
+        "lleguen"
+      ],
+      "correct": 1,
+      "ruleTag": "temporal_future",
+      "level": "B2",
+      "explanation_de": "„Hasta que“ + zukünftiges Ereignis: die Gäste sind noch nicht da, also lleguen."
+    },
+    {
+      "id": "subjuntivo:B2:039",
+      "prompt": "Tan pronto como ___ los resultados mañana, les aviso por el grupo.",
+      "options": [
+        "salen",
+        "salgan"
+      ],
+      "correct": 1,
+      "ruleTag": "temporal_future",
+      "level": "B2",
+      "explanation_de": "„Tan pronto como“ + morgen erwartetes Ereignis — deshalb salgan im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:040",
+      "prompt": "Vamos a quedarnos en el zócalo hasta que ___ los fuegos artificiales.",
+      "options": [
+        "empiezan",
+        "empiecen"
+      ],
+      "correct": 1,
+      "ruleTag": "temporal_future",
+      "level": "B2",
+      "explanation_de": "„Hasta que“ zeigt auf einen offenen Zukunftsmoment — empiecen statt empiezan."
+    },
+    {
+      "id": "subjuntivo:B2:041",
+      "prompt": "Busco un depa que no ___ más de seis mil pesos al mes.",
+      "options": [
+        "cuesta",
+        "cueste"
+      ],
+      "correct": 1,
+      "ruleTag": "indefinite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Busco un depa que…“ — das Gesuchte existiert vielleicht noch gar nicht, darum cueste."
+    },
+    {
+      "id": "subjuntivo:B2:042",
+      "prompt": "Necesitamos una niñera que ___ llegar antes de las siete.",
+      "options": [
+        "puede",
+        "pueda"
+      ],
+      "correct": 1,
+      "ruleTag": "indefinite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Necesitamos una niñera que…“ beschreibt eine noch unbestimmte Person — also pueda."
+    },
+    {
+      "id": "subjuntivo:B2:043",
+      "prompt": "No hay nadie en la oficina que ___ arreglar la impresora.",
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "correct": 1,
+      "ruleTag": "indefinite_antecedent",
+      "level": "B2",
+      "explanation_de": "„No hay nadie que“ verneint die Existenz — danach steht sepa im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:044",
+      "prompt": "¿Conoces algún restaurante por aquí que ___ pozole los martes?",
+      "options": [
+        "sirve",
+        "sirva"
+      ],
+      "correct": 1,
+      "ruleTag": "indefinite_antecedent",
+      "level": "B2",
+      "explanation_de": "„¿Conoces algún… que…?“ fragt nach etwas Unbestimmtem — deshalb sirva."
+    },
+    {
+      "id": "subjuntivo:B2:045",
+      "prompt": "Quiero comprar una casa que ___ patio para el perro.",
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "correct": 1,
+      "ruleTag": "indefinite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Quiero comprar una casa que…“ — ein Wunschobjekt ohne konkreten Kandidaten nimmt tenga."
+    },
+    {
+      "id": "subjuntivo:B2:046",
+      "prompt": "Aunque mañana ___, pensamos ir al tianguis de todos modos.",
+      "options": [
+        "llueve",
+        "llueva"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„Aunque“ + „mañana“: ob es regnet, weiß noch niemand — darum llueva."
+    },
+    {
+      "id": "subjuntivo:B2:047",
+      "prompt": "No sé si habrá boletos, pero aunque ___ pocos, voy a intentar comprar uno.",
+      "options": [
+        "quedan",
+        "queden"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„No sé si habrá boletos“ macht die Einräumung unsicher — also queden im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:048",
+      "prompt": "Todavía no veo el examen, pero aunque ___ dificilísimo, no pienso rendirme.",
+      "options": [
+        "está",
+        "esté"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„Todavía no veo el examen“: reine Vermutung, darum esté statt está."
+    },
+    {
+      "id": "subjuntivo:B2:049",
+      "prompt": "Aunque me ___ el doble, no le voy a vender el terreno a esa constructora.",
+      "options": [
+        "ofrece",
+        "ofrezca"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„Aunque me ofrezca el doble“ ist ein hypothetisches Angebot, keine Tatsache — Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:050",
+      "prompt": "Aunque ___ que hacer fila tres horas, mañana compro los boletos del concierto.",
+      "options": [
+        "hay",
+        "haya"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„Aunque“ + „mañana“: die Warteschlange bleibt nur befürchtet, nicht sicher — haya."
+    },
+    {
+      "id": "subjuntivo:B2:051",
+      "prompt": "No conozco al nuevo jefe, pero aunque ___ muy estricto, pienso pedirle el aumento.",
+      "options": [
+        "es",
+        "sea"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„No conozco al nuevo jefe“ — seine Strenge bleibt Spekulation, darum sea."
+    },
+    {
+      "id": "subjuntivo:B2:052",
+      "prompt": "Aunque el año que viene me ___ a otra ciudad, seguiremos en contacto.",
+      "options": [
+        "mandan",
+        "manden"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "„El año que viene“ verlegt die Einräumung in die offene Zukunft — manden im Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:053",
+      "prompt": "No sabemos cómo va a estar el clima, pero aunque ___ frío en la sierra, vamos a acampar.",
+      "options": [
+        "hace",
+        "haga"
+      ],
+      "correct": 1,
+      "ruleTag": "concession_unknown",
+      "level": "B2",
+      "explanation_de": "Das Wetter in der Sierra bleibt ungewiss („no sabemos“) — deshalb haga."
+    },
+    {
+      "id": "subjuntivo:B2:054",
+      "prompt": "Cuando ___ a casa de mi abuela, siempre me hace tamales.",
+      "options": [
+        "voy",
+        "vaya"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Siempre“ markiert eine Gewohnheit — nach „cuando“ steht dann voy im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:055",
+      "prompt": "Cada vez que mi tía ___ mole, invita a toda la familia.",
+      "options": [
+        "prepara",
+        "prepare"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Cada vez que“ beschreibt Wiederholtes — darum prepara, kein Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:056",
+      "prompt": "Cuando ___ chico, pasábamos las vacaciones en Veracruz.",
+      "options": [
+        "era",
+        "fuera"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Cuando era chico“ blickt auf reale Vergangenheit zurück — Indikativ era."
+    },
+    {
+      "id": "subjuntivo:B2:057",
+      "prompt": "En cuanto ___ del trabajo, mi papá siempre prende las noticias.",
+      "options": [
+        "llega",
+        "llegue"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Siempre“ + „en cuanto“: eine feste Gewohnheit nimmt llega im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:058",
+      "prompt": "Cuando ___ en la prepa, me iba en camión a la escuela.",
+      "options": [
+        "estaba",
+        "estuviera"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "Ein realer Lebensabschnitt in der Vergangenheit („me iba en camión“) — darum estaba."
+    },
+    {
+      "id": "subjuntivo:B2:059",
+      "prompt": "Los domingos, cuando ___ buen clima, comemos en el patio.",
+      "options": [
+        "hace",
+        "haga"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Los domingos“ beschreibt eine Routine — nach „cuando“ folgt hace im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:060",
+      "prompt": "De joven, mi papá trabajaba en el campo hasta que se ___ el sol.",
+      "options": [
+        "metía",
+        "metiera"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "Eine Gewohnheit in der Vergangenheit („de joven… trabajaba“) — nach „hasta que“ darum metía."
+    },
+    {
+      "id": "subjuntivo:B2:061",
+      "prompt": "Cuando mi mamá ___ en Monterrey, nos escribía cartas cada semana.",
+      "options": [
+        "vivía",
+        "viviera"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Nos escribía cada semana“ verankert reale Vergangenheit — also vivía im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:062",
+      "prompt": "Tan pronto como ___ a llover, todos en el mercado tapan sus puestos.",
+      "options": [
+        "empieza",
+        "empiece"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "Eine allgemeine Gewohnheit auf dem Markt — „tan pronto como“ + empieza im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:063",
+      "prompt": "De niño, cuando ___ la feria al pueblo, no dormíamos de la emoción.",
+      "options": [
+        "llegaba",
+        "llegara"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„De niño… no dormíamos“: wiederholte, reale Vergangenheit — darum llegaba."
+    },
+    {
+      "id": "subjuntivo:B2:064",
+      "prompt": "Cuando ___ los primeros fríos, mi abuela saca el ponche y las cobijas.",
+      "options": [
+        "empiezan",
+        "empiecen"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "Jedes Jahr dasselbe Ritual mit Ponche — Gewohnheit, also empiezan im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:065",
+      "prompt": "En cuanto ___ la campana, los niños salían corriendo al patio.",
+      "options": [
+        "sonaba",
+        "sonara"
+      ],
+      "correct": 0,
+      "ruleTag": "temporal_habitual",
+      "level": "B2",
+      "explanation_de": "„Salían corriendo“ beschreibt die tägliche Schulroutine von damals — deshalb sonaba."
+    },
+    {
+      "id": "subjuntivo:B2:066",
+      "prompt": "Conozco a un plomero que ___ bien barato y llega puntual.",
+      "options": [
+        "cobra",
+        "cobre"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Conozco a un plomero que…“ — du kennst ihn tatsächlich, darum cobra im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:067",
+      "prompt": "Tengo una amiga que ___ francés y alemán.",
+      "options": [
+        "habla",
+        "hable"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Tengo una amiga que…“: eine real existierende Person, also habla."
+    },
+    {
+      "id": "subjuntivo:B2:068",
+      "prompt": "En mi colonia hay una señora que ___ los mejores tamales de la zona.",
+      "options": [
+        "hace",
+        "haga"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Hay una señora que…“ — sie existiert konkret in deiner Colonia, deshalb hace."
+    },
+    {
+      "id": "subjuntivo:B2:069",
+      "prompt": "El puesto que ___ enfrente del metro vende las mejores garnachas.",
+      "options": [
+        "está",
+        "esté"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "Der Stand steht real vor der Metro — bei konkretem Bezugswort está im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:070",
+      "prompt": "Vivo en un edificio que ___ más de cien años.",
+      "options": [
+        "tiene",
+        "tenga"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Vivo en un edificio que…“ — das Gebäude existiert, darum tiene."
+    },
+    {
+      "id": "subjuntivo:B2:071",
+      "prompt": "Mi tío trabaja con un arquitecto que ___ casas por toda la Condesa.",
+      "options": [
+        "construye",
+        "construya"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "Der Architekt ist eine bestimmte, reale Person — also construye."
+    },
+    {
+      "id": "subjuntivo:B2:072",
+      "prompt": "Por fin encontré al mesero que nos ___ la vez pasada.",
+      "options": [
+        "atendió",
+        "atendiera"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Encontré al mesero que…“ — genau dieser Kellner, darum atendió im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:073",
+      "prompt": "La doctora que me ___ el lunes me dio buenas noticias.",
+      "options": [
+        "revisó",
+        "revisara"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "Eine konkrete Ärztin, ein realer Termin — deshalb revisó, kein Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:074",
+      "prompt": "Estoy leyendo un libro que ___ de la Revolución Mexicana.",
+      "options": [
+        "trata",
+        "trate"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "Das Buch liegt vor dir — bei existierendem Bezugswort trata im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:075",
+      "prompt": "Mi compadre tiene un carro que ___ hasta doscientos por hora.",
+      "options": [
+        "corre",
+        "corra"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "Das Auto deines Compadre existiert wirklich — darum corre."
+    },
+    {
+      "id": "subjuntivo:B2:076",
+      "prompt": "Conozco un cafecito en el centro que ___ hasta las once de la noche.",
+      "options": [
+        "abre",
+        "abra"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "„Conozco un cafecito que…“ — ein bestimmter, realer Ort, also abre."
+    },
+    {
+      "id": "subjuntivo:B2:077",
+      "prompt": "El profe que nos ___ historia el semestre pasado era buenísimo.",
+      "options": [
+        "daba",
+        "diera"
+      ],
+      "correct": 0,
+      "ruleTag": "definite_antecedent",
+      "level": "B2",
+      "explanation_de": "Der Profe vom letzten Semester ist eine konkrete Erinnerung — deshalb daba."
+    },
+    {
+      "id": "subjuntivo:B2:078",
+      "prompt": "Yo creía que la fiesta ___ el sábado, por eso no fui el viernes.",
+      "options": [
+        "era",
+        "fuera"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Creía que“ ist bejahter Glaube, auch ein Irrtum — darum era im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:079",
+      "prompt": "Estoy seguro de que el jefe ya ___ lo del aumento.",
+      "options": [
+        "sabe",
+        "sepa"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Estoy seguro de que“ drückt Gewissheit aus — also sabe."
+    },
+    {
+      "id": "subjuntivo:B2:080",
+      "prompt": "Es verdad que la renta en esta zona ___ cada año.",
+      "options": [
+        "sube",
+        "suba"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Es verdad que“ stellt eine Tatsache fest — deshalb sube im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:081",
+      "prompt": "Está claro que al equipo le ___ un delantero con más colmillo.",
+      "options": [
+        "falta",
+        "falte"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Está claro que“ behauptet Offensichtliches — falta, kein Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:082",
+      "prompt": "Creo que esta cumbia ___ del nuevo disco de los Ángeles Azules.",
+      "options": [
+        "es",
+        "sea"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Creo que“ ohne Verneinung bleibt beim Indikativ — es."
+    },
+    {
+      "id": "subjuntivo:B2:083",
+      "prompt": "Pensaba que el camión ___ por Insurgentes, por eso lo tomé.",
+      "options": [
+        "pasaba",
+        "pasara"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Pensaba que“ ist eine bejahte Annahme von damals — darum pasaba."
+    },
+    {
+      "id": "subjuntivo:B2:084",
+      "prompt": "Es obvio que a mi gato no le ___ las croquetas nuevas.",
+      "options": [
+        "gustan",
+        "gusten"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Es obvio que“ meldet eine klare Beobachtung — also gustan."
+    },
+    {
+      "id": "subjuntivo:B2:085",
+      "prompt": "No cabe duda de que en Puebla se ___ muy bien.",
+      "options": [
+        "come",
+        "coma"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„No cabe duda de que“ schließt jeden Zweifel aus — deshalb come im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:086",
+      "prompt": "Estaba convencida de que las llaves ___ en mi bolsa.",
+      "options": [
+        "estaban",
+        "estuvieran"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Estaba convencida de que“ ist feste Überzeugung — estaban, nicht estuvieran."
+    },
+    {
+      "id": "subjuntivo:B2:087",
+      "prompt": "Aunque ___ cansadísimos después del turno, nos quedamos a la posada hasta el final.",
+      "options": [
+        "estábamos",
+        "estuviéramos"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Aunque“ + reale, schon erlebte Tatsache (ihr wart müde) — darum estábamos im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:088",
+      "prompt": "Aunque el boleto me ___ carísimo, valió cada peso ver a los Tigres.",
+      "options": [
+        "costó",
+        "costara"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Aunque“ + tatsächlich gezahlter Preis („valió cada peso“) — costó im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:089",
+      "prompt": "Aunque ese día ___ un calorón, nos aventamos la caminata completa.",
+      "options": [
+        "hacía",
+        "hiciera"
+      ],
+      "correct": 0,
+      "ruleTag": "certainty_indicative",
+      "level": "B2",
+      "explanation_de": "„Aunque“ + reales Wetter an jenem Tag — die erlebte Tatsache nimmt hacía."
+    },
+    {
+      "id": "subjuntivo:B2:090",
+      "prompt": "Sé que los tacos de ese puesto ___ los mejores del rumbo.",
+      "options": [
+        "son",
+        "sean"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Sé que“ berichtet gesichertes Wissen — darum son im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:091",
+      "prompt": "Mi hermana me contó que ya ___ departamento en Coyoacán.",
+      "options": [
+        "encontró",
+        "encontrara"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Me contó que“ gibt eine Nachricht weiter — also encontró."
+    },
+    {
+      "id": "subjuntivo:B2:092",
+      "prompt": "El noticiero dijo que mañana ___ a llover toda la tarde.",
+      "options": [
+        "va",
+        "vaya"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„El noticiero dijo que“ überliefert eine Meldung — deshalb va im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:093",
+      "prompt": "Dicen que en ese mercado se ___ la mejor barbacoa de la ciudad.",
+      "options": [
+        "vende",
+        "venda"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Dicen que“ gibt Gehörtes als Information weiter — vende, kein Subjuntivo."
+    },
+    {
+      "id": "subjuntivo:B2:094",
+      "prompt": "Me explicaron que el trámite ___ como dos semanas.",
+      "options": [
+        "tarda",
+        "tarde"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Me explicaron que“ berichtet eine Auskunft — darum tarda."
+    },
+    {
+      "id": "subjuntivo:B2:095",
+      "prompt": "Supimos que la vecina se ___ a Guadalajara por la chamba.",
+      "options": [
+        "mudó",
+        "mudara"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Supimos que“ meldet eine erfahrene Tatsache — also mudó."
+    },
+    {
+      "id": "subjuntivo:B2:096",
+      "prompt": "El mecánico me aseguró que el carro ya ___ listo.",
+      "options": [
+        "está",
+        "esté"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Me aseguró que“ überbringt eine Zusicherung — está im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:097",
+      "prompt": "Leí que el nuevo tramo del metro ___ el próximo año.",
+      "options": [
+        "abre",
+        "abra"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Leí que“ zitiert eine Nachricht — deshalb abre."
+    },
+    {
+      "id": "subjuntivo:B2:098",
+      "prompt": "Mi abuelo siempre contaba que en su pueblo ___ un río limpísimo.",
+      "options": [
+        "había",
+        "hubiera"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Contaba que“ gibt Erinnerungen als Bericht weiter — darum había."
+    },
+    {
+      "id": "subjuntivo:B2:099",
+      "prompt": "La maestra nos avisó que el examen ___ hasta el jueves.",
+      "options": [
+        "es",
+        "sea"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Nos avisó que“ übermittelt eine Information, keinen Befehl — also es im Indikativ."
+    },
+    {
+      "id": "subjuntivo:B2:100",
+      "prompt": "En las noticias confirmaron que el concierto sí se ___ a cabo.",
+      "options": [
+        "lleva",
+        "lleve"
+      ],
+      "correct": 0,
+      "ruleTag": "reported_fact",
+      "level": "B2",
+      "explanation_de": "„Confirmaron que“ bestätigt einen Fakt — deshalb lleva."
+    }
+  ],
+  "generatedAt": "2026-08-23"
+}
