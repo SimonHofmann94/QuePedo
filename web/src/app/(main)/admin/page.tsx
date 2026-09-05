@@ -77,6 +77,25 @@ export default async function AdminPage() {
           </span>
         </Link>
 
+        {/* Grammar pool generator */}
+        <Link
+          href="/admin/grammar"
+          className="group mb-8 flex items-center gap-4 rounded-[20px] border-[3px] border-jade-500 bg-white p-5 shadow-[0_4px_0_0_var(--jade-700)] transition-transform duration-100 active:translate-y-1 active:shadow-none"
+        >
+          <div className="text-4xl">📚</div>
+          <div className="flex-1">
+            <div className="font-display text-xl font-extrabold leading-tight tracking-tight text-ink-800">
+              Pool de gramática
+            </div>
+            <p className="mt-1 text-sm text-ink-500">
+              Genera ejercicios nuevos por capítulo — se suman al pool compartido
+            </p>
+          </div>
+          <span className="font-display text-sm font-bold text-jade-500 transition-transform group-hover:translate-x-1">
+            ¡Dale! →
+          </span>
+        </Link>
+
         <AdminUsersTable initialUsers={users} callerId={user?.id ?? ""} />
       </div>
     </div>

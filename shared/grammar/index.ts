@@ -7,7 +7,14 @@ export { grammarB1 } from './b1'
 export { grammarB2 } from './b2'
 export { grammarC1 } from './c1'
 export { grammarC2 } from './c2'
-export { getChapterExercises } from './exercises'
+export { getChapterExercises, exerciseKey } from './exercises'
+export * from './pool'
+export * from './prompt'
+export {
+  grammarQuestionSchema,
+  grammarQuestionsArraySchema,
+  grammarQuestionsResponseSchema,
+} from './exerciseSchema'
 export { serializeChapterContent } from './serialize'
 export { getBakedExercises, hasBakedExercises } from '../content/grammar-exercises'
 export { fewShotExamples, fewShotPromptBlock } from './fewShotExamples'

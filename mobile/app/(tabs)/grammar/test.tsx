@@ -15,7 +15,6 @@ import { useRouter, useLocalSearchParams } from 'expo-router'
 import { ArrowLeft, Lock, Sparkles } from 'lucide-react-native'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
-import { getChapterExercises } from '@chingon/shared'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { checkAnswer } from '@chingon/shared'
 import type {
@@ -29,6 +28,7 @@ import {
   generateGrammarQuestions,
   getGrammarAIRemaining,
 } from '@/services/grammarTest'
+import { addToPool, getChapterSession, recordProgress } from '@/services/grammarPool'
 
 export default function GrammarTestScreen() {
   const router = useRouter()
@@ -38,9 +38,9 @@ export default function GrammarTestScreen() {
   const { isPremium, presentPaywall } = useSubscription()
 
   const chapterId = parseInt(chapterParam || '0', 10)
-  const hardcodedExercises = getChapterExercises(level || '', chapterId)
 
-  const [questions, setQuestions] = useState<GrammarQuestion[]>(hardcodedExercises || [])
+  const [questions, setQuestions] = useState<GrammarQuestion[]>([])
+  const [poolLoading, setPoolLoading] = useState(true)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [userAnswer, setUserAnswer] = useState('')
@@ -51,7 +51,19 @@ export default function GrammarTestScreen() {
   const [aiLoading, setAiLoading] = useState(false)
   const [aiError, setAiError] = useState<string | null>(null)
   const [aiRemaining, setAiRemaining] = useState<number | null>(null)
-  const [hardcodedCount] = useState(hardcodedExercises?.length || 0)
+
+  // Bundle ∪ DB pool (027), unseen items first. Bundled JSON answers offline.
+  useEffect(() => {
+    let cancelled = false
+    getChapterSession(level || '', chapterId).then(({ questions: picked }) => {
+      if (cancelled) return
+      setQuestions(picked)
+      setPoolLoading(false)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [level, chapterId])
 
   // Load AI remaining count when results screen appears
   useEffect(() => {
@@ -95,6 +107,8 @@ export default function GrammarTestScreen() {
     } else {
       setShowFeedback(false)
       setShowResults(true)
+      // Mark the session's items as seen — next visit serves unseen ones.
+      void recordProgress(level || '', chapterId, results)
     }
   }
 
@@ -106,6 +120,9 @@ export default function GrammarTestScreen() {
 
     try {
       const newQuestions = await generateGrammarQuestions(level || '', chapterId, 3)
+      // Keep them: the pool is shared, so one user's 3-a-day quota grows the
+      // chapter for everyone instead of evaporating with this screen.
+      void addToPool(level || '', chapterId, newQuestions)
       setQuestions((prev) => [...prev, ...newQuestions])
       setShowResults(false)
       setCurrentIndex(results.length)
@@ -147,7 +164,17 @@ export default function GrammarTestScreen() {
     } catch {}
   }
 
-  if (!hardcodedExercises || hardcodedExercises.length === 0) {
+  if (poolLoading) {
+    return (
+      <SafeAreaView style={styles.container} edges={['top']}>
+        <View style={styles.emptyState}>
+          <Text style={styles.emptySubtext}>Cocinando…</Text>
+        </View>
+      </SafeAreaView>
+    )
+  }
+
+  if (questions.length === 0) {
     return (
       <SafeAreaView style={styles.container} edges={['top']}>
         <View style={styles.emptyState}>

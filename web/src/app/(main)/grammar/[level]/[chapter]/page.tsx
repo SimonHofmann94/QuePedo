@@ -3,11 +3,12 @@ import { notFound, redirect } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { getChapter, getChapterExercises } from "@chingon/shared"
+import { getChapter } from "@chingon/shared"
 import type { GrammarContentBlock } from "@chingon/shared"
 import { getLocale } from "next-intl/server"
 import { ChapterExercises } from "./ChapterExercises"
 import { isFreeGrammarLevel, isUserPremium } from "@/lib/premium"
+import { getChapterSession } from "@/lib/grammarPool"
 
 const LEVEL_COLOR: Record<string, "chili" | "rosa" | "jade" | "cielo" | "maiz" | "jacaranda"> = {
   a1: "chili", a2: "jade", b1: "cielo", b2: "maiz", c1: "jacaranda", c2: "rosa",
@@ -32,7 +33,8 @@ export default async function GrammarChapterPage({
     if (!premium) redirect(`/grammar/${level.toLowerCase()}`)
   }
 
-  const exercises = getChapterExercises(level, chapterId) ?? []
+  // Bundle ∪ DB pool (027), unseen items first. A fresh set every visit.
+  const session = await getChapterSession(level, chapterId)
   const family = LEVEL_COLOR[level.toLowerCase()] ?? "chili"
 
   return (
@@ -72,17 +74,23 @@ export default async function GrammarChapterPage({
         </div>
 
         {/* Exercises */}
-        {exercises.length > 0 ? (
+        {session.questions.length > 0 ? (
           <div className="mt-12 rounded-[24px] border border-ink-100 bg-white p-6 shadow-sm md:p-8">
             <div className="mb-5 flex items-center justify-between">
               <h2 className="font-display text-2xl font-extrabold tracking-tight text-ink-800">
                 ¡Practica!
               </h2>
               <Badge color="maiz" variant="solid" size="sm">
-                {exercises.length} ejercicios
+                {session.poolSize > session.questions.length
+                  ? `${session.questions.length} de ${session.poolSize}`
+                  : `${session.questions.length} ejercicios`}
               </Badge>
             </div>
-            <ChapterExercises exercises={exercises} level={level.toLowerCase()} chapterId={chapterId} />
+            <ChapterExercises
+              exercises={session.questions}
+              level={level.toLowerCase()}
+              chapterId={chapterId}
+            />
           </div>
         ) : (
           <div className="mt-12 rounded-[20px] border-2 border-dashed border-ink-200 bg-card p-8 text-center">

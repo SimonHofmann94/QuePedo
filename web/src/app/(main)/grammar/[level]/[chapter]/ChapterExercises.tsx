@@ -1,11 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { ProgressBar } from "@/components/ui/progress"
 import { CheckIcon, XIcon } from "@/components/ui/icons"
+import { exerciseKey } from "@chingon/shared"
+import { recordGrammarProgress } from "@/actions/grammar"
 import type {
   GrammarQuestion,
   MultipleChoiceQuestion,
@@ -57,7 +59,7 @@ function checkAnswer(user: string, correct: string, acceptable?: string[]): bool
   return false
 }
 
-export function ChapterExercises({ exercises, level }: Props) {
+export function ChapterExercises({ exercises, level, chapterId }: Props) {
   const [index, setIndex] = useState(0)
   const [done, setDone] = useState(false)
   const [results, setResults] = useState<Result[]>([])
@@ -86,6 +88,18 @@ export function ChapterExercises({ exercises, level }: Props) {
       setIndex((i) => i + 1)
     }
   }
+
+  // Mark what was served as seen, so the next visit pulls unseen items first
+  // (027 user_grammar_progress). Best-effort: a failure costs variety, not
+  // the score the user just earned.
+  useEffect(() => {
+    if (!done || results.length === 0) return
+    void recordGrammarProgress(
+      level,
+      chapterId,
+      results.map((r) => ({ content_key: exerciseKey(r.question), correct: r.correct })),
+    )
+  }, [done, level, chapterId, results])
 
   if (done) {
     const correctCount = results.filter((r) => r.correct).length
@@ -124,13 +138,9 @@ export function ChapterExercises({ exercises, level }: Props) {
           <Button
             variant="ghost"
             className="flex-1"
-            onClick={() => {
-              setIndex(0)
-              setResults([])
-              setFeedbackByIndex({})
-              setStateByIndex({})
-              setDone(false)
-            }}
+            // Reload rather than reset: the server picks a fresh set from the
+            // pool, and the items just played are now marked seen.
+            onClick={() => window.location.reload()}
           >
             Otra vez
           </Button>

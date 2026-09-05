@@ -301,6 +301,10 @@ Safety rules written now, binding on the later phase: country-level location onl
 
 ## 11. Migration plan (SQL)
 
+> **Renumber before building.** `027_grammar_exercise_pool.sql` (grammar pool +
+> per-user progress) took 027 on 2026-09-05. The four migrations below shift to
+> **028–031**; their content is unaffected.
+
 ### 027_activity_prereq.sql (phase 1, deploy FIRST)
 
 ```sql

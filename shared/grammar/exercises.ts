@@ -206,10 +206,12 @@ const exerciseMap: Record<string, ExercisePair> = {
 }
 
 /**
- * Stable hash for deduping exercises across hand-curated + baked sources.
- * Uses prompt/sentence + correct answer as identity.
+ * Stable identity for an exercise, across ALL sources: hand-curated, baked
+ * JSON, and the `grammar_exercises` DB pool (027 stores it as `content_key`,
+ * with a unique index). Uses prompt/sentence + correct answer, so the same
+ * item generated twice by Gemini collapses to one row.
  */
-function exerciseKey(ex: GrammarQuestion): string {
+export function exerciseKey(ex: GrammarQuestion): string {
   switch (ex.type) {
     case 'multiple_choice':
       return `mc:${ex.prompt}::${ex.correctAnswer}`

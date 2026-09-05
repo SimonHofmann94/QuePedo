@@ -11,8 +11,18 @@
  *   GEMINI_API_KEY=xxx npm run build:grammar-exercises -- --chapter a1:0
  *   npm run build:grammar-exercises -- --dry-run                               # no API calls
  *
+ *   GEMINI_API_KEY=xxx npm run build:grammar-exercises -- --to-db            # grow the DB pool
+ *
  * Per chapter: 1 Gemini call returning 12 exercises (3 of each type).
- * Resume: skips chapters already present in the level JSON.
+ *
+ * Two destinations:
+ *   default    → bakes into the level JSON. Skips chapters already present,
+ *                so it only ever fills gaps in the bundled base.
+ *   --to-db    → inserts into grammar_exercises (migration 027) instead, for
+ *                EVERY chapter. This is the growth path: the bundle stays the
+ *                reviewed base, the DB accumulates. Duplicates collapse on the
+ *                content_key unique index, so re-running is always safe.
+ *                Needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY.
  */
 
 import fs from 'node:fs/promises'
@@ -34,57 +44,21 @@ const LEVEL_TITLES = {
   c2: 'Mastery Spanish Grammar',
 }
 
-// Models to try in order — flash-lite first since it's cheap and rarely
-// rate-limited; same ladder as build-vocab.mjs.
-const MODELS = [
-  'gemini-2.5-flash-lite',
-  'gemini-2.5-flash',
-  'gemini-3-flash-preview',
-]
+// Model ladder and prompt both live in shared/grammar/prompt.ts so the admin
+// generator in the web app emits identical exercises. Filled by loadShared().
+let MODELS = []
+let buildPrompt = null
+let toPoolItems = null
 
 const RETRYABLE = new Set([429, 500, 502, 503, 504])
 
 async function loadShared() {
   // Use ESM dynamic import; tsx handles the .ts files.
   const grammar = await import(path.join(ROOT, 'shared', 'grammar', 'index.ts'))
-  const fewShot = await import(path.join(ROOT, 'shared', 'grammar', 'fewShotExamples.ts'))
-  return { grammar, fewShot }
-}
-
-const SYSTEM_PROMPT_HEADER = `You generate Spanish grammar exercises for a CEFR-graded language-learning app.
-
-OUTPUT FORMAT — return ONLY a JSON array of exactly 12 objects matching one of these shapes:
-- multiple_choice:    { "type": "multiple_choice", "prompt": "…", "options": ["A","B","C","D"], "correctAnswer": "A", "explanation": "…" }
-- fill_in_blank:      { "type": "fill_in_blank", "sentenceWithBlank": "… ___ …", "correctAnswer": "…", "acceptableAnswers": ["…"], "hint": "…", "explanation": "…" }
-- sentence_reorder:   { "type": "sentence_reorder", "correctSentence": "…", "shuffledWords": ["…"], "hint": "…", "explanation": "…" }
-- error_correction:   { "type": "error_correction", "sentenceWithError": "…", "errorWord": "…", "correctedWord": "…", "acceptableCorrections": ["…"], "explanation": "…" }
-
-CONSTRAINTS:
-- Generate EXACTLY 3 of each type. Total exactly 12 exercises.
-- Difficulty must match the CEFR level given below.
-- Examples must be in Spanish; explanations in English.
-- Distractors (wrong options) must be plausible for a learner at this level.
-- Use ONLY grammar covered in the chapter content below.
-- For sentence_reorder: shuffledWords must contain the exact tokens of correctSentence in a random order.
-- For error_correction: errorWord must appear verbatim in sentenceWithError.
-- For fill_in_blank: sentenceWithBlank MUST contain the substring "___" (three underscores) where the blank goes.
-
-Here is one example of the desired tone for each type:`
-
-function buildPrompt(level, chapter, fewShotJson, serialized) {
-  return `${SYSTEM_PROMPT_HEADER}
-
-${fewShotJson}
-
-(End of examples — do NOT repeat them. Generate fresh exercises for the chapter below.)
-
-CEFR LEVEL: ${level.toUpperCase()}
-CHAPTER TITLE: ${chapter.title}
-
-CHAPTER CONTENT:
-${serialized}
-
-Generate 12 exercises now. Return ONLY the JSON array.`
+  MODELS = [...grammar.GRAMMAR_MODELS]
+  buildPrompt = grammar.buildGrammarPrompt
+  toPoolItems = grammar.toPoolItems
+  return { grammar }
 }
 
 async function callGemini(prompt, apiKey, model) {
@@ -146,9 +120,8 @@ function validateExercises(arr) {
   return counts
 }
 
-async function generateForChapter(level, chapter, fewShotJson, apiKey, serializeFn) {
-  const serialized = serializeFn(chapter)
-  const prompt = buildPrompt(level, chapter, fewShotJson, serialized)
+async function generateForChapter(level, chapter, apiKey, serializeFn) {
+  const prompt = buildPrompt(level, chapter.title, serializeFn(chapter))
 
   let lastErr
   for (const model of MODELS) {
@@ -178,7 +151,79 @@ async function generateForChapter(level, chapter, fewShotJson, apiKey, serialize
   throw lastErr ?? new Error('All models exhausted')
 }
 
-async function buildLevel(level, levelData, fewShotJson, apiKey, dryRun, chapterFilter, serializeFn) {
+/**
+ * Insert a batch into grammar_exercises (027) with the service-role key.
+ * Service role bypasses RLS, so this writes the table directly instead of
+ * going through add_grammar_exercises (which exists for CLIENTS and caps at
+ * 16 rows). `on_conflict=content_key` + ignore-duplicates gives the same
+ * ON CONFLICT DO NOTHING semantics, so re-runs never double up.
+ *
+ * Returns the number of rows actually inserted.
+ */
+async function pushToDb(level, chapterId, exercises, model) {
+  const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!url || !key) {
+    throw new Error('SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required for --to-db')
+  }
+
+  const rows = toPoolItems(exercises).map((it) => ({
+    level: level.toLowerCase(),
+    chapter_id: chapterId,
+    type: it.type,
+    payload: it.payload,
+    content_key: it.content_key,
+    source: 'script',
+    model,
+  }))
+
+  const r = await fetch(`${url}/rest/v1/grammar_exercises?on_conflict=content_key`, {
+    method: 'POST',
+    headers: {
+      apikey: key,
+      Authorization: `Bearer ${key}`,
+      'Content-Type': 'application/json',
+      Prefer: 'resolution=ignore-duplicates,return=representation',
+    },
+    body: JSON.stringify(rows),
+  })
+  if (!r.ok) {
+    throw new Error(`Supabase ${r.status}: ${(await r.text()).slice(0, 200)}`)
+  }
+  const inserted = await r.json()
+  return Array.isArray(inserted) ? inserted.length : 0
+}
+
+/**
+ * --to-db mode: generate one batch for EVERY chapter and grow the pool.
+ * Never touches the level JSON — the bundle stays the reviewed base.
+ */
+async function growPool(level, levelData, apiKey, chapterFilter, serializeFn) {
+  const chapters = chapterFilter !== null
+    ? levelData.chapters.filter((c) => c.id === chapterFilter)
+    : levelData.chapters
+
+  console.log(`\n=== ${level.toUpperCase()} → DB pool (${chapters.length} chapters) ===`)
+  let total = 0
+
+  for (const chapter of chapters) {
+    process.stdout.write(`  Ch ${chapter.id}: ${chapter.title.slice(0, 50)}…`)
+    try {
+      const exercises = await generateForChapter(level, chapter, apiKey, serializeFn)
+      const n = await pushToDb(level, chapter.id, exercises, MODELS[0])
+      total += n
+      process.stdout.write(` → +${n} new${n < exercises.length ? ` (${exercises.length - n} dupes)` : ''}\n`)
+    } catch (e) {
+      process.stdout.write(` ✗ ${e.message}\n`)
+    }
+    await new Promise((r) => setTimeout(r, 500))
+  }
+
+  console.log(`✓ ${level.toUpperCase()}: +${total} exercises in the pool`)
+  return total
+}
+
+async function buildLevel(level, levelData, apiKey, dryRun, chapterFilter, serializeFn) {
   const file = path.join(OUT_DIR, `${level}.json`)
   let existing = {
     level: level.toUpperCase(),
@@ -217,13 +262,7 @@ async function buildLevel(level, levelData, fewShotJson, apiKey, dryRun, chapter
   for (const chapter of todo) {
     process.stdout.write(`  Ch ${chapter.id}: ${chapter.title.slice(0, 50)}…`)
     try {
-      const exercises = await generateForChapter(
-        level,
-        chapter,
-        fewShotJson,
-        apiKey,
-        serializeFn,
-      )
+      const exercises = await generateForChapter(level, chapter, apiKey, serializeFn)
       existing.chapters[chapter.id] = {
         title: chapter.title,
         exercises,
@@ -244,6 +283,7 @@ async function buildLevel(level, levelData, fewShotJson, apiKey, dryRun, chapter
 async function main() {
   const args = process.argv.slice(2)
   const dryRun = args.includes('--dry-run')
+  const toDb = args.includes('--to-db')
 
   // Single-chapter mode: --chapter a1:0
   let singleChapter = null
@@ -265,8 +305,7 @@ async function main() {
 
   await fs.mkdir(OUT_DIR, { recursive: true })
 
-  const { grammar, fewShot } = await loadShared()
-  const fewShotJson = fewShot.fewShotPromptBlock()
+  const { grammar } = await loadShared()
   const serializeFn = grammar.serializeChapterContent
 
   for (const level of targets) {
@@ -275,15 +314,16 @@ async function main() {
       console.warn(`Unknown level: ${level}`)
       continue
     }
-    await buildLevel(
-      level,
-      levelData,
-      fewShotJson,
-      apiKey,
-      dryRun,
-      singleChapter ? singleChapter.chapterId : null,
-      serializeFn,
-    )
+    const chapterFilter = singleChapter ? singleChapter.chapterId : null
+    if (toDb) {
+      if (dryRun) {
+        console.log(`\n=== ${level.toUpperCase()} → DB pool: would generate ${levelData.chapters.length} × 12 ===`)
+        continue
+      }
+      await growPool(level, levelData, apiKey, chapterFilter, serializeFn)
+    } else {
+      await buildLevel(level, levelData, apiKey, dryRun, chapterFilter, serializeFn)
+    }
   }
 
   console.log('\n✓ Done.')

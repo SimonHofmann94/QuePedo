@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   View,
   Text,
@@ -14,7 +14,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter, useLocalSearchParams } from 'expo-router'
 import { ArrowLeft } from 'lucide-react-native'
 import { Button } from '@/components/ui/Button'
-import { checkAnswer, normalizeAnswer, getChapterExercises } from '@chingon/shared'
+import { checkAnswer, normalizeAnswer } from '@chingon/shared'
+import { getChapterSession, recordProgress } from '@/services/grammarPool'
 import type {
   GrammarQuestion,
   MultipleChoiceQuestion,
@@ -53,24 +54,27 @@ export default function GrammarExercisePlayScreen() {
   const [selectedErrorWord, setSelectedErrorWord] = useState<string | null>(null)
   const [correctionInput, setCorrectionInput] = useState('')
 
-  // Load exercises synchronously from baked JSON in @chingon/shared.
-  // No async / no edge function on first open — that path now lives in
-  // a future "Generar nuevos" button (Phase 2).
-  const [initialized, setInitialized] = useState(false)
-  if (!initialized) {
-    setInitialized(true)
-    const exercises = getChapterExercises(level || 'a1', chapterId) ?? []
-    if (exercises.length === 0) {
-      setError('No exercises available for this chapter yet.')
-    } else {
-      setQuestions(exercises.slice(0, 8))
-      if (exercises[0].type === 'sentence_reorder') {
-        setAvailableWords([...exercises[0].shuffledWords])
-        setPlacedWords([])
+  // Bundle ∪ DB pool (027), unseen items first — a different set each visit.
+  // The bundled JSON alone answers offline, so this never blocks on network.
+  useEffect(() => {
+    let cancelled = false
+    getChapterSession(level || 'a1', chapterId).then(({ questions: picked }) => {
+      if (cancelled) return
+      if (picked.length === 0) {
+        setError('No exercises available for this chapter yet.')
+      } else {
+        setQuestions(picked)
+        if (picked[0].type === 'sentence_reorder') {
+          setAvailableWords([...picked[0].shuffledWords])
+          setPlacedWords([])
+        }
       }
+      setLoading(false)
+    })
+    return () => {
+      cancelled = true
     }
-    setLoading(false)
-  }
+  }, [level, chapterId])
 
   const question = questions[currentIndex]
   const totalQuestions = questions.length
@@ -139,6 +143,8 @@ export default function GrammarExercisePlayScreen() {
         setPlacedWords([])
       }
     } else {
+      // Mark what was played as seen so the next session pulls fresh items.
+      void recordProgress(level || 'a1', chapterId, results)
       // Navigate to results
       router.replace({
         pathname: '/(tabs)/exercises/grammar/results',
