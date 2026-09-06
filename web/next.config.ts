@@ -25,6 +25,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // The four grammar-decision drills moved from /games to /exercises. Old
+  // links (bookmarks, anything shared) keep working.
+  async redirects() {
+    return ["el-o-la", "ser-o-estar", "pasado", "subjuntivo"].map((slug) => ({
+      source: `/games/${slug}`,
+      destination: `/exercises/${slug}`,
+      permanent: true,
+    }));
+  },
+
   // Defense-in-depth headers. CSP is intentionally omitted for now — a strict
   // policy would need to allowlist PostHog, Supabase, RevenueCat, Sentry, Google
   // OAuth and amCharts; add it as Content-Security-Policy-Report-Only first.

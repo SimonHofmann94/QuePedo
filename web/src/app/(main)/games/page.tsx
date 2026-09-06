@@ -14,8 +14,9 @@ interface GameCard {
   color: Color
 }
 
-// Two sections: the vocabulary games play your words; the grammar games
-// drill one decision each. A flat seven-card grid read as a jumble.
+// The grammar-decision drills (¿El o La?, Ser o Estar, Pasado, ¿Subjuntivo?)
+// moved to /exercises — tapping the right form ten times is practice, not a
+// game. What is left here actually plays with your own vocabulary.
 const SECTIONS: { eyebrow: string; title: string; games: GameCard[] }[] = [
   {
     eyebrow: "Palabras",
@@ -47,44 +48,6 @@ const SECTIONS: { eyebrow: string; title: string; games: GameCard[] }[] = [
       },
     ],
   },
-  {
-    eyebrow: "Gramática",
-    title: "Una decisión a la vez",
-    games: [
-      {
-        id: "el_o_la",
-        href: "/games/el-o-la",
-        emoji: "⚖️",
-        title: "¿El o La?",
-        tagline: "Sesenta segundos de artículos. Tu reflejo contra el género.",
-        color: "maiz",
-      },
-      {
-        id: "ser_estar",
-        href: "/games/ser-o-estar",
-        emoji: "🎭",
-        title: "Ser o Estar",
-        tagline: "¿Esencia o estado? Diez frases, una decisión cada una.",
-        color: "cielo",
-      },
-      {
-        id: "pasado",
-        href: "/games/pasado",
-        emoji: "⏳",
-        title: "Pasado",
-        tagline: "Indefinido, perfecto o imperfecto — la decisión que más cuesta.",
-        color: "rosa",
-      },
-      {
-        id: "subjuntivo",
-        href: "/games/subjuntivo",
-        emoji: "🔮",
-        title: "¿Subjuntivo?",
-        tagline: "Encuentra el disparador. Indicativo o subjuntivo.",
-        color: "jacaranda",
-      },
-    ],
-  },
 ]
 
 export default async function GamesHubPage() {
@@ -101,7 +64,7 @@ export default async function GamesHubPage() {
             Juegos
           </h1>
           <p className="mt-3 text-base text-ink-500">
-            Partidas de 2–3 minutos. Mantén tu racha 🔥
+            Partidas de 2–3 minutos con tu vocabulario. Mantén tu racha 🔥
           </p>
         </div>
 

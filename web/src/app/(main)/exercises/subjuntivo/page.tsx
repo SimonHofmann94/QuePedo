@@ -2,7 +2,7 @@
 
 import { useCallback } from "react"
 import { getDecisionBank, RULES_DE, type DecisionRuleTag } from "@chingon/shared"
-import { DecisionGame } from "../DecisionGame"
+import { DecisionGame } from "@/app/(main)/games/DecisionGame"
 
 export default function Page() {
   const buildPool = useCallback(() => getDecisionBank("subjuntivo"), [])
