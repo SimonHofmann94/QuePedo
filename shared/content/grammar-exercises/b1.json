@@ -1,7 +1,7 @@
 {
   "level": "B1",
   "title": "Intermediate Spanish Grammar",
-  "source": "Gemini-generated, validated against GrammarQuestion schema — pending build",
+  "source": "Gemini-generated, validated against GrammarQuestion schema — pending build Chapters on si-clauses and reported speech additionally carry hand-authored two-clause verb drills (see shared/content/grammar-exercises/verbos.check.ts).",
   "model": "gemini-2.5-flash-lite",
   "generatedAt": "2026-04-28",
   "chapters": {
@@ -122,33 +122,33 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ayer supimos la verdad sobre el caso.",
-          "errorWord": "supimos",
+          "sentenceWithError": "Ayer sabimos la verdad sobre el caso.",
+          "errorWord": "sabimos",
           "correctedWord": "supimos",
           "acceptableCorrections": [
             "supimos"
           ],
-          "explanation": "The sentence correctly uses the preterite 'supimos' (we found out) to indicate a completed action of discovering information at a specific time (yesterday). The imperfect 'sabíamos' would mean 'we knew' (information)."
+          "explanation": "«Saber» is irregular in the preterite: supe, supiste, supo, supimos. Here it means «we found out»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Mientras estudiaba, mi madre preparaba la cena.",
-          "errorWord": "preparaba",
+          "sentenceWithError": "Mientras estudiaba, mi madre preparabas la cena.",
+          "errorWord": "preparabas",
           "correctedWord": "preparaba",
           "acceptableCorrections": [
             "preparaba"
           ],
-          "explanation": "This sentence correctly uses the imperfect tense for both actions happening simultaneously in the past. 'Estudiaba' (I was studying) and 'preparaba' (she was preparing) describe ongoing background actions."
+          "explanation": "«Mi madre» takes «preparaba». Both clauses use the imperfect because the two actions ran in parallel."
         },
         {
           "type": "error_correction",
           "sentenceWithError": "Él quiso ser médico toda su vida.",
           "errorWord": "quiso",
-          "correctedWord": "quiso",
+          "correctedWord": "quería",
           "acceptableCorrections": [
-            "quiso"
+            "quería"
           ],
-          "explanation": "The sentence correctly uses the preterite 'quiso' to indicate a specific attempt or decision in the past ('He tried to be a doctor'). The imperfect 'quería' would mean 'He wanted' (a desire or state of mind, not necessarily an attempt)."
+          "explanation": "With a durative frame like «toda su vida» the imperfect describes an ongoing wish. The preterite «quiso» would mean a single attempt at one moment."
         }
       ]
     },
@@ -171,10 +171,10 @@
           "type": "multiple_choice",
           "prompt": "Elige la opción correcta para completar la frase: \"Ellos ___ a España.\"",
           "options": [
+            "hemos viajado",
             "han viajado",
-            "han viajado",
-            "habían viajado",
-            "hemos viajado"
+            "has viajado",
+            "he viajado"
           ],
           "correctAnswer": "han viajado",
           "explanation": "The sentence refers to an action completed in a timeframe connected to the present ('Este año' implies a present connection). The third-person plural present perfect of 'viajar' is 'han viajado'."
@@ -256,12 +256,12 @@
           "type": "sentence_reorder",
           "correctSentence": "Nunca habíamos estado en ese museo.",
           "shuffledWords": [
-            "estuvimos",
-            "en",
             "ese",
+            "en",
             "museo",
-            "nunca",
-            "habíamos"
+            "Nunca",
+            "habíamos",
+            "estado"
           ],
           "hint": "Adverb + haber + participle + place",
           "explanation": "The pluperfect tense is used to describe a past state before another past event or time. The correct order is 'Nunca' (adverb) + 'habíamos' (imperfect of haber) + 'estado' (past participle) + 'en ese museo' (prepositional phrase)."
@@ -279,23 +279,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ella ha roto el vaso.",
-          "errorWord": "roto",
+          "sentenceWithError": "Ella ha rompido el vaso.",
+          "errorWord": "rompido",
           "correctedWord": "roto",
           "acceptableCorrections": [
             "roto"
           ],
-          "explanation": "The sentence is grammatically correct. 'Roto' is the correct irregular past participle of 'romper'. The present perfect is formed with 'haber' + past participle, and 'Ella ha roto el vaso' means 'She has broken the glass'."
+          "explanation": "«Romper» has the irregular participle «roto»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Cuando llegamos, él ya había ido.",
-          "errorWord": "ido",
-          "correctedWord": "ido",
+          "sentenceWithError": "Cuando llegamos, él ya ha ido.",
+          "errorWord": "ha",
+          "correctedWord": "había",
           "acceptableCorrections": [
-            "ido"
+            "había"
           ],
-          "explanation": "This sentence is correct. 'Había ido' is the correct pluperfect form of the verb 'ir' (to go) for the third person singular ('él'). It correctly indicates an action that happened before another past action ('llegamos')."
+          "explanation": "An action completed before another past action takes the pluperfect: «ya había ido»."
         }
       ]
     },
@@ -372,11 +372,11 @@
           "type": "sentence_reorder",
           "correctSentence": "Mañana hablaremos con el director.",
           "shuffledWords": [
-            "Mañana",
             "hablaremos",
-            "con",
             "el",
-            "director."
+            "Mañana",
+            "con",
+            "director"
           ],
           "hint": "Start with the time expression, followed by the verb and then the complement.",
           "explanation": "The typical word order for a simple statement in Spanish is Subject-Verb-Object/Complement. Here, 'Mañana' acts as a time adverbial, followed by the conjugated future verb 'hablaremos' and its complement 'con el director'."
@@ -386,12 +386,12 @@
           "correctSentence": "Ellos no podrán venir a la reunión.",
           "shuffledWords": [
             "Ellos",
-            "no",
+            "a",
+            "reunión",
             "podrán",
             "venir",
-            "a",
             "la",
-            "reunión."
+            "no"
           ],
           "hint": "Subject + negation + irregular future verb + infinitive + complement.",
           "explanation": "The sentence follows the structure: Subject ('Ellos') + negation ('no') + irregular future verb ('podrán') + infinitive ('venir') + prepositional phrase ('a la reunión')."
@@ -400,11 +400,11 @@
           "type": "sentence_reorder",
           "correctSentence": "¿Quién será el nuevo jefe?",
           "shuffledWords": [
-            "¿Quién",
             "será",
+            "Quién",
             "el",
             "nuevo",
-            "jefe?"
+            "jefe"
           ],
           "hint": "Start with the question word, followed by the future tense verb and then the subject.",
           "explanation": "This sentence uses the future tense for speculation about the present. The structure is: Question word ('¿Quién') + future tense verb ('será') + subject ('el nuevo jefe')."
@@ -516,10 +516,9 @@
           "shuffledWords": [
             "gustaría",
             "Me",
-            "ir",
             "al",
-            "concierto",
-            " ."
+            "ir",
+            "concierto"
           ],
           "hint": "Subject + verb + infinitive + complement",
           "explanation": "The sentence expresses a wish. 'Me gustaría' (I would like) is followed by the infinitive 'ir' (to go)."
@@ -528,10 +527,9 @@
           "type": "sentence_reorder",
           "correctSentence": "Podríamos vernos mañana.",
           "shuffledWords": [
-            "Podríamos",
-            "mañana",
             "vernos",
-            " ."
+            "mañana",
+            "Podríamos"
           ],
           "hint": "Modal verb + infinitive",
           "explanation": "'Podríamos' (we could) is the conditional form of 'poder'. It is followed by the infinitive 'vernos' (see each other)."
@@ -540,12 +538,11 @@
           "type": "sentence_reorder",
           "correctSentence": "Ella vendría si la invitaras.",
           "shuffledWords": [
-            "la",
-            "invitaras",
             "vendría",
+            "invitaras",
             "Ella",
-            "si",
-            " ."
+            "la",
+            "si"
           ],
           "hint": "Conditional clause + main clause",
           "explanation": "This sentence structure uses a conditional clause ('si la invitaras' - if you invited her) followed by the main clause in the conditional tense ('Ella vendría' - She would come)."
@@ -604,10 +601,10 @@
             "estudias",
             "estudiaras",
             "estudiarías",
-            "estudiaras"
+            "estudiarás"
           ],
-          "correctAnswer": "estudias",
-          "explanation": "This is a Type 1 conditional sentence. The 'si' clause requires the present indicative ('estudias'), and the result clause uses the future indicative ('aprobarías')."
+          "correctAnswer": "estudiaras",
+          "explanation": "The main clause «aprobarías» is the conditional simple, so this is a Type 2 sentence: «si» + imperfect subjunctive → conditional. «Estudiases» would be equally correct. «Si» is never followed by the future («estudiarás») or the conditional («estudiarías»)."
         },
         {
           "type": "multiple_choice",
@@ -670,59 +667,310 @@
           "correctSentence": "Si tuviera más tiempo, leería ese libro.",
           "shuffledWords": [
             "ese",
-            "leerí­a",
+            "leería",
             "tuviera",
             "Si",
+            "libro",
             "más",
             "tiempo"
           ],
           "hint": "Type 2 conditional: Si + imperfect subjunctive, conditional.",
-          "explanation": "This is a Type 2 conditional sentence, expressing an unreal situation. The structure is 'Si' + imperfect subjunctive ('tuviera') followed by the conditional ('leerí­a')."
+          "explanation": "This is a Type 2 conditional sentence, expressing an unreal situation. The structure is 'Si' + imperfect subjunctive ('tuviera') followed by the conditional ('leería')."
         },
         {
           "type": "sentence_reorder",
           "correctSentence": "Me duele el estómago si como demasiado.",
           "shuffledWords": [
-            "demasiado",
-            "Si",
-            "como",
-            "el",
-            "Me",
             "duele",
-            "estómago"
+            "Me",
+            "estómago",
+            "como",
+            "si",
+            "demasiado",
+            "el"
           ],
           "hint": "Type 0 conditional: Si + present indicative, present indicative.",
           "explanation": "This sentence describes a general truth (Type 0 conditional). The structure is 'Si' + present indicative ('como') followed by the present indicative ('duele'). The clauses can be in either order."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Si tuviese más dinero, compraría una casa.",
-          "errorWord": "compraría",
+          "sentenceWithError": "Si tuviese más dinero, compraré una casa.",
+          "errorWord": "compraré",
           "correctedWord": "compraría",
           "acceptableCorrections": [
             "compraría"
           ],
-          "explanation": "This is a Type 2 conditional sentence. The 'si' clause uses the imperfect subjunctive ('tuviese'), so the result clause must use the conditional ('compraría'). The original sentence is correct."
+          "explanation": "«Si tuviese» is the imperfect subjunctive, so the sentence is Type 2 and the main clause takes the conditional, not the future: «compraría»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Si llueve, me quedaré en casa.",
-          "errorWord": "quedaré",
-          "correctedWord": "quedo",
+          "sentenceWithError": "Si lloverá, me quedaré en casa.",
+          "errorWord": "lloverá",
+          "correctedWord": "llueve",
           "acceptableCorrections": [
-            "quedo"
+            "llueve"
           ],
-          "explanation": "This sentence describes a general truth or habitual situation (Type 0 conditional). Therefore, both clauses should be in the present indicative. The 'si' clause is 'llueve' (present indicative), so the result clause should be 'quedo' (present indicative), not 'quedaré' (future indicative)."
+          "explanation": "«Si» is never followed by the future in Spanish. A Type 1 condition takes the present indicative: «Si llueve, me quedaré en casa»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Si tuvieras la oportunidad, ¿qué harías?",
-          "errorWord": "harías",
-          "correctedWord": "harías",
+          "sentenceWithError": "Si tendrías la oportunidad, ¿qué harías?",
+          "errorWord": "tendrías",
+          "correctedWord": "tuvieras",
           "acceptableCorrections": [
+            "tuvieras",
+            "tuvieses"
+          ],
+          "explanation": "«Si» is never followed by the conditional. A Type 2 condition takes the imperfect subjunctive: «Si tuvieras (o tuvieses) la oportunidad, ¿qué harías?»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si el agua llega a cien grados, ___.",
+          "correctAnswer": "hierve",
+          "acceptableAnswers": [
+            "hierve"
+          ],
+          "hint": "hervir · ella",
+          "explanation": "Type 0 (general truth): present indicative in both clauses — the si-clause states a fact that is always valid."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no duermes bien, ___ cansado todo el día.",
+          "correctAnswer": "estás",
+          "acceptableAnswers": [
+            "estás"
+          ],
+          "hint": "estar · tú",
+          "explanation": "Type 0 (general truth): present indicative in both clauses — the si-clause states a fact that is always valid."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hace mucho calor, la gente ___ menos.",
+          "correctAnswer": "trabaja",
+          "acceptableAnswers": [
+            "trabaja"
+          ],
+          "hint": "trabajar · ella",
+          "explanation": "Type 0 (general truth): present indicative in both clauses — the si-clause states a fact that is always valid."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si mezclas azul y amarillo, el resultado ___ verde.",
+          "correctAnswer": "es",
+          "acceptableAnswers": [
+            "es"
+          ],
+          "hint": "ser · él",
+          "explanation": "Type 0 (general truth): present indicative in both clauses — the si-clause states a fact that is always valid."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si llueve durante semanas, los ríos ___.",
+          "correctAnswer": "crecen",
+          "acceptableAnswers": [
+            "crecen"
+          ],
+          "hint": "crecer · ellos",
+          "explanation": "Type 0 (general truth): present indicative in both clauses — the si-clause states a fact that is always valid."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no desayunas, ___ hambre a las diez.",
+          "correctAnswer": "tienes",
+          "acceptableAnswers": [
+            "tienes"
+          ],
+          "hint": "tener · tú",
+          "explanation": "Type 0 (general truth): present indicative in both clauses — the si-clause states a fact that is always valid."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si mañana hace sol, ___ a la playa.",
+          "correctAnswer": "iremos",
+          "acceptableAnswers": [
+            "iremos",
+            "vamos"
+          ],
+          "hint": "ir · nosotros",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si tienes tiempo el sábado, te ___ la ciudad.",
+          "correctAnswer": "enseñaré",
+          "acceptableAnswers": [
+            "enseñaré",
+            "enseño"
+          ],
+          "hint": "enseñar · yo",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si estudias todos los días, ___ el examen sin problemas.",
+          "correctAnswer": "aprobarás",
+          "acceptableAnswers": [
+            "aprobarás",
+            "apruebas"
+          ],
+          "hint": "aprobar · tú",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no llegan a las ocho, ___ sin ellos.",
+          "correctAnswer": "empezaremos",
+          "acceptableAnswers": [
+            "empezaremos",
+            "empezamos"
+          ],
+          "hint": "empezar · nosotros",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si me llamas esta noche, te lo ___ todo.",
+          "correctAnswer": "explicaré",
+          "acceptableAnswers": [
+            "explicaré",
+            "explico"
+          ],
+          "hint": "explicar · yo",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si el tren sale tarde, ___ la reunión.",
+          "correctAnswer": "perderemos",
+          "acceptableAnswers": [
+            "perderemos",
+            "perdemos"
+          ],
+          "hint": "perder · nosotros",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si ustedes reservan hoy, ___ un descuento.",
+          "correctAnswer": "recibirán",
+          "acceptableAnswers": [
+            "recibirán",
+            "reciben"
+          ],
+          "hint": "recibir · ustedes",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hace frío el domingo, ___ la excursión.",
+          "correctAnswer": "cancelaremos",
+          "acceptableAnswers": [
+            "cancelaremos",
+            "cancelamos"
+          ],
+          "hint": "cancelar · nosotros",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si terminas pronto, Ana te ___ al cine.",
+          "correctAnswer": "llevará",
+          "acceptableAnswers": [
+            "llevará",
+            "lleva"
+          ],
+          "hint": "llevar · ella",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si tuviera más tiempo, ___ a México cada año.",
+          "correctAnswer": "viajaría",
+          "acceptableAnswers": [
+            "viajaría"
+          ],
+          "hint": "viajar · yo",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si fuéramos ricos, ___ una casa en la playa.",
+          "correctAnswer": "compraríamos",
+          "acceptableAnswers": [
+            "compraríamos"
+          ],
+          "hint": "comprar · nosotros",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si supieras la verdad, no ___ así.",
+          "correctAnswer": "hablarías",
+          "acceptableAnswers": [
+            "hablarías"
+          ],
+          "hint": "hablar · tú",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si mi hermano estudiara más, ___ mejores notas.",
+          "correctAnswer": "sacaría",
+          "acceptableAnswers": [
+            "sacaría"
+          ],
+          "hint": "sacar · él",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si pudiera elegir, ___ en Oaxaca.",
+          "correctAnswer": "viviría",
+          "acceptableAnswers": [
+            "viviría"
+          ],
+          "hint": "vivir · yo",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si ustedes llegaran antes, ___ ver el principio.",
+          "correctAnswer": "podrían",
+          "acceptableAnswers": [
+            "podrían"
+          ],
+          "hint": "poder · ustedes",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no lloviera tanto, ___ al parque.",
+          "correctAnswer": "iríamos",
+          "acceptableAnswers": [
+            "iríamos"
+          ],
+          "hint": "ir · nosotros",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si tú fueras el jefe, ¿qué ___?",
+          "correctAnswer": "harías",
+          "acceptableAnswers": [
             "harías"
           ],
-          "explanation": "This is a Type 2 conditional sentence, posing a hypothetical question. The 'si' clause uses the imperfect subjunctive ('tuvieras'), and the result clause correctly uses the conditional ('harías'). The sentence is grammatically correct."
+          "hint": "hacer · tú",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si Ana tuviera coche, nos ___ al aeropuerto.",
+          "correctAnswer": "llevaría",
+          "acceptableAnswers": [
+            "llevaría"
+          ],
+          "hint": "llevar · ella",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
         }
       ]
     },
@@ -733,10 +981,10 @@
           "type": "multiple_choice",
           "prompt": "Elige la forma correcta del subjuntivo para completar la frase: \"Espero que tú ___ a la fiesta.\"",
           "options": [
-            "vienes",
             "vengas",
             "vienes",
-            "viniste"
+            "viniste",
+            "vendrás"
           ],
           "correctAnswer": "vengas",
           "explanation": "The verb 'venir' is an -ir stem-changing verb (e>ie). The trigger 'Espero que' requires the subjunctive. The second person singular subjunctive form of 'venir' is 'vengas'."
@@ -813,13 +1061,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Preferimos que vosotros comáis más.",
-          "errorWord": "comáis",
+          "sentenceWithError": "Preferimos que vosotros coméis más.",
+          "errorWord": "coméis",
           "correctedWord": "comáis",
           "acceptableCorrections": [
             "comáis"
           ],
-          "explanation": "'Preferir que' expresses a preference, triggering the subjunctive. 'Comer' is an -er verb. The vosotros form of the present subjunctive is 'comáis'."
+          "explanation": "«Preferir que» expresses a wish and takes the subjunctive: «que vosotros comáis»."
         },
         {
           "type": "multiple_choice",
@@ -959,13 +1207,11 @@
           "type": "sentence_reorder",
           "correctSentence": "Si tuviera dinero, iría contigo.",
           "shuffledWords": [
-            "contigo",
-            "tuviera",
-            "Si",
-            "iría",
             "dinero",
-            "yo",
-            "a"
+            "tuviera",
+            "iría",
+            "contigo",
+            "Si"
           ],
           "hint": "Conditional sentence structure",
           "explanation": "This is a Type 2 conditional sentence. The 'si' clause uses the imperfect subjunctive ('tuviera'), and the main clause uses the conditional tense ('iría'). The correct order is 'Si yo tuviera dinero, iría contigo'."
@@ -1136,13 +1382,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "La fruta está verde, no la comas todavía.",
-          "errorWord": "verde",
-          "correctedWord": "verde",
+          "sentenceWithError": "La fruta es verde, no la comas todavía.",
+          "errorWord": "es",
+          "correctedWord": "está",
           "acceptableCorrections": [
-            "verde"
+            "está"
           ],
-          "explanation": "In this context, 'verde' refers to the state of the fruit (unripe), which is a temporary condition. Therefore, 'estar' is the correct verb to use with the adjective 'verde' when it means unripe."
+          "explanation": "«Estar verde» means unripe — a condition, so «estar». «Ser verde» would describe the colour."
         },
         {
           "type": "error_correction",
@@ -1217,15 +1463,15 @@
         },
         {
           "type": "multiple_choice",
-          "prompt": "Which option correctly completes: \"Les ___ el paquete ayer.\"",
+          "prompt": "Which option correctly replaces both objects in \"Envié el paquete a ellos ayer.\"?",
           "options": [
-            "lo envié",
-            "envié lo",
-            "lo envié",
-            "envié"
+            "Les lo envié ayer.",
+            "Se lo envié ayer.",
+            "Lo les envié ayer.",
+            "Le lo envié ayer."
           ],
-          "correctAnswer": "lo envié",
-          "explanation": "The direct object pronoun 'lo' (referring to 'el paquete') should precede the conjugated verb 'envié'. 'Les' is the indirect object pronoun."
+          "correctAnswer": "Se lo envié ayer.",
+          "explanation": "When the indirect object pronoun «le/les» meets the direct object pronoun «lo/la/los/las», «le/les» becomes «se»: «Se lo envié». «Les lo» is never possible, and the indirect pronoun always comes first."
         },
         {
           "type": "fill_in_blank",
@@ -1244,9 +1490,7 @@
           "shuffledWords": [
             "ahora",
             "dármelo",
-            "Puedes",
-            "me",
-            "dar"
+            "Puedes"
           ],
           "hint": "Affirmative command + double object pronouns",
           "explanation": "In affirmative commands, object pronouns are attached to the end of the verb. 'Me' and 'lo' combine to form 'melo', and an accent is added to 'dar' to maintain stress: 'dámelo'."
@@ -1287,10 +1531,10 @@
           "type": "sentence_reorder",
           "correctSentence": "Lo hemos comprado para ti.",
           "shuffledWords": [
-            "para",
-            "Hemos",
-            "ti",
             "comprado",
+            "hemos",
+            "ti",
+            "para",
             "Lo"
           ],
           "hint": "Compound tense + direct object pronoun",
@@ -1411,48 +1655,48 @@
           "type": "sentence_reorder",
           "correctSentence": "Juan y María se escriben correos electrónicos cada semana.",
           "shuffledWords": [
-            "semanas",
-            "escriben",
-            "cada",
-            "correos",
-            "electrónicos",
-            "Juan",
-            "y",
+            "se",
             "María",
-            "se"
+            "cada",
+            "electrónicos",
+            "semana",
+            "correos",
+            "escriben",
+            "y",
+            "Juan"
           ],
           "hint": "Subject + reflexive pronoun + verb + object.",
           "explanation": "The subject is 'Juan y María' (plural), the action is reciprocal ('se escriben' - they write to each other), followed by the object ('correos electrónicos') and the time phrase ('cada semana')."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Yo me acuerdo de tu cumpleaños.",
-          "errorWord": "acuerdo",
-          "correctedWord": "acuerdo",
+          "sentenceWithError": "Yo me acuerdo en tu cumpleaños.",
+          "errorWord": "en",
+          "correctedWord": "de",
           "acceptableCorrections": [
-            "acuerdo"
+            "de"
           ],
-          "explanation": "The verb 'acordarse' is pronominal and requires the reflexive pronoun 'me' for the first-person singular subject 'Yo'. The conjugation 'acuerdo' is correct."
+          "explanation": "«Acordarse» takes «de»: «me acuerdo de tu cumpleaños»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Vosotros os vestís muy elegante.",
-          "errorWord": "vestís",
-          "correctedWord": "vestís",
+          "sentenceWithError": "Vosotros se vestís muy elegante.",
+          "errorWord": "se",
+          "correctedWord": "os",
           "acceptableCorrections": [
-            "vestís"
+            "os"
           ],
-          "explanation": "The subject is 'Vosotros' (you all, informal plural), so the correct reflexive verb conjugation is 'os vestís'."
+          "explanation": "The reflexive pronoun for «vosotros» is «os»: «os vestís»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ella se atrevió a preguntar la respuesta.",
-          "errorWord": "atrevió",
-          "correctedWord": "atrevió",
+          "sentenceWithError": "Ella se atrevió de preguntar la respuesta.",
+          "errorWord": "de",
+          "correctedWord": "a",
           "acceptableCorrections": [
-            "atrevió"
+            "a"
           ],
-          "explanation": "'Atreverse' is a pronominal verb. The subject is 'Ella' (she), so the preterite tense conjugation is 'se atrevió'."
+          "explanation": "«Atreverse» takes «a» before an infinitive: «se atrevió a preguntar»."
         }
       ]
     },
@@ -1549,14 +1793,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Los papeles que están sobre la mesa son importantes.",
-          "errorWord": "que",
+          "sentenceWithError": "Los papeles cual están sobre la mesa son importantes.",
+          "errorWord": "cual",
           "correctedWord": "que",
           "acceptableCorrections": [
-            "que",
-            "los que"
+            "que"
           ],
-          "explanation": "While 'que' is perfectly acceptable here, 'los que' is also correct and can sometimes add clarity, especially in more formal contexts. Both refer to 'papeles' (masculine plural)."
+          "explanation": "«Que» is the default relative pronoun. «Cual» only appears as «el cual / la cual», never bare."
         },
         {
           "type": "multiple_choice",
@@ -1599,14 +1842,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Las ideas que discutimos son importantes.",
-          "errorWord": "que",
+          "sentenceWithError": "Las ideas quienes discutimos son importantes.",
+          "errorWord": "quienes",
           "correctedWord": "que",
           "acceptableCorrections": [
-            "que",
-            "las que"
+            "que"
           ],
-          "explanation": "'Que' is correct and common here. 'Las que' is also acceptable as it agrees with 'ideas' (feminine plural) and can be used after a preposition if one were present, or for emphasis."
+          "explanation": "«Quien/quienes» refers only to people. For things use «que»."
         }
       ]
     },
@@ -1744,13 +1986,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Se necesita ayuda para el proyecto.",
-          "errorWord": "necesita",
+          "sentenceWithError": "Se necesitan ayuda para el proyecto.",
+          "errorWord": "necesitan",
           "correctedWord": "necesita",
           "acceptableCorrections": [
             "necesita"
           ],
-          "explanation": "In the passive 'se' construction, the verb agrees with the subject. Here, the subject is 'ayuda' (singular), so the third-person singular verb 'necesita' is correct. If the subject were plural (e.g., 'se necesitan voluntarios'), the verb would be plural."
+          "explanation": "In the passive «se», the verb agrees with the grammatical subject. «Ayuda» is singular: «se necesita»."
         }
       ]
     },
@@ -1881,13 +2123,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Me preguntó qué tú querías.",
+          "sentenceWithError": "Me preguntó qué quería tú.",
           "errorWord": "tú",
           "correctedWord": "yo",
           "acceptableCorrections": [
             "yo"
           ],
-          "explanation": "The reporting verb 'preguntó' is in the past. The direct question was likely '¿Qué quieres tú?'. When reporting, the pronoun 'tú' often changes to 'yo' if the speaker is reporting what someone asked them. The verb also shifts from 'quieres' to 'quería'."
+          "explanation": "The person asked was the speaker, so the embedded subject is «yo»: «Me preguntó qué quería yo». With «tú» the sentence has no valid subject for «quería»."
         },
         {
           "type": "error_correction",
@@ -1898,6 +2140,249 @@
             "vendrían"
           ],
           "explanation": "The reporting verb 'Dijeron' is in the past tense. The future tense 'vendrán' in direct speech should shift to the conditional tense 'vendrían' in reported speech."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El año pasado Pedro dijo: «Vivo en Madrid.» → El año pasado Pedro dijo que ___ en Madrid.",
+          "correctAnswer": "vivía",
+          "acceptableAnswers": [
+            "vivía"
+          ],
+          "hint": "vivir · él",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ayer Marta dijo: «Tengo mucho trabajo.» → Ayer Marta dijo que ___ mucho trabajo.",
+          "correctAnswer": "tenía",
+          "acceptableAnswers": [
+            "tenía"
+          ],
+          "hint": "tener · ella",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "En 2019 nos dijeron: «El museo está cerrado.» → En 2019 nos dijeron que el museo ___ cerrado.",
+          "correctAnswer": "estaba",
+          "acceptableAnswers": [
+            "estaba"
+          ],
+          "hint": "estar · él",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Mi abuela siempre decía: «Los jóvenes no escuchan.» → Mi abuela siempre decía que los jóvenes no ___.",
+          "correctAnswer": "escuchaban",
+          "acceptableAnswers": [
+            "escuchaban"
+          ],
+          "hint": "escuchar · ellos",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El médico dijo entonces: «Usted necesita descansar.» → El médico dijo entonces que yo ___ descansar.",
+          "correctAnswer": "necesitaba",
+          "acceptableAnswers": [
+            "necesitaba"
+          ],
+          "hint": "necesitar · yo",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Hace años Ana dijo: «Quiero ser actriz.» → Hace años Ana dijo que ___ ser actriz.",
+          "correctAnswer": "quería",
+          "acceptableAnswers": [
+            "quería"
+          ],
+          "hint": "querer · ella",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Aquel día el guía dijo: «Salimos a las ocho.» → Aquel día el guía dijo que ___ a las ocho.",
+          "correctAnswer": "salían",
+          "acceptableAnswers": [
+            "salían"
+          ],
+          "hint": "salir · ellos",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "De niño mi hermano decía: «No me gustan las verduras.» → De niño mi hermano decía que no le ___ las verduras.",
+          "correctAnswer": "gustaban",
+          "acceptableAnswers": [
+            "gustaban"
+          ],
+          "hint": "gustar · ellas",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Luis dijo: «He terminado el trabajo.» → Luis dijo que ___ el trabajo.",
+          "correctAnswer": "había terminado",
+          "acceptableAnswers": [
+            "había terminado"
+          ],
+          "hint": "terminar · él",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ellos dijeron: «Llegamos ayer.» → Ellos dijeron que ___ el día anterior.",
+          "correctAnswer": "habían llegado",
+          "acceptableAnswers": [
+            "habían llegado"
+          ],
+          "hint": "llegar · ellos",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ana comentó: «He visto esa película.» → Ana comentó que ___ esa película.",
+          "correctAnswer": "había visto",
+          "acceptableAnswers": [
+            "había visto"
+          ],
+          "hint": "ver · ella",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El niño dijo: «Rompí el vaso.» → El niño dijo que ___ el vaso.",
+          "correctAnswer": "había roto",
+          "acceptableAnswers": [
+            "había roto"
+          ],
+          "hint": "romper · él",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos escribieron: «Hemos recibido el paquete.» → Nos escribieron que ___ el paquete.",
+          "correctAnswer": "habían recibido",
+          "acceptableAnswers": [
+            "habían recibido"
+          ],
+          "hint": "recibir · ellos",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Dijiste: «Perdí las llaves.» → Dijiste que ___ las llaves.",
+          "correctAnswer": "habías perdido",
+          "acceptableAnswers": [
+            "habías perdido"
+          ],
+          "hint": "perder · tú",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Marta prometió: «Te llamaré mañana.» → Marta prometió que me ___ al día siguiente.",
+          "correctAnswer": "llamaría",
+          "acceptableAnswers": [
+            "llamaría"
+          ],
+          "hint": "llamar · ella",
+          "explanation": "Backshift: future becomes conditional after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Dijeron: «Vendremos a las seis.» → Dijeron que ___ a las seis.",
+          "correctAnswer": "vendrían",
+          "acceptableAnswers": [
+            "vendrían"
+          ],
+          "hint": "venir · ellos",
+          "explanation": "Backshift: future becomes conditional after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ana dijo: «Estudiaré medicina.» → Ana dijo que ___ medicina.",
+          "correctAnswer": "estudiaría",
+          "acceptableAnswers": [
+            "estudiaría"
+          ],
+          "hint": "estudiar · ella",
+          "explanation": "Backshift: future becomes conditional after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos avisaron: «El paquete llegará el lunes.» → Nos avisaron que el paquete ___ el lunes.",
+          "correctAnswer": "llegaría",
+          "acceptableAnswers": [
+            "llegaría"
+          ],
+          "hint": "llegar · él",
+          "explanation": "Backshift: future becomes conditional after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ella preguntó: «¿Vendrás mañana?» → Ella preguntó si ___ al día siguiente.",
+          "correctAnswer": "vendría",
+          "acceptableAnswers": [
+            "vendría"
+          ],
+          "hint": "venir · yo",
+          "explanation": "A reported question keeps statement word order and backshifts the tense; yes/no questions are introduced by «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Me preguntaron: «¿Dónde vives?» → Me preguntaron dónde ___.",
+          "correctAnswer": "vivía",
+          "acceptableAnswers": [
+            "vivía"
+          ],
+          "hint": "vivir · yo",
+          "explanation": "A reported question keeps statement word order and backshifts the tense; yes/no questions are introduced by «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El profesor preguntó: «¿Ya terminaron el examen?» → El profesor preguntó si ya ___ el examen.",
+          "correctAnswer": "habían terminado",
+          "acceptableAnswers": [
+            "habían terminado"
+          ],
+          "hint": "terminar · ellos",
+          "explanation": "A reported question keeps statement word order and backshifts the tense; yes/no questions are introduced by «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Me dijo: «Ven aquí.» → Me dijo que ___ allí.",
+          "correctAnswer": "fuera",
+          "acceptableAnswers": [
+            "fuera",
+            "fuese"
+          ],
+          "hint": "ir · yo",
+          "explanation": "A reported command becomes «que» + imperfect subjunctive. The -ra and -se endings are interchangeable."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El médico me dijo: «Descanse más.» → El médico me dijo que ___ más.",
+          "correctAnswer": "descansara",
+          "acceptableAnswers": [
+            "descansara",
+            "descansase"
+          ],
+          "hint": "descansar · yo",
+          "explanation": "A reported command becomes «que» + imperfect subjunctive. The -ra and -se endings are interchangeable."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos pidió: «Esperen un momento.» → Nos pidió que ___ un momento.",
+          "correctAnswer": "esperáramos",
+          "acceptableAnswers": [
+            "esperáramos",
+            "esperásemos"
+          ],
+          "hint": "esperar · nosotros",
+          "explanation": "A reported command becomes «que» + imperfect subjunctive. The -ra and -se endings are interchangeable."
         }
       ]
     },
@@ -1974,13 +2459,12 @@
           "type": "sentence_reorder",
           "correctSentence": "Trabajo para una empresa de tecnología.",
           "shuffledWords": [
-            "tecnología",
             "una",
-            "para",
-            "empresa",
-            "Trabajo",
+            "tecnología",
             "de",
-            "la"
+            "Trabajo",
+            "empresa",
+            "para"
           ],
           "hint": "Subject + verb + employment context.",
           "explanation": "'Para' is used to indicate employment. The sentence structure is 'Subject + verb + para + employer'."
@@ -1989,13 +2473,12 @@
           "type": "sentence_reorder",
           "correctSentence": "Estuve en Madrid por tres meses.",
           "shuffledWords": [
-            "tres",
-            "por",
-            "meses",
-            "Estuve",
-            "en",
             "Madrid",
-            "los"
+            "en",
+            "tres",
+            "Estuve",
+            "por",
+            "meses"
           ],
           "hint": "Duration of time.",
           "explanation": "'Por' is used to indicate a duration of time. 'Por tres meses' means 'for three months'."
@@ -2088,12 +2571,12 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "Este es ___ libro ___ interesante de la biblioteca.",
-          "correctAnswer": "el más",
+          "sentenceWithBlank": "Este es el libro ___ interesante de la biblioteca.",
+          "correctAnswer": "más",
           "acceptableAnswers": [
-            "el más"
+            "más"
           ],
-          "hint": "Think about the superlative form for masculine singular nouns.",
+          "hint": "Superlative with a noun: el/la + sustantivo + ___ + adjetivo + de.",
           "explanation": "To form the superlative 'the most interesting', we use 'el más' for masculine singular nouns like 'libro'."
         },
         {
@@ -2108,10 +2591,10 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "No estudio ___ ___ mis compañeros.",
-          "correctAnswer": "tanto como",
+          "sentenceWithBlank": "No estudio ___ como mis compañeros.",
+          "correctAnswer": "tanto",
           "acceptableAnswers": [
-            "tanto como"
+            "tanto"
           ],
           "hint": "How do you say 'as much as' after a verb?",
           "explanation": "When comparing verbs, 'tanto como' is used to mean 'as much as'. It does not change form."
@@ -2339,10 +2822,10 @@
           "type": "multiple_choice",
           "prompt": "Choose the correct gerund for the verb 'leer'.",
           "options": [
-            "leiendo",
             "leyendo",
+            "leiendo",
             "leendo",
-            "leiendo"
+            "leando"
           ],
           "correctAnswer": "leyendo",
           "explanation": "When the 'er' or 'ir' verb stem ends in a vowel, the 'i' of the '-iendo' ending changes to 'y'."
@@ -2365,8 +2848,8 @@
           "options": [
             "dormiendo",
             "durmiendo",
-            "dormiendo",
-            "dormiendo"
+            "dormiando",
+            "durmendo"
           ],
           "correctAnswer": "durmiendo",
           "explanation": "'Dormir' is an irregular gerund with a stem change from 'o' to 'u'."
@@ -2462,13 +2945,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Los niños están durmiendo en el sofá.",
-          "errorWord": "durmiendo",
+          "sentenceWithError": "Los niños están dormiendo en el sofá.",
+          "errorWord": "dormiendo",
           "correctedWord": "durmiendo",
           "acceptableCorrections": [
             "durmiendo"
           ],
-          "explanation": "The gerund of 'dormir' is 'durmiendo', which involves an o->u stem change. The sentence correctly uses the present progressive tense to describe the children's current action."
+          "explanation": "«Dormir» is stem-changing in the gerund: o → u, «durmiendo»."
         }
       ]
     },
@@ -2560,12 +3043,12 @@
           "correctSentence": "Nunca he visto una película tan buena.",
           "shuffledWords": [
             "he",
-            "nunca",
-            "una",
-            "tan",
-            "vista",
             "película",
-            "buena"
+            "una",
+            "visto",
+            "tan",
+            "buena",
+            "Nunca"
           ],
           "hint": "Adverb placement in negative sentences.",
           "explanation": "The adverb 'nunca' (never) can appear before or after the conjugated verb ('he visto'). In this case, placing it before the auxiliary verb 'he' is common. The sentence means 'I have never seen such a good movie'."
@@ -2574,14 +3057,15 @@
           "type": "sentence_reorder",
           "correctSentence": "No me gusta ni el té ni el café.",
           "shuffledWords": [
-            "el",
+            "No",
             "ni",
-            "me",
             "gusta",
             "café",
-            "No",
+            "me",
+            "ni",
+            "té",
             "el",
-            "té"
+            "el"
           ],
           "hint": "Using 'ni... ni' to connect two negative elements.",
           "explanation": "The structure 'ni... ni' is used to negate two or more elements. It requires the initial negation 'No' before the verb when the negated elements follow the verb. The sentence means 'I like neither tea nor coffee'."

@@ -10,12 +10,12 @@
       "exercises": [
         {
           "type": "multiple_choice",
-          "prompt": "¿Qué verbo completa correctamente la frase: \"Ayer, nosotros ___ al cine?\"",
+          "prompt": "¿Qué verbo completa correctamente la frase: \"Ayer, nosotros ___ al cine.\"?",
           "options": [
+            "fue",
             "fuimos",
-            "fué",
-            "fuimos",
-            "fuéron"
+            "fuiste",
+            "fueron"
           ],
           "correctAnswer": "fuimos",
           "explanation": "The verbs 'ser' and 'ir' have the same preterite conjugation. For 'nosotros', the correct form is 'fuimos'. The context 'al cine' indicates 'ir'."
@@ -27,7 +27,7 @@
             "trabajé",
             "trabajó",
             "trabajamos",
-            "trabajé"
+            "trabajaba"
           ],
           "correctAnswer": "trabajé",
           "explanation": "For regular -AR verbs in the preterite, the 'yo' form ends in -é. Note the written accent on the 'é'."
@@ -36,10 +36,10 @@
           "type": "multiple_choice",
           "prompt": "Completa la frase con la forma correcta del pretérito: \"Ellos ___ la lección muy rápido.\"",
           "options": [
-            "aprendieron",
             "aprendimos",
             "aprendieron",
-            "aprendiste"
+            "aprendiste",
+            "aprendían"
           ],
           "correctAnswer": "aprendieron",
           "explanation": "For regular -ER verbs in the preterite, the 'ellos/ellas/ustedes' form ends in -ieron. 'Aprendieron' is the correct conjugation."
@@ -94,13 +94,13 @@
           "type": "sentence_reorder",
           "correctSentence": "Vosotros vivisteis en Madrid por dos años.",
           "shuffledWords": [
-            "Madrid",
-            "vosotros",
-            "vivisteis",
-            "por",
             "en",
-            "dos",
-            "años"
+            "por",
+            "Madrid",
+            "Vosotros",
+            "vivisteis",
+            "años",
+            "dos"
           ],
           "hint": "Subject + verb + place + duration",
           "explanation": "The correct order is Subject (Vosotros) + Verb (vivisteis) + Place (en Madrid) + Duration (por dos años)."
@@ -123,33 +123,33 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ayer yo comí paella.",
-          "errorWord": "comí",
+          "sentenceWithError": "Ayer yo comió paella.",
+          "errorWord": "comió",
           "correctedWord": "comí",
           "acceptableCorrections": [
             "comí"
           ],
-          "explanation": "The sentence is grammatically correct. 'Comí' is the correct first-person singular preterite form of 'comer'. The context 'Ayer' (yesterday) correctly uses the preterite tense."
+          "explanation": "The preterite of «comer» for «yo» is «comí». «Comió» belongs to «él/ella/usted»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ellos fueron al parque ayer.",
-          "errorWord": "fueron",
+          "sentenceWithError": "Ellos fue al parque ayer.",
+          "errorWord": "fue",
           "correctedWord": "fueron",
           "acceptableCorrections": [
             "fueron"
           ],
-          "explanation": "This sentence is correct. 'Fueron' is the correct third-person plural preterite form for both 'ser' and 'ir'. The context 'al parque ayer' indicates the verb 'ir'."
+          "explanation": "«Ellos» takes «fueron» in the preterite. «Fue» is the third person singular."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Tú hiciste un gran trabajo.",
-          "errorWord": "hiciste",
+          "sentenceWithError": "Tú hizo un gran trabajo.",
+          "errorWord": "hizo",
           "correctedWord": "hiciste",
           "acceptableCorrections": [
             "hiciste"
           ],
-          "explanation": "The sentence is correct. 'Hiciste' is the correct second-person singular preterite form of the irregular verb 'hacer'."
+          "explanation": "The preterite of «hacer» for «tú» is «hiciste». «Hizo» belongs to «él/ella/usted»."
         }
       ]
     },
@@ -160,10 +160,10 @@
           "type": "multiple_choice",
           "prompt": "Which verb correctly completes the sentence: \"Cuando era niño, yo ___ en el parque todos los días.\"",
           "options": [
+            "jugué",
             "jugaba",
-            "jugaba",
-            "jugaba",
-            "jugaba"
+            "juego",
+            "jugaría"
           ],
           "correctAnswer": "jugaba",
           "explanation": "The imperfect tense is used for habitual actions in the past. For regular -AR verbs like 'jugar', the 'yo' form in the imperfect is '-aba', so 'jugaba'."
@@ -172,10 +172,10 @@
           "type": "multiple_choice",
           "prompt": "Choose the correct imperfect form for 'comer' in the first person plural: \"Nosotros ___ paella los domingos.\"",
           "options": [
+            "comimos",
+            "comemos",
             "comíamos",
-            "comíamos",
-            "comíamos",
-            "comíamos"
+            "comeríamos"
           ],
           "correctAnswer": "comíamos",
           "explanation": "For regular -ER verbs like 'comer', the 'nosotros' form in the imperfect is '-íamos'. The accent is on the 'i'."
@@ -187,7 +187,7 @@
             "iba",
             "era",
             "veía",
-            "iba"
+            "fue"
           ],
           "correctAnswer": "iba",
           "explanation": "'Ir' is an irregular verb in the imperfect. The third person singular form is 'iba'."
@@ -226,13 +226,12 @@
           "type": "sentence_reorder",
           "correctSentence": "Yo comía manzanas todos los días.",
           "shuffledWords": [
-            "manzanas",
-            "todos",
-            "comía",
             "los",
+            "todos",
             "Yo",
             "días",
-            "el"
+            "manzanas",
+            "comía"
           ],
           "hint": "Subject + verb + object + frequency",
           "explanation": "The sentence describes a habitual action in the past, requiring the imperfect tense. The correct order is Subject (Yo) + Verb (comía) + Object (manzanas) + Frequency (todos los días)."
@@ -287,13 +286,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ellos iban al cine a menudo.",
-          "errorWord": "iban",
+          "sentenceWithError": "Ellos íbamos al cine a menudo.",
+          "errorWord": "íbamos",
           "correctedWord": "iban",
           "acceptableCorrections": [
             "iban"
           ],
-          "explanation": "The verb 'ir' is irregular in the imperfect. The third person plural form is 'iban', which correctly describes a habitual action in the past ('a menudo' - often)."
+          "explanation": "The imperfect of «ir» for «ellos» is «iban». «Íbamos» belongs to «nosotros»."
         }
       ]
     },
@@ -370,10 +369,9 @@
           "type": "sentence_reorder",
           "correctSentence": "Quiero verla pronto.",
           "shuffledWords": [
-            "pronto",
-            "verla",
             "Quiero",
-            "a"
+            "pronto",
+            "verla"
           ],
           "hint": "Subject + conjugated verb + infinitive with pronoun",
           "explanation": "The sentence structure is 'Subject (implied 'yo') + conjugated verb (Quiero) + infinitive with attached direct object pronoun (verla) + adverb (pronto)'."
@@ -394,10 +392,9 @@
           "type": "sentence_reorder",
           "correctSentence": "Estamos llamándolos ahora.",
           "shuffledWords": [
-            "llamándolos",
             "ahora",
             "Estamos",
-            "a"
+            "llamándolos"
           ],
           "hint": "Gerund with attached pronoun",
           "explanation": "The pronoun 'los' is attached to the end of the gerund 'llamando' to form 'llamándolos'. The structure is 'Auxiliary verb (Estamos) + gerund with pronoun (llamándolos) + adverb (ahora)'."
@@ -425,13 +422,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Compré las flores y las puse en el jarrón.",
-          "errorWord": "las",
+          "sentenceWithError": "Compré las flores y los puse en el jarrón.",
+          "errorWord": "los",
           "correctedWord": "las",
           "acceptableCorrections": [
             "las"
           ],
-          "explanation": "This sentence is grammatically correct. 'Las flores' is feminine plural, so the direct object pronoun 'las' is correctly used both before the conjugated verb 'puse' and attached to the infinitive 'poner' (implied in 'puse'). There is no error."
+          "explanation": "The direct object pronoun agrees with «las flores» in gender and number: «las puse»."
         }
       ]
     },
@@ -650,8 +647,7 @@
           "shuffledWords": [
             "la",
             "Haz",
-            "tarea",
-            "."
+            "tarea"
           ],
           "hint": "Irregular tú command + object",
           "explanation": "'Haz' is the irregular affirmative tú command for 'hacer' (to do/make). The sentence means 'Do the homework'."
@@ -755,7 +751,7 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "Ella es ___ alta ___ yo.",
+          "sentenceWithBlank": "Ella es ___ alta como yo.",
           "correctAnswer": "tan",
           "acceptableAnswers": [
             "tan"
@@ -765,7 +761,7 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "Tengo ___ dinero ___ tú.",
+          "sentenceWithBlank": "Tengo ___ dinero que tú.",
           "correctAnswer": "menos",
           "acceptableAnswers": [
             "menos"
@@ -775,7 +771,7 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "Este ejercicio es ___ difícil ___ el anterior.",
+          "sentenceWithBlank": "Este ejercicio es ___ difícil como el anterior.",
           "correctAnswer": "tan",
           "acceptableAnswers": [
             "tan"
@@ -898,13 +894,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Tú has comido ya la cena?",
-          "errorWord": "comido",
+          "sentenceWithError": "¿Tú has comer ya la cena?",
+          "errorWord": "comer",
           "correctedWord": "comido",
           "acceptableCorrections": [
             "comido"
           ],
-          "explanation": "The past participle 'comido' is correct. The sentence uses the present perfect correctly with 'tú has' and the past participle 'comido' for the verb 'comer'."
+          "explanation": "The present perfect is «haber» + past participle, never the infinitive: «has comido»."
         },
         {
           "type": "multiple_choice",
@@ -935,8 +931,7 @@
             "el",
             "Hemos",
             "resuelto",
-            "problema",
-            "."
+            "problema"
           ],
           "hint": "Subject + haber + past participle + object",
           "explanation": "The structure is Subject ('Nosotros', implied in 'Hemos') + conjugated 'haber' ('Hemos') + past participle ('resuelto') + Object ('el problema')."
@@ -989,13 +984,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Este año hemos viajado a Francia.",
-          "errorWord": "viajado",
-          "correctedWord": "viajado",
+          "sentenceWithError": "Este año habemos viajado a Francia.",
+          "errorWord": "habemos",
+          "correctedWord": "hemos",
           "acceptableCorrections": [
-            "viajado"
+            "hemos"
           ],
-          "explanation": "The sentence correctly uses the present perfect ('hemos viajado') to describe an action within a period connected to the present ('Este año'). 'Viajado' is the correct past participle of 'viajar'."
+          "explanation": "The first person plural of the auxiliary «haber» is «hemos». «Habemos» is not standard here."
         }
       ]
     },
@@ -1105,8 +1100,7 @@
             "mañana",
             "España",
             "para",
-            "Salimos",
-            "..."
+            "Salimos"
           ],
           "hint": "Verb + destination + time.",
           "explanation": "The sentence indicates a future departure to a destination. 'Para' is used for destination. The order is Verb (Salimos) + Destination (para España) + Time (mañana)."
@@ -1176,8 +1170,7 @@
             "salimos",
             "llovía",
             "Como",
-            "no",
-            "."
+            "no"
           ],
           "hint": "Start with the reason.",
           "explanation": "When 'como' (meaning 'since' or 'as') is used at the beginning of a sentence to express cause, it is followed by a comma, and then the main clause."
@@ -1226,9 +1219,7 @@
             "las",
             "verduras",
             "Primero",
-            ",",
-            "córtalas",
-            ";"
+            "córtalas"
           ],
           "hint": "Sequence of actions.",
           "explanation": "This sentence uses sequence connectors ('primero', 'luego') to describe steps in a process. The correct order is 'Primero' (First) followed by the first action, then 'luego' (then) followed by the second action."
@@ -1272,14 +1263,12 @@
           "type": "sentence_reorder",
           "correctSentence": "No quería ir, sin embargo, fui.",
           "shuffledWords": [
-            "fui",
-            "No",
             "sin",
-            "quería",
-            "embargo",
-            ",",
+            "No",
             "ir",
-            "।"
+            "fui",
+            "quería",
+            "embargo"
           ],
           "hint": "Contrast.",
           "explanation": "The sentence expresses a contrast between not wanting to go and actually going. 'Sin embargo' (however) is placed correctly to introduce the contrasting action."
@@ -1444,12 +1433,12 @@
       "exercises": [
         {
           "type": "multiple_choice",
-          "prompt": "¿Cómo ___ tú esta mañana?",
+          "prompt": "¿Cómo te ___ tú esta mañana?",
           "options": [
             "sentiste",
             "sentía",
             "sentimos",
-            "sentía"
+            "sintió"
           ],
           "correctAnswer": "sentiste",
           "explanation": "The sentence is in the preterite tense (this morning) and uses the second person singular pronoun 'tú'. The correct conjugation of 'sentirse' for 'tú' in the preterite is 'sentiste'."
@@ -1468,12 +1457,12 @@
         },
         {
           "type": "multiple_choice",
-          "prompt": "La niña ___ porque no quería ir a la escuela.",
+          "prompt": "La niña se ___ porque no quería ir a la escuela.",
           "options": [
-            "asustaba",
+            "asustaste",
             "asustó",
-            "asustaba",
-            "asustamos"
+            "asustamos",
+            "asustaron"
           ],
           "correctAnswer": "asustó",
           "explanation": "The phrase 'porque no quería ir a la escuela' explains the reason for the action. The preterite tense 'asustó' (she got scared) fits the context of a specific past event."
@@ -1562,23 +1551,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Nosotros nos enfadamos con el profesor.",
-          "errorWord": "enfadamos",
-          "correctedWord": "enfadamos",
+          "sentenceWithError": "Nosotros os enfadamos con el profesor.",
+          "errorWord": "os",
+          "correctedWord": "nos",
           "acceptableCorrections": [
-            "enfadamos"
+            "nos"
           ],
-          "explanation": "The sentence uses 'Nosotros' (we) and the context implies a past action. The correct preterite conjugation for 'enfadarse' with 'nosotros' is 'nos enfadamos'. The present tense 'nos enfadamos' is also grammatically correct for habitual actions, but the preterite fits better for a specific past event."
+          "explanation": "The reflexive pronoun for «nosotros» is «nos». «Os» belongs to «vosotros»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Él se equivocó en el examen.",
-          "errorWord": "equivocó",
-          "correctedWord": "equivocó",
+          "sentenceWithError": "Él le equivocó en el examen.",
+          "errorWord": "le",
+          "correctedWord": "se",
           "acceptableCorrections": [
-            "equivocó"
+            "se"
           ],
-          "explanation": "The subject is 'Él' (he), and the sentence describes a completed action in the past (the exam). The correct preterite conjugation for 'equivocarse' with 'él' is 'se equivocó'."
+          "explanation": "«Equivocarse» is pronominal: «Él se equivocó». «Le» is an indirect object pronoun."
         }
       ]
     },
@@ -1655,11 +1644,12 @@
           "type": "sentence_reorder",
           "correctSentence": "Ella es muy trabajadora y amable.",
           "shuffledWords": [
-            "amable",
-            "trabajadora",
             "Ella",
+            "amable",
+            "muy",
             "es",
-            "muy"
+            "y",
+            "trabajadora"
           ],
           "hint": "Subject + verb + adjectives.",
           "explanation": "The standard sentence structure is Subject ('Ella') + Verb ('es') + Adverb ('muy') + Adjectives ('trabajadora y amable'). Adjectives must agree in gender with the subject."
@@ -1881,8 +1871,8 @@
           "options": [
             "doscientos mujeres",
             "doscientas mujeres",
-            "doscientos mujeres",
-            "doscientas mujeres"
+            "dos cientas mujeres",
+            "doscienta mujeres"
           ],
           "correctAnswer": "doscientas mujeres",
           "explanation": "When the number refers to a feminine noun, the hundreds must agree in gender. 'Mujeres' is feminine, so we use 'doscientas'."
@@ -1933,11 +1923,10 @@
           "type": "sentence_reorder",
           "correctSentence": "Tengo doscientos cincuenta euros.",
           "shuffledWords": [
-            "cincuenta",
             "Tengo",
             "euros",
-            "doscientos",
-            "。"
+            "cincuenta",
+            "doscientos"
           ],
           "hint": "Subject + verb + quantity + noun.",
           "explanation": "The standard sentence structure is Subject (Tengo) + Verb + Quantity (doscientos cincuenta) + Noun (euros)."
@@ -1959,13 +1948,12 @@
           "type": "sentence_reorder",
           "correctSentence": "No tengo suficiente tiempo para todo.",
           "shuffledWords": [
-            "tiempo",
-            "tengo",
-            "No",
-            "para",
             "suficiente",
+            "para",
+            "No",
+            "tiempo",
             "todo",
-            "。"
+            "tengo"
           ],
           "hint": "Negative subject + verb + quantifier + complement.",
           "explanation": "The negative 'No' precedes the verb 'tengo'. The quantifier 'suficiente' agrees with the masculine singular noun 'tiempo'. The sentence ends with the prepositional phrase 'para todo'."
@@ -1982,23 +1970,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Hay mil personas en el concierto.",
-          "errorWord": "mil",
+          "sentenceWithError": "Hay miles personas en el concierto.",
+          "errorWord": "miles",
           "correctedWord": "mil",
           "acceptableCorrections": [
             "mil"
           ],
-          "explanation": "'Mil' is the correct word for one thousand and does not change form, unlike hundreds or 'millón'."
+          "explanation": "«Mil» is used directly before a noun: «mil personas». «Miles» always needs «de»: «miles de personas»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Compramos trescientos coches nuevos.",
-          "errorWord": "trescientos",
+          "sentenceWithError": "Compramos trescientas coches nuevos.",
+          "errorWord": "trescientas",
           "correctedWord": "trescientos",
           "acceptableCorrections": [
             "trescientos"
           ],
-          "explanation": "'Coches' is a masculine plural noun. 'Trescientos' is the correct masculine plural form for three hundred."
+          "explanation": "Hundreds agree with the noun. «Coches» is masculine, so «trescientos coches»."
         }
       ]
     }

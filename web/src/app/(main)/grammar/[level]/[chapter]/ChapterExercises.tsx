@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { ProgressBar } from "@/components/ui/progress"
 import { CheckIcon, XIcon } from "@/components/ui/icons"
-import { exerciseKey } from "@chingon/shared"
+import { checkGrammarAnswer, exerciseKey, normalizeGrammarAnswer } from "@chingon/shared"
 import { recordGrammarProgress } from "@/actions/grammar"
 import type {
   GrammarQuestion,
@@ -42,21 +42,6 @@ function emptyState(q: GrammarQuestion | undefined): QuestionState {
     selectedErrorWord: null,
     correctionInput: "",
   }
-}
-
-function normalize(s: string) {
-  return s
-    .toLowerCase()
-    .trim()
-    .replace(/[.,!?¿¡'"]/g, "")
-    .trim()
-}
-
-function checkAnswer(user: string, correct: string, acceptable?: string[]): boolean {
-  const u = normalize(user)
-  if (u === normalize(correct)) return true
-  if (acceptable?.some((a) => normalize(a) === u)) return true
-  return false
 }
 
 export function ChapterExercises({ exercises, level, chapterId }: Props) {
@@ -189,7 +174,7 @@ export function ChapterExercises({ exercises, level, chapterId }: Props) {
             onChange={(v) => patchState({ textAnswer: v })}
             onSubmit={() => {
               if (!qs.textAnswer.trim()) return
-              const correct = checkAnswer(qs.textAnswer, current.correctAnswer, current.acceptableAnswers)
+              const correct = checkGrammarAnswer(qs.textAnswer, current.correctAnswer, current.acceptableAnswers)
               recordResult(correct, qs.textAnswer)
             }}
           />
@@ -216,7 +201,7 @@ export function ChapterExercises({ exercises, level, chapterId }: Props) {
             }}
             onSubmit={() => {
               const userSentence = qs.placedWords.join(" ")
-              const correct = normalize(userSentence) === normalize(current.correctSentence)
+              const correct = normalizeGrammarAnswer(userSentence) === normalizeGrammarAnswer(current.correctSentence)
               recordResult(correct, userSentence)
             }}
           />
@@ -231,8 +216,8 @@ export function ChapterExercises({ exercises, level, chapterId }: Props) {
             onCorrectionChange={(v) => patchState({ correctionInput: v })}
             onSubmit={() => {
               if (!qs.selectedErrorWord || !qs.correctionInput.trim()) return
-              const errorOk = normalize(qs.selectedErrorWord) === normalize(current.errorWord)
-              const correctionOk = checkAnswer(
+              const errorOk = normalizeGrammarAnswer(qs.selectedErrorWord) === normalizeGrammarAnswer(current.errorWord)
+              const correctionOk = checkGrammarAnswer(
                 qs.correctionInput,
                 current.correctedWord,
                 current.acceptableCorrections,

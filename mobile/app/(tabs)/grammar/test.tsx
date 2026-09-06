@@ -16,7 +16,7 @@ import { ArrowLeft, Lock, Sparkles } from 'lucide-react-native'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { useSubscription } from '@/contexts/SubscriptionContext'
-import { checkAnswer } from '@chingon/shared'
+import { checkGrammarAnswer } from '@chingon/shared'
 import type {
   GrammarQuestion,
   MultipleChoiceQuestion,
@@ -87,10 +87,7 @@ export default function GrammarTestScreen() {
       correct = answer === question.correctAnswer
     } else if (question.type === 'fill_in_blank') {
       answer = userAnswer.trim()
-      correct = checkAnswer(answer, question.correctAnswer)
-      if (!correct && question.acceptableAnswers) {
-        correct = question.acceptableAnswers.some((a: string) => checkAnswer(answer, a))
-      }
+      correct = checkGrammarAnswer(answer, question.correctAnswer, question.acceptableAnswers)
     }
 
     setIsCorrect(correct)

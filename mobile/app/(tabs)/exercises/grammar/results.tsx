@@ -41,10 +41,11 @@ function getCorrectAnswer(q: GrammarQuestion): string {
 
 export default function GrammarExerciseResultsScreen() {
   const router = useRouter()
-  const { results: resultsParam, level, chapter } = useLocalSearchParams<{
+  const { results: resultsParam, level, chapter, only } = useLocalSearchParams<{
     results: string
     level: string
     chapter: string
+    only?: string
   }>()
   const [results, setResults] = useState<GrammarExerciseResult[] | null>(null)
 
@@ -142,7 +143,7 @@ export default function GrammarExerciseResultsScreen() {
             onPress={() =>
               router.replace({
                 pathname: '/(tabs)/exercises/grammar/play',
-                params: { level: level || '', chapter: chapter || '' },
+                params: { level: level || '', chapter: chapter || '', only: only || '' },
               })
             }
             style={{ flex: 1 }}

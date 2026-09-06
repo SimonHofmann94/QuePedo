@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, StyleSheet, TouchableOpacity } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter } from 'expo-router'
-import { BrainCircuit, PenTool, Mic, Headphones, BookOpen, Gamepad2, Lock } from 'lucide-react-native'
+import { BrainCircuit, PenTool, Mic, Headphones, BookOpen, Gamepad2, Lock, Shuffle as SplitIcon } from 'lucide-react-native'
 import { Badge } from '@/components/ui/Badge'
 import { useSubscription } from '@/contexts/SubscriptionContext'
 import { colors, fontFamily, surface } from '@/constants/theme'
@@ -42,6 +42,12 @@ export default function ExercisesScreen() {
       locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/grammar'),
     },
     {
+      title: 'Rellena el verbo', desc: 'Condicional · estilo indirecto',
+      icon: SplitIcon, badge: 'Verbos', badgeColor: 'cielo',
+      color: colors.cielo[500], emoji: '🔀',
+      locked: !isPremium, onPress: () => router.push('/(tabs)/exercises/drill'),
+    },
+    {
       title: 'Escucha', desc: 'Audio nativo · comprensión',
       icon: Headphones, badge: 'Audio', badgeColor: 'cielo',
       color: colors.cielo[500], emoji: '🎧',
@@ -72,7 +78,7 @@ export default function ExercisesScreen() {
         <View style={styles.header}>
           <Text style={styles.eyebrow}>PRACTICA · DOMINA</Text>
           <Text style={styles.title}>Ejercicios</Text>
-          <Text style={styles.subtitle}>Seis modos — escoge el que te llame hoy.</Text>
+          <Text style={styles.subtitle}>Siete modos — escoge el que te llame hoy.</Text>
         </View>
 
         {/* Daily challenge feature */}

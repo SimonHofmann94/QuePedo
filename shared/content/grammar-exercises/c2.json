@@ -79,14 +79,14 @@
           "type": "sentence_reorder",
           "correctSentence": "Quienquiera que sea, no le abras la puerta.",
           "shuffledWords": [
-            "sea",
+            "abras",
             "la",
-            "abrir",
-            "puerta",
-            "Quienquiera",
-            "que",
             "no",
-            "le"
+            "que",
+            "le",
+            "sea",
+            "puerta",
+            "Quienquiera"
           ],
           "hint": "Start with 'Quienquiera que sea'",
           "explanation": "The structure 'Quienquiera que + subjunctive' means 'whoever'. The sentence translates to 'Whoever it may be, don't open the door for him/her'."
@@ -122,13 +122,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "El que infringiere la ley será castigado.",
-          "errorWord": "infringiere",
+          "sentenceWithError": "El que infringiera la ley será castigado.",
+          "errorWord": "infringiera",
           "correctedWord": "infringiere",
           "acceptableCorrections": [
             "infringiere"
           ],
-          "explanation": "This sentence uses the archaic -re future subjunctive ('infringiere') which is found in legal contexts. The form is correct as is."
+          "explanation": "Legal and proverbial register keeps the future subjunctive: «el que infringiere». The imperfect subjunctive does not fit a future main clause here."
         },
         {
           "type": "error_correction",
@@ -227,17 +227,17 @@
           "type": "sentence_reorder",
           "correctSentence": "Habríamos llegado a tiempo si el tren no se hubiera retrasado.",
           "shuffledWords": [
-            "retrasado",
-            "si",
-            "el",
-            "llegado",
-            "se",
-            "hubiéramos",
             "tren",
             "no",
-            "a",
             "tiempo",
-            "Habríamos"
+            "a",
+            "si",
+            "se",
+            "Habríamos",
+            "el",
+            "hubiera",
+            "retrasado",
+            "llegado"
           ],
           "hint": "Conditional perfect + si + pluperfect subjunctive",
           "explanation": "This sentence uses the conditional perfect ('Habríamos llegado') to express a hypothetical past result, followed by the pluperfect subjunctive ('se hubiera retrasado') to express a hypothetical past condition."
@@ -532,7 +532,7 @@
             "prever",
             "era",
             "aquel",
-            "desenlace.",
+            "desenlace",
             "Difícil",
             "de"
           ],
@@ -544,9 +544,9 @@
           "correctSentence": "¿Acaso no lo dije yo desde el principio?",
           "shuffledWords": [
             "yo",
-            "principio?",
+            "principio",
             "lo",
-            "¿Acaso",
+            "Acaso",
             "no",
             "desde",
             "el",
@@ -559,10 +559,10 @@
           "type": "sentence_reorder",
           "correctSentence": "Unos prefieren el cine; otros, el teatro.",
           "shuffledWords": [
-            "cine;",
-            "otros,",
+            "cine",
+            "otros",
             "el",
-            "teatro.",
+            "teatro",
             "Unos",
             "prefieren",
             "el"
@@ -694,8 +694,8 @@
           "shuffledWords": [
             "traerme",
             "un",
-            "¿Le",
-            "café?",
+            "Le",
+            "café",
             "importaría"
           ],
           "hint": "A very polite question asking for a favor.",
@@ -705,11 +705,10 @@
           "type": "sentence_reorder",
           "correctSentence": "Seguramente ya ha llegado.",
           "shuffledWords": [
-            "ya",
-            "ha",
             "Seguramente",
+            "ya",
             "llegado",
-            "a"
+            "ha"
           ],
           "hint": "Expresses high probability.",
           "explanation": "'Seguramente' indicates a high degree of probability or certainty about an event."
@@ -796,13 +795,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Él insinuó que yo estaba celoso.",
-          "errorWord": "celoso",
-          "correctedWord": "celoso",
+          "sentenceWithError": "Él insinuó que yo estuviera celoso.",
+          "errorWord": "estuviera",
+          "correctedWord": "estaba",
           "acceptableCorrections": [
-            "celoso"
+            "estaba"
           ],
-          "explanation": "The original sentence is grammatically correct. 'Insinuar' (to insinuate) is used appropriately, and the imperfect indicative 'estaba' is a valid tense shift from a present indicative in direct speech (e.g., 'Estoy celoso'). There is no error."
+          "explanation": "«Insinuar» reports a statement, so the subordinate clause stays in the indicative, backshifted: «que yo estaba celoso»."
         },
         {
           "type": "multiple_choice",
@@ -844,13 +843,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Él se jactaba de que era el mejor.",
-          "errorWord": "era",
+          "sentenceWithError": "Él se jactaba de que fuera el mejor.",
+          "errorWord": "fuera",
           "correctedWord": "era",
           "acceptableCorrections": [
             "era"
           ],
-          "explanation": "The sentence is correct. 'Jactarse de que' (to boast that) is used correctly. The imperfect indicative 'era' is a valid tense shift from the direct speech 'soy' (I am) when reporting a boast about a current state."
+          "explanation": "«Jactarse de que» reports an assertion and takes the indicative: «de que era el mejor»."
         },
         {
           "type": "multiple_choice",
@@ -994,8 +993,7 @@
             "sois",
             "mis",
             "amigos",
-            "Vosotros",
-            "."
+            "Vosotros"
           ],
           "hint": "Subject + Verb + Complement.",
           "explanation": "This is the standard way to form a sentence using 'vosotros' in Spain. The word order is typical for a declarative sentence."
@@ -1007,8 +1005,7 @@
             "una",
             "Hoy",
             "comí",
-            "manzana",
-            "."
+            "manzana"
           ],
           "hint": "Time expression + Verb + Object.",
           "explanation": "In many parts of Latin America, the Pretérito Indefinido ('comí') is preferred even for events that happened today. The word order is standard."
@@ -1025,13 +1022,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Vos hablás muy bien español.",
-          "errorWord": "hablás",
+          "sentenceWithError": "Vos hablas muy bien español.",
+          "errorWord": "hablas",
           "correctedWord": "hablás",
           "acceptableCorrections": [
             "hablás"
           ],
-          "explanation": "This sentence correctly uses the voseo conjugation ('hablás') for the pronoun 'vos'. The standard 'tú' form would be 'hablas'."
+          "explanation": "Voseo has its own present forms with the stress on the ending: «vos hablás», not «vos hablas»."
         },
         {
           "type": "error_correction",
@@ -1169,13 +1166,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Lo malo es que no hay sitio.",
-          "errorWord": "malo",
-          "correctedWord": "malo",
+          "sentenceWithError": "El malo es que no hay sitio.",
+          "errorWord": "El",
+          "correctedWord": "Lo",
           "acceptableCorrections": [
-            "malo"
+            "Lo"
           ],
-          "explanation": "The construction 'Lo + adjective' is correctly used here to mean 'the bad thing'. 'Lo malo es que no hay sitio' translates to 'The bad thing is that there is no room'. No correction is needed as the grammar is sound."
+          "explanation": "A nominalized adjective referring to an abstract idea takes the neuter «lo»: «lo malo»."
         },
         {
           "type": "error_correction",
@@ -1220,15 +1217,16 @@
           "correctSentence": "Me temo que no puedo estar de acuerdo con tu propuesta.",
           "shuffledWords": [
             "propuesta",
-            "acuerdo",
-            "puedo",
             "estar",
-            "con",
-            "Me",
-            "de",
             "temo",
+            "de",
             "no",
-            "tu"
+            "Me",
+            "acuerdo",
+            "tu",
+            "con",
+            "que",
+            "puedo"
           ],
           "hint": "Start with the expression of disagreement.",
           "explanation": "The sentence begins with a polite disagreement phrase 'Me temo que no puedo estar de acuerdo' (I'm afraid I can't agree) followed by the object of disagreement 'con tu propuesta' (with your proposal)."
@@ -1271,8 +1269,8 @@
           "correctSentence": "Estará en casa, supongo.",
           "shuffledWords": [
             "en",
-            "casa,",
-            "supongo.",
+            "casa",
+            "supongo",
             "Estará"
           ],
           "hint": "Subject + verb + adverbial phrase of supposition.",
@@ -1317,7 +1315,7 @@
           "shuffledWords": [
             "muy",
             "para",
-            "él.",
+            "él",
             "ser",
             "Debió",
             "de",
@@ -1417,19 +1415,19 @@
           "type": "sentence_reorder",
           "correctSentence": "Se ha confirmado que la nueva ley entrará en vigor el próximo mes.",
           "shuffledWords": [
-            "la",
-            "nuevo",
-            "que",
-            "entrará",
-            "mes",
-            "Se",
             "próximo",
-            "ha",
-            "confirmado",
             "ley",
             "en",
+            "entrará",
+            "confirmado",
+            "nueva",
+            "Se",
+            "la",
+            "el",
+            "ha",
+            "mes",
             "vigor",
-            "el"
+            "que"
           ],
           "hint": "Impersonal 'se' + passive voice construction.",
           "explanation": "This sentence uses an impersonal 'se' construction ('Se ha confirmado') followed by a passive-like structure, common in journalistic and academic registers to report information objectively."
@@ -1454,13 +1452,14 @@
           "type": "sentence_reorder",
           "correctSentence": "Triste y sola, la anciana miraba por la ventana.",
           "shuffledWords": [
-            "la",
-            "miraba",
             "ventana",
-            "Triste",
-            "por",
             "sola",
+            "miraba",
+            "la",
             "anciana",
+            "la",
+            "por",
+            "Triste",
             "y"
           ],
           "hint": "Literary register - word order inversion.",
@@ -1468,40 +1467,33 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "El estudio parece indicar que hay una correlación débil.",
-          "errorWord": "parece indicar",
-          "correctedWord": "parece indicar",
+          "sentenceWithError": "El estudio parece indicar que haya una correlación débil.",
+          "errorWord": "haya",
+          "correctedWord": "hay",
           "acceptableCorrections": [
-            "parece indicar",
-            "indica",
-            "sugiere"
+            "hay"
           ],
-          "explanation": "While 'parece indicar' is correct, the prompt implies an error. In academic register, hedging is common. 'Parece indicar' is a valid hedging phrase. Other acceptable hedging verbs like 'sugiere' or simply 'indica' could also fit depending on context, but 'parece indicar' itself is not an error."
+          "explanation": "«Parecer» in an affirmative statement takes the indicative: «parece indicar que hay»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "El presidente declaró que la situación era crítica.",
-          "errorWord": "declaró",
-          "correctedWord": "declaró",
+          "sentenceWithError": "El presidente declaró que la situación fuera crítica.",
+          "errorWord": "fuera",
+          "correctedWord": "era",
           "acceptableCorrections": [
-            "declaró",
-            "manifestó",
-            "recalcó",
-            "afirmó"
+            "era"
           ],
-          "explanation": "The verb 'declaró' is appropriate for reported speech in the journalistic register. Other reporting verbs like 'manifestó', 'recalcó', or 'afirmó' could also be used depending on the nuance intended."
+          "explanation": "«Declarar» reports a statement of fact, so the indicative is backshifted to the imperfect: «que era crítica»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Adonde fueres, haz lo que vieres.",
-          "errorWord": "fueres",
+          "sentenceWithError": "Adonde fueras, haz lo que vieres.",
+          "errorWord": "fueras",
           "correctedWord": "fueres",
           "acceptableCorrections": [
-            "fueres",
-            "vayas",
-            "vayas"
+            "fueres"
           ],
-          "explanation": "The future subjunctive ('fueres') is characteristic of proverbs and literary register, expressing a general or hypothetical condition. 'Adonde fueres, haz lo que vieres' is a well-known proverb."
+          "explanation": "The proverb is fixed in the future subjunctive: «Adonde fueres, haz lo que vieres»."
         }
       ]
     },
@@ -1595,15 +1587,16 @@
           "type": "sentence_reorder",
           "correctSentence": "Cada uno de ellos tiene su propio estilo de vida.",
           "shuffledWords": [
-            "de",
-            "su",
-            "vida",
-            "Cada",
             "propio",
-            "estilo",
-            "ellos",
+            "su",
+            "Cada",
             "uno",
-            "tiene"
+            "de",
+            "vida",
+            "de",
+            "tiene",
+            "estilo",
+            "ellos"
           ],
           "hint": "Recuerda que 'cada uno' siempre concuerda con el verbo en singular.",
           "explanation": "Aunque 'ellos' es plural, el sujeto de la oración es 'cada uno', que siempre rige el verbo en singular. Por eso, 'tiene' es la forma correcta."
@@ -1612,15 +1605,15 @@
           "type": "sentence_reorder",
           "correctSentence": "La ciudad está muy cambiada en los últimos años.",
           "shuffledWords": [
-            "años",
-            "la",
-            "últimos",
-            "ciudad",
-            "en",
-            "está",
-            "muy",
             "cambiada",
-            "los"
+            "está",
+            "ciudad",
+            "años",
+            "últimos",
+            "en",
+            "los",
+            "La",
+            "muy"
           ],
           "hint": "Piensa en un estado temporal o un cambio, no una cualidad inherente.",
           "explanation": "'Estar cambiada' se usa para describir un cambio en el estado o apariencia de algo, no una cualidad inherente. 'Ser cambiada' no sería gramaticalmente correcto en este contexto."
@@ -1732,13 +1725,14 @@
           "type": "sentence_reorder",
           "correctSentence": "No hay mal que por bien no venga.",
           "shuffledWords": [
-            "bien",
-            "no",
-            "hay",
-            "mal",
             "por",
+            "no",
+            "No",
+            "hay",
+            "venga",
             "que",
-            "venga"
+            "bien",
+            "mal"
           ],
           "hint": "This is a common proverb about finding good in bad situations.",
           "explanation": "This proverb means \"There is no bad from which good does not come,\" equivalent to \"Every cloud has a silver lining.\""
@@ -1752,8 +1746,7 @@
             "entendedor",
             "bastan",
             "A",
-            "buen",
-            "..."
+            "buen"
           ],
           "hint": "The phrase often ends with 'bastan' (are enough).",
           "explanation": "The proverb \"A buen entendedor, pocas palabras bastan\" means \"A word to the wise is sufficient,\" implying that someone intelligent understands quickly without needing lengthy explanations."
@@ -1767,8 +1760,7 @@
             "vieres",
             "que",
             "Donde",
-            "fueres",
-            "..."
+            "fueres"
           ],
           "hint": "This proverb advises adapting to local customs.",
           "explanation": "This proverb translates to \"Where you go, do what you see,\" meaning \"When in Rome, do as the Romans do.\""
@@ -1785,24 +1777,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Intenté explicarle, pero no tenía ni pies ni cabeza.",
-          "errorWord": "tenía",
-          "correctedWord": "tenía",
+          "sentenceWithError": "Intenté explicarle, pero no tenía ni pie ni cabeza.",
+          "errorWord": "pie",
+          "correctedWord": "pies",
           "acceptableCorrections": [
-            "tenía"
+            "pies"
           ],
-          "explanation": "The idiom \"no tener ni pies ni cabeza\" means \"to make no sense at all.\" The verb \"tener\" is correctly conjugated in the imperfect tense \"tenía\" to describe the lack of logic in the past."
+          "explanation": "The idiom is fixed in the plural: «no tener ni pies ni cabeza»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Le prometí que le echaría una mano con la mudanza.",
-          "errorWord": "echaría",
+          "sentenceWithError": "Le prometí que le daría una mano con la mudanza.",
+          "errorWord": "daría",
           "correctedWord": "echaría",
           "acceptableCorrections": [
-            "echaría",
-            "echaría una mano"
+            "echaría"
           ],
-          "explanation": "The idiom \"echar una mano\" means \"to lend a hand.\" The conditional tense \"echaría\" is appropriate here to express a future action promised in the past. The full idiom is \"echaría una mano.\""
+          "explanation": "The fixed idiom is «echar una mano». «Dar una mano» is not the set phrase in this sense."
         }
       ]
     }

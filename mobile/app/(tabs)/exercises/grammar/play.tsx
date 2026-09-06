@@ -14,7 +14,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter, useLocalSearchParams } from 'expo-router'
 import { ArrowLeft } from 'lucide-react-native'
 import { Button } from '@/components/ui/Button'
-import { checkAnswer, normalizeAnswer } from '@chingon/shared'
+import { EXERCISES_PER_SESSION, checkGrammarAnswer, normalizeGrammarAnswer } from '@chingon/shared'
 import { getChapterSession, recordProgress } from '@/services/grammarPool'
 import type {
   GrammarQuestion,
@@ -32,7 +32,12 @@ interface ExerciseResult {
 
 export default function GrammarExercisePlayScreen() {
   const router = useRouter()
-  const { level, chapter: chapterParam } = useLocalSearchParams<{ level: string; chapter: string }>()
+  const { level, chapter: chapterParam, only } = useLocalSearchParams<{
+    level: string
+    chapter: string
+    /** Narrow the session to one question type — used by the verb drills. */
+    only?: string
+  }>()
   const inputRef = useRef<TextInput>(null)
   const chapterId = parseInt(chapterParam || '0', 10)
 
@@ -58,7 +63,13 @@ export default function GrammarExercisePlayScreen() {
   // The bundled JSON alone answers offline, so this never blocks on network.
   useEffect(() => {
     let cancelled = false
-    getChapterSession(level || 'a1', chapterId).then(({ questions: picked }) => {
+    const QUESTION_TYPES = [
+      'multiple_choice', 'fill_in_blank', 'sentence_reorder', 'error_correction',
+    ] as const
+    const isType = (v: string): v is GrammarQuestion['type'] =>
+      (QUESTION_TYPES as readonly string[]).includes(v)
+    const types = only && isType(only) ? [only] : undefined
+    getChapterSession(level || 'a1', chapterId, EXERCISES_PER_SESSION, types).then(({ questions: picked }) => {
       if (cancelled) return
       if (picked.length === 0) {
         setError('No exercises available for this chapter yet.')
@@ -74,7 +85,7 @@ export default function GrammarExercisePlayScreen() {
     return () => {
       cancelled = true
     }
-  }, [level, chapterId])
+  }, [level, chapterId, only])
 
   const question = questions[currentIndex]
   const totalQuestions = questions.length
@@ -94,26 +105,24 @@ export default function GrammarExercisePlayScreen() {
       }
       case 'fill_in_blank': {
         answer = userAnswer.trim()
-        correct = checkAnswer(answer, question.correctAnswer)
-        if (!correct && question.acceptableAnswers) {
-          correct = question.acceptableAnswers.some((a) => checkAnswer(answer, a))
-        }
+        correct = checkGrammarAnswer(answer, question.correctAnswer, question.acceptableAnswers)
         break
       }
       case 'sentence_reorder': {
         answer = placedWords.join(' ')
-        const normalizedPlaced = normalizeAnswer(answer)
-        const normalizedCorrect = normalizeAnswer(question.correctSentence)
+        const normalizedPlaced = normalizeGrammarAnswer(answer)
+        const normalizedCorrect = normalizeGrammarAnswer(question.correctSentence)
         correct = normalizedPlaced === normalizedCorrect
         break
       }
       case 'error_correction': {
         answer = `${selectedErrorWord} → ${correctionInput.trim()}`
         const wordCorrect = selectedErrorWord === question.errorWord
-        let correctionCorrect = checkAnswer(correctionInput.trim(), question.correctedWord)
-        if (!correctionCorrect && question.acceptableCorrections) {
-          correctionCorrect = question.acceptableCorrections.some((a) => checkAnswer(correctionInput.trim(), a))
-        }
+        const correctionCorrect = checkGrammarAnswer(
+          correctionInput.trim(),
+          question.correctedWord,
+          question.acceptableCorrections,
+        )
         correct = wordCorrect && correctionCorrect
         break
       }
@@ -152,6 +161,8 @@ export default function GrammarExercisePlayScreen() {
           results: JSON.stringify([...results]),
           level: level || '',
           chapter: chapterParam || '',
+          // Carried so "Try Again" replays the same drill, not the mixed chapter.
+          only: only || '',
         },
       })
     }

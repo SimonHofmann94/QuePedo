@@ -65,6 +65,7 @@ export async function getChapterSession(
   level: string,
   chapterId: number,
   count: number = EXERCISES_PER_SESSION,
+  types?: readonly GrammarQuestion["type"][],
 ): Promise<ChapterSession> {
   const baked = getChapterExercises(level, chapterId) ?? []
   const [fromDb, seen] = await Promise.all([
@@ -73,7 +74,10 @@ export async function getChapterSession(
   ])
 
   const pool = mergePool(baked, fromDb)
-  return { questions: selectSession(pool, count, seen), poolSize: pool.length }
+  // poolSize counts what this session could have drawn from, so the "12 de N"
+  // badge stays honest when a drill narrows the types.
+  const eligible = types?.length ? pool.filter((ex) => types.includes(ex.type)) : pool
+  return { questions: selectSession(pool, count, seen, types), poolSize: eligible.length }
 }
 
 /** Per-chapter pool sizes for the admin generator. DB rows only. */

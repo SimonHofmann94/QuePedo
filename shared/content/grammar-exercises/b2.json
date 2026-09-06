@@ -1,7 +1,7 @@
 {
   "level": "B2",
   "title": "Upper Intermediate Spanish Grammar",
-  "source": "Gemini-generated, validated against GrammarQuestion schema — pending build",
+  "source": "Gemini-generated, validated against GrammarQuestion schema — pending build Chapters on si-clauses and reported speech additionally carry hand-authored two-clause verb drills (see shared/content/grammar-exercises/verbos.check.ts).",
   "model": "gemini-2.5-flash-lite",
   "generatedAt": "2026-04-28",
   "chapters": {
@@ -98,8 +98,7 @@
             "el",
             "coche",
             "De",
-            "repente",
-            "."
+            "repente"
           ],
           "hint": "An event that happened suddenly.",
           "explanation": "The phrase 'De repente' (Suddenly) introduces a specific event that happened at a particular moment, which is described using the preterite tense ('se detuvo')."
@@ -123,33 +122,33 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Yo comía cuando mi amigo llegó.",
-          "errorWord": "comía",
+          "sentenceWithError": "Yo comías cuando mi amigo llegó.",
+          "errorWord": "comías",
           "correctedWord": "comía",
           "acceptableCorrections": [
             "comía"
           ],
-          "explanation": "This sentence correctly uses the imperfect ('comía') for the ongoing action and the preterite ('llegó') for the interrupting action. No correction is needed."
+          "explanation": "«Yo» takes «comía». The imperfect sets the background; the preterite «llegó» is the event that interrupts it."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Antes, ella era muy tímida, pero un día decidió cambiar.",
-          "errorWord": "era",
+          "sentenceWithError": "Antes, ella fue muy tímida, pero un día decidió cambiar.",
+          "errorWord": "fue",
           "correctedWord": "era",
           "acceptableCorrections": [
             "era"
           ],
-          "explanation": "The sentence correctly contrasts a past state ('era tímida' - imperfect) with a turning point ('decidió cambiar' - preterite). No correction is needed."
+          "explanation": "«Antes» frames a lasting past state, which takes the imperfect «era». The preterite «fue» would close the state off at one point."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Mientras nosotros caminábamos por el parque, vimos un ciervo.",
-          "errorWord": "vimos",
+          "sentenceWithError": "Mientras nosotros caminábamos por el parque, veíamos un ciervo.",
+          "errorWord": "veíamos",
           "correctedWord": "vimos",
           "acceptableCorrections": [
             "vimos"
           ],
-          "explanation": "This sentence correctly uses the imperfect ('caminábamos') for the ongoing background action and the preterite ('vimos') for the specific event that occurred during that time. No correction is needed."
+          "explanation": "A single completed event inside an ongoing background takes the preterite: «vimos un ciervo»."
         }
       ]
     },
@@ -439,6 +438,272 @@
             "aprobarías"
           ],
           "explanation": "For Type 2 hypothetical conditionals (`si + imperfect subjunctive`), the result clause must use the conditional simple, not the future simple. 'Aprobarías' is the correct conditional form."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si nos confirman hoy, ___ el contrato mañana.",
+          "correctAnswer": "firmaremos",
+          "acceptableAnswers": [
+            "firmaremos",
+            "firmamos"
+          ],
+          "hint": "firmar · nosotros",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si el proyecto sale bien, la empresa nos ___ un bono.",
+          "correctAnswer": "dará",
+          "acceptableAnswers": [
+            "dará",
+            "da"
+          ],
+          "hint": "dar · ella",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no encuentras el archivo, te lo ___ otra vez.",
+          "correctAnswer": "enviaré",
+          "acceptableAnswers": [
+            "enviaré",
+            "envío"
+          ],
+          "hint": "enviar · yo",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si llueve el viernes, ___ la inauguración.",
+          "correctAnswer": "aplazaremos",
+          "acceptableAnswers": [
+            "aplazaremos",
+            "aplazamos"
+          ],
+          "hint": "aplazar · nosotros",
+          "explanation": "Type 1 (real/likely): present indicative after «si», future in the main clause. The present is also used for a near-certain plan."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si yo estuviera en tu lugar, ___ con el director.",
+          "correctAnswer": "hablaría",
+          "acceptableAnswers": [
+            "hablaría"
+          ],
+          "hint": "hablar · yo",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si tuviéramos más presupuesto, ___ a dos personas más.",
+          "correctAnswer": "contrataríamos",
+          "acceptableAnswers": [
+            "contrataríamos"
+          ],
+          "hint": "contratar · nosotros",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si el examen fuera mañana, no ___ preparado.",
+          "correctAnswer": "estaría",
+          "acceptableAnswers": [
+            "estaría"
+          ],
+          "hint": "estar · yo",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no existiera el internet, el mundo ___ muy distinto.",
+          "correctAnswer": "sería",
+          "acceptableAnswers": [
+            "sería"
+          ],
+          "hint": "ser · él",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si pudiéramos volver atrás, ___ lo mismo.",
+          "correctAnswer": "haríamos",
+          "acceptableAnswers": [
+            "haríamos"
+          ],
+          "hint": "hacer · nosotros",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si el vuelo saliera puntual, ___ a cenar allí.",
+          "correctAnswer": "llegaríamos",
+          "acceptableAnswers": [
+            "llegaríamos"
+          ],
+          "hint": "llegar · nosotros",
+          "explanation": "Type 2 (unreal present): imperfect subjunctive after «si», conditional simple in the main clause. Never a conditional after «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hubiera estudiado más, ___ el examen.",
+          "correctAnswer": "habría aprobado",
+          "acceptableAnswers": [
+            "habría aprobado",
+            "hubiera aprobado",
+            "hubiese aprobado"
+          ],
+          "hint": "aprobar · yo",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hubieras salido antes, no ___ el tren.",
+          "correctAnswer": "habrías perdido",
+          "acceptableAnswers": [
+            "habrías perdido",
+            "hubieras perdido",
+            "hubieses perdido"
+          ],
+          "hint": "perder · tú",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si nos hubieran avisado, ___ a tiempo.",
+          "correctAnswer": "habríamos llegado",
+          "acceptableAnswers": [
+            "habríamos llegado",
+            "hubiéramos llegado",
+            "hubiésemos llegado"
+          ],
+          "hint": "llegar · nosotros",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si el equipo hubiera entrenado mejor, ___ la final.",
+          "correctAnswer": "habría ganado",
+          "acceptableAnswers": [
+            "habría ganado",
+            "hubiera ganado",
+            "hubiese ganado"
+          ],
+          "hint": "ganar · él",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hubiese hecho más frío, ___ la chaqueta.",
+          "correctAnswer": "habría llevado",
+          "acceptableAnswers": [
+            "habría llevado",
+            "hubiera llevado",
+            "hubiese llevado"
+          ],
+          "hint": "llevar · yo",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si me lo hubieras dicho antes, te ___.",
+          "correctAnswer": "habría ayudado",
+          "acceptableAnswers": [
+            "habría ayudado",
+            "hubiera ayudado",
+            "hubiese ayudado"
+          ],
+          "hint": "ayudar · yo",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si Ana hubiera venido, la fiesta ___ mejor.",
+          "correctAnswer": "habría salido",
+          "acceptableAnswers": [
+            "habría salido",
+            "hubiera salido",
+            "hubiese salido"
+          ],
+          "hint": "salir · ella",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hubieran leído el contrato, no lo ___.",
+          "correctAnswer": "habrían firmado",
+          "acceptableAnswers": [
+            "habrían firmado",
+            "hubieran firmado",
+            "hubiesen firmado"
+          ],
+          "hint": "firmar · ellos",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no hubiera perdido el vuelo, ___ a la reunión.",
+          "correctAnswer": "habría asistido",
+          "acceptableAnswers": [
+            "habría asistido",
+            "hubiera asistido",
+            "hubiese asistido"
+          ],
+          "hint": "asistir · yo",
+          "explanation": "Type 3 (impossible past): pluperfect subjunctive after «si», conditional perfect in the main clause. «hubiera/hubiese + participle» is equally correct there."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hubiera estudiado medicina, ahora ___ médico.",
+          "correctAnswer": "sería",
+          "acceptableAnswers": [
+            "sería"
+          ],
+          "hint": "ser · yo",
+          "explanation": "Mixed conditional: the condition and its result sit in different time frames — read the time marker in the main clause, not the si-clause."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si no hubiéramos vendido el coche, hoy no ___ que caminar.",
+          "correctAnswer": "tendríamos",
+          "acceptableAnswers": [
+            "tendríamos"
+          ],
+          "hint": "tener · nosotros",
+          "explanation": "Mixed conditional: the condition and its result sit in different time frames — read the time marker in the main clause, not the si-clause."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si fueras más organizado, no ___ las llaves ayer.",
+          "correctAnswer": "habrías perdido",
+          "acceptableAnswers": [
+            "habrías perdido",
+            "hubieras perdido",
+            "hubieses perdido"
+          ],
+          "hint": "perder · tú",
+          "explanation": "Mixed conditional: the condition and its result sit in different time frames — read the time marker in the main clause, not the si-clause."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si hubieras dormido bien, ahora no ___ tan cansado.",
+          "correctAnswer": "estarías",
+          "acceptableAnswers": [
+            "estarías"
+          ],
+          "hint": "estar · tú",
+          "explanation": "Mixed conditional: the condition and its result sit in different time frames — read the time marker in the main clause, not the si-clause."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Si Ana supiera cocinar, ___ la cena anoche.",
+          "correctAnswer": "habría preparado",
+          "acceptableAnswers": [
+            "habría preparado",
+            "hubiera preparado",
+            "hubiese preparado"
+          ],
+          "hint": "preparar · ella",
+          "explanation": "Mixed conditional: the condition and its result sit in different time frames — read the time marker in the main clause, not the si-clause."
         }
       ]
     },
@@ -486,7 +751,7 @@
           "sentenceWithBlank": "Si hubieras estudiado más, ___ aprobado el examen.",
           "correctAnswer": "habrías",
           "acceptableAnswers": [
-            "habrias"
+            "habrías"
           ],
           "hint": "Conditional perfect, second person singular",
           "explanation": "This is a Type 3 conditional. The main clause uses the conditional perfect. For 'tú', the conditional of 'haber' is 'habrías'."
@@ -496,7 +761,7 @@
           "sentenceWithBlank": "Para cuando llegues, yo ya ___ preparado la cena.",
           "correctAnswer": "habré",
           "acceptableAnswers": [
-            "habre"
+            "habré"
           ],
           "hint": "Future perfect, first person singular",
           "explanation": "The future perfect is used here to indicate an action that will be completed before a future point ('cuando llegues'). The first person singular of the future of 'haber' is 'habré'."
@@ -506,7 +771,7 @@
           "sentenceWithBlank": "Ellos ___ preferido viajar en tren, pero no tenían tiempo.",
           "correctAnswer": "habrían",
           "acceptableAnswers": [
-            "habrian"
+            "habrían"
           ],
           "hint": "Conditional perfect, third person plural",
           "explanation": "This sentence expresses a preference that would have happened but didn't, fitting the use of the conditional perfect. For 'ellos', the conditional of 'haber' is 'habrían'."
@@ -562,23 +827,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Yo habré comido cuando tú llegues.",
-          "errorWord": "habré",
-          "correctedWord": "habré",
+          "sentenceWithError": "Yo habré comer cuando tú llegues.",
+          "errorWord": "comer",
+          "correctedWord": "comido",
           "acceptableCorrections": [
-            "habré"
+            "comido"
           ],
-          "explanation": "The sentence correctly uses the future perfect ('habré comido') to indicate an action that will be completed before a future point in time ('cuando tú llegues'). No correction is needed as the form is correct."
+          "explanation": "The future perfect is «haber» in the future + past participle: «habré comido»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Si me hubieras avisado, yo habría venido.",
-          "errorWord": "habría",
-          "correctedWord": "habría",
+          "sentenceWithError": "Si me habrías avisado, yo habría venido.",
+          "errorWord": "habrías",
+          "correctedWord": "hubieras",
           "acceptableCorrections": [
-            "habría"
+            "hubieras"
           ],
-          "explanation": "This sentence correctly uses the conditional perfect ('habría venido') in the main clause of a Type 3 conditional, following the pluperfect subjunctive ('hubieras avisado') in the 'si' clause. The form is correct."
+          "explanation": "«Si» is never followed by the conditional. A Type 3 condition takes the pluperfect subjunctive: «Si me hubieras avisado»."
         },
         {
           "type": "error_correction",
@@ -611,10 +876,10 @@
           "type": "multiple_choice",
           "prompt": "Choose the correct passive form for: \"Spanish is spoken here.\"",
           "options": [
-            "Se habla español aquí.",
             "Español es hablado aquí.",
             "Se habla español aquí.",
-            "Español se habla aquí."
+            "Se hablan español aquí.",
+            "Está hablado español aquí."
           ],
           "correctAnswer": "Se habla español aquí.",
           "explanation": "The 'passive se' construction is used for general statements where the agent is not mentioned. The verb agrees with the subject ('español', singular), so 'se habla' is correct."
@@ -716,23 +981,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "El puente fue construido por ingenieros.",
-          "errorWord": "construido",
+          "sentenceWithError": "El puente fue construida por ingenieros.",
+          "errorWord": "construida",
           "correctedWord": "construido",
           "acceptableCorrections": [
             "construido"
           ],
-          "explanation": "The past participle 'construido' correctly agrees in gender and number (masculine singular) with the subject 'El puente' in this passive 'ser' construction."
+          "explanation": "In the passive with «ser», the participle agrees with the subject. «El puente» is masculine singular: «construido»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Las noticias son publicadas en el periódico.",
-          "errorWord": "son",
+          "sentenceWithError": "Las noticias es publicadas en el periódico.",
+          "errorWord": "es",
           "correctedWord": "son",
           "acceptableCorrections": [
             "son"
           ],
-          "explanation": "The verb 'son' correctly agrees with the plural subject 'Las noticias' in this present passive 'ser' construction."
+          "explanation": "«Las noticias» is plural, so the auxiliary is «son»."
         }
       ]
     },
@@ -948,7 +1213,8 @@
           "sentenceWithBlank": "El profesor nos sugirió que ___ más tiempo estudiando.",
           "correctAnswer": "pasáramos",
           "acceptableAnswers": [
-            "pasáramos"
+            "pasáramos",
+            "pasásemos"
           ],
           "hint": "Reporting verb 'sugirió' is past. Think about the imperfect subjunctive.",
           "explanation": "The verb 'sugirió' is in the past. When reporting a suggestion that was originally in the imperative or present subjunctive, the imperfect subjunctive is used. 'Pasemos' (present subjunctive) becomes 'pasáramos' (imperfect subjunctive)."
@@ -994,7 +1260,8 @@
           "sentenceWithBlank": "Le ordenó que ___ la puerta inmediatamente.",
           "correctAnswer": "abriera",
           "acceptableAnswers": [
-            "abriera"
+            "abriera",
+            "abriese"
           ],
           "hint": "Reporting verb 'ordenó' is past. Think about the imperfect subjunctive.",
           "explanation": "The reporting verb 'ordenó' is in the past. Commands are reported using the imperfect subjunctive. The original command was likely '¡Abre la puerta!' (present subjunctive 'abra'), which becomes 'abriera' (imperfect subjunctive) after a past reporting verb."
@@ -1024,6 +1291,251 @@
             "vendría"
           ],
           "explanation": "The reporting verb 'dijo' is in the past. The future tense 'vendrá' should backshift to the conditional 'vendría'."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Dijo: «Para el viernes habré terminado el informe.» → Dijo que para el viernes ___ el informe.",
+          "correctAnswer": "habría terminado",
+          "acceptableAnswers": [
+            "habría terminado"
+          ],
+          "hint": "terminar · él",
+          "explanation": "Backshift: future perfect becomes conditional perfect («habría» + participle)."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Aseguró: «Para las diez ya habré salido de la oficina.» → Aseguró que para las diez ya ___ de la oficina.",
+          "correctAnswer": "habría salido",
+          "acceptableAnswers": [
+            "habría salido"
+          ],
+          "hint": "salir · él",
+          "explanation": "Backshift: future perfect becomes conditional perfect («habría» + participle)."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Prometió: «Habré pagado todo antes de junio.» → Prometió que ___ todo antes de junio.",
+          "correctAnswer": "habría pagado",
+          "acceptableAnswers": [
+            "habría pagado"
+          ],
+          "hint": "pagar · él",
+          "explanation": "Backshift: future perfect becomes conditional perfect («habría» + participle)."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Ana dijo: «He estado en Perú dos veces.» → Ana dijo que ___ en Perú dos veces.",
+          "correctAnswer": "había estado",
+          "acceptableAnswers": [
+            "había estado"
+          ],
+          "hint": "estar · ella",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Confesó: «Nunca he leído ese libro.» → Confesó que nunca ___ ese libro.",
+          "correctAnswer": "había leído",
+          "acceptableAnswers": [
+            "había leído"
+          ],
+          "hint": "leer · él",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Avisó: «He perdido el pasaporte.» → Avisó que ___ el pasaporte.",
+          "correctAnswer": "había perdido",
+          "acceptableAnswers": [
+            "había perdido"
+          ],
+          "hint": "perder · él",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Comentaron: «Nos hemos mudado.» → Comentaron que se ___.",
+          "correctAnswer": "habían mudado",
+          "acceptableAnswers": [
+            "habían mudado"
+          ],
+          "hint": "mudar · ellos",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Explicó: «El proyecto sufrió retrasos.» → Explicó que el proyecto ___ retrasos.",
+          "correctAnswer": "había sufrido",
+          "acceptableAnswers": [
+            "había sufrido"
+          ],
+          "hint": "sufrir · él",
+          "explanation": "Backshift: perfect/preterite becomes pluperfect («había» + participle) after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos contaron: «Habíamos vivido allí diez años.» → Nos contaron que ___ allí diez años.",
+          "correctAnswer": "habían vivido",
+          "acceptableAnswers": [
+            "habían vivido"
+          ],
+          "hint": "vivir · ellos",
+          "explanation": "No backshift here: the conditional and the pluperfect are already as far back as the system goes."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Contó: «Cuando llegué, ya habían cerrado.» → Contó que cuando llegó, ya ___.",
+          "correctAnswer": "habían cerrado",
+          "acceptableAnswers": [
+            "habían cerrado"
+          ],
+          "hint": "cerrar · ellos",
+          "explanation": "No backshift here: the conditional and the pluperfect are already as far back as the system goes."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Marta dijo: «Si tuviera dinero, viajaría.» → Marta dijo que si tuviera dinero, ___.",
+          "correctAnswer": "viajaría",
+          "acceptableAnswers": [
+            "viajaría"
+          ],
+          "hint": "viajar · ella",
+          "explanation": "No backshift here: the conditional and the pluperfect are already as far back as the system goes."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Dijo: «Si me hubieran invitado, habría ido.» → Dijo que si lo hubieran invitado, ___.",
+          "correctAnswer": "habría ido",
+          "acceptableAnswers": [
+            "habría ido",
+            "hubiera ido",
+            "hubiese ido"
+          ],
+          "hint": "ir · él",
+          "explanation": "No backshift here: the conditional and the pluperfect are already as far back as the system goes."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El director anunció: «Vamos a contratar a diez personas.» → El director anunció que ___ a contratar a diez personas.",
+          "correctAnswer": "iban",
+          "acceptableAnswers": [
+            "iban"
+          ],
+          "hint": "ir · ellos",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Dijo: «Estoy escribiendo una novela.» → Dijo que ___ escribiendo una novela.",
+          "correctAnswer": "estaba",
+          "acceptableAnswers": [
+            "estaba"
+          ],
+          "hint": "estar · él",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Dijo el lunes: «Mañana no trabajo.» → Dijo el lunes que al día siguiente no ___.",
+          "correctAnswer": "trabajaba",
+          "acceptableAnswers": [
+            "trabajaba"
+          ],
+          "hint": "trabajar · él",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Repitió: «Tienes que descansar.» → Repitió que ___ que descansar.",
+          "correctAnswer": "tenía",
+          "acceptableAnswers": [
+            "tenía"
+          ],
+          "hint": "tener · yo",
+          "explanation": "Backshift: present becomes imperfect after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos dijo: «Estaré esperando en la puerta.» → Nos dijo que ___ esperando en la puerta.",
+          "correctAnswer": "estaría",
+          "acceptableAnswers": [
+            "estaría"
+          ],
+          "hint": "estar · él",
+          "explanation": "Backshift: future becomes conditional after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos advirtieron: «No podrán entrar sin identificación.» → Nos advirtieron que no ___ entrar sin identificación.",
+          "correctAnswer": "podríamos",
+          "acceptableAnswers": [
+            "podríamos"
+          ],
+          "hint": "poder · nosotros",
+          "explanation": "Backshift: future becomes conditional after a reporting verb in the past."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Preguntaron: «¿Ustedes vendrán a la boda?» → Preguntaron si ___ a la boda.",
+          "correctAnswer": "vendríamos",
+          "acceptableAnswers": [
+            "vendríamos"
+          ],
+          "hint": "venir · nosotros",
+          "explanation": "A reported question keeps statement word order and backshifts the tense; yes/no questions are introduced by «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Preguntó: «¿Has visto mi cartera?» → Preguntó si ___ su cartera.",
+          "correctAnswer": "había visto",
+          "acceptableAnswers": [
+            "había visto"
+          ],
+          "hint": "ver · yo",
+          "explanation": "A reported question keeps statement word order and backshifts the tense; yes/no questions are introduced by «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Me preguntó: «¿Cuándo llegaste?» → Me preguntó cuándo ___.",
+          "correctAnswer": "había llegado",
+          "acceptableAnswers": [
+            "había llegado"
+          ],
+          "hint": "llegar · yo",
+          "explanation": "A reported question keeps statement word order and backshifts the tense; yes/no questions are introduced by «si»."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "El jefe ordenó: «Entreguen el informe hoy.» → El jefe ordenó que ___ el informe ese día.",
+          "correctAnswer": "entregáramos",
+          "acceptableAnswers": [
+            "entregáramos",
+            "entregásemos"
+          ],
+          "hint": "entregar · nosotros",
+          "explanation": "A reported command becomes «que» + imperfect subjunctive. The -ra and -se endings are interchangeable."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Le pidió: «No se lo digas a nadie.» → Le pidió que no se lo ___ a nadie.",
+          "correctAnswer": "dijera",
+          "acceptableAnswers": [
+            "dijera",
+            "dijese"
+          ],
+          "hint": "decir · él",
+          "explanation": "A reported command becomes «que» + imperfect subjunctive. The -ra and -se endings are interchangeable."
+        },
+        {
+          "type": "fill_in_blank",
+          "sentenceWithBlank": "Nos recomendó: «Lleguen temprano.» → Nos recomendó que ___ temprano.",
+          "correctAnswer": "llegáramos",
+          "acceptableAnswers": [
+            "llegáramos",
+            "llegásemos"
+          ],
+          "hint": "llegar · nosotros",
+          "explanation": "A reported command becomes «que» + imperfect subjunctive. The -ra and -se endings are interchangeable."
         }
       ]
     },
@@ -1160,13 +1672,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Los estudiantes cuyos trabajos fueron excelentes recibieron un premio.",
-          "errorWord": "cuyos",
+          "sentenceWithError": "Los estudiantes cuyo trabajos fueron excelentes recibieron un premio.",
+          "errorWord": "cuyo",
           "correctedWord": "cuyos",
           "acceptableCorrections": [
             "cuyos"
           ],
-          "explanation": "This sentence is grammatically correct. 'Cuyos' agrees with 'trabajos' (masculine plural) and correctly indicates possession (the students' works)."
+          "explanation": "«Cuyo» agrees with the thing possessed, not the owner. «Trabajos» is masculine plural: «cuyos trabajos»."
         },
         {
           "type": "error_correction",
@@ -1270,13 +1782,14 @@
           "type": "sentence_reorder",
           "correctSentence": "Ella es una persona muy viva y simpática.",
           "shuffledWords": [
-            "simpática",
-            "una",
-            "muy",
             "persona",
-            "Es",
+            "y",
+            "muy",
             "viva",
-            "Ella"
+            "es",
+            "Ella",
+            "una",
+            "simpática"
           ],
           "hint": "Subject + verb + description",
           "explanation": "'Viva' used with 'ser' describes a personality trait (lively), not the state of being alive. 'Ser' is used for inherent characteristics."
@@ -1285,13 +1798,14 @@
           "type": "sentence_reorder",
           "correctSentence": "Hoy estamos aburridos porque no hay nada que hacer.",
           "shuffledWords": [
-            "nada",
-            "hay",
-            "que",
-            "hacer",
-            "porque",
             "aburridos",
+            "que",
+            "hay",
+            "hacer",
             "estamos",
+            "porque",
+            "nada",
+            "no",
             "Hoy"
           ],
           "hint": "Subject + verb + adjective + conjunction",
@@ -1319,13 +1833,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "El examen es difícil, pero estoy seguro que lo aprobaré.",
-          "errorWord": "estoy",
+          "sentenceWithError": "El examen es difícil, pero soy seguro que lo aprobaré.",
+          "errorWord": "soy",
           "correctedWord": "estoy",
           "acceptableCorrections": [
             "estoy"
           ],
-          "explanation": "When expressing certainty or doubt about something, 'estar seguro' is used. 'Ser seguro' would refer to something being objectively safe."
+          "explanation": "«Estar seguro» expresses conviction. «Ser seguro» would mean that something is safe."
         }
       ]
     },
@@ -1441,13 +1955,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Él se hizo rico con su negocio.",
-          "errorWord": "hizo",
+          "sentenceWithError": "Él se puso rico con su negocio.",
+          "errorWord": "puso",
           "correctedWord": "hizo",
           "acceptableCorrections": [
             "hizo"
           ],
-          "explanation": "This sentence is grammatically correct. 'Hacerse' is used for deliberate changes in social status or wealth."
+          "explanation": "«Hacerse» marks a lasting change achieved over time. «Ponerse» is for short-lived states (ponerse triste, ponerse rojo)."
         },
         {
           "type": "error_correction",
@@ -1461,13 +1975,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Me puse muy contento al recibir la noticia.",
-          "errorWord": "puse",
+          "sentenceWithError": "Me hice muy contento al recibir la noticia.",
+          "errorWord": "hice",
           "correctedWord": "puse",
           "acceptableCorrections": [
             "puse"
           ],
-          "explanation": "This sentence is correct. 'Ponerse' is used for sudden emotional changes, and 'me puse contento' means 'I became happy'."
+          "explanation": "A sudden, passing emotional change takes «ponerse»: «me puse contento»."
         }
       ]
     }

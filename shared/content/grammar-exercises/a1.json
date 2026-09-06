@@ -274,13 +274,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Compré un coche rojo.",
-          "errorWord": "un",
+          "sentenceWithError": "Compré una coche rojo.",
+          "errorWord": "una",
           "correctedWord": "un",
           "acceptableCorrections": [
             "un"
           ],
-          "explanation": "This sentence is grammatically correct. 'Coche' is a masculine noun, and 'un' is the correct masculine singular indefinite article. 'Rojo' correctly agrees with 'coche'."
+          "explanation": "«Coche» is masculine, so it takes the masculine indefinite article «un»: «un coche rojo»."
         }
       ]
     },
@@ -359,8 +359,7 @@
           "shuffledWords": [
             "habla",
             "Ella",
-            "inglés",
-            "."
+            "inglés"
           ],
           "hint": "Subject + Verb + Object",
           "explanation": "The standard sentence order in Spanish is Subject-Verb-Object. 'Ella' (Subject) + 'habla' (Verb) + 'inglés' (Object)."
@@ -371,7 +370,6 @@
           "shuffledWords": [
             "somos",
             "amigos",
-            ".",
             "Nosotros"
           ],
           "hint": "Subject + Verb + Complement",
@@ -384,31 +382,30 @@
             "en",
             "Tú",
             "España",
-            "vives",
-            "."
+            "vives"
           ],
           "hint": "Subject + Verb + Prepositional Phrase",
           "explanation": "The correct order is Subject ('Tú') + Verb ('vives') + Prepositional Phrase ('en España')."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Yo soy de Francia.",
-          "errorWord": "Yo",
+          "sentenceWithError": "Mí soy de Francia.",
+          "errorWord": "Mí",
           "correctedWord": "Yo",
           "acceptableCorrections": [
             "Yo"
           ],
-          "explanation": "The subject pronoun 'Yo' is optional here because the verb 'soy' clearly indicates the first person singular. However, its inclusion is grammatically correct and often used for clarity or emphasis."
+          "explanation": "«Mí» is a prepositional pronoun (para mí, a mí). The subject pronoun is «yo»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ustedes son estudiantes.",
-          "errorWord": "son",
+          "sentenceWithError": "Ustedes somos estudiantes.",
+          "errorWord": "somos",
           "correctedWord": "son",
           "acceptableCorrections": [
             "son"
           ],
-          "explanation": "The verb 'son' is the correct third-person plural conjugation of 'ser' for 'ustedes' (you all). The sentence is grammatically correct as is."
+          "explanation": "«Ustedes» takes the third person plural of «ser»: «son». «Somos» belongs to «nosotros»."
         },
         {
           "type": "error_correction",
@@ -441,10 +438,10 @@
           "type": "multiple_choice",
           "prompt": "Nosotros ___ de España.",
           "options": [
-            "somos",
-            "somos",
             "estamos",
-            "estamos"
+            "somos",
+            "soy",
+            "son"
           ],
           "correctAnswer": "somos",
           "explanation": "The verb 'ser' is used for origin. The first-person plural conjugation for 'ser' is 'somos'."
@@ -592,7 +589,7 @@
             "soy",
             "tengo",
             "voy",
-            "tengo"
+            "estoy"
           ],
           "correctAnswer": "tengo",
           "explanation": "The verb 'tener' is used to express age in Spanish. The first-person singular conjugation is 'tengo'."
@@ -633,8 +630,7 @@
           "shuffledWords": [
             "estudio",
             "Yo",
-            "español",
-            "."
+            "español"
           ],
           "hint": "Subject + Verb + Object",
           "explanation": "The standard sentence structure in Spanish is Subject-Verb-Object. 'Yo' (subject) + 'estudio' (verb) + 'español' (object)."
@@ -645,8 +641,7 @@
           "shuffledWords": [
             "comen",
             "paella",
-            "Ustedes",
-            "."
+            "Ustedes"
           ],
           "hint": "Subject + Verb + Object",
           "explanation": "The standard sentence structure in Spanish is Subject-Verb-Object. 'Ustedes' (subject) + 'comen' (verb) + 'paella' (object)."
@@ -657,41 +652,40 @@
           "shuffledWords": [
             "frío",
             "tiene",
-            "Él",
-            "."
+            "Él"
           ],
           "hint": "Subject + Verb + Condition",
           "explanation": "The expression 'tener frío' means 'to be cold'. The structure is Subject + 'tener' + 'frío'. 'Él' (subject) + 'tiene' (verb) + 'frío'."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Nosotros comemos en el restaurante.",
-          "errorWord": "comemos",
+          "sentenceWithError": "Nosotros comen en el restaurante.",
+          "errorWord": "comen",
           "correctedWord": "comemos",
           "acceptableCorrections": [
             "comemos"
           ],
-          "explanation": "This sentence is grammatically correct. 'Comemos' is the correct conjugation of 'comer' for 'nosotros'."
+          "explanation": "«Nosotros» takes the -emos ending in the present: «comemos». «Comen» belongs to «ellos/ustedes»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Yo escribo un libro.",
-          "errorWord": "escribo",
+          "sentenceWithError": "Yo escribe un libro.",
+          "errorWord": "escribe",
           "correctedWord": "escribo",
           "acceptableCorrections": [
             "escribo"
           ],
-          "explanation": "This sentence is grammatically correct. 'Escribo' is the correct conjugation of 'escribir' for 'yo'."
+          "explanation": "The first person singular of «escribir» is «escribo». «Escribe» belongs to «él/ella/usted»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ella tiene prisa.",
-          "errorWord": "tiene",
+          "sentenceWithError": "Ella tienes prisa.",
+          "errorWord": "tienes",
           "correctedWord": "tiene",
           "acceptableCorrections": [
             "tiene"
           ],
-          "explanation": "This sentence is grammatically correct. 'Tiene' is the correct conjugation of 'tener' for 'ella'."
+          "explanation": "«Ella» takes «tiene». «Tienes» is the «tú» form."
         }
       ]
     },
@@ -736,13 +730,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Nosotros nos acostamos temprano.",
-          "errorWord": "acostamos",
-          "correctedWord": "acostamos",
+          "sentenceWithError": "Nosotros se acostamos temprano.",
+          "errorWord": "se",
+          "correctedWord": "nos",
           "acceptableCorrections": [
-            "acostamos"
+            "nos"
           ],
-          "explanation": "The verb 'acostarse' is reflexive. For 'nosotros', the correct conjugation is 'acostamos', and the reflexive pronoun is 'nos'. The sentence is correct as is."
+          "explanation": "The reflexive pronoun agrees with the subject: «nosotros nos acostamos». «Se» belongs to él/ella/ellos."
         },
         {
           "type": "multiple_choice",
@@ -779,13 +773,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Ella se viste con ropa nueva.",
-          "errorWord": "viste",
-          "correctedWord": "viste",
+          "sentenceWithError": "Ella te viste con ropa nueva.",
+          "errorWord": "te",
+          "correctedWord": "se",
           "acceptableCorrections": [
-            "viste"
+            "se"
           ],
-          "explanation": "The verb 'vestirse' (to get dressed) is reflexive. For the subject 'ella', the correct conjugation is 'viste', and the reflexive pronoun is 'se'. The sentence is correct."
+          "explanation": "The reflexive pronoun for «ella» is «se»: «Ella se viste». «Te» belongs to «tú»."
         },
         {
           "type": "multiple_choice",
@@ -824,13 +818,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Yo me siento muy cansado.",
-          "errorWord": "siento",
-          "correctedWord": "siento",
+          "sentenceWithError": "Yo se siento muy cansado.",
+          "errorWord": "se",
+          "correctedWord": "me",
           "acceptableCorrections": [
-            "siento"
+            "me"
           ],
-          "explanation": "The verb 'sentirse' (to feel) is reflexive. For 'yo', the pronoun is 'me' and the verb is conjugated as 'siento'. The sentence is correct."
+          "explanation": "The reflexive pronoun for «yo» is «me»: «Yo me siento»."
         }
       ]
     },
@@ -911,9 +905,8 @@
             "muchos",
             "calle",
             "Hay",
-            "en",
             "coches",
-            "la"
+            "en"
           ],
           "hint": "Existence + quantity + noun + location",
           "explanation": "The structure 'Hay + number/quantity + noun' is used to express existence. 'Hay muchos coches' means 'There are many cars'. The location 'en la calle' follows."
@@ -935,11 +928,10 @@
           "type": "sentence_reorder",
           "correctSentence": "Debes descansar un poco.",
           "shuffledWords": [
-            "Descansar",
+            "descansar",
             "un",
-            "Debes",
             "poco",
-            "a"
+            "Debes"
           ],
           "hint": "Modal verb + infinitive",
           "explanation": "Modal verbs like 'deber' (should/must) are conjugated and followed directly by an infinitive. 'Debes' is the 'tú' form of 'deber'. 'Debes descansar' means 'You should rest'."
@@ -1187,10 +1179,10 @@
           "type": "sentence_reorder",
           "correctSentence": "¿Por qué no comes?",
           "shuffledWords": [
-            "comes",
             "no",
-            "Por qué",
-            "¿"
+            "qué",
+            "Por",
+            "comes"
           ],
           "hint": "Question word + negation + verb",
           "explanation": "The standard order for this question is the question word ('¿Por qué?') followed by the negation ('no') and then the verb ('comes')."
@@ -1201,8 +1193,7 @@
           "shuffledWords": [
             "quiero",
             "No",
-            "nada",
-            "."
+            "nada"
           ],
           "hint": "Negation + verb + 'nothing'",
           "explanation": "In Spanish negation, 'no' comes before the verb, and 'nada' (nothing) can follow the verb. 'No quiero nada' means 'I don't want anything'."
@@ -1213,8 +1204,7 @@
           "shuffledWords": [
             "tú",
             "Adónde",
-            "vas",
-            "¿"
+            "vas"
           ],
           "hint": "Question word + verb + subject",
           "explanation": "'Adónde' asks about destination ('To where?'). The typical question order is question word ('¿Adónde?'), verb ('vas'), and subject ('tú')."
@@ -1382,13 +1372,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Vivo aquí desde enero.",
-          "errorWord": "enero",
-          "correctedWord": "enero",
+          "sentenceWithError": "Vivo aquí por enero.",
+          "errorWord": "por",
+          "correctedWord": "desde",
           "acceptableCorrections": [
-            "enero"
+            "desde"
           ],
-          "explanation": "The preposition 'desde' means 'from' or 'since' and is correctly used with a starting point in time, like 'enero' (January)."
+          "explanation": "«Desde» marks the starting point of an action that still goes on: «Vivo aquí desde enero»."
         }
       ]
     }

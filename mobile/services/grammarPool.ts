@@ -60,6 +60,7 @@ export async function getChapterSession(
   level: string,
   chapterId: number,
   count: number = EXERCISES_PER_SESSION,
+  types?: readonly GrammarQuestion['type'][],
 ): Promise<ChapterSession> {
   const baked = getChapterExercises(level, chapterId) ?? []
   const [fromDb, seen] = await Promise.all([
@@ -67,7 +68,8 @@ export async function getChapterSession(
     fetchSeenKeys(level, chapterId),
   ])
   const pool = mergePool(baked, fromDb)
-  return { questions: selectSession(pool, count, seen), poolSize: pool.length }
+  const eligible = types?.length ? pool.filter((ex) => types.includes(ex.type)) : pool
+  return { questions: selectSession(pool, count, seen, types), poolSize: eligible.length }
 }
 
 /**

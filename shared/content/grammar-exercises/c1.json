@@ -185,10 +185,10 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "Si no ___ (haber) perdido el vuelo, ahora ___ (estar) en París.",
-          "correctAnswer": "hubiera perdido, estaría",
+          "sentenceWithBlank": "Si no hubiera perdido el vuelo, ahora ___ en París.",
+          "correctAnswer": "estaría",
           "acceptableAnswers": [
-            "hubiese perdido, estaría"
+            "estaría"
           ],
           "hint": "Past cause, present result (Mixed Conditional Type A).",
           "explanation": "This is a mixed conditional Type A. The 'si' clause uses the pluperfect subjunctive (hubiera/hubiese perdido) to refer to an impossible past condition, and the result clause uses the conditional (estaría) to refer to a present consequence."
@@ -198,6 +198,7 @@
           "sentenceWithBlank": "No te lo diré ___ (tú, prometer) guardar el secreto.",
           "correctAnswer": "a no ser que prometas",
           "acceptableAnswers": [
+            "a no ser que prometas",
             "excepto que prometas",
             "salvo que prometas"
           ],
@@ -474,16 +475,18 @@
           "type": "sentence_reorder",
           "correctSentence": "De repente, suena el timbre y me dice que hay un paquete.",
           "shuffledWords": [
-            "y",
+            "que",
             "me",
-            "hay",
-            "un",
             "paquete",
-            "suena",
-            "De",
-            "timbre",
+            "el",
+            "un",
+            "hay",
             "repente",
-            "que"
+            "suena",
+            "y",
+            "De",
+            "dice",
+            "timbre"
           ],
           "hint": "Start with the adverbial phrase indicating suddenness.",
           "explanation": "The sentence uses the historical present ('suena', 'dice') to narrate a sequence of events that happened in the past, making the narrative more engaging."
@@ -824,14 +827,15 @@
           "type": "sentence_reorder",
           "correctSentence": "Él llegó a ser el director de la empresa.",
           "shuffledWords": [
+            "empresa",
+            "el",
+            "a",
+            "de",
+            "director",
+            "la",
             "llegó",
             "ser",
-            "director",
-            "Él",
-            "empresa",
-            "de",
-            "la",
-            "a"
+            "Él"
           ],
           "hint": "He managed to become the director.",
           "explanation": "'Llegar a + infinitive' expresses the achievement of a goal or reaching a specific status after a process of effort or time."
@@ -1029,13 +1033,13 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "El niño está muy alto ahora.",
-          "errorWord": "está",
+          "sentenceWithError": "El niño es muy alto ahora.",
+          "errorWord": "es",
           "correctedWord": "está",
           "acceptableCorrections": [
             "está"
           ],
-          "explanation": "This sentence uses 'estar' to describe a perceived change or growth ('the boy is really tall (now)'), which is a correct usage for subjective/temporary perception at C1 level."
+          "explanation": "«Ahora» signals a change compared to before, which takes «estar»: «está muy alto»."
         },
         {
           "type": "error_correction",
@@ -1066,7 +1070,7 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "No tengo mucho tiempo libre; ______, no podré asistir a la fiesta.",
+          "sentenceWithBlank": "No tengo mucho tiempo libre; ___, no podré asistir a la fiesta.",
           "correctAnswer": "por consiguiente",
           "acceptableAnswers": [
             "por consiguiente",
@@ -1079,15 +1083,16 @@
           "type": "sentence_reorder",
           "correctSentence": "De ahí que la empresa haya decidido invertir en tecnología.",
           "shuffledWords": [
-            "la",
-            "decidido",
-            "empresa",
-            "invertir",
+            "haya",
             "tecnología",
-            "De",
-            "ahí",
+            "la",
+            "empresa",
             "que",
-            "haya"
+            "decidido",
+            "invertir",
+            "en",
+            "ahí",
+            "De"
           ],
           "hint": "Starts with 'De ahí que' followed by subjunctive",
           "explanation": "'De ahí que' introduces a consequence and requires the subjunctive mood. The correct order is 'De ahí que la empresa haya decidido invertir en tecnología'."
@@ -1118,7 +1123,7 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "La situación es insostenible; ______, debemos tomar medidas urgentes.",
+          "sentenceWithBlank": "La situación es insostenible; ___, debemos tomar medidas urgentes.",
           "correctAnswer": "por lo tanto",
           "acceptableAnswers": [
             "por lo tanto",
@@ -1170,7 +1175,7 @@
         },
         {
           "type": "fill_in_blank",
-          "sentenceWithBlank": "El clima es muy agradable; ______, la gente prefiere quedarse en casa.",
+          "sentenceWithBlank": "El clima es muy agradable; ___, la gente prefiere quedarse en casa.",
           "correctAnswer": "en cambio",
           "acceptableAnswers": [
             "en cambio",
@@ -1303,11 +1308,11 @@
           "type": "sentence_reorder",
           "correctSentence": "Creo que él tiene razón.",
           "shuffledWords": [
-            "tengo",
-            "él",
-            "Creo",
+            "tiene",
+            "que",
             "razón",
-            "que"
+            "Creo",
+            "él"
           ],
           "hint": "Subject + verb + 'que' + clause.",
           "explanation": "The affirmative expression 'Creo que' (I believe that) takes the indicative mood. 'Tengo' is the first-person singular present indicative of 'tener'."
@@ -1616,23 +1621,23 @@
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "La casa se compró por mucho dinero.",
-          "errorWord": "compró",
+          "sentenceWithError": "La casa se compraron por mucho dinero.",
+          "errorWord": "compraron",
           "correctedWord": "compró",
           "acceptableCorrections": [
             "compró"
           ],
-          "explanation": "This sentence is grammatically correct. 'Se compró' here could be interpreted as a pronominal verb (if the subject was reflexive) or potentially an aspectual 'se' if context implied emphasis on the completion of the purchase, though 'compró' is the standard preterite conjugation for the third person singular."
+          "explanation": "In the passive «se» the verb agrees with the subject. «La casa» is singular: «se compró»."
         },
         {
           "type": "error_correction",
-          "sentenceWithError": "Se me perdieron las llaves otra vez.",
-          "errorWord": "perdieron",
+          "sentenceWithError": "Se me perdió las llaves otra vez.",
+          "errorWord": "perdió",
           "correctedWord": "perdieron",
           "acceptableCorrections": [
             "perdieron"
           ],
-          "explanation": "This sentence correctly uses the involuntary 'se' construction. 'Se me perdieron las llaves' means 'I lost my keys again' (lit. 'the keys got lost on me'). The verb 'perdieron' agrees with the subject 'las llaves'."
+          "explanation": "In the «se» of accidental events the verb agrees with the thing affected. «Las llaves» is plural: «se me perdieron»."
         },
         {
           "type": "error_correction",

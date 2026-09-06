@@ -9,6 +9,7 @@ export { grammarC1 } from './c1'
 export { grammarC2 } from './c2'
 export { getChapterExercises, exerciseKey } from './exercises'
 export * from './pool'
+export { checkGrammarAnswer, normalizeGrammarAnswer } from './answer'
 export * from './prompt'
 export {
   grammarQuestionSchema,

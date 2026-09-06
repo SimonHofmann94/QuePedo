@@ -82,4 +82,43 @@ assert.equal(items[0].type, baked[0].type, 'type column mirrors the payload disc
 assert.deepEqual(items[0].payload, baked[0], 'payload is the question verbatim')
 assert.ok(items.every((i) => i.content_key.length <= 500), 'content_key fits the 027 CHECK')
 
-console.log('✓ pool.check.ts — merge, balance, unseen-first, RPC shape')
+// ── selectSession with a type filter (the focused drills) ────────────────
+const onlyFib = selectSession(pool, 6, undefined, ['fill_in_blank'])
+assert.equal(onlyFib.length, 6, 'filtered session still serves `count` items')
+assert.ok(onlyFib.every((q) => q.type === 'fill_in_blank'), 'filter admits nothing else')
+assert.equal(new Set(onlyFib.map(exerciseKey)).size, 6, 'no repeats inside a filtered session')
+
+// Pool smaller than count: take what exists, no padding from other types.
+const thin = selectSession(pool, 20, undefined, ['fill_in_blank'])
+assert.equal(thin.length, 10, 'only 10 fill_in_blank items exist')
+assert.ok(thin.every((q) => q.type === 'fill_in_blank'), 'short filtered pool stays pure')
+
+const twoTypes = selectSession(pool, 12, undefined, ['fill_in_blank', 'error_correction'])
+assert.equal(twoTypes.length, 12)
+assert.ok(
+  twoTypes.every((q) => q.type === 'fill_in_blank' || q.type === 'error_correction'),
+  'a multi-type filter admits exactly those types',
+)
+
+// An empty filter must not starve the session — it means "no filter".
+assert.equal(selectSession(pool, 12, undefined, []).length, 12, 'empty filter behaves as unfiltered')
+
+// The unfiltered path is untouched: still 3 per type.
+const balanced = selectSession(pool, 12)
+for (const t of TYPES) {
+  assert.equal(balanced.filter((q) => q.type === t).length, 3, `unfiltered session keeps 3 ${t}`)
+}
+
+// Unseen-first still applies under a filter.
+const seenFib = new Set(
+  Array.from({ length: 8 }, (_, i) => exerciseKey(make('fill_in_blank', i))),
+)
+for (let run = 0; run < 20; run++) {
+  const picked = selectSession(pool, 2, seenFib, ['fill_in_blank'])
+  assert.ok(
+    picked.every((q) => !seenFib.has(exerciseKey(q))),
+    'the 2 unseen fill_in_blank items win over the 8 seen ones',
+  )
+}
+
+console.log('✓ pool.check.ts — merge, balance, type filter, unseen-first, RPC shape')

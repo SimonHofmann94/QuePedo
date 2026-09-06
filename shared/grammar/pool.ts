@@ -67,13 +67,20 @@ export function mergePool(
  * `seen` holds the content_keys from user_grammar_progress. Without it this
  * degrades to "balanced + random", which is still better than the fixed-order
  * slice the screens used before the pool existed.
+ *
+ * `types` narrows the session to those question types — that is what the
+ * focused drills (condicional, estilo indirecto) use. With a filter the 4-way
+ * balance is skipped entirely: balancing a single-type session is a no-op that
+ * only happens to work via the top-up branch.
  */
 export function selectSession(
   pool: readonly GrammarQuestion[],
   count: number = EXERCISES_PER_SESSION,
   seen?: ReadonlySet<string>,
+  types?: readonly GrammarQuestion['type'][],
 ): GrammarQuestion[] {
-  if (pool.length <= count) return shuffle(pool)
+  const src = types && types.length > 0 ? pool.filter((ex) => types.includes(ex.type)) : pool
+  if (src.length <= count) return shuffle(src)
 
   // 0 = unseen, 1 = already met. Shuffle first, then a STABLE sort by rank:
   // random order survives inside each rank group.
@@ -81,17 +88,19 @@ export function selectSession(
   const ordered = (list: readonly GrammarQuestion[]) =>
     shuffle(list).sort((a, b) => rank(a) - rank(b))
 
+  if (types && types.length > 0) return shuffle(ordered(src).slice(0, count))
+
   const perType = Math.floor(count / TYPES.length)
   const picked: GrammarQuestion[] = []
   for (const type of TYPES) {
-    picked.push(...ordered(pool.filter((ex) => ex.type === type)).slice(0, perType))
+    picked.push(...ordered(src.filter((ex) => ex.type === type)).slice(0, perType))
   }
 
   // A chapter can be short on one type (or count may not divide by 4) — top up
   // from whatever is left, unseen first.
   if (picked.length < count) {
     const used = new Set(picked)
-    picked.push(...ordered(pool.filter((ex) => !used.has(ex))).slice(0, count - picked.length))
+    picked.push(...ordered(src.filter((ex) => !used.has(ex))).slice(0, count - picked.length))
   }
 
   return shuffle(picked)
