@@ -80,8 +80,6 @@ export async function signInWithEmail(email: string, password: string) {
 
     // Check onboarding status
     if (data.user) {
-        await supabase.rpc('record_user_activity', { p_user_id: data.user.id })
-
         const { data: profile } = await supabase
             .from('user_profiles')
             .select('onboarding_completed')

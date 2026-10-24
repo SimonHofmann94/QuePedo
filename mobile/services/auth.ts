@@ -10,11 +10,6 @@ export async function signInWithEmail(email: string, password: string) {
 
   if (error) return { error: error.message }
 
-  // Record activity (non-blocking, don't let it break login)
-  if (data.user) {
-    Promise.resolve(supabase.rpc('record_user_activity', { p_user_id: data.user.id })).catch(() => {})
-  }
-
   return { data }
 }
 

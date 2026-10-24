@@ -5,6 +5,7 @@ import {
   type WritingFeedback,
   type WritingPrompt,
 } from '@chingon/shared'
+import { recordActivity } from '@/services/activity'
 
 /**
  * Grade a piece of Spanish writing via the `evaluate-writing` Supabase edge
@@ -36,6 +37,7 @@ export async function getWritingFeedback(
   if (authError || !user) {
     return evaluateWriting(text, prompt)
   }
+  if (text.trim()) await recordActivity()
 
   let data: unknown
   let error: unknown

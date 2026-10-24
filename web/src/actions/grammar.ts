@@ -13,6 +13,7 @@ import {
 } from "@chingon/shared"
 import { createClient } from "@/utils/supabase/server"
 import { getUserAccess } from "@/lib/premium"
+import { recordActivity } from "@/actions/activity"
 
 // Grammar pool writes. Reads live in web/src/lib/grammarPool.ts.
 //
@@ -33,6 +34,7 @@ export async function recordGrammarProgress(
   results: GrammarProgressResult[],
 ): Promise<{ recorded: number }> {
   if (!results.length) return { recorded: 0 }
+  await recordActivity()
 
   const supabase = await createClient()
   const { data, error } = await supabase.rpc("record_grammar_progress", {

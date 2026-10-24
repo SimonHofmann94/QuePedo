@@ -3,6 +3,7 @@
 import { createClient } from "@/utils/supabase/server"
 import { nextReview, initialSM2State, type Quality } from "@chingon/shared"
 import type { UserVocabulary } from "@/types/schemas"
+import { recordActivity } from "@/actions/activity"
 
 /**
  * Record a review for a personal vocab word using the SM-2 algorithm.
@@ -65,6 +66,7 @@ export async function recordReview(
         return { error: "Failed to record review" }
     }
 
+    await recordActivity()
     return { success: true }
 }
 

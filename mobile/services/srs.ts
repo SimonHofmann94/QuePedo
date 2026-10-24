@@ -5,6 +5,7 @@ import {
     type Quality,
     type UserVocabulary,
 } from "@chingon/shared"
+import { recordActivity } from "@/services/activity"
 
 /**
  * Record a review for a personal vocab word using the SM-2 algorithm.
@@ -64,6 +65,7 @@ export async function recordReview(
         return { error: "Failed to record review" }
     }
 
+    await recordActivity()
     return { success: true }
 }
 

@@ -4,6 +4,7 @@
 // the base AND the offline path, the DB is additive. Every Supabase call here
 // is wrapped: on a plane you still get the baked exercises.
 import { supabase } from '@/lib/supabase'
+import { recordActivity } from '@/services/activity'
 import {
   EXERCISES_PER_SESSION,
   exerciseKey,
@@ -118,6 +119,7 @@ export async function recordProgress(
   results: { question: GrammarQuestion; correct: boolean }[],
 ): Promise<number> {
   if (!results.length) return 0
+  await recordActivity()
   try {
     const { data, error } = await supabase.rpc('record_grammar_progress', {
       p_level: level.toLowerCase(),

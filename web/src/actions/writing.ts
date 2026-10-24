@@ -11,6 +11,7 @@ import {
   type WritingPrompt,
 } from "@chingon/shared"
 import { isUserPremium } from "@/lib/premium"
+import { recordActivity } from "@/actions/activity"
 
 const feedbackSchema = z.object({
   score: z.number().min(0).max(100),
@@ -60,6 +61,8 @@ export async function getWritingFeedback(
       strengths: [],
     }
   }
+
+  if (text.trim()) await recordActivity()
 
   const apiKey = process.env.GEMINI_API_KEY
   if (!apiKey || !text.trim()) {
