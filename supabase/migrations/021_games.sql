@@ -6,10 +6,8 @@
 --
 -- DEPLOY NOTE (known prod drift, see 020 header): verify that
 -- user_profiles.taco_balance exists in the target DB (it does — mobile uses
--- it) and that record_user_activity / user_achievements have been applied
--- (020 notes they were missing in prod at audit time). Games degrade
--- gracefully without them (activity/achievements calls are try/catch), but
--- streak credit needs record_user_activity.
+-- it). record_user_activity / user_achievements were missing in prod at
+-- audit time (020) and landed with 028.
 
 -- ---------------------------------------------------------------------------
 -- game_results — one row per completed session. Immutable from the client:

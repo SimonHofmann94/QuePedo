@@ -103,7 +103,7 @@ GRANT EXECUTE ON FUNCTION public.admin_update_user(uuid, text, integer, boolean)
 
 -- ---------------------------------------------------------------------------
 -- Dashboard KPIs. Only counts tables that exist everywhere (game_results
--- shipped in 021; user_activity is still drifted out of prod — see 020).
+-- shipped in 021; user_activity only reached prod with 028).
 
 CREATE OR REPLACE FUNCTION public.admin_stats()
 RETURNS json LANGUAGE plpgsql SECURITY DEFINER SET search_path TO 'public'

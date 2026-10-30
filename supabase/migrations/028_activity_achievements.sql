@@ -1,5 +1,12 @@
 -- 028_activity_achievements.sql
 --
+-- APPLIED TO PRODUCTION on 2026-10-30 via the Supabase MCP as
+-- `activity_achievements`, WITHOUT the DROP ... IF EXISTS lines (none of the
+-- objects existed, and the MCP auto-declines statements it deems destructive).
+-- Verified with a rollback-only DO block: streak 2 for yesterday+day-before
+-- (003 returned 0), record_user_activity returns 1 then 2, streak 3 with
+-- today, direct INSERT blocked, foreign p_user_id blocked, anon has no EXECUTE.
+--
 -- Streaks + achievements for production. Written against the PRODUCTION
 -- schema, which never received 003 (user_activity) or 018 (user_achievements)
 -- — see the 020 header. Until this lands, every streak read returns 0 and
